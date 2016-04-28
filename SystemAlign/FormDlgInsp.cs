@@ -29,6 +29,7 @@ using Matrox.MatroxImagingLibrary;
 using Microsoft.Win32;
 using OpenCvSharp;
 using OpenCvSharp.UserInterface;
+using Pattern_Modules;
 using FontStyle = System.Drawing.FontStyle;
 using Resources = SystemAlign.Properties.Resources;
 
@@ -39,6 +40,8 @@ namespace SystemAlign
         private readonly List<PictureBoxIpl> HistoryAllBox = new List<PictureBoxIpl>();
         private  string _NowExcelFolderSavePath_Uper = string.Empty;
         private  string _NowImageFolderSavePath_Uper = string.Empty;
+        private string _NowExcelFolderSavePath_Right = string.Empty;
+        private string _NowImageFolderSavePath_Right = string.Empty;
         private string _NowExcelFolderSavePath_Down = string.Empty;
         private string _NowImageFolderSavePath_Down = string.Empty;
         private readonly string[] NowInspecOKorNG = new string[3];
@@ -60,9 +63,12 @@ namespace SystemAlign
         private readonly Stopwatch _stopwatch = new Stopwatch();
         private readonly List<string> _strLstTestImageNames_Down = new List<string>();
         private readonly List<string> _strLstTestImageNames_Uper = new List<string>();
+        private readonly List<string> _strLstTestImageNames_Right = new List<string>();
 
         private List<CvPoint> cvPntLstImagePoint_Uper;// = new List<CvPoint>();
         private List<CvPoint> cvPntLstImagePoint_Down;// = new List<CvPoint>();
+        private List<CvPoint> cvPntLstImagePoint_Right;// = new List<CvPoint>();
+
         private readonly List<CvPoint> cvPntLstWidthData = new List<CvPoint>();
         private readonly List<bool> drawOKList = new List<bool>();
         private readonly List<int> drawROIList = new List<int>();
@@ -84,19 +90,67 @@ namespace SystemAlign
         private readonly List<int> iLstNowSeqNo_Down = new List<int>();
         private readonly List<int> iLstNowSidNo_Down = new List<int>();
 
-        private readonly Hough imageHougher = new Hough();
-        //private readonly byte[,] imgBuf = new byte[4096, 3072];
+        private readonly List<int> iCenterPointToROI_Right = new List<int>();
+        private readonly List<int> iLstNowDivNo_Right = new List<int>();
+        private readonly List<int> iLstNowLgtNo_Right = new List<int>();
+        private readonly List<int> iLstNowLstNo_Right = new List<int>();
+        private readonly List<int> iLstNowRoiNo_Right = new List<int>();
+        private readonly List<int> iLstNowRowNo_Right = new List<int>();
+        private readonly List<int> iLstNowSeqNo_Right = new List<int>();
+        private readonly List<int> iLstNowSidNo_Right = new List<int>();
+
+        //private readonly Hough imageHougher = new Hough();
+
+        /*
         private static byte[,] imgBuf_Down = new byte[4096, 3072];
-
-        
         private static byte[,] imgBuf_Uper = new byte[4096, 3072];
-        
-        //private Control_Inspect_BiCell inspection_BiCell = new Control_Inspect_BiCell();
-        //private Control_Inspect_Gap inspection_Gap = new Control_Inspect_Gap();
+        private static byte[,] imgBuf_Right = new byte[4096, 3072];
 
-        //private readonly CvMat matImg_BiCell = new CvMat(3072, 4096, MatrixType.U8C1);
-        private readonly CvMat CVMatImg_Uper = new CvMat(3072, 4096, MatrixType.U8C1);
-        private readonly CvMat CVMatImg_Down = new CvMat(3072, 4096, MatrixType.U8C1);
+        private CvMat CVMatImg_Uper = new CvMat(3072, 4096, MatrixType.U8C1);
+        private CvMat CVMatImg_Down = new CvMat(3072, 4096, MatrixType.U8C1);
+        private CvMat CVMatImg_Right = new CvMat(3072, 4096, MatrixType.U8C1);
+
+        private static IplImage SrcIplImage_Down = new IplImage(4096, 3072, BitDepth.U8, 3);
+        private static IplImage SrcIplImage_Uper = new IplImage(4096, 3072, BitDepth.U8, 3);
+        private static IplImage SrcIplImage_Right = new IplImage(4096, 3072, BitDepth.U8, 3);
+
+        private IplImage _nowIplImage_Down = new IplImage(4096, 3072, BitDepth.U8, 3); // = new IplImage();
+        private IplImage _nowIplImage_Uper = new IplImage(4096, 3072, BitDepth.U8, 3);
+        private IplImage _nowIplImage_Right = new IplImage(4096, 3072, BitDepth.U8, 3);
+
+        private IplImage monoIplImage_Down = new IplImage(4096, 3072, BitDepth.U8, 1);
+        private IplImage monoIplImage_Uper = new IplImage(4096, 3072, BitDepth.U8, 1);
+        private IplImage monoIplImage_Right = new IplImage(4096, 3072, BitDepth.U8, 1);
+
+        private static IplImage NowSavedImage_Uper = new IplImage(4096, 3072, BitDepth.U8, 3);
+        private static IplImage NowSavedImage_Down = new IplImage(4096, 3072, BitDepth.U8, 3);
+        private static IplImage NowSavedImage_Right = new IplImage(4096, 3072, BitDepth.U8, 3);
+        */
+
+
+        private CvMat _cvMatImgUper;// = new CvMat(3072, 4096, MatrixType.U8C1);
+        private CvMat _cvMatImgDown;// = new CvMat(3072, 4096, MatrixType.U8C1);
+        private CvMat _cvMatImgRigh;// = new CvMat(3072, 4096, MatrixType.U8C1);
+
+        private static byte[,] _imgBufDown;// = new byte[4096, 3072];
+        private static byte[,] _imgBufUper;// = new byte[4096, 3072];
+        private static byte[,] _imgBufRigh;// = new byte[4096, 3072];
+        
+        //private static IplImage _srcIplImageDown;// = new IplImage(4096, 3072, BitDepth.U8, 3);
+        //private static IplImage _srcIplImageUper;// = new IplImage(4096, 3072, BitDepth.U8, 3);
+        //private static IplImage _srcIplImageRight;// = new IplImage(4096, 3072, BitDepth.U8, 3);
+
+        private IplImage _nowIplImageLeft;// = new IplImage(4096, 3072, BitDepth.U8, 3); // = new IplImage();
+        private IplImage _nowIplImageUper;// = new IplImage(4096, 3072, BitDepth.U8, 3);
+        private IplImage _nowIplImageRigh;// = new IplImage(4096, 3072, BitDepth.U8, 3);
+
+        private IplImage _monoIplImageLeft;// = new IplImage(4096, 3072, BitDepth.U8, 1);
+        private IplImage _monoIplImageUper;// = new IplImage(4096, 3072, BitDepth.U8, 1);
+        private IplImage _monoIplImageRigh;// = new IplImage(4096, 3072, BitDepth.U8, 1);
+
+        private static IplImage _nowSavedImageUper;// = new IplImage(4096, 3072, BitDepth.U8, 3);
+        private static IplImage _nowSavedImageLeft;// = new IplImage(4096, 3072, BitDepth.U8, 3);
+        private static IplImage _nowSavedImageRigh;// = new IplImage(4096, 3072, BitDepth.U8, 3);
 
         //이벤트를 진행할 함수를 지정해 준다.
         private readonly Pen myArrowPen = new Pen(Color.LawnGreen, 1);
@@ -109,8 +163,10 @@ namespace SystemAlign
         private readonly List<string> sLstNowDisNo_Down = new List<string>();
         private readonly List<string> sLstNowPolNo_Down = new List<string>();
         private readonly List<string> sLstNowTypNo_Down = new List<string>();
-        private static IplImage SrcIplImage_Down = new IplImage(4096, 3072, BitDepth.U8, 3);
-        private static IplImage SrcIplImage_Uper = new IplImage(4096, 3072, BitDepth.U8, 3);
+        private readonly List<string> sLstNowDisNo_Right = new List<string>();
+        private readonly List<string> sLstNowPolNo_Right = new List<string>();
+        private readonly List<string> sLstNowTypNo_Right = new List<string>();
+       
         private string A1GrabStatus = "7";
         private string A2GrabStatus = "8";
         private double Dist_Center_Garo;
@@ -138,17 +194,22 @@ namespace SystemAlign
         private List<CvRect> LstTempCvRect = new List<CvRect>();
         private Thread MIL_Grab_Threading_Down;
         private Thread MIL_Grab_Threading_Uper;
+        private Thread MIL_Grab_Threading_Right;
         private int MIL_ImageCount = 1;
         private bool MIL_Trigger_Close = true;
         private MIL_ID MilApplication; // = MIL.M_NULL;
         private MIL_ID MilDigitizer_Down; // = MIL.M_NULL;
         private MIL_ID MilDigitizer_Uper; // = MIL.M_NULL;
+        private MIL_ID MilDigitizer_Right;
         private MIL_ID MilDisplay_Down; // = MIL.M_NULL;
         private MIL_ID MilDisplay_Uper; // = MIL.M_NULL;
+        private MIL_ID MilDisplay_Right;
         private MIL_ID MilImage_Down; // = MIL.M_NULL;
         private MIL_ID MilImage_Uper; // = MIL.M_NULL;
+        private MIL_ID MilImage_Right;
         private MIL_ID MilSystem_Uper; // = MIL.M_NULL;
         private MIL_ID MilSystem_Down; // = MIL.M_NULL;
+        private MIL_ID MilSystem_Right;
         private int NowCellDataCount = 3;
         private int NowCellGrabPos = 1;
         private int NowCellGrabber;
@@ -156,6 +217,7 @@ namespace SystemAlign
         private int NowCellType;
         private double NowCenter_Garo;
         private double NowCenter_Sero;
+        private uint NowFailNumber_Right;
         private uint NowFailNumber_Down;
         private uint NowFailNumber_Uper;
         private uint NowFailNumber_Both;
@@ -176,6 +238,7 @@ namespace SystemAlign
         private uint NowTrigNumber;
         private uint NowPassNumber_Uper;
         private uint NowPassNumber_Down;
+        private uint NowPassNumber_Right;
         private string NowUmacData = string.Empty;
         private double Real_Center_Garo;
         private double Real_Center_Sero;
@@ -192,6 +255,8 @@ namespace SystemAlign
         private List<string> ZoneNoList = new List<string>();
         public bool _CycleCompleteFlag_Down = true;
         public bool _CycleCompleteFlag_Uper = true;
+        public bool _CycleCompleteFlag_Right = true;
+
         private DateTime _EndTime;
         private bool _FlagManual;
         private bool _Flag_Seq_TimeOut_End;
@@ -201,6 +266,8 @@ namespace SystemAlign
 
         private double _dCalibration_GaRo_Uper;
         private double _dCalibration_SeRo_Uper;
+        private double _dCalibration_GaRo_Right;
+        private double _dCalibration_SeRo_Right;
         private double _dCalibration_GaRo_Down;
         private double _dCalibration_SeRo_Down;
         private double _dNow_Image_Garo;
@@ -228,6 +295,7 @@ namespace SystemAlign
         private DateTime _dtUmacSetTime;
         private int _iAllHistoryViewNo_Uper;
         private int _iAllHistoryViewNo_Down;
+        private int _iAllHistoryViewNo_Right;
         private int _iCamGrabCnt = 0;
         private int _iEdgeParam1_Uper;
         private int _iEdgeParam2_Uper;
@@ -235,9 +303,14 @@ namespace SystemAlign
         private int _iEdgeParam1_Down;
         private int _iEdgeParam2_Down;
         private int _iEdgeParam3_Down;
+        private int _iEdgeParam1_Right;
+        private int _iEdgeParam2_Right;
+        private int _iEdgeParam3_Right;
         private int _iExcelFileRowNo = 1;
         private int _iGrabImageGaro_Uper;
         private int _iGrabImageSero_Uper;
+        private int _iGrabImageGaro_Right;
+        private int _iGrabImageSero_Right;
         private int _iGrabImageGaro_Down;
         private int _iGrabImageSero_Down;
         private int _iHistoryViewNo = -1;
@@ -248,11 +321,15 @@ namespace SystemAlign
         private int _iLineParam1_Down;
         private int _iLineParam2_Down;
         private int _iLineParam3_Down;
+        private int _iLineParam1_Right;
+        private int _iLineParam2_Right;
+        private int _iLineParam3_Right;
         private int _iManual_CellNo = -1;
         private int _iManual_CellType = -1;
         private int _iManual_GripNo = -1;
         private int _iNGHistoryViewNo_Uper;
         private int _iNGHistoryViewNo_Down;
+        private int _iNGHistoryViewNo_Right;
         private int _iSavedCellNumber;
         private int _iSavedCellType;
         private int _iSavedGrabber;
@@ -262,14 +339,16 @@ namespace SystemAlign
         private int _iTimeOutStepValue;
 
         private int _intTestImgCount;
-        private IplImage _nowIplImage_Down = new IplImage(4096, 3072, BitDepth.U8, 3); // = new IplImage();
-        private IplImage _nowIplImage_Uper = new IplImage(4096, 3072, BitDepth.U8, 3);
+       
+
         private PositionConvert _posConverter_Uper;
+        private PositionConvert _posConverter_Right;
         private double _savedLength_Garo;
         private double _savedLength_Sepa;
         private double _savedLength_Sero;
         private List<string> _strHisImgName_Uper = new List<string>();
         private List<string> _strHisImgName_Down = new List<string>();
+        private List<string> _strHisImgName_Right = new List<string>();
         //private string _strHisImgName_Down = string.Empty;
         private string _strNowExcelFileName = string.Empty;
         private string _strNowExcelRowNo = string.Empty;
@@ -281,6 +360,8 @@ namespace SystemAlign
         private string[] _strSavedInspectOkorNG = {string.Empty, string.Empty, string.Empty};
         private string _strSavedInspectResult_Uper = string.Empty;
         private string _strSavedInspectResult_Down = string.Empty;
+        private string _strSavedInspectResult_Right = string.Empty;
+
         private string _strTimeOutImagingOn;
         private string _strTimeOutStepOn;
         private StreamWriter _swInspLogFile;
@@ -313,8 +394,8 @@ namespace SystemAlign
         private Color m_Status_ON_Green = Color.Lime;
         private Color m_Status_ON_Red = Color.Tomato;
         private double measureWidthResult = -1.0;
-        private IplImage monoIplImage_Down = new IplImage(4096, 3072, BitDepth.U8, 1);
-        private IplImage monoIplImage_Uper = new IplImage(4096, 3072, BitDepth.U8, 1);
+       
+
         private IplImage nowInspectImage;
         private Control_PLC plc;
         private Point pntCenterMarkInspBox = new Point(0, 0);
@@ -350,15 +431,15 @@ namespace SystemAlign
 
        
         
-        public IplImage GetSet_NowIplImage
-        {
-            get { return SrcIplImage_Uper; }
-            set { SrcIplImage_Uper = value; }
-        }
         
         public List<string> GetSet_GridDisplayData_Uper
         {
             get { return strLstDisplayData_Uper; }
+        }
+
+        public List<string> GetSet_GridDisplayData_Right
+        {
+            get { return strLstDisplayData_Right; }
         }
 
         public List<string> GetSet_GridDisplayData_Down
@@ -379,6 +460,14 @@ namespace SystemAlign
         {
             get { return gc_Uper; }
             set { gc_Uper = value; }
+        }
+
+        private Graphics gc_Right;
+
+        public Graphics GetSet_Draw_GC_Right
+        {
+            get { return gc_Right; }
+            set { gc_Right = value; }
         }
 
         private Graphics gc_Down;
@@ -453,6 +542,12 @@ namespace SystemAlign
             set { _posConverter_Uper = value; }
         }
 
+        public PositionConvert GetSet_Converter_Right
+        {
+            get { return _posConverter_Right; }
+            set { _posConverter_Right = value; }
+        }
+
         public PositionConvert GetSet_Converter_Down
         {
             get { return _posConverter_Down; }
@@ -475,64 +570,161 @@ namespace SystemAlign
         }
         //Control_Inspect_Gap inspection_Gap = new Control_Inspect_Gap();
         public event MyEventOneInsp OperationEvent;
-//         public event MyEventTwoInsp TestStartEvent;
-//         public event MyEventMeaData1 MeaDataEvent1;
-//         public event MyEventMeaData2 MeaDataEvent2;
-//         public event MyEventMeaData3 MeaDataEvent3;
-//         public event MyEventMeaData4 MeaDataEvent4;
+        //         public event MyEventTwoInsp TestStartEvent;
+        //         public event MyEventMeaData1 MeaDataEvent1;
+        //         public event MyEventMeaData2 MeaDataEvent2;
+        //         public event MyEventMeaData3 MeaDataEvent3;
+        //         public event MyEventMeaData4 MeaDataEvent4;
+
+        public void Inspect_Memory_GaroSero_Setup()
+        {
+            //그랩보드에서 로딩하는 이미지 정보 객체
+            _cvMatImgUper = new CvMat(
+                LamiSystem.GetSet_Upper_Sero, 
+                LamiSystem.GetSet_Upper_Garo, 
+                MatrixType.U8C1);
+
+            _cvMatImgDown = new CvMat(
+                LamiSystem.GetSet_Left_Sero, 
+                LamiSystem.GetSet_Left_Garo, 
+                MatrixType.U8C1);
+
+            _cvMatImgRigh = new CvMat(
+                LamiSystem.GetSet_Right_Sero, 
+                LamiSystem.GetSet_Right_Garo, 
+                MatrixType.U8C1);
+
+            //버퍼링을 위한 이미지 객체 배열
+            _imgBufDown = new byte[
+                LamiSystem.GetSet_Left_Garo, 
+                LamiSystem.GetSet_Left_Sero];
+
+            _imgBufUper = new byte[
+                LamiSystem.GetSet_Upper_Garo, 
+                LamiSystem.GetSet_Upper_Sero];
+
+            _imgBufRigh = new byte[
+                LamiSystem.GetSet_Right_Garo, 
+                LamiSystem.GetSet_Right_Sero];
+
+            //_srcIplImageDown = new IplImage(LamiSystem.GetSet_Left_Garo, LamiSystem.GetSet_Left_Sero, BitDepth.U8, 3);
+            //_srcIplImageUper = new IplImage(LamiSystem.GetSet_Upper_Garo, LamiSystem.GetSet_Upper_Sero, BitDepth.U8, 3);
+            //_srcIplImageRight = new IplImage(LamiSystem.GetSet_Right_Garo, LamiSystem.GetSet_Right_Sero, BitDepth.U8, 3);
+
+            //로딩한 이미지 객체
+            _nowIplImageUper = new IplImage(
+                LamiSystem.GetSet_Upper_Garo,
+                LamiSystem.GetSet_Upper_Sero,
+                BitDepth.U8, 3);
+
+            _nowIplImageLeft = new IplImage(
+                LamiSystem.GetSet_Left_Garo, 
+                LamiSystem.GetSet_Left_Sero, 
+                BitDepth.U8, 3); 
+
+            _nowIplImageRigh = new IplImage(
+                LamiSystem.GetSet_Right_Garo, 
+                LamiSystem.GetSet_Right_Sero,
+                BitDepth.U8, 3);
+            
+            //그래이 레벨 이미지 객체
+            _monoIplImageUper = new IplImage(
+                LamiSystem.GetSet_Upper_Garo, 
+                LamiSystem.GetSet_Upper_Sero, 
+                BitDepth.U8, 1);
+
+            _monoIplImageLeft = new IplImage(
+               LamiSystem.GetSet_Left_Garo,
+               LamiSystem.GetSet_Left_Sero,
+               BitDepth.U8, 1);
+
+            _monoIplImageRigh = new IplImage(
+                LamiSystem.GetSet_Right_Garo, 
+                LamiSystem.GetSet_Right_Sero, 
+                BitDepth.U8, 1);
+
+            //세이브용 이미지 객체
+            _nowSavedImageUper = new IplImage(
+                LamiSystem.GetSet_Upper_Garo, 
+                LamiSystem.GetSet_Upper_Sero, 
+                BitDepth.U8, 3);
+
+            _nowSavedImageLeft = new IplImage(
+                LamiSystem.GetSet_Left_Garo, 
+                LamiSystem.GetSet_Left_Sero, 
+                BitDepth.U8, 3);
+
+            _nowSavedImageRigh = new IplImage(
+                LamiSystem.GetSet_Right_Garo, 
+                LamiSystem.GetSet_Right_Sero, 
+                BitDepth.U8, 3);
+        }
 
         private Process myProcess;
         private void FormDlgInsp_Load(object sender, EventArgs e)
         {
-            ////Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
-            StartPosition = FormStartPosition.Manual;   //968, 706
-            Location = new Point(0, 3);
-            timer1.Enabled = true;
-            fileSystem = new Control_Files();
-            excelFile = new Control_Excel();
+            try
+            {
+                ////Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
+                StartPosition = FormStartPosition.Manual; //968, 706
+                Location = new Point(0, 3);
+                timer1.Enabled = true;
+                fileSystem = new Control_Files();
+                excelFile = new Control_Excel();
 
-            Now_PictureBox = Inspect_Main01_IplBox;
-            Now_Used_Form = "Inspect";
-            
-#if(SYST_SIMUL)
-            Inspect_Ready_Run();
+                Inspect_Memory_GaroSero_Setup();
+                Now_PictureBox = Inspect_Main01_IplBox;
+                Now_Used_Form = "Inspect";
+
+#if (SYST_SIMUL)
+                Inspect_Ready_Run();
 #else
             
 #endif
-            Inspect_DataSet_Initialize_Fron_Upper();
-            Inspect_DataSet_Initialize_Rear_Upper();
+                Inspect_DataSet_Initialize_Fron_Upper();
+                Inspect_DataSet_Initialize_Rear_Upper();
+                Inspect_DataSet_Initialize_Right_Upper();
 
-            Measurement_Grid_Resize(uGrd_Inspect_Measure_Uper);
-            Measurement_Grid_Resize(uGrd_Inspect_Measure_Down);
+                Measurement_Grid_Resize(uGrd_Inspect_Measure_Uper);
+                Measurement_Grid_Resize(uGrd_Inspect_Measure_Down);
+                Measurement_Grid_Resize(uGrd_Inspect_Measure_Right);
 
-            FormDlgInsp_Init_View();
+                FormDlgInsp_Init_View();
 
-            Inspect_Initionalize();
+                Inspect_Initionalize();
 
-            Inspect_Ready_Ready();
+                Inspect_Ready_Ready();
 
 
-           
-            //Inspect_Allocate_Memory();
 
-            //Measurement_Register_To_Grid_Uper();
-            //Measurement_Register_To_Grid_Down();
+                //Inspect_Allocate_Memory();
 
-            Measurement_List_To_GraphList_Uper();
-            Measurement_List_To_GraphList_Down();
+                //Measurement_Register_To_Grid_Uper();
+                //Measurement_Register_To_Grid_Down();
 
-            Measure_Grid_Making_Uper();
-            Measure_Grid_Making_Down();
+                Measurement_List_To_GraphList_Uper();
+                Measurement_List_To_GraphList_Down();
+                Measurement_List_To_GraphList_Right();
 
-            Chart_Making_Uper();
-            Chart_Making_Down();
+                Measure_Grid_Making_Uper();
+                Measure_Grid_Making_Down();
+                Measure_Grid_Making_Right();
 
-            //20150305 WKB 209
-            Inspect_Allocate_Memory();
+                Chart_Making_Uper();
+                Chart_Making_Down();
+                Chart_Making_Right();
 
-            MeasureData_Loading();
+                //20150305 WKB 209
+                Inspect_Allocate_Memory();
 
-            Product_Data_Init();
+                MeasureData_Loading();
+
+                Product_Data_Init();
+            }
+            catch
+            {
+            }
+
         }
 
 
@@ -556,13 +748,31 @@ namespace SystemAlign
             dataSet1.Tables["Meas"].Columns.Add("최대");
             dataSet1.Tables["Meas"].Columns.Add("CP");
             dataSet1.Tables["Meas"].Columns.Add("CPK");
-            
-            //dataSet1.Tables["Meas"].Columns.Add("OkCount");
-            //dataSet1.Tables["Meas"].Columns.Add("SumValue");
-            //dataSet1.Tables["Meas"].Columns.Add("SeqValue");
-            //dataSet1.Tables["Meas"].Columns.Add("ProductOK");
-
         }
+
+
+        public void Inspect_DataSet_Initialize_Right_Upper()
+        {
+            if (dataSet3.Tables.Count != 0) return;
+
+            dataSet3.Tables.Add("Meas");
+            dataSet3.Tables["Meas"].Columns.Add("NO");
+            dataSet3.Tables["Meas"].Columns.Add("항목");
+            dataSet3.Tables["Meas"].Columns.Add("중심");
+            dataSet3.Tables["Meas"].Columns.Add("상한");
+            dataSet3.Tables["Meas"].Columns.Add("하한");
+            dataSet3.Tables["Meas"].Columns.Add("측정");
+            dataSet3.Tables["Meas"].Columns.Add("판정");
+            dataSet3.Tables["Meas"].Columns.Add("NG");
+            dataSet3.Tables["Meas"].Columns.Add("수율");
+            dataSet3.Tables["Meas"].Columns.Add("평균");
+            dataSet3.Tables["Meas"].Columns.Add("편차");
+            dataSet3.Tables["Meas"].Columns.Add("최소");
+            dataSet3.Tables["Meas"].Columns.Add("최대");
+            dataSet3.Tables["Meas"].Columns.Add("CP");
+            dataSet3.Tables["Meas"].Columns.Add("CPK");
+        }
+
 
 
         public void Inspect_DataSet_Initialize_Rear_Upper()
@@ -600,6 +810,7 @@ namespace SystemAlign
 
             Chart_Making_Uper();
             Chart_Making_Down();
+            Chart_Making_Right();
 
             inspect_Run_Run_Display_NG_OK_Count();
         }
@@ -712,6 +923,7 @@ namespace SystemAlign
             }
 
             MeasureData_Loading_Struct Data_Struct = new MeasureData_Loading_Struct();
+
             Data_Struct.reg = Registry.CurrentUser;
             Data_Struct.reg = Data_Struct.reg.OpenSubKey(LamiSystem.RegPathMeasureGrid_Buf_Uper, true);
             if (Data_Struct.reg != null)
@@ -727,6 +939,25 @@ namespace SystemAlign
                     {
                         Data_Struct.regData = this.GetReg(LamiSystem.RegPathMeasureGrid_Buf_Uper, (i * Data_Struct.ColCount + j).ToString("000"));
                         uDS_Inspect_Measure_Uper.Rows[i].SetCellValue(j, Data_Struct.regData);
+                    }
+                }
+            }
+
+            Data_Struct.reg = Registry.CurrentUser;
+            Data_Struct.reg = Data_Struct.reg.OpenSubKey(LamiSystem.RegPathMeasureGrid_Buf_Right, true);
+            if (Data_Struct.reg != null)
+            {
+                Data_Struct.regCount = Data_Struct.reg.ValueCount;
+                Data_Struct.ColCount = 19;
+
+                Data_Struct.RowCount = Data_Struct.regCount / Data_Struct.ColCount;
+
+                for (int i = 0; i < Data_Struct.RowCount; i++)
+                {
+                    for (int j = 0; j < Data_Struct.ColCount; j++)
+                    {
+                        Data_Struct.regData = this.GetReg(LamiSystem.RegPathMeasureGrid_Buf_Right, (i * Data_Struct.ColCount + j).ToString("000"));
+                        uDS_Inspect_Measure_Right.Rows[i].SetCellValue(j, Data_Struct.regData);
                     }
                 }
             }
@@ -766,6 +997,25 @@ namespace SystemAlign
                     Data_Struct.ColNum = (int.Parse(Data_Struct.tmpreg[i]) - (Data_Struct.GraphNum * 400)) - (Data_Struct.RowsNum * 100);
                     Data_Struct.tmpregData = double.Parse(Data_Struct.regData);
                     Uper_MeasureTables[Data_Struct.GraphNum].Rows[Data_Struct.RowsNum][Data_Struct.ColNum] = double.Parse(Data_Struct.regData);
+                }
+            }
+
+            Data_Struct.reg = Registry.CurrentUser;
+            Data_Struct.reg = Data_Struct.reg.OpenSubKey(LamiSystem.RegPathMeasureChart_Buf_Right, true);
+
+            if (Data_Struct.reg != null)
+            {
+                Data_Struct.tmpreg = Data_Struct.reg.GetValueNames();
+                Data_Struct.regCount = Data_Struct.reg.ValueCount;
+
+                for (int i = 0; i < Data_Struct.regCount; i++)
+                {
+                    Data_Struct.regData = this.GetReg(LamiSystem.RegPathMeasureChart_Buf_Right, Data_Struct.tmpreg[i]);
+                    Data_Struct.GraphNum = int.Parse(Data_Struct.tmpreg[i]) / 400;
+                    Data_Struct.RowsNum = (int.Parse(Data_Struct.tmpreg[i]) - (Data_Struct.GraphNum * 400)) / 100;
+                    Data_Struct.ColNum = (int.Parse(Data_Struct.tmpreg[i]) - (Data_Struct.GraphNum * 400)) - (Data_Struct.RowsNum * 100);
+                    Data_Struct.tmpregData = double.Parse(Data_Struct.regData);
+                    Right_MeasureTables[Data_Struct.GraphNum].Rows[Data_Struct.RowsNum][Data_Struct.ColNum] = double.Parse(Data_Struct.regData);
                 }
             }
 
@@ -899,6 +1149,28 @@ namespace SystemAlign
             }
         }
 
+
+        private string[] Graph_No_Now_Right;
+
+        public void Measurement_List_To_GraphList_Right()
+        {
+            Graph_No_Now_Right = new string[40];
+            int rowCount = LamiSystem.StrLstRcpConGridData_Right.Count / 11;
+
+            for (int i = 0; i < rowCount; i++)
+            {
+                int CellData = int.Parse(LamiSystem.StrLstRcpConGridData_Right[(i * 11) + 1]);
+                for (int j = 0; j < 4; j++)
+                {
+                    if (Graph_No_Now_Right[(CellData - 1) * 4 + j] == null)
+                    {
+                        Graph_No_Now_Right[(CellData - 1) * 4 + j] = LamiSystem.StrLstRcpConGridData_Right[i * 11];
+                        break;
+                    }
+                }
+            }
+        }
+
         private string[] Graph_No_Now_Down;
         public void Measurement_List_To_GraphList_Down()
         {
@@ -988,7 +1260,8 @@ namespace SystemAlign
             }
         }
 */
-        static IplImage srcImgGray = new IplImage(4096, 3072, BitDepth.U8, 1);
+        //방열판 검사기를 진행하면서 수정함. 20160427
+        //static IplImage srcImgGray = new IplImage(4096, 3072, BitDepth.U8, 1);
 
         private void Inspect_Allocate_Memory()
         {
@@ -1000,9 +1273,11 @@ namespace SystemAlign
                 
                 Inspect_Main01_IplBox.ImageIpl = IplImage.FromBitmap(Properties.Resources.BiCell_Top);
                 Inspect_Main02_IplBox.ImageIpl = IplImage.FromBitmap(Properties.Resources.BiCell_Bot);
+                Inspect_Main03_IplBox.ImageIpl = IplImage.FromBitmap(Properties.Resources.BiCell_Bot);
 
                 bool Serarch_Result_Uper = Inspect_Run_Run_ROI_EdgeLine_Centering_Uper(Inspect_Main01_IplBox.ImageIpl);
                 bool Serarch_Result_Lwer = Inspect_Run_Run_ROI_EdgeLine_Centering_Down(Inspect_Main02_IplBox.ImageIpl);
+                bool Serarch_Result_Right = Inspect_Run_Run_ROI_EdgeLine_Centering_Right(Inspect_Main03_IplBox.ImageIpl);
 
                 //Measure_Grid_Making_Uper();
                 //Measurement_Grid_To_Register(LamiSystem.RegPathMeasure_Uper, uGrd_Inspect_Measure_Uper);
@@ -1013,7 +1288,7 @@ namespace SystemAlign
                 //Measurement_Grid_To_Register(LamiSystem.RegPathMeasure_Down, uGrd_Inspect_Measure_Down);
                 //Inspect_Run_Run_ROI_CenterPoint_Find_Down();
                 //Inspect_Run_Run_FindData_Inspection_Down();
-                
+
                 System.GC.Collect(0, GCCollectionMode.Forced);
                 System.GC.WaitForFullGCComplete();
             }
@@ -1208,7 +1483,7 @@ namespace SystemAlign
         private void FormDlgInsp_Init_View()
         {
             //uTxt_Gap_No.Text = NowGapNumber.ToString();
-            uTxt_Gap_No.Text = "8";
+            //uTxt_Gap_No.Text = "8";
 
             NowProdectNumber = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_Product"));
            
@@ -1246,6 +1521,7 @@ namespace SystemAlign
             Inspect_Main02_IplBox.Visible = false;
             uPanel_Uper.Visible = false;
             uPanel_Down.Visible = false;
+            uPanel_Right.Visible = false;
         }
 
 
@@ -1632,7 +1908,8 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
             //string imageFolder_BiCell = @"D:\image\2014-03-22\Cell";
             //Inspect_Run_Ready_Test_ImageFolder_Load_BiCell(imageFolder_BiCell);
-            string imageFolder_Gap = @"E:\N21SU";
+
+            //string imageFolder_Gap = @"E:\N21SU";
             //string imageFolder_Gap = @"D:\Test Images\N21AU";
             //string imageFolder_Gap = @"C:\TestImage\CUper";
             //string imageFolder_Gap = @"D:\AutoManual";
@@ -1647,14 +1924,21 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             //string imageFolder_Gap = @"D:\LamiPoint\Image_Test";
             //string imageFolder_Gap = @"D:\LamiPoint\Image_BiCell_Uper";
             //string imageFolder_Gap = @"D:\LamiPoint\Image_HalfCell_Uper";
+            //string imageFolder_Down = @"E:\N21SL";
+            //string imageFolder_Down = @"D:\Test Images\N21AU";
+
+            string imageFolder_Gap = @"D:\Test Images\HS_U";
             Inspect_Run_Ready_Test_ImageFolder_Load_Uper(imageFolder_Gap);
 
-            string imageFolder_Down = @"E:\N21SL";
-            //string imageFolder_Down = @"D:\Test Images\N21AU";
+            string imageFolder_Down = @"D:\Test Images\HS_L";
             Inspect_Run_Ready_Test_ImageFolder_Load_Down(imageFolder_Down);
+
+            string imageFolder_Right = @"D:\Test Images\HS_R";
+            Inspect_Run_Ready_Test_ImageFolder_Load_Right(imageFolder_Right);
 
             gc_Uper = Inspect_Main01_IplBox.CreateGraphics();
             gc_Down = Inspect_Main02_IplBox.CreateGraphics();
+            gc_Right = Inspect_Main03_IplBox.CreateGraphics();
             gc_List = Inspect_ImageList_IplBox.CreateGraphics();
         }
 
@@ -1695,8 +1979,11 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         {
             Inspect_Ready_Ready_RecipeBoxZone_To_ImageZone_Check_Uper();
             Inspect_Ready_Ready_RecipeBoxZone_To_ImageZone_Check_Down();
+            Inspect_Ready_Ready_RecipeBoxZone_To_ImageZone_Check_Right();
+
             Inspect_Ready_Ready_ImageZone_To_InspectBoxZone_Check_Uper();
             Inspect_Ready_Ready_ImageZone_To_InspectBoxZone_Check_Down();
+            Inspect_Ready_Ready_ImageZone_To_InspectBoxZone_Check_Right();
         }
 
 
@@ -1722,6 +2009,28 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
         }
 
+
+        private void Inspect_Ready_Ready_ImageZone_To_InspectBoxZone_Check_Right()
+        {
+            var tempFloats = new[] { 0f, 0f };
+
+            _posConverter_Right.BoxVsImage(Inspect_Main01_IplBox, Resources.empty, ref tempFloats);
+            LamiSystem.GetSet_System_Inspect_Zoom_X_Right = tempFloats[0];
+            LamiSystem.GetSet_System_Inspect_Zoom_Y_Right = tempFloats[1];
+
+            LamiSystem.RectListInspBoxZone_Right.Clear();
+            for (int i = 0; i < LamiSystem.RectListImageZone_Right.Count; i++)
+            {
+                var tempRect = new Rectangle();
+                _posConverter_Right.ImageToBox(LamiSystem.RectListImageZone_Right[i], ref tempRect, LamiSystem.GetSet_System_Inspect_Zoom_X_Right, LamiSystem.GetSet_System_Inspect_Zoom_Y_Right);
+                LamiSystem.RectListInspBoxZone_Right.Add(tempRect);
+
+                ////Trace.WriteLine(
+                //    _alignSystem.RectListRecipeBoxZone[i].Width.ToString("000") + "  " + _alignSystem.RectListRecipeBoxZone[i].Height.ToString("000") + " : " +
+                //    _alignSystem.RectListImageZone[i].Width.ToString("000") + "  " + _alignSystem.RectListImageZone[i].Height.ToString("000") + " : " + 
+                //    _alignSystem.RectListInspBoxZone[i].Width.ToString("000") + "  " + _alignSystem.RectListInspBoxZone[i].Height.ToString("000"));
+            }
+        }
         private void Inspect_Ready_Ready_ImageZone_To_InspectBoxZone_Check_Down()
         {
             var tempFloats = new[] { 0f, 0f };
@@ -1759,6 +2068,24 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
                 ROI_Zone_Image_Uper.Add(new IplImage(LamiSystem.RectListImageZone_Uper[i].Width, LamiSystem.RectListImageZone_Uper[i].Height, BitDepth.U8, 3));
                 ROI_Zone_Rect_Uper.Add(new CvRect(LamiSystem.RectListImageZone_Uper[i].Location, LamiSystem.RectListImageZone_Uper[i].Size));
+            }
+        }
+
+        private void Inspect_Ready_Ready_RecipeBoxZone_To_ImageZone_Check_Right()
+        {
+            ROI_Zone_Image_Right = new List<IplImage>();
+            ROI_Zone_Rect_Right = new List<CvRect>();
+
+            LamiSystem.RectListImageZone_Right.Clear();
+
+            for (int i = 0; i < LamiSystem.RectListRecipeBoxZone_Right.Count; i++)
+            {
+                var tempRect = new CvRect(0, 0, 0, 0);
+                _posConverter_Right.BoxToImage(LamiSystem.RectListRecipeBoxZone_Right[i], ref tempRect, LamiSystem.GetSet_System_Status_Zoom_X_Right, LamiSystem.GetSet_System_Status_Zoom_Y_Right);
+                LamiSystem.RectListImageZone_Right.Add(tempRect);
+
+                ROI_Zone_Image_Right.Add(new IplImage(LamiSystem.RectListImageZone_Right[i].Width, LamiSystem.RectListImageZone_Right[i].Height, BitDepth.U8, 3));
+                ROI_Zone_Rect_Right.Add(new CvRect(LamiSystem.RectListImageZone_Right[i].Location, LamiSystem.RectListImageZone_Right[i].Size));
             }
         }
 
@@ -1864,13 +2191,14 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 //인스펙션 로그 파일 기록 함수 호출 (1:검출 프로그램 기동 시작)
                 FormDlgInsp_Inspection_Write_LogFile(1);
 
-                NowGapNumber = int.Parse(uTxt_Gap_No.Text.Trim());
+                //NowGapNumber = int.Parse(uTxt_Gap_No.Text.Trim());
                 ThreadFirstFlag = true;
                 //Loading_Image_Name.Visible = false;
-                uTxt_Gap_No.ReadOnly = true;
+                //uTxt_Gap_No.ReadOnly = true;
 
                 TrigWatch_Uper.Reset();
                 TrigWatch_Down.Reset();
+                TrigWatch_Right.Reset();
 
                 //plc.PCL_WriteData_D3101(1);
                 if (LamiSystem.SystemStatusFlag[2] == true)
@@ -1882,6 +2210,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
                 Measure_Grid_Making_Uper();
                 Measure_Grid_Making_Down();
+                Measure_Grid_Making_Right();
                 //2015-01-07 종료 수정함.
 
                 //PLC와 모델명을 싱크하기 위해서 이곳에서 메인 함수를 이벤트 호출한다.
@@ -1897,9 +2226,10 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 //인스펙션 로그 파일 기록 함수 호출 (2:검출 프로그램 기동 정지)
                 FormDlgInsp_Inspection_Write_LogFile(2);
                 Inspect_Stop_View();
-                uTxt_Gap_No.ReadOnly = false;
+                //uTxt_Gap_No.ReadOnly = false;
                 _iPaint_Uper_Flag = 0;
                 _iPaint_Down_Flag = 0;
+                _iPaint_Right_Flag = 0;
 
                 //이미지 저장까지의 프로세스를 모두 마친 후에 스레드를 정지한다.
                 Inspect_Stop_threading = new Thread(Inspect_Stop_Ready);
@@ -1959,25 +2289,55 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             MIL.MdigAlloc(MilSystem_Uper, MIL.M_DEV0, @"C:\Visionsystem\Data\solfcl_mil9_CSC12M25BMP19_4tap_8bit_t0.dcf",
                 MIL.M_DEFAULT, ref MilDigitizer_Uper);
             MIL.MdispAlloc(MilSystem_Uper, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Uper);
-            MIL.MbufAlloc2d(MilSystem_Uper, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP,
+            
+            //방열판 검사기를 진행하면 수정함. 20160427
+            //MIL.MbufAlloc2d(MilSystem_Uper, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP,ref MilImage_Uper);
+            MIL.MbufAlloc2d(
+                MilSystem_Uper, 
+                LamiSystem.GetSet_Upper_Garo, 
+                LamiSystem.GetSet_Upper_Sero, 
+                8 + MIL.M_UNSIGNED, 
+                MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, 
                 ref MilImage_Uper);
+
             MIL.MdigControl(MilDigitizer_Uper, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
 
             MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, 1, MIL.M_DEFAULT, ref MilSystem_Down); // 프레임그레버 할당
             MIL.MdigAlloc(MilSystem_Down, MIL.M_DEV0, @"C:\Visionsystem\Data\solfcl_mil9_CSC12M25BMP19_4tap_8bit_t1.dcf",
                 MIL.M_DEFAULT, ref MilDigitizer_Down);
             MIL.MdispAlloc(MilSystem_Down, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Down);
-            MIL.MbufAlloc2d(MilSystem_Down, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP,
+            //MIL.MbufAlloc2d(MilSystem_Down, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP,ref MilImage_Down);
+            MIL.MbufAlloc2d(
+                MilSystem_Down, 
+                LamiSystem.GetSet_Left_Garo, 
+                LamiSystem.GetSet_Left_Sero, 
+                8 + MIL.M_UNSIGNED, 
+                MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, 
                 ref MilImage_Down);
+
             MIL.MdigControl(MilDigitizer_Down, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
 
+            MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, 0, MIL.M_DEFAULT, ref MilSystem_Right); // 프레임그레버 할당
+            MIL.MdigAlloc(MilSystem_Right, MIL.M_DEV0, @"C:\Visionsystem\Data\solfcl_mil9_CSC12M25BMP19_4tap_8bit_t0.dcf",
+                MIL.M_DEFAULT, ref MilDigitizer_Right);
+            MIL.MdispAlloc(MilSystem_Right, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Right);
+            //MIL.MbufAlloc2d(MilSystem_Right, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP,ref MilImage_Right);
+            MIL.MbufAlloc2d(
+                MilSystem_Right, 
+                LamiSystem.GetSet_Right_Garo, 
+                LamiSystem.GetSet_Right_Sero, 
+                8 + MIL.M_UNSIGNED, 
+                MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, 
+                ref MilImage_Right);
 
+            MIL.MdigControl(MilDigitizer_Right, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
 
             Inspect_Run_Componet_set();
             Inspect_Run_Ready();
 
             _CycleCompleteFlag_Uper = true;
             _CycleCompleteFlag_Down = true;
+            _CycleCompleteFlag_Right = true;
 
             Inspect_Run_Run();
         }
@@ -1998,8 +2358,11 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 Stopwatch mwatch = new Stopwatch();
                 mwatch.Start();
                 tmpFilename = _strLstTestImageNames_Uper[imgCount];
-                _nowIplImage_Uper = new IplImage(_strLstTestImageNames_Uper[imgCount]);
-                _nowIplImage_Down = new IplImage(_strLstTestImageNames_Down[imgCount]);
+
+                _nowIplImageUper = new IplImage(_strLstTestImageNames_Uper[imgCount]);
+                _nowIplImageLeft = new IplImage(_strLstTestImageNames_Down[imgCount]);
+                _nowIplImageRigh = new IplImage(_strLstTestImageNames_Right[imgCount]);
+
                 mwatch.Stop();
                 string timeData = mwatch.ElapsedMilliseconds.ToString("000");
                 Trace.WriteLine("이미지 로딩 시간 : " + timeData);
@@ -2134,7 +2497,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             
             
           
-            ROI_Search_Result_Uper = Inspect_Run_Run_ROI_EdgeLine_Centering_Uper(_nowIplImage_Uper);
+            ROI_Search_Result_Uper = Inspect_Run_Run_ROI_EdgeLine_Centering_Uper(_nowIplImageUper);
             _CycleCompleteFlag_Uper = true;
            
             Inspect_Run_Run_Drawing_Result_Uper();
@@ -2145,7 +2508,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 //string imageFilePath_Down = "D:\\Bot01.jpg";
                 //_nowIplImage_Down.SaveImage(imageFilePath_Down);
                 //Cv.Copy(IplImage.FromFile(imageFilePath_Down), _nowIplImage_Down);
-                ROI_Search_Result_Down = Inspect_Run_Run_ROI_EdgeLine_Centering_Down(_nowIplImage_Down);
+                ROI_Search_Result_Down = Inspect_Run_Run_ROI_EdgeLine_Centering_Down(_nowIplImageLeft);
                 _CycleCompleteFlag_Down = true;
 
                 Inspect_Run_Run_Drawing_Result_Down();
@@ -2211,27 +2574,32 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             {
                 ROI_Search_Result_Uper = false;
                 ROI_Search_Result_Down = false;
+                ROI_Search_Result_Right = false;
 
-//                 Thread[] milGrabTriging_Uper = {new Thread(Inspect_Run_Run_Threading_Grab_Uper_Loop)};
-//                 foreach (Thread milTriger_Uper in milGrabTriging_Uper)
-//                 {
-//                     milTriger_Uper.Start();
-//                 }
-// 
-//                 Thread[] milGrabTriging_Down = {new Thread(Inspect_Run_Run_Threading_Grab_Down_Loop)};
-//                 foreach (Thread milTriger_Down in milGrabTriging_Down)
-//                 {
-//                     milTriger_Down.Start();
-//                 }
+                //                 Thread[] milGrabTriging_Uper = {new Thread(Inspect_Run_Run_Threading_Grab_Uper_Loop)};
+                //                 foreach (Thread milTriger_Uper in milGrabTriging_Uper)
+                //                 {
+                //                     milTriger_Uper.Start();
+                //                 }
+                // 
+                //                 Thread[] milGrabTriging_Down = {new Thread(Inspect_Run_Run_Threading_Grab_Down_Loop)};
+                //                 foreach (Thread milTriger_Down in milGrabTriging_Down)
+                //                 {
+                //                     milTriger_Down.Start();
+                //                 }
 
-                
-                 MIL_Grab_Threading_Uper = new Thread(Inspect_Run_Run_Threading_Grab_Uper_Loop);
+
+                MIL_Grab_Threading_Uper = new Thread(Inspect_Run_Run_Threading_Grab_Uper_Loop);
                  MIL_Grab_Threading_Uper.Priority = ThreadPriority.Highest;
                  MIL_Grab_Threading_Uper.Start();
  
                  MIL_Grab_Threading_Down = new Thread(Inspect_Run_Run_Threading_Grab_Down_Loop);
                  MIL_Grab_Threading_Down.Priority = ThreadPriority.Highest;
                  MIL_Grab_Threading_Down.Start();
+
+                MIL_Grab_Threading_Right = new Thread(Inspect_Run_Run_Threading_Grab_Right_Loop);
+                MIL_Grab_Threading_Right.Priority = ThreadPriority.Highest;
+                MIL_Grab_Threading_Right.Start();
 
                 VisionJobWorking = true;
             }
@@ -2285,18 +2653,75 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 //_SeqStopwatch.Start();
                 //_dtInspDataSaveTime = DateTime.Now;
                 
-                Array.Clear(imgBuf_Uper, 0, imgBuf_Uper.Length);
+                Array.Clear(_imgBufUper, 0, _imgBufUper.Length);
                 _CycleCompleteFlag_Uper = false;
-                MIL.MbufGet2d(MilImage_Uper, 0, 0, 4096, 3072, imgBuf_Uper);
-                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(imgBuf_Uper, 0);
-                CVMatImg_Uper.Data = bufPtr;
-                Cv.Merge(CVMatImg_Uper, CVMatImg_Uper, CVMatImg_Uper, null, _nowIplImage_Uper);
+                //MIL.MbufGet2d(MilImage_Uper, 0, 0, 4096, 3072, imgBuf_Uper);
+                MIL.MbufGet2d(MilImage_Uper, 0, 0, LamiSystem.GetSet_Upper_Garo, LamiSystem.GetSet_Upper_Sero, _imgBufUper);
 
+                //방열판 검사기를 진행하면서 수정함. 20160427
+                //전 : 시작
+                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(_imgBufUper, 0);
+                _cvMatImgUper.Data = bufPtr;
+                Cv.Merge(_cvMatImgUper, _cvMatImgUper, _cvMatImgUper, null, _nowIplImageUper);
+                //전 : 종료
+
+                //후 : 시작
+                _nowIplImageUper.ImageData = Marshal.UnsafeAddrOfPinnedArrayElement(_imgBufUper, 0); ;
+                //후 : 종료
 
                 Grab_Thread_Uper = new Thread(Inspect_Run_Run_Grab_Running_Uper);
                 Grab_Thread_Uper.Start();
 
                 
+                Thread.Sleep(3);
+            }
+        }
+
+        private void Inspect_Run_Run_Threading_Grab_Right_Loop()
+        {
+            //Trace.WriteLine((_traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
+
+            Process myProcess = Process.GetCurrentProcess();
+            myProcess.PriorityClass = ProcessPriorityClass.RealTime;
+            myProcess.Threads[0].PriorityLevel = ThreadPriorityLevel.TimeCritical;
+
+            while (VisionJobWorking)
+            {
+
+                MIL.MdigGrab(MilDigitizer_Right, MilImage_Right);
+
+
+                if (Inspect_Run_Run_TrigTime_Check_Right() == false)
+                {
+                    //MessageBox.Show(MethodBase.GetCurrentMethod().Name + " Complete Falg Right");// + e.Message);
+                    //_stopwatch.Stop();
+                    //_stopwatch.Reset();
+                    Trace.WriteLine("이중 트리거 입력" + " : " + _stopwatch.ElapsedMilliseconds.ToString());
+                    continue;
+                    //return;
+
+                }
+
+                //타임킬링 진행하고 있어 함수 임시로 접음.
+                //새로운 제품이 감지되었음을 기록하는 함수와 시간변수설정
+                Inspect_Run_Run_GetSet_Triger_Number();
+                //_SeqStopwatch.Reset();
+                //_SeqStopwatch.Start();
+                //_dtInspDataSaveTime = DateTime.Now;
+
+                Array.Clear(_imgBufRigh, 0, _imgBufRigh.Length);
+                _CycleCompleteFlag_Right = false;
+                //MIL.MbufGet2d(MilImage_Right, 0, 0, 4096, 3072, imgBuf_Right);
+                MIL.MbufGet2d(MilImage_Right, 0, 0, LamiSystem.GetSet_Right_Garo, LamiSystem.GetSet_Right_Sero, _imgBufRigh);
+                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(_imgBufRigh, 0);
+                _cvMatImgRigh.Data = bufPtr;
+                Cv.Merge(_cvMatImgRigh, _cvMatImgRigh, _cvMatImgRigh, null, _nowIplImageRigh);
+
+
+                Grab_Thread_Right = new Thread(Inspect_Run_Run_Grab_Running_Right);
+                Grab_Thread_Right.Start();
+
+
                 Thread.Sleep(3);
             }
         }
@@ -2334,6 +2759,42 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
             Trace.WriteLine((NowTrigNumber).ToString("00000") + " 정상 트리거 입력 상부 : Method Name : " + MethodBase.GetCurrentMethod().Name);
             
+            return true;
+        }
+
+        Stopwatch TrigWatch_Right = new Stopwatch();
+        public bool Inspect_Run_Run_TrigTime_Check_Right()
+        {
+            TrigWatch_Right.Stop();
+            //1 int tmpElapsed = int.Parse(TrigWatch_Right.ElapsedMilliseconds.ToString());
+
+            //1 
+            string strElapsed = TrigWatch_Right.ElapsedMilliseconds.ToString();
+            //Inspect_Run_Run_Data_Monitor("Right : " + strElapsed);
+            Trace.WriteLine((NowTrigNumber).ToString("00000") + "Right : " + strElapsed);
+            int tmpElapsed = int.Parse(strElapsed);
+            //1
+
+            if (tmpElapsed == 0)
+            {
+                TrigWatch_Right.Reset();
+                TrigWatch_Right.Start();
+                return true;
+            }
+
+            if (tmpElapsed < _iTriggerDeleay_Right)
+            {
+                TrigWatch_Right.Start();
+                Trace.WriteLine((NowTrigNumber).ToString("00000") + " 간섭 트리거 입력 상부 : Method Name : " + MethodBase.GetCurrentMethod().Name);
+
+                return false;
+            }
+
+            TrigWatch_Right.Reset();
+            TrigWatch_Right.Start();
+
+            Trace.WriteLine((NowTrigNumber).ToString("00000") + " 정상 트리거 입력 상부 : Method Name : " + MethodBase.GetCurrentMethod().Name);
+
             return true;
         }
 
@@ -2391,6 +2852,8 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
         private Thread Grab_Thread_Uper;
 
+        private Thread Grab_Thread_Right;
+
         private void Inspect_Run_Run_Threading_Grab_Down_Loop()
         {
             //Trace.WriteLine((_traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
@@ -2415,12 +2878,13 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                     continue;
                 }
 
-                Array.Clear(imgBuf_Down, 0, imgBuf_Down.Length);
+                Array.Clear(_imgBufDown, 0, _imgBufDown.Length);
                 _CycleCompleteFlag_Down = false;
-                MIL.MbufGet2d(MilImage_Down, 0, 0, 4096, 3072, imgBuf_Down);
-                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(imgBuf_Down, 0);
-                CVMatImg_Down.Data = bufPtr;
-                Cv.Merge(CVMatImg_Down, CVMatImg_Down, CVMatImg_Down, null, _nowIplImage_Down);
+                //MIL.MbufGet2d(MilImage_Down, 0, 0, 4096, 3072, imgBuf_Down);
+                MIL.MbufGet2d(MilImage_Down, 0, 0, LamiSystem.GetSet_Left_Garo, LamiSystem.GetSet_Left_Sero, _imgBufDown);
+                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(_imgBufDown, 0);
+                _cvMatImgDown.Data = bufPtr;
+                Cv.Merge(_cvMatImgDown, _cvMatImgDown, _cvMatImgDown, null, _nowIplImageLeft);
                 
                 Grab_Thread_Down = new Thread(Inspect_Run_Run_Grab_Running_Down);
                 Grab_Thread_Down.Start();
@@ -2551,6 +3015,29 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 Inspect_Run_Run_IplBoxImage_Loading_Uper(disIplImage);
             }
         }
+
+        private delegate void delegate_IplBoxImage_Image_Loading_Right(IplImage disIplImage);
+        private void Inspect_Run_Run_IplBoxImage_Loading_Right(IplImage disIplImage)
+        {
+            try
+            {
+                if (InvokeRequired)
+                {
+                    delegate_IplBoxImage_Image_Loading_Right del = Inspect_Run_Run_IplBoxImage_Loading_Right;
+                    Invoke(del, disIplImage);
+                }
+                else
+                {
+                    Inspect_Main01_IplBox.ImageIpl = disIplImage;
+                    Inspect_Main01_IplBox.Refresh();
+                }
+            }
+            catch (Exception)
+            {
+                Inspect_Run_Run_IplBoxImage_Loading_Right(disIplImage);
+            }
+        }
+
 
         private delegate void delegate_IplBoxImage_Image_Loading_Down(IplImage disIplImage);
         private void Inspect_Run_Run_IplBoxImage_Loading_Down(IplImage disIplImage)
@@ -2753,12 +3240,13 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         private int tmpintData = 1;
         private bool ROI_Search_Result_Uper = false;
         private bool ROI_Search_Result_Down = false;
+        private bool ROI_Search_Result_Right = false;
         private void Inspect_Run_Run_Grab_Running_Uper()
         {
             try
             {
                 //로딩한 이미지의 ROI 처리를 진행한다.
-                ROI_Search_Result_Uper = Inspect_Run_Run_ROI_EdgeLine_Centering_Uper(_nowIplImage_Uper);
+                ROI_Search_Result_Uper = Inspect_Run_Run_ROI_EdgeLine_Centering_Uper(_nowIplImageUper);
                 _CycleCompleteFlag_Uper = true;
                 Inspect_Run_Run_Drawing_Result_Uper();
                 return;
@@ -2770,13 +3258,29 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
         }
 
+        private void Inspect_Run_Run_Grab_Running_Right()
+        {
+            try
+            {
+                //로딩한 이미지의 ROI 처리를 진행한다.
+                ROI_Search_Result_Right = Inspect_Run_Run_ROI_EdgeLine_Centering_Right(_nowIplImageRigh);
+                _CycleCompleteFlag_Right = true;
+                Inspect_Run_Run_Drawing_Result_Right();
+                return;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+                throw;
+            }
+        }
         private void Inspect_Run_Run_Grab_Running_Down()
         {
             //트리거 일렬번호를 레지로 부터 읽은다음 1을 증가하고 다시 저장한다.
             try
             {
                 //로딩한 이미지의 ROI 처리를 진행한다.
-                ROI_Search_Result_Down = Inspect_Run_Run_ROI_EdgeLine_Centering_Down(_nowIplImage_Down);
+                ROI_Search_Result_Down = Inspect_Run_Run_ROI_EdgeLine_Centering_Down(_nowIplImageLeft);
                 _CycleCompleteFlag_Down = true;
                 Inspect_Run_Run_Drawing_Result_Down();
 
@@ -2797,6 +3301,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
         private bool Uper_Measure_Result = true;
         private bool Down_Measure_Result = true;
+        private bool Right_Measure_Result = true;
 
         private void UMAC_Data_Communication()
         {
@@ -2873,12 +3378,14 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 }
                 else
                 {
+                    NowFailNumber_Uper = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_NG_Right"));
                     NowFailNumber_Uper = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_NG_Uper"));
                     NowFailNumber_Down = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_NG_Down"));
                     NowFailNumber_Both = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_NG_Both"));
                     NowProdectNumber = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_Product"));
                     NowPassNumber_Uper = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_OK_Uper"));
                     NowPassNumber_Down = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_OK_Down"));
+                    NowPassNumber_Down = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_OK_Right"));
 
                     float tmpValue = (float)(((float)NowProdectNumber - (float)NowFailNumber_Uper) / (float)NowProdectNumber) * 100f;
                     Inspect_uLabel_Assy05.Text = tmpValue.ToString("0.00") + " % (" + NowFailNumber_Uper.ToString() + " / " + NowProdectNumber.ToString() + ")";
@@ -2900,20 +3407,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         }
 
 
-        /*
-         private delegate void delegate_Run_Run_Image_Loading();
-        private void Inspect_Run_Run_Image_Loading()
-        {
-            try
-            {
-                if (InvokeRequired)
-                {
-                    delegate_Run_Run_Image_Loading del = Inspect_Run_Run_Image_Loading;
-                    Invoke(del);
-                }
-                else
-                {
-        */
+     
 
         private void Inspect_Run_Run_GetSet_Product_Count()
         {
@@ -3050,7 +3544,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             //if (Umac_Staus == "11")
                 umac.Umac_SetData_P5101(Inspect_Result);
         }
-        */
+        
         private delegate void delegate_Run_Run_Image_Loading();
         private void Inspect_Run_Run_Image_Loading()
         {
@@ -3066,14 +3560,14 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                     //파일을 저장한다.
                     //Tack_Time_Watch_Gap.Reset();
                     //Tack_Time_Watch_Gap.Start();
-                    string imageFilePath = "M:\\NowImage" + NowGapNumber.ToString("00") + ".jpg";
-                    _nowIplImage_Uper.SaveImage(imageFilePath);
+                    string imageFilePath = "C:\\NowImage" + NowGapNumber.ToString("00") + ".jpg";
+                    _nowIplImageUper.SaveImage(imageFilePath);
                     //Tack_Time_Watch_Gap.Stop();
                     //Inspect_Run_Run_TackTime_TextBox_Reflash();
 
                     //Tack_Time_Watch_Gap.Reset();
                     //Tack_Time_Watch_Gap.Start();
-                    Cv.Copy(IplImage.FromFile(imageFilePath), SrcIplImage_Uper);
+                    Cv.Copy(IplImage.FromFile(imageFilePath), _srcIplImageUper);
                     //Tack_Time_Watch_Gap.Stop();
                     //Inspect_Run_Run_TackTime_TextBox_Reflash();
                 }
@@ -3084,7 +3578,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
            
         }
-
+        */
 
         private delegate void Delegate_Run_Run_StopWatch_Result_Inspection_Display();
         private void Inspect_Run_Run_TextBox_Reflash()
@@ -3170,7 +3664,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
         }
 
-
+/*
         public void Inspect_Run_Run_Grab_Manual()
         {
             _dtInspDataSaveTime = DateTime.Now;
@@ -3183,7 +3677,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             Inspect_Initionalize();
 
             //로딩한 이미지의 ROI 처리를 진행한다.
-            bool Serarch_Result = Inspect_Run_Run_ROI_EdgeLine_Centering_Uper(SrcIplImage_Uper);
+            bool Serarch_Result = Inspect_Run_Run_ROI_EdgeLine_Centering_Uper(_srcIplImageUper);
 
             if (Serarch_Result == false) Inspect_Run_Run_None_Point_Search_Display();
 
@@ -3198,7 +3692,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             Inspect_Run_Run_Inspect_Result_Display_Uper();
         }
 
-        /*
+        
         private void Inspect_Manual_Image_Grabing()
         {
             _dtInspDataSaveTime = DateTime.Now;
@@ -3343,6 +3837,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         }
 
         private int _iPaint_Down_Flag = 0;
+        private int _iPaint_Right_Flag = 0;
         private int NowGapTypeNumber;
         private void Inspect_Run_Run_Inspect_Result_Display_Uper()
         {
@@ -3387,6 +3882,36 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
             }
         }
+
+
+        private void Inspect_Run_Run_Inspect_Result_Display_Right()
+        {
+            try
+            {
+                if (Inspect_Main01_IplBox.Visible != true) return;
+
+                _iPaint_Right_Flag = 1;
+
+                Result_Display_Struct Struct_Data = new Result_Display_Struct();
+                Struct_Data.itemResult = new List<string>();
+                Struct_Data.itemResult = itemResult_Right;
+                GetSet_Draw_GC_Right = Inspect_Main01_IplBox.CreateGraphics();
+                
+                for (int i = 0; i < Struct_Data.itemResult.Count; i++)
+                {
+                    if (Struct_Data.itemResult[i] == "NG") myLinePen.Color = Color.Red;
+                    else myLinePen.Color = Color.LawnGreen;
+                    
+                    gc_Right.DrawRectangle(myLinePen, LamiSystem.RectListInspBoxZone_Right[iLstNowRoiNo_Right[i * 2]]);
+                    gc_Right.DrawRectangle(myLinePen, LamiSystem.RectListInspBoxZone_Right[iLstNowRoiNo_Right[i * 2 + 1]]);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+            }
+        }
+
 
         private void Inspect_Run_Run_Inspect_Result_Display_Down()
         {
@@ -3530,6 +4055,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         */
         private readonly List<string> strLstDisplayData_Uper = new List<string>();
         private readonly List<string> strLstDisplayData_Down = new List<string>();
+        private readonly List<string> strLstDisplayData_Right = new List<string>();
         private void Inspect_Run_Run_None_Point_Search_Display()
         {
             //Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
@@ -3691,7 +4217,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             else Struct_Data.nowROI_Number = 0;
 
             //boxArrowPntLst = _posConverter_Gap.ImageToBox(SrcIplImageGap, Now_PictureBox, _savedCvPntLstImagePoint);
-            boxArrowPntLst = _posConverter_Uper.ImageToBox(NowSavedImage_Uper, Now_PictureBox, _savedCvPntLstImagePoint_Uper);
+            boxArrowPntLst = _posConverter_Uper.ImageToBox(_nowSavedImageUper, Now_PictureBox, _savedCvPntLstImagePoint_Uper);
             boxArrowPntLst[4] = boxArrowPntLst[0];
             boxArrowPntLst[8] = boxArrowPntLst[0];
             boxArrowPntLst[6] = boxArrowPntLst[2];
@@ -4067,6 +4593,11 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         private static string _failSaveData_Uper = string.Empty;
         private static string _failSaveImage_Uper = string.Empty;
 
+        private static string _passSaveData_Right = string.Empty;
+        private static string _passSaveImage_Right = string.Empty;
+        private static string _failSaveData_Right = string.Empty;
+        private static string _failSaveImage_Right = string.Empty;
+
         private static string _passSaveData_Down = string.Empty;
         private static string _passSaveImage_Down = string.Empty;
         private static string _failSaveData_Down = string.Empty;
@@ -4086,6 +4617,27 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                     if (_failSaveImage_Uper == "ON" && Uper_Measure_Result == false)
                     {
                         Inspect_Run_Run_Drawing_Result_To_History_All_Uper();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+            }
+        }
+
+
+        private void Inspect_Result_Data_Save_Right()
+        {
+            try
+            {
+                if ((_passSaveImage_Right == "ON" && Right_Measure_Result == true) || (_failSaveImage_Right == "ON" && Right_Measure_Result == false))
+                {
+                    Inspect_Result_Image_To_File_Right();
+                    Inspect_Run_Run_Drawing_Result_To_History_NG_Right();
+                    if (_failSaveImage_Right == "ON" && Right_Measure_Result == false)
+                    {
+                        Inspect_Run_Run_Drawing_Result_To_History_All_Right();
                     }
                 }
             }
@@ -4192,6 +4744,19 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             return fileName;
         }
 
+        private string Inspect_Set_FileName_ExcelFile_Right(DateTime checkTime)
+        {
+            //string folderName = NowExcelFolderSavePath + "\\Gap" + String.Format("\\{0:00}년{1:00}월", checkTime.Year, checkTime.Month);
+            string folderName = _NowExcelFolderSavePath_Right + String.Format("\\{0:00}년{1:00}월", checkTime.Year, checkTime.Month);
+            string fileName = folderName + String.Format("\\{0:00}년{1:00}월{2:00}일 상부 비전.csv", checkTime.Year, checkTime.Month, checkTime.Day);
+            List<string> itemNames = Inspect_ExcelFile_ItemNames_Make_Right();
+            excelFile.Excel_Folder_Check_Or_Make(folderName);
+            excelFile.Excel_File_Check_Or_Make_Right(fileName, itemNames);
+
+            return fileName;
+        }
+
+
         public List<string> Inspect_ExcelFile_ItemNames_Make_Uper()
         {
             List<string> nameList = new List<string>();
@@ -4200,6 +4765,18 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             {
                 string tmpData = LamiSystem.StrLstRcpConGridData_Uper[i*11];
                 nameList.Add(LamiSystem.StrLstRcpConGridData_Uper[i*11]);
+            }
+            return nameList;
+        }
+
+        public List<string> Inspect_ExcelFile_ItemNames_Make_Right()
+        {
+            List<string> nameList = new List<string>();
+            int RecipeRows = LamiSystem.StrLstRcpConGridData_Right.Count / 11;
+            for (int i = 0; i < RecipeRows; i++)
+            {
+                string tmpData = LamiSystem.StrLstRcpConGridData_Right[i * 11];
+                nameList.Add(LamiSystem.StrLstRcpConGridData_Right[i * 11]);
             }
             return nameList;
         }
@@ -4303,6 +4880,69 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
         }
 
+
+        public void FormDlgInsp_Inspection_Excel_Data_Write_Right()
+        {
+            try
+            {
+                //Stopwatch excelwritewatch = new Stopwatch();
+                //excelwritewatch.Reset();
+                //excelwritewatch.Start();
+
+                Struct_Inspection_Excel_Data struct_Excel_Right = new Struct_Inspection_Excel_Data();
+                struct_Excel_Right.itemResult_List = itemResult_Right;
+                struct_Excel_Right.MeasureData_List = MeasureData_Right;
+
+                Right_Measure_Result = true;
+
+                struct_Excel_Right.ExcelWriteData = new List<string>();
+                _dtInspDataSaveTime = DateTime.Now;
+
+                if (_passSaveData_Right == "OFF" && _strSavedInspectResult_Right == "OK") return;
+                if (_failSaveData_Right == "OFF" && _strSavedInspectResult_Right == "NG") return;
+
+                struct_Excel_Right.ExcelWriteData.Add(GetSet_NowModel_Name);
+
+                //2015.02.10 WKB 207
+                //struct_Excel_Right.SaveTriggerNum = NowTrigNumber.ToString("0000000000");
+
+                //2015.02.10 WKB 208
+                struct_Excel_Right.SaveTriggerNum = _iSavedTrigNumber.ToString("0000000000");
+                //Trace.WriteLine("iSavedTriggerNumber : " + _iSavedTrigNumber);
+
+                struct_Excel_Right.ExcelWriteData.Add(struct_Excel_Right.SaveTriggerNum);
+
+                struct_Excel_Right.writeTime = String.Format(" {0:00}년{1:00}월{2:00}일 {3:00}시{4:00}분{5:00}.{6:000}초",
+                    _dtInspDataSaveTime.Year, _dtInspDataSaveTime.Month, _dtInspDataSaveTime.Day,
+                    _dtInspDataSaveTime.Hour,
+                    _dtInspDataSaveTime.Minute, _dtInspDataSaveTime.Second,
+                    _dtInspDataSaveTime.Millisecond);
+                struct_Excel_Right.ExcelWriteData.Add(struct_Excel_Right.writeTime);
+
+                if (_strSavedInspectResult_Right == "OK") Right_Measure_Result = true;
+                else Right_Measure_Result = false;
+
+
+
+                struct_Excel_Right.ExcelWriteData.Add(_strSavedInspectResult_Right);
+
+                for (int i = 0; i < struct_Excel_Right.MeasureData_List.Count; i++)
+                {
+                    struct_Excel_Right.ExcelWriteData.Add(struct_Excel_Right.MeasureData_List[i]);
+                }
+
+                struct_Excel_Right.nowExcelFileName = Inspect_Set_FileName_ExcelFile_Right(_dtInspDataSaveTime);
+                excelFile.WriteExcelFile(struct_Excel_Right.nowExcelFileName, struct_Excel_Right.ExcelWriteData);
+
+                //excelwritewatch.Stop();
+                //Trace.WriteLine("엑셀 저장 : "+excelwritewatch.ElapsedMilliseconds.ToString());
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+            }
+
+        }
 
         public void FormDlgInsp_Inspection_Excel_Data_Write_Down()
         {
@@ -4672,13 +5312,40 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 _strHisImgName_Uper.Clear();
                 
                 ((PictureBoxIpl) (uPnl_History_All_Uper.ClientArea.Controls[_iAllHistoryViewNo_Uper])).ImageIpl =
-                    NowSavedImage_Uper;
+                    _nowSavedImageUper;
                 uPnl_History_All_Uper.ClientArea.Controls[_iAllHistoryViewNo_Uper].Refresh();
 
                 Inspect_Run_Run_History_Grid_All_Uper();
 
                 if (_iAllHistoryViewNo_Uper + 1 == 20) _iAllHistoryViewNo_Uper = 0;
                 else _iAllHistoryViewNo_Uper++;
+            }
+        }
+
+
+        private void Inspect_Run_Run_Drawing_Result_To_History_All_Right()
+        {
+            if (uPnl_History_All_Right.InvokeRequired)
+            {
+                Delegate_Run_Run_Drawing_Result_To_File_Display del = Inspect_Run_Run_Drawing_Result_To_History_All_Right;
+                uPnl_History_All_Right.Invoke(del);
+            }
+            else
+            {
+                if (_strHisImgName_Right.Count == 0) return;
+                if (string.IsNullOrEmpty(_strHisImgName_Right[_strHisImgName_Right.Count - 1]) == true) return;
+
+                _strHistoryViewNameAll_Right[_iAllHistoryViewNo_Right] = _strHisImgName_Right[_strHisImgName_Right.Count - 1];
+                _strHisImgName_Right.Clear();
+
+                ((PictureBoxIpl)(uPnl_History_All_Right.ClientArea.Controls[_iAllHistoryViewNo_Right])).ImageIpl =
+                    _nowSavedImageRigh;
+                uPnl_History_All_Right.ClientArea.Controls[_iAllHistoryViewNo_Right].Refresh();
+
+                Inspect_Run_Run_History_Grid_All_Right();
+
+                if (_iAllHistoryViewNo_Right + 1 == 20) _iAllHistoryViewNo_Right = 0;
+                else _iAllHistoryViewNo_Right++;
             }
         }
 
@@ -4704,6 +5371,32 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                     string ColName = (i + 1).ToString("0");
                     row.Cells[ColName].Value =
                         uGrd_Inspect_Measure_Uper.DisplayLayout.Rows[i].Cells["측정"].Value.ToString();
+                }
+            }
+        }
+
+        private void Inspect_Run_Run_History_Grid_All_Right()
+        {
+            UltraGridRow row;
+
+            if (uGrd_History_All_Right.DisplayLayout.Rows.Count < 20)
+            {
+                row = uGrd_History_All_Right.DisplayLayout.Bands[0].AddNew();
+            }
+            else
+            {
+                row = uGrd_History_All_Right.DisplayLayout.Rows[_iAllHistoryViewNo_Right];
+            }
+
+            for (int i = 0; i < uGrd_Inspect_Measure_Right.DisplayLayout.Rows.Count; i++)
+            {
+                string WriteMeasData =
+                    uGrd_Inspect_Measure_Right.DisplayLayout.Rows[i].Cells["측정"].Value.ToString();
+                if (WriteMeasData != "")
+                {
+                    string ColName = (i + 1).ToString("0");
+                    row.Cells[ColName].Value =
+                        uGrd_Inspect_Measure_Right.DisplayLayout.Rows[i].Cells["측정"].Value.ToString();
                 }
             }
         }
@@ -4739,7 +5432,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         }
         */
 
-        
+
 
 
         //_iImgCount 를 _iHistoryViewNo에 넘져준다. 
@@ -4757,7 +5450,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
                 _strHistoryViewNameAll_Down[_iAllHistoryViewNo_Down] = _strHisImgName_Down[_strHisImgName_Down.Count - 1];
                 ((PictureBoxIpl) (uPnl_History_All_Down.ClientArea.Controls[_iAllHistoryViewNo_Down])).ImageIpl =
-                    NowSavedImage_Down;
+                    _nowSavedImageLeft;
                 uPnl_History_All_Down.ClientArea.Controls[_iAllHistoryViewNo_Down].Refresh();
 
                 Inspect_Run_Run_History_Grid_All_Down();
@@ -4813,7 +5506,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 //20150327 WKB 209
                 //_strHistoryViewNameNG_Uper[_iNGHistoryViewNo_Uper] = _strHisImgName_Uper;
 
-                ((PictureBoxIpl) (uPnl_History_NG_Uper.ClientArea.Controls[_iNGHistoryViewNo_Uper])).ImageIpl = NowSavedImage_Uper;
+                ((PictureBoxIpl) (uPnl_History_NG_Uper.ClientArea.Controls[_iNGHistoryViewNo_Uper])).ImageIpl = _nowSavedImageUper;
                 uPnl_History_NG_Uper.ClientArea.Controls[_iNGHistoryViewNo_Uper].Refresh();
 
                 Inspect_Run_Run_History_Grid_NG_Uper();
@@ -4822,6 +5515,37 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 else _iNGHistoryViewNo_Uper++;
 
                 
+            }
+        }
+
+        private void Inspect_Run_Run_Drawing_Result_To_History_NG_Right()
+        {
+            if (uPnl_History_NG_Right.InvokeRequired)
+            {
+                Delegate_Run_Run_Drawing_Result_To_File_Display del = Inspect_Run_Run_Drawing_Result_To_History_NG_Right;
+                uPnl_History_NG_Right.Invoke(del);
+            }
+            else
+            {
+                //20150327 WKB 301
+                if (_strHisImgName_Down.Count == 0) return;
+                if (string.IsNullOrEmpty(_strHisImgName_Down[_strHisImgName_Down.Count - 1]) == true) return;
+
+                _strHistoryViewNameNG_Right[_iAllHistoryViewNo_Right] = _strHisImgName_Right[_strHisImgName_Right.Count - 1];
+
+
+                //20150327 WKB 209
+                //_strHistoryViewNameNG_Right[_iNGHistoryViewNo_Right] = _strHisImgName_Right;
+
+                ((PictureBoxIpl)(uPnl_History_NG_Right.ClientArea.Controls[_iNGHistoryViewNo_Right])).ImageIpl = _nowSavedImageRigh;
+                uPnl_History_NG_Right.ClientArea.Controls[_iNGHistoryViewNo_Right].Refresh();
+
+                Inspect_Run_Run_History_Grid_NG_Right();
+
+                if (_iNGHistoryViewNo_Right + 1 == 20) _iNGHistoryViewNo_Right = 0;
+                else _iNGHistoryViewNo_Right++;
+
+
             }
         }
 
@@ -4851,6 +5575,32 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
         }
 
+        private void Inspect_Run_Run_History_Grid_NG_Right()
+        {
+            UltraGridRow row;
+
+            if (uGrd_History_NG_Right.DisplayLayout.Rows.Count < 20)
+            {
+                row = uGrd_History_NG_Right.DisplayLayout.Bands[0].AddNew();
+            }
+            else
+            {
+                row = uGrd_History_NG_Right.DisplayLayout.Rows[_iNGHistoryViewNo_Right];
+            }
+
+            for (int i = 0; i < uGrd_Inspect_Measure_Right.DisplayLayout.Rows.Count; i++)
+            {
+                string WriteMeasData =
+                    uGrd_Inspect_Measure_Right.DisplayLayout.Rows[i].Cells["측정"].Value.ToString();
+                if (WriteMeasData != "")
+                {
+                    string ColName = (i + 1).ToString("0");
+                    row.Cells[ColName].Value =
+                        uGrd_Inspect_Measure_Right.DisplayLayout.Rows[i].Cells["측정"].Value.ToString();
+                }
+            }
+        }
+
         private void Inspect_Run_Run_Drawing_Result_To_History_NG_Down()
         {
             if (uPnl_History_NG_Down.InvokeRequired)
@@ -4862,7 +5612,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             {
                 _strHistoryViewNameNG_Down[_iNGHistoryViewNo_Down] = _strHisImgName_Down[_strHisImgName_Down.Count - 1];
 
-                ((PictureBoxIpl)(uPnl_History_NG_Down.ClientArea.Controls[_iNGHistoryViewNo_Down])).ImageIpl = NowSavedImage_Down;
+                ((PictureBoxIpl)(uPnl_History_NG_Down.ClientArea.Controls[_iNGHistoryViewNo_Down])).ImageIpl = _nowSavedImageLeft;
                 uPnl_History_NG_Down.ClientArea.Controls[_iNGHistoryViewNo_Down].Refresh();
 
                 Inspect_Run_Run_History_Grid_NG_Down();
@@ -4905,11 +5655,15 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         List<string> _strHistoryViewNameAll_Down = new List<string> { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
         List<string> _strHistoryViewNameNG_Down = new List<string> { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
 
+        List<string> _strHistoryViewNameAll_Right = new List<string> { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
+        List<string> _strHistoryViewNameNG_Right = new List<string> { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" };
+
         //private bool Uper_Measure_Result = false;
         //private bool Down_Measure_Result = false;
 
         public int _iSaved_Uper_Number = -1;
         public int _iSaved_Down_Number = -1;
+        public int _iSaved_Right_Number = -1;
 
         private void Inspect_Result_Image_To_File_Uper()
         {
@@ -4934,12 +5688,41 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             //Stopwatch imagesavewatch = new Stopwatch();
             //imagesavewatch.Start();
            //이미지에 검사결과를 기록하기 전에 복사해 놓은 이미지를 저장한다.
-            NowSavedImage_Uper.SaveImage(imageFilePath_Uper);
+            _nowSavedImageUper.SaveImage(imageFilePath_Uper);
 
             //imagesavewatch.Stop();
             //Trace.WriteLine("이미지 저장 시간 : "+imagesavewatch.ElapsedMilliseconds.ToString());
         }
 
+
+        private void Inspect_Result_Image_To_File_Right()
+        {
+            Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
+
+            string imageSaveFolderName_Right = Inspect_Set_FolderName_ImageFile(_dtInspDataSaveTime, "상부");
+            string disText = string.Empty;
+            if (Right_Measure_Result == true) disText = "OK";
+            else disText = "NG";
+
+            string imageFileName_Right = _iSavedTrigNumber.ToString("0000000000") + " " + disText + //_strSavedInspectResult_Right +
+                                   String.Format(" {0:00}년{1:00}월{2:00}일 {3:00}시{4:00}분{5:00}.{6:000}초",
+                                       _dtInspDataSaveTime.Year, _dtInspDataSaveTime.Month, _dtInspDataSaveTime.Day,
+                                       _dtInspDataSaveTime.Hour,
+                                       _dtInspDataSaveTime.Minute, _dtInspDataSaveTime.Second,
+                                       _dtInspDataSaveTime.Millisecond);
+
+            //_strHisImgName_Right = imageSaveFolderName_Right + "\\" + imageFileName_Right + ".jpg";
+            _strHisImgName_Right.Add(imageSaveFolderName_Right + "\\" + imageFileName_Right + ".jpg");
+            string imageFilePath_Right = imageSaveFolderName_Right + "\\" + imageFileName_Right + ".jpg";
+
+            //Stopwatch imagesavewatch = new Stopwatch();
+            //imagesavewatch.Start();
+            //이미지에 검사결과를 기록하기 전에 복사해 놓은 이미지를 저장한다.
+            _nowSavedImageRigh.SaveImage(imageFilePath_Right);
+
+            //imagesavewatch.Stop();
+            //Trace.WriteLine("이미지 저장 시간 : "+imagesavewatch.ElapsedMilliseconds.ToString());
+        }
 
         private void Inspect_Result_Image_To_File_Down()
         {
@@ -4963,7 +5746,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             string imageFilePath_Down = imageSaveFolderName_Down + "\\" + imageFileName_Down + ".jpg";
 
             //이미지에 검사결과를 기록하기 전에 복사해 놓은 이미지를 저장한다.
-            NowSavedImage_Down.SaveImage(imageFilePath_Down);
+            _nowSavedImageLeft.SaveImage(imageFilePath_Down);
         }
 
         /*
@@ -5131,7 +5914,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         {
             try
             {
-                Inspect_Run_Run_IplBoxImage_Loading_Uper(_nowIplImage_Uper);
+                Inspect_Run_Run_IplBoxImage_Loading_Uper(_nowIplImageUper);
                 Inspect_Run_Run_ROI_CenterPoint_Find_Uper();
                
                 //Inspection_Data_List inspect_Data = Inspect_Run_Run_FindData_Inspecting_Uper();
@@ -5155,6 +5938,46 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
                 Result_Listing_Thread_Uper = new Thread(Inspect_Result_Data_Save_Uper);
                 Result_Listing_Thread_Uper.Start();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+            }
+        }
+
+
+        private Thread Measure_Display_Thread_Right;
+        private Thread Graph_Display_Thread_Right;
+
+        //20150327 WKB 301
+        public void Inspect_Run_Run_Drawing_Result_Right()
+        {
+            try
+            {
+                Inspect_Run_Run_IplBoxImage_Loading_Right(_nowIplImageRigh);
+                Inspect_Run_Run_ROI_CenterPoint_Find_Right();
+
+                //Inspection_Data_List inspect_Data = Inspect_Run_Run_FindData_Inspecting_Right();
+
+                Inspection_Grid_Data[] StructData = Inspect_Run_Run_FindData_Inspecting_Right();
+
+                Measure_Display_Thread_Right = new Thread(new ParameterizedThreadStart(Inspect_Run_Run_FindData_Display_Right));
+                Measure_Display_Thread_Right.Start(StructData);
+
+                FormDlgInsp_Inspection_Excel_Data_Write_Right();
+
+                Graph_Display_Thread_Right = new Thread(new ParameterizedThreadStart(Inspect_Run_Run_Measure_Graph_Right));
+                Graph_Display_Thread_Right.Start(StructData);
+
+                Inspect_Save_Data_Copy_Right();
+                System.GC.Collect(0, GCCollectionMode.Forced);
+                System.GC.WaitForFullGCComplete();
+
+                Result_Display_Thread_Right = new Thread(Inspect_Run_Run_Inspect_Result_Display_Right);
+                Result_Display_Thread_Right.Start();
+
+                Result_Listing_Thread_Right = new Thread(Inspect_Result_Data_Save_Right);
+                Result_Listing_Thread_Right.Start();
             }
             catch (Exception e)
             {
@@ -5251,9 +6074,11 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
         private Thread Result_Listing_Thread_Uper;
         private Thread Result_Listing_Thread_Down;
+        private Thread Result_Listing_Thread_Right;
 
         private Thread Result_Display_Thread_Uper;
         private Thread Result_Display_Thread_Down;
+        private Thread Result_Display_Thread_Right;
 
         private Thread Measure_Display_Thread_Down;
         private Thread Graph_Display_Thread_Down;
@@ -5264,7 +6089,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             try
             {
                 //로딩한 이미지를 표시해준다.
-                Inspect_Run_Run_IplBoxImage_Loading_Down(_nowIplImage_Down);
+                Inspect_Run_Run_IplBoxImage_Loading_Down(_nowIplImageLeft);
                 Inspect_Run_Run_ROI_CenterPoint_Find_Down();
 
                 Inspection_Grid_Data[] StructData = Inspect_Run_Run_FindData_Inspecting_Down();
@@ -5516,6 +6341,46 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
         }
 
+        public void Inspect_Run_Run_Measure_Graph_Right(object inspect_Data)
+        {
+            try
+            {
+                Inspection_Grid_Data[] grid_Struct = (Inspection_Grid_Data[])inspect_Data;
+                ChartRemovedChart_Right = -1;
+                //int Mesaure_Col_Count = 13;
+                //int Measure_Rows = inspectData.Inspection_Data.Count/Mesaure_Col_Count;
+                for (int i = 0; i < grid_Struct.Count(); i++)
+                {
+                    //그래프 테이블 데이터 //Graph_No_Now
+                    string GrdData = grid_Struct[i].readName;
+                    if (GrdData == "") continue;
+
+                    //string UsedFlag = LamiSystem.StrLstRcpConGridData_Right[i * 11 + 9];
+                    //if (UsedFlag == "False") continue;
+
+                    double MeaValue = double.Parse(grid_Struct[i].dResultValueStr);
+
+                    int GraphRow_Count = -1;
+                    int GraphNum_Count = -1;
+                    for (int j = 0; j < 40; j++)
+                    {
+                        string RcpData = Graph_No_Now_Right[j];
+                        if (GrdData == RcpData)
+                        {
+                            GraphNum_Count = j / 4;
+                            GraphRow_Count = j % 4;
+                            break;
+                        }
+                    }
+                    Inspect_MeasureData_Graph_Dis_Right(GraphNum_Count, GraphRow_Count, MeaValue);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+            }
+        }
+        private int ChartRemovedChart_Right = -1;
         private int ChartRemovedChart_Uper = -1;
         public void Inspect_MeasureData_Graph_Dis_Uper(int Graph_Count, int Row_Count, double MeaValue)
         {
@@ -5533,7 +6398,21 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             Uper_MeasureTables[Graph_Count].Rows[Row_Count][99] = MeaValue;
         }
 
+        public void Inspect_MeasureData_Graph_Dis_Right(int Graph_Count, int Row_Count, double MeaValue)
+        {
+            if (Row_Count == 0)
+            {
+                Right_MeasureTables[Graph_Count].Columns.RemoveAt(0);
 
+                var measureColumn = new DataColumn();
+                measureColumn.DataType = Type.GetType("System.Double");
+                measureColumn.AllowDBNull = false;
+                measureColumn.DefaultValue = 0d;
+                Right_MeasureTables[Graph_Count].Columns.Add(measureColumn);
+            }
+
+            Right_MeasureTables[Graph_Count].Rows[Row_Count][99] = MeaValue;
+        }
 
         public void Inspect_Run_Run_Measure_Graph_Down(object inspect_Data)
         {
@@ -5713,10 +6592,12 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             //RectListImageZone 리스트를 작성하는 함수
             Inspect_Ready_Ready_RecipeBoxZone_To_ImageZone_Check_Uper();
             Inspect_Ready_Ready_RecipeBoxZone_To_ImageZone_Check_Down();
+            Inspect_Ready_Ready_RecipeBoxZone_To_ImageZone_Check_Right();
 
             //이미지 구역을 박스 구역으로 바꾸는 함수.
             Inspect_Ready_Ready_ImageZone_To_InspectBoxZone_Check_Uper();
             Inspect_Ready_Ready_ImageZone_To_InspectBoxZone_Check_Down();
+            Inspect_Ready_Ready_ImageZone_To_InspectBoxZone_Check_Right();
 
             //시스템의 설정 값을 적용한는 함수.
             Inspect_Ready_Run_System_Data_Load();
@@ -5724,6 +6605,7 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             //RectListImageZone 리스트를 이용하는 함수
             Inspect_Ready_Run_RecipeGrid_Data_Load_Uper();
             Inspect_Ready_Run_RecipeGrid_Data_Load_Down();
+            Inspect_Ready_Run_RecipeGrid_Data_Load_Right();
 
             //측정값 계산에 사용되는 켈값을 로딩한다.
             Inspect_Offset_Load_To_System();
@@ -5749,48 +6631,74 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             _passSaveData_Uper = LamiSystem.StrListSysConData[3];
             _failSaveData_Uper = LamiSystem.StrListSysConData[4];
 
-            _iEdgeParam1_Uper = int.Parse(LamiSystem.StrListSysConData[11]);
-            _iEdgeParam2_Uper = int.Parse(LamiSystem.StrListSysConData[12]);
-            _iEdgeParam3_Uper = int.Parse(LamiSystem.StrListSysConData[13]);
+            _iEdgeParam1_Uper = int.Parse(LamiSystem.StrListSysConData[6]);
+            _iEdgeParam2_Uper = int.Parse(LamiSystem.StrListSysConData[7]);
+            _iEdgeParam3_Uper = int.Parse(LamiSystem.StrListSysConData[8]);
 
-            _iLineParam1_Uper = int.Parse(LamiSystem.StrListSysConData[14]);
-            _iLineParam2_Uper = int.Parse(LamiSystem.StrListSysConData[15]);
-            _iLineParam3_Uper = int.Parse(LamiSystem.StrListSysConData[16]);
+            _iLineParam1_Uper = int.Parse(LamiSystem.StrListSysConData[9]);
+            _iLineParam2_Uper = int.Parse(LamiSystem.StrListSysConData[10]);
+            _iLineParam3_Uper = int.Parse(LamiSystem.StrListSysConData[11]);
 
-            _iGrabImageGaro_Uper = int.Parse(LamiSystem.StrListSysConData[17]);
-            _iGrabImageSero_Uper = int.Parse(LamiSystem.StrListSysConData[18]);
+            _iGrabImageGaro_Uper = int.Parse(LamiSystem.StrListSysConData[12]);
+            _iGrabImageSero_Uper = int.Parse(LamiSystem.StrListSysConData[13]);
 
             _dCalibration_GaRo_Uper = double.Parse(LamiSystem.StrListVisConData[2]);
             _dCalibration_SeRo_Uper = double.Parse(LamiSystem.StrListVisConData[5]);
 
-            _NowImageFolderSavePath_Down = LamiSystem.StrListSysConData[21];
-            _NowExcelFolderSavePath_Down = LamiSystem.StrListSysConData[24];
-            _passSaveImage_Down = LamiSystem.StrListSysConData[19];
-            _failSaveImage_Down = LamiSystem.StrListSysConData[20];
-            _passSaveData_Down = LamiSystem.StrListSysConData[22];
-            _failSaveData_Down = LamiSystem.StrListSysConData[23];
+
+            ////////////////////////////////////////////////////////////////////////////
+            _NowImageFolderSavePath_Right = LamiSystem.StrListSysConData[32];
+            _NowExcelFolderSavePath_Right = LamiSystem.StrListSysConData[35];
+            _passSaveImage_Right = LamiSystem.StrListSysConData[30];
+            _failSaveImage_Right = LamiSystem.StrListSysConData[31];
+            _passSaveData_Right = LamiSystem.StrListSysConData[33];
+            _failSaveData_Right = LamiSystem.StrListSysConData[34];
+
+            _iEdgeParam1_Right = int.Parse(LamiSystem.StrListSysConData[36]);
+            _iEdgeParam2_Right = int.Parse(LamiSystem.StrListSysConData[37]);
+            _iEdgeParam3_Right = int.Parse(LamiSystem.StrListSysConData[38]);
+
+            _iLineParam1_Right = int.Parse(LamiSystem.StrListSysConData[39]);
+            _iLineParam2_Right = int.Parse(LamiSystem.StrListSysConData[40]);
+            _iLineParam3_Right = int.Parse(LamiSystem.StrListSysConData[41]);
+
+            _iGrabImageGaro_Right = int.Parse(LamiSystem.StrListSysConData[42]);
+            _iGrabImageSero_Right = int.Parse(LamiSystem.StrListSysConData[43]);
+
+            _dCalibration_GaRo_Right = double.Parse(LamiSystem.StrListVisConData[14]);
+            _dCalibration_SeRo_Right = double.Parse(LamiSystem.StrListVisConData[17]);
+
+
+            ////////////////////////////////////////////////////////////////////////////
+
+            _NowImageFolderSavePath_Down = LamiSystem.StrListSysConData[17];
+            _NowExcelFolderSavePath_Down = LamiSystem.StrListSysConData[20];
+            _passSaveImage_Down = LamiSystem.StrListSysConData[15];
+            _failSaveImage_Down = LamiSystem.StrListSysConData[16];
+            _passSaveData_Down = LamiSystem.StrListSysConData[18];
+            _failSaveData_Down = LamiSystem.StrListSysConData[19];
+
+            _iEdgeParam1_Down = int.Parse(LamiSystem.StrListSysConData[21]);
+            _iEdgeParam2_Down = int.Parse(LamiSystem.StrListSysConData[22]);
+            _iEdgeParam3_Down = int.Parse(LamiSystem.StrListSysConData[23]);
+
+            _iLineParam1_Down = int.Parse(LamiSystem.StrListSysConData[24]);
+            _iLineParam2_Down = int.Parse(LamiSystem.StrListSysConData[25]);
+            _iLineParam3_Down = int.Parse(LamiSystem.StrListSysConData[26]);
+            
+            _iGrabImageGaro_Down = int.Parse(LamiSystem.StrListSysConData[27]);
+            _iGrabImageSero_Down = int.Parse(LamiSystem.StrListSysConData[28]);
 
             _dCalibration_GaRo_Down = double.Parse(LamiSystem.StrListVisConData[8]);
             _dCalibration_SeRo_Down = double.Parse(LamiSystem.StrListVisConData[11]);
 
-            _iEdgeParam1_Down = int.Parse(LamiSystem.StrListSysConData[30]);
-            _iEdgeParam2_Down = int.Parse(LamiSystem.StrListSysConData[31]);
-            _iEdgeParam3_Down = int.Parse(LamiSystem.StrListSysConData[32]);
-
-            _iLineParam1_Down = int.Parse(LamiSystem.StrListSysConData[33]);
-            _iLineParam2_Down = int.Parse(LamiSystem.StrListSysConData[34]);
-            _iLineParam3_Down = int.Parse(LamiSystem.StrListSysConData[35]);
-            
-            _iGrabImageGaro_Down = int.Parse(LamiSystem.StrListSysConData[36]);
-            _iGrabImageSero_Down = int.Parse(LamiSystem.StrListSysConData[37]);
-
-            _iTriggerDeleay_Uper = int.Parse(LamiSystem.StrListSysConData[44]);
-            _iTriggerDeleay_Down = int.Parse(LamiSystem.StrListSysConData[45]);
+            _iTriggerDeleay_Uper = int.Parse(LamiSystem.StrListSysConData[45]);
+            _iTriggerDeleay_Down = int.Parse(LamiSystem.StrListSysConData[46]);
         }
 
         private int _iTriggerDeleay_Uper = 500;
         private int _iTriggerDeleay_Down = 500;
-
+        private int _iTriggerDeleay_Right = 500;
         //20150304 WKB 209
         public void Inspect_Ready_Run_RecipeGrid_Data_Load_Uper()
         {
@@ -5816,6 +6724,33 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 iLstNowLstNo_Uper.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Uper[13 + (i * inspItemCount)])); //리스트 번호
 
                 iCenterPointToROI_Uper.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Uper[5 + (i * inspItemCount)]));
+            }
+        }
+
+        public void Inspect_Ready_Run_RecipeGrid_Data_Load_Right()
+        {
+            Inspect_Ready_Run_RecipeGrid_ListArray_Clear_Right();
+            //for (int i = 0; i < LamiSystem.RectListImageZone_Right.Count; i++)
+            for (int i = 0; i < LamiSystem.StrLstRcpConInspData_Right.Count / inspItemCount; i++)
+            {
+                iLstNowRowNo_Right.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[4 + (i * inspItemCount)])); //Row
+
+                int tmpROI = int.Parse(LamiSystem.StrLstRcpConInspData_Right[5 + (i * inspItemCount)]);
+                iLstNowRoiNo_Right.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[5 + (i * inspItemCount)])); //ROI
+                sLstNowTypNo_Right.Add(LamiSystem.StrLstRcpConInspData_Right[6 + (i * inspItemCount)]); //Type
+
+                //iLstNowSeqNo_Right.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[7 + (i * inspItemCount)])); //Seq No
+                string SeqNo = (LamiSystem.StrLstRcpConInspData_Right[7 + (i * inspItemCount)] == "1차") ? "1" : "2";
+                iLstNowSeqNo_Right.Add(int.Parse(SeqNo)); //Seq No
+
+                iLstNowSidNo_Right.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[8 + (i * inspItemCount)])); //Side No
+                sLstNowPolNo_Right.Add(LamiSystem.StrLstRcpConInspData_Right[9 + (i * inspItemCount)]); //극성
+                iLstNowDivNo_Right.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[10 + (i * inspItemCount)])); //분할
+                sLstNowDisNo_Right.Add(LamiSystem.StrLstRcpConInspData_Right[11 + (i * inspItemCount)]); //표시
+                iLstNowLgtNo_Right.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[12 + (i * inspItemCount)])); //밝기
+                iLstNowLstNo_Right.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[13 + (i * inspItemCount)])); //리스트 번호
+
+                iCenterPointToROI_Right.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[5 + (i * inspItemCount)]));
             }
         }
         //20150304 WKB 208
@@ -5862,6 +6797,25 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             iLstNowLstNo_Uper.Clear(); //Add(int.Parse(LamiSystem.StrLstRcpConInspData_Uper[13 + (i * inspItemCount)])); //리스트 번호
 
             iCenterPointToROI_Uper.Clear(); //Add(int.Parse(LamiSystem.StrLstRcpConInspData_Uper[5 + (i * inspItemCount)]));
+        }
+
+        private void Inspect_Ready_Run_RecipeGrid_ListArray_Clear_Right()
+        {
+            iLstNowRowNo_Right.Clear();
+            //.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[4 + (i * inspItemCount)])); //Row
+            iLstNowRoiNo_Right.Clear();//.Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[5 + (i * inspItemCount)])); //ROI
+            sLstNowTypNo_Right.Clear();//.Add(LamiSystem.StrLstRcpConInspData_Right[6 + (i * inspItemCount)]); //Type
+            iLstNowSeqNo_Right.Clear();
+            //.Add(int.Parse(SeqNo)); //Seq No
+
+            iLstNowSidNo_Right.Clear(); //Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[8 + (i * inspItemCount)])); //Side No
+            sLstNowPolNo_Right.Clear(); //Add(LamiSystem.StrLstRcpConInspData_Right[9 + (i * inspItemCount)]); //극성
+            iLstNowDivNo_Right.Clear(); //Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[10 + (i * inspItemCount)])); //분할
+            sLstNowDisNo_Right.Clear(); //Add(LamiSystem.StrLstRcpConInspData_Right[11 + (i * inspItemCount)]); //표시
+            iLstNowLgtNo_Right.Clear(); //Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[12 + (i * inspItemCount)])); //밝기
+            iLstNowLstNo_Right.Clear(); //Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[13 + (i * inspItemCount)])); //리스트 번호
+
+            iCenterPointToROI_Right.Clear(); //Add(int.Parse(LamiSystem.StrLstRcpConInspData_Right[5 + (i * inspItemCount)]));
         }
         public void Inspect_Ready_Run_RecipeGrid_Data_Load_Down()
         {
@@ -5963,21 +6917,28 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
 
         List<double> Cal_Value_Uper = new List<double>();
-        List<double> Cal_Value_Down = new List<double>(); 
+        List<double> Cal_Value_Down = new List<double>();
+        List<double> Cal_Value_Right = new List<double>();
+
         public void Inspect_Offset_Load_To_System()
         {
             _iAllHistoryViewNo_Uper = 0;
             _iNGHistoryViewNo_Uper = 0;
             _iAllHistoryViewNo_Down = 0;
             _iNGHistoryViewNo_Down = 0;
+            _iAllHistoryViewNo_Right = 0;
+            _iNGHistoryViewNo_Right = 0;
 
             Cal_Garo_Uper = double.Parse(LamiSystem.StrListVisConData[2]);
             Cal_Sero_Uper = double.Parse(LamiSystem.StrListVisConData[5]);
             Cal_Garo_Down = double.Parse(LamiSystem.StrListVisConData[8]);
             Cal_Sero_Down = double.Parse(LamiSystem.StrListVisConData[11]);
+            Cal_Garo_Right = double.Parse(LamiSystem.StrListVisConData[14]);
+            Cal_Sero_Right = double.Parse(LamiSystem.StrListVisConData[17]);
 
             Cal_Value_Uper.Clear();
             Cal_Value_Down.Clear();
+            Cal_Value_Right.Clear();
 
             int VisRowCount_Uper = LamiSystem.StrListVisConGridData_Uper.Count/8;
             for (int i = 0; i < VisRowCount_Uper; i++)
@@ -5992,6 +6953,14 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 string tmpData = LamiSystem.StrListVisConGridData_Down[i * 8 + 6].ToString();
                 Cal_Value_Down.Add(double.Parse(LamiSystem.StrListVisConGridData_Down[i * 8 + 6].ToString()));
             }
+
+            int VisRowCount_Right = LamiSystem.StrListVisConGridData_Right.Count / 8;
+            for (int i = 0; i < VisRowCount_Right; i++)
+            {
+                string tmpData = LamiSystem.StrListVisConGridData_Right[i * 8 + 6].ToString();
+                Cal_Value_Right.Add(double.Parse(LamiSystem.StrListVisConGridData_Right[i * 8 + 6].ToString()));
+            }
+
             //Cal_Big_Left = double.Parse(LamiSystem.StrListVisConData[4]);
             //Cal_Big_Righ = double.Parse(LamiSystem.StrListVisConData[5]);
             //Cal_Sml_Left = double.Parse(LamiSystem.StrListVisConData[6]);
@@ -6001,12 +6970,15 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         private bool CPK_First_Flag = true;
 
         private static string[] strResultNgOk = { string.Empty, string.Empty, string.Empty };
-        private static IplImage tempImage = new IplImage(4096, 3072, BitDepth.U8, 3);
+        //private static IplImage tempImage = new IplImage(4096, 3072, BitDepth.U8, 3);
         private int GraphSeries_Uper = -1;
         private int GraphSeries_Down = -1;
+        private int GraphSeries_Right = -1;
 
         private double Cal_Garo_Uper = 0.0;
         private double Cal_Sero_Uper = 0.0;// = 11.1577;
+        private double Cal_Garo_Right = 0.0;
+        private double Cal_Sero_Right = 0.0;// = 11.1577;
         double dNumber = 0.0;
         private bool ParseResult = false;
         private static double Cal_Big_Left = 0.0;
@@ -6017,8 +6989,10 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         private static double Cal_Sml_Righ = 0.0;
         private static int iImgPixResultData_Uper;
         private static int iImgPixResultData_Down;
+        private static int iImgPixResultData_Right;
         private bool Inspect_None_Flag_Uper = false;
         private bool Inspect_None_Flag_Down = false;
+        private bool Inspect_None_Flag_Right = false;
         private bool ZeroCheck_Start = false;
 
         private string Inspect_Result_Uper = "NG";
@@ -6118,8 +7092,16 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             public string uperMaxValuestr;// = this.GetReg(LamiSystem.RegPathMeasure_Uper, (i * 17 + 3).ToString("000"));
             public double uperMaxValue;// = double.Parse(uperMaxValuestr);
 
+           
+            public string rightMaxValuestr;// = this.GetReg(LamiSystem.RegPathMeasure_Uper, (i * 17 + 3).ToString("000"));
+            public double rightMaxValue;// = double.Parse(uperMaxValuestr);
+            public double rightMinValue;// = double.Parse(uperMinValuestr);
+
             public string uperMinValuestr;// = this.GetReg(LamiSystem.RegPathMeasure_Uper, (i * 17 + 4).ToString("000"));
             public double uperMinValue;// = double.Parse(uperMinValuestr);
+
+            public string rightMinValuestr;// = this.GetReg(LamiSystem.RegPathMeasure_Uper, (i * 17 + 4).ToString("000"));
+            
 
             public float VisionItem_CalValue;// = float.Parse(LamiSystem.StrListVisConGridData_Uper[(i*8) + 6]);
             public bool VisionItem_CalUsed;// = (LamiSystem.StrListVisConGridData_Uper[(i*8) + 7] == "True")
@@ -6234,6 +7216,8 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
 
         private delegate void Delegate_Manual_FindData_Inspection_Uper();
         private delegate void Delegate_Manual_FindData_Inspection_Down();
+        private delegate void Delegate_Manual_FindData_Inspection_Right();
+
         public void Inspect_Manual_FindData_Inspection_Uper()
         {
             if (InvokeRequired)
@@ -6416,6 +7400,188 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
         }
 
+
+        public void Inspect_Manual_FindData_Inspection_Right()
+        {
+            if (InvokeRequired)
+            {
+                Delegate_Manual_FindData_Inspection_Right del = Inspect_Manual_FindData_Inspection_Right;
+                Invoke(del);
+            }
+            else
+            {
+                Inspection_Grid_Data StructData = new Inspection_Grid_Data();
+
+                string pointData = string.Empty;
+
+                int mesColCount = 19;
+                Trace.WriteLine(MethodBase.GetCurrentMethod().Name + " 1 start ");
+                //Test Function
+                //Inspect_Test_Log_Write(pointData, 1, textBox15);
+                Random r = new Random();
+
+                try
+                {
+                    strLstDisplayData_Right.Clear();
+                    uDS_Inspect_Measure_Right.Rows.Clear();
+                    StructData.RecipeColumn = 11;
+                    StructData.VisionColumn = 8;
+                    StructData.RcpGrdRows = LamiSystem.StrLstRcpConGridData_Right.Count / StructData.RecipeColumn;
+
+                    for (int i = 0; i < StructData.RcpGrdRows; i++)
+                    {
+                        //StructData.row = this.uGrd_Inspect_Measure_Right.DisplayLayout.Bands[0].AddNew();
+
+                        StructData.readName = LamiSystem.StrLstRcpConGridData_Right[i * StructData.RecipeColumn];
+                        int VisGrdRows = LamiSystem.StrListVisConGridData_Right.Count / StructData.VisionColumn;
+
+                        for (int j = 0; j < VisGrdRows; j++)
+                        {
+                            string VisName = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn];
+                            if (StructData.readName == VisName)
+                            {
+                                StructData.CenValue = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn + 1];
+                                StructData.MaxValue = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn + 2];
+                                StructData.MinValue = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn + 3];
+
+                                //StructData.row.Cells["NO"].Value = uGrd_Inspect_Measure_Right.DisplayLayout.Rows.Count.ToString("0");
+                                //strLstDisplayData_Right.Add(uGrd_Inspect_Measure_Right.DisplayLayout.Rows.Count.ToString("0"));
+
+                                strLstDisplayData_Right.Add((i + 1).ToString("0"));
+
+                                //StructData.row.Cells["검사 항목"].Value = StructData.readName;
+                                StructData.readName = StructData.readName;
+                                strLstDisplayData_Right.Add(StructData.readName);
+
+                                //StructData.row.Cells["규격 중심"].Value = StructData.CenValue;
+                                strLstDisplayData_Right.Add(StructData.CenValue);
+
+                                StructData.MaxData = double.Parse(StructData.CenValue) + double.Parse(StructData.MaxValue);
+                                StructData.MinData = double.Parse(StructData.CenValue) - double.Parse(StructData.MinValue);
+
+                                //StructData.row.Cells["규격 상한"].Value = StructData.MaxData.ToString("0.00");
+                                strLstDisplayData_Right.Add(StructData.MaxData.ToString("0.00"));
+
+                                //StructData.row.Cells["규격 하한"].Value = StructData.MinData.ToString("0.00");
+                                strLstDisplayData_Right.Add(StructData.MinData.ToString("0.00"));
+
+                                //비전에서 설정한 아이템의 켈값을 적용한다.
+                                StructData.VisionItem_CalValue = float.Parse(LamiSystem.StrListVisConGridData_Right[(j * StructData.VisionColumn) + 6]);
+                                StructData.VisionItem_CalUsed = (LamiSystem.StrListVisConGridData_Right[(j * StructData.VisionColumn) + 7] == "True") ? true : false;
+
+                                break;
+                            }
+                        }
+
+                        string NowUsed = sLstNowDisNo_Right[i * 2];
+                        if (NowUsed == "False")
+                        {
+                            strLstDisplayData_Right.Add("0.00");
+                            strLstDisplayData_Right.Add("NO");
+                            continue;
+                        }
+
+                        //20150217 WKB 207
+                        //float tmpValue = (float)(r.Next(-100, 100) / 10000f);
+
+                        //20150217 WKB 208
+                        //float tmpValue1 = (float)(r.Next(-100, 100) / 10000f);
+                        //float tmpValue = (float)(r.Next(-99, 99) / 10000f);
+
+                        //20150226 WKB 208
+                        float tmpValue = (float)(r.Next(-99, 99) / 100000f);
+
+                        StructData.SideNo = int.Parse(LamiSystem.StrLstRcpConGridData_Right[i * 11 + 3]);
+                        if (StructData.SideNo % 2 == 0)
+                        {
+                            iImgPixResultData_Right = Math.Abs(cvPntLstImagePoint_Right[i * 2 + 1].Y - cvPntLstImagePoint_Right[i * 2].Y);
+
+                            //20150217 WKB 207
+                            //dResultValue_Right = ((double)iImgPixResultData_Right * (double)Cal_Sero_Right) + tmpValue;
+
+                            //20150217 WKB 208
+                            dResultValue_Right = ((double)iImgPixResultData_Right * (double)Cal_Sero_Right);
+                        }
+                        //가로 일때 진행됨
+                        else
+                        {
+                            iImgPixResultData_Right = Math.Abs(cvPntLstImagePoint_Right[i * 2 + 1].X - cvPntLstImagePoint_Right[i * 2].X);
+
+                            //20150217 WKB 207
+                            //dResultValue_Right = ((double)iImgPixResultData_Right * (double)Cal_Garo_Right) + tmpValue;
+
+                            //20150217 WKB 208
+                            dResultValue_Right = ((double)iImgPixResultData_Right * (double)Cal_Garo_Right);
+                        }
+
+                        StructData.rightMaxValue = StructData.MaxData;
+                        StructData.rightMinValue = StructData.MinData;
+
+                        if (cvPntLstImagePoint_Right[i * 2].X == 0 || cvPntLstImagePoint_Right[i * 2].Y == 0 || cvPntLstImagePoint_Right[i * 2 + 1].X == 0 || cvPntLstImagePoint_Right[i * 2 + 1].Y == 0)
+                        {
+                            //측정 포인트를 찾지 못했을 경우에 진행하는 함수
+                            //StructData.row.Cells["측정 값"].Value = "0.000";
+                            StructData.dResultValue = 0;
+                            StructData.itemResult = "NG";
+                            //20150226 WKB 207
+                            //strLstDisplayData_Right.Add("0.000");
+
+                            //20150226 WKB 208
+                            strLstDisplayData_Right.Add("0.00");
+
+                            //StructData.row.Cells["판정 결과"].Value = "NG";
+
+                            strLstDisplayData_Right.Add("NG");
+                        }
+                        else
+                        {
+                            //비전에서 설정한 아이템의 켈값을 적용한다.
+                            //StructData.VisionItem_CalValue = float.Parse(LamiSystem.StrListVisConGridData_Right[(i * 8) + 6]);
+                            //StructData.VisionItem_CalUsed = (LamiSystem.StrListVisConGridData_Right[(i * 8) + 7] == "True") ? true : false;
+                            if (StructData.VisionItem_CalUsed == true) dResultValue_Right = dResultValue_Right * StructData.VisionItem_CalValue;
+
+                            //측정값을 보상을 적용한다.
+                            if (LamiSystem.StrListSysConData[28] == "ON")
+                            {
+                                //                                 dResultValue_Right = Inspect_RunRun_MeasureData_Editing(dResultValue_Right,
+                                //                                     StructData.row.Cells["규격 중심"].Value.ToString(),
+                                //                                     StructData.row.Cells["규격 상한"].Value.ToString(),
+                                //                                     StructData.row.Cells["규격 하한"].Value.ToString());
+
+                                dResultValue_Right = Inspect_RunRun_MeasureData_Editing(dResultValue_Right,
+                                    StructData.CenValue.ToString(),
+                                    StructData.MaxValue.ToString(),
+                                    StructData.MinValue.ToString());
+                            }
+
+                            StructData.dResultValueStr = dResultValue_Right.ToString("0.000");
+
+                            //20150226 WKB 207
+                            //strLstDisplayData_Right.Add(dResultValue_Right.ToString("0.000"));
+
+                            //20150226 WKB 208
+                            strLstDisplayData_Right.Add(dResultValue_Right.ToString("0.00"));
+
+                            //현재 측정값이 양품인지 검사한다. 
+                            if (StructData.rightMaxValue > dResultValue_Right && StructData.rightMinValue < dResultValue_Right)
+                            {
+                                StructData.itemResult = "OK";
+                                strLstDisplayData_Right.Add("OK");
+                            }
+                            else
+                            {
+                                //StructData.row.Cells["판정 결과"].Value = "NG";
+                                StructData.itemResult = "NG";
+                                strLstDisplayData_Right.Add("NG");
+                            }
+                        }
+                    }
+                }
+                catch
+                {
+                }
+            }
+        }
         public void Inspect_Manual_FindData_Inspection_Down()
         {
             if (InvokeRequired)
@@ -7341,6 +8507,133 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             return OkNg_Result;
         }
 
+
+        public bool Inspect_Run_Run_FindData_OkNg_Right(Inspection_Grid_Data StructData)
+        {
+            bool OkNg_Result = true;
+            //Inspection_Grid_Data StructData = new Inspection_Grid_Data();
+
+            int mesColCount = 19;
+            Random r = new Random();
+
+            double MeasureValue_Right = 0d;
+
+            StructData.RecipeColumn = 11;
+            StructData.VisionColumn = 8;
+            StructData.RcpGrdRows = LamiSystem.StrLstRcpConGridData_Right.Count / StructData.RecipeColumn;
+
+            MeasureData_Right.Clear();
+            itemResult_Right.Clear();
+
+            for (int i = 0; i < StructData.RcpGrdRows; i++)
+            {
+                StructData.readName = LamiSystem.StrLstRcpConGridData_Right[i * StructData.RecipeColumn];
+                MeasureValue_Right = 0d;
+
+                int VisGrdRows = LamiSystem.StrListVisConGridData_Right.Count / StructData.VisionColumn;
+                for (int j = 0; j < VisGrdRows; j++)
+                {
+                    string VisName = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn];
+                    if (StructData.readName == VisName)
+                    {
+                        StructData.CenValue = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn + 1];
+                        StructData.MaxValue = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn + 2];
+                        StructData.MinValue = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn + 3];
+
+                        StructData.MaxData = double.Parse(StructData.CenValue) + double.Parse(StructData.MaxValue);
+                        StructData.MinData = double.Parse(StructData.CenValue) - double.Parse(StructData.MinValue);
+
+                        //비전에서 설정한 아이템의 켈값을 적용한다.
+                        StructData.VisionItem_CalValue = float.Parse(LamiSystem.StrListVisConGridData_Right[(j * StructData.VisionColumn) + 6]);
+                        StructData.VisionItem_CalUsed = (LamiSystem.StrListVisConGridData_Right[(j * StructData.VisionColumn) + 7] == "True") ? true : false;
+
+                        break;
+                    }
+                }
+
+                //레시피 그리드이 판별이 체크가 되어 있지 않은 경우
+                string NowUsed = sLstNowDisNo_Right[i * 2];
+                if (NowUsed == "False")
+                {
+
+                }
+
+                //20150226 WKB 208
+                float tmpValue = (float)(r.Next(-99, 99) / 100000f);
+
+                StructData.SideNo = int.Parse(LamiSystem.StrLstRcpConGridData_Right[i * 11 + 3]);
+                if (StructData.SideNo % 2 == 0)
+                {
+                    iImgPixResultData_Right = Math.Abs(cvPntLstImagePoint_Right[i * 2 + 1].Y - cvPntLstImagePoint_Right[i * 2].Y);
+                    MeasureValue_Right = ((double)iImgPixResultData_Right * (double)Cal_Sero_Right) + tmpValue;
+                }
+                //가로 일때 진행됨
+                else
+                {
+                    iImgPixResultData_Right = Math.Abs(cvPntLstImagePoint_Right[i * 2 + 1].X - cvPntLstImagePoint_Right[i * 2].X);
+                    MeasureValue_Right = ((double)iImgPixResultData_Right * (double)Cal_Garo_Right) + tmpValue;
+                }
+                
+                StructData.rightMaxValue = double.Parse(LamiSystem.StrListVisConGridData_Right[i * StructData.VisionColumn + 2]);
+                StructData.rightMinValue = double.Parse(LamiSystem.StrListVisConGridData_Right[i * StructData.VisionColumn + 3]);
+
+                //측정 포인트를 찾지 못했을 경우
+                if (cvPntLstImagePoint_Right[i * 2].X == 0 || cvPntLstImagePoint_Right[i * 2].Y == 0 || cvPntLstImagePoint_Right[i * 2 + 1].X == 0 || cvPntLstImagePoint_Right[i * 2 + 1].Y == 0)
+                {
+                    itemResult_Right.Add("NG");
+                    
+                    //20150226 WKB 208
+                    MeasureData_Right.Add("0.00000");
+
+                    if (NowUsed != "False") OkNg_Result = false;
+                }
+                else
+                {
+
+                    if (StructData.VisionItem_CalUsed == true)
+                        MeasureValue_Right = MeasureValue_Right * StructData.VisionItem_CalValue;
+
+                    //측정값을 보상을 적용한다.
+                    if (LamiSystem.StrListSysConData[28] == "ON")
+                    {
+                        MeasureValue_Right = Inspect_RunRun_MeasureData_Editing(MeasureValue_Right, StructData.CenValue, StructData.MaxValue, StructData.MinValue);
+                    }
+
+                    //현재 측정값이 양품인지 검사한다. 
+                    if (StructData.MaxData > MeasureValue_Right && StructData.MinData < MeasureValue_Right)
+                    {
+                        itemResult_Right.Add("OK");
+                        
+                        //20150226 WKB 208
+                        MeasureData_Right.Add(MeasureValue_Right.ToString("0.00000"));
+
+                    }
+                    else
+                    {
+                        itemResult_Right.Add("NG");
+
+                        //20150226 WKB 207
+                        //MeasureData_Right.Add(MeasureValue_Right.ToString("0.000"));
+
+                        //20150226 WKB 208
+                        MeasureData_Right.Add(MeasureValue_Right.ToString("0.00000"));
+
+
+                        if (NowUsed != "False") OkNg_Result = false;
+                    }
+                }
+            }
+
+            if (OkNg_Result == true)
+            {
+                NowPassNumber_Right = uint.Parse(Inspect_Run_Ready_TrigNo_Reg_To_Data(LamiSystem.RegPathGapStatus, "Count_OK_Right"));
+                NowPassNumber_Right = NowPassNumber_Right + 1;
+
+                this.SetReg(LamiSystem.RegPathGapStatus, "Count_OK_Right", NowPassNumber_Right.ToString("0"));
+            }
+
+            return OkNg_Result;
+        }
         //20150725 WKB
         /*
          public bool Inspect_Run_Run_FindData_OkNg_Uper()
@@ -7618,7 +8911,9 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         */
 
         List<string> itemResult_Uper = new List<string>();
+        List<string> itemResult_Right = new List<string>();
         List<string> MeasureData_Uper = new List<string>();
+        List<string> MeasureData_Right = new List<string>();
         /*
         public void Inspect_Run_Run_FindData_Inspection_Uper()
         {
@@ -8195,6 +9490,282 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
         }
 
+
+
+        public Inspection_Grid_Data[] Inspect_Run_Run_FindData_Inspecting_Right()
+        {
+
+            Inspection_Grid_Data StructData = new Inspection_Grid_Data();
+            StructData.RecipeColumn = 11;
+            StructData.VisionColumn = 8;
+            StructData.RcpGrdRows = LamiSystem.StrLstRcpConGridData_Right.Count / StructData.RecipeColumn;
+            Inspection_Grid_Data[] Inspect_Grid_Data = new Inspection_Grid_Data[StructData.RcpGrdRows];
+
+            try
+            {
+                Inspection_Data_List InspectData = new Inspection_Data_List();
+                InspectData.Inspection_Data = new List<string>();
+
+                int mesColCount = 19;
+                bool OkNg_Data = Inspect_Run_Run_FindData_OkNg_Right(StructData);
+
+                if (OkNg_Data == true) _strSavedInspectResult_Right = "OK";
+                else _strSavedInspectResult_Right = "NG";
+
+
+
+                for (int i = 0; i < StructData.RcpGrdRows; i++)
+                {
+                    StructData.readName = LamiSystem.StrLstRcpConGridData_Right[i * StructData.RecipeColumn];
+                    StructData.dResultValueStr = MeasureData_Right[i];
+                    StructData.itemResult = itemResult_Right[i];
+
+                    int VisGrdRows = LamiSystem.StrListVisConGridData_Right.Count / StructData.VisionColumn;
+                    for (int j = 0; j < VisGrdRows; j++)
+                    {
+                        string VisName = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn];
+                        if (StructData.readName == VisName)
+                        {
+                            StructData.CenValue = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn + 1];
+                            StructData.MaxValue = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn + 2];
+                            StructData.MinValue = LamiSystem.StrListVisConGridData_Right[j * StructData.VisionColumn + 3];
+
+                            StructData.MaxData = double.Parse(StructData.CenValue) + double.Parse(StructData.MaxValue);
+                            StructData.MinData = double.Parse(StructData.CenValue) - double.Parse(StructData.MinValue);
+
+                            InspectData.Inspection_Data.Add(StructData.readName);
+                            InspectData.Inspection_Data.Add(StructData.CenValue);
+                            InspectData.Inspection_Data.Add(StructData.MaxData.ToString("0.00"));
+                            InspectData.Inspection_Data.Add(StructData.MinData.ToString("0.00"));
+
+                            //비전에서 설정한 아이템의 켈값을 적용한다.
+                            StructData.VisionItem_CalValue = float.Parse(LamiSystem.StrListVisConGridData_Right[(j * StructData.VisionColumn) + 6]);
+                            StructData.VisionItem_CalUsed = (LamiSystem.StrListVisConGridData_Right[(j * StructData.VisionColumn) + 7] == "True") ? true : false;
+
+                            //측정된 값을 할당한다.
+                            dResultValue_Right = double.Parse(MeasureData_Right[i]);
+
+                            //레지스트리에 있는 값들을 읽어와서 형변환을 거친후 할당한다.
+
+                            //string tmpstr = this.GetReg(LamiSystem.RegPathMeasure_Right, (i*mesColCount + 14).ToString("000"));
+                            StructData.nowOkCount = int.Parse(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 14).ToString("000")));
+                            StructData.nowNgCount = int.Parse(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 15).ToString("000")));
+                            //StructData.RightMaxValue =double.Parse(this.GetReg(LamiSystem.RegPathMeasure_Right,(i*mesColCount + 3).ToString("000")));
+                            //StructData.RightMinValue =double.Parse(this.GetReg(LamiSystem.RegPathMeasure_Right,(i*mesColCount + 4).ToString("000")));
+                            break;
+                        }
+                    }
+
+
+                    if (cvPntLstImagePoint_Right[i * 2].X == 0 || cvPntLstImagePoint_Right[i * 2].Y == 0 ||
+                        cvPntLstImagePoint_Right[i * 2 + 1].X == 0 || cvPntLstImagePoint_Right[i * 2 + 1].Y == 0)
+                    {
+                        //측정 포인트를 찾지 못했을 경우에 진행하는 함수
+                        InspectData.Inspection_Data.Add("0.000");
+                        //_strSavedInspectResult_Right = "NG";
+                        InspectData.Inspection_Data.Add("NG");
+
+                        StructData.nowNgCount = StructData.nowNgCount + 1;
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 15).ToString("000"), StructData.nowNgCount.ToString("0"));
+                    }
+                    else
+                    {
+                        InspectData.Inspection_Data.Add(dResultValue_Right.ToString("0.000"));
+
+                        //현재 측정값이 양품인지 검사한다. itemResult_Right
+                        if (itemResult_Right[i] == "OK")
+                        {
+                            //_strSavedInspectResult_Right = "OK";
+                            InspectData.Inspection_Data.Add("OK");
+                            StructData.nowOkCount = StructData.nowOkCount + 1;
+                            this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 14).ToString("000"), StructData.nowOkCount.ToString("0"));
+                        }
+                        else
+                        {
+                            //_strSavedInspectResult_Right = "NG";
+                            InspectData.Inspection_Data.Add("NG");
+                            StructData.nowNgCount = StructData.nowNgCount + 1;
+                            this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 15).ToString("000"), StructData.nowNgCount.ToString("0"));
+                        }
+                    }
+
+                    StructData.SuYul = 0f;
+                    //현재 수율을 적용한다.
+                    if (StructData.nowOkCount == 0)
+                    {
+                        InspectData.Inspection_Data.Add("0.000");
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 7).ToString("000"), "0.000");
+                    }
+                    else
+                    {
+                        StructData.OkData = (float)StructData.nowOkCount;
+                        StructData.NgData = (float)StructData.nowNgCount;
+                        StructData.SuYul = (float)(StructData.OkData / (StructData.OkData + StructData.NgData)) * 100;
+                        InspectData.Inspection_Data.Add(StructData.SuYul.ToString("0.000"));
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 7).ToString("000"), StructData.SuYul.ToString("0.000"));
+                    }
+
+                    if (i == 7)
+                        i = i;
+                    if (OkNg_Data == false)
+                    {
+                        //평균값 기존데이터로 처리
+                        string tmpAvr = this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 8).ToString("000"));
+                        InspectData.Inspection_Data.Add(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 8).ToString("000")));
+                        //표준편차 기존데이터로 처리
+                        InspectData.Inspection_Data.Add(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 9).ToString("000")));
+                        //최소 값 기존데이터로 처리
+                        InspectData.Inspection_Data.Add(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 10).ToString("000")));
+                        //최대 값 기존데이터로 처리
+                        InspectData.Inspection_Data.Add(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 11).ToString("000")));
+                        //CP 값 기존데이터로 처리
+                        InspectData.Inspection_Data.Add(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 12).ToString("000")));
+                        //CPK 값 기존데이터로 처리
+                        InspectData.Inspection_Data.Add(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 13).ToString("000")));
+
+                        //편균
+                        StructData.NowAvr = float.Parse(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 8).ToString("000")));
+                        StructData.NowStdDev = float.Parse(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 9).ToString("000")));
+
+                        StructData.NowMin = float.Parse(GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 10).ToString("000")));
+                        StructData.NowMax = float.Parse(this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 11).ToString("000")));
+
+                        StructData.NowCP = float.Parse(GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 12).ToString("000")));
+                        StructData.NowCPK = float.Parse(GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 13).ToString("000")));
+
+                        Inspect_Grid_Data[i] = StructData;
+
+                        continue;
+                    }
+
+                    //현재 평균 값을 적용합니다.
+                    StructData.NowAvr = 0f;
+                    StructData.OldValue = 0f;
+                    if (NowPassNumber_Right == 1)
+                    {
+                        StructData.NowAvr = (float)dResultValue_Right;
+                        InspectData.Inspection_Data.Add(StructData.NowAvr.ToString("0.000"));
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 8).ToString("000"), StructData.NowAvr.ToString("0.000"));
+
+                        StructData.OldValue = (float)dResultValue_Right;
+                        StructData.OldSquare = (float)dResultValue_Right * (float)dResultValue_Right;
+
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 16).ToString("000"), StructData.OldValue.ToString("0.000"));
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 17).ToString("000"), StructData.OldSquare.ToString("0.000"));
+                    }
+                    else if (NowPassNumber_Right > 1)
+                    {
+                        StructData.OldValuestr = this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 16).ToString("000"));
+                        StructData.OldValue = float.Parse(StructData.OldValuestr);
+
+                        StructData.OldSquarestr = this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 17).ToString("000"));
+                        StructData.OldSquare = float.Parse(StructData.OldSquarestr);
+
+                        StructData.NowAvr = (float)((StructData.OldValue + (float)dResultValue_Right) / (float)NowPassNumber_Right);
+                        InspectData.Inspection_Data.Add(StructData.NowAvr.ToString("0.000"));
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 8).ToString("000"), StructData.NowAvr.ToString("0.000"));
+
+                        StructData.OldSquare = (StructData.OldSquare) + ((float)dResultValue_Right * (float)dResultValue_Right);
+                        StructData.OldValue = (StructData.OldValue + (float)dResultValue_Right);
+
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 16).ToString("000"), StructData.OldValue.ToString("0.000"));
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 17).ToString("000"), StructData.OldSquare.ToString("0.000"));
+                    }
+
+                    //현재 표준편차을 적용하니다. nowOkCount
+                    StructData.OldStdDev = 0f;
+                    StructData.NowStdDev = 0f;
+                    StructData.StdDivArray = new float[2];
+
+                    if (StructData.nowOkCount <= 1)
+                    {
+                        InspectData.Inspection_Data.Add("0.000");
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 9).ToString("000"), "0.000");
+                    }
+                    else if (StructData.nowOkCount > 1)
+                    {
+                        int nCount = (int)NowPassNumber_Right;
+                        StructData.NowStdDev = (float)Control_CPKData.StDev(nCount, (double)StructData.OldValue, (double)StructData.OldSquare);
+                        InspectData.Inspection_Data.Add(StructData.NowStdDev.ToString("0.000"));
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 9).ToString("000"), StructData.NowStdDev.ToString("0.000"));
+                    }
+
+                    //현재 최소 값을 적용하니다.
+
+
+                    StructData.OldMinstr = this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 10).ToString("000"));
+                    StructData.OldMin = float.Parse(StructData.OldMinstr);
+                    StructData.NowMin = Control_CPKData.Min((float)dResultValue_Right, StructData.OldMin);
+
+
+                    if (StructData.OldMin < 0)
+                        MessageBox.Show("기존값 : " + dResultValue_Right.ToString());
+                    if (dResultValue_Right < 0)
+                        MessageBox.Show("측정값 : " + dResultValue_Right.ToString());
+                    if (StructData.NowMin < 0)
+                        MessageBox.Show("현재값 : " + StructData.NowMin.ToString());
+
+
+                    InspectData.Inspection_Data.Add(StructData.NowMin.ToString("0.000"));
+
+                    //시작 106 : 레지로 수정된 코드
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 10).ToString("000"), StructData.NowMin.ToString("0.000"));
+                    //종료 106 : 레지로 수정된 코드
+
+                    //현재 최대 값을 적용합니다.
+                    StructData.OldMaxstr = this.GetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 11).ToString("000"));
+                    StructData.OldMax = float.Parse(StructData.OldMaxstr);
+                    StructData.NowMax = Control_CPKData.Max((float)dResultValue_Right, StructData.OldMax);
+                    InspectData.Inspection_Data.Add(StructData.NowMax.ToString("0.000"));
+
+                    //시작 107 : 레지로 수정된 코드
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 11).ToString("000"), StructData.NowMax.ToString("0.000"));
+                    //종료 107 : 레지로 수정된 코드
+
+                    //현재 CP 값을 적용하니다. 
+                    StructData.NowCP = 0f;
+                    if (StructData.nowOkCount + StructData.nowNgCount < 2)
+                    {
+                        InspectData.Inspection_Data.Add("0.000");
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 12).ToString("000"), "0.000");
+                    }
+                    else if (StructData.nowOkCount + StructData.nowNgCount >= 2)
+                    {
+                        StructData.NowCP = Control_CPKData.Cp((float)StructData.MaxData, (float)StructData.MinData, StructData.NowStdDev);
+                        InspectData.Inspection_Data.Add(StructData.NowCP.ToString("0.000"));
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 12).ToString("000"), StructData.NowCP.ToString("0.000"));
+                    }
+
+                    //현재 CPK 값을 적용합니다.
+                    StructData.NowCPKU = 0f;
+                    StructData.NowCPKL = 0f;
+                    StructData.NowCPK = 0f;
+                    if (StructData.nowOkCount + StructData.nowNgCount < 2)
+                    {
+                        InspectData.Inspection_Data.Add("0.000");
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 13).ToString("000"), "0.000");
+                    }
+                    else if (StructData.nowOkCount + StructData.nowNgCount >= 2)
+                    {
+                        StructData.NowCPKU = Control_CPKData.CpkU((float)StructData.MaxData, StructData.NowAvr, StructData.NowStdDev);
+                        StructData.NowCPKL = Control_CPKData.CpkL((float)StructData.MinData, StructData.NowAvr, StructData.NowStdDev);
+                        StructData.NowCPK = Control_CPKData.Cpk(StructData.NowCPKU, StructData.NowCPKL);
+                        InspectData.Inspection_Data.Add(StructData.NowCPK.ToString("0.000"));
+                        this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 13).ToString("000"), StructData.NowCPK.ToString("0.000"));
+                    }
+
+                    Inspect_Grid_Data[i] = StructData;
+                }
+
+                return Inspect_Grid_Data;
+                //return InspectData;
+            }
+            catch (Exception e)
+            {
+                Trace.WriteLine(MethodBase.GetCurrentMethod().Name + e.Message);
+                return Inspect_Grid_Data;
+            }
+        }
         //20150725 WKB
         /*
         public Inspection_Data_List Inspect_Run_Run_FindData_Inspecting_Uper(  )
@@ -8586,7 +10157,75 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 }
             }
         }
+        public delegate void Delegate_Run_Run_FindData_Display_Right(object Grid_Struct_Data);
 
+
+
+        public void Inspect_Run_Run_FindData_Display_Right(object Grid_Struct_Data)
+        {
+            if (InvokeRequired)
+            {
+                Delegate_Run_Run_FindData_Display_Right del = Inspect_Run_Run_FindData_Display_Right;
+                Invoke(del, Grid_Struct_Data);
+            }
+            else
+            {
+                try
+                {
+                    Inspection_Grid_Data[] grid_Struct = (Inspection_Grid_Data[])Grid_Struct_Data;
+
+                    Display_FindData_Struct struct_DataDisp_Right = new Display_FindData_Struct();
+                    dataSet1.Tables["Meas"].Rows.Clear();
+                    int mesColCount = 19;
+
+                    uDS_Inspect_Measure_Right.Rows.Clear();
+                    
+
+                    for (int i = 0; i < grid_Struct.Count(); i++)
+                    {
+                        DataRow dr = dataSet1.Tables["Meas"].NewRow();
+
+                        dr["NO"] = (i + 1).ToString("0");
+                        dr["항목"] = grid_Struct[i].readName;
+                        dr["중심"] = grid_Struct[i].CenValue;
+                        dr["상한"] = grid_Struct[i].MaxValue;
+                        dr["하한"] = grid_Struct[i].MinValue;
+                        dr["측정"] = grid_Struct[i].dResultValueStr;
+                        dr["판정"] = grid_Struct[i].itemResult;
+                        dr["NG"] = grid_Struct[i].nowNgCount.ToString("0");
+                        dr["수율"] = grid_Struct[i].SuYul.ToString("0.00");
+                        dr["평균"] = grid_Struct[i].NowAvr.ToString("0.00");
+                        dr["편차"] = grid_Struct[i].NowStdDev.ToString("0.00");
+                        dr["최소"] = grid_Struct[i].NowMin.ToString("0.00");
+                        dr["최대"] = grid_Struct[i].NowMax.ToString("0.00");
+                        dr["CP"] = grid_Struct[i].NowCP.ToString("0.00");
+                        dr["CPK"] = grid_Struct[i].NowCPK.ToString("0.00");
+
+                        
+                        dataSet1.Tables["Meas"].Rows.Add(dr);
+
+                        if (grid_Struct[i].itemResult == "NG")
+                        {
+                            if (uGrd_Inspect_Measure_Right.DisplayLayout.Rows[i].Appearance.BackColor != Color.OrangeRed)
+                                uGrd_Inspect_Measure_Right.DisplayLayout.Rows[i].Appearance.BackColor = Color.OrangeRed;
+                        }
+                        else
+                        {
+                            if (uGrd_Inspect_Measure_Right.DisplayLayout.Rows[i].Appearance.BackColor != Color.White)
+                                uGrd_Inspect_Measure_Right.DisplayLayout.Rows[i].Appearance.BackColor = Color.White;
+                        }
+                    }
+                    Measurement_Grid_Resize(uGrd_Inspect_Measure_Right);
+
+                   
+                }
+                catch (Exception e)
+                {
+                    Trace.WriteLine(e.Message);
+                    throw;
+                }
+            }
+        }
 
 
         public delegate void Delegate_Run_Run_FindData_Display_Down(object Grid_Struct_Data);
@@ -11414,22 +13053,24 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         private static double dRealPluseValue = 0.0;
         private static double dResultValue_Uper;
         private static double dResultValue_Down;
+        private static double dResultValue_Right;
         public static double _savedValue_Uper = 0.0;
         public static double _savedValue_Down = 0.0;
+        public static double _savedValue_Right = 0.0;
         private static List<CvPoint> _savedCvPntLstImagePoint_Uper;
         private static List<CvPoint> _savedCvPntLstImagePoint_Down;
+        private static List<CvPoint> _savedCvPntLstImagePoint_Right;
         public static double _iSavedCenter = 0.0;
         public static double _iSavedMax = 0.0;
         public static double _iSavedMin = 0.0;
-        private static IplImage NowSavedImage_Uper = new IplImage(4096, 3072, BitDepth.U8, 3);
-        private static IplImage NowSavedImage_Down = new IplImage(4096, 3072, BitDepth.U8, 3);
+        
 
         public void Inspect_Save_Data_Copy_Uper()
         {
             Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
             try
             {
-                Cv.Copy(_nowIplImage_Uper, NowSavedImage_Uper);
+                Cv.Copy(_nowIplImageUper, _nowSavedImageUper);
                 _iSavedTrigNumber = NowTrigNumber;
                 _savedValue_Uper = dResultValue_Uper;
                 _strSavedNGOK = strResultNgOk;
@@ -11441,11 +13082,28 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
         }
 
+        public void Inspect_Save_Data_Copy_Right()
+        {
+            Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
+            try
+            {
+                Cv.Copy(_nowIplImageRigh, _nowSavedImageRigh);
+                _iSavedTrigNumber = NowTrigNumber;
+                _savedValue_Right = dResultValue_Right;
+                _strSavedNGOK = strResultNgOk;
+                _savedCvPntLstImagePoint_Right = cvPntLstImagePoint_Right;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+            }
+        }
+
         public void Inspect_Save_Data_Copy_Down()
         {
             try
             {
-                Cv.Copy(_nowIplImage_Down, NowSavedImage_Down);
+                Cv.Copy(_nowIplImageLeft, _nowSavedImageLeft);
                 _savedValue_Down = dResultValue_Down;
                 _strSavedNGOK = strResultNgOk;
                 _savedCvPntLstImagePoint_Down = cvPntLstImagePoint_Down;
@@ -11526,15 +13184,23 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         public static List<IplImage> ROI_Zone_Image_Down; // = new List<IplImage>();
         public static List<CvRect> ROI_Zone_Rect_Down; // = new List<CvRect>();
 
+        public static List<IplImage> ROI_Zone_Image_Right; // = new List<IplImage>();
+        public static List<CvRect> ROI_Zone_Rect_Right; // = new List<CvRect>();
+
         private int _nowRoiNumber_Uper = -1;
         private int _nowRoiNumber_Down = -1;
+        private int _nowRoiNumber_Right = -1;
+
         private static readonly int[] Threshold01 = { 150, 190 };
         private static readonly int[] Threshold02 = { 50, 100 };
         private readonly Hough _imageHougher_Uper = new Hough();
         private readonly Hough _imageHougher_Down = new Hough();
+        private readonly Hough _imageHougher_Right = new Hough();
+
         //List<bool> Lst_ROI_Search_Result = new List<bool>();
         private readonly List<CvPoint> _cvPntLstCenterPoint_Uper = new List<CvPoint>();
         private readonly List<CvPoint> _cvPntLstCenterPoint_Down = new List<CvPoint>();
+        private readonly List<CvPoint> _cvPntLstCenterPoint_Right = new List<CvPoint>();
         //private readonly List<CvPoint> _cvPntLstImagePoint = new List<CvPoint>();
         //private static bool ROI_Search_Result = false;
         //CuttingZone_To_Image Struct_CuttingImage = new CuttingZone_To_Image();
@@ -11762,12 +13428,164 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
         }//end function
 
         */
+        public bool Inspect_Run_Run_ROI_EdgeLine_Centering_Uper(IplImage WorkImage)
+        {
 
+            //var ofd = new OpenFileDialog();
+            //if (ofd.ShowDialog() != DialogResult.OK) return;
+            //var srcImg = IplImage.FromFile(ofd.FileName);
+            //var divImage = new Control_ImageROI();
+            //var divResult = divImage.Img_Deivde_Sero(srcImg, 5);
+            //List<int> Find_Result = new List<int>();
+            //for (int i = 0; i < divResult.Count; i++)
+            //{
+            //    Control_Projection proj = new Control_Projection();
+            //    //List<int> div_Result = proj.Projection_Garo(divResult[i]);
+            //    List<int> div_Result = proj.Projection_Sero_Parallel(divResult[i]);
+            //    Find_Result.Add(div_Result[0]);
+            //    Find_Result.Add(div_Result[1]);
+            //}
+            //divResult[0].DrawCircle(divResult[0].Width / 2, Find_Result[0], 3, CvColor.Red, 2);
+            //divResult[0].DrawCircle(divResult[0].Width / 2, Find_Result[1], 3, CvColor.Red, 2);
+            //pictureBoxIpl6.ImageIpl = divResult[0];
+
+
+            try
+            {
+                CuttingZone_To_Image Struct_CutImg = new CuttingZone_To_Image();
+                _cvPntLstCenterPoint_Uper.Clear();
+                //CvWindow.ShowImages(WorkImage);
+
+                for (int i = 0; i < LamiSystem.RectListImageZone_Uper.Count; i++)
+                {
+                    string NowUsed = sLstNowDisNo_Uper[i];
+                    if (NowUsed == "False")
+                    {
+                        //Struct_CutImg.resultPoint = new CvPoint(0, 0);
+                        //_cvPntLstCenterPoint_Uper.Add(Struct_CutImg.resultPoint);
+                        //continue;
+                    }
+
+                    Struct_CutImg.point_Find_Result = false;
+                    Struct_CutImg.iSearchCount = 0;
+                    Struct_CutImg.EdgeParam1 = 0;
+                    Struct_CutImg.EdgeParam2 = 0;
+
+                    Cv.SetImageROI(WorkImage, ROI_Zone_Rect_Uper[iLstNowRoiNo_Uper[i]]);
+                    Cv.Copy(WorkImage, ROI_Zone_Image_Uper[iLstNowRoiNo_Uper[i]]);
+
+                    var divImage = new Control_ImageROI();
+                    var divResult = divImage.Img_Deivde_Sero_Parallel(ROI_Zone_Image_Uper[iLstNowRoiNo_Uper[i]], 5);
+                    List<int> Find_Result = new List<int>();
+
+                    for (int DivCnt = 0; DivCnt < divResult.Count; DivCnt++)
+                    {
+                        Control_Projection proj = new Control_Projection();
+                        //List<int> div_Result = proj.Projection_Garo(divResult[i]);
+                        List<int> div_Result = proj.Projection_Sero_Parallel(divResult[DivCnt]);
+                        Find_Result.Add(div_Result[0]);
+                        Find_Result.Add(div_Result[1]);
+                    }
+
+                    //CvWindow.ShowImages(ROI_Zone_Image_Uper[i]);
+                    //ROI_Zone_Image_Uper[i].SaveImage("D:\\Z1\\" + i.ToString("00") + ".jpg");
+                    //int tmpint = iLstNowRoiNo_Uper[i];
+                    //ROI_Zone_Image_Uper[iLstNowRoiNo_Uper[i]].SaveImage("D:\\Z1\\" + i.ToString("00") + ".jpg");
+                    do
+                    {
+                        Struct_CutImg.resultPoint.X = 0;
+                        Struct_CutImg.resultPoint.Y = 0;
+                        switch (Struct_CutImg.iSearchCount)
+                        {
+                            case 0:
+                                //Struct_CutImg.EdgeParam1 = _iEdgeParam1;
+                                //Struct_CutImg.EdgeParam2 = _iEdgeParam2;
+                                //_iEdgeParam1_Uper = 150;
+                                //_iEdgeParam2_Uper = 210;
+                                Struct_CutImg.EdgeParam1 = _iEdgeParam1_Uper;
+                                Struct_CutImg.EdgeParam2 = _iEdgeParam2_Uper;
+                                break;
+                            case 1:
+                                Struct_CutImg.EdgeParam1 = Threshold02[0];
+                                Struct_CutImg.EdgeParam2 = Threshold02[1];
+                                break;
+                            case 2:
+                                Struct_CutImg.EdgeParam1 = (Threshold02[0] < _iEdgeParam3_Uper) ? 0 : Threshold02[0] - _iEdgeParam3_Uper;
+                                Struct_CutImg.EdgeParam2 = (Threshold02[1] < _iEdgeParam3_Uper) ? 0 : Threshold02[1] - _iEdgeParam3_Uper;
+                                break;
+                        }
+
+                        _nowRoiNumber_Uper = i;
+                        _imageHougher_Uper.GetSet_NowROI = i;
+
+                        //Cv.SetImageROI(WorkImage, ROI_Zone_Rect_Uper[i]);
+                        //Cv.Copy(WorkImage, ROI_Zone_Image_Uper[i]);
+
+                        //_imageHougher.HoughLines_Point(ROI_Zone_Image[i], Struct_CutImg.EdgeParam1, Struct_CutImg.EdgeParam2, _iLineParam1, _iLineParam2, _iLineParam3);
+                        List<CvPoint> FindedPoints = _imageHougher_Uper.HoughLines_Point(ROI_Zone_Image_Uper[iLstNowRoiNo_Uper[i]], Struct_CutImg.EdgeParam1, Struct_CutImg.EdgeParam2, _iLineParam1_Uper, _iLineParam2_Uper, _iLineParam3_Uper);
+
+                        if (FindedPoints.Count < 2)
+                        {
+                            Struct_CutImg.iSearchCount++;
+                            continue;
+                        }
+
+                        Struct_CutImg.resultPoint = Inspect_Run_Run_Finded_Lines_Uper(ROI_Zone_Image_Uper[iLstNowRoiNo_Uper[i]], FindedPoints, iLstNowSidNo_Uper[i], sLstNowPolNo_Uper[i], sLstNowTypNo_Uper[i]);
+
+                        if (Struct_CutImg.resultPoint.X == 0 && Struct_CutImg.resultPoint.Y == 0)
+                        {
+                            Struct_CutImg.iSearchCount++;
+                        }
+                        else
+                        {
+                            Struct_CutImg.point_Find_Result = true;
+                        }
+
+                    } while (Struct_CutImg.point_Find_Result == false && Struct_CutImg.iSearchCount < 3);
+
+                    //string imageSavePath = "ROIImages\\" + NowTrigNumber_Gap.ToString("000000") + " "+ NowGapNumber.ToString("00") + " " + i.ToString("00") +  ".jpg";
+                    //ROI_Zone_Image[i].SaveImage(imageSavePath);
+
+                    _cvPntLstCenterPoint_Uper.Add(Struct_CutImg.resultPoint);
+                    //WorkImage.DrawCircle(Struct_CutImg.resultPoint, 4, CvColor.Red);
+                    //CvWindow.ShowImages(WorkImage);
+                    WorkImage.ResetROI();
+                }//end for                    
+                return true;
+            } //end try
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+                throw;
+            }
+        }//end function
+
+        /*
         ///2015-01-09 Start
         //쓰레쉬 홀드 파라메타가 초기화 되지 않아서
         //이 부분을 수정함.
         public bool Inspect_Run_Run_ROI_EdgeLine_Centering_Uper(IplImage WorkImage)
         {
+            
+            var ofd = new OpenFileDialog();
+             if (ofd.ShowDialog() != DialogResult.OK) return;
+             var srcImg = IplImage.FromFile(ofd.FileName);
+            var divImage = new Control_ImageROI();
+            var divResult = divImage.Img_Deivde_Sero(srcImg, 5);
+            List<int> Find_Result = new List<int>();
+            for (int i = 0; i < divResult.Count; i++)
+            {
+                Control_Projection proj = new Control_Projection();
+                //List<int> div_Result = proj.Projection_Garo(divResult[i]);
+                List<int> div_Result = proj.Projection_Sero_Parallel(divResult[i]);
+                Find_Result.Add(div_Result[0]);
+                Find_Result.Add(div_Result[1]);
+            }
+            divResult[0].DrawCircle(divResult[0].Width / 2, Find_Result[0], 3, CvColor.Red, 2);
+            divResult[0].DrawCircle(divResult[0].Width / 2, Find_Result[1], 3, CvColor.Red, 2);
+            pictureBoxIpl6.ImageIpl = divResult[0];
+            
+
             try
             {
                 CuttingZone_To_Image Struct_CutImg = new CuttingZone_To_Image();
@@ -11863,7 +13681,106 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
                 throw;
             }
         }//end function
-        ///2015-01-09 Finish
+         ///2015-01-09 Finish
+        */
+
+        public bool Inspect_Run_Run_ROI_EdgeLine_Centering_Right(IplImage WorkImage)
+        {
+            try
+            {
+                CuttingZone_To_Image Struct_CutImg = new CuttingZone_To_Image();
+                _cvPntLstCenterPoint_Right.Clear();
+                //CvWindow.ShowImages(WorkImage);
+
+                for (int i = 0; i < LamiSystem.RectListImageZone_Right.Count; i++)
+                {
+                    string NowUsed = sLstNowDisNo_Right[i];
+                    if (NowUsed == "False")
+                    {
+                        //Struct_CutImg.resultPoint = new CvPoint(0, 0);
+                        //_cvPntLstCenterPoint_Right.Add(Struct_CutImg.resultPoint);
+                        //continue;
+                    }
+
+                    Struct_CutImg.point_Find_Result = false;
+                    Struct_CutImg.iSearchCount = 0;
+                    Struct_CutImg.EdgeParam1 = 0;
+                    Struct_CutImg.EdgeParam2 = 0;
+
+                    Cv.SetImageROI(WorkImage, ROI_Zone_Rect_Right[iLstNowRoiNo_Right[i]]);
+                    Cv.Copy(WorkImage, ROI_Zone_Image_Right[iLstNowRoiNo_Right[i]]);
+                    //CvWindow.ShowImages(ROI_Zone_Image_Right[i]);
+                    //ROI_Zone_Image_Right[i].SaveImage("D:\\Z1\\" + i.ToString("00") + ".jpg");
+                    //int tmpint = iLstNowRoiNo_Right[i];
+                    //ROI_Zone_Image_Right[iLstNowRoiNo_Right[i]].SaveImage("D:\\Z1\\" + i.ToString("00") + ".jpg");
+                    do
+                    {
+                        Struct_CutImg.resultPoint.X = 0;
+                        Struct_CutImg.resultPoint.Y = 0;
+                        switch (Struct_CutImg.iSearchCount)
+                        {
+                            case 0:
+                                //Struct_CutImg.EdgeParam1 = _iEdgeParam1;
+                                //Struct_CutImg.EdgeParam2 = _iEdgeParam2;
+                                //_iEdgeParam1_Right = 150;
+                                //_iEdgeParam2_Right = 210;
+                                Struct_CutImg.EdgeParam1 = _iEdgeParam1_Right;
+                                Struct_CutImg.EdgeParam2 = _iEdgeParam2_Right;
+                                break;
+                            case 1:
+                                Struct_CutImg.EdgeParam1 = Threshold02[0];
+                                Struct_CutImg.EdgeParam2 = Threshold02[1];
+                                break;
+                            case 2:
+                                Struct_CutImg.EdgeParam1 = (Threshold02[0] < _iEdgeParam3_Right) ? 0 : Threshold02[0] - _iEdgeParam3_Right;
+                                Struct_CutImg.EdgeParam2 = (Threshold02[1] < _iEdgeParam3_Right) ? 0 : Threshold02[1] - _iEdgeParam3_Right;
+                                break;
+                        }
+
+                        _nowRoiNumber_Right = i;
+                        _imageHougher_Right.GetSet_NowROI = i;
+
+                        //Cv.SetImageROI(WorkImage, ROI_Zone_Rect_Right[i]);
+                        //Cv.Copy(WorkImage, ROI_Zone_Image_Right[i]);
+
+                        //_imageHougher.HoughLines_Point(ROI_Zone_Image[i], Struct_CutImg.EdgeParam1, Struct_CutImg.EdgeParam2, _iLineParam1, _iLineParam2, _iLineParam3);
+                        List<CvPoint> FindedPoints = _imageHougher_Right.HoughLines_Point(ROI_Zone_Image_Right[iLstNowRoiNo_Right[i]], Struct_CutImg.EdgeParam1, Struct_CutImg.EdgeParam2, _iLineParam1_Right, _iLineParam2_Right, _iLineParam3_Right);
+
+                        if (FindedPoints.Count < 2)
+                        {
+                            Struct_CutImg.iSearchCount++;
+                            continue;
+                        }
+
+                        Struct_CutImg.resultPoint = Inspect_Run_Run_Finded_Lines_Right(ROI_Zone_Image_Right[iLstNowRoiNo_Right[i]], FindedPoints, iLstNowSidNo_Right[i], sLstNowPolNo_Right[i], sLstNowTypNo_Right[i]);
+
+                        if (Struct_CutImg.resultPoint.X == 0 && Struct_CutImg.resultPoint.Y == 0)
+                        {
+                            Struct_CutImg.iSearchCount++;
+                        }
+                        else
+                        {
+                            Struct_CutImg.point_Find_Result = true;
+                        }
+
+                    } while (Struct_CutImg.point_Find_Result == false && Struct_CutImg.iSearchCount < 3);
+
+                    //string imageSavePath = "ROIImages\\" + NowTrigNumber_Gap.ToString("000000") + " "+ NowGapNumber.ToString("00") + " " + i.ToString("00") +  ".jpg";
+                    //ROI_Zone_Image[i].SaveImage(imageSavePath);
+
+                    _cvPntLstCenterPoint_Right.Add(Struct_CutImg.resultPoint);
+                    //WorkImage.DrawCircle(Struct_CutImg.resultPoint, 4, CvColor.Red);
+                    //CvWindow.ShowImages(WorkImage);
+                    WorkImage.ResetROI();
+                }//end for                    
+                return true;
+            } //end try
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+                throw;
+            }
+        }//end function
 
         //우기백 2014.07.24
         //쓰레쉬 홀드 파라메타가 초기화 되지 않아서
@@ -12316,6 +14233,52 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             }
         }
 
+        public void Inspect_Run_Run_ROI_CenterPoint_Find_Right()
+        {
+            try
+            {
+
+                CntFind_Struct Struct_CntFind = new CntFind_Struct();
+                Struct_CntFind.zeroCvPoint = new CvPoint(0, 0);
+                //타입별 시작 번호가 달라서 찾은 센터 포인트 주소를 만들어주어 카운트 한다.
+                Struct_CntFind.cntPntAdd = 0;
+                //CntPoint_List.cvPntLstImagePoint = new List<CvPoint>();
+                cvPntLstImagePoint_Right = new List<CvPoint>();
+                for (int i = 0; i < LamiSystem.RectListImageZone_Right.Count; i++)
+                {
+                    Struct_CntFind.tmpTypeNo = sLstNowTypNo_Right[i];
+                    Struct_CntFind.tmpSeqNo = iLstNowSeqNo_Right[i];
+                    Struct_CntFind.tmpRoiNo = iLstNowRoiNo_Right[i];
+                    Struct_CntFind.tmpRect = LamiSystem.RectListImageZone_Right[Struct_CntFind.tmpRoiNo];
+
+                    if (_cvPntLstCenterPoint_Right[Struct_CntFind.cntPntAdd].X == 0 && _cvPntLstCenterPoint_Right[Struct_CntFind.cntPntAdd].Y == 0)
+                    {
+                        //Struct_CntFind.zeroCvPoint = new CvPoint(0, 0);
+                        cvPntLstImagePoint_Right.Add(Struct_CntFind.zeroCvPoint);
+
+                        //디버깅 용으로 사용하는 함수 이다.
+                        //검출 구역의 포인트를 표시해준다.
+                        //Inspect_Run_Run_Drawing_Result_Location_Point(zeroCvPoint, i);
+                    }
+                    else
+                    {
+                        Struct_CntFind.tmpPnt = _cvPntLstCenterPoint_Right[Struct_CntFind.cntPntAdd];
+                        Struct_CntFind.rCvPoint = new CvPoint(Struct_CntFind.tmpRect.X + Struct_CntFind.tmpPnt.X, Struct_CntFind.tmpRect.Y + Struct_CntFind.tmpPnt.Y);
+                        cvPntLstImagePoint_Right.Add(Struct_CntFind.rCvPoint);
+
+                        //디버깅 용으로 사용하는 함수 이다.
+                        //검출 구역의 포인트를 표시해준다.
+                        //Inspect_Run_Run_Drawing_Result_Location_Point(rCvPoint, i);
+                    }
+                    Struct_CntFind.cntPntAdd++;
+                }
+                //CvWindow.ShowImages(_nowIplImage);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(MethodBase.GetCurrentMethod().Name + " " + e.Message);
+            }
+        }
 
         public void Inspect_Run_Run_ROI_CenterPoint_Find_Down()
         {
@@ -12613,6 +14576,100 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             return false;
         }
 
+        private bool Inspect_Run_Run_Finded_Lines_UsingLine_Check_Right(IplImage zoneImage, CvPoint[] measPoint, string polaData, int sideData)
+        {
+            //Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
+            Trace.WriteLine("_nowRoiNumber_Right : " + _nowRoiNumber_Right.ToString("00"));
+            Trace.WriteLine("zoneImage : " + zoneImage.Width.ToString("0000") + " " + zoneImage.Height.ToString("0000"));
+            Trace.WriteLine("polaData : " + polaData);
+            Trace.WriteLine("polaData : " + sideData);
+
+            Struct_UsingLine_Check UsingLine = new Struct_UsingLine_Check();
+
+            UsingLine.intMethod = -1;
+            if (polaData == "흑백") UsingLine.intMethod = 0;
+            else if (polaData == "백흑") UsingLine.intMethod = 1;
+
+            //만약 측정좌표가 이미지의 크기에서 벗어났는지를 검사한다.
+            //벗어났으면 False를 리턴한다. 이때 어떻게 할것이지 결졍해서 추가 해야함.
+            if (measPoint[0].X >= zoneImage.Width || measPoint[1].X >= zoneImage.Width ||
+                measPoint[0].Y >= zoneImage.Height || measPoint[1].Y >= zoneImage.Height ||
+                measPoint[0].X < 0 || measPoint[1].X < 0 || measPoint[0].Y < 0 || measPoint[1].Y < 0)
+                return false;
+
+            UsingLine.v1 = zoneImage.Get2D(measPoint[0].Y, measPoint[0].X);
+            UsingLine.v2 = zoneImage.Get2D(measPoint[1].Y, measPoint[1].X);
+
+            UsingLine.iGridRow = iLstNowRowNo_Right[_nowRoiNumber_Right];
+            Trace.WriteLine("UsingLine.iGridRow : " + UsingLine.iGridRow.ToString("00"));
+
+            UsingLine.BrightDeferentValue = 0;
+            UsingLine.result = int.TryParse(LamiSystem.StrLstRcpConGridData_Right[(UsingLine.iGridRow * 11) + 10], out UsingLine.BrightDeferentValue);
+            if (UsingLine.result == false) return false;
+
+            //string tmpstr = _gapSystem.StrLstRcpConGridData_BiCell[10];
+            //테스트용을 위해서 측정 포인트를 표시해 주는 함수.
+            //if (NowROI_Number == 2)
+            //Inspect_Run_Run_Finded_Lines_MeasurePoint_Show(zoneImage, measPoint, v1[0], v2[0]);
+
+            UsingLine.checkResult = false;
+            if (UsingLine.intMethod == 0 && sideData == 0)
+            {
+                if ((UsingLine.v1[0] > UsingLine.v2[0]) && (UsingLine.v1[0] - UsingLine.v2[0] > UsingLine.BrightDeferentValue))
+                    return true;
+                return false;
+            }
+            if (UsingLine.intMethod == 0 && sideData == 1)
+            {
+                if ((UsingLine.v1[0] < UsingLine.v2[0]) && (UsingLine.v2[0] - UsingLine.v1[0] > UsingLine.BrightDeferentValue))
+                    return true;
+                //if (v1[0] < v2[0]) return true;
+                return false;
+            }
+            if (UsingLine.intMethod == 0 && sideData == 2)
+            {
+                if ((UsingLine.v1[0] < UsingLine.v2[0]) && (UsingLine.v2[0] - UsingLine.v1[0] > UsingLine.BrightDeferentValue))
+                    return true;
+                //if (v1[0] < v2[0]) return true;
+                return false;
+            }
+            if (UsingLine.intMethod == 0 && sideData == 3)
+            {
+                if ((UsingLine.v1[0] > UsingLine.v2[0]) && (UsingLine.v1[0] - UsingLine.v2[0] > UsingLine.BrightDeferentValue))
+                    return true;
+                //if (v1[0] > v2[0]) return true;
+                return false;
+            }
+            if (UsingLine.intMethod == 1 && sideData == 0)
+            {
+                if ((UsingLine.v1[0] < UsingLine.v2[0]) && (UsingLine.v2[0] - UsingLine.v1[0] > UsingLine.BrightDeferentValue))
+                    return true;
+                //if (v1[0] < v2[0]) return true;
+                return false;
+            }
+            if (UsingLine.intMethod == 1 && sideData == 1)
+            {
+                if ((UsingLine.v1[0] > UsingLine.v2[0]) && (UsingLine.v1[0] - UsingLine.v2[0] > UsingLine.BrightDeferentValue))
+                    return true;
+                //if (v1[0] > v2[0]) return true;
+                return false;
+            }
+            if (UsingLine.intMethod == 1 && sideData == 2)
+            {
+                if ((UsingLine.v1[0] > UsingLine.v2[0]) && (UsingLine.v1[0] - UsingLine.v2[0] > UsingLine.BrightDeferentValue))
+                    return true;
+                //if (v1[0] > v2[0]) return true;
+                return false;
+            }
+            if (UsingLine.intMethod == 1 && sideData == 3)
+            {
+                if ((UsingLine.v1[0] < UsingLine.v2[0]) && (UsingLine.v2[0] - UsingLine.v1[0] > UsingLine.BrightDeferentValue))
+                    return true;
+                //if (v1[0] < v2[0]) return true;
+                return false;
+            }
+            return false;
+        }
 
         private bool Inspect_Run_Run_Finded_Lines_UsingLine_Check_Down(IplImage zoneImage, CvPoint[] measPoint, string polaData, int sideData)
         {
@@ -12945,6 +15002,49 @@ P386 > 00110011001 = 모델 셀 배열 : 0 > A 타입, 1 > C 타입.역순으로
             return Struct_FindedLines.resultPoint;
         }
 
+        private CvPoint Inspect_Run_Run_Finded_Lines_Right(IplImage zoneImage, List<CvPoint> findedPoints, int sideData, string polaData, string typeData)
+        {
+            //Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
+            Finded_Lines Struct_FindedLines = new Finded_Lines();
+
+            Struct_FindedLines.resultPoint = new CvPoint(0, 0);
+
+            for (int i = 0; i < findedPoints.Count / 2; i++)
+            {
+                Struct_FindedLines.startPoint = findedPoints[i * 2];
+                Struct_FindedLines.endPoint = findedPoints[i * 2 + 1];
+
+                Struct_FindedLines.centerPoint = Inspect_Run_Run_Finded_Lines_CenterPoint_Check(Struct_FindedLines.startPoint, Struct_FindedLines.endPoint);
+                if (Struct_FindedLines.centerPoint.X < 0 || Struct_FindedLines.centerPoint.Y < 0)
+                {
+                    //Inspect_Run_Run_Finded_Lines_CenterPoint_Check_FailDisplay(zoneImage, startPoint, endPoint);
+                    //MessageBox.Show("Inspect_Run_Run_Finded_Lines : Inspect_Run_Run_Finded_Lines_CenterPoint_Check \r\n" +"에서 측정값이 0보다 적게 계산되었습니다.");
+                    return Struct_FindedLines.resultPoint;
+                }
+
+                Struct_FindedLines.measurePoints = Inspect_Run_Run_Finded_Lines_MeasurePoint_Check(Struct_FindedLines.centerPoint, sideData);
+                if (Struct_FindedLines.measurePoints[0].X >= zoneImage.Width ||
+                    Struct_FindedLines.measurePoints[1].X >= zoneImage.Width ||
+                    Struct_FindedLines.measurePoints[0].Y >= zoneImage.Height ||
+                    Struct_FindedLines.measurePoints[1].Y >= zoneImage.Height ||
+                    Struct_FindedLines.measurePoints[0].X < 0 || Struct_FindedLines.measurePoints[1].X < 0 ||
+                    Struct_FindedLines.measurePoints[0].Y < 0 || Struct_FindedLines.measurePoints[1].Y < 0)
+                {
+                    //Inspect_Run_Run_Finded_Lines_CenterPoint_Check_FailDisplay(zoneImage, startPoint, endPoint);
+                    //MessageBox.Show("Inspect_Run_Run_Finded_Lines : Inspect_Run_Run_Finded_Lines_MeasurePoint_Check \r\n" +"에서 측정값이 ROI 범위를 벗어 났습니다.");
+
+                    return Struct_FindedLines.resultPoint;
+                }
+
+
+                bool usedLineCheck = Inspect_Run_Run_Finded_Lines_UsingLine_Check_Right(zoneImage, Struct_FindedLines.measurePoints, polaData, sideData);
+                if (usedLineCheck)
+                {
+                    return Struct_FindedLines.centerPoint;
+                }
+            }
+            return Struct_FindedLines.resultPoint;
+        }
         private CvPoint Inspect_Run_Run_Finded_Lines_Down(IplImage zoneImage, List<CvPoint> findedPoints, int sideData, string polaData, string typeData)
         {
             //Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
@@ -13293,15 +15393,28 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
         private void Inspect_Stop_Ready()
         {
+            //방열판 검사기를 진행하면서 수정전. 20160427
+            //전 : 시작
             //이미지 저장까지 끝나면 _CycleCompleteFla 변수가 True로 셋팅된다.
             //이때 까지 기다렸다가 루프를 종료하고 정지 프로세스를 진행한다.
-            while (_CycleCompleteFlag_Uper == false)
+            //while (_CycleCompleteFlag_Uper == false)
+            //{
+            //    Thread.Sleep(1);
+            //endflagcheck++;
+            ////Trace.WriteLine("정지 버튼 눌린 후 대기 카운트 : " + endflagcheck.ToString("000000"));
+            //}
+            //전 : 종료
+
+
+            //방열판 검사기를 진행하면서 수정후. 20160427
+            //후 : 시작
+            while (_CycleCompleteFlag_Uper == false || _CycleCompleteFlag_Down == false || _CycleCompleteFlag_Right == false)
             {
                 Thread.Sleep(1);
                 //endflagcheck++;
                 ////Trace.WriteLine("정지 버튼 눌린 후 대기 카운트 : " + endflagcheck.ToString("000000"));
             }
-
+            //후 : 종료
             Inspect_Stop_Run();
         }
 
@@ -13329,12 +15442,19 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 #endif
                 if (MIL_Grab_Threading_Uper.IsAlive) MIL_Grab_Threading_Uper.Abort();
                 if (MIL_Grab_Threading_Down.IsAlive) MIL_Grab_Threading_Down.Abort();
+                if (MIL_Grab_Threading_Right.IsAlive) MIL_Grab_Threading_Right.Abort();
 
                 MIL.MdigControl(MilDigitizer_Uper, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
                 MIL.MdigHalt(MilDigitizer_Uper);
                 MIL.MbufFree(MilImage_Uper); //이미지 버퍼
                 MIL.MdispFree(MilDisplay_Uper); // 모니터링
                 MIL.MdigFree(MilDigitizer_Uper); // 프레임그래버
+
+                MIL.MdigControl(MilDigitizer_Right, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
+                MIL.MdigHalt(MilDigitizer_Right);
+                MIL.MbufFree(MilImage_Right); //이미지 버퍼
+                MIL.MdispFree(MilDisplay_Right); // 모니터링
+                MIL.MdigFree(MilDigitizer_Right); // 프레임그래버
 
                 MIL.MdigControl(MilDigitizer_Down, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
                 MIL.MdigHalt(MilDigitizer_Down);
@@ -13344,6 +15464,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
                 MIL.MsysFree(MilSystem_Uper); // 그래버 추가
                 MIL.MsysFree(MilSystem_Down); // 그래버 추가
+                MIL.MsysFree(MilSystem_Right); // 그래버 추가
 
                 MIL.MappFree(MilApplication); //
                 MIL_Trigger_Close = true;
@@ -13583,7 +15704,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                 }
             }
         }
-
+ /*
         private void Inspect_Run_Run_ImageLoading_To_Box_Display_BiCell(int imgCount) //, int HisPicNo)
         {
             if (InvokeRequired)
@@ -13596,11 +15717,11 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             {
                 //InspectBiCell_uLabel_Assy06.Text = traceNo.ToString("0000 :") + " " + _strLstTestImageNames_BiCell[imgCount];
 
-                Inspect_Main01_IplBox.ImageIpl = SrcIplImage_Uper;
+                Inspect_Main01_IplBox.ImageIpl = _srcIplImageUper;
             }
         }
 
-        /*
+       
         private void Inspect_Run_Run_ImageLoading_To_Box_Display_Gap(int imgCount) //, int HisPicNo)
         {
             try
@@ -13820,14 +15941,16 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
         //D:\alignTestImage
         private static string Excel_Uper_Filename;
         private static string Excel_Down_Filename;
+        private static string Excel_Right_Filename;
+
         private static string[] GapTotal_Result = new string[30];
         private void Inspect_Run_Ready()
         {
             //Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
 
             int iNumber = 0;
-            bool result = int.TryParse(uTxt_Gap_No.Text.Trim(), out iNumber);
-            if (result) SetReg(LamiSystem.RegPathGapStatus, "NowGapNo", iNumber.ToString());
+            //bool result = int.TryParse(uTxt_Gap_No.Text.Trim(), out iNumber);
+            //if (result) SetReg(LamiSystem.RegPathGapStatus, "NowGapNo", iNumber.ToString());
 
             //이값을 트루로 설정해줘야 트리거가 입력됬을 시
             //갭 번호가 증가 하지 않는다. 처음만 증가하지
@@ -13844,6 +15967,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             DateTime ExcelMakeTime = DateTime.Now;
             Excel_Uper_Filename = Inspect_Set_FileName_ExcelFile_Uper(ExcelMakeTime);
             Excel_Down_Filename = Inspect_Set_FileName_ExcelFile_Down(ExcelMakeTime);
+            Excel_Right_Filename = Inspect_Set_FileName_ExcelFile_Right(ExcelMakeTime);
             /*
             int iNumber = 0;
             bool result = int.TryParse(uTxt_Gap_No.Text.Trim(), out iNumber);
@@ -13943,6 +16067,16 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             }
         }
 
+        private void Inspect_Run_Ready_Test_ImageFolder_Load_Right(string folderPath)
+        {
+            //Trace.WriteLine((traceNo).ToString("00000") + " : Method Name : " + MethodBase.GetCurrentMethod().Name);
+
+            var di = new DirectoryInfo(folderPath);
+            foreach (FileInfo f in di.GetFiles())
+            {
+                _strLstTestImageNames_Right.Add(f.FullName);
+            }
+        }
 
         private void Inspect_Run_Ready_Test_ImageFolder_Load_Down(string folderPath)
         {
@@ -14024,9 +16158,13 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
             Measure_Grid_Making_Down();
             Measurement_Grid_To_Register(LamiSystem.RegPathMeasure_Down, uGrd_Inspect_Measure_Down);
-            
+
+            Measure_Grid_Making_Right();
+            Measurement_Grid_To_Register(LamiSystem.RegPathMeasure_Right, uGrd_Inspect_Measure_Right);
+
             Chart_Making_Uper();
             Chart_Making_Down();
+            Chart_Making_Right();
 
             inspect_Run_Run_Display_NG_OK_Count();
 
@@ -14039,17 +16177,21 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             SetReg(LamiSystem.RegPathGapStatus, "Count_NG_Both", "0");
             SetReg(LamiSystem.RegPathGapStatus, "Count_NG_Uper", "0");
             SetReg(LamiSystem.RegPathGapStatus, "Count_NG_Down", "0");
+            SetReg(LamiSystem.RegPathGapStatus, "Count_NG_Right", "0");
             SetReg(LamiSystem.RegPathGapStatus, "Count_OK_Uper", "0");
             SetReg(LamiSystem.RegPathGapStatus, "Count_OK_Down", "0");
+            SetReg(LamiSystem.RegPathGapStatus, "Count_OK_Right", "0");
 
             NowProdectNumber = 0;
             NowFailNumber_Both = 0;
             NowFailNumber_Uper = 0;
             NowFailNumber_Down = 0;
+            NowFailNumber_Right = 0;
             NowPassNumber_Uper = 0;
             NowPassNumber_Down = 0;
+            NowPassNumber_Right = 0;
             //WKB 20150725
-            
+
             //RegistryKey reg = Registry.CurrentUser;
             //reg = reg.OpenSubKey(LamiSystem.RegPathMeasure_Uper, true);
             int regCount = 0;
@@ -14120,6 +16262,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
         }
 
 
+        /*
         private void Inspect_uButton_Manual14_Click(object sender, EventArgs e)
         {
             if (Inspect_uButton_TestRunStop02.Text == "정 지") return;
@@ -14130,11 +16273,12 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             //Inspect_uButton_Manual20.PerformClick();
 
             Inspect_Run_Run_Manual_Grab_Gap();
-            Inspect_Main01_IplBox.ImageIpl = SrcIplImage_Uper;
+            Inspect_Main01_IplBox.ImageIpl = _srcIplImageUper;
             //Loading_Image_Name.Visible = false;
 
             this.Cursor = System.Windows.Forms.Cursors.Default;  // 커서를 원래 모양으로 만들었습니다.
         }
+        
 
         public void Inspect_Run_Run_Manual_Grab_Gap()
         {
@@ -14156,19 +16300,66 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                 MIL.MdigAlloc(MilSystem_Uper, MIL.M_DEV0, @"C:\Visionsystem\Data\solxcl_mil9_G60FV11CL_c_8bit_2tap_P2.dcf",
                     MIL.M_DEFAULT, ref MilDigitizer_Uper);
                 MIL.MdispAlloc(MilSystem_Uper, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Uper);
-                MIL.MbufAlloc2d(MilSystem_Uper, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP,
-                    ref MilImage_Uper);
+                
+                //방열판 검사기를 진행하면서 수정함. 20160427
+                //MIL.MbufAlloc2d(MilSystem_Uper, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Uper);
+                MIL.MbufAlloc2d(MilSystem_Uper, LamiSystem.GetSet_Upper_Garo, LamiSystem.GetSet_Upper_Sero, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Uper);
                 MIL.MdigControl(MilDigitizer_Uper, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
                 MIL.MdigGrab(MilDigitizer_Uper, MilImage_Uper);
 
-                MIL.MbufGet2d(MilImage_Uper, 0, 0, 4096, 3072, imgBuf_Uper);
-                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(imgBuf_Uper, 0);
-                CVMatImg_Uper.Data = bufPtr;
-                monoIplImage_Uper = Cv.GetImage(CVMatImg_Uper);
-                Cv.CvtColor(monoIplImage_Uper, SrcIplImage_Uper, ColorConversion.GrayToBgr);
+                //방열판 검사기를 진행하면서 수정함. 20160427
+                //MIL.MbufGet2d(MilImage_Uper, 0, 0, 4096, 3072, imgBuf_Uper);
+                MIL.MbufGet2d(MilImage_Uper, 0, 0, LamiSystem.GetSet_Upper_Garo, LamiSystem.GetSet_Upper_Sero, _imgBufUper);
+
+                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(_imgBufUper, 0);
+                _cvMatImgUper.Data = bufPtr;
+                _monoIplImageUper = Cv.GetImage(_cvMatImgUper);
+                Cv.CvtColor(_monoIplImageUper, _srcIplImageUper, ColorConversion.GrayToBgr);
 
                 MIL.MdigControl(MilDigitizer_Uper, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
                 MIL.MappFreeDefault(MilApplication, MilSystem_Uper, MilDisplay_Uper, MilDigitizer_Uper, MilImage_Uper);
+            }
+        }
+        
+
+        public void Inspect_Run_Run_Manual_Grab_Right()
+        {
+            if (InvokeRequired)
+            {
+                Delegate_Run_Run_Manual_Grab_Right del = Inspect_Run_Run_Manual_Grab_Right;
+                Invoke(del);
+            }
+            else
+            {
+                MilApplication = MIL.M_NULL;
+                MilSystem_Right = MIL.M_NULL;
+                MilDisplay_Right = MIL.M_NULL;
+                MilDigitizer_Right = MIL.M_NULL;
+                MilImage_Right = MIL.M_NULL;
+
+                MIL.MappAlloc(MIL.M_DEFAULT, ref MilApplication); // Application 할당
+                MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, MIL.M_DEFAULT, MIL.M_DEFAULT, ref MilSystem_Right); // 프레임그레버 할당
+                MIL.MdigAlloc(MilSystem_Right, MIL.M_DEV0, @"C:\Visionsystem\Data\solxcl_mil9_G60FV11CL_c_8bit_2tap_P2.dcf",
+                    MIL.M_DEFAULT, ref MilDigitizer_Right);
+                MIL.MdispAlloc(MilSystem_Right, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Right);
+
+                //방열판 검사기를 진행하면서 수정함. 20160427
+                //MIL.MbufAlloc2d(MilSystem_Right, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Right);
+                MIL.MbufAlloc2d(MilSystem_Right, LamiSystem.GetSet_Right_Garo, LamiSystem.GetSet_Right_Sero, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Right);
+                MIL.MdigControl(MilDigitizer_Right, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
+                MIL.MdigGrab(MilDigitizer_Right, MilImage_Right);
+
+                //방열판 검사기를 진행하면서 수정함. 20160427
+                //MIL.MbufGet2d(MilImage_Right, 0, 0, 4096, 3072, imgBuf_Right);
+                MIL.MbufGet2d(MilImage_Right, 0, 0, LamiSystem.GetSet_Right_Garo, LamiSystem.GetSet_Right_Sero, _imgBufRigh);
+
+                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(_imgBufRigh, 0);
+                _cvMatImgRigh.Data = bufPtr;
+                _monoIplImageRigh = Cv.GetImage(_cvMatImgRigh);
+                Cv.CvtColor(_monoIplImageRigh, _srcIplImageRight, ColorConversion.GrayToBgr);
+
+                MIL.MdigControl(MilDigitizer_Right, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
+                MIL.MappFreeDefault(MilApplication, MilSystem_Right, MilDisplay_Right, MilDigitizer_Right, MilImage_Right);
             }
         }
 
@@ -14192,20 +16383,25 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                 MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, 1, MIL.M_DEFAULT, ref MilSystem_Uper); // 프레임그레버 할당
                 MIL.MdigAlloc(MilSystem_Uper, MIL.M_DEV1, @"C:\Visionsystem\Data\solxcl_mil9_G60FV11CL_c_8bit_2tap_P2.dcf",MIL.M_DEFAULT, ref MilDigitizer_Down);
                 MIL.MdispAlloc(MilSystem_Uper, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Down);
-                MIL.MbufAlloc2d(MilSystem_Uper, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP,ref MilImage_Down);
+                //MIL.MbufAlloc2d(MilSystem_Uper, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP,ref MilImage_Down);
+                MIL.MbufAlloc2d(MilSystem_Uper, LamiSystem.GetSet_Left_Garo, LamiSystem.GetSet_Left_Sero, 
+                    8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Down);
                 MIL.MdigControl(MilDigitizer_Down, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
                 MIL.MdigGrab(MilDigitizer_Down, MilImage_Down);
 
-                MIL.MbufGet2d(MilImage_Down, 0, 0, 4096, 3072, imgBuf_Down);
-                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(imgBuf_Down, 0);
-                CVMatImg_Down.Data = bufPtr;
-                monoIplImage_Down = Cv.GetImage(CVMatImg_Down);
-                Cv.CvtColor(monoIplImage_Down, SrcIplImage_Down, ColorConversion.GrayToBgr);
+                //MIL.MbufGet2d(MilImage_Down, 0, 0, 4096, 3072, imgBuf_Down);
+                MIL.MbufGet2d(MilImage_Down, 0, 0, LamiSystem.GetSet_Left_Garo, LamiSystem.GetSet_Left_Sero, _imgBufDown);
+
+                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(_imgBufDown, 0);
+                _cvMatImgDown.Data = bufPtr;
+                _monoIplImageLeft = Cv.GetImage(_cvMatImgDown);
+                Cv.CvtColor(_monoIplImageLeft, _srcIplImageDown, ColorConversion.GrayToBgr);
 
                 MIL.MdigControl(MilDigitizer_Down, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
                 MIL.MappFreeDefault(MilApplication, MilSystem_Uper, MilDisplay_Down, MilDigitizer_Down, MilImage_Down);
             }
         }
+        */
 
         //하부 이미지 버튼
         private void Inspect_uButton_Manual15_Click(object sender, EventArgs e)
@@ -14346,7 +16542,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
             _CycleCompleteFlag_Gap = true;
         }
-        */
+        
 
 
         //갭 수동 테스트 버튼 인스펙션의 버튼
@@ -14363,14 +16559,16 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
             Graphics gc = Inspect_Main01_IplBox.CreateGraphics();
 
-            int iManual_GapNo = -1;
-            bool result = int.TryParse(uTxt_Gap_No.Text, out iManual_GapNo);
-            if (result == true)
-                NowGapNumber = iManual_GapNo;
+            //방열판 검사기 진행에서 주석처리함
+            //20160426 
+            //int iManual_GapNo = -1;
+            //bool result = int.TryParse(uTxt_Gap_No.Text, out iManual_GapNo);
+            //if (result == true)
+            //    NowGapNumber = iManual_GapNo;
 
             Run_Mode = "Manual";
             
-            SrcIplImage_Uper = Inspect_Main01_IplBox.ImageIpl;
+            _srcIplImageUper = Inspect_Main01_IplBox.ImageIpl;
             Inspect_Manual_Image_Grabing();
 
             this.Cursor = System.Windows.Forms.Cursors.Default; 
@@ -14385,7 +16583,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             //Inspect_uButton_Manual21.PerformClick();
             Thread.Sleep(10);
             Inspect_Run_Run_Manual_Grab_Down();
-            Inspect_Main02_IplBox.ImageIpl = SrcIplImage_Down;
+            Inspect_Main02_IplBox.ImageIpl = _srcIplImageDown;
             //Loading_Image_Name.Visible = false;
 
             this.Cursor = System.Windows.Forms.Cursors.Default;  // 커서를 원래 모양으로 만들었습니다.
@@ -14407,7 +16605,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                 tBox.Refresh();
             }
         }
-
+*/
         //상부 이미지 버튼
         private void Inspect_uButton_Manual18_Click(object sender, EventArgs e)
         {
@@ -14724,6 +16922,68 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
         }
 
 
+        public void Measure_Grid_Making_Right()
+        {
+            return;
+            //chart_Array_Right.Clear();
+            int VisionColumn = 8;
+            int RecipeColumn = 11;
+            int RcpGrdRows = LamiSystem.StrLstRcpConGridData_Right.Count / RecipeColumn;
+
+            uDS_Inspect_Measure_Right.Rows.Clear();
+
+            for (int i = 0; i < RcpGrdRows; i++)
+            {
+                //string readNo = LamiSystem.StrLstRcpConGridData_Right[i * RecipeColumn + 1];
+                string readName = LamiSystem.StrLstRcpConGridData_Right[i * RecipeColumn];
+
+                int VisGrdRows = LamiSystem.StrListVisConGridData_Right.Count / VisionColumn;
+                for (int j = 0; j < VisGrdRows; j++)
+                {
+                    string VisName = LamiSystem.StrListVisConGridData_Right[j * VisionColumn];
+                    if (readName == VisName)
+                    {
+                        UltraGridRow row = this.uGrd_Inspect_Measure_Right.DisplayLayout.Bands[0].AddNew();
+
+                        string CenValue = LamiSystem.StrListVisConGridData_Right[j * VisionColumn + 1];
+                        string MaxValue = LamiSystem.StrListVisConGridData_Right[j * VisionColumn + 2];
+                        string MinValue = LamiSystem.StrListVisConGridData_Right[j * VisionColumn + 3];
+                        row.Cells["NO"].Value = uGrd_Inspect_Measure_Right.DisplayLayout.Rows.Count.ToString("0");
+                        row.Cells["검사 항목"].Value = readName;
+                        row.Cells["규격 중심"].Value = CenValue;
+                        row.Cells["규격 상한"].Value = (double.Parse(CenValue) + double.Parse(MaxValue)).ToString("0.00");
+                        row.Cells["규격 하한"].Value = (double.Parse(CenValue) - double.Parse(MinValue)).ToString("0.00");
+                        row.Cells["측정 값"].Value = "0.00";
+                        row.Cells["판정 결과"].Value = "NO";
+                        row.Cells["수율"].Value = "0.000";
+                        row.Cells["평균"].Value = "0.000";
+                        row.Cells["표준 편차"].Value = "0.000";
+                        row.Cells["최소 값"].Value = "0.000";
+                        row.Cells["최대 값"].Value = "0.000";
+                        row.Cells["CP 값"].Value = "0.000";
+                        row.Cells["CPK 값"].Value = "0.000";
+                        row.Cells["OkCount"].Value = "0";
+                        row.Cells["NgCount"].Value = "0000";
+                        row.Cells["SumValue"].Value = "0";
+                        row.Cells["SquValue"].Value = "0";
+                        row.Cells["ProductOK"].Value = "0";
+                        break;
+                    }
+                }
+            }
+
+            //그리드 공란을 채운다.
+            for (int i = 0; i < 10 - RcpGrdRows; i++)
+            {
+                UltraGridRow row = this.uGrd_Inspect_Measure_Right.DisplayLayout.Bands[0].AddNew();
+
+                row.Cells["NO"].Value = uGrd_Inspect_Measure_Right.DisplayLayout.Rows.Count.ToString("0");
+            }
+
+            Measurement_Grid_Resize(uGrd_Inspect_Measure_Right);
+        }
+
+
         public void Measure_Grid_Making_Down()
         {
             return;
@@ -14891,6 +17151,25 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                 Chart_Title_No_Uper[i].Clear();
             }
         }
+        List<string> Chart_No_Array_Right_01 = new List<string>();
+        List<string> Chart_No_Array_Right_02 = new List<string>();
+        List<string> Chart_No_Array_Right_03 = new List<string>();
+        List<string> Chart_No_Array_Right_04 = new List<string>();
+        List<string> Chart_No_Array_Right_05 = new List<string>();
+        List<string> Chart_No_Array_Right_06 = new List<string>();
+        List<string> Chart_No_Array_Right_07 = new List<string>();
+        List<string> Chart_No_Array_Right_08 = new List<string>();
+        List<string> Chart_No_Array_Right_09 = new List<string>();
+        List<string> Chart_No_Array_Right_10 = new List<string>();
+        List<string>[] Chart_Title_No_Right = new List<string>[10];
+
+        public void Chart_Right_Title_Init()
+        {
+            for (int i = 0; i < Chart_Title_No_Right.Count(); i++)
+            {
+                Chart_Title_No_Right[i].Clear();
+            }
+        }
         public void Chart_Making_Uper()
         {
             Chart_Uper_Title_Init();
@@ -14904,8 +17183,8 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                 string readNo = LamiSystem.StrLstRcpConGridData_Uper[i * RecipeColumn + 1];
                 string readName = LamiSystem.StrLstRcpConGridData_Uper[i * RecipeColumn];
                 Chart_Make_Array_Uper(readNo);
-                Chart_Title_No_Uper[int.Parse(readNo) - 1].Add(i.ToString());
-                Chart_Title_No_Uper[int.Parse(readNo) - 1].Add(readName);
+                //Chart_Title_No_Uper[int.Parse(readNo) - 1].Add(i.ToString());
+                //Chart_Title_No_Uper[int.Parse(readNo) - 1].Add(readName);
 
                 int VisGrdRows = LamiSystem.StrListVisConGridData_Uper.Count / VisionColumn;
                 for (int j = 0; j < VisGrdRows; j++)
@@ -14916,6 +17195,10 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                         string CenValue = LamiSystem.StrListVisConGridData_Uper[j * VisionColumn + 1];
                         string MaxValue = LamiSystem.StrListVisConGridData_Uper[j * VisionColumn + 2];
                         string MinValue = LamiSystem.StrListVisConGridData_Uper[j * VisionColumn + 3];
+
+                        Chart_Title_No_Uper[int.Parse(readNo) - 1].Add(i.ToString());
+                        Chart_Title_No_Uper[int.Parse(readNo) - 1].Add(readName);
+
                         Chart_Title_No_Uper[int.Parse(readNo) - 1].Add(CenValue);
                         Chart_Title_No_Uper[int.Parse(readNo) - 1].Add(MaxValue);
                         Chart_Title_No_Uper[int.Parse(readNo) - 1].Add(MinValue);
@@ -14929,6 +17212,49 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
             Uper_chartPoints = chart_Locattion_Make_Uper(UperChart_Count);
             Chart_Initialize_Uper();
+        }
+
+        public void Chart_Making_Right()
+        {
+            Chart_Right_Title_Init();
+            chart_Array_Right.Clear();
+            int VisionColumn = 8;
+            int RecipeColumn = 11;
+            int RcpGrdRows = LamiSystem.StrLstRcpConGridData_Right.Count / RecipeColumn;
+
+            for (int i = 0; i < RcpGrdRows; i++)
+            {
+                string readNo = LamiSystem.StrLstRcpConGridData_Right[i * RecipeColumn + 1];
+                string readName = LamiSystem.StrLstRcpConGridData_Right[i * RecipeColumn];
+                Chart_Make_Array_Right(readNo);
+                //Chart_Title_No_Right[int.Parse(readNo) - 1].Add(i.ToString());
+                //Chart_Title_No_Right[int.Parse(readNo) - 1].Add(readName);
+
+                int VisGrdRows = LamiSystem.StrListVisConGridData_Right.Count / VisionColumn;
+                for (int j = 0; j < VisGrdRows; j++)
+                {
+                    string VisName = LamiSystem.StrListVisConGridData_Right[j * VisionColumn];
+                    if (readName == VisName)
+                    {
+                        string CenValue = LamiSystem.StrListVisConGridData_Right[j * VisionColumn + 1];
+                        string MaxValue = LamiSystem.StrListVisConGridData_Right[j * VisionColumn + 2];
+                        string MinValue = LamiSystem.StrListVisConGridData_Right[j * VisionColumn + 3];
+
+                        Chart_Title_No_Right[int.Parse(readNo) - 1].Add(i.ToString());
+                        Chart_Title_No_Right[int.Parse(readNo) - 1].Add(readName);
+
+                        Chart_Title_No_Right[int.Parse(readNo) - 1].Add(CenValue);
+                        Chart_Title_No_Right[int.Parse(readNo) - 1].Add(MaxValue);
+                        Chart_Title_No_Right[int.Parse(readNo) - 1].Add(MinValue);
+                        break;
+                    }
+                }
+            }
+
+            //RightChart_Count = chart_Array_Right.Count;
+            RightChart_Count = 10;
+            Right_chartPoints = chart_Locattion_Make_Right(RightChart_Count);
+            Chart_Initialize_Right();
         }
 
         public void Chart_Making_Down()
@@ -14945,8 +17271,10 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                 string readNo = LamiSystem.StrLstRcpConGridData_Down[i * RecipeColumn + 1];
                 string readName = LamiSystem.StrLstRcpConGridData_Down[i * RecipeColumn];
                 Chart_Make_Array_Down(readNo);
-                Chart_Title_No_Down[int.Parse(readNo) - 1].Add(i.ToString());
-                Chart_Title_No_Down[int.Parse(readNo) - 1].Add(readName);
+
+                //방열판검사기를 진행하면서 수정함. 20160426
+                //Chart_Title_No_Down[int.Parse(readNo) - 1].Add(i.ToString());
+                //Chart_Title_No_Down[int.Parse(readNo) - 1].Add(readName);
 
                 int VisGrdRows = LamiSystem.StrListVisConGridData_Down.Count / VisionColumn;
                 for (int j = 0; j < VisGrdRows; j++)
@@ -14957,6 +17285,11 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                         string CenValue = LamiSystem.StrListVisConGridData_Down[j * VisionColumn + 1];
                         string MaxValue = LamiSystem.StrListVisConGridData_Down[j * VisionColumn + 2];
                         string MinValue = LamiSystem.StrListVisConGridData_Down[j * VisionColumn + 3];
+
+                        //방열판검사기를 진행하면서 수정함. 20160426
+                        Chart_Title_No_Down[int.Parse(readNo) - 1].Add(i.ToString());
+                        Chart_Title_No_Down[int.Parse(readNo) - 1].Add(readName);
+
                         Chart_Title_No_Down[int.Parse(readNo) - 1].Add(CenValue);
                         Chart_Title_No_Down[int.Parse(readNo) - 1].Add(MaxValue);
                         Chart_Title_No_Down[int.Parse(readNo) - 1].Add(MinValue);
@@ -14971,7 +17304,10 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             Chart_Initialize_Down();
         }
 
-        List<string> chart_Array_Uper = new List<string>(); 
+        List<string> chart_Array_Uper = new List<string>();
+
+        List<string> chart_Array_Right = new List<string>();
+
         public void Chart_Make_Array_Uper(string chartNo)
         {
             
@@ -14980,6 +17316,16 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                 if (chartNo == ReadNo) return;
             }
             chart_Array_Uper.Add(chartNo);
+        }
+
+        public void Chart_Make_Array_Right(string chartNo)
+        {
+
+            foreach (var ReadNo in chart_Array_Right)
+            {
+                if (chartNo == ReadNo) return;
+            }
+            chart_Array_Right.Add(chartNo);
         }
 
         //하부 그래프 버튼 클릭
@@ -15190,8 +17536,11 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             //TestStartEvent();
             Measurement_DataSet_To_Register(LamiSystem.RegPathMeasureGrid_Buf_Uper, uDS_Inspect_Measure_Uper);
             Measurement_DataSet_To_Register(LamiSystem.RegPathMeasureGrid_Buf_Down, uDS_Inspect_Measure_Down);
+            Measurement_DataSet_To_Register(LamiSystem.RegPathMeasureGrid_Buf_Right, uDS_Inspect_Measure_Right);
+
             Measurement_DataTable_To_Register(LamiSystem.RegPathMeasureChart_Buf_Uper, Uper_MeasureTables, "Uper");
             Measurement_DataTable_To_Register(LamiSystem.RegPathMeasureChart_Buf_Down, Down_MeasureTables, "Down");
+            Measurement_DataTable_To_Register(LamiSystem.RegPathMeasureChart_Buf_Right, Right_MeasureTables, "Right");
 
             if (MIL_Grab_Threading_Uper == null) return;
 
@@ -15200,6 +17549,25 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                 Inspect_Stop_threading = new Thread(Inspect_Stop_Ready);
                 Inspect_Stop_threading.Start();
             }
+
+            //방열판 검사기를 진행하면 추가됨. 20160427
+            //증 : 시작
+            if (MIL_Grab_Threading_Down == null) return;
+
+            if (MIL_Grab_Threading_Down.IsAlive == true)
+            {
+                Inspect_Stop_threading = new Thread(Inspect_Stop_Ready);
+                Inspect_Stop_threading.Start();
+            }
+
+            if (MIL_Grab_Threading_Right == null) return;
+
+            if (MIL_Grab_Threading_Right.IsAlive == true)
+            {
+                Inspect_Stop_threading = new Thread(Inspect_Stop_Ready);
+                Inspect_Stop_threading.Start();
+            }
+            //증 : 종료
         }
 
         public void Measurement_DataSet_To_Register(string strNodePath, Infragistics.Win.UltraWinDataSource.UltraDataSource doDataSet)
@@ -15330,6 +17698,8 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
         private delegate void Delegate_Run_Run_Manual_Grab_Gap();
 
+        private delegate void Delegate_Run_Run_Manual_Grab_Right();
+
         private delegate void Delegate_Run_Run_Test_DisplayZone_Gray_Display();
 
         private delegate void Delegate_Run_Run_Threading2_Display(TextBox tBox, int dataNo);
@@ -15388,7 +17758,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                             History_Read_ROI_Draw_Uper();
 
                             //이미지를 다시 분석해서 측정값을 찾아내는 함수
-                            //Inspect_getHistory_Image_Uper();
+                            Inspect_getHistory_Image_Uper();
                         }
                         break;
                     }
@@ -15515,7 +17885,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                             History_Read_ROI_Draw_Uper();
 
                             //이미지를 분석해서 측정값을 구하는 함수
-                            //Inspect_getHistory_Image_Uper();
+                            Inspect_getHistory_Image_Uper();
                         }
                         break;
                     }
@@ -15639,7 +18009,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                             History_Read_ROI_Draw_Down();
 
                             //이미지를 다시 분석해서 측정값을 찾아내는 함수
-                            //Inspect_getHistory_Image_Down();
+                            Inspect_getHistory_Image_Down();
                         }
                         break;
                     }
@@ -15805,7 +18175,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
                             History_Read_ROI_Draw_Down();
 
                             //이미지를 다시 분석해서 측정값을 찾아내는 함수
-                            //Inspect_getHistory_Image_Down();
+                            Inspect_getHistory_Image_Down();
                         }
                         break;
                     }
@@ -16020,6 +18390,8 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
         private void Inspect_getHistory_Image_Uper()
         {
+            return;
+
             int startNo = Select_Inspect_Image_Name.LastIndexOf("\\");
             int startNo2 = Select_Inspect_Image_Name.IndexOf(" ", startNo + 1);
             //string strNo = Select_Inspect_Image_Name.Substring(startNo2 + 1, 2);
@@ -16031,7 +18403,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
             Graphics gc = Inspect_Main01_IplBox.CreateGraphics();
             Run_Mode = "Manual";
-            SrcIplImage_Uper = Inspect_Main01_IplBox.ImageIpl;
+            //_srcIplImageUper = Inspect_Main01_IplBox.ImageIpl;
             Inspect_Manual_Image_Grabing();
         }
 
@@ -16057,6 +18429,8 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
         private void Inspect_getHistory_Image_Down()
         {
+            return;
+
             int startNo = Select_Inspect_Image_Name.LastIndexOf("\\");
             int startNo2 = Select_Inspect_Image_Name.IndexOf(" ", startNo + 1);
             string strNo = Select_Inspect_Image_Name.Substring(startNo2 + 1, 2);
@@ -16066,7 +18440,7 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
 
             Graphics gc = Inspect_Main02_IplBox.CreateGraphics();
             Run_Mode = "Manual";
-            SrcIplImage_Uper = Inspect_Main02_IplBox.ImageIpl;
+            //_srcIplImageUper = Inspect_Main02_IplBox.ImageIpl;
             Inspect_Manual_Image_Grabing();
         }
         
@@ -16341,8 +18715,11 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
         {
             UperData_Charts = new UltraChart[10];
             DownData_Charts = new UltraChart[10];
+            RightData_Charts = new UltraChart[10];
+
             Uper_MeasureTables = new DataTable[10];
             Down_MeasureTables = new DataTable[10];
+            Right_MeasureTables = new DataTable[10];
 
             UperData_Charts[0] = this.uChart_Uper_U01;
             UperData_Charts[1] = this.uChart_Uper_U02;
@@ -16366,6 +18743,17 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             DownData_Charts[8] = this.uChart_Down_U09;
             DownData_Charts[9] = this.uChart_Down_U10;
 
+            RightData_Charts[0] = this.uChart_Right_U01;
+            RightData_Charts[1] = this.uChart_Right_U02;
+            RightData_Charts[2] = this.uChart_Right_U03;
+            RightData_Charts[3] = this.uChart_Right_U04;
+            RightData_Charts[4] = this.uChart_Right_U05;
+            RightData_Charts[5] = this.uChart_Right_U06;
+            RightData_Charts[6] = this.uChart_Right_U07;
+            RightData_Charts[7] = this.uChart_Right_U08;
+            RightData_Charts[8] = this.uChart_Right_U09;
+            RightData_Charts[9] = this.uChart_Right_U10;
+
             Chart_Title_No_Uper[0] = Chart_No_Array_Uper_01;
             Chart_Title_No_Uper[1] = Chart_No_Array_Uper_02;
             Chart_Title_No_Uper[2] = Chart_No_Array_Uper_03;
@@ -16387,18 +18775,32 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             Chart_Title_No_Down[7] = Chart_No_Array_Down_08;
             Chart_Title_No_Down[8] = Chart_No_Array_Down_09;
             Chart_Title_No_Down[9] = Chart_No_Array_Down_10;
+
+            Chart_Title_No_Right[0] = Chart_No_Array_Right_01;
+            Chart_Title_No_Right[1] = Chart_No_Array_Right_02;
+            Chart_Title_No_Right[2] = Chart_No_Array_Right_03;
+            Chart_Title_No_Right[3] = Chart_No_Array_Right_04;
+            Chart_Title_No_Right[4] = Chart_No_Array_Right_05;
+            Chart_Title_No_Right[5] = Chart_No_Array_Right_06;
+            Chart_Title_No_Right[6] = Chart_No_Array_Right_07;
+            Chart_Title_No_Right[7] = Chart_No_Array_Right_08;
+            Chart_Title_No_Right[8] = Chart_No_Array_Right_09;
+            Chart_Title_No_Right[9] = Chart_No_Array_Right_10;
         }
 
         Infragistics.Win.Misc.UltraLabel[] UperChart_Title = new UltraLabel[20];
-
+        Infragistics.Win.Misc.UltraLabel[] RightChart_Title = new UltraLabel[20];
 
         public Infragistics.Win.UltraWinChart.UltraChart[] DownData_Charts;
         public Infragistics.Win.UltraWinChart.UltraChart[] UperData_Charts;
+        public Infragistics.Win.UltraWinChart.UltraChart[] RightData_Charts;
         public DataTable[] Uper_MeasureTables;
         public DataTable[] Down_MeasureTables;
+        public DataTable[] Right_MeasureTables;
 
         private int UperChart_Count = 0;
         private int DownChart_Count = 0;
+        private int RightChart_Count = 0;
 
         /// <summary>
         /// Ultra Chart 의 데이터 값의 표시 구성항목을 설정한다.
@@ -16437,10 +18839,44 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             }
         }
 
-       
+
+        private void Chart_Initialize_Right()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                this.RightData_Charts[i].Visible = false;
+            }
+
+            for (int i = 0; i < RightChart_Count; i++)
+            {
+                ultraChartSetup_Right(this.RightData_Charts[i]);
+
+                this.Right_MeasureTables[i] = new DataTable();
+                this.RightData_Charts[i].DataSource = initializeDataTable(Right_MeasureTables[i]);
+
+                this.RightData_Charts[i].Location = Right_chartPoints[i];
+                //this.RightData_Charts[i].Visible = true;
+
+                if (Chart_Title_No_Right[i].Count() == 0)
+                {
+                    this.RightData_Charts[i].Axis.Y.RangeType = AxisRangeType.Custom;
+                    this.RightData_Charts[i].Axis.Y.RangeMax = 2.0d;
+                    this.RightData_Charts[i].Axis.Y.RangeMin = 0.0d;
+                    continue;
+                }
+                this.RightData_Charts[i].Visible = true;
+                //float CenValue = float.Parse(Chart_Title_No_Right[i][2]);
+                float MaxValue = float.Parse(Chart_Title_No_Right[i][2]) + float.Parse(Chart_Title_No_Right[i][3]) * 2;
+                float MinValue = float.Parse(Chart_Title_No_Right[i][2]) - float.Parse(Chart_Title_No_Right[i][4]) * 2;
+                this.RightData_Charts[i].Axis.Y.RangeType = AxisRangeType.Custom;
+                this.RightData_Charts[i].Axis.Y.RangeMax = MaxValue;
+                this.RightData_Charts[i].Axis.Y.RangeMin = MinValue;
+            }
+        }
 
         private Point[] Uper_chartPoints;
-       
+        private Point[] Right_chartPoints;
+
         private Point[] chart_Locattion_Make_Uper(int chart_Count)
         {
             Point[] chartPoints = new Point[chart_Count];
@@ -16475,6 +18911,39 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             return chartPoints;
         }
 
+        private Point[] chart_Locattion_Make_Right(int chart_Count)
+        {
+            Point[] chartPoints = new Point[chart_Count];
+
+            int backGaro = uPanel_Right.Width;
+            int backSero = uPanel_Right.Height;
+            int lengthGap = 3;
+
+            int RowCount = chart_Count / 2;
+            if (chart_Count % 2 != 0) RowCount++;
+
+            //그래프 별 간격을 3으로 주었을때 계산되는 값임.
+            int chart_Garo = (backGaro - 9) / 2;
+            int chart_Sero = (backSero - 18) / 5;
+
+
+
+            for (int i = 0; i < RightChart_Count; i++)
+            {
+                this.RightData_Charts[i].Width = chart_Garo;
+                this.RightData_Charts[i].Height = chart_Sero;
+
+                //if (i / 5 == 0) chartPoints[i].X = 10;
+                //else chartPoints[i].X = chart_Garo + 20;
+                //chartPoints[i].Y = (i % 5) * (backSero / 5) + 10;
+
+                if (i / 5 == 0) chartPoints[i].X = 3;
+                else chartPoints[i].X = chart_Garo + 6;
+
+                chartPoints[i].Y = (i % 5) * (backSero / 5) + 3;
+            }
+            return chartPoints;
+        }
         private Point[] Down_chartPoints;
 
         private Point[] chart_Locattion_Make_Down(int chart_Count)
@@ -16656,11 +19125,40 @@ P373 > 1 or 2  = 현재 진행 셀의 타입을 나타낸다. 1 > A타입, 2 > C
             }
         }
 
+
+        private void ultraChartSetup_Right(Infragistics.Win.UltraWinChart.UltraChart iChart)
+        {
+            iChart.Legend.Visible = false;
+
+            iChart.ColorModel.CustomPalette = ChartColors;
+
+            for (int i = 0; i < Chart_Title_No_Right.Count(); i++)
+            {
+                if (Chart_Title_No_Right[i].Count != 0)
+                {
+                    iChart.Axis.Y.RangeType = AxisRangeType.Custom;
+                    iChart.Axis.Y.TickmarkStyle = Infragistics.UltraChart.Shared.Styles.AxisTickStyle.DataInterval;
+                    iChart.Axis.Y.TickmarkInterval = float.Parse(Chart_Title_No_Right[i][3]);
+                    iChart.Axis.Y.Labels.ItemFormat = AxisItemLabelFormat.DataValue;
+                    //iChart.Axis.Y.Labels.ItemFormatString = "<ITEM_LABEL>";
+                }
+
+            }
+
+            iChart.Tooltips.Format = Infragistics.UltraChart.Shared.Styles.TooltipStyle.Custom;
+            if (iChart.Tooltips.Format == Infragistics.UltraChart.Shared.Styles.TooltipStyle.Custom)
+            {
+                iChart.Tooltips.FormatString = "<DATA_VALUE:0.###>";
+            }
+        }
+
         private void ultraChartSetup_Down(Infragistics.Win.UltraWinChart.UltraChart iChart)
         {
             iChart.Legend.Visible = false;
 
             iChart.ColorModel.CustomPalette = ChartColors;
+
+            int tmpCount = Chart_Title_No_Down.Count();
 
             for (int i = 0; i < Chart_Title_No_Down.Count(); i++)
             {

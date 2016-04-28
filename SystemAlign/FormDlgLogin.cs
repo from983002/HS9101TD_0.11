@@ -65,6 +65,7 @@ namespace SystemAlign
             utxtPassward.Select();
 
 #if(SYST_SIMUL)
+            utxtNumber.Text = "lg";
             utxtPassward.Text = "lg";
 #else
             

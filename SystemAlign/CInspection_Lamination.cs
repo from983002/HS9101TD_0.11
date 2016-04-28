@@ -67,6 +67,10 @@ namespace SystemAlign
         public List<string> StrBufMeasureGridName_Down = new List<string>();
         public string RegPathMeasureGrid_Buf_Down = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Measurement Data\\MeasureDown_Grid_Buf";
 
+        public List<string> StrBufMeasureGridData_Right = new List<string>();
+        public List<string> StrBufMeasureGridName_Right = new List<string>();
+        public string RegPathMeasureGrid_Buf_Right = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Measurement Data\\MeasureRight_Grid_Buf";
+
         public List<string> StrBufMeasureChartData_Uper = new List<string>();
         public List<string> StrBufMeasureChartName_Uper = new List<string>();
         public string RegPathMeasureChart_Buf_Uper = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Measurement Data\\MeasureUper_Chart_Buf";
@@ -75,8 +79,13 @@ namespace SystemAlign
         public List<string> StrBufMeasureChartName_Down = new List<string>();
         public string RegPathMeasureChart_Buf_Down = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Measurement Data\\MeasureDown_Chart_Buf";
 
+        public List<string> StrBufMeasureChartData_Right = new List<string>();
+        public List<string> StrBufMeasureChartName_Right = new List<string>();
+        public string RegPathMeasureChart_Buf_Right = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Measurement Data\\MeasureRight_Chart_Buf";
+
         public string DCF_File_Path_Gap = string.Empty;
         public string DCF_File_Path_BiCell = string.Empty;
+        public string DCF_File_Path_Right = string.Empty;
 
         private bool Grab_Auto_Falg_Gap = false;
 
@@ -94,6 +103,13 @@ namespace SystemAlign
             set { Grab_Auto_Falg_BiCell = value; }
         }
 
+        private bool Grab_Auto_Falg_Right = false;
+        public bool GetSet_Grab_Auto_Flag_Right
+        {
+            get { return Grab_Auto_Falg_Right; }
+            set { Grab_Auto_Falg_Right = value; }
+        }
+
         /// <summary>
         /// Calibration Data
         /// </summary>
@@ -101,6 +117,10 @@ namespace SystemAlign
         public List<string> StrLstMeasureData_Uper = new List<string>();
         public List<string> StrLstMeasureName_Uper = new List<string>();
         public string RegPathMeasure_Uper = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Measurement Data\\MeasureUper";
+
+        public List<string> StrLstMeasureData_Right = new List<string>();
+        public List<string> StrLstMeasureName_Right = new List<string>();
+        public string RegPathMeasure_Right = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Measurement Data\\MeasureRight";
 
         public List<string> StrLstMeasureData_TempDown = new List<string>();
         public List<string> StrLstMeasureData_TempUper = new List<string>();
@@ -137,11 +157,88 @@ namespace SystemAlign
         public int GrabImageSizeGaro_Gap = 4096;
         public int GrabImageSizeSero_Gap = 3072;
 
+        public int GetSet_Upper_Garo
+        {
+            get
+            {
+                return GrabImageSizeGaro_Gap;
+            }
+            set
+            {
+                GrabImageSizeGaro_Gap = value;
+            }
+        }
+
+        public int GetSet_Upper_Sero
+        {
+            get
+            {
+                return GrabImageSizeSero_Gap;
+            }
+            set
+            {
+                GrabImageSizeSero_Gap = value;
+            }
+        }
+
+        public int GrabImageSizeGaro_Right = 4096;
+        public int GrabImageSizeSero_Right = 3072;
+
+        public int GetSet_Right_Garo
+        {
+            get
+            {
+                return GrabImageSizeGaro_Right;
+            }
+            set
+            {
+                GrabImageSizeGaro_Right = value;
+            }
+        }
+
+        public int GetSet_Right_Sero
+        {
+            get
+            {
+                return GrabImageSizeSero_Right;
+            }
+            set
+            {
+                GrabImageSizeSero_Right = value;
+            }
+        }
+
+
+
+
         public string[] SystemEdgeParam_Gap = new string[3];
         public string[] SystemLineParam_Gap = new string[3];
 
         public int GrabImageSizeGaro_BiCell = 4096;
         public int GrabImageSizeSero_BiCell = 3072;
+        public int GetSet_Left_Garo
+        {
+            get
+            {
+                return GrabImageSizeGaro_BiCell;
+            }
+            set
+            {
+                GrabImageSizeGaro_BiCell = value;
+            }
+        }
+
+        public int GetSet_Left_Sero
+        {
+            get
+            {
+                return GrabImageSizeSero_BiCell;
+            }
+            set
+            {
+                GrabImageSizeSero_BiCell = value;
+            }
+        }
 
         public string[] SystemEdgeParam_BiCell = new string[3];
         public string[] SystemLineParam_BiCell = new string[3];
@@ -184,19 +281,25 @@ namespace SystemAlign
         public List<string> StrListVisConData = new List<string>();
         public List<string> StrListVisConTitle = new List<string>();
         public List<string> StrListVisConName = new List<string>();
+
         public List<string> StrListVisConGridData_Uper = new List<string>();
         public List<string> StrListVisConGridTitle_Uper = new List<string>();
         public List<string> StrListVisConGridData_Down = new List<string>();
         public List<string> StrListVisConGridTitle_Down = new List<string>();
+        public List<string> StrListVisConGridData_Right = new List<string>();
+        public List<string> StrListVisConGridTitle_Right = new List<string>();
+
         public string RegPathVisCon_Lami = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Vision Config Lami";
         public string RegPathVisConGrid_Uper = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Vision Config Lami\\Vision Grid Uper";
         public string RegPathVisConGrid_Down = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Vision Config Lami\\Vision Grid Down";
-       
+        public string RegPathVisConGrid_Right = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Vision Config Lami\\Vision Grid Right";
+
         /// <summary>
         /// 레시피 사용 멤버스  _vListMeasPolarity
         /// </summary>
         public Infragistics.Win.ValueList _vListItemName_Uper = new Infragistics.Win.ValueList();
         public Infragistics.Win.ValueList _vListItemName_Down = new Infragistics.Win.ValueList();
+        public Infragistics.Win.ValueList _vListItemName_Right = new Infragistics.Win.ValueList();
         public Infragistics.Win.ValueList _vListMeasMethod = new Infragistics.Win.ValueList();
         public Infragistics.Win.ValueList _vListMeasDivid = new Infragistics.Win.ValueList();
         public Infragistics.Win.ValueList _imgSideList = new Infragistics.Win.ValueList();
@@ -209,12 +312,20 @@ namespace SystemAlign
         public List<string> StrLstRcpConGridTitle_Uper = new List<string>();
         public List<string> StrLstRcpConGridData_Down = new List<string>();
         public List<string> StrLstRcpConGridTitle_Down = new List<string>();
+        
+        //측면 우측 사용 리스트
+        public List<string> StrLstRcpConGridData_Right = new List<string>();
+        public List<string> StrLstRcpConGridTitle_Right = new List<string>();
 
         public string RegPathRcpCon = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Recipe Config Lami";
         public string RegPathRcpConGrid_Uper = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Recipe Config Lami\\Recipe Grid Uper";
         public string RegPathRcpConGrid_Down = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Recipe Config Lami\\Recipe Grid Down";
         public string RegPathRcpConInsp_Uper = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Recipe Config Lami\\Inspect Area Uper";
         public string RegPathRcpConInsp_Down = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Recipe Config Lami\\Inspect Area Down";
+
+        //측면 우측 사용 리스트
+        public string RegPathRcpConGrid_Right = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Recipe Config Lami\\Recipe Grid Right";
+        public string RegPathRcpConInsp_Right = "Software\\ShinJin M Tec\\LNS System\\System Lamination\\Recipe Config Lami\\Inspect Area Right";
 
         public List<Rectangle> RectListRecipeBoxZone_Uper = new List<Rectangle>();
         public List<CvRect> RectListImageZone_Uper = new List<CvRect>();
@@ -223,6 +334,11 @@ namespace SystemAlign
         public List<Rectangle> RectListRecipeBoxZone_Down = new List<Rectangle>();
         public List<CvRect> RectListImageZone_Down = new List<CvRect>();
         public List<Rectangle> RectListInspBoxZone_Down = new List<Rectangle>();
+
+        public List<Rectangle> RectListRecipeBoxZone_Right = new List<Rectangle>();
+        public List<CvRect> RectListImageZone_Right = new List<CvRect>();
+        public List<Rectangle> RectListInspBoxZone_Right = new List<Rectangle>();
+
 
         private float _floatSystemInspectZoomX_Uper = 0f;
         private float _floatSystemInspectZoomY_Uper = 0f;
@@ -236,6 +352,20 @@ namespace SystemAlign
         {
             get { return _floatSystemInspectZoomY_Uper; }
             set { _floatSystemInspectZoomY_Uper = value; }
+        }
+
+        private float _floatSystemInspectZoomX_Right = 0f;
+        private float _floatSystemInspectZoomY_Right = 0f;
+        public float GetSet_System_Inspect_Zoom_X_Right
+        {
+            get { return _floatSystemInspectZoomX_Right; }
+            set { _floatSystemInspectZoomX_Right = value; }
+        }
+
+        public float GetSet_System_Inspect_Zoom_Y_Right
+        {
+            get { return _floatSystemInspectZoomY_Right; }
+            set { _floatSystemInspectZoomY_Right = value; }
         }
 
         private float _floatSystemInspectZoomX_Down = 0f;
@@ -263,14 +393,31 @@ namespace SystemAlign
             set { _floatSystemStatusZoomX_Uper = value; }
         }
 
+        private float _floatSystemStatusZoomX_Right = 0f;
+        private float _floatSystemStatusZoomY_Right = 0f;
+        public float GetSet_System_Status_Zoom_X_Right
+        {
+            get { return _floatSystemStatusZoomX_Right; }
+            set { _floatSystemStatusZoomX_Right = value; }
+        }
+
         public float GetSet_System_Status_Zoom_Y_Uper
         {
             get { return _floatSystemStatusZoomY_Uper; }
             set { _floatSystemStatusZoomY_Uper = value; }
         }
 
+        public float GetSet_System_Status_Zoom_Y_Right
+        {
+            get { return _floatSystemStatusZoomY_Right; }
+            set { _floatSystemStatusZoomY_Right = value; }
+        }
+
         public List<string> StrLstRcpConInspData_Down = new List<string>();
         public List<string> StrLstRcpConInspTitle_Down = new List<string>();
+
+        public List<string> StrLstRcpConInspData_Right = new List<string>();
+        public List<string> StrLstRcpConInspTitle_Right = new List<string>();
 
         private float _floatSystemStatusZoomX_Down = 0f;
         private float _floatSystemStatusZoomY_Down = 0f;

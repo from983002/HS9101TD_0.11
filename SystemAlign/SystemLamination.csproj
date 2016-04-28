@@ -80,6 +80,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClosedXML">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2013\Projects\HS9101TD_0.11\SystemAlign\bin\Release\ClosedXML.dll</HintPath>
+    </Reference>
     <Reference Include="Infragistics4.Documents.Excel.v13.2, Version=13.2.20132.2075, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Documents.IO.v13.2, Version=13.2.20132.2075, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Documents.Reports.v13.2, Version=13.2.20132.2075, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
@@ -118,10 +121,6 @@
       <HintPath>C:\Program Files (x86)\Infragistics\2013.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Core.v13.2.dll</HintPath>
       <Name>Infragistics4.Documents.Core.v13.2</Name>
     </Reference>
-    <Reference Include="ClosedXML, Version=0.70.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\ClosedXML.dll</HintPath>
-    </Reference>
     <Reference Include="Matrox.MatroxImagingLibrary, Version=9.2.580.1, Culture=neutral, PublicKeyToken=5a83d419d44a9d98, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Program Files\Matrox Imaging\Mil\mil.net\Matrox.MatroxImagingLibrary.dll</HintPath>
@@ -131,11 +130,11 @@
     <Reference Include="Microsoft.VisualC" />
     <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\OpenCvSharp_2.4.5\OpenCvSharp-2.4.5-x86-20131203\OpenCvSharp.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2013\Projects\HS9101TD_0.11\SystemAlign\bin\Release\OpenCvSharp.dll</HintPath>
     </Reference>
     <Reference Include="OpenCvSharp.UserInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\OpenCvSharp_2.4.5\OpenCvSharp-2.4.5-x86-20131203\OpenCvSharp.UserInterface.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2013\Projects\HS9101TD_0.11\SystemAlign\bin\Release\OpenCvSharp.UserInterface.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -152,7 +151,13 @@
     <Reference Include="UIAutomationTypes" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control_Drawing.cs" />
+    <Compile Include="Control_ImageROI.cs" />
+    <Compile Include="Control_Measurement.cs" />
+    <Compile Include="Control_ModelFiles.cs" />
+    <Compile Include="Control_FileINI.cs" />
     <Compile Include="Control_PLC.cs" />
+    <Compile Include="Control_Projection.cs" />
     <Compile Include="Resources\AXA.cs" />
     <Compile Include="AXC.cs" />
     <Compile Include="AXD.cs" />
@@ -404,12 +409,12 @@
     <None Include="Resources\RecipeGapConfigDefault.cfg" />
     <None Include="Resources\RecipeGapGridDefault.cfg" />
     <None Include="Resources\RecipeGapInspectAreaDefault.cfg" />
-    <None Include="Resources\RecipeGridDefault.cfg" />
     <None Include="Resources\RecipeGridDefaultDown.cfg" />
+    <None Include="Resources\RecipeGridDefaultRight.cfg" />
     <None Include="Resources\RecipeGridDefaultUper.cfg" />
-    <None Include="Resources\RecipeInspectAreaDefault.cfg" />
     <None Include="Resources\RecipeInspectAreaDefaultRemark.cfg" />
     <None Include="Resources\RecipeInspectAreaDown.cfg" />
+    <None Include="Resources\RecipeInspectAreaRight.cfg" />
     <None Include="Resources\RecipeInspectAreaUper.cfg" />
     <None Include="Resources\RecipeUperGridDefault.cfg" />
     <None Include="Resources\SystemConfigDefault.cfg" />
@@ -480,6 +485,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\VisionGridDownDefault.cfg" />
+    <None Include="Resources\VisionGridRightDefault.cfg" />
     <None Include="Resources\VisionGridUperDefault.cfg" />
     <None Include="Resources\VisionLamiConfigDefault.cfg" />
     <None Include="Resources\[.jpg" />

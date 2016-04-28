@@ -162,7 +162,9 @@ namespace SystemAlign
             InitializeComponent();
             _Uper_Control_DrawArea = new ControlDrawArea(RecipeGap_drawArea1, this);
             _Down_Control_DrawArea = new ControlDrawArea(RecipeGap_drawArea2, this);
-           
+
+            _Right_Control_DrawArea = new ControlDrawArea(RecipeGap_drawArea3, this);
+
             Custom_Event_Connect();
         }
 
@@ -302,6 +304,8 @@ namespace SystemAlign
         public void Initional_Measure_Buffer_Reg()
         {
             RegistryKey reg = Registry.CurrentUser;
+
+            //그리드 설정
             reg = reg.OpenSubKey(LamiSystem.RegPathMeasureGrid_Buf_Uper, true);
             if (reg != null)
             {
@@ -318,6 +322,15 @@ namespace SystemAlign
             }
 
             reg = Registry.CurrentUser;
+            reg = reg.OpenSubKey(LamiSystem.RegPathMeasureGrid_Buf_Right, true);
+            if (reg != null)
+            {
+                reg.Close();
+                Registry.CurrentUser.DeleteSubKey(LamiSystem.RegPathMeasureGrid_Buf_Right, false);
+            }
+
+            //챠트 설정
+            reg = Registry.CurrentUser;
             reg = reg.OpenSubKey(LamiSystem.RegPathMeasureChart_Buf_Uper, true);
             if (reg != null)
             {
@@ -333,6 +346,13 @@ namespace SystemAlign
                 Registry.CurrentUser.DeleteSubKey(LamiSystem.RegPathMeasureChart_Buf_Down, false);
             }
 
+            reg = Registry.CurrentUser;
+            reg = reg.OpenSubKey(LamiSystem.RegPathMeasureChart_Buf_Right, true);
+            if (reg != null)
+            {
+                reg.Close();
+                Registry.CurrentUser.DeleteSubKey(LamiSystem.RegPathMeasureChart_Buf_Right, false);
+            }
         }
 
 // 
@@ -381,8 +401,8 @@ namespace SystemAlign
         {
             MainForm_ProgracessBar_Display_01("Vision Inspect System Initionalizing !", 10);
 
-            Inspect_MIL_Initialize_Gap();
-            Inspect_MIL_Initialize_BiCell();
+            //Inspect_MIL_Initialize_Gap();
+            //Inspect_MIL_Initialize_BiCell();
 
             MainForm_ProgracessBar_Display_01("Vision Inspect System Initionalizing !", 30);
 
@@ -390,7 +410,12 @@ namespace SystemAlign
 
             MainForm_ProgracessBar_Display_01("Vision Inspect System Initionalizing !", 40);
 
+            //방열판 검사기를 작업하면서 수정함. 20160426
+            Align_Status_File_To_Register();
+
             SystemLami_Config_Loading();
+
+
             VisionLami_Config_Loading();
 
             RecipeLami_Config_Loading();
@@ -399,6 +424,7 @@ namespace SystemAlign
 
             Recipe_Config_ListData_To_UperGrid();
             Recipe_Config_ListData_To_DownGrid();
+            Recipe_Config_ListData_To_RightGrid();
 
             MainForm_ProgracessBar_Display_01("Vision Inspect System Initionalizing !", 60);
             
@@ -408,7 +434,7 @@ namespace SystemAlign
 
             Recipe_Config_UperGrid_Output();
             Recipe_Config_DownGrid_Output();
-
+            Recipe_Config_RightGrid_Output();
             //Recipe_Config_Inspect_Output_Uper();
             //Recipe_Config_Inspect_Output_Down();
 
@@ -421,9 +447,11 @@ namespace SystemAlign
             System_Status_Check();
             
             MainForm_ProgracessBar_Display_01("Vision Inspect System Initionalizing !", 80);
+            
             //생산 수량, 검사 수량, NG 수량, 유저 어카운 값을 가지는 레지스터를
             //확인 한 후 없다면 디폴트 값을 기록해준다.
-            Align_Status_File_To_Register();
+            //방열판 검사기를 진행하면서 수정함. 20160426
+            //Align_Status_File_To_Register();
 
             //프로그램 기동시 유저를 선택하지 않고 바로 오피로 기본 로그온 하도록
             //수정한다. 여기에서 오피로 설정하고 이에 해당하는 폼을 나타낸다.
@@ -441,6 +469,7 @@ namespace SystemAlign
 
             _Uper_Control_DrawArea.SeclectingRect += new RecipeEvent3(Recipe_Config_Display_Select_Rect_Row_Uper);
             _Down_Control_DrawArea.SeclectingRect += new RecipeEvent3(Recipe_Config_Display_Select_Rect_Row_Down);
+            _Right_Control_DrawArea.SeclectingRect += new RecipeEvent3(Recipe_Config_Display_Select_Rect_Row_Right);
 
             MainForm_ProgracessBar_Display_01("Vision Inspect System Initionalizing !", 90);
 
@@ -471,14 +500,20 @@ namespace SystemAlign
             MainForm_ProgracessBar_Display_01("Vision Inspect System Initionalizing !", 95);
         }
 
+        
+
+        
+
         private void Inspect_Count_RegData_Reset()
         {
             SetReg(LamiSystem.RegPathGapStatus, "Count_Product", "0");
             SetReg(LamiSystem.RegPathGapStatus, "Count_NG_Both", "0");
             SetReg(LamiSystem.RegPathGapStatus, "Count_NG_Uper", "0");
             SetReg(LamiSystem.RegPathGapStatus, "Count_NG_Down", "0");
+            SetReg(LamiSystem.RegPathGapStatus, "Count_NG_Right", "0");
             SetReg(LamiSystem.RegPathGapStatus, "Count_OK_Uper", "0");
             SetReg(LamiSystem.RegPathGapStatus, "Count_OK_Down", "0");
+            SetReg(LamiSystem.RegPathGapStatus, "Count_OK_Right", "0");
 
             RegistryKey reg = Registry.CurrentUser;
             reg = reg.OpenSubKey(LamiSystem.RegPathMeasure_Uper, true);
@@ -512,14 +547,12 @@ namespace SystemAlign
                     this.SetReg(LamiSystem.RegPathMeasure_Uper, (i * mesColCount + 18).ToString("000"), "0");
                 }
             }
-            
-           
-            //reg = reg.OpenSubKey(LamiSystem.RegPathMeasure_Down, true);
+
+
+            reg = Registry.CurrentUser;
+            reg = reg.OpenSubKey(LamiSystem.RegPathMeasure_Down, true);
             if (reg != null)
             {
-                reg = reg.OpenSubKey(LamiSystem.RegPathMeasure_Down, true);
-                if (reg == null) return;
-
                 regCount = reg.ValueCount;
                 int Grid_Rows = regCount / mesColCount;
                 for (int i = 0; i < Grid_Rows; i++)
@@ -546,7 +579,38 @@ namespace SystemAlign
                     this.SetReg(LamiSystem.RegPathMeasure_Down, (i * mesColCount + 18).ToString("000"), "0");
                 }
             }
-            
+
+            reg = Registry.CurrentUser;
+            reg = reg.OpenSubKey(LamiSystem.RegPathMeasure_Right, true);
+            if (reg != null)
+            {
+                regCount = reg.ValueCount;
+                int Grid_Rows = regCount / mesColCount;
+                for (int i = 0; i < Grid_Rows; i++)
+                {
+                    //표준편차
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 9).ToString("000"), "0.000");
+                    //최소
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 10).ToString("000"), "0.000");
+                    //최대
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 11).ToString("000"), "0.000");
+                    //CP
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 12).ToString("000"), "0.000");
+                    //CPK
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 13).ToString("000"), "0.000");
+                    //OK count
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 14).ToString("000"), "0");
+                    //NG Count
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 15).ToString("000"), "0");
+                    //Value
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 16).ToString("000"), "0");
+                    //SqValue
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 17).ToString("000"), "0");
+                    //ProductOK
+                    this.SetReg(LamiSystem.RegPathMeasure_Right, (i * mesColCount + 18).ToString("000"), "0");
+                }
+            }
+
         }
 
         /*
@@ -642,7 +706,7 @@ namespace SystemAlign
         }
         */
 
-        
+
 
         //파일의 정보를 읽어와서 레지스트리에 저장하는 함수 
         //디폴트 설정 파일을 한줄씩 일어와서 파싱함수를 호출한다.
@@ -1030,6 +1094,28 @@ namespace SystemAlign
         }
         */
 
+        public void Recipe_Config_Display_Select_Rect_Row_Right(int selectRect)
+        {
+            int Grid_Rows = -1;
+            int ROI_No = uGrd_Recipe_Inspect_Right.Rows.Count - 1 - selectRect;
+            string rowType = string.Empty;
+            string selectSeqNo = string.Empty;
+
+            for (int i = 0; i < uGrd_Recipe_Inspect_Right.Rows.Count; i++)
+            {
+                int readROI = int.Parse(uGrd_Recipe_Inspect_Right.Rows[i].Cells[5].Value.ToString());
+                if (readROI == ROI_No)
+                {
+                    Grid_Rows = int.Parse(uGrd_Recipe_Inspect_Right.Rows[i].Cells[13].Value.ToString()) / 2;
+                    rowType = uGrd_Recipe_Inspect_Right.Rows[Grid_Rows].Cells[6].Value.ToString();
+                    //selectSeqNo = uGrd_Recipe_Inspect_Right.Rows[Grid_Rows].Cells[7].Value.ToString();
+                    selectSeqNo = uGrd_Recipe_Inspect_Right.Rows[i].Cells[7].Value.ToString();
+                    break;
+                }
+            }
+            Recipe_Config_Display_Select_Rect_Button_Right(Grid_Rows, selectSeqNo, rowType);
+        }
+
         public void Recipe_Config_Display_Select_Rect_Row_Uper(int selectRect)
         {
             int Grid_Rows = -1;
@@ -1074,6 +1160,8 @@ namespace SystemAlign
             */
         }
 
+
+
         public void Recipe_Config_Display_Select_Rect_Button_Uper(int rowNo, string strSeqNo, string rowType)
         {
             Recipe_Config_Display_Select_UperGrid_Button_Init();
@@ -1088,6 +1176,32 @@ namespace SystemAlign
                 uGrd_Recipe_UperData.DisplayLayout.Rows[rowNo].Cells[5].ButtonAppearance.ForeColor = Color.White;
         }
 
+
+        public void Recipe_Config_Display_Select_Rect_Button_Right(int rowNo, string strSeqNo, string rowType)
+        {
+            Recipe_Config_Display_Select_RightGrid_Button_Init();
+
+            uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[0].ButtonAppearance.ForeColor = Color.White;
+
+            int tmpInde = strSeqNo.IndexOf("2");
+            //if (strSeqNo == "1차")
+            if (tmpInde < 0)
+                uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[2].ButtonAppearance.ForeColor = Color.White;
+            else
+                uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[5].ButtonAppearance.ForeColor = Color.White;
+        }
+
+        public void Recipe_Config_Display_Select_RightGrid_Button_Init()
+        {
+            for (int i = 0; i < uGrd_Recipe_RightData.DisplayLayout.Rows.Count; i++)
+            {
+                uGrd_Recipe_RightData.DisplayLayout.Rows[i].Cells[0].ButtonAppearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+                uGrd_Recipe_RightData.DisplayLayout.Rows[i].Cells[2].ButtonAppearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+                uGrd_Recipe_RightData.DisplayLayout.Rows[i].Cells[5].ButtonAppearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+
+            }
+            return;
+        }
         /*
         public void Recipe_Config_Display_Select_Rect_Button_Uper(int rowNo, string strSeqNo, string rowType)
         {
@@ -1202,6 +1316,9 @@ namespace SystemAlign
                 uGrd_Recipe_DownData.DisplayLayout.Rows[rowNo].Cells[5].ButtonAppearance.ForeColor = Color.White;
         }
 
+
+        
+
         static readonly string System_Status_NowAccount_Title = "nowAccount";
         private string System_Status_NowAccount_Reg_To_View()
         {
@@ -1227,6 +1344,68 @@ namespace SystemAlign
             //레지스트리에 저장되어져 있는 데이터를 읽어와서 
             //타이틀, 콘트롤명, 데이터 리스트 배열에 저장한다. 
             System_Config_Register_To_Lists();
+
+            System_Config_ImageSize_Setup();
+
+            System_Config_OpenCV_Setup();
+
+            System_Config_IPL_Image_Setup();
+
+            //System_Config_CV_Mat_Setup();
+             
+    }
+
+        public void System_Config_IPL_Image_Setup()
+        {
+            monoIplImage_Uper = new IplImage(LamiSystem.GetSet_Upper_Garo, LamiSystem.GetSet_Upper_Sero, BitDepth.U8, 1);
+            monoIplImage_Down = new IplImage(LamiSystem.GetSet_Left_Garo, LamiSystem.GetSet_Left_Sero, BitDepth.U8, 1);
+            monoIplImage_Right = new IplImage(LamiSystem.GetSet_Right_Garo, LamiSystem.GetSet_Right_Sero, BitDepth.U8, 1);
+        }
+
+        public void System_Config_OpenCV_Setup()
+        {
+            OpenCV_Open_Uper();
+            OpenCV_Open_BiCell();
+            OpenCV_Open_Right();
+        }
+
+        public void System_Config_ImageSize_Setup()
+        {
+            int ListData = 0;
+
+            //상부 이미지 사이즈
+            ListData = IntPasing(LamiSystem.StrListSysConData[12]);
+            if (ListData > 0)
+                LamiSystem.GetSet_Upper_Garo = ListData;
+
+            ListData = IntPasing(LamiSystem.StrListSysConData[13]);
+            if (ListData > 0)
+                LamiSystem.GetSet_Upper_Sero = ListData;
+
+            //좌측 이미지 사이즈
+            ListData = IntPasing(LamiSystem.StrListSysConData[27]);
+            if (ListData > 0)
+                LamiSystem.GetSet_Left_Garo = ListData;
+
+            ListData = IntPasing(LamiSystem.StrListSysConData[28]);
+            if (ListData > 0)
+                LamiSystem.GetSet_Left_Sero = ListData;
+
+            //우측 이미지 사이즈
+            ListData = IntPasing(LamiSystem.StrListSysConData[42]);
+            if (ListData > 0)
+                LamiSystem.GetSet_Right_Garo = ListData;
+
+            ListData = IntPasing(LamiSystem.StrListSysConData[43]);
+            if (ListData > 0)
+                LamiSystem.GetSet_Right_Sero = ListData;
+        }
+
+        public int IntPasing(string strData)
+        {
+            int intData = 0;
+            bool pResult = int.TryParse(strData, out intData);
+            return intData;
         }
 
         public void System_BackLight_Initialize()
@@ -1274,7 +1453,12 @@ namespace SystemAlign
             {
                 VisionLami_Config_File_To_Register_DownGrid();
             }
-            
+
+            if (VisionLami_Config_Register_Empty_Check(LamiSystem.RegPathVisConGrid_Right) == true)
+            {
+                VisionLami_Config_File_To_Register_RightGrid();
+            }
+
             Vision_uGrd_Uper.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
 
             //레지스트리에 저장되어져 있는 데이터를 읽어와서 타이틀, 콘트롤명, 데이터 리스트 배열에 저장한다. 
@@ -1282,13 +1466,13 @@ namespace SystemAlign
 
             //레지스트리에 저장되어져 있는 데이터를 읽어와서 상부 그리드 데이터 리스트 배열에 저장한다. 
             VisionLami_Config_Register_To_Lists_UperGrid();
-
-            //레지스트리에 저장되어져 있는 데이터를 읽어와서 하부 그리드 데이터 리스트 배열에 저장한다. 
             VisionLami_Config_Register_To_Lists_DownGrid();
+            VisionLami_Config_Register_To_Lists_RightGrid();
 
             //리스트 배열에 저장되어져 있는 값을 표시해준다.
             VisionLami_Config_ListData_To_UperGrid();
             VisionLami_Config_ListData_To_DownGrid();
+            VisionLami_Config_ListData_To_RightGrid();
         }
 
         /*
@@ -1642,6 +1826,12 @@ namespace SystemAlign
             }
 
             //레지스테에 그리드(바이셀 옵셋) 설정값이 없다면 파일의 데이터를 레지스터에 저장한다.
+            if (RecipeGap_Config_Register_Empty_Check(LamiSystem.RegPathRcpConGrid_Right) == true)
+            {
+                Recipe_Config_File_To_Register_RightGrid();
+            }
+
+            //레지스테에 그리드(바이셀 옵셋) 설정값이 없다면 파일의 데이터를 레지스터에 저장한다.
             if (RecipeGap_Config_Register_Empty_Check(LamiSystem.RegPathRcpConInsp_Uper) == true)
             {
                 //string gridRowsCount = GetReg(LamiSystem.RegPathRcpCon, "상단 항목");
@@ -1657,6 +1847,15 @@ namespace SystemAlign
                 Recipe_Config_File_To_Register_Inspect_Down();
             }
 
+            if (RecipeGap_Config_Register_Empty_Check(LamiSystem.RegPathRcpConInsp_Right) == true)
+            {
+                //string gridRowsCount = GetReg(LamiSystem.RegPathRcpCon, "하단 항목");
+                //if (gridRowsCount != "0") Recipe_Config_File_To_Register_Inspect_Down();
+                Recipe_Config_File_To_Register_Inspect_Right();
+            }
+
+
+
             //레지스트리에 저장되어져 있는 데이터를 읽어와서 
             //타이틀, 콘트롤명, 데이터 리스트 배열에 저장한다. 
             RecipeGap_Config_Register_To_Lists();
@@ -1665,14 +1864,254 @@ namespace SystemAlign
             //그리드 타이틀, 데이터 리스트 배열에 저장한다. 
             Recipe_Config_Register_To_UperGrid();
             Recipe_Config_Register_To_DownGrid();
+            Recipe_Config_Register_To_RightGrid();
 
             //레지스트리에 저장되어져 있는 데이터를 읽어와서 
             //그리드 타이틀, 데이터 리스트 배열에 저장한다. 
             Recipe_Config_Register_To_Lists_Inspect_Uper();
             Recipe_Config_Register_To_Lists_Inspect_Down();
-            
+            Recipe_Config_Register_To_Lists_Inspect_Right();
+
             RecipeGap_Config_Box_To_Image_Sum();
+
+            //INI 파일을 이용한 저장값 읽어와서 레지스트리, 리스트에 저장하는 모듈
+            //이 버전에서는 INI파일을 사용하지 않아 사용하지 않음.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////3번째 카메라 설정 메소드  ///////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /*
+            //데이터셋을 초기화 하는 함수
+            RecipeGrid_DataSet_Initialize_Right();
+            RecipeArea_DataSet_Initialize_Right();
+
+
+            //INI파일에서 데이터를 읽어와서 레지스터에 기록하는 함수
+            Recipe_Config_File_To_Register_Grid_Right();
+            Recipe_Config_File_To_Register_Inspect_Right();
+
+            //레지스터의 데이터를 리스로 저장한다.
+            Recipe_Config_Register_To_RightGrid();
+            Recipe_Config_Register_To_Lists_Inspect_Right();
+
+            //리스트의 데이터를 데이터셋에 저장한다.
+            Recipe_Config_ListData_To_RgihtGrid();
+            Recipe_Config_ListData_To_RgihtArea();
+            */
         }
+
+        //비전 그리드 설정 파일을 열때 0으로 초기화 해주어야 한다.
+        private int _intRecipeRightRectCellCount = 0;
+
+        private void Recipe_Config_File_To_Register_Grid_Right()
+        {
+            _intRecipeRightRectCellCount = 0;
+            Control_ModelFiles IniFile = new Control_ModelFiles();
+            //LamiSystem.StrLstRcpConGridData_Right = IniFile.Recipe_Config_Loading_Array();
+            /*
+            for (int i = 0; i < LamiSystem.StrLstRcpConGridData_Right.Count; i++)
+            {
+                if (string.IsNullOrEmpty(LamiSystem.StrLstRcpConGridData_Right[i]))
+                    break;
+                Recipe_Config_StringParsing_Grid_Right(LamiSystem.StrLstRcpConGridData_Right[i] + "\t");
+            }
+            */
+
+            List<string> LineDatas = IniFile.Recipe_Config_Loading_Array();
+
+            for (int i = 0; i < LineDatas.Count; i++)
+            {
+                if (string.IsNullOrEmpty(LineDatas[i]))
+                    break;
+                Recipe_Config_StringParsing_Grid_Right(LineDatas[i] + "\t");
+            }
+        }
+
+        private void Recipe_Config_StringParsing_Grid_Right(string gridDataLine)
+        {
+            int intStartIndex = 0;
+            int intEndIndex = 0;
+            int intGridCellCount = 0;
+            string strCellData = "";
+
+            //이 반복 모듈은 텍스트 파일에 라인 끝에도 탭을 추가 했을 때 사용하는 것임.
+            while (gridDataLine.IndexOf("\t", intEndIndex + 1) != -1)
+            {
+                if (intGridCellCount == 0)
+                {
+                    intStartIndex = 0;
+                    intEndIndex = gridDataLine.IndexOf("\t", intStartIndex);
+                }
+                else
+                {
+                    intStartIndex = intEndIndex + 1;
+                    intEndIndex = gridDataLine.IndexOf("\t", intStartIndex);
+                }
+
+                strCellData = gridDataLine.Substring(intStartIndex, intEndIndex - intStartIndex);
+                SetReg(LamiSystem.RegPathRcpConGrid_Right, _intRecipeRightRectCellCount.ToString("000"), strCellData);
+                intGridCellCount++;
+                _intRecipeRightRectCellCount++;
+            }
+        }
+
+
+       
+
+        
+
+
+        
+
+        
+
+        //데이터셋을 이용하는 함수이다.
+        //현재 버전에서는 이를 이용하지 않지만 차후 버전에서는
+        //사용해야하는 함수이다.
+        /*
+        private void Recipe_Config_ListData_To_RgihtGrid()
+        {
+            uDS_Recipe_Right.Tables["Grid"].Rows.Clear();
+            int ColCount = LamiSystem.StrLstRcpConGridData_Right.Count/uDS_Recipe_Right.Tables["Grid"].Columns.Count;
+            
+            for (int i = 0; i < ColCount; i++)
+            {
+                DataRow dr = uDS_Recipe_Right.Tables["Grid"].NewRow();
+                //int tempFirst = i*DS_Recipe_Grid_Right.Tables["Grid"].Columns.Count + 0;
+                //int temp2nd = i * DS_Recipe_Grid_Right.Tables["Grid"].Columns.Count + 1;
+                dr["항목"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 0];
+                dr["챠트"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 1];
+                dr["영역1"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 2];
+                dr["방향1"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 3];
+                dr["극성1"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 4];
+                dr["영역2"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 5];
+                dr["방향2"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 6];
+                dr["극성2"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 7];
+                dr["분할"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 8];
+                dr["판별"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 9];
+                dr["밝기"] = LamiSystem.StrLstRcpConGridData_Right[i*uDS_Recipe_Right.Tables["Grid"].Columns.Count + 10];
+                uDS_Recipe_Right.Tables["Grid"].Rows.Add(dr);
+            }
+        }
+
+
+        private void Recipe_Config_ListData_To_RgihtArea()
+        {
+            uDS_Inspect_Right.Tables["Area"].Rows.Clear();
+            int ColCount = LamiSystem.StrLstRcpConInspData_Right.Count / uDS_Inspect_Right.Tables["Area"].Columns.Count;
+
+            for (int i = 0; i < ColCount; i++)
+            {
+                DataRow dr = uDS_Inspect_Right.Tables["Area"].NewRow();
+                dr["X"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 0];
+                dr["Y"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 1];
+                dr["Width"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 2];
+                dr["Hight"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 3];
+                dr["Row"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 4];
+                dr["ROI"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 5];
+                dr["Graph"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 6];
+                dr["SeqNo"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 7];
+                dr["Side"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 8];
+                dr["Pario"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 9];
+                dr["Div"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 10];
+                dr["Dis"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 11];
+                dr["Brith"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 12];
+                dr["LstNo"] = LamiSystem.StrLstRcpConInspData_Right[i * uDS_Inspect_Right.Tables["Area"].Columns.Count + 13];
+                uDS_Inspect_Right.Tables["Area"].Rows.Add(dr);
+            }
+        }
+        */
+
+        /*
+        private void Recipe_Config_File_To_Register_Inspect_Right()
+        {
+            _intRecipeRightRectCellCount = 0;
+            Control_ModelFiles IniFile = new Control_ModelFiles();
+            
+
+            List<string> LineDatas = IniFile.Recipe_Area_Loading_Array();
+
+            for (int i = 0; i < LineDatas.Count; i++)
+            {
+                if (string.IsNullOrEmpty(LineDatas[i]))
+                    break;
+                Recipe_Config_StringParsing_Inspect_Right(LineDatas[i] + "\t");
+            }
+        }
+        */
+
+        
+        private void Recipe_Config_StringParsing_Inspect_Right(string gridDataLine)
+        {
+            int intStartIndex = 0;
+            int intEndIndex = 0;
+            int intGridCellCount = 0;
+            string strCellData = "";
+
+            //이 반복 모듈은 텍스트 파일에 라인 끝에도 탭을 추가 했을 때 사용하는 것임.
+            while (gridDataLine.IndexOf("\t", intEndIndex + 1) != -1)
+            {
+                if (intGridCellCount == 0)
+                {
+                    intStartIndex = 0;
+                    intEndIndex = gridDataLine.IndexOf("\t", intStartIndex);
+                }
+                else
+                {
+                    intStartIndex = intEndIndex + 1;
+                    intEndIndex = gridDataLine.IndexOf("\t", intStartIndex);
+                }
+
+                strCellData = gridDataLine.Substring(intStartIndex, intEndIndex - intStartIndex);
+                SetReg(LamiSystem.RegPathRcpConInsp_Right, _intRecipeRightRectCellCount.ToString("000"), strCellData);
+                intGridCellCount++;
+                _intRecipeRightRectCellCount++;
+            }
+        }
+
+        //데이터셋을 이용하는 함수이다.
+        //현재 버전에서는 이를 이용하지 않지만 차후 버전에서는
+        //사용해야하는 함수이다.
+        /*
+        public void RecipeGrid_DataSet_Initialize_Right()
+        {
+            if (uDS_Recipe_Right.Tables.Count != 0) return;
+            uDS_Recipe_Right.Tables.Clear();
+            uDS_Recipe_Right.Tables.Add("Grid");           
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("항목");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("차트");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("영역1");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("방향1");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("극성1");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("영역2");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("방향2");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("극성2");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("분할");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("판별");
+            uDS_Recipe_Right.Tables["Grid"].Columns.Add("밝기");
+        }
+
+
+        public void RecipeArea_DataSet_Initialize_Right()
+        {
+            if (uDS_Inspect_Right.Tables.Count != 0) return;
+
+            uDS_Inspect_Right.Tables.Add("Area");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("X");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Y");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Width");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Hight");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Row");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("ROI");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Graph");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("SeqNo");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Side");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Pario");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Div");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Dis");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("Brith");
+            uDS_Inspect_Right.Tables["Area"].Columns.Add("LstNo");
+        }
+        */
 
         private void Equipment_Config_Loading()
         {
@@ -1813,6 +2252,7 @@ namespace SystemAlign
 
         private PositionConvert _point_Converter_Uper = PositionConvert.InstanceConvert;
         private PositionConvert _point_Converter_Down = PositionConvert.InstanceConvert;
+        private PositionConvert _point_Converter_Right = PositionConvert.InstanceConvert;
 
         private void RecipeGap_Config_Box_To_Image_Sum()
         {
@@ -1826,7 +2266,13 @@ namespace SystemAlign
 
             LamiSystem.GetSet_System_Status_Zoom_X_Uper = tempFloats_Uper[0];
             LamiSystem.GetSet_System_Status_Zoom_Y_Uper = tempFloats_Uper[1];
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            float[] tempFloats_Right = new float[] { 0f, 0f };
+            _point_Converter_Right.BoxVsImage(RecipeGap_drawArea3.pictureBox1, SystemAlign.Properties.Resources.BiCell_Bot, ref tempFloats_Right);
 
+            LamiSystem.GetSet_System_Status_Zoom_X_Right = tempFloats_Right[0];
+            LamiSystem.GetSet_System_Status_Zoom_Y_Right = tempFloats_Right[1];
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             float[] tempFloats_Down = new float[] { 0f, 0f };
             //if (RecipeGap_drawArea2.pictureBox1.ImageIpl == null)
             //if (RecipeGap_drawArea2.pictureBox1.Image == null)
@@ -1868,6 +2314,20 @@ namespace SystemAlign
             }
 
             Recipe_Config_Inspect_Output_Uper();
+        }
+
+        private void Recipe_Config_Register_To_Lists_Inspect_Right()
+        {
+            Recipe_Config_Register_To_List_Inspect_Right();
+            LamiSystem.StrLstRcpConInspData_Right.Clear();
+
+            for (int i = 0; i < LamiSystem.StrLstRcpConInspTitle_Right.Count; i++)
+            {
+                string strRegisterGridData = Recipe_Config_Register_To_List_Inspect_Right(LamiSystem.RegPathRcpConInsp_Right, LamiSystem.StrLstRcpConInspTitle_Right[i]);
+                LamiSystem.StrLstRcpConInspData_Right.Add(strRegisterGridData);
+            }
+
+            Recipe_Config_Inspect_Output_Right();
         }
 
         //레지스터에 저장되어져 있는 타이틀, 네임, 데이터 값을 읽어와서
@@ -1944,6 +2404,12 @@ namespace SystemAlign
         {
             Register_To_StringList(LamiSystem.RegPathRcpConInsp_Uper, ref LamiSystem.StrLstRcpConInspTitle_Uper);
         }
+
+        private void Recipe_Config_Register_To_List_Inspect_Right()
+        {
+            Register_To_StringList(LamiSystem.RegPathRcpConInsp_Right, ref LamiSystem.StrLstRcpConInspTitle_Right);
+        }
+
         private void Recipe_Config_Register_To_List_Inspect_Down()
         {
             Register_To_StringList(LamiSystem.RegPathRcpConInsp_Down, ref LamiSystem.StrLstRcpConInspTitle_Down);
@@ -1957,6 +2423,12 @@ namespace SystemAlign
         {
             return GetReg(strNodePath, regTitle);
         }
+
+        public string Recipe_Config_Register_To_List_Inspect_Right(string strNodePath, string regTitle)
+        {
+            return GetReg(strNodePath, regTitle);
+        }
+
         public string Recipe_Config_Register_To_List_Inspect_Down(string strNodePath, string regTitle)
         {
             return GetReg(strNodePath, regTitle);
@@ -1979,6 +2451,24 @@ namespace SystemAlign
                 while ((strLine = srFile.ReadLine()) != null)
                 {
                     Recipe_Config_StringParsing_Inspect_Uper(strLine);
+                }
+            }
+            ioStream.Close();
+        }
+
+        private void Recipe_Config_File_To_Register_Inspect_Right()
+        {
+            _intRecipeRightRectCellCount = 0;
+            //Rources에 들록되어 있는 파일을 사용한다.
+            //byte[] resourceObject = SystemAlign.Properties.Resources.RecipeGapInspectAreaDefault;
+            byte[] resourceObject = SystemAlign.Properties.Resources.RecipeInspectAreaRight;
+            System.IO.Stream ioStream = new MemoryStream(resourceObject);
+            using (var srFile = new StreamReader(ioStream, Encoding.Default, true))
+            {
+                string strLine;
+                while ((strLine = srFile.ReadLine()) != null)
+                {
+                    Recipe_Config_StringParsing_Inspect_Right(strLine);
                 }
             }
             ioStream.Close();
@@ -2163,19 +2653,24 @@ namespace SystemAlign
 
             //비전부 설정 탭에서 적용되어져 있는 List의 항목을 레지스터에 기록한다.
             Vision_Config_ListData_To_Register();
+
             Vision_Config_UperGrid_To_Register();
             Vision_Config_DownGrid_To_Register();
-            
+            Vision_Config_RightGrid_To_Register();
+
             MainForm_ProgracessBar_Display_01("Model Recipe Saving !!", 20);
 
             //레시피 설정 탭에서 적용되어져 있는 List 항목을 레지스터에 기록한다.
             Recipe_Config_ListData_To_Register();
+
             Recipe_Config_UperGrid_To_Register();
             Recipe_Config_DownGrid_To_Register();
+            Recipe_Config_RightGrid_To_Register();
 
             //레시피 설정 탭에서 적용되어져 있는 ROI 정보를 레지스터에 기록한다.
             Recipe_Config_UperInspect_To_Register();
             Recipe_Config_DownInspect_To_Register();
+            Recipe_Config_RightInspect_To_Register();
 
             //환경 설정 탭에서 적용되어져 있는 List 항목을 레지스터에 기록한다.
             Equipment_Config_ListData_To_Register();
@@ -2730,6 +3225,7 @@ namespace SystemAlign
             dlgInspect.GetSet_LamiSystem = LamiSystem;
             dlgInspect.GetSet_Converter_Uper = _point_Converter_Uper;
             dlgInspect.GetSet_Converter_Down = _point_Converter_Down;
+            dlgInspect.GetSet_Converter_Right = _point_Converter_Right;
             dlgInspect.Inspect_MIL_Initialize(MilApplication, MilSystem_Uper, MilDisplay_Uper, MilDigitizer_Uper, MilImage_Uper, MilDisplay_Down, MilDigitizer_Down, MilImage_Down);
         }
 
@@ -3066,6 +3562,10 @@ namespace SystemAlign
         //이미지 저장 버튼의 클릭 이벤트 핸들러
         private void System_uBtn_ImagePath_Click(object sender, EventArgs e)
         {
+            Control_ModelFiles IniFile = new Control_ModelFiles();
+            List<string> Right_Recipe_Config = IniFile.Recipe_Config_Loading_Array();
+            List<string> Right_Recipe_Area = IniFile.Recipe_Area_Loading_Array();
+
             System_uTxt_ImagePath_Gap.Text = FolderBrowser_Open();
         }
 
@@ -3104,6 +3604,8 @@ namespace SystemAlign
             //설정한 화면의 값들을 리스트 배열에 저장한다. 
             System_Config_Viewer_To_List_Data();
 
+            //정장된 리스트의 데이터중 이미지 사이즈를 저장한다.
+            System_Config_ImageSize_Setup();
             //시리얼 포트를 통해서 조명 제어기를 설정한다.
 #if(SYST_SIMUL)
 
@@ -3129,6 +3631,7 @@ namespace SystemAlign
         
         public void System_BackLight_Setup()
         {
+            /*
             Port_Initialize("2");
             Port_Open();
             string SetValue1 = "";
@@ -3147,6 +3650,7 @@ namespace SystemAlign
             LVS_Set_BackLight(SetValue1, SetValue2);
 
             Port_Close();
+            */
         }
         
 
@@ -3780,8 +4284,10 @@ namespace SystemAlign
 
             //설정한 화면의 값들을 리스트 배열에 저장한다. 
             VisionLami_Config_Viewer_To_List_Data();
+
             VisionLami_Config_UperGrid_To_List();
             VisionLami_Config_DownGrid_To_List();
+            VisionLami_Config_RightGrid_To_List();
 
             ubtnToolbarSave.PerformClick();
 
@@ -4533,7 +5039,28 @@ namespace SystemAlign
             ioStream.Close();
         }
 
-        
+        private int _intVisionGridRightCount = 0;
+        //파일의 정보를 읽어와서 레지스트리에 저장하는 함수 
+        //디폴트 설정 파일을 한줄씩 일어와서 파싱함수를 호출한다.
+        private void VisionLami_Config_File_To_Register_RightGrid()
+        {
+            _intVisionGridRightCount = 0;
+            //Rources에 들록되어 있는 파일을 사용한다.
+            byte[] resourceObject = SystemAlign.Properties.Resources.VisionGridRightDefault;
+            System.IO.Stream ioStream = new MemoryStream(resourceObject);
+            //using (var srFile = new StreamReader(ioStream, Encoding.GetEncoding("ks_c_5601-1987"), true))
+            using (var srFile = new StreamReader(ioStream, Encoding.Default, true))
+            {
+                string strLine;
+                while ((strLine = srFile.ReadLine()) != null)
+                {
+                    VisionLami_Config_StringParsing_RightGrid(strLine);
+                }
+            }
+            ioStream.Close();
+        }
+
+
         //파일에서 일어온 정보를 타이틀 과 콘트롤&데이터로 분리하여 레지스트리에
         //타이틀(타이틀 리스트 정보)과 값(콘트롤 + 데이터 리스트)으로 저장한다.
         private void VisionLami_Config_StringParsing_UperGrid(string gridDataLine)
@@ -4561,6 +5088,34 @@ namespace SystemAlign
                 SetReg(LamiSystem.RegPathVisConGrid_Uper, _intVisionGridUperCount.ToString("000"), strCellData);
                 intGridCellCount++;
                 _intVisionGridUperCount++;
+            }
+        }
+
+        private void VisionLami_Config_StringParsing_RightGrid(string gridDataLine)
+        {
+            int intStartIndex = 0;
+            int intEndIndex = 0;
+            int intGridCellCount = 0;
+            string strCellData = "";
+
+            //이 반복 모듈은 텍스트 파일에 라인 끝에도 탭을 추가 했을 때 사용하는 것임.
+            while (gridDataLine.IndexOf("\t", intEndIndex + 1) != -1)
+            {
+                if (intGridCellCount == 0)
+                {
+                    intStartIndex = 0;
+                    intEndIndex = gridDataLine.IndexOf("\t", intStartIndex);
+                }
+                else
+                {
+                    intStartIndex = intEndIndex + 1;
+                    intEndIndex = gridDataLine.IndexOf("\t", intStartIndex);
+                }
+
+                strCellData = gridDataLine.Substring(intStartIndex, intEndIndex - intStartIndex);
+                SetReg(LamiSystem.RegPathVisConGrid_Right, _intVisionGridRightCount.ToString("000"), strCellData);
+                intGridCellCount++;
+                _intVisionGridRightCount++;
             }
         }
 
@@ -4670,12 +5225,29 @@ namespace SystemAlign
             }
         }
 
+        private void VisionLami_Config_Register_To_Lists_RightGrid()
+        {
+            LamiSystem.StrListVisConGridTitle_Right.Clear();
+            VisionLami_Config_Register_To_List_RightGrid();
+            LamiSystem.StrListVisConGridData_Right.Clear();
+
+            for (int i = 0; i < LamiSystem.StrListVisConGridTitle_Right.Count; i++)
+            {
+                string strRegisterGridData = VisionLami_Config_Register_To_List_Data(LamiSystem.RegPathVisConGrid_Right, LamiSystem.StrListVisConGridTitle_Right[i]);
+                LamiSystem.StrListVisConGridData_Right.Add(strRegisterGridData);
+            }
+        }
+
         //레지스터에 저장되어져 있는 타이틀값을 읽어와서 타이틀 리스트배열에 저장한다.
         private void VisionLami_Config_Register_To_List_UperGrid()
         {
             Register_To_StringList(LamiSystem.RegPathVisConGrid_Uper, ref LamiSystem.StrListVisConGridTitle_Uper);
         }
 
+        private void VisionLami_Config_Register_To_List_RightGrid()
+        {
+            Register_To_StringList(LamiSystem.RegPathVisConGrid_Right, ref LamiSystem.StrListVisConGridTitle_Right);
+        }
 
         //레지스터에 저장되어져 있는 타이틀, 네임, 데이터 값을 읽어와서
         //각각의 타이틀 리스트, 네임 리스트, 데이터 리스트에 저장한다.
@@ -4786,6 +5358,27 @@ namespace SystemAlign
                 if (cellCount == Vision_uGrd_Uper.DisplayLayout.Bands[0].Columns.Count - 2) rowCount++;
             }
         }
+
+        private void VisionLami_Config_ListData_To_RightGrid()
+        {
+            uDS_Offset_Right.Rows.Clear();
+            int rowCount = 0;
+            for (int i = 0; i < LamiSystem.StrListVisConGridData_Right.Count; i++)
+            {
+                int cellCount = i % (Vision_uGrd_Right.DisplayLayout.Bands[0].Columns.Count - 1);
+                if (cellCount == 0)
+                {
+                    uDS_Offset_Right.Rows.Add(true, new Object[] { "", "", "", "", "", "", "", "", "" });
+                    Vision_uGrd_Right.DisplayLayout.Rows[rowCount].Cells[0].Value = (rowCount + 1).ToString("00");
+                }
+
+                string TempXY = rowCount.ToString("00") + "  " + (cellCount + 1).ToString("00");
+                Vision_uGrd_Right.DisplayLayout.Rows[rowCount].Cells[cellCount + 1].Value = LamiSystem.StrListVisConGridData_Right[i];
+                //if (cellCount == 3) rowCount++;
+                if (cellCount == Vision_uGrd_Right.DisplayLayout.Bands[0].Columns.Count - 2) rowCount++;
+            }
+        }
+
 
         /// _alignSystem._strListVisionConfigGridData 리스트 배열의 값을 읽어와서 
         /// 저장되어져 있는 데이터에 해당하는 콘트롤 값을 설정해준다.
@@ -4990,6 +5583,25 @@ namespace SystemAlign
             }
         }
 
+
+        private void VisionLami_Config_RightGrid_To_List()
+        {
+            LamiSystem.StrListVisConGridData_Right.Clear();
+            LamiSystem.StrListVisConGridTitle_Right.Clear();
+            int regTitle = 0;
+
+            for (int i = 0; i < uDS_Offset_Right.Rows.Count; i++)
+            {
+                for (int j = 1; j < uDS_Offset_Right.Band.Columns.Count; j++)
+                {
+                    string strCellData1 = Vision_uGrd_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString();
+                    string strCellData = uDS_Offset_Right.Rows[i].GetCellValue(j).ToString();
+                    LamiSystem.StrListVisConGridData_Right.Add(strCellData);
+                    LamiSystem.StrListVisConGridTitle_Right.Add(regTitle++.ToString("000"));
+                }
+            }
+        }
+
         private void VisionLami_Config_DownGrid_To_List()
         {
             LamiSystem.StrListVisConGridData_Down.Clear();
@@ -5116,6 +5728,16 @@ namespace SystemAlign
                 LamiSystem.StrListVisConGridData_Uper);
         }
 
+
+        private void Vision_Config_RightGrid_To_Register()
+        {
+            Registry.CurrentUser.DeleteSubKey(LamiSystem.RegPathVisConGrid_Right, false);
+
+            VisionLami_Config_Lists_To_Register_Grid(LamiSystem.RegPathVisConGrid_Right, LamiSystem.StrListVisConGridTitle_Right,
+                LamiSystem.StrListVisConGridData_Right);
+        }
+
+
         //리스트 배열의 값을 레지스트리에 저장한다.
         public void VisionLami_Config_Lists_To_Register_Grid(string strNodePath, List<string> regTitle, List<string> regData)
         {
@@ -5223,6 +5845,9 @@ namespace SystemAlign
             MainForm_ProgracessBar_Display_01("Model Changing !!", 90);
 
             Recipe_Config_Inspect_Output_Down();
+            MainForm_ProgracessBar_Display_01("Model Change Complite !", 95);
+
+            Recipe_Config_Inspect_Output_Right();
             MainForm_ProgracessBar_Display_01("Model Change Complite !", 100);
 
             //RecipeBiCell_Config_Initionalize();
@@ -5236,25 +5861,38 @@ namespace SystemAlign
             LamiSystem.StrLstRcpConInspTitle_Uper.Clear();
             LamiSystem.StrLstRcpConInspData_Uper.Clear();
 
+            LamiSystem.StrLstRcpConInspTitle_Right.Clear();
+            LamiSystem.StrLstRcpConInspData_Right.Clear();
+
             LamiSystem.StrLstRcpConInspTitle_Down.Clear();
             LamiSystem.StrLstRcpConInspData_Down.Clear();
             
+            //////////////////////////////////////////////////////
             LamiSystem.StrLstRcpConGridTitle_Uper.Clear();
             LamiSystem.StrLstRcpConGridData_Uper.Clear();
+
+            LamiSystem.StrLstRcpConGridTitle_Right.Clear();
+            LamiSystem.StrLstRcpConGridData_Right.Clear();
 
             LamiSystem.StrLstRcpConGridTitle_Down.Clear();
             LamiSystem.StrLstRcpConGridData_Down.Clear();
 
+            ////////////////////////////////////////////////////////
             LamiSystem.StrListRcpConTitle.Clear();
             LamiSystem.StrLstRcpConName.Clear();
             LamiSystem.StrListRcpConData.Clear();
 
+            ////////////////////////////////////////////////////////
             LamiSystem.StrListVisConGridTitle_Uper.Clear();
             LamiSystem.StrListVisConGridData_Uper.Clear();
 
             LamiSystem.StrListVisConGridTitle_Down.Clear();
             LamiSystem.StrListVisConGridData_Down.Clear();
 
+            LamiSystem.StrListVisConGridTitle_Right.Clear();
+            LamiSystem.StrListVisConGridData_Right.Clear();
+
+            ////////////////////////////////////////////////////////
             LamiSystem.StrListVisConTitle.Clear();
             LamiSystem.StrListVisConName.Clear();
             LamiSystem.StrListVisConData.Clear();
@@ -5293,18 +5931,26 @@ namespace SystemAlign
                         case 3:
                             Model_Config_Apply_Vision_DownGrid_To_List(strLine, linecount);
                             break;
-                        
                         case 4:
-                            Model_Config_Apply_RecipeGrid_To_List_Uper(strLine, linecount);
+                            Model_Config_Apply_Vision_RightGrid_To_List(strLine, linecount);
                             break;
                         case 5:
-                            Model_Config_Apply_RecipeGrid_To_List_Down(strLine, linecount);
+                            Model_Config_Apply_RecipeGrid_To_List_Uper(strLine, linecount);
                             break;
                         case 6:
+                            Model_Config_Apply_RecipeGrid_To_List_Down(strLine, linecount);
+                            break; 
+                        case 7:
+                            Model_Config_Apply_RecipeGrid_To_List_Right(strLine, linecount);
+                            break; 
+                        case 8:
                             Model_Config_Apply_Recipe_UperInspect_To_List(strLine, linecount);
                             break;
-                        case 7:
+                        case 9:
                             Model_Config_Apply_Recipe_DownInspect_To_List(strLine, linecount);
+                            break;
+                        case 10:
+                            Model_Config_Apply_Recipe_RightInspect_To_List(strLine, linecount);
                             break;
                     }
                     linecount++;
@@ -5359,6 +6005,14 @@ namespace SystemAlign
             LamiSystem.StrLstRcpConInspData_Uper.Add(inputData[1]);
         }
 
+
+        private void Model_Config_Apply_Recipe_RightInspect_To_List(string configData, int lineCount)
+        {
+            List<string> inputData = Model_Config_Apply_Data_Pasing(configData);
+            LamiSystem.StrLstRcpConInspTitle_Right.Add(inputData[0]);
+            LamiSystem.StrLstRcpConInspData_Right.Add(inputData[1]);
+        }
+
         private void Model_Config_Apply_Recipe_DownInspect_To_List(string configData, int lineCount)
         {
             List<string> inputData = Model_Config_Apply_Data_Pasing(configData);
@@ -5371,6 +6025,13 @@ namespace SystemAlign
             List<string> inputData = Model_Config_Apply_Data_Pasing(configData);
             LamiSystem.StrLstRcpConGridTitle_Uper.Add(inputData[0]);
             LamiSystem.StrLstRcpConGridData_Uper.Add(inputData[1]);
+        }
+
+        private void Model_Config_Apply_RecipeGrid_To_List_Right(string configData, int lineCount)
+        {
+            List<string> inputData = Model_Config_Apply_Data_Pasing(configData);
+            LamiSystem.StrLstRcpConGridTitle_Right.Add(inputData[0]);
+            LamiSystem.StrLstRcpConGridData_Right.Add(inputData[1]);
         }
 
         private void Model_Config_Apply_RecipeGrid_To_List_Down(string configData, int lineCount)
@@ -5393,6 +6054,13 @@ namespace SystemAlign
             List<string> inputData = Model_Config_Apply_Data_Pasing(configData);
             LamiSystem.StrListVisConGridTitle_Uper.Add(inputData[0]);
             LamiSystem.StrListVisConGridData_Uper.Add(inputData[1]);
+        }
+
+        private void Model_Config_Apply_Vision_RightGrid_To_List(string configData, int lineCount)
+        {
+            List<string> inputData = Model_Config_Apply_Data_Pasing(configData);
+            LamiSystem.StrListVisConGridTitle_Right.Add(inputData[0]);
+            LamiSystem.StrListVisConGridData_Right.Add(inputData[1]);
         }
 
         private void Model_Config_Apply_Vision_DownGrid_To_List(string configData, int lineCount)
@@ -5642,6 +6310,13 @@ namespace SystemAlign
                 }
                 file.WriteLine();
 
+
+                for (int i = 0; i < LamiSystem.StrListVisConGridTitle_Right.Count; i++)
+                {
+                    file.WriteLine(LamiSystem.StrListVisConGridTitle_Right[i] + "\t" + LamiSystem.StrListVisConGridData_Right[i] + "\t");
+                }
+                file.WriteLine();
+
                 MainForm_ProgracessBar_Display_01("Model Changing !!", 60);
 
                 //             for (int i = 0; i < LamiSystem.StrListRcpConTitle.Count; i++)
@@ -5664,6 +6339,14 @@ namespace SystemAlign
                 }
                 file.WriteLine();
 
+                MainForm_ProgracessBar_Display_01("Model Changing !!", 75);
+
+                for (int i = 0; i < LamiSystem.StrLstRcpConGridTitle_Right.Count; i++)
+                {
+                    file.WriteLine(LamiSystem.StrLstRcpConGridTitle_Right[i] + "\t" + LamiSystem.StrLstRcpConGridData_Right[i] + "\t");
+                }
+                file.WriteLine();
+
                 MainForm_ProgracessBar_Display_01("Model Changing !!", 80);
 
                 for (int i = 0; i < LamiSystem.StrLstRcpConInspTitle_Uper.Count; i++)
@@ -5678,7 +6361,16 @@ namespace SystemAlign
                 {
                     file.WriteLine(LamiSystem.StrLstRcpConInspTitle_Down[i] + "\t" + LamiSystem.StrLstRcpConInspData_Down[i] + "\t");
                 }
+                file.WriteLine();
+
+                MainForm_ProgracessBar_Display_01("Model Changing !!", 95);
+
+                for (int i = 0; i < LamiSystem.StrLstRcpConInspTitle_Right.Count; i++)
+                {
+                    file.WriteLine(LamiSystem.StrLstRcpConInspTitle_Right[i] + "\t" + LamiSystem.StrLstRcpConInspData_Right[i] + "\t");
+                }
                 //file.WriteLine();
+
                 file.Close();
 
                 MainForm_ProgracessBar_Display_01("Model Changing Complite !", 100);
@@ -5711,6 +6403,7 @@ namespace SystemAlign
         //사용자 정의 함수 DrawArea를 제어하는 클래스
         private readonly ControlDrawArea _Uper_Control_DrawArea;
         private readonly ControlDrawArea _Down_Control_DrawArea;
+        private readonly ControlDrawArea _Right_Control_DrawArea;
 
         //private Infragistics.Win.ValueList _vListMeasMethod = new Infragistics.Win.ValueList();
         //private Infragistics.Win.ValueList _vListMeasDivid = new Infragistics.Win.ValueList();
@@ -5835,36 +6528,45 @@ namespace SystemAlign
             RecipeGap_drawArea2.pictureBox1.Image = Properties.Resources.BiCell_Bot;
             _Down_Control_DrawArea.Initialize_Control_Down();
 
+            RecipeGap_drawArea3.pictureBox1.Image = Properties.Resources.BiCell_Top;
+            _Right_Control_DrawArea.Initialize_Control_Down();
+
             MainForm_ProgracessBar_Display_01("Model Recipe Data Loading !", 10);
 
             //리스트 배열에 저장되어져 있는 값을 표시해준다.
             Recipe_Config_ListData_To_UperGrid();
             Recipe_Config_ListData_To_DownGrid();
+            Recipe_Config_ListData_To_RightGrid();
 
             MainForm_ProgracessBar_Display_01("Model Recipe Data Loading !", 30);
 
             Recipe_Uper_Config_DropDownList_Setup();
             Recipe_Down_Config_DropDownList_Setup();
+            Recipe_Right_Config_DropDownList_Setup();
 
             MainForm_ProgracessBar_Display_01("Model Recipe Data Loading !", 50);
 
             Recipe_Config_UperGrid_Output();
             Recipe_Config_DownGrid_Output();
+            Recipe_Config_RightGrid_Output();
 
             MainForm_ProgracessBar_Display_01("Model Recipe Data Loading !", 60);
 
             Recipe_Config_Inspect_Output_Uper();
             Recipe_Config_Inspect_Output_Down();
+            Recipe_Config_Inspect_Output_Right();
 
             MainForm_ProgracessBar_Display_01("Model Recipe Data Loading !", 70);
 
             Recipe_Uper_Insert_Inspect();
             Recipe_Down_Insert_Inspect();
+            Recipe_Right_Insert_Inspect();
 
             MainForm_ProgracessBar_Display_01("Model Recipe Data Loading !", 90);
 
             RecipeGap_drawArea1.GetSetGraphicsList.UnselectAll();
             RecipeGap_drawArea2.GetSetGraphicsList.UnselectAll();
+            RecipeGap_drawArea3.GetSetGraphicsList.UnselectAll();
         }
 
         //20150307 WKB 208
@@ -5973,6 +6675,30 @@ namespace SystemAlign
             }
         }
 
+        private void Recipe_Config_ListData_To_RightGrid()
+        {
+            uDS_Recipe_Right.Rows.Clear();
+
+            //이전 레시피의 Row 수량을 저장한다.
+            int iRecipeRows = LamiSystem.StrLstRcpConGridData_Right.Count / 11;
+
+            string strCellData = string.Empty;
+            int rowCount = 0;
+            for (int i = 0; i < iRecipeRows; i++)
+            {
+                for (int j = 0; j < uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns.Count; j++)
+                {
+                    if (j == 0) uDS_Recipe_Right.Rows.Add(true, new Object[] { "", "", "", "", "", "", "", "", "", "", "" });
+
+                    //20150307 WKB 208
+                    //uGrd_Recipe_RightData.DisplayLayout.Rows[i].Cells[j].Value = LamiSystem.StrLstRcpConGridData_Right[(i * 11) + j];
+
+                    //20150307 WKB 209
+                    uDS_Recipe_Right.Rows[i].SetCellValue(j, LamiSystem.StrLstRcpConGridData_Right[(i * 11) + j]);
+                }
+            }
+        }
+
         private void Recipe_Config_ListData_To_DownGrid()
         {
             uDS_Recipe_Down.Rows.Clear();
@@ -6045,6 +6771,19 @@ namespace SystemAlign
             }
         }
 
+        private void Recipe_Config_Register_To_RightGrid()
+        {
+            Recipe_Config_Register_To_List_RightGrid();
+            LamiSystem.StrLstRcpConGridData_Right.Clear();
+
+            for (int i = 0; i < LamiSystem.StrLstRcpConGridTitle_Right.Count; i++)
+            {
+                string strRegisterGridData = RecipeGap_Config_Register_To_List_Data(LamiSystem.RegPathRcpConGrid_Right, LamiSystem.StrLstRcpConGridTitle_Right[i]);
+                LamiSystem.StrLstRcpConGridData_Right.Add(strRegisterGridData);
+            }
+        }
+
+        
         private void Recipe_Config_Register_To_DownGrid()
         {
             Recipe_Config_Register_To_List_DownGrid();
@@ -6075,6 +6814,11 @@ namespace SystemAlign
         private void Recipe_Config_Register_To_List_UperGrid()
         {
             Register_To_StringList(LamiSystem.RegPathRcpConGrid_Uper, ref LamiSystem.StrLstRcpConGridTitle_Uper);
+        }
+
+        private void Recipe_Config_Register_To_List_RightGrid()
+        {
+            Register_To_StringList(LamiSystem.RegPathRcpConGrid_Right, ref LamiSystem.StrLstRcpConGridTitle_Right);
         }
 
         private void Recipe_Config_Register_To_List_DownGrid()
@@ -6179,6 +6923,24 @@ namespace SystemAlign
             ioStream.Close();
         }
 
+        private int _intRecipeRightGridCellCount = 0;
+
+        private void Recipe_Config_File_To_Register_RightGrid()
+        {
+            _intRecipeRightGridCellCount = 0;
+            //byte[] resourceObject = SystemAlign.Properties.Resources.RecipeRightGridDefault;
+            byte[] resourceObject = SystemAlign.Properties.Resources.RecipeGridDefaultRight;
+            System.IO.Stream ioStream = new MemoryStream(resourceObject);
+            using (var srFile = new StreamReader(ioStream, Encoding.Default, true))
+            {
+                string strLine;
+                while ((strLine = srFile.ReadLine()) != null)
+                {
+                    Recipe_Config_StringParsing_RightGrid(strLine);
+                }
+            }
+            ioStream.Close();
+        }
         //비전 그리드 설정 파일을 열때 0으로 초기화 해주어야 한다.
         //파일의 정보를 읽어와서 레지스트리에 저장하는 함수 
         //디폴트 설정 파일을 한줄씩 일어와서 파싱함수를 호출한다.
@@ -6230,6 +6992,33 @@ namespace SystemAlign
             }
         }
 
+        private void Recipe_Config_StringParsing_RightGrid(string gridDataLine)
+        {
+            int intStartIndex = 0;
+            int intEndIndex = 0;
+            int intGridCellCount = 0;
+            string strCellData = "";
+
+            //이 반복 모듈은 텍스트 파일에 라인 끝에도 탭을 추가 했을 때 사용하는 것임.
+            while (gridDataLine.IndexOf("\t", intEndIndex + 1) != -1)
+            {
+                if (intGridCellCount == 0)
+                {
+                    intStartIndex = 0;
+                    intEndIndex = gridDataLine.IndexOf("\t", intStartIndex);
+                }
+                else
+                {
+                    intStartIndex = intEndIndex + 1;
+                    intEndIndex = gridDataLine.IndexOf("\t", intStartIndex);
+                }
+
+                strCellData = gridDataLine.Substring(intStartIndex, intEndIndex - intStartIndex);
+                SetReg(LamiSystem.RegPathRcpConGrid_Right, _intRecipeRightGridCellCount.ToString("000"), strCellData);
+                intGridCellCount++;
+                _intRecipeRightGridCellCount++;
+            }
+        }
         //파일에서 일어온 정보를 타이틀 과 콘트롤&데이터로 분리하여 레지스트리에
         //타이틀(타이틀 리스트 정보)과 값(콘트롤 + 데이터 리스트)으로 저장한다.
         private void Recipe_Config_StringParsing_DownGrid(string gridDataLine)
@@ -6408,7 +7197,10 @@ namespace SystemAlign
             {
                 //this.SetReg(strNodePath, regTitle[i], regControl[i] + "\t" + regData[i]);
                 //System Lamination에 저장되어지는 값이 덱스트박스명과 함께 저장되지 않도록 수정함.
-                this.SetReg(strNodePath, regTitle[i], regData[i]);
+                
+                //방열판 검사기 20160423
+                //타이틀 수량 12개, 데이터 4개라 에러 발생
+                //this.SetReg(strNodePath, regTitle[i], regData[i]);
             }
         }
 
@@ -6418,6 +7210,13 @@ namespace SystemAlign
             Registry.CurrentUser.DeleteSubKey(LamiSystem.RegPathRcpConGrid_Uper, false);
             Registry.CurrentUser.CreateSubKey(LamiSystem.RegPathRcpConGrid_Uper, RegistryKeyPermissionCheck.ReadWriteSubTree);
             Recipe_Config_Grid_To_Register(LamiSystem.RegPathRcpConGrid_Uper, LamiSystem.StrLstRcpConGridTitle_Uper, LamiSystem.StrLstRcpConGridData_Uper);
+        }
+
+        private void Recipe_Config_RightGrid_To_Register()
+        {
+            Registry.CurrentUser.DeleteSubKey(LamiSystem.RegPathRcpConGrid_Right, false);
+            Registry.CurrentUser.CreateSubKey(LamiSystem.RegPathRcpConGrid_Right, RegistryKeyPermissionCheck.ReadWriteSubTree);
+            Recipe_Config_Grid_To_Register(LamiSystem.RegPathRcpConGrid_Right, LamiSystem.StrLstRcpConGridTitle_Right, LamiSystem.StrLstRcpConGridData_Right);
         }
 
         private void Recipe_Config_DownGrid_To_Register()
@@ -6452,6 +7251,13 @@ namespace SystemAlign
             Registry.CurrentUser.DeleteSubKey(LamiSystem.RegPathRcpConInsp_Uper, false);
             Registry.CurrentUser.CreateSubKey(LamiSystem.RegPathRcpConInsp_Uper, RegistryKeyPermissionCheck.ReadWriteSubTree);
             Recipe_Config_Lists_To_Register_Inspect(LamiSystem.RegPathRcpConInsp_Uper, LamiSystem.StrLstRcpConInspTitle_Uper, LamiSystem.StrLstRcpConInspData_Uper);
+        }
+
+        private void Recipe_Config_RightInspect_To_Register()
+        {
+            Registry.CurrentUser.DeleteSubKey(LamiSystem.RegPathRcpConInsp_Right, false);
+            Registry.CurrentUser.CreateSubKey(LamiSystem.RegPathRcpConInsp_Right, RegistryKeyPermissionCheck.ReadWriteSubTree);
+            Recipe_Config_Lists_To_Register_Inspect(LamiSystem.RegPathRcpConInsp_Right, LamiSystem.StrLstRcpConInspTitle_Right, LamiSystem.StrLstRcpConInspData_Right);
         }
 
         private void Recipe_Config_DownInspect_To_Register()
@@ -6560,6 +7366,33 @@ namespace SystemAlign
             Gc_Roi_Uper = RecipeGap_drawArea1.pictureBox1.CreateGraphics();
         }
 
+        private void Recipe_Config_Inspect_Output_Right()
+        {
+            int ItemCount = 14;
+
+            int rectCount = LamiSystem.StrLstRcpConInspTitle_Right.Count / ItemCount;
+            _Right_Control_DrawArea.ClearListObject();
+            LamiSystem.RectListRecipeBoxZone_Right.Clear();
+
+            System.Drawing.Rectangle tempRectOld = new System.Drawing.Rectangle(0, 0, 0, 0);
+            System.Drawing.Rectangle tempRectNew = new System.Drawing.Rectangle(0, 0, 0, 0);
+
+            for (int i = 0; i < rectCount; i++)
+            {
+                tempRectNew.X = int.Parse(LamiSystem.StrLstRcpConInspData_Right[(i * ItemCount) + 0]);
+                tempRectNew.Y = int.Parse(LamiSystem.StrLstRcpConInspData_Right[(i * ItemCount) + 1]);
+                tempRectNew.Width = int.Parse(LamiSystem.StrLstRcpConInspData_Right[(i * ItemCount) + 2]);
+                tempRectNew.Height = int.Parse(LamiSystem.StrLstRcpConInspData_Right[(i * ItemCount) + 3]);
+
+                LamiSystem.RectListRecipeBoxZone_Right.Add(tempRectNew);
+
+                if (tempRectOld != tempRectNew)
+                {
+                    _Right_Control_DrawArea.AddListObject(LamiSystem.RectListRecipeBoxZone_Right[i]);
+                    tempRectOld = tempRectNew;
+                }
+            }
+        }
 
         //20150309 WKB 208
         /*
@@ -6739,6 +7572,19 @@ namespace SystemAlign
             uGrd_Recipe_Test_Uper.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
         }
 
+        private void Recipe_Right_Config_DropDownList_Setup()
+        {
+            //클리어 하지 않으면 탭을 열때마다 생성된다.
+            LamiSystem._vListItemName_Right.ValueListItems.Clear();
+
+            for (int i = 0; i < Vision_uGrd_Right.Rows.Count; i++)
+            {
+                string TmpStr = Vision_uGrd_Right.Rows[i].Cells[1].Value.ToString();
+                LamiSystem._vListItemName_Right.ValueListItems.Add(TmpStr);
+            }
+        }
+
+
         private void Recipe_Down_Config_DropDownList_Setup()
         {
             //클리어 하지 않으면 탭을 열때마다 생성된다.
@@ -6801,6 +7647,7 @@ namespace SystemAlign
             uGrd_Recipe_Test_Gap.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
             */
         }
+       
 
         /*
         private void RecipeBiCell_Config_Grid_Output()
@@ -6941,7 +7788,7 @@ namespace SystemAlign
             }
         }
         */
-       
+
         private void Recipe_Config_UperGrid_Output()
         {
             for (int i = 0; i < uGrd_Recipe_UperData.Rows.Count; i++)
@@ -7125,6 +7972,89 @@ namespace SystemAlign
         }
 
 
+        private void Recipe_Config_RightGrid_Output()
+        {
+            for (int i = 0; i < uGrd_Recipe_RightData.Rows.Count; i++)
+            {
+                for (int j = 0; j < uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns.Count; j++)
+                {
+                    string strCellData = uGrd_Recipe_RightData.DisplayLayout.Rows[i].Cells[j].Value.ToString();
+                    Recipe_Config_RightGrid_Output_Style(i, j, strCellData);
+                }
+            }
+        }
+
+
+        private void Recipe_Config_RightGrid_Output_Style(int rowNo, int columnNo, string cellData)
+        {
+            switch (columnNo)
+            {
+                case 0:
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].ValueList = LamiSystem._vListItemName_Uper;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = cellData;
+                    break;
+
+                case 1:
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].ValueList = LamiSystem._vListMeasMethod;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = cellData;
+                    break;
+
+                case 2:
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = "1차";
+                    break;
+
+                case 3:
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].ValueList = LamiSystem._imgSideList;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = cellData;
+                    break;
+
+                case 4:
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].ValueList = LamiSystem._vListMeasPola;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = cellData;
+                    break;
+
+                case 5:
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = "2차";
+                    break;
+
+                case 6:
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].ValueList = LamiSystem._imgSideList;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = cellData;
+                    break;
+
+                case 7:
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].ValueList = LamiSystem._vListMeasPola;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = cellData;
+                    break;
+
+                case 8:
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].ValueList = LamiSystem._vListMeasDivid;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = cellData;
+                    break;
+
+                case 9:
+                    if (cellData == "True")
+                    {
+                        uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = true;
+                    }
+                    else
+                    {
+                        uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = false;
+                    }
+                    break;
+
+                case 10:
+                    uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[columnNo].PromptChar = ' ';
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Style = ColumnStyle.Integer;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Value = cellData;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].Activation = Activation.AllowEdit;
+                    uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[columnNo].ActiveAppearance.ForeColor =
+                        Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+                    break;
+            }
+        }
+
+
         #endregion
 
 
@@ -7259,16 +8189,21 @@ namespace SystemAlign
             //설정한 화면의 그리드 값들을 리스트 배열에 저장한다.
             Recipe_Config_Viewer_To_UperGrid();
             Recipe_Config_Viewer_To_DownGrid();
-            
+            Recipe_Config_Viewer_To_RightGrid();
+
             //설정한 화면의 검출 영역을 배열에 저장한다.
             Recipe_Config_Viewer_To_List_Inspect_Uper();
             Recipe_Config_Viewer_To_List_Inspect_Down();
+            Recipe_Config_Viewer_To_List_Inspect_Right();
 
             //20150309 WKB 209
             Recipe_Config_Inspect_Output_Uper();
             Recipe_Config_Inspect_Output_Down();
+            Recipe_Config_Inspect_Output_Right();
+
             Recipe_Uper_Insert_Inspect();
             Recipe_Down_Insert_Inspect();
+            Recipe_Right_Insert_Inspect();
 
             ubtnToolbarSave.PerformClick();
 
@@ -7387,8 +8322,10 @@ namespace SystemAlign
 
         private bool Recipe_CheckedName_Result_Uper = true;
         private bool Recipe_CheckedName_Result_Down = true;
+        private bool Recipe_CheckedName_Result_Right = true;
         private bool Recipe_CheckedGraph_Result_Uper = true;
         private bool Recipe_CheckedGraph_Result_Down = true;
+        private bool Recipe_CheckedGraph_Result_Right = true;
 
         public bool uGrd_Recipe_Applying_ItemName_Check()
         {
@@ -7718,6 +8655,117 @@ namespace SystemAlign
                 LamiSystem.StrLstRcpConInspTitle_Uper.Add(i.ToString("000"));
             }
         }
+
+
+        private void Recipe_Config_Viewer_To_List_Inspect_Right()
+        {
+            LamiSystem.StrLstRcpConInspData_Right.Clear();
+            LamiSystem.StrLstRcpConInspTitle_Right.Clear();
+
+            DrawList zoneList = _Right_Control_DrawArea.GetSetSelectZone;
+            LamiSystem.RectListRecipeBoxZone_Right.Clear();
+
+            for (int i = 0; i < zoneList.Count; i++)
+            {
+                LamiSystem.RectListRecipeBoxZone_Right.Add(zoneList[zoneList.Count - 1 - i].GetSetRectangle());
+            }
+
+            int ItemCount = 14;
+
+            for (int i = 0; i < uGrd_Recipe_Inspect_Right.Rows.Count; i++)
+            {
+                for (int j = 0; j < ItemCount; j++)
+                {
+                    if (j == 0)
+                        LamiSystem.StrLstRcpConInspData_Right.Add(LamiSystem.RectListRecipeBoxZone_Right[i].X.ToString());        //0
+                    else if (j == 1)
+                        LamiSystem.StrLstRcpConInspData_Right.Add(LamiSystem.RectListRecipeBoxZone_Right[i].Y.ToString());        //1
+                    else if (j == 2)
+                        LamiSystem.StrLstRcpConInspData_Right.Add(LamiSystem.RectListRecipeBoxZone_Right[i].Width.ToString());    //2
+                    else if (j == 3)
+                        LamiSystem.StrLstRcpConInspData_Right.Add(LamiSystem.RectListRecipeBoxZone_Right[i].Height.ToString()); //3
+
+                    else if (j == 4)
+                    {
+                        //20150307 WKB 209
+                        LamiSystem.StrLstRcpConInspData_Right.Add((i / 2).ToString("0"));
+                    }
+                    else if (j == 5)
+                    {
+                        LamiSystem.StrLstRcpConInspData_Right.Add(uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString());
+                    }
+                    else if (j == 6)
+                    {
+                        string tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[1].Value.ToString();
+                        uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value = tmpSeqNo;
+                        LamiSystem.StrLstRcpConInspData_Right.Add(uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString());
+                    }
+                    else if (j == 7)
+                    {
+                        string tmpSeqNo = string.Empty;
+                        if (i % 2 == 0)
+                            tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[2].Value.ToString();
+                        else
+                            tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[5].Value.ToString();
+
+                        uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value = tmpSeqNo;
+                        LamiSystem.StrLstRcpConInspData_Right.Add(uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString());
+                    }
+                    else if (j == 8)
+                    {
+                        string tmpSeqNo = string.Empty;
+                        if (i % 2 == 0)
+                            tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[3].Value.ToString();
+                        else
+                            tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[6].Value.ToString();
+
+                        uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value = tmpSeqNo;
+                        LamiSystem.StrLstRcpConInspData_Right.Add(uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString());
+                    }
+                    else if (j == 9)
+                    {
+                        string tmpSeqNo = string.Empty;
+                        if (i % 2 == 0)
+                            tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[4].Value.ToString();
+                        else
+                            tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[7].Value.ToString();
+
+                        uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value = tmpSeqNo;
+                        LamiSystem.StrLstRcpConInspData_Right.Add(uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString());
+                    }
+                    else if (j == 10)
+                    {
+                        string tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[8].Value.ToString();
+                        uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value = tmpSeqNo;
+                        LamiSystem.StrLstRcpConInspData_Right.Add(uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString());
+                    }
+                    else if (j == 11)
+                    {
+                        string tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[9].Value.ToString();
+                        uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value = tmpSeqNo;
+                        LamiSystem.StrLstRcpConInspData_Right.Add(uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString());
+                    }
+                    else if (j == 12)
+                    {
+                        string tmpSeqNo = uGrd_Recipe_RightData.DisplayLayout.Rows[i / 2].Cells[10].Value.ToString();
+                        uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value = tmpSeqNo;
+                        LamiSystem.StrLstRcpConInspData_Right.Add(uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString());
+                    }
+                    else if (j == 13)
+                    {
+                        uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value = i.ToString("0");
+                        LamiSystem.StrLstRcpConInspData_Right.Add(uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[j].Value.ToString());
+                    }
+                }
+            }
+
+            int tmpTitleCount = LamiSystem.RectListRecipeBoxZone_Right.Count * ItemCount;
+
+            for (int i = 0; i < tmpTitleCount; i++)
+            {
+                LamiSystem.StrLstRcpConInspTitle_Right.Add(i.ToString("000"));
+            }
+        }
         /*
         //2015.02.07 WKB 207
           private void Recipe_Config_Viewer_To_List_Inspect_Uper()
@@ -8006,6 +9054,69 @@ namespace SystemAlign
             }
         }
 
+        private void Recipe_Right_Insert_Inspect()
+        {
+            int tmpData = uGrd_Recipe_Inspect_Right.Rows.Count;
+
+            List<string> RoiArray = new List<string>();
+
+            for (int i = 0; i < uGrd_Recipe_Inspect_Right.Rows.Count; i++)
+            {
+                string strTmpData = uGrd_Recipe_Inspect_Right.DisplayLayout.Rows[i].Cells[5].Value.ToString();
+                RoiArray.Add(strTmpData);
+            }
+            uDS_Inspect_Right.Rows.Clear();
+
+
+
+            for (int i = 0; i < LamiSystem.RectListRecipeBoxZone_Right.Count; i++)
+            {
+                //데이터 : X 좌표
+                string liststring1 = LamiSystem.RectListRecipeBoxZone_Right[i].X.ToString();
+                //데이터 : Y 좌표
+                string liststring2 = LamiSystem.RectListRecipeBoxZone_Right[i].Y.ToString();
+                //데이터 : 넓이
+                string liststring3 = LamiSystem.RectListRecipeBoxZone_Right[i].Width.ToString();
+                //데이터 : 높이
+                string liststring4 = LamiSystem.RectListRecipeBoxZone_Right[i].Height.ToString();
+
+                //데이터 : Row 번호
+                string liststring5 = (i / 2).ToString("0");
+
+
+
+
+                //데이터 : ROI 번호
+                string liststring6 = string.Empty;
+                if (tmpData == 0)
+                    liststring6 = LamiSystem.StrLstRcpConInspData_Right[5 + (i * 14)];
+                else if (i < tmpData)
+                    //liststring6 = RoiArray[i];
+                    liststring6 = LamiSystem.StrLstRcpConInspData_Right[5 + (i * 14)];
+                else
+                    liststring6 = i.ToString("0");
+
+                //데이터 : 그래프번호
+                string liststring7 = LamiSystem.StrLstRcpConGridData_Right[(i / 2 * 11) + 1];
+                //데이터 : 시퀀스 번호
+                string liststring8 = LamiSystem.StrLstRcpConGridData_Right[(i / 2 * 11) + 2 + (i % 2 * 3)];
+                //데이터 : 방향 번혼
+                string liststring9 = LamiSystem.StrLstRcpConGridData_Right[(i / 2 * 11) + 3 + (i % 2 * 3)];
+                //데이터 : 극성 
+                string liststring10 = LamiSystem.StrLstRcpConGridData_Right[(i / 2 * 11) + 4 + (i % 2 * 3)];
+                //데이터 : 분할 수량
+                string liststring11 = LamiSystem.StrLstRcpConGridData_Right[(i / 2 * 11) + 8];
+                //데이터 : 표시 여부
+                string liststring12 = LamiSystem.StrLstRcpConGridData_Right[(i / 2 * 11) + 9];
+                //데이터 : 밝기 수량
+                string liststring13 = LamiSystem.StrLstRcpConGridData_Right[(i / 2 * 11) + 10];
+                //데이터 : 리스트 번호
+                string liststring14 = i.ToString("0");
+
+                uDS_Inspect_Right.Rows.Add(true, new Object[] { liststring1, liststring2, liststring3, liststring4, liststring5,
+                    liststring6, liststring7, liststring8,liststring9,liststring10,liststring11,liststring12,liststring13,liststring14});
+            }
+        }
         /*
         private void Recipe_Uper_Insert_Inspect()
         {
@@ -8066,7 +9177,7 @@ namespace SystemAlign
         }
         */
 
-        
+
 
         /*
         private void Recipe_Config_Viewer_To_List_Inspect_Uper()
@@ -8774,6 +9885,29 @@ namespace SystemAlign
             }
         }
 
+        void Recipe_Config_Viewer_To_RightGrid()
+        {
+            LamiSystem.StrLstRcpConGridData_Right.Clear();
+            LamiSystem.StrLstRcpConGridTitle_Right.Clear();
+            int regTitle = 0;
+            
+            for (int i = 0; i < uDS_Recipe_Right.Rows.Count; i++)
+            {
+                for (int j = 0; j < uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns.Count; j++)
+                {
+                    string strCellData = string.Empty;
+                    strCellData = uGrd_Recipe_RightData.DisplayLayout.Rows[i].Cells[j].Value.ToString();
+                    if (strCellData == "1차" || strCellData == "2차")
+                    {
+                        strCellData = (strCellData == "1차") ? "1" : "2";
+                    }
+                    //StrLstRcpConInspData_Right
+                    LamiSystem.StrLstRcpConGridData_Right.Add(strCellData);
+                    LamiSystem.StrLstRcpConGridTitle_Right.Add(regTitle++.ToString("000"));
+                }
+            }
+        }
+
         void Recipe_Config_Viewer_To_DownGrid()
         {
             LamiSystem.StrLstRcpConGridData_Down.Clear();
@@ -8856,7 +9990,6 @@ namespace SystemAlign
         //2015.02.07 WKB 208
         public void Recipe_Config_Display_Select_UperGrid_Seq(CellEventArgs e, int colNo)
         {
-
             RecipeGap_drawArea1.GetSetGraphicsList.UnselectAll();
             Recipe_Config_Display_Select_UperGrid_Button_Init();
 
@@ -8892,6 +10025,33 @@ namespace SystemAlign
             Recipe_Config_Display_Select_UperGrid_Row_To_Button(e.Cell.Row.Index, colNo, rowType);
         }
 
+
+        public void Recipe_Config_Display_Select_RightGrid_Seq(CellEventArgs e, int colNo)
+        {
+
+            RecipeGap_drawArea3.GetSetGraphicsList.UnselectAll();
+            Recipe_Config_Display_Select_RightGrid_Button_Init();
+
+            int ItemCount = 14;
+            int intSeqNo = -1;
+            if (colNo == 2) intSeqNo = 0;
+            else if (colNo == 5) intSeqNo = 1;
+            int DS_Rows = 0;
+            if (colNo == 2) DS_Rows = (2 * e.Cell.Row.Index);
+            else DS_Rows = (2 * e.Cell.Row.Index) + 1;
+            
+            if (uDS_Inspect_Right.Rows.Count <= DS_Rows)
+            {
+                return;
+            }
+            
+            string tmpZoneNo = uGrd_Recipe_Inspect_Right.Rows[DS_Rows].Cells[5].Value.ToString();
+            int nowSelectZoneNo = int.Parse(uGrd_Recipe_Inspect_Right.Rows[DS_Rows].Cells[5].Value.ToString());
+            string rowType = uGrd_Recipe_Inspect_Right.Rows[DS_Rows].Cells[6].Value.ToString();
+
+            Recipe_Config_Display_Select_RightGrid_To_Rect(nowSelectZoneNo);
+            Recipe_Config_Display_Select_RightGrid_Row_To_Button(e.Cell.Row.Index, colNo, rowType);
+        }
 
         //2015.02.07 WKB 207
         /*
@@ -8939,8 +10099,8 @@ namespace SystemAlign
 //                 }
 //             }
         }
-        */       
-       
+        */
+
         /*
         public void Recipe_Config_Display_Select_UperGrid_Seq(CellEventArgs e, int colNo)
         {
@@ -9050,6 +10210,19 @@ namespace SystemAlign
         }
 
 
+        public void Recipe_Config_Display_Select_RightGrid_Row_To_Button(int rowNo, int colNo, string selectType)
+        {
+            uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[0].ButtonAppearance.ForeColor = Color.White;
+            if (selectType == "넓이")
+            {
+                uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[2].ButtonAppearance.ForeColor = Color.White;
+                uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[5].ButtonAppearance.ForeColor = Color.White;
+            }
+            else
+                uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[colNo].ButtonAppearance.ForeColor = Color.White;
+            return;
+        }
+
         public void Recipe_Config_Display_Select_DownGrid_Row_To_Button(int rowNo, int colNo, string selectType)
         {
             uGrd_Recipe_DownData.DisplayLayout.Rows[rowNo].Cells[0].ButtonAppearance.ForeColor = Color.White;
@@ -9086,6 +10259,28 @@ namespace SystemAlign
             return;
         }
 
+        public void Recipe_Config_Display_Select_RightGrid_Row(CellEventArgs e)
+        {
+            int ItemCount = 14;
+            RecipeGap_drawArea1.GetSetGraphicsList.UnselectAll();
+            Recipe_Config_Display_Select_RightGrid_Button_Init();
+
+            for (int i = 0; i < _Right_Control_DrawArea.GetSetGraphicListCount; i++)
+            {
+                int nowSelectZoneNo = int.Parse(LamiSystem.StrLstRcpConInspData_Right[5 + (i * ItemCount)]);
+                string selectSeqNo = LamiSystem.StrLstRcpConInspData_Right[7 + (i * ItemCount)];
+                int intGridRowNo = int.Parse(LamiSystem.StrLstRcpConInspData_Right[4 + (i * ItemCount)]);
+
+
+                if (e.Cell.Row.Index == intGridRowNo)
+                {
+                    Recipe_Config_Display_Select_RightGrid_To_Rect(nowSelectZoneNo);
+                    Recipe_Config_Display_Select_RightGrid_Row_To_Button(e.Cell.Row.Index);
+                }
+            }
+            return;
+        }
+
         public void Recipe_Config_Display_Select_DownGrid_Row(CellEventArgs e)
         {
             int ItemCount = 14;
@@ -9117,9 +10312,24 @@ namespace SystemAlign
             return;
         }
 
+        public void Recipe_Config_Display_Select_RightGrid_To_Rect(int selectRow)
+        {
+            int rectAddress = (_Right_Control_DrawArea.GetSetGraphicListCount - selectRow) - 1;
+
+            RecipeGap_drawArea3.GetSetGraphicsList[rectAddress].Selected = true;
+            RecipeGap_drawArea3.pictureBox1.Refresh();
+            return;
+        }
+
         public void Recipe_Config_Display_Select_UperGrid_Row_To_Button(int rowNo)
         {
             uGrd_Recipe_UperData.DisplayLayout.Rows[rowNo].Cells[0].ButtonAppearance.ForeColor = Color.White;
+            return;
+        }
+
+        public void Recipe_Config_Display_Select_RightGrid_Row_To_Button(int rowNo)
+        {
+            uGrd_Recipe_RightData.DisplayLayout.Rows[rowNo].Cells[0].ButtonAppearance.ForeColor = Color.White;
             return;
         }
 
@@ -9381,6 +10591,9 @@ namespace SystemAlign
                         case "DownRecipe":
                             RecipeGap_drawArea2.pictureBox1.Image = Image.FromFile(strFullPathFile);
                             break;
+                        case "RightRecipe":
+                            RecipeGap_drawArea3.pictureBox1.Image = Image.FromFile(strFullPathFile);
+                            break;
                     }
                 }
 
@@ -9415,6 +10628,9 @@ namespace SystemAlign
                             break;
                         case "DownRecipe":
                             RecipeGap_drawArea2.pictureBox1.Image = Image.FromFile(strFullPathFile);
+                            break;
+                        case "RightRecipe":
+                            RecipeGap_drawArea3.pictureBox1.Image = Image.FromFile(strFullPathFile);
                             break;
                     }
                 }
@@ -9520,6 +10736,11 @@ namespace SystemAlign
                     MainDlg_Image_Grab_MIL_Down();
                     Vision_Config_IplBox2.ImageIpl = srcIplImage_Down;
                     Vision_Config_IplBox2.Refresh();
+                    break;
+                case "RecipeRight":
+                    MainDlg_Image_Grab_MIL_Right();
+                    //Vision_Config_IplBox3.ImageIpl = srcIplImage_Right;
+                    //Vision_Config_IplBox3.Refresh();
                     break;
             }
 
@@ -10050,6 +11271,11 @@ namespace SystemAlign
                     RecipeGap_drawArea2.pictureBox1.Image = BitmapConverter.ToBitmap(srcIplImage_Down);;
                     RecipeGap_drawArea2.pictureBox1.Refresh();
                     break;
+                case "RightRecipe":
+                    MainDlg_Image_Grab_MIL_Right();
+                    RecipeGap_drawArea3.pictureBox1.Image = BitmapConverter.ToBitmap(srcIplImage_Right);
+                    RecipeGap_drawArea3.pictureBox1.Refresh();
+                    break;
             }
 
             //MainDlg_Image_Grab_MIL_Gap();
@@ -10099,6 +11325,7 @@ namespace SystemAlign
         MIL_ID MilApplication = MIL.M_NULL;         // Application identifier.
         MIL_ID MilSystem_Uper = MIL.M_NULL;              // System identifier.
         MIL_ID MilSystem_Down = MIL.M_NULL;              // System identifier.
+        MIL_ID MilSystem_Right = MIL.M_NULL;              // System identifier.
 
         MIL_ID MilDisplay_Uper = MIL.M_NULL;             // Display identifier.
         MIL_ID MilDigitizer_Uper = MIL.M_NULL;           // Digitizer identifier.
@@ -10108,30 +11335,151 @@ namespace SystemAlign
         MIL_ID MilDigitizer_Down = MIL.M_NULL;           // Digitizer identifier.
         MIL_ID MilImage_Down = MIL.M_NULL;               // Image buffer identifier.
 
-        private CvMat matImg_Uper = new CvMat(4096, 3072, MatrixType.U8C1);
+        MIL_ID MilDisplay_Right = MIL.M_NULL;             // Display identifier.
+        MIL_ID MilDigitizer_Right = MIL.M_NULL;           // Digitizer identifier.
+        MIL_ID MilImage_Right = MIL.M_NULL;               // Image buffer identifier.
+
+        //방열판 검사기를 진행하면서 수정함.
+        //private CvMat matImg_Uper = new CvMat(4096, 3072, MatrixType.U8C1);
+        private CvMat matImg_Uper;// = new CvMat(4096, 3072, MatrixType.U8C1);
+
         private byte[,] imgBuf_Uper;// = new byte[_iGrabImageSero, _iGrabImageGaro];
         private CvSize cvSize_Uper;// = new CvSize(_iGrabImageGaro, _iGrabImageSero);
         private IplImage srcIplImage_Uper;// = Cv.CreateImageHeader(cvSize, BitDepth.U8, 1);
         private int _iGrabImageGaro_Uper;// = AlignSystem.GrabImageSizeGaro;
         private int _iGrabImageSero_Uper;// = AlignSystem.GrabImageSizeSero;
 
-        private CvMat matImg_Down = new CvMat(4096, 3072, MatrixType.U8C1);
+        //방열판 검사기를 진행하면서 수정함.
+        //private CvMat matImg_Down = new CvMat(4096, 3072, MatrixType.U8C1);
+        private CvMat matImg_Down;// = new CvMat(4096, 3072, MatrixType.U8C1);
         private byte[,] imgBuf_Down;// = new byte[_iGrabImageSero, _iGrabImageGaro];
         private CvSize cvSize_Down;// = new CvSize(_iGrabImageGaro, _iGrabImageSero);
         private IplImage srcIplImage_Down;// = Cv.CreateImageHeader(cvSize, BitDepth.U8, 1);
         private int _iGrabImageGaro_Down;// = AlignSystem.GrabImageSizeGaro;
         private int _iGrabImageSero_Down;// = AlignSystem.GrabImageSizeSero;
 
+        //방열판 검사기를 진행하면서 수정함. 가로 세로 순서도 잘못됨
+        //private CvMat matImg_Right = new CvMat(4096, 3072, MatrixType.U8C1);
+        private CvMat matImg_Right;// = new CvMat(4096, 3072, MatrixType.U8C1);
+        private byte[,] imgBuf_Right;// = new byte[_iGrabImageSero, _iGrabImageGaro];
+        private CvSize cvSize_Right;// = new CvSize(_iGrabImageGaro, _iGrabImageSero);
+        private IplImage srcIplImage_Right;// = Cv.CreateImageHeader(cvSize, BitDepth.U8, 1);
+        private int _iGrabImageGaro_Right;// = AlignSystem.GrabImageSizeGaro;
+        private int _iGrabImageSero_Right;// = AlignSystem.GrabImageSizeSero;
+
+        public void OpenCV_Open_Uper()
+        {
+            matImg_Uper = new CvMat(LamiSystem.GetSet_Upper_Sero, LamiSystem.GetSet_Upper_Garo, MatrixType.U8C1);
+            imgBuf_Uper = new byte[_iGrabImageSero_Uper, _iGrabImageGaro_Uper];
+            cvSize_Uper = new CvSize(_iGrabImageGaro_Uper, _iGrabImageSero_Uper);
+            srcIplImage_Uper = new IplImage(cvSize_Uper, BitDepth.U8, 3);
+        }
+
+        public void OpenCV_Open_BiCell()
+        {
+            matImg_Down = new CvMat(LamiSystem.GetSet_Left_Sero, LamiSystem.GetSet_Left_Garo, MatrixType.U8C1);
+            imgBuf_Down = new byte[_iGrabImageSero_Down, _iGrabImageGaro_Down];
+            cvSize_Down = new CvSize(_iGrabImageGaro_Down, _iGrabImageSero_Down);
+            srcIplImage_Down = new IplImage(cvSize_Down, BitDepth.U8, 3);
+        }
+
+        public void OpenCV_Open_Right()
+        {
+            matImg_Right = new CvMat(LamiSystem.GetSet_Right_Sero, LamiSystem.GetSet_Right_Garo, MatrixType.U8C1);
+            imgBuf_Right = new byte[_iGrabImageSero_Right, _iGrabImageGaro_Right];
+            cvSize_Right = new CvSize(_iGrabImageGaro_Right, _iGrabImageSero_Right);
+            srcIplImage_Right = new IplImage(cvSize_Right, BitDepth.U8, 3);
+        }
+
+        private string MIL_Status_Uper = "Close";
+        private string MIL_Status_Down = "Close";
+        private string MIL_Status_Right = "Close";
+
+        public void MIL_Open_Uper()
+        {
+            MIL_Status_Uper = "Open";
+            MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, 0, MIL.M_DEFAULT, ref MilSystem_Uper); // 프레임그레버 할당
+            MIL.MdigAlloc(MilSystem_Uper, MIL.M_DEV0, @"C:\Visionsystem\Data\solfcl_mil9_CSC12M25BMP19_4tap_8bit_c.dcf", MIL.M_DEFAULT, ref MilDigitizer_Uper);
+            MIL.MdispAlloc(MilSystem_Uper, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Uper);
+            MIL.MbufAlloc2d(MilSystem_Uper, LamiSystem.GetSet_Upper_Garo, LamiSystem.GetSet_Upper_Sero, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Uper);
+        }
+
+        public void MIL_Open_Right()
+        {
+            MIL_Status_Right = "Open";
+            MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, 0, MIL.M_DEFAULT, ref MilSystem_Right); // 프레임그레버 할당
+            MIL.MdigAlloc(MilSystem_Right, MIL.M_DEV0, @"C:\Visionsystem\Data\solfcl_mil9_CSC12M25BMP19_4tap_8bit_c.dcf", MIL.M_DEFAULT, ref MilDigitizer_Right);
+            MIL.MdispAlloc(MilSystem_Right, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Right);
+            MIL.MbufAlloc2d(MilSystem_Right, LamiSystem.GetSet_Right_Garo, LamiSystem.GetSet_Right_Sero, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Right);
+        }
+
+        public void MIL_Open_Down()
+        {
+            MIL_Status_Down = "Open";
+            MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, 1, MIL.M_DEFAULT, ref MilSystem_Down); // 프레임그레버 할당
+            MIL.MdigAlloc(MilSystem_Down, MIL.M_DEV0, @"C:\Visionsystem\Data\solfcl_mi9_CSC12M25BMP19_4tap_8bit_c.dcf", MIL.M_DEFAULT, ref MilDigitizer_Down);
+            MIL.MdispAlloc(MilSystem_Down, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Down);
+            MIL.MbufAlloc2d(MilSystem_Down, LamiSystem.GetSet_Left_Garo, LamiSystem.GetSet_Left_Sero, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Down);
+        }
+
+        public void MIL_Close_Uper()
+        {
+            MIL_Status_Uper = "Close";
+            MIL.MdigHalt(MilDigitizer_Uper);
+            MIL.MbufFree(MilImage_Uper);         //이미지 버퍼
+            MIL.MdispFree(MilDisplay_Uper);      // 모니터링
+            MIL.MdigFree(MilDigitizer_Uper);      // 프레임그래버
+            MIL.MsysFree(MilSystem_Uper);    // 그래버 추가
+            //MIL.MappFree(MilApplication);   //
+        }
+
+        public void MIL_Close_Down()
+        {
+            MIL_Status_Down = "Close";
+            MIL.MdigHalt(MilDigitizer_Down);
+            MIL.MbufFree(MilImage_Down);         //이미지 버퍼
+            MIL.MdispFree(MilDisplay_Down);      // 모니터링
+            MIL.MdigFree(MilDigitizer_Down);      // 프레임그래버
+            MIL.MsysFree(MilSystem_Down);    // 그래버 추가
+            //MIL.MappFree(MilApplication);   //
+        }
+
+        public void MIL_Close_Right()
+        {
+            MIL_Status_Right = "Close";
+            MIL.MdigHalt(MilDigitizer_Right);
+            MIL.MbufFree(MilImage_Right);         //이미지 버퍼
+            MIL.MdispFree(MilDisplay_Right);      // 모니터링
+            MIL.MdigFree(MilDigitizer_Right);      // 프레임그래버
+            MIL.MsysFree(MilSystem_Right);    // 그래버 추가
+            //MIL.MappFree(MilApplication);   //
+        }
+
+        /*
         public void OpenCV_Open_Uper()
         {
             _iGrabImageGaro_Uper = LamiSystem.GrabImageSizeGaro_Gap;
             _iGrabImageSero_Uper = LamiSystem.GrabImageSizeSero_Gap;
+
 
             matImg_Uper = new CvMat(_iGrabImageSero_Uper, _iGrabImageGaro_Uper, MatrixType.U8C1);
             imgBuf_Uper = new byte[_iGrabImageSero_Uper, _iGrabImageGaro_Uper];
             cvSize_Uper = new CvSize(_iGrabImageGaro_Uper, _iGrabImageSero_Uper);
             //srcIplImage = Cv.CreateImageHeader(cvSize, BitDepth.U8, 3);
             srcIplImage_Uper = new IplImage(cvSize_Uper, BitDepth.U8, 3);
+        }
+        
+
+        public void OpenCV_Open_Right()
+        {
+            _iGrabImageGaro_Right = LamiSystem.GrabImageSizeGaro_Gap;
+            _iGrabImageSero_Right = LamiSystem.GrabImageSizeSero_Gap;
+
+            matImg_Right = new CvMat(_iGrabImageSero_Right, _iGrabImageGaro_Right, MatrixType.U8C1);
+            imgBuf_Right = new byte[_iGrabImageSero_Right, _iGrabImageGaro_Right];
+            cvSize_Right = new CvSize(_iGrabImageGaro_Right, _iGrabImageSero_Right);
+            //srcIplImage = Cv.CreateImageHeader(cvSize, BitDepth.U8, 3);
+            srcIplImage_Right = new IplImage(cvSize_Right, BitDepth.U8, 3);
         }
 
         public void OpenCV_Open_BiCell()
@@ -10145,9 +11493,6 @@ namespace SystemAlign
             //srcIplImage = Cv.CreateImageHeader(cvSize, BitDepth.U8, 3);
             srcIplImage_Down = new IplImage(cvSize_Down, BitDepth.U8, 3);
         }
-
-        private string MIL_Status_Uper = "Close";
-        private string MIL_Status_Down = "Close";
         public void MIL_Open_Uper()
         {
             MIL_Status_Uper = "Open";
@@ -10176,17 +11521,11 @@ namespace SystemAlign
             MIL.MsysFree(MilSystem_Uper);    // 그래버 추가
             //MIL.MappFree(MilApplication);   //
         }
+        */
 
-        public void MIL_Close_Down()
-        {
-            MIL_Status_Down = "Close";
-            MIL.MdigHalt(MilDigitizer_Down);
-            MIL.MbufFree(MilImage_Down);         //이미지 버퍼
-            MIL.MdispFree(MilDisplay_Down);      // 모니터링
-            MIL.MdigFree(MilDigitizer_Down);      // 프레임그래버
-            MIL.MsysFree(MilSystem_Down);    // 그래버 추가
-            //MIL.MappFree(MilApplication);   //
-        }
+
+
+       
 
         public void MIL_Initionalize_Uper()
         {
@@ -10208,6 +11547,7 @@ namespace SystemAlign
 
         private delegate void Delegate_Image_Grab_MIL_Down();
         private delegate void Delegate_Image_Grab_MIL_Uper();
+        private delegate void Delegate_Image_Grab_MIL_Right();
         public void MainDlg_Image_Grab_MIL_Uper()
         {
             if (InvokeRequired)
@@ -10227,14 +11567,32 @@ namespace SystemAlign
                 MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, 0, MIL.M_DEFAULT, ref MilSystem_Uper); // 프레임그레버 할당
                 MIL.MdigAlloc(MilSystem_Uper, MIL.M_DEV0, @"C:\Visionsystem\Data\solfcl_mil9_CSC12M25BMP19_4tap_8bit_C0.dcf", MIL.M_DEFAULT, ref MilDigitizer_Uper);
                 MIL.MdispAlloc(MilSystem_Uper, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Uper);
-                MIL.MbufAlloc2d(MilSystem_Uper, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Uper);
+
+                //방열판 검사기 작업진행 변경 20160427
+                //전 : 시작
+                //MIL.MbufAlloc2d(MilSystem_Uper, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Uper);
+                //전 : 종료
+
+                //후 : 시작
+                MIL.MbufAlloc2d(MilSystem_Uper, LamiSystem.GetSet_Upper_Garo, LamiSystem.GetSet_Upper_Sero, 
+                    8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Uper);
+                //후 : 종료
                 MIL.MdigControl(MilDigitizer_Uper, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
                 
                 MIL.MdigGrab(MilDigitizer_Uper, MilImage_Uper);
-//                 Stopwatch grabwatch = new Stopwatch();
-//                 grabwatch.Reset();
-//                 grabwatch.Start();
-                MIL.MbufGet2d(MilImage_Uper, 0, 0, 4096, 3072, imgBuf_Uper);
+                //                 Stopwatch grabwatch = new Stopwatch();
+                //                 grabwatch.Reset();
+                //                 grabwatch.Start();
+
+                //방열판 검사기 작업진행 변경 20160427
+                //전 : 시작
+                //MIL.MbufGet2d(MilImage_Uper, 0, 0, 4096, 3072, imgBuf_Uper);
+                //전 : 종료
+
+                //후 : 시작
+                MIL.MbufGet2d(MilImage_Uper, 0, 0, LamiSystem.GetSet_Upper_Garo, LamiSystem.GetSet_Upper_Sero, imgBuf_Uper);
+                //후 : 종료
+
                 IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(imgBuf_Uper, 0);
                 matImg_Uper.Data = bufPtr;
                 monoIplImage_Uper = Cv.GetImage(matImg_Uper);
@@ -10243,6 +11601,50 @@ namespace SystemAlign
 //                 MessageBox.Show(grabwatch.ElapsedMilliseconds.ToString("0"));
                 MIL.MdigControl(MilDigitizer_Uper, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
                 MIL.MappFreeDefault(MilApplication, MilSystem_Uper, MilDisplay_Uper, MilDigitizer_Uper, MilImage_Uper);
+            }
+        }
+
+        public void MainDlg_Image_Grab_MIL_Right()
+        {
+            if (InvokeRequired)
+            {
+                Delegate_Image_Grab_MIL_Right del = MainDlg_Image_Grab_MIL_Right;
+                Invoke(del);
+            }
+            else
+            {
+                MilApplication = MIL.M_NULL;
+                MilSystem_Right = MIL.M_NULL;
+                MilDisplay_Right = MIL.M_NULL;
+                MilDigitizer_Right = MIL.M_NULL;
+                MilImage_Right = MIL.M_NULL;
+
+                MIL.MappAlloc(MIL.M_DEFAULT, ref MilApplication); // Application 할당
+                MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, 0, MIL.M_DEFAULT, ref MilSystem_Right); // 프레임그레버 할당
+                MIL.MdigAlloc(MilSystem_Right, MIL.M_DEV0, @"C:\Visionsystem\Data\solfcl_mil9_CSC12M25BMP19_4tap_8bit_C0.dcf", MIL.M_DEFAULT, ref MilDigitizer_Right);
+                MIL.MdispAlloc(MilSystem_Right, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Right);
+
+                //MIL.MbufAlloc2d(MilSystem_Right, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Right);
+                MIL.MbufAlloc2d(MilSystem_Right, LamiSystem.GetSet_Right_Garo, LamiSystem.GetSet_Right_Sero, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Right);
+
+                MIL.MdigControl(MilDigitizer_Right, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
+
+                MIL.MdigGrab(MilDigitizer_Right, MilImage_Right);
+                //                 Stopwatch grabwatch = new Stopwatch();
+                //                 grabwatch.Reset();
+                //                 grabwatch.Start();
+                
+                //MIL.MbufGet2d(MilImage_Right, 0, 0, 4096, 3072, imgBuf_Right);
+                MIL.MbufGet2d(MilImage_Right, 0, 0, LamiSystem.GetSet_Right_Garo, LamiSystem.GetSet_Right_Sero, imgBuf_Right);
+                
+                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(imgBuf_Right, 0);
+                matImg_Right.Data = bufPtr;
+                monoIplImage_Right = Cv.GetImage(matImg_Right);
+                Cv.CvtColor(monoIplImage_Right, srcIplImage_Right, ColorConversion.GrayToBgr);
+                //                 grabwatch.Stop();
+                //                 MessageBox.Show(grabwatch.ElapsedMilliseconds.ToString("0"));
+                MIL.MdigControl(MilDigitizer_Right, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
+                MIL.MappFreeDefault(MilApplication, MilSystem_Right, MilDisplay_Right, MilDigitizer_Right, MilImage_Right);
             }
         }
 
@@ -10265,11 +11667,18 @@ namespace SystemAlign
                 MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, 1, MIL.M_DEFAULT, ref MilSystem_Down); // 프레임그레버 할당
                 MIL.MdigAlloc(MilSystem_Down, MIL.M_DEV0, @"C:\Visionsystem\Data\solfcl_mil9_CSC12M25BMP19_4tap_8bit_C1.dcf", MIL.M_DEFAULT, ref MilDigitizer_Down);
                 MIL.MdispAlloc(MilSystem_Down, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Down);
-                MIL.MbufAlloc2d(MilSystem_Down, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Down);
+                
+                //MIL.MbufAlloc2d(MilSystem_Down, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Down);
+                MIL.MbufAlloc2d(MilSystem_Down, LamiSystem.GetSet_Left_Garo, LamiSystem.GetSet_Left_Sero, 
+                    8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Down);
+
                 MIL.MdigControl(MilDigitizer_Down, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
 
                 MIL.MdigGrab(MilDigitizer_Down, MilImage_Down);
-                MIL.MbufGet2d(MilImage_Down, 0, 0, 4096, 3072, imgBuf_Down);
+                
+                //MIL.MbufGet2d(MilImage_Down, 0, 0, 4096, 3072, imgBuf_Down);
+                MIL.MbufGet2d(MilImage_Down, 0, 0, LamiSystem.GetSet_Left_Garo, LamiSystem.GetSet_Left_Sero, imgBuf_Down);
+
                 IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(imgBuf_Down, 0);
                 matImg_Down.Data = bufPtr;
                 monoIplImage_Down = Cv.GetImage(matImg_Down);
@@ -10278,83 +11687,11 @@ namespace SystemAlign
                 MIL.MappFreeDefault(MilApplication, MilSystem_Down, MilDisplay_Down, MilDigitizer_Down, MilImage_Down);
             }
         }
-        IplImage monoIplImage_Uper = new IplImage(4096, 3072, BitDepth.U8, 1);
-        IplImage monoIplImage_Down = new IplImage(4096, 3072, BitDepth.U8, 1);
-        public void MainDlg_Image_Grab_MIL_BiCell()
-        {
-            /*
-            if (LamiSystem.GetSet_Grab_Auto_Flag_BiCell == true)
-            {
-                LamiSystem.GetSet_Grab_Auto_Flag_BiCell = false;
-                MIL.MdigControl(MilDigitizer_BiCell, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
-                MIL.MappFreeDefault(MilApplication, MilSystem, MilDisplay_BiCell, MilDigitizer_BiCell, MilImage_BiCell);
-                MIL_Initionalize_BiCell();
-                MIL_Open_BiCell();
-                Thread.Sleep(100);
-            }
-            else
-            {
-                MIL_Open_BiCell();
-            }
 
-            //umac.Umac_SetData_P351("13");
-
-            MIL.MdigGrab(MilDigitizer_BiCell, MilImage_BiCell);
-            
-            MIL.MbufGet2d(MilImage_BiCell, 0, 0, _iGrabImageGaro_BiCell, _iGrabImageSero_BiCell, imgBuf_BiCell);
-            IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(imgBuf_BiCell, 0);
-            matImg_BiCell.Data = bufPtr;
-
-            monoIplImage_BiCell = Cv.GetImage(matImg_BiCell);
-            Cv.CvtColor(monoIplImage_BiCell, srcIplImage_BiCell, ColorConversion.GrayToBgr);
-
-            MIL_Close_BiCell();
-
-            if (utabDlgMain.ActiveTab.Key == "VisionBiCell")
-            {
-                VisionBiCell_Config_IplBox1.ImageIpl = srcIplImage_BiCell;
-                VisionBiCell_Config_IplBox1.Refresh();
-            }
-            else if (utabDlgMain.ActiveTab.Key == "RecipeBiCell")
-            {
-                RecipeBiCell_drawArea1.pictureBox1.ImageIpl = srcIplImage_BiCell;
-                RecipeBiCell_drawArea1.pictureBox1.Refresh();
-            }
-            GrayImage_View_BiCell(srcIplImage_BiCell);
-            */
-
-            //private delegate void Delegate_Run_Run_Threading2_Display(TextBox tBox, int dataNo);
-            if (InvokeRequired)
-            {
-                Delegate_Image_Grab_MIL_Down del = MainDlg_Image_Grab_MIL_BiCell;
-                Invoke(del);
-            }
-            else
-            {
-                MilApplication = MIL.M_NULL;
-                MilSystem_Uper = MIL.M_NULL;
-                MilDisplay_Down = MIL.M_NULL;
-                MilDigitizer_Down = MIL.M_NULL;
-                MilImage_Down = MIL.M_NULL;
-
-                MIL.MappAlloc(MIL.M_DEFAULT, ref MilApplication); // Application 할당
-                MIL.MsysAlloc(MIL.M_SYSTEM_SOLIOS, MIL.M_DEFAULT, MIL.M_DEFAULT, ref MilSystem_Uper); // 프레임그레버 할당
-                MIL.MdigAlloc(MilSystem_Uper, MIL.M_DEV1, @"C:\Visionsystem\Data\solxcl_mil9_G60FV11CL_c_8bit_2tap_P2.dcf", MIL.M_DEFAULT, ref MilDigitizer_Down);
-                MIL.MdispAlloc(MilSystem_Uper, MIL.M_DEFAULT, "M_DEFAULT", MIL.M_WINDOWED, ref MilDisplay_Down);
-                MIL.MbufAlloc2d(MilSystem_Uper, 4096, 3072, 8 + MIL.M_UNSIGNED, MIL.M_IMAGE + MIL.M_GRAB + MIL.M_DISP, ref MilImage_Down);
-                MIL.MdigControl(MilDigitizer_Down, MIL.M_GRAB_TIMEOUT, MIL.M_INFINITE); // 트리거 타임아웃 무한대기
-                MIL.MdigGrab(MilDigitizer_Down, MilImage_Down);
-
-                MIL.MbufGet2d(MilImage_Down, 0, 0, 4096, 3072, imgBuf_Down);
-                IntPtr bufPtr = Marshal.UnsafeAddrOfPinnedArrayElement(imgBuf_Down, 0);
-                matImg_Down.Data = bufPtr;
-                monoIplImage_Down = Cv.GetImage(matImg_Down);
-                Cv.CvtColor(monoIplImage_Down, srcIplImage_Down, ColorConversion.GrayToBgr);
-
-                MIL.MdigControl(MilDigitizer_Down, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
-                MIL.MappFreeDefault(MilApplication, MilSystem_Uper, MilDisplay_Down, MilDigitizer_Down, MilImage_Down);
-            }
-        }
+        //방열판 검사기 작업진행 수정함 20160427
+        IplImage monoIplImage_Uper;// = new IplImage(4096, 3072, BitDepth.U8, 1);
+        IplImage monoIplImage_Down;// = new IplImage(4096, 3072, BitDepth.U8, 1);
+        IplImage monoIplImage_Right;// = new IplImage(4096, 3072, BitDepth.U8, 1);
 
 
         public void GrayImage_View_Gap(IplImage viewImage)
@@ -10393,6 +11730,8 @@ namespace SystemAlign
             //if (LamiSystem.IsConnect_PLC == true) plc.Loop_Check_Flag = false;
             //Thread.Sleep(2000);
             // 밀 리소스 해제
+
+            //상부 설정
             if (LamiSystem.GetSet_Grab_Auto_Flag_Gap == true)
             {
                 LamiSystem.GetSet_Grab_Auto_Flag_Gap = false;
@@ -10401,12 +11740,23 @@ namespace SystemAlign
             //MIL.MappFreeDefault(MilApplication, MilSystem, MilDisplay_Gap, MilDigitizer_Gap, MilImage_Gap);
             if (MIL_Status_Uper == "Open") MIL_Close_Uper();
 
+
+            //좌측 설정
             if (LamiSystem.GetSet_Grab_Auto_Flag_Down == true)
             {
                 LamiSystem.GetSet_Grab_Auto_Flag_Down = false;
                 MIL.MdigControl(MilDigitizer_Down, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
             }
             if (MIL_Status_Down == "Open") MIL_Close_Down();
+
+
+            //우측 설정
+            if (LamiSystem.GetSet_Grab_Auto_Flag_Right == true)
+            {
+                LamiSystem.GetSet_Grab_Auto_Flag_Right = false;
+                MIL.MdigControl(MilDigitizer_Right, MIL.M_GRAB_ABORT, MIL.M_DEFAULT);
+            }
+            if (MIL_Status_Right == "Open") MIL_Close_Right();
 
             /* Inspect_MIL_Close_System();*/
         }
@@ -10444,6 +11794,7 @@ namespace SystemAlign
             dlgInspect.GetSet_LamiSystem = LamiSystem;
             dlgInspect.GetSet_Converter_Uper = _point_Converter_Uper;
             dlgInspect.GetSet_Converter_Down = _point_Converter_Down;
+            dlgInspect.GetSet_Converter_Right = _point_Converter_Right;
 
             dlgInspect.Inspect_Ready_Ready();
 
@@ -10453,11 +11804,13 @@ namespace SystemAlign
             //RectListImageZone 리스트를 이용하는 함수
             dlgInspect.Inspect_Ready_Run_RecipeGrid_Data_Load_Uper();
             dlgInspect.Inspect_Ready_Run_RecipeGrid_Data_Load_Down();
+            dlgInspect.Inspect_Ready_Run_RecipeGrid_Data_Load_Right();
 
             dlgInspect.Inspect_Offset_Load_To_System();
 
             bool ROI_Search_Result_Uper = false;
             bool ROI_Search_Result_Down = false;
+            bool ROI_Search_Result_Right = false;
 
             //Recipe_uBtn_ImageRead.PerformClick();
 
@@ -10471,6 +11824,11 @@ namespace SystemAlign
                 case "DownRecipe":
                     //srcIplImage_Down = RecipeGap_drawArea2.pictureBox1.ImageIpl;
                     srcIplImage_Down = IplImage.FromBitmap((Bitmap)RecipeGap_drawArea2.pictureBox1.Image);
+                    break;
+
+                case "RightRecipe":
+                    //srcIplImage_Right = RecipeGap_drawArea1.pictureBox1.ImageIpl;
+                    srcIplImage_Right = IplImage.FromBitmap((Bitmap)RecipeGap_drawArea3.pictureBox1.Image);
                     break;
             }
 
@@ -10502,6 +11860,16 @@ namespace SystemAlign
                     dlgInspect.Inspect_Manual_FindData_Inspection_Down();
                     List<string> resultArray_Down = dlgInspect.GetSet_GridDisplayData_Down;
                     Manual_Inspect_ResultData_To_Viewer_Grid_Down(resultArray_Down);
+                    break;
+
+                case "RightRecipe":
+                    //CvWindow.ShowImages(srcIplImage_Right);
+                    ROI_Search_Result_Right = dlgInspect.Inspect_Run_Run_ROI_EdgeLine_Centering_Right(srcIplImage_Right);
+                    dlgInspect._CycleCompleteFlag_Right = true;
+                    dlgInspect.Inspect_Run_Run_ROI_CenterPoint_Find_Right();
+                    dlgInspect.Inspect_Manual_FindData_Inspection_Right();
+                    List<string> resultArray_Right = dlgInspect.GetSet_GridDisplayData_Right;
+                    Manual_Inspect_ResultData_To_Viewer_Grid_Right(resultArray_Right);
                     break;
             }
 
@@ -10605,6 +11973,18 @@ namespace SystemAlign
             Recipe_Manual_Grid_Uper_Resize();
         }
 
+        private void Manual_Inspect_ResultData_To_Viewer_Grid_Right(List<string> resultArray)
+        {
+            uDS_Test_Right.Rows.Clear();
+            int grdRowsNum = 7;
+            for (int i = 0; i < resultArray.Count; i++)
+            {
+                if (i % grdRowsNum == 0) uDS_Test_Right.Rows.Add(true, new Object[] { "", "", "", "", "", "", "" });
+                uGrd_Recipe_Test_Right.DisplayLayout.Rows[i / grdRowsNum].Cells[i % grdRowsNum].Value = resultArray[i];
+            }
+            Recipe_Manual_Grid_Right_Resize();
+        }
+
         private void Manual_Inspect_ResultData_To_Viewer_Grid_Down(List<string> resultArray)
         {
             uDS_Test_Down.Rows.Clear();
@@ -10650,6 +12030,42 @@ namespace SystemAlign
                 uGrd_Recipe_Test_Uper.DisplayLayout.Bands[0].Columns[6].Width = 51;
                 if (uGrd_Recipe_Test_Uper.Rows.Count > 0)
                     uGrd_Recipe_Test_Uper.ActiveRow = uGrd_Recipe_Test_Uper.Rows[0];
+            }
+        }
+
+
+        public void Recipe_Manual_Grid_Right_Resize()
+        {
+            for (int i = 0; i < uGrd_Recipe_Test_Right.Rows.Count; i++)
+            {
+                string CheckResult = uGrd_Recipe_Test_Right.DisplayLayout.Rows[i].Cells[6].Value.ToString();
+                if (CheckResult == "NG")
+                    uGrd_Recipe_Test_Right.DisplayLayout.Rows[i].Appearance.BackColor = Color.OrangeRed;
+            }
+
+            if (uGrd_Recipe_Test_Right.Rows.Count > 8)
+            {
+                if (uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[0].Width == 40) return;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[0].Width = 40;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[1].Width = 60;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[2].Width = 53;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[3].Width = 53;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[4].Width = 53;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[5].Width = 53;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[6].Width = 51;
+            }
+            else
+            {
+                if (uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[0].Width == 42) return;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[0].Width = 42;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[1].Width = 68;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[2].Width = 55;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[3].Width = 55;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[4].Width = 55;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[5].Width = 55;
+                uGrd_Recipe_Test_Right.DisplayLayout.Bands[0].Columns[6].Width = 51;
+                if (uGrd_Recipe_Test_Right.Rows.Count > 0)
+                    uGrd_Recipe_Test_Right.ActiveRow = uGrd_Recipe_Test_Right.Rows[0];
             }
         }
 
@@ -10951,6 +12367,24 @@ namespace SystemAlign
             return;
         }
 
+        private void uGrd_Recipe_RightData_ClickCellButton(object sender, CellEventArgs e)
+        {
+            if (e.Cell.Column.Index == 0)
+            {
+                Recipe_Config_Display_Select_RightGrid_Row(e);
+            }
+            else if (e.Cell.Column.Index == 2)
+            {
+                Recipe_Config_Display_Select_RightGrid_Seq(e, 2);
+            }
+            else if (e.Cell.Column.Index == 5)
+            {
+                Recipe_Config_Display_Select_RightGrid_Seq(e, 5);
+            }
+
+            return;
+        }
+
         private void uGrd_Recipe_DownData_ClickCellButton(object sender, CellEventArgs e)
         {
             if (e.Cell.Column.Index == 0)
@@ -10981,14 +12415,24 @@ namespace SystemAlign
                     RecipeGap_drawArea1.pictureBox1.Image = Properties.Resources.BiCell_Top;
                     RecipeGap_drawArea1.Visible = true;
                     RecipeGap_drawArea2.Visible = false;
+                    RecipeGap_drawArea3.Visible = false;
                     VisionLami_Config_ListData_To_UperGrid();
                     break;
                 case "DownRecipe":
                     RecipeGap_drawArea1.Visible = false;
                     RecipeGap_drawArea2.Visible = true;
+                    RecipeGap_drawArea3.Visible = false;
                     //RecipeGap_drawArea2.pictureBox1.ImageIpl = IplImage.FromBitmap(Properties.Resources.BiCell_Bot);
                     RecipeGap_drawArea2.pictureBox1.Image = Properties.Resources.BiCell_Bot;
                     VisionLami_Config_ListData_To_DownGrid();
+                    break;
+                case "RightRecipe":
+                    RecipeGap_drawArea1.Visible = false;
+                    RecipeGap_drawArea2.Visible = false;
+                    RecipeGap_drawArea3.Visible = true;
+                    //RecipeGap_drawArea2.pictureBox1.ImageIpl = IplImage.FromBitmap(Properties.Resources.BiCell_Bot);
+                    RecipeGap_drawArea3.pictureBox1.Image = Properties.Resources.BiCell_Top;
+                    VisionLami_Config_ListData_To_RightGrid();
                     break;
             }
         }
@@ -11369,6 +12813,10 @@ namespace SystemAlign
             {
                 ultraTabControl2.Tabs["DownRecipe"].Enabled = true;
             }
+            else if (NowTabIndex == 2)
+            {
+                ultraTabControl2.Tabs["RightRecipe"].Enabled = true;
+            }
         }
 
         private void RecipeDownStatus_Enable()
@@ -11432,6 +12880,20 @@ namespace SystemAlign
                     //20150304 WKB 209
                     Recipe_Down_Insert_Edit();
                     break;
+
+                case "RightRecipe":
+                    //20150304 WKB 209
+                    RecipeEditStatus_Desiable(2);
+
+                    Recipe_Right_Insert_Grid();
+                    Recipe_Right_Grid_Resize();
+                    Recipe_Config_RightGrid_Output();
+                    Recipe_Right_Insert_ROI();
+                    Recipe_Right_Insert_Inspect();
+
+                    //20150304 WKB 209
+                    Recipe_Right_Insert_Edit();
+                    break;
             }
 
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -11442,6 +12904,14 @@ namespace SystemAlign
             uDS_Recipe_Uper.Rows[uDS_Recipe_Uper.Rows.Count-1].SetCellValue(0,"");
             uDS_Recipe_Uper.Rows[uDS_Recipe_Uper.Rows.Count - 1].SetCellValue(1, "0");
         }
+
+
+        private void Recipe_Right_Insert_Edit()
+        {
+            uDS_Recipe_Right.Rows[uDS_Recipe_Right.Rows.Count - 1].SetCellValue(0, "");
+            uDS_Recipe_Right.Rows[uDS_Recipe_Right.Rows.Count - 1].SetCellValue(1, "0");
+        }
+
 
         private void Recipe_Down_Insert_Edit()
         {
@@ -11533,6 +13003,58 @@ namespace SystemAlign
             
         }
 
+        private int _iRecipeRightGridRowNo = -1;
+
+        public void Recipe_Right_Insert_Grid()
+        {
+            UltraGridRow row = this.uGrd_Recipe_RightData.DisplayLayout.Bands[0].AddNew();
+            if (uGrd_Recipe_RightData.Rows.Count < 2)
+            {
+                row.Cells[0].Value = "E";
+                row.Cells[1].Value = "1";
+                row.Cells[2].Value = "1차";
+                row.Cells[3].Value = "0";
+                row.Cells[4].Value = "흑백";
+                row.Cells[5].Value = "2차";
+                row.Cells[6].Value = "2";
+                row.Cells[7].Value = "흑백";
+                row.Cells[8].Value = "3";
+                row.Cells[9].Value = "True";
+                row.Cells[10].Value = "22";
+            }
+            else
+            {
+                //그리드에서 추가할 Row를 선택하지 않았을 때 _iVisionRightGridRowNo의 값이 -1이 된다.
+                //이때에는 마지막 Row의 데이터를 복사하도록 한다.
+                if (_iRecipeRightGridRowNo == -1) _iRecipeRightGridRowNo = uGrd_Recipe_RightData.Rows.Count - 2;
+
+                row.Cells[0].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[0].Value;
+                row.Cells[1].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[1].Value;
+                row.Cells[2].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[2].Value;
+                row.Cells[3].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[3].Value;
+                row.Cells[4].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[4].Value;
+                row.Cells[5].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[5].Value;
+                row.Cells[6].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[6].Value;
+                row.Cells[7].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[7].Value;
+                row.Cells[8].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[8].Value;
+                row.Cells[9].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[9].Value;
+                row.Cells[10].Value = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Cells[10].Value;
+            }
+
+            uGrd_Recipe_RightData.Rows.Move(row, uGrd_Recipe_RightData.Rows.Count - 1);
+            _iRecipeRightGridRowNo = -1;
+
+            LamiSystem.StrLstRcpConGridData_Right.Clear();
+            for (int i = 0; i < uGrd_Recipe_RightData.Rows.Count; i++)
+            {
+                for (int j = 0; j < uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns.Count; j++)
+                {
+                    string tmpCellData = uGrd_Recipe_RightData.Rows[i].Cells[j].Value.ToString();
+                    LamiSystem.StrLstRcpConGridData_Right.Add(tmpCellData);
+                }
+            }
+
+        }
         public void Recipe_Uper_Insert_ROI()
         {
             System.Drawing.Rectangle tempRectNew = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -11552,6 +13074,23 @@ namespace SystemAlign
 //                 Trace.WriteLine(LamiSystem.RectListRecipeBoxZone_Uper[LamiSystem.RectListRecipeBoxZone_Uper.Count - 1].Right);
 //                 Trace.WriteLine(LamiSystem.RectListRecipeBoxZone_Uper[LamiSystem.RectListRecipeBoxZone_Uper.Count - 1].Width);
 //                 Trace.WriteLine(LamiSystem.RectListRecipeBoxZone_Uper[LamiSystem.RectListRecipeBoxZone_Uper.Count - 1].Height);
+            }
+        }
+
+        public void Recipe_Right_Insert_ROI()
+        {
+            System.Drawing.Rectangle tempRectNew = new System.Drawing.Rectangle(0, 0, 0, 0);
+
+            for (int i = 0; i < 2; i++)
+            {
+                tempRectNew.X = (uGrd_Recipe_RightData.Rows.Count * 2 + i - 1) * 10;
+                tempRectNew.Y = (uGrd_Recipe_RightData.Rows.Count * 2 + i - 1) * 10;
+                tempRectNew.Width = 30;
+                tempRectNew.Height = 30;
+
+                LamiSystem.RectListRecipeBoxZone_Right.Add(tempRectNew);
+
+                _Right_Control_DrawArea.AddListObject(tempRectNew);
             }
         }
 
@@ -11611,6 +13150,40 @@ namespace SystemAlign
             }
         }
 
+        public void Recipe_Right_Grid_Resize()
+        {
+            if (uGrd_Recipe_RightData.Rows.Count > 21)
+            {
+                if (uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[0].Width == 54) return;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[0].Width = 54;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[1].Width = 35;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[2].Width = 35;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[3].Width = 35;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[4].Width = 39;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[5].Width = 35;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[6].Width = 35;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[7].Width = 39;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[8].Width = 35;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[9].Width = 35;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[10].Width = 35;
+            }
+            else
+            {
+                if (uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[0].Width == 60) return;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[0].Width = 60;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[1].Width = 36;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[2].Width = 36;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[3].Width = 36;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[4].Width = 41;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[5].Width = 36;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[6].Width = 36;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[7].Width = 41;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[8].Width = 36;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[9].Width = 36;
+                uGrd_Recipe_RightData.DisplayLayout.Bands[0].Columns[10].Width = 36;
+                if (uGrd_Recipe_RightData.Rows.Count > 0) uGrd_Recipe_RightData.ActiveRow = uGrd_Recipe_RightData.Rows[0];
+            }
+        }
 
 
         private int _iRecipeDownGridRowNo = -1;
@@ -11747,6 +13320,13 @@ namespace SystemAlign
             if (row != null) row.ExpandAncestors();
         }
 
+        public void Recipe_Right_Grid_Move(int rowNo)
+        {
+            UltraGridRow row = uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo];
+            uGrd_Recipe_RightData.Rows.Move(row, rowNo);
+            if (row != null) row.ExpandAncestors();
+        }
+
         //2015.02.07 WKB 208
         public void Recipe_Uper_Inspect_Move_Up(int rowNo)
         {
@@ -11761,6 +13341,22 @@ namespace SystemAlign
             for (int i = 0; i < uDS_Inspect_Uper.Rows.Count; i++)
             {
                 uGrd_Recipe_Inspect_Uper.Rows[i].Cells[13].Value = i.ToString();
+            }
+        }
+
+        public void Recipe_Right_Inspect_Move_Up(int rowNo)
+        {
+            if ((_iRecipeRightGridRowNo * 2) >= uGrd_Recipe_Inspect_Right.Rows.Count) return;
+
+            UltraGridRow row = uGrd_Recipe_Inspect_Right.Rows[_iRecipeRightGridRowNo * 2];
+            uGrd_Recipe_Inspect_Right.Rows.Move(row, rowNo * 2);
+            row = uGrd_Recipe_Inspect_Right.Rows[_iRecipeRightGridRowNo * 2 + 1];
+            uGrd_Recipe_Inspect_Right.Rows.Move(row, rowNo * 2 + 1);
+            if (row != null) row.ExpandAncestors();
+
+            for (int i = 0; i < uDS_Inspect_Right.Rows.Count; i++)
+            {
+                uGrd_Recipe_Inspect_Right.Rows[i].Cells[13].Value = i.ToString();
             }
         }
 
@@ -11815,6 +13411,24 @@ namespace SystemAlign
 
             uGrd_Recipe_Inspect_Uper.DataSource = uDS_Inspect_Uper;
         }
+
+        public void Recipe_Right_Inspect_Move_Down(int rowNo)
+        {
+            UltraGridRow row = uGrd_Recipe_Inspect_Right.Rows[_iRecipeRightGridRowNo * 2];
+            uGrd_Recipe_Inspect_Right.Rows.Move(row, rowNo * 2 + 1);
+            uGrd_Recipe_Inspect_Right.Refresh();
+            row = uGrd_Recipe_Inspect_Right.Rows[_iRecipeRightGridRowNo * 2];
+            uGrd_Recipe_Inspect_Right.Rows.Move(row, rowNo * 2 + 1);
+            if (row != null) row.ExpandAncestors();
+
+            for (int i = 0; i < uDS_Inspect_Right.Rows.Count; i++)
+            {
+                uGrd_Recipe_Inspect_Right.Rows[i].Cells[13].Value = i.ToString();
+            }
+
+            uGrd_Recipe_Inspect_Right.DataSource = uDS_Inspect_Right;
+        }
+
 
         public void Recipe_Down_Inspect_Move_Down(int rowNo)
         {
@@ -11872,6 +13486,18 @@ namespace SystemAlign
                     _iRecipeDownGridRowNo = _iRecipeDownGridRowNo - 1;
                     Recipe_Down_Grid_Resize();
                     break;
+                case "RightRecipe":
+                    if (_iRecipeRightGridRowNo < 0) break;
+                    if (_iRecipeRightGridRowNo == 0) break;
+
+                    //20150304 WKB 209
+                    RecipeEditStatus_Desiable(2);
+
+                    Recipe_Right_Grid_Move(_iRecipeRightGridRowNo - 1);
+                    Recipe_Right_Inspect_Move_Up(_iRecipeRightGridRowNo - 1);
+                    _iRecipeRightGridRowNo = _iRecipeRightGridRowNo - 1;
+                    Recipe_Right_Grid_Resize();
+                    break;
             }
 
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -11909,6 +13535,19 @@ namespace SystemAlign
                     Recipe_Down_Inspect_Move_Down(_iRecipeDownGridRowNo + 1);
                     _iRecipeDownGridRowNo = _iRecipeDownGridRowNo + 1;
                     Recipe_Down_Grid_Resize();
+                    break;
+
+                case "RightRecipe":
+                    if (_iRecipeRightGridRowNo < 0) break;
+                    if (_iRecipeRightGridRowNo == uGrd_Recipe_RightData.Rows.Count - 1) break;
+
+                    //20150304 WKB 209
+                    RecipeEditStatus_Desiable(0);
+
+                    Recipe_Right_Grid_Move(_iRecipeRightGridRowNo + 1);
+                    Recipe_Right_Inspect_Move_Down(_iRecipeRightGridRowNo + 1);
+                    _iRecipeRightGridRowNo = _iRecipeRightGridRowNo + 1;
+                    Recipe_Right_Grid_Resize();
                     break;
             }
 
@@ -11954,6 +13593,22 @@ namespace SystemAlign
                     //20150304 WKB 209
                     RecipeEditStatus_Desiable(1);
                     break;
+
+                case "RightRecipe":
+                    if (_iRecipeRightGridRowNo < 0)
+                    {
+                        MessageBox.Show("삭제를 원하는 항목을 선택하여 주십시요!");
+                        break;
+                    }
+                    Recipe_Right_Grid_Delete();
+                    Recipe_Right_Grid_Resize();
+                    Recipe_Right_Inspect_Delete();
+                    Recipe_Right_ROI_Delete();
+                    _iRecipeRightGridRowNo = -1;
+
+                    //20150304 WKB 209
+                    RecipeEditStatus_Desiable(0);
+                    break;
             }
 
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -11997,11 +13652,36 @@ namespace SystemAlign
             }
         }
 
+        private int deleteROI_Right_Inspect = -1;
 
+        public void Recipe_Right_ROI_Delete()
+        {
+            if (deleteROI_Right_Inspect < 0) return;
+            _Right_Control_DrawArea.ClearListObject();
+            LamiSystem.RectListRecipeBoxZone_Right.RemoveAt(deleteROI_Right_Inspect);
+            LamiSystem.RectListRecipeBoxZone_Right.RemoveAt(deleteROI_Right_Inspect);
+
+            if (LamiSystem.RectListRecipeBoxZone_Right.Count == 0)
+            {
+                _Right_Control_DrawArea._drawArea1.pictureBox1.Refresh();
+                return;
+            }
+
+            for (int i = 0; i < LamiSystem.RectListRecipeBoxZone_Right.Count; i++)
+            {
+                _Right_Control_DrawArea.AddListObject(LamiSystem.RectListRecipeBoxZone_Right[i]);
+            }
+        }
         public void Recipe_Uper_Grid_Delete()
         {
             
                 uGrd_Recipe_UperData.Rows[_iRecipeUperGridRowNo].Delete(false);
+        }
+
+        public void Recipe_Right_Grid_Delete()
+        {
+
+            uGrd_Recipe_RightData.Rows[_iRecipeRightGridRowNo].Delete(false);
         }
 
         private int deleteROI_Uper_Inspect = -1;
@@ -12037,6 +13717,24 @@ namespace SystemAlign
             }
         }
 
+        public void Recipe_Right_Inspect_Delete()
+        {
+            deleteROI_Right_Inspect = -1;
+
+            deleteROI_Right_Inspect = int.Parse(uDS_Inspect_Right.Rows[_iRecipeRightGridRowNo * 2].GetCellValue(5).ToString());
+
+            uDS_Inspect_Right.Rows.RemoveAt(_iRecipeRightGridRowNo * 2);
+            uDS_Inspect_Right.Rows.RemoveAt(_iRecipeRightGridRowNo * 2);
+
+            for (int i = 0; i < uDS_Inspect_Right.Rows.Count; i++)
+            {
+                int readROINo = int.Parse(uDS_Inspect_Right.Rows[i].GetCellValue(5).ToString());
+                if (readROINo > deleteROI_Right_Inspect) uDS_Inspect_Right.Rows[i].SetCellValue(5, (readROINo - 2).ToString());
+
+                uDS_Inspect_Right.Rows[i].SetCellValue(4, (i / 2).ToString("0"));
+                uDS_Inspect_Right.Rows[i].SetCellValue(13, i.ToString("0"));
+            }
+        }
         //2015.02.07 WKB 207
         /*
         public void Recipe_Uper_Inspect_Delete()
@@ -12216,6 +13914,42 @@ namespace SystemAlign
             }
         }
 
+        public void uGrd_Recipe_RightData_Graph_Check(object sender, CellEventArgs e)
+        {
+            Recipe_Double_Check Struct_Check = new Recipe_Double_Check();
+
+            Recipe_CheckedGraph_Result_Right = true;
+            Struct_Check.GraphCount = 0;
+            Struct_Check.nowCol = e.Cell.Column.Index;
+            Struct_Check.nowRow = e.Cell.Row.Index;
+            Struct_Check.Select_Name = e.Cell.ValueList.GetValue(e.Cell.ValueList.SelectedItemIndex).ToString();
+
+            for (int i = 0; i < uGrd_Recipe_RightData.Rows.Count; i++)
+            {
+                if (i == Struct_Check.nowRow) continue;
+
+                string Grid_Name = uGrd_Recipe_RightData.DisplayLayout.Rows[i].Cells[Struct_Check.nowCol].Value.ToString();
+                if (Struct_Check.Select_Name == Grid_Name)
+                {
+                    Struct_Check.GraphCount = Struct_Check.GraphCount + 1;
+                    if (Struct_Check.GraphCount >= 2)
+                    {
+                        uMessageBox.MessageBox_Show("레시피 설정", "그래프 설정", "선택한 그래프는 이미 사용하고 있습니다.<br/><br/>그래프를 다시 선택하여 주십시요.",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Recipe_CheckedGraph_Result_Right = false;
+
+                        //20150304 WKB 209
+                        ultraTabControl2.Focus();
+                        uDS_Recipe_Right.Rows[e.Cell.Row.Index].SetCellValue(1, "0");
+                        RecipeEditStatus_Desiable(0);
+                        this.ultraTabControl2.SelectedTab = this.ultraTabControl2.Tabs[0];
+
+                        break;
+                    }
+                }
+            }
+        }
+
         public void uGrd_Recipe_UperData_ItemName_Check(object sender, CellEventArgs e)
         {
             Recipe_Double_Check Struct_Check = new Recipe_Double_Check();
@@ -12239,6 +13973,37 @@ namespace SystemAlign
                     //20150304 WKB 209
                     ultraTabControl2.Focus();
                     uDS_Recipe_Uper.Rows[e.Cell.Row.Index].SetCellValue(0,"");
+                    RecipeEditStatus_Desiable(0);
+                    this.ultraTabControl2.SelectedTab = this.ultraTabControl2.Tabs[0];
+
+                    break;
+                }
+            }
+        }
+
+        public void uGrd_Recipe_RightData_ItemName_Check(object sender, CellEventArgs e)
+        {
+            Recipe_Double_Check Struct_Check = new Recipe_Double_Check();
+
+            Recipe_CheckedName_Result_Right = true;
+            Struct_Check.nowCol = e.Cell.Column.Index;
+            Struct_Check.nowRow = e.Cell.Row.Index;
+            Struct_Check.Select_Name = e.Cell.ValueList.GetValue(e.Cell.ValueList.SelectedItemIndex).ToString();
+
+            for (int i = 0; i < uGrd_Recipe_RightData.Rows.Count; i++)
+            {
+                if (i == Struct_Check.nowRow) continue;
+
+                string Grid_Name = uGrd_Recipe_RightData.DisplayLayout.Rows[i].Cells[Struct_Check.nowCol].Value.ToString();
+                if (Struct_Check.Select_Name == Grid_Name)
+                {
+                    uMessageBox.MessageBox_Show("레시피 설정", "항목 설정", "선택한 항목은 이미 사용하고 있습니다.<br/><br/>항목을 다시 선택하여 주십시요.",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Recipe_CheckedName_Result_Right = false;
+
+                    //20150304 WKB 209
+                    ultraTabControl2.Focus();
+                    uDS_Recipe_Right.Rows[e.Cell.Row.Index].SetCellValue(0, "");
                     RecipeEditStatus_Desiable(0);
                     this.ultraTabControl2.SelectedTab = this.ultraTabControl2.Tabs[0];
 
@@ -12536,10 +14301,12 @@ namespace SystemAlign
             //설정한 화면의 그리드 값들을 리스트 배열에 저장한다.
             Recipe_Config_Viewer_To_UperGrid();
             Recipe_Config_Viewer_To_DownGrid();
+            Recipe_Config_Viewer_To_RightGrid();
 
             //설정한 화면의 검출 영역을 배열에 저장한다.
             Recipe_Config_Viewer_To_List_Inspect_Uper();
             Recipe_Config_Viewer_To_List_Inspect_Down();
+            Recipe_Config_Viewer_To_List_Inspect_Right();
         }
 
         public void All_Config_Saving()
@@ -12562,16 +14329,19 @@ namespace SystemAlign
 
             //레시피 설정 탭에서 적용되어져 있는 List 항목을 레지스터에 기록한다.
             Recipe_Config_ListData_To_Register();
+
             Recipe_Config_UperGrid_To_Register();
             Recipe_Config_DownGrid_To_Register();
+            Recipe_Config_RightGrid_To_Register();
 
             Recipe_Config_Register_To_Lists_Inspect_Uper();
             Recipe_Config_Register_To_Lists_Inspect_Down();
-
+            Recipe_Config_Register_To_Lists_Inspect_Right();
 
             //레시피 설정 탭에서 적용되어져 있는 ROI 정보를 레지스터에 기록한다.
             Recipe_Config_UperInspect_To_Register();
             Recipe_Config_DownInspect_To_Register();
+            Recipe_Config_RightInspect_To_Register();
 
             //환경 설정 탭에서 적용되어져 있는 List 항목을 레지스터에 기록한다.
             Equipment_Config_ListData_To_Register();
@@ -12582,6 +14352,122 @@ namespace SystemAlign
             Model_Config_Add_List_To_File(LamiSystem.GetSet_Now_Model_Name, LamiSystem.GetSet_Now_Model_Number);
 
             
+        }
+
+        private void Vision_uGrd_Right_ClickCellButton(object sender, CellEventArgs e)
+        {
+            try
+            {
+                ItemCalibration ICal = new ItemCalibration();
+
+                ICal.ClickRowsNo = e.Cell.Row.Index;
+                ICal.ParseResult = false;
+
+                ICal.MeasValue = 0;
+                ICal.ParseResult = double.TryParse(uDS_Offset_Right.Rows[ICal.ClickRowsNo].GetCellValue(5).ToString(), out ICal.MeasValue);
+                if (ICal.ParseResult == false) return;
+
+                ICal.RealValue = 0;
+                ICal.ParseResult = double.TryParse(uDS_Offset_Right.Rows[ICal.ClickRowsNo].GetCellValue(6).ToString(), out ICal.RealValue);
+                if (ICal.ParseResult == false) return;
+
+                ICal.OldCal = 0;
+                ICal.ParseResult = double.TryParse(uDS_Offset_Right.Rows[ICal.ClickRowsNo].GetCellValue(7).ToString(), out ICal.OldCal);
+                if (ICal.ParseResult == false) return;
+
+
+                //20150325 WKB 209
+                //일반적인 켈 값 추출로 변경 요청으로 변경함.
+                //ICal.BasicValue = ICal.MeasValue / ICal.OldCal;
+                //ICal.NewCal = ICal.RealValue / ICal.BasicValue;
+
+                ICal.NewCal = ICal.RealValue / ICal.MeasValue;
+
+                //uDS_Offset_Right.Rows[ICal.ClickRowsNo].SetCellValue(7, ICal.NewCal.ToString("0.0000"));
+                Vision_uGrd_Right.DisplayLayout.Rows[ICal.ClickRowsNo].Cells[7].Value = ICal.NewCal.ToString("0.0000");
+
+                return;
+            }
+            catch (Exception exception)
+            {
+                //MessageBox.Show(exception.Message);
+            }
+        }
+
+        private int _iVisionRightGridRowNo = -1;
+        private void Vision_uGrd_Right_MouseDown(object sender, MouseEventArgs e)
+        {
+            UltraGridRow row;
+            UIElement element;
+            element = Vision_uGrd_Right.DisplayLayout.UIElement.ElementFromPoint(e.Location);
+            row = element.GetContext(typeof(UltraGridRow)) as UltraGridRow;
+
+            if (row != null && row.IsDataRow)
+            {
+                _iVisionRightGridRowNo = row.Index;
+                Vision_uGrd_Right.Rows[_iVisionRightGridRowNo].Appearance.BackColor = Color.Silver;
+            }
+        }
+
+        private void uGrd_Recipe_RightData_CellListSelect(object sender, CellEventArgs e)
+        {
+            int nowCol = e.Cell.Column.Index;
+            if (nowCol == 0) uGrd_Recipe_RightData_ItemName_Check(sender, e);
+            if (nowCol == 1) uGrd_Recipe_RightData_Graph_Check(sender, e);
+        }
+
+        private void SystemConfig_Tab_BackPanel_PaintClient(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void uSystem_uBtn_DCF_File_Right_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDlg = new OpenFileDialog();
+            if (fileDlg.ShowDialog() == DialogResult.OK)
+                System_uTxt_DCF_Path_Right.Text = fileDlg.FileName;
+        }
+
+        private void System_uBtn_MeasPath_Right_Click(object sender, EventArgs e)
+        {
+            System_uTxt_MeasPath_Right.Text = FolderBrowser_Open();
+        }
+
+        private void System_uBtn_ImagePath_Right_Click(object sender, EventArgs e)
+        {
+            System_uTxt_ImagePath_Right.Text = FolderBrowser_Open();
+        }
+
+        private void ultraButton6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double Value1 = double.Parse(uTxt_Pix3_01_Lami.Text);
+                double Value2 = double.Parse(uTxt_Pix3_02_Lami.Text);
+                double CalValue = (Value2 / Value1);
+                uTxt_Pix3_03_Lami.Text = CalValue.ToString("0.0000");
+                return;
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+        }
+
+        private void ultraButton4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double Value1 = double.Parse(uTxt_Pix3_04_Lami.Text);
+                double Value2 = double.Parse(uTxt_Pix3_05_Lami.Text);
+                double CalValue = (Value2 / Value1);
+                uTxt_Pix3_06_Lami.Text = CalValue.ToString("0.0000");
+                return;
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
     }
 }

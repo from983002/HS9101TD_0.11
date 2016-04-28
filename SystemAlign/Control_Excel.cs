@@ -88,7 +88,15 @@ namespace SystemAlign
             }
         }
 
-       
+
+        public void Excel_File_Check_Or_Make_Right(string checkFile, List<string> itemNames)
+        {
+            var logFileInfo = new FileInfo(checkFile);
+            if (logFileInfo.Exists == false)
+            {
+                CreateExcelFile_Right(checkFile, itemNames);
+            }
+        }
 
         public void Excel_File_Check_Or_Make_Down(string checkFile, List<string> itemNames)
         {
@@ -145,6 +153,24 @@ namespace SystemAlign
             streamWriterCSV_Uper.WriteLine(writeData);
             streamWriterCSV_Uper.Close();
             streamWriterCSV_Uper.Dispose();
+        }
+
+        public void CreateExcelFile_Right(string strExcelName, List<string> itemNames)
+        {
+            string writeData = string.Empty;
+            string[] columnNames = new string[itemNames.Count + 4];
+
+            writeData = "모델명,트리거,시간,판정,";
+
+            for (int i = 0; i < itemNames.Count; i++)
+            {
+                writeData += itemNames[i] + ",";
+            }
+
+            streamWriterCSV_Right = new StreamWriter(strExcelName, true, Encoding.Default);
+            streamWriterCSV_Right.WriteLine(writeData);
+            streamWriterCSV_Right.Close();
+            streamWriterCSV_Right.Dispose();
         }
 
         public void CreateExcelFile_Down(string strExcelName, List<string> itemNames)
@@ -363,7 +389,7 @@ namespace SystemAlign
  */
         private StreamWriter streamWriterCSV_Uper;
         private StreamWriter streamWriterCSV_Down;
-
+        private StreamWriter streamWriterCSV_Right;
         /*
         public void WriteExcelFile(string strExcelName, string strExcelData)
         {

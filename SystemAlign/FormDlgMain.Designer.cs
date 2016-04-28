@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand1 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn15 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("No");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn16 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item1");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn1 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("No");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn2 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item1");
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn17 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item2");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn18 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item3");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn19 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item4");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn20 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item5");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn21 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item6");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn22 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item7");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn3 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item2");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn4 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item3");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn5 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item4");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn6 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item5");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn7 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item6");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn8 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item7");
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn23 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item8");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn9 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item8");
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
@@ -59,31 +59,31 @@
             Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn9 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item8");
             Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand2 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn24 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("No");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn10 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("No");
             Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn25 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item1");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn11 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item1");
             Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance14 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance15 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn26 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item2");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn12 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item2");
             Infragistics.Win.Appearance appearance16 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance17 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn27 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item3");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn13 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item3");
             Infragistics.Win.Appearance appearance18 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance19 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn28 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item4");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn14 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item4");
             Infragistics.Win.Appearance appearance20 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance21 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance22 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn29 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item5");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn15 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item5");
             Infragistics.Win.Appearance appearance23 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn30 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item6");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn16 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item6");
             Infragistics.Win.Appearance appearance24 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn31 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item7");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn19 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item7");
             Infragistics.Win.Appearance appearance25 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance26 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn32 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item8");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn20 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item8");
             Infragistics.Win.Appearance appearance27 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance28 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance29 = new Infragistics.Win.Appearance();
@@ -102,130 +102,138 @@
             Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn18 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item8");
             Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand3 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn33 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col0");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn21 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("No");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn22 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item1");
             Infragistics.Win.Appearance appearance35 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn23 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item2");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn24 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item3");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn25 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item4");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn26 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item5");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn27 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item6");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn28 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item7");
             Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn29 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("item8");
             Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn34 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col1");
             Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn35 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col2");
             Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn19 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("No");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn20 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn21 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn22 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item3");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn23 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item4");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn24 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item5");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn25 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item6");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn26 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item7");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn27 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item8");
             Infragistics.Win.Appearance appearance43 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn36 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col3");
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand4 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn41 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col0");
             Infragistics.Win.Appearance appearance44 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance45 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance46 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn37 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col4");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn42 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col1");
             Infragistics.Win.Appearance appearance47 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance48 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance49 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn38 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col5");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn43 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col2");
             Infragistics.Win.Appearance appearance50 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance51 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance52 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn39 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col6");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn44 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col3");
             Infragistics.Win.Appearance appearance53 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance54 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance55 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn40 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col7");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn45 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col4");
             Infragistics.Win.Appearance appearance56 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance57 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance58 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn41 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col8");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn46 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col5");
             Infragistics.Win.Appearance appearance59 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance60 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance61 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn42 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col9");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn47 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col6");
             Infragistics.Win.Appearance appearance62 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance63 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance64 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn43 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col10");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn48 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col7");
             Infragistics.Win.Appearance appearance65 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance66 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance67 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn49 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col8");
             Infragistics.Win.Appearance appearance68 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance69 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance70 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn50 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col9");
             Infragistics.Win.Appearance appearance71 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance72 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance73 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn19 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col0");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn20 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col1");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn21 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col2");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn22 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col3");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn23 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col4");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn24 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col5");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn25 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col6");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn26 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col7");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn27 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col8");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn28 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col9");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn29 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col10");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn51 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col10");
             Infragistics.Win.Appearance appearance74 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand4 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn44 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col0");
             Infragistics.Win.Appearance appearance75 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance76 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance77 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn45 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col1");
             Infragistics.Win.Appearance appearance78 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance79 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance80 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn46 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col2");
             Infragistics.Win.Appearance appearance81 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance82 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn28 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col0");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn29 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn30 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn31 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col3");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn32 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col4");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn33 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col5");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn34 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col6");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn35 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col7");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn36 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col8");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn37 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col9");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn38 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col10");
             Infragistics.Win.Appearance appearance83 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn47 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col3");
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand5 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn52 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col0");
             Infragistics.Win.Appearance appearance84 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance85 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance86 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn48 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col4");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn53 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col1");
             Infragistics.Win.Appearance appearance87 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance88 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance89 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn49 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col5");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn54 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col2");
             Infragistics.Win.Appearance appearance90 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance91 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance92 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn50 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col6");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn55 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col3");
             Infragistics.Win.Appearance appearance93 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance94 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance95 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn51 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col7");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn56 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col4");
             Infragistics.Win.Appearance appearance96 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance97 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance98 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn52 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col8");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn57 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col5");
             Infragistics.Win.Appearance appearance99 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance100 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance101 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn53 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col9");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn58 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col6");
             Infragistics.Win.Appearance appearance102 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance103 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance104 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn54 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col10");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn59 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col7");
             Infragistics.Win.Appearance appearance105 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance106 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance107 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn60 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col8");
             Infragistics.Win.Appearance appearance108 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance109 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance110 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn61 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col9");
             Infragistics.Win.Appearance appearance111 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance112 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance113 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn30 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col0");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn31 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col1");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn32 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col2");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn33 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col3");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn34 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col4");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn35 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col5");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn36 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col6");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn37 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col7");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn38 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col8");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn39 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col9");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn40 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col10");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn62 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col10");
             Infragistics.Win.Appearance appearance114 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance115 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance116 = new Infragistics.Win.Appearance();
@@ -236,47 +244,60 @@
             Infragistics.Win.Appearance appearance121 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance122 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance123 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn39 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col0");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn40 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn41 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn42 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col3");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn43 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col4");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn44 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col5");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn45 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col6");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn46 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col7");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn47 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col8");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn48 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col9");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn49 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col10");
             Infragistics.Win.Appearance appearance124 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand6 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn100 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col0");
             Infragistics.Win.Appearance appearance125 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance126 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance127 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn101 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col1");
             Infragistics.Win.Appearance appearance128 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance129 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance130 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn102 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col2");
             Infragistics.Win.Appearance appearance131 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance132 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance133 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn103 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col3");
             Infragistics.Win.Appearance appearance134 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance135 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance136 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn104 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col4");
             Infragistics.Win.Appearance appearance137 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance138 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance139 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem500 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem501 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn105 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col5");
             Infragistics.Win.Appearance appearance140 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance141 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem33 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem34 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance142 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn120 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col6");
             Infragistics.Win.Appearance appearance143 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance144 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance145 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn121 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col7");
             Infragistics.Win.Appearance appearance146 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance147 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance148 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn122 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col8");
             Infragistics.Win.Appearance appearance149 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance150 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem35 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem36 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance151 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn123 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col9");
             Infragistics.Win.Appearance appearance152 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance153 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem50 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem51 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance154 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem516 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem517 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn124 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Col10");
             Infragistics.Win.Appearance appearance155 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance156 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance157 = new Infragistics.Win.Appearance();
@@ -286,13 +307,20 @@
             Infragistics.Win.Appearance appearance161 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance162 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance163 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn50 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col0");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn51 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn52 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn53 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col3");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn54 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col4");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn55 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col5");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn56 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col6");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn57 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col7");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn58 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col8");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn59 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col9");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn60 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col10");
             Infragistics.Win.Appearance appearance164 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance165 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem46 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem47 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance166 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem48 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem49 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance167 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance168 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance169 = new Infragistics.Win.Appearance();
@@ -322,8 +350,12 @@
             Infragistics.Win.Appearance appearance193 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance194 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance195 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem500 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem501 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance196 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance197 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem33 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem34 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance198 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance199 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance200 = new Infragistics.Win.Appearance();
@@ -335,15 +367,15 @@
             Infragistics.Win.Appearance appearance206 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance207 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance208 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem50 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem51 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance209 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem516 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem517 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance210 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance211 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance212 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem480 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem481 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance213 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem482 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem483 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance214 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance215 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance216 = new Infragistics.Win.Appearance();
@@ -354,11 +386,7 @@
             Infragistics.Win.Appearance appearance221 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance222 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance223 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem488 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem489 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance224 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem490 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem491 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance225 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance226 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance227 = new Infragistics.Win.Appearance();
@@ -397,7 +425,11 @@
             Infragistics.Win.Appearance appearance260 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance261 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance262 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem480 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem481 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance263 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem482 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem483 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance264 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance265 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance266 = new Infragistics.Win.Appearance();
@@ -407,23 +439,19 @@
             Infragistics.Win.Appearance appearance270 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance271 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance272 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem335 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem468 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance273 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem488 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem489 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance274 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem490 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem491 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance275 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance276 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem19 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem20 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance277 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance278 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance279 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance280 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem13 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem14 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance281 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem17 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem18 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance282 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance283 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance284 = new Infragistics.Win.Appearance();
@@ -440,11 +468,7 @@
             Infragistics.Win.Appearance appearance295 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance296 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance297 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem29 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem30 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance298 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem31 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem32 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance299 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance300 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance301 = new Infragistics.Win.Appearance();
@@ -454,11 +478,7 @@
             Infragistics.Win.Appearance appearance305 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance306 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance307 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem52 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem53 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance308 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem54 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem55 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance309 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance310 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance311 = new Infragistics.Win.Appearance();
@@ -469,27 +489,28 @@
             Infragistics.Win.Appearance appearance316 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance317 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance318 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem42 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.Appearance appearance319 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance320 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance321 = new Infragistics.Win.Appearance();
             Infragistics.Win.ValueListItem valueListItem37 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.ValueListItem valueListItem39 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.Appearance appearance319 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem335 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem468 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.Appearance appearance320 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance321 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance322 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem19 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem20 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance323 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance324 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance325 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem41 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem43 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance326 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem44 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem45 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem13 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem14 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance327 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem17 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem18 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance328 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance329 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem40 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance330 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem38 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance331 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance332 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance333 = new Infragistics.Win.Appearance();
@@ -503,7 +524,11 @@
             Infragistics.Win.Appearance appearance341 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance342 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance343 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem29 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem30 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance344 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem31 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem32 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance345 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance346 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance347 = new Infragistics.Win.Appearance();
@@ -557,9 +582,7 @@
             Infragistics.Win.Appearance appearance395 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance396 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance397 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab6 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance398 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab7 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance399 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance400 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance401 = new Infragistics.Win.Appearance();
@@ -570,7 +593,6 @@
             Infragistics.Win.Appearance appearance406 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance407 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance408 = new Infragistics.Win.Appearance();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDlgMain));
             Infragistics.Win.Appearance appearance409 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance410 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance411 = new Infragistics.Win.Appearance();
@@ -592,14 +614,6 @@
             Infragistics.Win.Appearance appearance427 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance428 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance429 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand5 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn55 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("NO");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn56 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("검사 항목");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn57 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 중심");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn58 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 상한");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn59 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 하한");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn60 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("측정 값");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn61 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("판정 결과");
             Infragistics.Win.Appearance appearance430 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance431 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance432 = new Infragistics.Win.Appearance();
@@ -607,23 +621,8 @@
             Infragistics.Win.Appearance appearance434 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance435 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance436 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn41 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("NO");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn42 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("검사 항목");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn43 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 중심");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn44 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 상한");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn45 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 하한");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn46 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("측정 값");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn47 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("판정 결과");
             Infragistics.Win.Appearance appearance437 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance438 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand6 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn62 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("NO");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn63 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("검사 항목");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn64 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 중심");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn65 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 상한");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn66 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 하한");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn67 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("측정 값");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn68 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("판정 결과");
             Infragistics.Win.Appearance appearance439 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance440 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance441 = new Infragistics.Win.Appearance();
@@ -631,18 +630,14 @@
             Infragistics.Win.Appearance appearance443 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance444 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance445 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn48 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("NO");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn49 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("검사 항목");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn50 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 중심");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn51 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 상한");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn52 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 하한");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn53 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("측정 값");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn54 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("판정 결과");
             Infragistics.Win.Appearance appearance446 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance447 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance448 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance449 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab6 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance450 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab7 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab12 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance451 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance452 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance453 = new Infragistics.Win.Appearance();
@@ -651,107 +646,61 @@
             Infragistics.Win.Appearance appearance456 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance457 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance458 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab9 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance459 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab10 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance460 = new Infragistics.Win.Appearance();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDlgMain));
             Infragistics.Win.Appearance appearance461 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance462 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand7 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn69 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("X");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn70 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Y");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn71 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Width");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn72 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Hight");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn73 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Row");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn74 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ROI");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn75 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Graph");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn76 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("SeqNo");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn77 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Side");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn78 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Pario");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn79 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Div");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn80 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Dis");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn81 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Brith");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn82 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("LstNo");
             Infragistics.Win.Appearance appearance463 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance464 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance465 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance466 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance467 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance468 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn55 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("X");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn56 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Y");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn57 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Width");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn58 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Hight");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn59 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Row");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn60 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("ROI");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn61 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Graph");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn62 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("SeqNo");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn63 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Side");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn64 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Pario");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn65 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Div");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn66 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Dis");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn67 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Brith");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn68 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("LstNo");
             Infragistics.Win.Appearance appearance469 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand8 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn1 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("X");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn2 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Y");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn3 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Width");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn4 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Hight");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn5 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Row");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn6 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ROI");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn7 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Graph");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn8 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("SeqNo");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn9 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Side");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn10 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Pario");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn11 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Div");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn12 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Dis");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn13 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Brith");
-            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn14 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("LstNo");
             Infragistics.Win.Appearance appearance470 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance471 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance472 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance473 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance474 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance475 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn69 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("X");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn70 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Y");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn71 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Width");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn72 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Hight");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn73 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Row");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn74 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("ROI");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn75 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Graph");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn76 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("SeqNo");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn77 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Side");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn78 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Pario");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn79 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Div");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn80 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Dis");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn81 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Brith");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn82 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("LstNo");
             Infragistics.Win.Appearance appearance476 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance477 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance478 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance479 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem1 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem2 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem3 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem4 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem5 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem6 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem7 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem8 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance480 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance481 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand7 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn125 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("NO");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn137 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("검사 항목");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn138 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 중심");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn153 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 상한");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn154 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 하한");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn155 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("측정 값");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn156 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("판정 결과");
             Infragistics.Win.Appearance appearance482 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance483 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance484 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance485 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance486 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem15 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem16 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance487 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance488 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn61 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("NO");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn62 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("검사 항목");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn63 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 중심");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn64 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 상한");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn65 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 하한");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn66 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("측정 값");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn67 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("판정 결과");
             Infragistics.Win.Appearance appearance489 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand8 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn157 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("NO");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn158 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("검사 항목");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn159 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 중심");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn160 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 상한");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn161 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 하한");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn162 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("측정 값");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn163 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("판정 결과");
             Infragistics.Win.Appearance appearance490 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance491 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance492 = new Infragistics.Win.Appearance();
@@ -759,8 +708,23 @@
             Infragistics.Win.Appearance appearance494 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance495 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance496 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn68 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("NO");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn69 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("검사 항목");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn70 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 중심");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn71 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 상한");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn72 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 하한");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn73 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("측정 값");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn74 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("판정 결과");
             Infragistics.Win.Appearance appearance497 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance498 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand9 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn164 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("NO");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn165 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("검사 항목");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn166 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 중심");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn169 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 상한");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn170 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("규격 하한");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn171 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("측정 값");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn172 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("판정 결과");
             Infragistics.Win.Appearance appearance499 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance500 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance501 = new Infragistics.Win.Appearance();
@@ -775,52 +739,138 @@
             Infragistics.Win.Appearance appearance510 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance511 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance512 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem21 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem22 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem23 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem24 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem25 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem26 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem27 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem28 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance513 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance514 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance515 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance516 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance517 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance518 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab9 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance519 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem11 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem12 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab10 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab11 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance520 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance521 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance522 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand10 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn173 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("X");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn174 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Y");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn175 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Width");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn176 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Hight");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn177 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Row");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn178 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ROI");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn179 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Graph");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn180 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("SeqNo");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn181 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Side");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn182 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Pario");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn183 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Div");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn184 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Dis");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn185 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Brith");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn186 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("LstNo");
             Infragistics.Win.Appearance appearance523 = new Infragistics.Win.Appearance();
-            Infragistics.Win.ValueListItem valueListItem9 = new Infragistics.Win.ValueListItem();
-            Infragistics.Win.ValueListItem valueListItem10 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance524 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance525 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance526 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance527 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance528 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn75 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("X");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn76 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Y");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn77 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Width");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn78 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Hight");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn79 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Row");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn80 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("ROI");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn81 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Graph");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn82 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("SeqNo");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn83 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Side");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn84 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Pario");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn85 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Div");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn86 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Dis");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn87 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Brith");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn88 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("LstNo");
             Infragistics.Win.Appearance appearance529 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand11 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn187 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("X");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn188 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Y");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn189 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Width");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn190 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Hight");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn191 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Row");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn192 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ROI");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn193 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Graph");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn194 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("SeqNo");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn195 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Side");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn196 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Pario");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn197 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Div");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn198 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Dis");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn199 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Brith");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn200 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("LstNo");
             Infragistics.Win.Appearance appearance530 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance531 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance532 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance533 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance534 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance535 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn89 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("X");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn90 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Y");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn91 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Width");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn92 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Hight");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn93 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Row");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn94 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("ROI");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn95 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Graph");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn96 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("SeqNo");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn97 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Side");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn98 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Pario");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn99 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Div");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn100 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Dis");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn101 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Brith");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn102 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("LstNo");
             Infragistics.Win.Appearance appearance536 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand12 = new Infragistics.Win.UltraWinGrid.UltraGridBand("Band 0", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn201 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("X");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn202 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Y");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn203 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Width");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn204 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Hight");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn205 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Row");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn206 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ROI");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn207 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Graph");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn208 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("SeqNo");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn209 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Side");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn210 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Pario");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn211 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Div");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn212 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Dis");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn213 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Brith");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn214 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("LstNo");
             Infragistics.Win.Appearance appearance537 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance538 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance539 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance540 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance541 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance542 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn103 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("X");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn104 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Y");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn105 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Width");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn106 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Hight");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn107 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Row");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn108 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("ROI");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn109 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Graph");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn110 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("SeqNo");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn111 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Side");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn112 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Pario");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn113 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Div");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn114 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Dis");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn115 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Brith");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn116 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("LstNo");
             Infragistics.Win.Appearance appearance543 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance544 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance545 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance546 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem1 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem2 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem3 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem4 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem5 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem6 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem7 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem8 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance547 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance548 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance549 = new Infragistics.Win.Appearance();
@@ -828,6 +878,8 @@
             Infragistics.Win.Appearance appearance551 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance552 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance553 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem15 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem16 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance554 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance555 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance556 = new Infragistics.Win.Appearance();
@@ -847,41 +899,6 @@
             Infragistics.Win.Appearance appearance570 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance571 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance572 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn83 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col0");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn84 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col1");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn85 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col2");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn86 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col3");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn87 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col4");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn88 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col5");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn89 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col6");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn90 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col7");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn91 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col8");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn92 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col9");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn93 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col10");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn94 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("No");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn95 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item1");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn96 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item2");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn97 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("name");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn98 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item1");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn99 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item2");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn100 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item3");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn101 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item4");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn102 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item5");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn103 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item6");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn104 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item7");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn105 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item8");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn106 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item9");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn107 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col0");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn108 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col1");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn109 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col2");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn110 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col3");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn111 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col4");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn112 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col5");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn113 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col6");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn114 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col7");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn115 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col8");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn116 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col9");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn117 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col10");
             Infragistics.Win.Appearance appearance573 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance574 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance575 = new Infragistics.Win.Appearance();
@@ -889,6 +906,14 @@
             Infragistics.Win.Appearance appearance577 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance578 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance579 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem21 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem22 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem23 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem24 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem25 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem26 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem27 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem28 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance580 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance581 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance582 = new Infragistics.Win.Appearance();
@@ -896,110 +921,238 @@
             Infragistics.Win.Appearance appearance584 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance585 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance586 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem11 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem12 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance587 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance588 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance589 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance590 = new Infragistics.Win.Appearance();
+            Infragistics.Win.ValueListItem valueListItem9 = new Infragistics.Win.ValueListItem();
+            Infragistics.Win.ValueListItem valueListItem10 = new Infragistics.Win.ValueListItem();
             Infragistics.Win.Appearance appearance591 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance592 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance593 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance594 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance595 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance608 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance609 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance596 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance597 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance598 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab2 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance599 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab3 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance600 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance601 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab4 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab5 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance602 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab8 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance603 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance604 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance605 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance606 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance607 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance608 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance609 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance610 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn118 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("name");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn119 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item1");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn120 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item2");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn121 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item3");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn122 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item4");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn123 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item5");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn124 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item6");
-            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn125 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item7");
+            Infragistics.Win.Appearance appearance611 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance612 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance613 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance614 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance615 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance616 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance617 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance618 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance619 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance620 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance621 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance622 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance623 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance624 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance625 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance626 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance627 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance628 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance629 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance630 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance631 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance632 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance633 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance634 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance635 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance636 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance637 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance638 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance639 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn117 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col0");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn118 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn119 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn120 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col3");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn121 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col4");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn122 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col5");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn123 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col6");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn124 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col7");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn125 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col8");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn126 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col9");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn127 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col10");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn128 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("No");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn129 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn130 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn131 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("name");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn132 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn133 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn134 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item3");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn135 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item4");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn136 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item5");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn137 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item6");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn138 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item7");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn139 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item8");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn140 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item9");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn141 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col0");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn142 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn143 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn144 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col3");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn145 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col4");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn146 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col5");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn147 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col6");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn148 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col7");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn149 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col8");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn150 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col9");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn151 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Col10");
+            Infragistics.Win.Appearance appearance640 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance641 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance642 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance643 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance644 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance645 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance646 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance647 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance648 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance649 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance650 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance651 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance652 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance653 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance654 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance655 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance656 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance657 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance658 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance659 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance660 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance661 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance662 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance675 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance676 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance663 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance664 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance665 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab2 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance666 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab3 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance667 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance668 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab4 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab5 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance669 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab8 = new Infragistics.Win.UltraWinTabControl.UltraTab();
+            Infragistics.Win.Appearance appearance670 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance671 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance672 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance673 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance674 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance677 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn152 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("name");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn153 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn154 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn155 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item3");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn156 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item4");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn157 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item5");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn158 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item6");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn159 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("item7");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn160 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column1");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn161 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column2");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn162 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column3");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn163 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column4");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn164 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column5");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn165 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column6");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn166 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column7");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn167 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column8");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn168 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column9");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn169 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column10");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn170 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("Column11");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn171 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("NO");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn172 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("검사 항목");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn173 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 중심");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn174 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 상한");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn175 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("규격 하한");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn176 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("측정 값");
+            Infragistics.Win.UltraWinDataSource.UltraDataColumn ultraDataColumn177 = new Infragistics.Win.UltraWinDataSource.UltraDataColumn("판정 결과");
             this.ultraTabPageControl9 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.Vision_uGrd_Uper = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.uDS_Offset_Uper = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.ultraTabPageControl10 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.Vision_uGrd_Down = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.uDS_Offset_Down = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
+            this.ultraTabPageControl12 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.Vision_uGrd_Right = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.uDS_Offset_Right = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.ultraTabPageControl6 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.uGrd_Recipe_UperData = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.uDS_Recipe_Uper = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.ultraTabPageControl7 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.uGrd_Recipe_DownData = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.uDS_Recipe_Down = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
+            this.ultraTabPageControl11 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.uGrd_Recipe_RightData = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.uDS_Recipe_Right = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.ultraTabPageControl2 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.SystemConfig_Tab_BackPanel = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel69 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel70 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraLabel71 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraTextEditor6 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.ultraLabel79 = new Infragistics.Win.Misc.UltraLabel();
+            this.System_uText_Edge09_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.ultraLabel78 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel72 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraTextEditor7 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uText_Edge08_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.ultraLabel73 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel76 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraTextEditor8 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uText_Edge07_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.ultraPanel36 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel37 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraLabel70 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraTextEditor5 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uText_Line09_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.ultraLabel87 = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraLabel86 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel57 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraTextEditor2 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uText_Line07_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.ultraLabel58 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel69 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraTextEditor4 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uText_Line08_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.ultraPanel66 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel68 = new Infragistics.Win.Misc.UltraPanel();
-            this.ultraTextEditor15 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraTextEditor16 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uTxt_ImagePath_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uBtn_ImagePath_Right = new Infragistics.Win.Misc.UltraButton();
             this.ultraLabel84 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel85 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraComboEditor1 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.System_uLabel_EtcItem02 = new Infragistics.Win.Misc.UltraLabel();
+            this.System_uCombo_ImageFail_Right = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.ultraLabel55 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraComboEditor2 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.System_uCombo_ImagePass_Right = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.ultraLabel56 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel61 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraPanel59 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel61 = new Infragistics.Win.Misc.UltraPanel();
-            this.ultraTextEditor19 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraTextEditor20 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraTextEditor21 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uTxt_MeasPath_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uBtn_MeasPath_Right = new Infragistics.Win.Misc.UltraButton();
             this.ultraLabel46 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraComboEditor3 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.ultraLabel74 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel75 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraComboEditor11 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.System_uCombo_EtcItem03 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.System_uCombo_MeasFail_Right = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
+            this.System_uCombo_MeasPass_Right = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.ultraLabel77 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraPanel2 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel3 = new Infragistics.Win.Misc.UltraPanel();
-            this.ultraTextEditor17 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraTextEditor18 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraLabel86 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraLabel87 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraCheckEditor1 = new Infragistics.Win.UltraWinEditors.UltraCheckEditor();
+            this.System_uText_Pix05_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uText_Pix03_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.ultraLabel59 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel60 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraComboEditor5 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.ultraComboEditor6 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.ultraLabel67 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraPanel90 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel91 = new Infragistics.Win.Misc.UltraPanel();
@@ -1091,20 +1244,16 @@
             this.ultraLabel115 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraPanel4 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel5 = new Infragistics.Win.Misc.UltraPanel();
-            this.ultraTextEditor10 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraLabel79 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraTextEditor11 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraTextEditor9 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraLabel78 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraLabel80 = new Infragistics.Win.Misc.UltraLabel();
+            this.System_uLabel_EtcItem04 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel54 = new Infragistics.Win.Misc.UltraLabel();
             this.System_uLabel_ImageDelete = new Infragistics.Win.Misc.UltraLabel();
             this.System_uTxt_ImageDelete02 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.System_uTxt_EtcItem05 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.ultraLabel3 = new Infragistics.Win.Misc.UltraLabel();
+            this.System_uCombo_EtcItem04 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.System_uCombo_AlramCount01 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.System_uLabel_AlramCount = new Infragistics.Win.Misc.UltraLabel();
             this.System_uText_AlramCount02 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
             this.System_uCombo_ImageDelete01 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.ultraPanel32 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel33 = new Infragistics.Win.Misc.UltraPanel();
@@ -1132,34 +1281,37 @@
             this.System_uLabel_MeasPass = new Infragistics.Win.Misc.UltraLabel();
             this.ultraPanel42 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel43 = new Infragistics.Win.Misc.UltraPanel();
-            this.System_uCombo_EtcItem02 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.System_uCombo_EtcItem01 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.System_uLabel_EtcItem01 = new Infragistics.Win.Misc.UltraLabel();
-            this.System_uLabel_EtcItem02 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraLabel126 = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
+            this.System_uTxt_DCF_Path_Right = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.uSystem_uBtn_DCF_File_Right = new Infragistics.Win.Misc.UltraButton();
             this.ultraPanel40 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel41 = new Infragistics.Win.Misc.UltraPanel();
             this.System_uText_SystemItem09 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.System_uText_SystemItem08 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.ultraLabel52 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel51 = new Infragistics.Win.Misc.UltraLabel();
-            this.System_uCombo_SystemItem05 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.System_uTxt_EtcItem05 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraLabel53 = new Infragistics.Win.Misc.UltraLabel();
-            this.System_uCombo_EtcItem04 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.System_uLabel_EtcItem04 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraLabel47 = new Infragistics.Win.Misc.UltraLabel();
-            this.System_uCheck_SystemItem05 = new Infragistics.Win.UltraWinEditors.UltraCheckEditor();
-            this.System_uCombo_SystemItem04 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.System_uCombo_SystemItem03 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.System_uLabel_SystemItem03 = new Infragistics.Win.Misc.UltraLabel();
-            this.System_uLabel_SystemItem04 = new Infragistics.Win.Misc.UltraLabel();
-            this.System_uCombo_SystemItem02 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.System_uCombo_SystemItem01 = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
-            this.System_uLabel_SystemItem01 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel117 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraTabPageControl3 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.VisionGapConfig_Tab_BackPanel = new Infragistics.Win.Misc.UltraPanel();
+            this.ultraPanel71 = new Infragistics.Win.Misc.UltraPanel();
+            this.ultraPanel72 = new Infragistics.Win.Misc.UltraPanel();
+            this.ultraButton4 = new Infragistics.Win.Misc.UltraButton();
+            this.ultraLabel47 = new Infragistics.Win.Misc.UltraLabel();
+            this.uTxt_Pix3_04_Lami = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.uTxt_Pix3_05_Lami = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.uTxt_Pix3_06_Lami = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.ultraLabel53 = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraLabel80 = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraLabel81 = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraButton6 = new Infragistics.Win.Misc.UltraButton();
+            this.ultraLabel82 = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraLabel83 = new Infragistics.Win.Misc.UltraLabel();
+            this.uTxt_Pix3_01_Lami = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.ultraLabel88 = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraLabel89 = new Infragistics.Win.Misc.UltraLabel();
+            this.uTxt_Pix3_02_Lami = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.uTxt_Pix3_03_Lami = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.ultraLabel91 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraPanel52 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel53 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraButton11 = new Infragistics.Win.Misc.UltraButton();
@@ -1236,11 +1388,12 @@
             this.Recipe_uBtn_ImageSave = new Infragistics.Win.Misc.UltraButton();
             this.ultraPanel31 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel34 = new Infragistics.Win.Misc.UltraPanel();
+            this.uGrd_Recipe_Test_Right = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.uDS_Test_Down = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.uGrd_Recipe_Test_Uper = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.uDS_Test_Uper = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.ultraLabel90 = new Infragistics.Win.Misc.UltraLabel();
             this.uGrd_Recipe_Test_Down = new Infragistics.Win.UltraWinGrid.UltraGrid();
-            this.uDS_Test_Down = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.ultraPanel63 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel64 = new Infragistics.Win.Misc.UltraPanel();
             this.Recipe_uBtn_01 = new Infragistics.Win.Misc.UltraButton();
@@ -1251,12 +1404,15 @@
             this.ultraTabSharedControlsPage3 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
             this.ultraLabel141 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraPanel56 = new Infragistics.Win.Misc.UltraPanel();
+            this.uGrd_Recipe_Inspect_Right = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.uDS_Inspect_Right = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.uGrd_Recipe_Inspect_Down = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.uDS_Inspect_Down = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.uGrd_Recipe_Inspect_Uper = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.uDS_Inspect_Uper = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.RecipeGap_drawArea2 = new SystemAlign.DrawArea();
             this.RecipeGap_drawArea1 = new SystemAlign.DrawArea();
+            this.RecipeGap_drawArea3 = new SystemAlign.DrawArea();
             this.ultraTabPageControl4 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.EquipmentConfig_Tab_BackPanel = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPanel9 = new Infragistics.Win.Misc.UltraPanel();
@@ -1411,18 +1567,26 @@
             this.toolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
             this.제품문의ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Check_Commu = new System.Windows.Forms.Timer(this.components);
+            this.ultraDataSource1 = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
+            this.uDS_Test_Right = new Infragistics.Win.UltraWinDataSource.UltraDataSource(this.components);
             this.ultraTabPageControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Vision_uGrd_Uper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Offset_Uper)).BeginInit();
             this.ultraTabPageControl10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Vision_uGrd_Down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Offset_Down)).BeginInit();
+            this.ultraTabPageControl12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Vision_uGrd_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Offset_Right)).BeginInit();
             this.ultraTabPageControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_UperData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Recipe_Uper)).BeginInit();
             this.ultraTabPageControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_DownData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Recipe_Down)).BeginInit();
+            this.ultraTabPageControl11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_RightData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Recipe_Right)).BeginInit();
             this.ultraTabPageControl2.SuspendLayout();
             this.SystemConfig_Tab_BackPanel.ClientArea.SuspendLayout();
             this.SystemConfig_Tab_BackPanel.SuspendLayout();
@@ -1430,43 +1594,36 @@
             this.ultraPanel69.SuspendLayout();
             this.ultraPanel70.ClientArea.SuspendLayout();
             this.ultraPanel70.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Edge09_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Edge08_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Edge07_Right)).BeginInit();
             this.ultraPanel36.ClientArea.SuspendLayout();
             this.ultraPanel36.SuspendLayout();
             this.ultraPanel37.ClientArea.SuspendLayout();
             this.ultraPanel37.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Line09_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Line07_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Line08_Right)).BeginInit();
             this.ultraPanel66.ClientArea.SuspendLayout();
             this.ultraPanel66.SuspendLayout();
             this.ultraPanel68.ClientArea.SuspendLayout();
             this.ultraPanel68.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_ImagePath_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_ImageFail_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_ImagePass_Right)).BeginInit();
             this.ultraPanel59.ClientArea.SuspendLayout();
             this.ultraPanel59.SuspendLayout();
             this.ultraPanel61.ClientArea.SuspendLayout();
             this.ultraPanel61.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_MeasPath_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_MeasFail_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_MeasPass_Right)).BeginInit();
             this.ultraPanel2.ClientArea.SuspendLayout();
             this.ultraPanel2.SuspendLayout();
             this.ultraPanel3.ClientArea.SuspendLayout();
             this.ultraPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraCheckEditor1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Pix05_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Pix03_Right)).BeginInit();
             this.ultraPanel90.ClientArea.SuspendLayout();
             this.ultraPanel90.SuspendLayout();
             this.ultraPanel91.ClientArea.SuspendLayout();
@@ -1535,10 +1692,9 @@
             this.ultraPanel4.SuspendLayout();
             this.ultraPanel5.ClientArea.SuspendLayout();
             this.ultraPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_ImageDelete02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_EtcItem05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_AlramCount01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uText_AlramCount02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_ImageDelete01)).BeginInit();
@@ -1564,25 +1720,26 @@
             this.ultraPanel42.SuspendLayout();
             this.ultraPanel43.ClientArea.SuspendLayout();
             this.ultraPanel43.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_DCF_Path_Right)).BeginInit();
             this.ultraPanel40.ClientArea.SuspendLayout();
             this.ultraPanel40.SuspendLayout();
             this.ultraPanel41.ClientArea.SuspendLayout();
             this.ultraPanel41.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.System_uText_SystemItem09)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uText_SystemItem08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_EtcItem05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCheck_SystemItem05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem01)).BeginInit();
             this.ultraTabPageControl3.SuspendLayout();
             this.VisionGapConfig_Tab_BackPanel.ClientArea.SuspendLayout();
             this.VisionGapConfig_Tab_BackPanel.SuspendLayout();
+            this.ultraPanel71.ClientArea.SuspendLayout();
+            this.ultraPanel71.SuspendLayout();
+            this.ultraPanel72.ClientArea.SuspendLayout();
+            this.ultraPanel72.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_04_Lami)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_05_Lami)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_06_Lami)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_01_Lami)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_02_Lami)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_03_Lami)).BeginInit();
             this.ultraPanel52.ClientArea.SuspendLayout();
             this.ultraPanel52.SuspendLayout();
             this.ultraPanel53.ClientArea.SuspendLayout();
@@ -1639,10 +1796,11 @@
             this.ultraPanel31.SuspendLayout();
             this.ultraPanel34.ClientArea.SuspendLayout();
             this.ultraPanel34.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Test_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Test_Down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Test_Uper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Test_Uper)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Test_Down)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uDS_Test_Down)).BeginInit();
             this.ultraPanel63.ClientArea.SuspendLayout();
             this.ultraPanel63.SuspendLayout();
             this.ultraPanel64.ClientArea.SuspendLayout();
@@ -1651,6 +1809,8 @@
             this.ultraTabControl2.SuspendLayout();
             this.ultraPanel56.ClientArea.SuspendLayout();
             this.ultraPanel56.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Inspect_Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Inspect_Right)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Inspect_Down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Inspect_Down)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Inspect_Uper)).BeginInit();
@@ -1750,6 +1910,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ustbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Recipe01)).BeginInit();
             this.tmsDlgMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraDataSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Test_Right)).BeginInit();
             this.SuspendLayout();
             // 
             // ultraTabPageControl9
@@ -1767,57 +1929,57 @@
             appearance1.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
             appearance1.TextVAlignAsString = "Middle";
             this.Vision_uGrd_Uper.DisplayLayout.Appearance = appearance1;
-            ultraGridColumn15.Header.Caption = "NO";
-            ultraGridColumn15.Header.VisiblePosition = 0;
-            ultraGridColumn15.Hidden = true;
-            ultraGridColumn15.Width = 31;
+            ultraGridColumn1.Header.Caption = "NO";
+            ultraGridColumn1.Header.VisiblePosition = 0;
+            ultraGridColumn1.Hidden = true;
+            ultraGridColumn1.Width = 31;
             appearance2.TextHAlignAsString = "Center";
             appearance2.TextVAlignAsString = "Middle";
-            ultraGridColumn16.CellAppearance = appearance2;
-            ultraGridColumn16.Header.Caption = "항목";
-            ultraGridColumn16.Header.VisiblePosition = 1;
-            ultraGridColumn16.Width = 61;
-            ultraGridColumn17.Header.Caption = "중앙";
-            ultraGridColumn17.Header.VisiblePosition = 2;
-            ultraGridColumn17.Width = 61;
-            ultraGridColumn18.Header.Caption = "최고";
-            ultraGridColumn18.Header.VisiblePosition = 3;
-            ultraGridColumn18.Width = 60;
-            ultraGridColumn19.Header.Caption = "최저";
-            ultraGridColumn19.Header.VisiblePosition = 4;
-            ultraGridColumn19.Width = 60;
-            ultraGridColumn20.Header.Caption = "측정";
-            ultraGridColumn20.Header.VisiblePosition = 5;
-            ultraGridColumn20.Width = 55;
-            ultraGridColumn21.Header.Caption = "실측";
-            ultraGridColumn21.Header.VisiblePosition = 6;
-            ultraGridColumn21.Width = 55;
-            ultraGridColumn22.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
+            ultraGridColumn2.CellAppearance = appearance2;
+            ultraGridColumn2.Header.Caption = "항목";
+            ultraGridColumn2.Header.VisiblePosition = 1;
+            ultraGridColumn2.Width = 61;
+            ultraGridColumn3.Header.Caption = "중앙";
+            ultraGridColumn3.Header.VisiblePosition = 2;
+            ultraGridColumn3.Width = 61;
+            ultraGridColumn4.Header.Caption = "최고";
+            ultraGridColumn4.Header.VisiblePosition = 3;
+            ultraGridColumn4.Width = 60;
+            ultraGridColumn5.Header.Caption = "최저";
+            ultraGridColumn5.Header.VisiblePosition = 4;
+            ultraGridColumn5.Width = 60;
+            ultraGridColumn6.Header.Caption = "측정";
+            ultraGridColumn6.Header.VisiblePosition = 5;
+            ultraGridColumn6.Width = 55;
+            ultraGridColumn7.Header.Caption = "실측";
+            ultraGridColumn7.Header.VisiblePosition = 6;
+            ultraGridColumn7.Width = 55;
+            ultraGridColumn8.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
             appearance3.BackColor = System.Drawing.Color.DarkGray;
             appearance3.BackColor2 = System.Drawing.Color.Gray;
             appearance3.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
             appearance3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance3.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn22.CellButtonAppearance = appearance3;
-            ultraGridColumn22.Header.Caption = "비율";
-            ultraGridColumn22.Header.VisiblePosition = 7;
-            ultraGridColumn22.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.EditButton;
-            ultraGridColumn22.Width = 78;
-            ultraGridColumn23.Header.Caption = "판별";
-            ultraGridColumn23.Header.VisiblePosition = 8;
-            ultraGridColumn23.Hidden = true;
-            ultraGridColumn23.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
-            ultraGridColumn23.Width = 31;
+            ultraGridColumn8.CellButtonAppearance = appearance3;
+            ultraGridColumn8.Header.Caption = "비율";
+            ultraGridColumn8.Header.VisiblePosition = 7;
+            ultraGridColumn8.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.EditButton;
+            ultraGridColumn8.Width = 78;
+            ultraGridColumn9.Header.Caption = "판별";
+            ultraGridColumn9.Header.VisiblePosition = 8;
+            ultraGridColumn9.Hidden = true;
+            ultraGridColumn9.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
+            ultraGridColumn9.Width = 31;
             ultraGridBand1.Columns.AddRange(new object[] {
-            ultraGridColumn15,
-            ultraGridColumn16,
-            ultraGridColumn17,
-            ultraGridColumn18,
-            ultraGridColumn19,
-            ultraGridColumn20,
-            ultraGridColumn21,
-            ultraGridColumn22,
-            ultraGridColumn23});
+            ultraGridColumn1,
+            ultraGridColumn2,
+            ultraGridColumn3,
+            ultraGridColumn4,
+            ultraGridColumn5,
+            ultraGridColumn6,
+            ultraGridColumn7,
+            ultraGridColumn8,
+            ultraGridColumn9});
             this.Vision_uGrd_Uper.DisplayLayout.BandsSerializer.Add(ultraGridBand1);
             this.Vision_uGrd_Uper.DisplayLayout.InterBandSpacing = 10;
             this.Vision_uGrd_Uper.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
@@ -1902,106 +2064,106 @@
             appearance11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance11.TextHAlignAsString = "Center";
             appearance11.TextVAlignAsString = "Middle";
-            ultraGridColumn24.CellAppearance = appearance11;
+            ultraGridColumn10.CellAppearance = appearance11;
             appearance12.FontData.Name = "MS Reference Sans Serif";
             appearance12.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn24.Header.Appearance = appearance12;
-            ultraGridColumn24.Header.Caption = "NO";
-            ultraGridColumn24.Header.VisiblePosition = 0;
-            ultraGridColumn24.Hidden = true;
-            ultraGridColumn24.Width = 31;
+            ultraGridColumn10.Header.Appearance = appearance12;
+            ultraGridColumn10.Header.Caption = "NO";
+            ultraGridColumn10.Header.VisiblePosition = 0;
+            ultraGridColumn10.Hidden = true;
+            ultraGridColumn10.Width = 31;
             appearance13.FontData.Name = "MS Reference Sans Serif";
             appearance13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance13.ImageHAlign = Infragistics.Win.HAlign.Center;
             appearance13.TextHAlignAsString = "Center";
             appearance13.TextVAlignAsString = "Middle";
-            ultraGridColumn25.CellAppearance = appearance13;
+            ultraGridColumn11.CellAppearance = appearance13;
             appearance14.TextHAlignAsString = "Center";
             appearance14.TextVAlignAsString = "Middle";
-            ultraGridColumn25.CellButtonAppearance = appearance14;
+            ultraGridColumn11.CellButtonAppearance = appearance14;
             appearance15.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
             appearance15.FontData.Name = "MS Reference Sans Serif";
             appearance15.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn25.Header.Appearance = appearance15;
-            ultraGridColumn25.Header.Caption = "항목";
-            ultraGridColumn25.Header.VisiblePosition = 1;
-            ultraGridColumn25.Width = 61;
+            ultraGridColumn11.Header.Appearance = appearance15;
+            ultraGridColumn11.Header.Caption = "항목";
+            ultraGridColumn11.Header.VisiblePosition = 1;
+            ultraGridColumn11.Width = 61;
             appearance16.FontData.Name = "MS Reference Sans Serif";
             appearance16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance16.TextHAlignAsString = "Center";
             appearance16.TextVAlignAsString = "Middle";
-            ultraGridColumn26.CellAppearance = appearance16;
+            ultraGridColumn12.CellAppearance = appearance16;
             appearance17.FontData.Name = "MS Reference Sans Serif";
             appearance17.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn26.Header.Appearance = appearance17;
-            ultraGridColumn26.Header.Caption = "중앙";
-            ultraGridColumn26.Header.VisiblePosition = 2;
-            ultraGridColumn26.Width = 61;
+            ultraGridColumn12.Header.Appearance = appearance17;
+            ultraGridColumn12.Header.Caption = "중앙";
+            ultraGridColumn12.Header.VisiblePosition = 2;
+            ultraGridColumn12.Width = 61;
             appearance18.FontData.Name = "MS Reference Sans Serif";
             appearance18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance18.TextHAlignAsString = "Center";
             appearance18.TextVAlignAsString = "Middle";
-            ultraGridColumn27.CellAppearance = appearance18;
+            ultraGridColumn13.CellAppearance = appearance18;
             appearance19.FontData.Name = "MS Reference Sans Serif";
             appearance19.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn27.Header.Appearance = appearance19;
-            ultraGridColumn27.Header.Caption = "최고";
-            ultraGridColumn27.Header.VisiblePosition = 3;
-            ultraGridColumn27.Width = 60;
+            ultraGridColumn13.Header.Appearance = appearance19;
+            ultraGridColumn13.Header.Caption = "최고";
+            ultraGridColumn13.Header.VisiblePosition = 3;
+            ultraGridColumn13.Width = 60;
             appearance20.FontData.Name = "MS Reference Sans Serif";
             appearance20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance20.TextHAlignAsString = "Center";
             appearance20.TextVAlignAsString = "Middle";
-            ultraGridColumn28.CellAppearance = appearance20;
+            ultraGridColumn14.CellAppearance = appearance20;
             appearance21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn28.CellButtonAppearance = appearance21;
+            ultraGridColumn14.CellButtonAppearance = appearance21;
             appearance22.FontData.Name = "MS Reference Sans Serif";
             appearance22.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn28.Header.Appearance = appearance22;
-            ultraGridColumn28.Header.Caption = "최저";
-            ultraGridColumn28.Header.VisiblePosition = 4;
-            ultraGridColumn28.Width = 60;
+            ultraGridColumn14.Header.Appearance = appearance22;
+            ultraGridColumn14.Header.Caption = "최저";
+            ultraGridColumn14.Header.VisiblePosition = 4;
+            ultraGridColumn14.Width = 60;
             appearance23.TextHAlignAsString = "Center";
-            ultraGridColumn29.CellAppearance = appearance23;
-            ultraGridColumn29.Header.Caption = "측정";
-            ultraGridColumn29.Header.VisiblePosition = 5;
-            ultraGridColumn29.Width = 55;
+            ultraGridColumn15.CellAppearance = appearance23;
+            ultraGridColumn15.Header.Caption = "측정";
+            ultraGridColumn15.Header.VisiblePosition = 5;
+            ultraGridColumn15.Width = 55;
             appearance24.TextHAlignAsString = "Center";
-            ultraGridColumn30.CellAppearance = appearance24;
-            ultraGridColumn30.Header.Caption = "실측";
-            ultraGridColumn30.Header.VisiblePosition = 6;
-            ultraGridColumn30.Width = 55;
-            ultraGridColumn31.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
+            ultraGridColumn16.CellAppearance = appearance24;
+            ultraGridColumn16.Header.Caption = "실측";
+            ultraGridColumn16.Header.VisiblePosition = 6;
+            ultraGridColumn16.Width = 55;
+            ultraGridColumn19.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
             appearance25.TextHAlignAsString = "Center";
-            ultraGridColumn31.CellAppearance = appearance25;
+            ultraGridColumn19.CellAppearance = appearance25;
             appearance26.BackColor = System.Drawing.Color.DarkGray;
             appearance26.BackColor2 = System.Drawing.Color.Gray;
             appearance26.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
             appearance26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance26.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn31.CellButtonAppearance = appearance26;
-            ultraGridColumn31.Header.Caption = "비율";
-            ultraGridColumn31.Header.VisiblePosition = 7;
-            ultraGridColumn31.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.EditButton;
-            ultraGridColumn31.Width = 78;
+            ultraGridColumn19.CellButtonAppearance = appearance26;
+            ultraGridColumn19.Header.Caption = "비율";
+            ultraGridColumn19.Header.VisiblePosition = 7;
+            ultraGridColumn19.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.EditButton;
+            ultraGridColumn19.Width = 78;
             appearance27.TextHAlignAsString = "Center";
             appearance27.TextVAlignAsString = "Middle";
-            ultraGridColumn32.CellAppearance = appearance27;
-            ultraGridColumn32.Header.Caption = "판별";
-            ultraGridColumn32.Header.VisiblePosition = 8;
-            ultraGridColumn32.Hidden = true;
-            ultraGridColumn32.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
-            ultraGridColumn32.Width = 31;
+            ultraGridColumn20.CellAppearance = appearance27;
+            ultraGridColumn20.Header.Caption = "판별";
+            ultraGridColumn20.Header.VisiblePosition = 8;
+            ultraGridColumn20.Hidden = true;
+            ultraGridColumn20.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
+            ultraGridColumn20.Width = 31;
             ultraGridBand2.Columns.AddRange(new object[] {
-            ultraGridColumn24,
-            ultraGridColumn25,
-            ultraGridColumn26,
-            ultraGridColumn27,
-            ultraGridColumn28,
-            ultraGridColumn29,
-            ultraGridColumn30,
-            ultraGridColumn31,
-            ultraGridColumn32});
+            ultraGridColumn10,
+            ultraGridColumn11,
+            ultraGridColumn12,
+            ultraGridColumn13,
+            ultraGridColumn14,
+            ultraGridColumn15,
+            ultraGridColumn16,
+            ultraGridColumn19,
+            ultraGridColumn20});
             this.Vision_uGrd_Down.DisplayLayout.BandsSerializer.Add(ultraGridBand2);
             this.Vision_uGrd_Down.DisplayLayout.InterBandSpacing = 10;
             this.Vision_uGrd_Down.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
@@ -2065,6 +2227,135 @@
             ultraDataColumn17,
             ultraDataColumn18});
             // 
+            // ultraTabPageControl12
+            // 
+            this.ultraTabPageControl12.Controls.Add(this.Vision_uGrd_Right);
+            this.ultraTabPageControl12.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl12.Name = "ultraTabPageControl12";
+            this.ultraTabPageControl12.Size = new System.Drawing.Size(432, 463);
+            // 
+            // Vision_uGrd_Right
+            // 
+            this.Vision_uGrd_Right.DataSource = this.uDS_Offset_Right;
+            appearance34.BackColor = System.Drawing.SystemColors.ControlLight;
+            appearance34.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance34.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance34.TextVAlignAsString = "Middle";
+            this.Vision_uGrd_Right.DisplayLayout.Appearance = appearance34;
+            ultraGridColumn21.Header.Caption = "NO";
+            ultraGridColumn21.Header.VisiblePosition = 0;
+            ultraGridColumn21.Hidden = true;
+            ultraGridColumn21.Width = 31;
+            appearance35.TextHAlignAsString = "Center";
+            appearance35.TextVAlignAsString = "Middle";
+            ultraGridColumn22.CellAppearance = appearance35;
+            ultraGridColumn22.Header.Caption = "항목";
+            ultraGridColumn22.Header.VisiblePosition = 1;
+            ultraGridColumn22.Width = 61;
+            ultraGridColumn23.Header.Caption = "중앙";
+            ultraGridColumn23.Header.VisiblePosition = 2;
+            ultraGridColumn23.Width = 61;
+            ultraGridColumn24.Header.Caption = "최고";
+            ultraGridColumn24.Header.VisiblePosition = 3;
+            ultraGridColumn24.Width = 60;
+            ultraGridColumn25.Header.Caption = "최저";
+            ultraGridColumn25.Header.VisiblePosition = 4;
+            ultraGridColumn25.Width = 60;
+            ultraGridColumn26.Header.Caption = "측정";
+            ultraGridColumn26.Header.VisiblePosition = 5;
+            ultraGridColumn26.Width = 55;
+            ultraGridColumn27.Header.Caption = "실측";
+            ultraGridColumn27.Header.VisiblePosition = 6;
+            ultraGridColumn27.Width = 55;
+            ultraGridColumn28.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
+            appearance36.BackColor = System.Drawing.Color.DarkGray;
+            appearance36.BackColor2 = System.Drawing.Color.Gray;
+            appearance36.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance36.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn28.CellButtonAppearance = appearance36;
+            ultraGridColumn28.Header.Caption = "비율";
+            ultraGridColumn28.Header.VisiblePosition = 7;
+            ultraGridColumn28.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.EditButton;
+            ultraGridColumn28.Width = 78;
+            ultraGridColumn29.Header.Caption = "판별";
+            ultraGridColumn29.Header.VisiblePosition = 8;
+            ultraGridColumn29.Hidden = true;
+            ultraGridColumn29.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
+            ultraGridColumn29.Width = 31;
+            ultraGridBand3.Columns.AddRange(new object[] {
+            ultraGridColumn21,
+            ultraGridColumn22,
+            ultraGridColumn23,
+            ultraGridColumn24,
+            ultraGridColumn25,
+            ultraGridColumn26,
+            ultraGridColumn27,
+            ultraGridColumn28,
+            ultraGridColumn29});
+            this.Vision_uGrd_Right.DisplayLayout.BandsSerializer.Add(ultraGridBand3);
+            this.Vision_uGrd_Right.DisplayLayout.InterBandSpacing = 10;
+            this.Vision_uGrd_Right.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
+            this.Vision_uGrd_Right.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
+            appearance37.BackColor = System.Drawing.Color.Transparent;
+            this.Vision_uGrd_Right.DisplayLayout.Override.CardAreaAppearance = appearance37;
+            appearance38.BackColor = System.Drawing.Color.DarkGray;
+            appearance38.BackColor2 = System.Drawing.Color.DimGray;
+            appearance38.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance38.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance38.FontData.BoldAsString = "True";
+            appearance38.FontData.SizeInPoints = 7F;
+            appearance38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance38.TextHAlignAsString = "Center";
+            this.Vision_uGrd_Right.DisplayLayout.Override.CellAppearance = appearance38;
+            this.Vision_uGrd_Right.DisplayLayout.Override.FixedRowIndicator = Infragistics.Win.UltraWinGrid.FixedRowIndicator.None;
+            appearance39.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance39.BackColor2 = System.Drawing.Color.DimGray;
+            appearance39.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance39.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance39.FontData.BoldAsString = "True";
+            appearance39.ForeColor = System.Drawing.Color.White;
+            appearance39.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            this.Vision_uGrd_Right.DisplayLayout.Override.HeaderAppearance = appearance39;
+            appearance40.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Vision_uGrd_Right.DisplayLayout.Override.RowSelectorAppearance = appearance40;
+            this.Vision_uGrd_Right.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            this.Vision_uGrd_Right.DisplayLayout.Override.RowSizing = Infragistics.Win.UltraWinGrid.RowSizing.Fixed;
+            appearance41.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance41.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance41.BorderColor = System.Drawing.Color.Transparent;
+            this.Vision_uGrd_Right.DisplayLayout.Override.SelectedCellAppearance = appearance41;
+            appearance42.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            appearance42.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            appearance42.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            this.Vision_uGrd_Right.DisplayLayout.Override.SelectedRowAppearance = appearance42;
+            this.Vision_uGrd_Right.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.Vision_uGrd_Right.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.Vision_uGrd_Right.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.Vision_uGrd_Right.DisplayLayout.RowConnectorColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Vision_uGrd_Right.DisplayLayout.RowConnectorStyle = Infragistics.Win.UltraWinGrid.RowConnectorStyle.Dashed;
+            this.Vision_uGrd_Right.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Vision_uGrd_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Vision_uGrd_Right.Location = new System.Drawing.Point(0, 0);
+            this.Vision_uGrd_Right.Name = "Vision_uGrd_Right";
+            this.Vision_uGrd_Right.Size = new System.Drawing.Size(432, 463);
+            this.Vision_uGrd_Right.TabIndex = 76;
+            this.Vision_uGrd_Right.ClickCellButton += new Infragistics.Win.UltraWinGrid.CellEventHandler(this.Vision_uGrd_Right_ClickCellButton);
+            this.Vision_uGrd_Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Vision_uGrd_Right_MouseDown);
+            // 
+            // uDS_Offset_Right
+            // 
+            this.uDS_Offset_Right.Band.Columns.AddRange(new object[] {
+            ultraDataColumn19,
+            ultraDataColumn20,
+            ultraDataColumn21,
+            ultraDataColumn22,
+            ultraDataColumn23,
+            ultraDataColumn24,
+            ultraDataColumn25,
+            ultraDataColumn26,
+            ultraDataColumn27});
+            // 
             // ultraTabPageControl6
             // 
             this.ultraTabPageControl6.Controls.Add(this.uGrd_Recipe_UperData);
@@ -2075,94 +2366,10 @@
             // uGrd_Recipe_UperData
             // 
             this.uGrd_Recipe_UperData.DataSource = this.uDS_Recipe_Uper;
-            appearance34.BackColor = System.Drawing.SystemColors.ControlLight;
-            appearance34.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance34.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            this.uGrd_Recipe_UperData.DisplayLayout.Appearance = appearance34;
-            appearance35.BackColor = System.Drawing.Color.DarkGray;
-            appearance35.BackColor2 = System.Drawing.Color.DimGray;
-            appearance35.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance35.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance35.FontData.BoldAsString = "True";
-            appearance35.FontData.Name = "MS Reference Sans Serif";
-            appearance35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance35.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance35.TextHAlignAsString = "Center";
-            appearance35.TextVAlignAsString = "Middle";
-            ultraGridColumn33.CellAppearance = appearance35;
-            appearance36.FontData.Name = "바탕";
-            appearance36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn33.CellButtonAppearance = appearance36;
-            appearance37.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            appearance37.BackColor2 = System.Drawing.Color.DimGray;
-            appearance37.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance37.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance37.FontData.BoldAsString = "True";
-            appearance37.FontData.Name = "MS Reference Sans Serif";
-            appearance37.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn33.Header.Appearance = appearance37;
-            ultraGridColumn33.Header.Caption = "항목";
-            ultraGridColumn33.Header.VisiblePosition = 0;
-            ultraGridColumn33.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn33.Width = 60;
-            appearance38.BackColor = System.Drawing.Color.DarkGray;
-            appearance38.BackColor2 = System.Drawing.Color.DimGray;
-            appearance38.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance38.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance38.FontData.BoldAsString = "True";
-            appearance38.FontData.Name = "MS Reference Sans Serif";
-            appearance38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance38.TextHAlignAsString = "Center";
-            appearance38.TextVAlignAsString = "Middle";
-            ultraGridColumn34.CellAppearance = appearance38;
-            appearance39.FontData.BoldAsString = "True";
-            appearance39.FontData.Name = "MS Reference Sans Serif";
-            appearance39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance39.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn34.CellButtonAppearance = appearance39;
-            appearance40.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            appearance40.BackColor2 = System.Drawing.Color.DimGray;
-            appearance40.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance40.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance40.FontData.BoldAsString = "True";
-            appearance40.FontData.Name = "MS Reference Sans Serif";
-            appearance40.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn34.Header.Appearance = appearance40;
-            ultraGridColumn34.Header.Caption = "챠트";
-            ultraGridColumn34.Header.VisiblePosition = 1;
-            ultraGridColumn34.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn34.Width = 36;
-            ultraGridColumn35.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
-            appearance41.BackColor = System.Drawing.Color.DarkGray;
-            appearance41.BackColor2 = System.Drawing.Color.DimGray;
-            appearance41.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance41.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance41.FontData.BoldAsString = "True";
-            appearance41.FontData.Name = "MS Reference Sans Serif";
-            appearance41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance41.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance41.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            appearance41.TextHAlignAsString = "Center";
-            appearance41.TextVAlignAsString = "Middle";
-            ultraGridColumn35.CellAppearance = appearance41;
-            appearance42.BackColor = System.Drawing.Color.DarkGray;
-            appearance42.BackColor2 = System.Drawing.Color.Gray;
-            appearance42.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance42.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn35.CellButtonAppearance = appearance42;
-            appearance43.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            appearance43.BackColor2 = System.Drawing.Color.DimGray;
-            appearance43.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance43.BackColor = System.Drawing.SystemColors.ControlLight;
+            appearance43.BackColor2 = System.Drawing.SystemColors.ControlDark;
             appearance43.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance43.FontData.BoldAsString = "True";
-            appearance43.FontData.Name = "MS Reference Sans Serif";
-            appearance43.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn35.Header.Appearance = appearance43;
-            ultraGridColumn35.Header.Caption = "영역";
-            ultraGridColumn35.Header.VisiblePosition = 2;
-            ultraGridColumn35.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
-            ultraGridColumn35.Width = 36;
+            this.uGrd_Recipe_UperData.DisplayLayout.Appearance = appearance43;
             appearance44.BackColor = System.Drawing.Color.DarkGray;
             appearance44.BackColor2 = System.Drawing.Color.DimGray;
             appearance44.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2173,9 +2380,10 @@
             appearance44.ImageHAlign = Infragistics.Win.HAlign.Center;
             appearance44.TextHAlignAsString = "Center";
             appearance44.TextVAlignAsString = "Middle";
-            ultraGridColumn36.CellAppearance = appearance44;
+            ultraGridColumn41.CellAppearance = appearance44;
+            appearance45.FontData.Name = "바탕";
             appearance45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn36.CellButtonAppearance = appearance45;
+            ultraGridColumn41.CellButtonAppearance = appearance45;
             appearance46.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance46.BackColor2 = System.Drawing.Color.DimGray;
             appearance46.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2183,11 +2391,11 @@
             appearance46.FontData.BoldAsString = "True";
             appearance46.FontData.Name = "MS Reference Sans Serif";
             appearance46.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn36.Header.Appearance = appearance46;
-            ultraGridColumn36.Header.Caption = "방향";
-            ultraGridColumn36.Header.VisiblePosition = 3;
-            ultraGridColumn36.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn36.Width = 36;
+            ultraGridColumn41.Header.Appearance = appearance46;
+            ultraGridColumn41.Header.Caption = "항목";
+            ultraGridColumn41.Header.VisiblePosition = 0;
+            ultraGridColumn41.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn41.Width = 60;
             appearance47.BackColor = System.Drawing.Color.DarkGray;
             appearance47.BackColor2 = System.Drawing.Color.DimGray;
             appearance47.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2195,17 +2403,14 @@
             appearance47.FontData.BoldAsString = "True";
             appearance47.FontData.Name = "MS Reference Sans Serif";
             appearance47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance47.ImageHAlign = Infragistics.Win.HAlign.Center;
             appearance47.TextHAlignAsString = "Center";
             appearance47.TextVAlignAsString = "Middle";
-            ultraGridColumn37.CellAppearance = appearance47;
-            appearance48.BackColor = System.Drawing.Color.DarkGray;
-            appearance48.BackColor2 = System.Drawing.Color.Gray;
-            appearance48.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            ultraGridColumn42.CellAppearance = appearance47;
             appearance48.FontData.BoldAsString = "True";
+            appearance48.FontData.Name = "MS Reference Sans Serif";
             appearance48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance48.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn37.CellButtonAppearance = appearance48;
+            ultraGridColumn42.CellButtonAppearance = appearance48;
             appearance49.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance49.BackColor2 = System.Drawing.Color.DimGray;
             appearance49.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2213,11 +2418,12 @@
             appearance49.FontData.BoldAsString = "True";
             appearance49.FontData.Name = "MS Reference Sans Serif";
             appearance49.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn37.Header.Appearance = appearance49;
-            ultraGridColumn37.Header.Caption = "극성";
-            ultraGridColumn37.Header.VisiblePosition = 4;
-            ultraGridColumn37.Width = 41;
-            ultraGridColumn38.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
+            ultraGridColumn42.Header.Appearance = appearance49;
+            ultraGridColumn42.Header.Caption = "챠트";
+            ultraGridColumn42.Header.VisiblePosition = 1;
+            ultraGridColumn42.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn42.Width = 36;
+            ultraGridColumn43.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
             appearance50.BackColor = System.Drawing.Color.DarkGray;
             appearance50.BackColor2 = System.Drawing.Color.DimGray;
             appearance50.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2225,18 +2431,17 @@
             appearance50.FontData.BoldAsString = "True";
             appearance50.FontData.Name = "MS Reference Sans Serif";
             appearance50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance50.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance50.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            appearance50.ImageVAlign = Infragistics.Win.VAlign.Middle;
             appearance50.TextHAlignAsString = "Center";
             appearance50.TextVAlignAsString = "Middle";
-            ultraGridColumn38.CellAppearance = appearance50;
+            ultraGridColumn43.CellAppearance = appearance50;
             appearance51.BackColor = System.Drawing.Color.DarkGray;
             appearance51.BackColor2 = System.Drawing.Color.Gray;
             appearance51.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance51.FontData.BoldAsString = "True";
-            appearance51.FontData.Name = "MS Reference Sans Serif";
             appearance51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance51.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn38.CellButtonAppearance = appearance51;
+            ultraGridColumn43.CellButtonAppearance = appearance51;
             appearance52.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance52.BackColor2 = System.Drawing.Color.DimGray;
             appearance52.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2244,11 +2449,11 @@
             appearance52.FontData.BoldAsString = "True";
             appearance52.FontData.Name = "MS Reference Sans Serif";
             appearance52.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn38.Header.Appearance = appearance52;
-            ultraGridColumn38.Header.Caption = "영역";
-            ultraGridColumn38.Header.VisiblePosition = 5;
-            ultraGridColumn38.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
-            ultraGridColumn38.Width = 36;
+            ultraGridColumn43.Header.Appearance = appearance52;
+            ultraGridColumn43.Header.Caption = "영역";
+            ultraGridColumn43.Header.VisiblePosition = 2;
+            ultraGridColumn43.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
+            ultraGridColumn43.Width = 36;
             appearance53.BackColor = System.Drawing.Color.DarkGray;
             appearance53.BackColor2 = System.Drawing.Color.DimGray;
             appearance53.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2259,9 +2464,9 @@
             appearance53.ImageHAlign = Infragistics.Win.HAlign.Center;
             appearance53.TextHAlignAsString = "Center";
             appearance53.TextVAlignAsString = "Middle";
-            ultraGridColumn39.CellAppearance = appearance53;
+            ultraGridColumn44.CellAppearance = appearance53;
             appearance54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn39.CellButtonAppearance = appearance54;
+            ultraGridColumn44.CellButtonAppearance = appearance54;
             appearance55.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance55.BackColor2 = System.Drawing.Color.DimGray;
             appearance55.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2269,11 +2474,11 @@
             appearance55.FontData.BoldAsString = "True";
             appearance55.FontData.Name = "MS Reference Sans Serif";
             appearance55.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn39.Header.Appearance = appearance55;
-            ultraGridColumn39.Header.Caption = "방향";
-            ultraGridColumn39.Header.VisiblePosition = 6;
-            ultraGridColumn39.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn39.Width = 36;
+            ultraGridColumn44.Header.Appearance = appearance55;
+            ultraGridColumn44.Header.Caption = "방향";
+            ultraGridColumn44.Header.VisiblePosition = 3;
+            ultraGridColumn44.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn44.Width = 36;
             appearance56.BackColor = System.Drawing.Color.DarkGray;
             appearance56.BackColor2 = System.Drawing.Color.DimGray;
             appearance56.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2282,12 +2487,16 @@
             appearance56.FontData.Name = "MS Reference Sans Serif";
             appearance56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance56.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance56.ImageVAlign = Infragistics.Win.VAlign.Middle;
             appearance56.TextHAlignAsString = "Center";
             appearance56.TextVAlignAsString = "Middle";
-            ultraGridColumn40.CellAppearance = appearance56;
+            ultraGridColumn45.CellAppearance = appearance56;
+            appearance57.BackColor = System.Drawing.Color.DarkGray;
+            appearance57.BackColor2 = System.Drawing.Color.Gray;
+            appearance57.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance57.FontData.BoldAsString = "True";
             appearance57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn40.CellButtonAppearance = appearance57;
+            appearance57.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn45.CellButtonAppearance = appearance57;
             appearance58.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance58.BackColor2 = System.Drawing.Color.DimGray;
             appearance58.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2295,11 +2504,11 @@
             appearance58.FontData.BoldAsString = "True";
             appearance58.FontData.Name = "MS Reference Sans Serif";
             appearance58.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn40.Header.Appearance = appearance58;
-            ultraGridColumn40.Header.Caption = "극성";
-            ultraGridColumn40.Header.VisiblePosition = 7;
-            ultraGridColumn40.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn40.Width = 41;
+            ultraGridColumn45.Header.Appearance = appearance58;
+            ultraGridColumn45.Header.Caption = "극성";
+            ultraGridColumn45.Header.VisiblePosition = 4;
+            ultraGridColumn45.Width = 41;
+            ultraGridColumn46.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
             appearance59.BackColor = System.Drawing.Color.DarkGray;
             appearance59.BackColor2 = System.Drawing.Color.DimGray;
             appearance59.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2308,12 +2517,17 @@
             appearance59.FontData.Name = "MS Reference Sans Serif";
             appearance59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance59.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance59.ImageVAlign = Infragistics.Win.VAlign.Middle;
             appearance59.TextHAlignAsString = "Center";
             appearance59.TextVAlignAsString = "Middle";
-            ultraGridColumn41.CellAppearance = appearance59;
+            ultraGridColumn46.CellAppearance = appearance59;
+            appearance60.BackColor = System.Drawing.Color.DarkGray;
+            appearance60.BackColor2 = System.Drawing.Color.Gray;
+            appearance60.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance60.FontData.BoldAsString = "True";
+            appearance60.FontData.Name = "MS Reference Sans Serif";
             appearance60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn41.CellButtonAppearance = appearance60;
+            appearance60.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn46.CellButtonAppearance = appearance60;
             appearance61.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance61.BackColor2 = System.Drawing.Color.DimGray;
             appearance61.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2321,11 +2535,11 @@
             appearance61.FontData.BoldAsString = "True";
             appearance61.FontData.Name = "MS Reference Sans Serif";
             appearance61.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn41.Header.Appearance = appearance61;
-            ultraGridColumn41.Header.Caption = "분할";
-            ultraGridColumn41.Header.VisiblePosition = 8;
-            ultraGridColumn41.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn41.Width = 36;
+            ultraGridColumn46.Header.Appearance = appearance61;
+            ultraGridColumn46.Header.Caption = "영역";
+            ultraGridColumn46.Header.VisiblePosition = 5;
+            ultraGridColumn46.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
+            ultraGridColumn46.Width = 36;
             appearance62.BackColor = System.Drawing.Color.DarkGray;
             appearance62.BackColor2 = System.Drawing.Color.DimGray;
             appearance62.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2333,11 +2547,12 @@
             appearance62.FontData.BoldAsString = "True";
             appearance62.FontData.Name = "MS Reference Sans Serif";
             appearance62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance62.ImageHAlign = Infragistics.Win.HAlign.Center;
             appearance62.TextHAlignAsString = "Center";
             appearance62.TextVAlignAsString = "Middle";
-            ultraGridColumn42.CellAppearance = appearance62;
+            ultraGridColumn47.CellAppearance = appearance62;
             appearance63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn42.CellButtonAppearance = appearance63;
+            ultraGridColumn47.CellButtonAppearance = appearance63;
             appearance64.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance64.BackColor2 = System.Drawing.Color.DimGray;
             appearance64.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2345,11 +2560,11 @@
             appearance64.FontData.BoldAsString = "True";
             appearance64.FontData.Name = "MS Reference Sans Serif";
             appearance64.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn42.Header.Appearance = appearance64;
-            ultraGridColumn42.Header.Caption = "판별";
-            ultraGridColumn42.Header.VisiblePosition = 9;
-            ultraGridColumn42.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
-            ultraGridColumn42.Width = 36;
+            ultraGridColumn47.Header.Appearance = appearance64;
+            ultraGridColumn47.Header.Caption = "방향";
+            ultraGridColumn47.Header.VisiblePosition = 6;
+            ultraGridColumn47.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn47.Width = 36;
             appearance65.BackColor = System.Drawing.Color.DarkGray;
             appearance65.BackColor2 = System.Drawing.Color.DimGray;
             appearance65.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2357,63 +2572,139 @@
             appearance65.FontData.BoldAsString = "True";
             appearance65.FontData.Name = "MS Reference Sans Serif";
             appearance65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance65.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance65.ImageVAlign = Infragistics.Win.VAlign.Middle;
             appearance65.TextHAlignAsString = "Center";
             appearance65.TextVAlignAsString = "Middle";
-            ultraGridColumn43.CellAppearance = appearance65;
-            appearance66.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            appearance66.BackColor2 = System.Drawing.Color.DimGray;
-            appearance66.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance66.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance66.FontData.BoldAsString = "True";
-            appearance66.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn43.Header.Appearance = appearance66;
-            ultraGridColumn43.Header.Caption = "밝기";
-            ultraGridColumn43.Header.VisiblePosition = 10;
-            ultraGridColumn43.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Edit;
-            ultraGridColumn43.Width = 36;
-            ultraGridBand3.Columns.AddRange(new object[] {
-            ultraGridColumn33,
-            ultraGridColumn34,
-            ultraGridColumn35,
-            ultraGridColumn36,
-            ultraGridColumn37,
-            ultraGridColumn38,
-            ultraGridColumn39,
-            ultraGridColumn40,
+            ultraGridColumn48.CellAppearance = appearance65;
+            appearance66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn48.CellButtonAppearance = appearance66;
+            appearance67.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance67.BackColor2 = System.Drawing.Color.DimGray;
+            appearance67.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance67.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance67.FontData.BoldAsString = "True";
+            appearance67.FontData.Name = "MS Reference Sans Serif";
+            appearance67.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn48.Header.Appearance = appearance67;
+            ultraGridColumn48.Header.Caption = "극성";
+            ultraGridColumn48.Header.VisiblePosition = 7;
+            ultraGridColumn48.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn48.Width = 41;
+            appearance68.BackColor = System.Drawing.Color.DarkGray;
+            appearance68.BackColor2 = System.Drawing.Color.DimGray;
+            appearance68.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance68.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance68.FontData.BoldAsString = "True";
+            appearance68.FontData.Name = "MS Reference Sans Serif";
+            appearance68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance68.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance68.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance68.TextHAlignAsString = "Center";
+            appearance68.TextVAlignAsString = "Middle";
+            ultraGridColumn49.CellAppearance = appearance68;
+            appearance69.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn49.CellButtonAppearance = appearance69;
+            appearance70.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance70.BackColor2 = System.Drawing.Color.DimGray;
+            appearance70.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance70.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance70.FontData.BoldAsString = "True";
+            appearance70.FontData.Name = "MS Reference Sans Serif";
+            appearance70.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn49.Header.Appearance = appearance70;
+            ultraGridColumn49.Header.Caption = "분할";
+            ultraGridColumn49.Header.VisiblePosition = 8;
+            ultraGridColumn49.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn49.Width = 36;
+            appearance71.BackColor = System.Drawing.Color.DarkGray;
+            appearance71.BackColor2 = System.Drawing.Color.DimGray;
+            appearance71.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance71.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance71.FontData.BoldAsString = "True";
+            appearance71.FontData.Name = "MS Reference Sans Serif";
+            appearance71.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance71.TextHAlignAsString = "Center";
+            appearance71.TextVAlignAsString = "Middle";
+            ultraGridColumn50.CellAppearance = appearance71;
+            appearance72.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn50.CellButtonAppearance = appearance72;
+            appearance73.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance73.BackColor2 = System.Drawing.Color.DimGray;
+            appearance73.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance73.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance73.FontData.BoldAsString = "True";
+            appearance73.FontData.Name = "MS Reference Sans Serif";
+            appearance73.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn50.Header.Appearance = appearance73;
+            ultraGridColumn50.Header.Caption = "판별";
+            ultraGridColumn50.Header.VisiblePosition = 9;
+            ultraGridColumn50.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
+            ultraGridColumn50.Width = 36;
+            appearance74.BackColor = System.Drawing.Color.DarkGray;
+            appearance74.BackColor2 = System.Drawing.Color.DimGray;
+            appearance74.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance74.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance74.FontData.BoldAsString = "True";
+            appearance74.FontData.Name = "MS Reference Sans Serif";
+            appearance74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance74.TextHAlignAsString = "Center";
+            appearance74.TextVAlignAsString = "Middle";
+            ultraGridColumn51.CellAppearance = appearance74;
+            appearance75.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance75.BackColor2 = System.Drawing.Color.DimGray;
+            appearance75.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance75.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance75.FontData.BoldAsString = "True";
+            appearance75.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn51.Header.Appearance = appearance75;
+            ultraGridColumn51.Header.Caption = "밝기";
+            ultraGridColumn51.Header.VisiblePosition = 10;
+            ultraGridColumn51.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Edit;
+            ultraGridColumn51.Width = 36;
+            ultraGridBand4.Columns.AddRange(new object[] {
             ultraGridColumn41,
             ultraGridColumn42,
-            ultraGridColumn43});
-            this.uGrd_Recipe_UperData.DisplayLayout.BandsSerializer.Add(ultraGridBand3);
+            ultraGridColumn43,
+            ultraGridColumn44,
+            ultraGridColumn45,
+            ultraGridColumn46,
+            ultraGridColumn47,
+            ultraGridColumn48,
+            ultraGridColumn49,
+            ultraGridColumn50,
+            ultraGridColumn51});
+            this.uGrd_Recipe_UperData.DisplayLayout.BandsSerializer.Add(ultraGridBand4);
             this.uGrd_Recipe_UperData.DisplayLayout.InterBandSpacing = 10;
             this.uGrd_Recipe_UperData.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
             this.uGrd_Recipe_UperData.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
-            appearance67.BackColor = System.Drawing.Color.Transparent;
-            this.uGrd_Recipe_UperData.DisplayLayout.Override.CardAreaAppearance = appearance67;
-            appearance68.BackColor = System.Drawing.SystemColors.Control;
-            appearance68.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
-            appearance68.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            appearance68.FontData.SizeInPoints = 7F;
-            this.uGrd_Recipe_UperData.DisplayLayout.Override.CellAppearance = appearance68;
+            appearance76.BackColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_UperData.DisplayLayout.Override.CardAreaAppearance = appearance76;
+            appearance77.BackColor = System.Drawing.SystemColors.Control;
+            appearance77.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
+            appearance77.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            appearance77.FontData.SizeInPoints = 7F;
+            this.uGrd_Recipe_UperData.DisplayLayout.Override.CellAppearance = appearance77;
             this.uGrd_Recipe_UperData.DisplayLayout.Override.FixedRowIndicator = Infragistics.Win.UltraWinGrid.FixedRowIndicator.None;
-            appearance69.BackColor = System.Drawing.SystemColors.Control;
-            appearance69.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance69.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            appearance69.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            this.uGrd_Recipe_UperData.DisplayLayout.Override.HeaderAppearance = appearance69;
-            appearance70.ForeColor = System.Drawing.Color.White;
-            this.uGrd_Recipe_UperData.DisplayLayout.Override.HotTrackCellAppearance = appearance70;
-            appearance71.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uGrd_Recipe_UperData.DisplayLayout.Override.RowSelectorAppearance = appearance71;
+            appearance78.BackColor = System.Drawing.SystemColors.Control;
+            appearance78.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance78.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            appearance78.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            this.uGrd_Recipe_UperData.DisplayLayout.Override.HeaderAppearance = appearance78;
+            appearance79.ForeColor = System.Drawing.Color.White;
+            this.uGrd_Recipe_UperData.DisplayLayout.Override.HotTrackCellAppearance = appearance79;
+            appearance80.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.uGrd_Recipe_UperData.DisplayLayout.Override.RowSelectorAppearance = appearance80;
             this.uGrd_Recipe_UperData.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
             this.uGrd_Recipe_UperData.DisplayLayout.Override.RowSizing = Infragistics.Win.UltraWinGrid.RowSizing.Fixed;
-            appearance72.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance72.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance72.BorderColor = System.Drawing.Color.Transparent;
-            this.uGrd_Recipe_UperData.DisplayLayout.Override.SelectedCellAppearance = appearance72;
-            appearance73.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            appearance73.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            appearance73.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            this.uGrd_Recipe_UperData.DisplayLayout.Override.SelectedRowAppearance = appearance73;
+            appearance81.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance81.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance81.BorderColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_UperData.DisplayLayout.Override.SelectedCellAppearance = appearance81;
+            appearance82.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            appearance82.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            appearance82.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            this.uGrd_Recipe_UperData.DisplayLayout.Override.SelectedRowAppearance = appearance82;
             this.uGrd_Recipe_UperData.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_UperData.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_UperData.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
@@ -2433,17 +2724,17 @@
             // uDS_Recipe_Uper
             // 
             this.uDS_Recipe_Uper.Band.Columns.AddRange(new object[] {
-            ultraDataColumn19,
-            ultraDataColumn20,
-            ultraDataColumn21,
-            ultraDataColumn22,
-            ultraDataColumn23,
-            ultraDataColumn24,
-            ultraDataColumn25,
-            ultraDataColumn26,
-            ultraDataColumn27,
             ultraDataColumn28,
-            ultraDataColumn29});
+            ultraDataColumn29,
+            ultraDataColumn30,
+            ultraDataColumn31,
+            ultraDataColumn32,
+            ultraDataColumn33,
+            ultraDataColumn34,
+            ultraDataColumn35,
+            ultraDataColumn36,
+            ultraDataColumn37,
+            ultraDataColumn38});
             // 
             // ultraTabPageControl7
             // 
@@ -2455,112 +2746,31 @@
             // uGrd_Recipe_DownData
             // 
             this.uGrd_Recipe_DownData.DataSource = this.uDS_Recipe_Down;
-            appearance74.BackColor = System.Drawing.SystemColors.ControlLight;
-            appearance74.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance74.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            this.uGrd_Recipe_DownData.DisplayLayout.Appearance = appearance74;
-            appearance75.BackColor = System.Drawing.Color.DarkGray;
-            appearance75.BackColor2 = System.Drawing.Color.DimGray;
-            appearance75.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance75.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance75.FontData.BoldAsString = "True";
-            appearance75.FontData.Name = "MS Reference Sans Serif";
-            appearance75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance75.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance75.TextHAlignAsString = "Center";
-            appearance75.TextVAlignAsString = "Middle";
-            ultraGridColumn44.CellAppearance = appearance75;
-            appearance76.BackColor = System.Drawing.Color.DarkGray;
-            appearance76.BackColor2 = System.Drawing.Color.Gray;
-            appearance76.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance76.FontData.BoldAsString = "True";
-            appearance76.FontData.Name = "MS Reference Sans Serif";
-            appearance76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance76.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn44.CellButtonAppearance = appearance76;
-            appearance77.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            appearance77.BackColor2 = System.Drawing.Color.DimGray;
-            appearance77.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance77.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance77.FontData.BoldAsString = "True";
-            appearance77.FontData.Name = "MS Reference Sans Serif";
-            appearance77.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn44.Header.Appearance = appearance77;
-            ultraGridColumn44.Header.Caption = "항목";
-            ultraGridColumn44.Header.VisiblePosition = 0;
-            ultraGridColumn44.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn44.Width = 60;
-            appearance78.BackColor = System.Drawing.Color.DarkGray;
-            appearance78.BackColor2 = System.Drawing.Color.DimGray;
-            appearance78.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance78.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance78.FontData.BoldAsString = "True";
-            appearance78.FontData.Name = "MS Reference Sans Serif";
-            appearance78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance78.TextHAlignAsString = "Center";
-            appearance78.TextVAlignAsString = "Middle";
-            ultraGridColumn45.CellAppearance = appearance78;
-            appearance79.FontData.BoldAsString = "True";
-            appearance79.FontData.Name = "MS Reference Sans Serif";
-            appearance79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance79.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn45.CellButtonAppearance = appearance79;
-            appearance80.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            appearance80.BackColor2 = System.Drawing.Color.DimGray;
-            appearance80.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance80.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance80.FontData.BoldAsString = "True";
-            appearance80.FontData.Name = "MS Reference Sans Serif";
-            appearance80.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn45.Header.Appearance = appearance80;
-            ultraGridColumn45.Header.Caption = "챠트";
-            ultraGridColumn45.Header.VisiblePosition = 1;
-            ultraGridColumn45.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn45.Width = 36;
-            ultraGridColumn46.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
-            appearance81.BackColor = System.Drawing.Color.DarkGray;
-            appearance81.BackColor2 = System.Drawing.Color.DimGray;
-            appearance81.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance81.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance81.FontData.BoldAsString = "True";
-            appearance81.FontData.Name = "MS Reference Sans Serif";
-            appearance81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance81.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance81.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            appearance81.TextHAlignAsString = "Center";
-            appearance81.TextVAlignAsString = "Middle";
-            ultraGridColumn46.CellAppearance = appearance81;
-            appearance82.BackColor = System.Drawing.Color.DarkGray;
-            appearance82.BackColor2 = System.Drawing.Color.Gray;
-            appearance82.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance82.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn46.CellButtonAppearance = appearance82;
-            appearance83.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            appearance83.BackColor2 = System.Drawing.Color.DimGray;
-            appearance83.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance83.BackColor = System.Drawing.SystemColors.ControlLight;
+            appearance83.BackColor2 = System.Drawing.SystemColors.ControlDark;
             appearance83.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance83.FontData.BoldAsString = "True";
-            appearance83.FontData.Name = "MS Reference Sans Serif";
-            appearance83.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn46.Header.Appearance = appearance83;
-            ultraGridColumn46.Header.Caption = "영역";
-            ultraGridColumn46.Header.VisiblePosition = 2;
-            ultraGridColumn46.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
-            ultraGridColumn46.Width = 36;
+            this.uGrd_Recipe_DownData.DisplayLayout.Appearance = appearance83;
             appearance84.BackColor = System.Drawing.Color.DarkGray;
             appearance84.BackColor2 = System.Drawing.Color.DimGray;
             appearance84.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
             appearance84.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
             appearance84.FontData.BoldAsString = "True";
             appearance84.FontData.Name = "MS Reference Sans Serif";
+            appearance84.FontData.SizeInPoints = 7F;
             appearance84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance84.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance84.ImageVAlign = Infragistics.Win.VAlign.Middle;
             appearance84.TextHAlignAsString = "Center";
             appearance84.TextVAlignAsString = "Middle";
-            ultraGridColumn47.CellAppearance = appearance84;
+            ultraGridColumn52.CellAppearance = appearance84;
+            appearance85.BackColor = System.Drawing.Color.DarkGray;
+            appearance85.BackColor2 = System.Drawing.Color.Gray;
+            appearance85.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance85.FontData.BoldAsString = "True";
+            appearance85.FontData.Name = "MS Reference Sans Serif";
             appearance85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn47.CellButtonAppearance = appearance85;
+            appearance85.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn52.CellButtonAppearance = appearance85;
             appearance86.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance86.BackColor2 = System.Drawing.Color.DimGray;
             appearance86.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2568,11 +2778,11 @@
             appearance86.FontData.BoldAsString = "True";
             appearance86.FontData.Name = "MS Reference Sans Serif";
             appearance86.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn47.Header.Appearance = appearance86;
-            ultraGridColumn47.Header.Caption = "방향";
-            ultraGridColumn47.Header.VisiblePosition = 3;
-            ultraGridColumn47.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn47.Width = 36;
+            ultraGridColumn52.Header.Appearance = appearance86;
+            ultraGridColumn52.Header.Caption = "항목";
+            ultraGridColumn52.Header.VisiblePosition = 0;
+            ultraGridColumn52.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn52.Width = 60;
             appearance87.BackColor = System.Drawing.Color.DarkGray;
             appearance87.BackColor2 = System.Drawing.Color.DimGray;
             appearance87.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2580,17 +2790,14 @@
             appearance87.FontData.BoldAsString = "True";
             appearance87.FontData.Name = "MS Reference Sans Serif";
             appearance87.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance87.ImageHAlign = Infragistics.Win.HAlign.Center;
             appearance87.TextHAlignAsString = "Center";
             appearance87.TextVAlignAsString = "Middle";
-            ultraGridColumn48.CellAppearance = appearance87;
-            appearance88.BackColor = System.Drawing.Color.DarkGray;
-            appearance88.BackColor2 = System.Drawing.Color.Gray;
-            appearance88.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            ultraGridColumn53.CellAppearance = appearance87;
             appearance88.FontData.BoldAsString = "True";
+            appearance88.FontData.Name = "MS Reference Sans Serif";
             appearance88.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance88.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn48.CellButtonAppearance = appearance88;
+            ultraGridColumn53.CellButtonAppearance = appearance88;
             appearance89.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance89.BackColor2 = System.Drawing.Color.DimGray;
             appearance89.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2598,11 +2805,12 @@
             appearance89.FontData.BoldAsString = "True";
             appearance89.FontData.Name = "MS Reference Sans Serif";
             appearance89.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn48.Header.Appearance = appearance89;
-            ultraGridColumn48.Header.Caption = "극성";
-            ultraGridColumn48.Header.VisiblePosition = 4;
-            ultraGridColumn48.Width = 41;
-            ultraGridColumn49.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
+            ultraGridColumn53.Header.Appearance = appearance89;
+            ultraGridColumn53.Header.Caption = "챠트";
+            ultraGridColumn53.Header.VisiblePosition = 1;
+            ultraGridColumn53.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn53.Width = 36;
+            ultraGridColumn54.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
             appearance90.BackColor = System.Drawing.Color.DarkGray;
             appearance90.BackColor2 = System.Drawing.Color.DimGray;
             appearance90.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2611,17 +2819,16 @@
             appearance90.FontData.Name = "MS Reference Sans Serif";
             appearance90.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance90.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance90.ImageVAlign = Infragistics.Win.VAlign.Middle;
             appearance90.TextHAlignAsString = "Center";
             appearance90.TextVAlignAsString = "Middle";
-            ultraGridColumn49.CellAppearance = appearance90;
+            ultraGridColumn54.CellAppearance = appearance90;
             appearance91.BackColor = System.Drawing.Color.DarkGray;
             appearance91.BackColor2 = System.Drawing.Color.Gray;
             appearance91.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance91.FontData.BoldAsString = "True";
-            appearance91.FontData.Name = "MS Reference Sans Serif";
             appearance91.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance91.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            ultraGridColumn49.CellButtonAppearance = appearance91;
+            ultraGridColumn54.CellButtonAppearance = appearance91;
             appearance92.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance92.BackColor2 = System.Drawing.Color.DimGray;
             appearance92.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2629,11 +2836,11 @@
             appearance92.FontData.BoldAsString = "True";
             appearance92.FontData.Name = "MS Reference Sans Serif";
             appearance92.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn49.Header.Appearance = appearance92;
-            ultraGridColumn49.Header.Caption = "영역";
-            ultraGridColumn49.Header.VisiblePosition = 5;
-            ultraGridColumn49.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
-            ultraGridColumn49.Width = 36;
+            ultraGridColumn54.Header.Appearance = appearance92;
+            ultraGridColumn54.Header.Caption = "영역";
+            ultraGridColumn54.Header.VisiblePosition = 2;
+            ultraGridColumn54.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
+            ultraGridColumn54.Width = 36;
             appearance93.BackColor = System.Drawing.Color.DarkGray;
             appearance93.BackColor2 = System.Drawing.Color.DimGray;
             appearance93.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2644,9 +2851,9 @@
             appearance93.ImageHAlign = Infragistics.Win.HAlign.Center;
             appearance93.TextHAlignAsString = "Center";
             appearance93.TextVAlignAsString = "Middle";
-            ultraGridColumn50.CellAppearance = appearance93;
+            ultraGridColumn55.CellAppearance = appearance93;
             appearance94.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn50.CellButtonAppearance = appearance94;
+            ultraGridColumn55.CellButtonAppearance = appearance94;
             appearance95.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance95.BackColor2 = System.Drawing.Color.DimGray;
             appearance95.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2654,11 +2861,11 @@
             appearance95.FontData.BoldAsString = "True";
             appearance95.FontData.Name = "MS Reference Sans Serif";
             appearance95.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn50.Header.Appearance = appearance95;
-            ultraGridColumn50.Header.Caption = "방향";
-            ultraGridColumn50.Header.VisiblePosition = 6;
-            ultraGridColumn50.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn50.Width = 36;
+            ultraGridColumn55.Header.Appearance = appearance95;
+            ultraGridColumn55.Header.Caption = "방향";
+            ultraGridColumn55.Header.VisiblePosition = 3;
+            ultraGridColumn55.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn55.Width = 36;
             appearance96.BackColor = System.Drawing.Color.DarkGray;
             appearance96.BackColor2 = System.Drawing.Color.DimGray;
             appearance96.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2667,12 +2874,16 @@
             appearance96.FontData.Name = "MS Reference Sans Serif";
             appearance96.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance96.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance96.ImageVAlign = Infragistics.Win.VAlign.Middle;
             appearance96.TextHAlignAsString = "Center";
             appearance96.TextVAlignAsString = "Middle";
-            ultraGridColumn51.CellAppearance = appearance96;
+            ultraGridColumn56.CellAppearance = appearance96;
+            appearance97.BackColor = System.Drawing.Color.DarkGray;
+            appearance97.BackColor2 = System.Drawing.Color.Gray;
+            appearance97.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance97.FontData.BoldAsString = "True";
             appearance97.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn51.CellButtonAppearance = appearance97;
+            appearance97.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn56.CellButtonAppearance = appearance97;
             appearance98.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance98.BackColor2 = System.Drawing.Color.DimGray;
             appearance98.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2680,11 +2891,11 @@
             appearance98.FontData.BoldAsString = "True";
             appearance98.FontData.Name = "MS Reference Sans Serif";
             appearance98.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn51.Header.Appearance = appearance98;
-            ultraGridColumn51.Header.Caption = "극성";
-            ultraGridColumn51.Header.VisiblePosition = 7;
-            ultraGridColumn51.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn51.Width = 41;
+            ultraGridColumn56.Header.Appearance = appearance98;
+            ultraGridColumn56.Header.Caption = "극성";
+            ultraGridColumn56.Header.VisiblePosition = 4;
+            ultraGridColumn56.Width = 41;
+            ultraGridColumn57.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
             appearance99.BackColor = System.Drawing.Color.DarkGray;
             appearance99.BackColor2 = System.Drawing.Color.DimGray;
             appearance99.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2693,12 +2904,17 @@
             appearance99.FontData.Name = "MS Reference Sans Serif";
             appearance99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             appearance99.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance99.ImageVAlign = Infragistics.Win.VAlign.Middle;
             appearance99.TextHAlignAsString = "Center";
             appearance99.TextVAlignAsString = "Middle";
-            ultraGridColumn52.CellAppearance = appearance99;
+            ultraGridColumn57.CellAppearance = appearance99;
+            appearance100.BackColor = System.Drawing.Color.DarkGray;
+            appearance100.BackColor2 = System.Drawing.Color.Gray;
+            appearance100.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance100.FontData.BoldAsString = "True";
+            appearance100.FontData.Name = "MS Reference Sans Serif";
             appearance100.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn52.CellButtonAppearance = appearance100;
+            appearance100.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn57.CellButtonAppearance = appearance100;
             appearance101.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance101.BackColor2 = System.Drawing.Color.DimGray;
             appearance101.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2706,11 +2922,11 @@
             appearance101.FontData.BoldAsString = "True";
             appearance101.FontData.Name = "MS Reference Sans Serif";
             appearance101.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn52.Header.Appearance = appearance101;
-            ultraGridColumn52.Header.Caption = "분할";
-            ultraGridColumn52.Header.VisiblePosition = 8;
-            ultraGridColumn52.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
-            ultraGridColumn52.Width = 36;
+            ultraGridColumn57.Header.Appearance = appearance101;
+            ultraGridColumn57.Header.Caption = "영역";
+            ultraGridColumn57.Header.VisiblePosition = 5;
+            ultraGridColumn57.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
+            ultraGridColumn57.Width = 36;
             appearance102.BackColor = System.Drawing.Color.DarkGray;
             appearance102.BackColor2 = System.Drawing.Color.DimGray;
             appearance102.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2718,11 +2934,12 @@
             appearance102.FontData.BoldAsString = "True";
             appearance102.FontData.Name = "MS Reference Sans Serif";
             appearance102.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance102.ImageHAlign = Infragistics.Win.HAlign.Center;
             appearance102.TextHAlignAsString = "Center";
             appearance102.TextVAlignAsString = "Middle";
-            ultraGridColumn53.CellAppearance = appearance102;
+            ultraGridColumn58.CellAppearance = appearance102;
             appearance103.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraGridColumn53.CellButtonAppearance = appearance103;
+            ultraGridColumn58.CellButtonAppearance = appearance103;
             appearance104.BackColor = System.Drawing.SystemColors.AppWorkspace;
             appearance104.BackColor2 = System.Drawing.Color.DimGray;
             appearance104.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
@@ -2730,11 +2947,11 @@
             appearance104.FontData.BoldAsString = "True";
             appearance104.FontData.Name = "MS Reference Sans Serif";
             appearance104.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn53.Header.Appearance = appearance104;
-            ultraGridColumn53.Header.Caption = "판별";
-            ultraGridColumn53.Header.VisiblePosition = 9;
-            ultraGridColumn53.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
-            ultraGridColumn53.Width = 36;
+            ultraGridColumn58.Header.Appearance = appearance104;
+            ultraGridColumn58.Header.Caption = "방향";
+            ultraGridColumn58.Header.VisiblePosition = 6;
+            ultraGridColumn58.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn58.Width = 36;
             appearance105.BackColor = System.Drawing.Color.DarkGray;
             appearance105.BackColor2 = System.Drawing.Color.DimGray;
             appearance105.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
@@ -2742,63 +2959,142 @@
             appearance105.FontData.BoldAsString = "True";
             appearance105.FontData.Name = "MS Reference Sans Serif";
             appearance105.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance105.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance105.ImageVAlign = Infragistics.Win.VAlign.Middle;
             appearance105.TextHAlignAsString = "Center";
             appearance105.TextVAlignAsString = "Middle";
-            ultraGridColumn54.CellAppearance = appearance105;
-            appearance106.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            appearance106.BackColor2 = System.Drawing.Color.DimGray;
-            appearance106.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance106.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance106.FontData.BoldAsString = "True";
-            appearance106.ForeColor = System.Drawing.Color.White;
-            ultraGridColumn54.Header.Appearance = appearance106;
-            ultraGridColumn54.Header.Caption = "밝기";
-            ultraGridColumn54.Header.VisiblePosition = 10;
-            ultraGridColumn54.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Edit;
-            ultraGridColumn54.Width = 36;
-            ultraGridBand4.Columns.AddRange(new object[] {
-            ultraGridColumn44,
-            ultraGridColumn45,
-            ultraGridColumn46,
-            ultraGridColumn47,
-            ultraGridColumn48,
-            ultraGridColumn49,
-            ultraGridColumn50,
-            ultraGridColumn51,
+            ultraGridColumn59.CellAppearance = appearance105;
+            appearance106.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn59.CellButtonAppearance = appearance106;
+            appearance107.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance107.BackColor2 = System.Drawing.Color.DimGray;
+            appearance107.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance107.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance107.FontData.BoldAsString = "True";
+            appearance107.FontData.Name = "MS Reference Sans Serif";
+            appearance107.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn59.Header.Appearance = appearance107;
+            ultraGridColumn59.Header.Caption = "극성";
+            ultraGridColumn59.Header.VisiblePosition = 7;
+            ultraGridColumn59.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn59.Width = 41;
+            appearance108.BackColor = System.Drawing.Color.DarkGray;
+            appearance108.BackColor2 = System.Drawing.Color.DimGray;
+            appearance108.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance108.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance108.FontData.BoldAsString = "True";
+            appearance108.FontData.Name = "MS Reference Sans Serif";
+            appearance108.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance108.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance108.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance108.TextHAlignAsString = "Center";
+            appearance108.TextVAlignAsString = "Middle";
+            ultraGridColumn60.CellAppearance = appearance108;
+            appearance109.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn60.CellButtonAppearance = appearance109;
+            appearance110.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance110.BackColor2 = System.Drawing.Color.DimGray;
+            appearance110.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance110.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance110.FontData.BoldAsString = "True";
+            appearance110.FontData.Name = "MS Reference Sans Serif";
+            appearance110.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn60.Header.Appearance = appearance110;
+            ultraGridColumn60.Header.Caption = "분할";
+            ultraGridColumn60.Header.VisiblePosition = 8;
+            ultraGridColumn60.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn60.Width = 36;
+            appearance111.BackColor = System.Drawing.Color.DarkGray;
+            appearance111.BackColor2 = System.Drawing.Color.DimGray;
+            appearance111.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance111.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance111.FontData.BoldAsString = "True";
+            appearance111.FontData.Name = "MS Reference Sans Serif";
+            appearance111.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance111.TextHAlignAsString = "Center";
+            appearance111.TextVAlignAsString = "Middle";
+            ultraGridColumn61.CellAppearance = appearance111;
+            appearance112.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn61.CellButtonAppearance = appearance112;
+            appearance113.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance113.BackColor2 = System.Drawing.Color.DimGray;
+            appearance113.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance113.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance113.FontData.BoldAsString = "True";
+            appearance113.FontData.Name = "MS Reference Sans Serif";
+            appearance113.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn61.Header.Appearance = appearance113;
+            ultraGridColumn61.Header.Caption = "판별";
+            ultraGridColumn61.Header.VisiblePosition = 9;
+            ultraGridColumn61.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
+            ultraGridColumn61.Width = 36;
+            appearance114.BackColor = System.Drawing.Color.DarkGray;
+            appearance114.BackColor2 = System.Drawing.Color.DimGray;
+            appearance114.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance114.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance114.FontData.BoldAsString = "True";
+            appearance114.FontData.Name = "MS Reference Sans Serif";
+            appearance114.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance114.TextHAlignAsString = "Center";
+            appearance114.TextVAlignAsString = "Middle";
+            ultraGridColumn62.CellAppearance = appearance114;
+            appearance115.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance115.BackColor2 = System.Drawing.Color.DimGray;
+            appearance115.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance115.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance115.FontData.BoldAsString = "True";
+            appearance115.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn62.Header.Appearance = appearance115;
+            ultraGridColumn62.Header.Caption = "밝기";
+            ultraGridColumn62.Header.VisiblePosition = 10;
+            ultraGridColumn62.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Edit;
+            ultraGridColumn62.Width = 36;
+            ultraGridBand5.Columns.AddRange(new object[] {
             ultraGridColumn52,
             ultraGridColumn53,
-            ultraGridColumn54});
-            this.uGrd_Recipe_DownData.DisplayLayout.BandsSerializer.Add(ultraGridBand4);
+            ultraGridColumn54,
+            ultraGridColumn55,
+            ultraGridColumn56,
+            ultraGridColumn57,
+            ultraGridColumn58,
+            ultraGridColumn59,
+            ultraGridColumn60,
+            ultraGridColumn61,
+            ultraGridColumn62});
+            appearance116.FontData.SizeInPoints = 7F;
+            ultraGridBand5.Override.CellAppearance = appearance116;
+            this.uGrd_Recipe_DownData.DisplayLayout.BandsSerializer.Add(ultraGridBand5);
             this.uGrd_Recipe_DownData.DisplayLayout.InterBandSpacing = 10;
             this.uGrd_Recipe_DownData.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
             this.uGrd_Recipe_DownData.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
-            appearance107.BackColor = System.Drawing.Color.Transparent;
-            this.uGrd_Recipe_DownData.DisplayLayout.Override.CardAreaAppearance = appearance107;
-            appearance108.BackColor = System.Drawing.SystemColors.Control;
-            appearance108.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
-            appearance108.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            appearance108.FontData.SizeInPoints = 7F;
-            this.uGrd_Recipe_DownData.DisplayLayout.Override.CellAppearance = appearance108;
+            appearance117.BackColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_DownData.DisplayLayout.Override.CardAreaAppearance = appearance117;
+            appearance118.BackColor = System.Drawing.SystemColors.Control;
+            appearance118.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
+            appearance118.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            appearance118.FontData.Name = "Microsoft Sans Serif";
+            appearance118.FontData.SizeInPoints = 7F;
+            this.uGrd_Recipe_DownData.DisplayLayout.Override.CellAppearance = appearance118;
             this.uGrd_Recipe_DownData.DisplayLayout.Override.FixedRowIndicator = Infragistics.Win.UltraWinGrid.FixedRowIndicator.None;
-            appearance109.BackColor = System.Drawing.SystemColors.Control;
-            appearance109.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance109.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            appearance109.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            this.uGrd_Recipe_DownData.DisplayLayout.Override.HeaderAppearance = appearance109;
-            appearance110.ForeColor = System.Drawing.Color.White;
-            this.uGrd_Recipe_DownData.DisplayLayout.Override.HotTrackCellAppearance = appearance110;
-            appearance111.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uGrd_Recipe_DownData.DisplayLayout.Override.RowSelectorAppearance = appearance111;
+            appearance119.BackColor = System.Drawing.SystemColors.Control;
+            appearance119.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance119.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            appearance119.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            this.uGrd_Recipe_DownData.DisplayLayout.Override.HeaderAppearance = appearance119;
+            appearance120.ForeColor = System.Drawing.Color.White;
+            this.uGrd_Recipe_DownData.DisplayLayout.Override.HotTrackCellAppearance = appearance120;
+            appearance121.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.uGrd_Recipe_DownData.DisplayLayout.Override.RowSelectorAppearance = appearance121;
             this.uGrd_Recipe_DownData.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
             this.uGrd_Recipe_DownData.DisplayLayout.Override.RowSizing = Infragistics.Win.UltraWinGrid.RowSizing.Fixed;
-            appearance112.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance112.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance112.BorderColor = System.Drawing.Color.Transparent;
-            this.uGrd_Recipe_DownData.DisplayLayout.Override.SelectedCellAppearance = appearance112;
-            appearance113.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            appearance113.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            appearance113.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            this.uGrd_Recipe_DownData.DisplayLayout.Override.SelectedRowAppearance = appearance113;
+            appearance122.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance122.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance122.BorderColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_DownData.DisplayLayout.Override.SelectedCellAppearance = appearance122;
+            appearance123.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            appearance123.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            appearance123.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            this.uGrd_Recipe_DownData.DisplayLayout.Override.SelectedRowAppearance = appearance123;
             this.uGrd_Recipe_DownData.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_DownData.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_DownData.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
@@ -2817,17 +3113,395 @@
             // uDS_Recipe_Down
             // 
             this.uDS_Recipe_Down.Band.Columns.AddRange(new object[] {
-            ultraDataColumn30,
-            ultraDataColumn31,
-            ultraDataColumn32,
-            ultraDataColumn33,
-            ultraDataColumn34,
-            ultraDataColumn35,
-            ultraDataColumn36,
-            ultraDataColumn37,
-            ultraDataColumn38,
             ultraDataColumn39,
-            ultraDataColumn40});
+            ultraDataColumn40,
+            ultraDataColumn41,
+            ultraDataColumn42,
+            ultraDataColumn43,
+            ultraDataColumn44,
+            ultraDataColumn45,
+            ultraDataColumn46,
+            ultraDataColumn47,
+            ultraDataColumn48,
+            ultraDataColumn49});
+            // 
+            // ultraTabPageControl11
+            // 
+            this.ultraTabPageControl11.Controls.Add(this.uGrd_Recipe_RightData);
+            this.ultraTabPageControl11.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl11.Name = "ultraTabPageControl11";
+            this.ultraTabPageControl11.Size = new System.Drawing.Size(432, 463);
+            // 
+            // uGrd_Recipe_RightData
+            // 
+            this.uGrd_Recipe_RightData.DataSource = this.uDS_Recipe_Right;
+            appearance124.BackColor = System.Drawing.SystemColors.ControlLight;
+            appearance124.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance124.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            this.uGrd_Recipe_RightData.DisplayLayout.Appearance = appearance124;
+            appearance125.BackColor = System.Drawing.Color.DarkGray;
+            appearance125.BackColor2 = System.Drawing.Color.DimGray;
+            appearance125.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance125.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance125.FontData.BoldAsString = "True";
+            appearance125.FontData.Name = "MS Reference Sans Serif";
+            appearance125.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance125.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance125.TextHAlignAsString = "Center";
+            appearance125.TextVAlignAsString = "Middle";
+            ultraGridColumn100.CellAppearance = appearance125;
+            appearance126.FontData.Name = "바탕";
+            appearance126.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn100.CellButtonAppearance = appearance126;
+            appearance127.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance127.BackColor2 = System.Drawing.Color.DimGray;
+            appearance127.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance127.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance127.FontData.BoldAsString = "True";
+            appearance127.FontData.Name = "MS Reference Sans Serif";
+            appearance127.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn100.Header.Appearance = appearance127;
+            ultraGridColumn100.Header.Caption = "항목";
+            ultraGridColumn100.Header.VisiblePosition = 0;
+            ultraGridColumn100.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn100.Width = 60;
+            appearance128.BackColor = System.Drawing.Color.DarkGray;
+            appearance128.BackColor2 = System.Drawing.Color.DimGray;
+            appearance128.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance128.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance128.FontData.BoldAsString = "True";
+            appearance128.FontData.Name = "MS Reference Sans Serif";
+            appearance128.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance128.TextHAlignAsString = "Center";
+            appearance128.TextVAlignAsString = "Middle";
+            ultraGridColumn101.CellAppearance = appearance128;
+            appearance129.FontData.BoldAsString = "True";
+            appearance129.FontData.Name = "MS Reference Sans Serif";
+            appearance129.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance129.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn101.CellButtonAppearance = appearance129;
+            appearance130.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance130.BackColor2 = System.Drawing.Color.DimGray;
+            appearance130.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance130.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance130.FontData.BoldAsString = "True";
+            appearance130.FontData.Name = "MS Reference Sans Serif";
+            appearance130.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn101.Header.Appearance = appearance130;
+            ultraGridColumn101.Header.Caption = "챠트";
+            ultraGridColumn101.Header.VisiblePosition = 1;
+            ultraGridColumn101.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn101.Width = 36;
+            ultraGridColumn102.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
+            appearance131.BackColor = System.Drawing.Color.DarkGray;
+            appearance131.BackColor2 = System.Drawing.Color.DimGray;
+            appearance131.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance131.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance131.FontData.BoldAsString = "True";
+            appearance131.FontData.Name = "MS Reference Sans Serif";
+            appearance131.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance131.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            appearance131.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance131.TextHAlignAsString = "Center";
+            appearance131.TextVAlignAsString = "Middle";
+            ultraGridColumn102.CellAppearance = appearance131;
+            appearance132.BackColor = System.Drawing.Color.DarkGray;
+            appearance132.BackColor2 = System.Drawing.Color.Gray;
+            appearance132.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance132.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance132.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn102.CellButtonAppearance = appearance132;
+            appearance133.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance133.BackColor2 = System.Drawing.Color.DimGray;
+            appearance133.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance133.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance133.FontData.BoldAsString = "True";
+            appearance133.FontData.Name = "MS Reference Sans Serif";
+            appearance133.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn102.Header.Appearance = appearance133;
+            ultraGridColumn102.Header.Caption = "영역";
+            ultraGridColumn102.Header.VisiblePosition = 2;
+            ultraGridColumn102.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
+            ultraGridColumn102.Width = 36;
+            appearance134.BackColor = System.Drawing.Color.DarkGray;
+            appearance134.BackColor2 = System.Drawing.Color.DimGray;
+            appearance134.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance134.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance134.FontData.BoldAsString = "True";
+            appearance134.FontData.Name = "MS Reference Sans Serif";
+            appearance134.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance134.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance134.TextHAlignAsString = "Center";
+            appearance134.TextVAlignAsString = "Middle";
+            ultraGridColumn103.CellAppearance = appearance134;
+            appearance135.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn103.CellButtonAppearance = appearance135;
+            appearance136.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance136.BackColor2 = System.Drawing.Color.DimGray;
+            appearance136.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance136.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance136.FontData.BoldAsString = "True";
+            appearance136.FontData.Name = "MS Reference Sans Serif";
+            appearance136.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn103.Header.Appearance = appearance136;
+            ultraGridColumn103.Header.Caption = "방향";
+            ultraGridColumn103.Header.VisiblePosition = 3;
+            ultraGridColumn103.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn103.Width = 36;
+            appearance137.BackColor = System.Drawing.Color.DarkGray;
+            appearance137.BackColor2 = System.Drawing.Color.DimGray;
+            appearance137.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance137.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance137.FontData.BoldAsString = "True";
+            appearance137.FontData.Name = "MS Reference Sans Serif";
+            appearance137.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance137.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance137.TextHAlignAsString = "Center";
+            appearance137.TextVAlignAsString = "Middle";
+            ultraGridColumn104.CellAppearance = appearance137;
+            appearance138.BackColor = System.Drawing.Color.DarkGray;
+            appearance138.BackColor2 = System.Drawing.Color.Gray;
+            appearance138.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance138.FontData.BoldAsString = "True";
+            appearance138.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance138.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn104.CellButtonAppearance = appearance138;
+            appearance139.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance139.BackColor2 = System.Drawing.Color.DimGray;
+            appearance139.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance139.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance139.FontData.BoldAsString = "True";
+            appearance139.FontData.Name = "MS Reference Sans Serif";
+            appearance139.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn104.Header.Appearance = appearance139;
+            ultraGridColumn104.Header.Caption = "극성";
+            ultraGridColumn104.Header.VisiblePosition = 4;
+            ultraGridColumn104.Width = 41;
+            ultraGridColumn105.ButtonDisplayStyle = Infragistics.Win.UltraWinGrid.ButtonDisplayStyle.Always;
+            appearance140.BackColor = System.Drawing.Color.DarkGray;
+            appearance140.BackColor2 = System.Drawing.Color.DimGray;
+            appearance140.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance140.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance140.FontData.BoldAsString = "True";
+            appearance140.FontData.Name = "MS Reference Sans Serif";
+            appearance140.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance140.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance140.TextHAlignAsString = "Center";
+            appearance140.TextVAlignAsString = "Middle";
+            ultraGridColumn105.CellAppearance = appearance140;
+            appearance141.BackColor = System.Drawing.Color.DarkGray;
+            appearance141.BackColor2 = System.Drawing.Color.Gray;
+            appearance141.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance141.FontData.BoldAsString = "True";
+            appearance141.FontData.Name = "MS Reference Sans Serif";
+            appearance141.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance141.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            ultraGridColumn105.CellButtonAppearance = appearance141;
+            appearance142.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance142.BackColor2 = System.Drawing.Color.DimGray;
+            appearance142.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance142.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance142.FontData.BoldAsString = "True";
+            appearance142.FontData.Name = "MS Reference Sans Serif";
+            appearance142.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn105.Header.Appearance = appearance142;
+            ultraGridColumn105.Header.Caption = "영역";
+            ultraGridColumn105.Header.VisiblePosition = 5;
+            ultraGridColumn105.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Button;
+            ultraGridColumn105.Width = 36;
+            appearance143.BackColor = System.Drawing.Color.DarkGray;
+            appearance143.BackColor2 = System.Drawing.Color.DimGray;
+            appearance143.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance143.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance143.FontData.BoldAsString = "True";
+            appearance143.FontData.Name = "MS Reference Sans Serif";
+            appearance143.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance143.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance143.TextHAlignAsString = "Center";
+            appearance143.TextVAlignAsString = "Middle";
+            ultraGridColumn120.CellAppearance = appearance143;
+            appearance144.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn120.CellButtonAppearance = appearance144;
+            appearance145.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance145.BackColor2 = System.Drawing.Color.DimGray;
+            appearance145.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance145.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance145.FontData.BoldAsString = "True";
+            appearance145.FontData.Name = "MS Reference Sans Serif";
+            appearance145.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn120.Header.Appearance = appearance145;
+            ultraGridColumn120.Header.Caption = "방향";
+            ultraGridColumn120.Header.VisiblePosition = 6;
+            ultraGridColumn120.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn120.Width = 36;
+            appearance146.BackColor = System.Drawing.Color.DarkGray;
+            appearance146.BackColor2 = System.Drawing.Color.DimGray;
+            appearance146.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance146.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance146.FontData.BoldAsString = "True";
+            appearance146.FontData.Name = "MS Reference Sans Serif";
+            appearance146.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance146.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance146.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance146.TextHAlignAsString = "Center";
+            appearance146.TextVAlignAsString = "Middle";
+            ultraGridColumn121.CellAppearance = appearance146;
+            appearance147.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn121.CellButtonAppearance = appearance147;
+            appearance148.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance148.BackColor2 = System.Drawing.Color.DimGray;
+            appearance148.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance148.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance148.FontData.BoldAsString = "True";
+            appearance148.FontData.Name = "MS Reference Sans Serif";
+            appearance148.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn121.Header.Appearance = appearance148;
+            ultraGridColumn121.Header.Caption = "극성";
+            ultraGridColumn121.Header.VisiblePosition = 7;
+            ultraGridColumn121.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn121.Width = 41;
+            appearance149.BackColor = System.Drawing.Color.DarkGray;
+            appearance149.BackColor2 = System.Drawing.Color.DimGray;
+            appearance149.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance149.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance149.FontData.BoldAsString = "True";
+            appearance149.FontData.Name = "MS Reference Sans Serif";
+            appearance149.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance149.ImageHAlign = Infragistics.Win.HAlign.Center;
+            appearance149.ImageVAlign = Infragistics.Win.VAlign.Middle;
+            appearance149.TextHAlignAsString = "Center";
+            appearance149.TextVAlignAsString = "Middle";
+            ultraGridColumn122.CellAppearance = appearance149;
+            appearance150.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn122.CellButtonAppearance = appearance150;
+            appearance151.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance151.BackColor2 = System.Drawing.Color.DimGray;
+            appearance151.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance151.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance151.FontData.BoldAsString = "True";
+            appearance151.FontData.Name = "MS Reference Sans Serif";
+            appearance151.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn122.Header.Appearance = appearance151;
+            ultraGridColumn122.Header.Caption = "분할";
+            ultraGridColumn122.Header.VisiblePosition = 8;
+            ultraGridColumn122.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.DropDownList;
+            ultraGridColumn122.Width = 36;
+            appearance152.BackColor = System.Drawing.Color.DarkGray;
+            appearance152.BackColor2 = System.Drawing.Color.DimGray;
+            appearance152.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance152.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance152.FontData.BoldAsString = "True";
+            appearance152.FontData.Name = "MS Reference Sans Serif";
+            appearance152.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance152.TextHAlignAsString = "Center";
+            appearance152.TextVAlignAsString = "Middle";
+            ultraGridColumn123.CellAppearance = appearance152;
+            appearance153.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraGridColumn123.CellButtonAppearance = appearance153;
+            appearance154.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance154.BackColor2 = System.Drawing.Color.DimGray;
+            appearance154.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance154.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance154.FontData.BoldAsString = "True";
+            appearance154.FontData.Name = "MS Reference Sans Serif";
+            appearance154.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn123.Header.Appearance = appearance154;
+            ultraGridColumn123.Header.Caption = "판별";
+            ultraGridColumn123.Header.VisiblePosition = 9;
+            ultraGridColumn123.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.CheckBox;
+            ultraGridColumn123.Width = 36;
+            appearance155.BackColor = System.Drawing.Color.DarkGray;
+            appearance155.BackColor2 = System.Drawing.Color.DimGray;
+            appearance155.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance155.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance155.FontData.BoldAsString = "True";
+            appearance155.FontData.Name = "MS Reference Sans Serif";
+            appearance155.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance155.TextHAlignAsString = "Center";
+            appearance155.TextVAlignAsString = "Middle";
+            ultraGridColumn124.CellAppearance = appearance155;
+            appearance156.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            appearance156.BackColor2 = System.Drawing.Color.DimGray;
+            appearance156.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance156.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance156.FontData.BoldAsString = "True";
+            appearance156.ForeColor = System.Drawing.Color.White;
+            ultraGridColumn124.Header.Appearance = appearance156;
+            ultraGridColumn124.Header.Caption = "밝기";
+            ultraGridColumn124.Header.VisiblePosition = 10;
+            ultraGridColumn124.Style = Infragistics.Win.UltraWinGrid.ColumnStyle.Edit;
+            ultraGridColumn124.Width = 36;
+            ultraGridBand6.Columns.AddRange(new object[] {
+            ultraGridColumn100,
+            ultraGridColumn101,
+            ultraGridColumn102,
+            ultraGridColumn103,
+            ultraGridColumn104,
+            ultraGridColumn105,
+            ultraGridColumn120,
+            ultraGridColumn121,
+            ultraGridColumn122,
+            ultraGridColumn123,
+            ultraGridColumn124});
+            this.uGrd_Recipe_RightData.DisplayLayout.BandsSerializer.Add(ultraGridBand6);
+            this.uGrd_Recipe_RightData.DisplayLayout.InterBandSpacing = 10;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
+            appearance157.BackColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.CardAreaAppearance = appearance157;
+            appearance158.BackColor = System.Drawing.SystemColors.Control;
+            appearance158.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
+            appearance158.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            appearance158.FontData.SizeInPoints = 7F;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.CellAppearance = appearance158;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.FixedRowIndicator = Infragistics.Win.UltraWinGrid.FixedRowIndicator.None;
+            appearance159.BackColor = System.Drawing.SystemColors.Control;
+            appearance159.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance159.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            appearance159.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.HeaderAppearance = appearance159;
+            appearance160.ForeColor = System.Drawing.Color.White;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.HotTrackCellAppearance = appearance160;
+            appearance161.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.RowSelectorAppearance = appearance161;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.RowSizing = Infragistics.Win.UltraWinGrid.RowSizing.Fixed;
+            appearance162.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance162.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance162.BorderColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.SelectedCellAppearance = appearance162;
+            appearance163.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            appearance163.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            appearance163.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.SelectedRowAppearance = appearance163;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.uGrd_Recipe_RightData.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.uGrd_Recipe_RightData.DisplayLayout.RowConnectorColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.uGrd_Recipe_RightData.DisplayLayout.RowConnectorStyle = Infragistics.Win.UltraWinGrid.RowConnectorStyle.Dashed;
+            this.uGrd_Recipe_RightData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uGrd_Recipe_RightData.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.uGrd_Recipe_RightData.Location = new System.Drawing.Point(0, 0);
+            this.uGrd_Recipe_RightData.Name = "uGrd_Recipe_RightData";
+            this.uGrd_Recipe_RightData.Size = new System.Drawing.Size(432, 463);
+            this.uGrd_Recipe_RightData.TabIndex = 76;
+            this.uGrd_Recipe_RightData.CellListSelect += new Infragistics.Win.UltraWinGrid.CellEventHandler(this.uGrd_Recipe_RightData_CellListSelect);
+            this.uGrd_Recipe_RightData.ClickCellButton += new Infragistics.Win.UltraWinGrid.CellEventHandler(this.uGrd_Recipe_RightData_ClickCellButton);
+            // 
+            // uDS_Recipe_Right
+            // 
+            this.uDS_Recipe_Right.Band.Columns.AddRange(new object[] {
+            ultraDataColumn50,
+            ultraDataColumn51,
+            ultraDataColumn52,
+            ultraDataColumn53,
+            ultraDataColumn54,
+            ultraDataColumn55,
+            ultraDataColumn56,
+            ultraDataColumn57,
+            ultraDataColumn58,
+            ultraDataColumn59,
+            ultraDataColumn60});
             // 
             // ultraTabPageControl2
             // 
@@ -2838,8 +3512,8 @@
             // 
             // SystemConfig_Tab_BackPanel
             // 
-            appearance114.BackColor = System.Drawing.Color.Silver;
-            this.SystemConfig_Tab_BackPanel.Appearance = appearance114;
+            appearance164.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SystemConfig_Tab_BackPanel.Appearance = appearance164;
             // 
             // SystemConfig_Tab_BackPanel.ClientArea
             // 
@@ -2868,118 +3542,157 @@
             this.SystemConfig_Tab_BackPanel.Name = "SystemConfig_Tab_BackPanel";
             this.SystemConfig_Tab_BackPanel.Size = new System.Drawing.Size(1256, 805);
             this.SystemConfig_Tab_BackPanel.TabIndex = 0;
+            this.SystemConfig_Tab_BackPanel.PaintClient += new System.Windows.Forms.PaintEventHandler(this.SystemConfig_Tab_BackPanel_PaintClient);
             // 
             // ultraPanel69
             // 
-            appearance115.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel69.Appearance = appearance115;
+            appearance165.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel69.Appearance = appearance165;
             // 
             // ultraPanel69.ClientArea
             // 
             this.ultraPanel69.ClientArea.Controls.Add(this.ultraPanel70);
-            this.ultraPanel69.Location = new System.Drawing.Point(10, 685);
+            this.ultraPanel69.Location = new System.Drawing.Point(800, 316);
             this.ultraPanel69.Name = "ultraPanel69";
-            this.ultraPanel69.Size = new System.Drawing.Size(385, 107);
+            this.ultraPanel69.Size = new System.Drawing.Size(385, 89);
             this.ultraPanel69.TabIndex = 149;
             this.ultraPanel69.TabStop = false;
             // 
             // ultraPanel70
             // 
-            appearance116.BackColor = System.Drawing.Color.White;
-            this.ultraPanel70.Appearance = appearance116;
+            appearance166.BackColor = System.Drawing.Color.White;
+            this.ultraPanel70.Appearance = appearance166;
             // 
             // ultraPanel70.ClientArea
             // 
             this.ultraPanel70.ClientArea.Controls.Add(this.ultraLabel71);
-            this.ultraPanel70.ClientArea.Controls.Add(this.ultraTextEditor6);
+            this.ultraPanel70.ClientArea.Controls.Add(this.ultraLabel79);
+            this.ultraPanel70.ClientArea.Controls.Add(this.System_uText_Edge09_Right);
+            this.ultraPanel70.ClientArea.Controls.Add(this.ultraLabel78);
             this.ultraPanel70.ClientArea.Controls.Add(this.ultraLabel72);
-            this.ultraPanel70.ClientArea.Controls.Add(this.ultraTextEditor7);
+            this.ultraPanel70.ClientArea.Controls.Add(this.System_uText_Edge08_Right);
             this.ultraPanel70.ClientArea.Controls.Add(this.ultraLabel73);
             this.ultraPanel70.ClientArea.Controls.Add(this.ultraLabel76);
-            this.ultraPanel70.ClientArea.Controls.Add(this.ultraTextEditor8);
+            this.ultraPanel70.ClientArea.Controls.Add(this.System_uText_Edge07_Right);
             this.ultraPanel70.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel70.Name = "ultraPanel70";
-            this.ultraPanel70.Size = new System.Drawing.Size(381, 103);
+            this.ultraPanel70.Size = new System.Drawing.Size(381, 85);
             this.ultraPanel70.TabIndex = 72;
             // 
             // ultraLabel71
             // 
-            appearance117.BackColor = System.Drawing.Color.DimGray;
-            appearance117.BackColor2 = System.Drawing.Color.Gray;
-            appearance117.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance117.ForeColor = System.Drawing.Color.White;
-            appearance117.TextHAlignAsString = "Left";
-            appearance117.TextVAlignAsString = "Middle";
-            this.ultraLabel71.Appearance = appearance117;
+            appearance167.BackColor = System.Drawing.Color.DimGray;
+            appearance167.BackColor2 = System.Drawing.Color.Gray;
+            appearance167.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance167.ForeColor = System.Drawing.Color.White;
+            appearance167.TextHAlignAsString = "Left";
+            appearance167.TextVAlignAsString = "Middle";
+            this.ultraLabel71.Appearance = appearance167;
             this.ultraLabel71.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel71.Enabled = false;
             this.ultraLabel71.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel71.Location = new System.Drawing.Point(3, 78);
+            this.ultraLabel71.Location = new System.Drawing.Point(298, 30);
             this.ultraLabel71.Name = "ultraLabel71";
             this.ultraLabel71.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel71.Size = new System.Drawing.Size(293, 22);
+            this.ultraLabel71.Size = new System.Drawing.Size(80, 25);
             this.ultraLabel71.TabIndex = 175;
+            this.ultraLabel71.Text = "Find Unit";
             // 
-            // ultraTextEditor6
+            // ultraLabel79
             // 
-            appearance118.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance118.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance118.TextHAlignAsString = "Center";
-            this.ultraTextEditor6.Appearance = appearance118;
-            this.ultraTextEditor6.AutoSize = false;
-            this.ultraTextEditor6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor6.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor6.Enabled = false;
-            this.ultraTextEditor6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor6.Location = new System.Drawing.Point(297, 78);
-            this.ultraTextEditor6.Name = "ultraTextEditor6";
-            this.ultraTextEditor6.Size = new System.Drawing.Size(81, 22);
-            this.ultraTextEditor6.TabIndex = 174;
+            appearance168.BackColor = System.Drawing.Color.DimGray;
+            appearance168.BackColor2 = System.Drawing.Color.Gray;
+            appearance168.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance168.ForeColor = System.Drawing.Color.White;
+            appearance168.TextHAlignAsString = "Left";
+            appearance168.TextVAlignAsString = "Middle";
+            this.ultraLabel79.Appearance = appearance168;
+            this.ultraLabel79.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel79.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel79.Location = new System.Drawing.Point(3, 30);
+            this.ultraLabel79.Name = "ultraLabel79";
+            this.ultraLabel79.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel79.Size = new System.Drawing.Size(129, 25);
+            this.ultraLabel79.TabIndex = 180;
+            this.ultraLabel79.Text = "항목 이름";
+            // 
+            // System_uText_Edge09_Right
+            // 
+            appearance169.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance169.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance169.TextHAlignAsString = "Center";
+            this.System_uText_Edge09_Right.Appearance = appearance169;
+            this.System_uText_Edge09_Right.AutoSize = false;
+            this.System_uText_Edge09_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uText_Edge09_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uText_Edge09_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uText_Edge09_Right.Location = new System.Drawing.Point(298, 57);
+            this.System_uText_Edge09_Right.Name = "System_uText_Edge09_Right";
+            this.System_uText_Edge09_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uText_Edge09_Right.TabIndex = 174;
+            this.System_uText_Edge09_Right.Text = "10";
+            // 
+            // ultraLabel78
+            // 
+            appearance170.BackColor = System.Drawing.Color.DimGray;
+            appearance170.BackColor2 = System.Drawing.Color.Gray;
+            appearance170.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance170.ForeColor = System.Drawing.Color.White;
+            appearance170.TextHAlignAsString = "Left";
+            appearance170.TextVAlignAsString = "Middle";
+            this.ultraLabel78.Appearance = appearance170;
+            this.ultraLabel78.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel78.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel78.Location = new System.Drawing.Point(3, 57);
+            this.ultraLabel78.Name = "ultraLabel78";
+            this.ultraLabel78.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel78.Size = new System.Drawing.Size(129, 25);
+            this.ultraLabel78.TabIndex = 176;
+            this.ultraLabel78.Text = "설정 값";
             // 
             // ultraLabel72
             // 
-            appearance119.BackColor = System.Drawing.Color.DimGray;
-            appearance119.BackColor2 = System.Drawing.Color.Gray;
-            appearance119.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance119.ForeColor = System.Drawing.Color.White;
-            appearance119.TextHAlignAsString = "Left";
-            appearance119.TextVAlignAsString = "Middle";
-            this.ultraLabel72.Appearance = appearance119;
+            appearance171.BackColor = System.Drawing.Color.DimGray;
+            appearance171.BackColor2 = System.Drawing.Color.Gray;
+            appearance171.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance171.ForeColor = System.Drawing.Color.White;
+            appearance171.TextHAlignAsString = "Left";
+            appearance171.TextVAlignAsString = "Middle";
+            this.ultraLabel72.Appearance = appearance171;
             this.ultraLabel72.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel72.Enabled = false;
             this.ultraLabel72.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel72.Location = new System.Drawing.Point(3, 54);
+            this.ultraLabel72.Location = new System.Drawing.Point(216, 30);
             this.ultraLabel72.Name = "ultraLabel72";
             this.ultraLabel72.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel72.Size = new System.Drawing.Size(293, 22);
+            this.ultraLabel72.Size = new System.Drawing.Size(80, 25);
             this.ultraLabel72.TabIndex = 173;
+            this.ultraLabel72.Text = "Threshold 2";
             // 
-            // ultraTextEditor7
+            // System_uText_Edge08_Right
             // 
-            appearance120.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance120.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance120.TextHAlignAsString = "Center";
-            this.ultraTextEditor7.Appearance = appearance120;
-            this.ultraTextEditor7.AutoSize = false;
-            this.ultraTextEditor7.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor7.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor7.Enabled = false;
-            this.ultraTextEditor7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor7.Location = new System.Drawing.Point(297, 54);
-            this.ultraTextEditor7.Name = "ultraTextEditor7";
-            this.ultraTextEditor7.Size = new System.Drawing.Size(81, 22);
-            this.ultraTextEditor7.TabIndex = 172;
+            appearance172.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance172.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance172.TextHAlignAsString = "Center";
+            this.System_uText_Edge08_Right.Appearance = appearance172;
+            this.System_uText_Edge08_Right.AutoSize = false;
+            this.System_uText_Edge08_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uText_Edge08_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uText_Edge08_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uText_Edge08_Right.Location = new System.Drawing.Point(216, 57);
+            this.System_uText_Edge08_Right.Name = "System_uText_Edge08_Right";
+            this.System_uText_Edge08_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uText_Edge08_Right.TabIndex = 172;
+            this.System_uText_Edge08_Right.Text = "190";
             // 
             // ultraLabel73
             // 
-            appearance121.BackColor = System.Drawing.Color.DimGray;
-            appearance121.BackColor2 = System.Drawing.Color.Gray;
-            appearance121.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance121.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance121.ForeColor = System.Drawing.Color.White;
-            appearance121.TextHAlignAsString = "Center";
-            appearance121.TextVAlignAsString = "Middle";
-            this.ultraLabel73.Appearance = appearance121;
+            appearance173.BackColor = System.Drawing.Color.DimGray;
+            appearance173.BackColor2 = System.Drawing.Color.Gray;
+            appearance173.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance173.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance173.ForeColor = System.Drawing.Color.White;
+            appearance173.TextHAlignAsString = "Center";
+            appearance173.TextVAlignAsString = "Middle";
+            this.ultraLabel73.Appearance = appearance173;
             this.ultraLabel73.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel73.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel73.Location = new System.Drawing.Point(3, 3);
@@ -2987,154 +3700,192 @@
             this.ultraLabel73.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel73.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel73.TabIndex = 171;
-            this.ultraLabel73.Text = "시스템 항목 설정";
+            this.ultraLabel73.Text = "우측면 엣지 검출 프로세싱 파라미터";
             this.ultraLabel73.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraLabel76
             // 
-            appearance122.BackColor = System.Drawing.Color.DimGray;
-            appearance122.BackColor2 = System.Drawing.Color.Gray;
-            appearance122.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance122.ForeColor = System.Drawing.Color.White;
-            appearance122.TextHAlignAsString = "Left";
-            appearance122.TextVAlignAsString = "Middle";
-            this.ultraLabel76.Appearance = appearance122;
+            appearance174.BackColor = System.Drawing.Color.DimGray;
+            appearance174.BackColor2 = System.Drawing.Color.Gray;
+            appearance174.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance174.ForeColor = System.Drawing.Color.White;
+            appearance174.TextHAlignAsString = "Left";
+            appearance174.TextVAlignAsString = "Middle";
+            this.ultraLabel76.Appearance = appearance174;
             this.ultraLabel76.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel76.Enabled = false;
             this.ultraLabel76.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel76.Location = new System.Drawing.Point(3, 30);
+            this.ultraLabel76.Location = new System.Drawing.Point(134, 30);
             this.ultraLabel76.Name = "ultraLabel76";
             this.ultraLabel76.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel76.Size = new System.Drawing.Size(293, 22);
+            this.ultraLabel76.Size = new System.Drawing.Size(80, 25);
             this.ultraLabel76.TabIndex = 168;
+            this.ultraLabel76.Text = "Threshold 1";
             // 
-            // ultraTextEditor8
+            // System_uText_Edge07_Right
             // 
-            appearance123.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance123.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance123.TextHAlignAsString = "Center";
-            this.ultraTextEditor8.Appearance = appearance123;
-            this.ultraTextEditor8.AutoSize = false;
-            this.ultraTextEditor8.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor8.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor8.Enabled = false;
-            this.ultraTextEditor8.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor8.Location = new System.Drawing.Point(297, 30);
-            this.ultraTextEditor8.Name = "ultraTextEditor8";
-            this.ultraTextEditor8.Size = new System.Drawing.Size(81, 22);
-            this.ultraTextEditor8.TabIndex = 165;
+            appearance175.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance175.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance175.TextHAlignAsString = "Center";
+            this.System_uText_Edge07_Right.Appearance = appearance175;
+            this.System_uText_Edge07_Right.AutoSize = false;
+            this.System_uText_Edge07_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uText_Edge07_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uText_Edge07_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uText_Edge07_Right.Location = new System.Drawing.Point(134, 57);
+            this.System_uText_Edge07_Right.Name = "System_uText_Edge07_Right";
+            this.System_uText_Edge07_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uText_Edge07_Right.TabIndex = 165;
+            this.System_uText_Edge07_Right.Text = "150";
             // 
             // ultraPanel36
             // 
-            appearance124.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel36.Appearance = appearance124;
+            appearance176.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel36.Appearance = appearance176;
             // 
             // ultraPanel36.ClientArea
             // 
             this.ultraPanel36.ClientArea.Controls.Add(this.ultraPanel37);
-            this.ultraPanel36.Location = new System.Drawing.Point(405, 685);
+            this.ultraPanel36.Location = new System.Drawing.Point(800, 415);
             this.ultraPanel36.Name = "ultraPanel36";
-            this.ultraPanel36.Size = new System.Drawing.Size(385, 107);
+            this.ultraPanel36.Size = new System.Drawing.Size(385, 89);
             this.ultraPanel36.TabIndex = 148;
             this.ultraPanel36.TabStop = false;
             // 
             // ultraPanel37
             // 
-            appearance125.BackColor = System.Drawing.Color.White;
-            this.ultraPanel37.Appearance = appearance125;
+            appearance177.BackColor = System.Drawing.Color.White;
+            this.ultraPanel37.Appearance = appearance177;
             // 
             // ultraPanel37.ClientArea
             // 
             this.ultraPanel37.ClientArea.Controls.Add(this.ultraLabel70);
-            this.ultraPanel37.ClientArea.Controls.Add(this.ultraTextEditor5);
+            this.ultraPanel37.ClientArea.Controls.Add(this.System_uText_Line09_Right);
+            this.ultraPanel37.ClientArea.Controls.Add(this.ultraLabel87);
+            this.ultraPanel37.ClientArea.Controls.Add(this.ultraLabel86);
             this.ultraPanel37.ClientArea.Controls.Add(this.ultraLabel57);
-            this.ultraPanel37.ClientArea.Controls.Add(this.ultraTextEditor2);
+            this.ultraPanel37.ClientArea.Controls.Add(this.System_uText_Line07_Right);
             this.ultraPanel37.ClientArea.Controls.Add(this.ultraLabel58);
             this.ultraPanel37.ClientArea.Controls.Add(this.ultraLabel69);
-            this.ultraPanel37.ClientArea.Controls.Add(this.ultraTextEditor4);
+            this.ultraPanel37.ClientArea.Controls.Add(this.System_uText_Line08_Right);
             this.ultraPanel37.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel37.Name = "ultraPanel37";
-            this.ultraPanel37.Size = new System.Drawing.Size(381, 103);
+            this.ultraPanel37.Size = new System.Drawing.Size(381, 85);
             this.ultraPanel37.TabIndex = 72;
             // 
             // ultraLabel70
             // 
-            appearance126.BackColor = System.Drawing.Color.DimGray;
-            appearance126.BackColor2 = System.Drawing.Color.Gray;
-            appearance126.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance126.ForeColor = System.Drawing.Color.White;
-            appearance126.TextHAlignAsString = "Left";
-            appearance126.TextVAlignAsString = "Middle";
-            this.ultraLabel70.Appearance = appearance126;
+            appearance178.BackColor = System.Drawing.Color.DimGray;
+            appearance178.BackColor2 = System.Drawing.Color.Gray;
+            appearance178.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance178.ForeColor = System.Drawing.Color.White;
+            appearance178.TextHAlignAsString = "Left";
+            appearance178.TextVAlignAsString = "Middle";
+            this.ultraLabel70.Appearance = appearance178;
             this.ultraLabel70.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel70.Enabled = false;
             this.ultraLabel70.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel70.Location = new System.Drawing.Point(3, 78);
+            this.ultraLabel70.Location = new System.Drawing.Point(298, 30);
             this.ultraLabel70.Name = "ultraLabel70";
             this.ultraLabel70.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel70.Size = new System.Drawing.Size(293, 22);
+            this.ultraLabel70.Size = new System.Drawing.Size(80, 25);
             this.ultraLabel70.TabIndex = 175;
+            this.ultraLabel70.Text = "Length 2";
             // 
-            // ultraTextEditor5
+            // System_uText_Line09_Right
             // 
-            appearance127.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance127.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance127.TextHAlignAsString = "Center";
-            this.ultraTextEditor5.Appearance = appearance127;
-            this.ultraTextEditor5.AutoSize = false;
-            this.ultraTextEditor5.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor5.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor5.Enabled = false;
-            this.ultraTextEditor5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor5.Location = new System.Drawing.Point(297, 78);
-            this.ultraTextEditor5.Name = "ultraTextEditor5";
-            this.ultraTextEditor5.Size = new System.Drawing.Size(81, 22);
-            this.ultraTextEditor5.TabIndex = 174;
+            appearance179.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance179.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance179.TextHAlignAsString = "Center";
+            this.System_uText_Line09_Right.Appearance = appearance179;
+            this.System_uText_Line09_Right.AutoSize = false;
+            this.System_uText_Line09_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uText_Line09_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uText_Line09_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uText_Line09_Right.Location = new System.Drawing.Point(298, 57);
+            this.System_uText_Line09_Right.Name = "System_uText_Line09_Right";
+            this.System_uText_Line09_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uText_Line09_Right.TabIndex = 174;
+            this.System_uText_Line09_Right.Text = "0";
+            // 
+            // ultraLabel87
+            // 
+            appearance180.BackColor = System.Drawing.Color.DimGray;
+            appearance180.BackColor2 = System.Drawing.Color.Gray;
+            appearance180.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance180.ForeColor = System.Drawing.Color.White;
+            appearance180.TextHAlignAsString = "Left";
+            appearance180.TextVAlignAsString = "Middle";
+            this.ultraLabel87.Appearance = appearance180;
+            this.ultraLabel87.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel87.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel87.Location = new System.Drawing.Point(3, 57);
+            this.ultraLabel87.Name = "ultraLabel87";
+            this.ultraLabel87.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel87.Size = new System.Drawing.Size(129, 25);
+            this.ultraLabel87.TabIndex = 184;
+            this.ultraLabel87.Text = "설정 값";
+            // 
+            // ultraLabel86
+            // 
+            appearance181.BackColor = System.Drawing.Color.DimGray;
+            appearance181.BackColor2 = System.Drawing.Color.Gray;
+            appearance181.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance181.ForeColor = System.Drawing.Color.White;
+            appearance181.TextHAlignAsString = "Left";
+            appearance181.TextVAlignAsString = "Middle";
+            this.ultraLabel86.Appearance = appearance181;
+            this.ultraLabel86.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel86.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel86.Location = new System.Drawing.Point(3, 30);
+            this.ultraLabel86.Name = "ultraLabel86";
+            this.ultraLabel86.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel86.Size = new System.Drawing.Size(129, 25);
+            this.ultraLabel86.TabIndex = 185;
+            this.ultraLabel86.Text = "항목 이름";
             // 
             // ultraLabel57
             // 
-            appearance128.BackColor = System.Drawing.Color.DimGray;
-            appearance128.BackColor2 = System.Drawing.Color.Gray;
-            appearance128.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance128.ForeColor = System.Drawing.Color.White;
-            appearance128.TextHAlignAsString = "Left";
-            appearance128.TextVAlignAsString = "Middle";
-            this.ultraLabel57.Appearance = appearance128;
+            appearance182.BackColor = System.Drawing.Color.DimGray;
+            appearance182.BackColor2 = System.Drawing.Color.Gray;
+            appearance182.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance182.ForeColor = System.Drawing.Color.White;
+            appearance182.TextHAlignAsString = "Left";
+            appearance182.TextVAlignAsString = "Middle";
+            this.ultraLabel57.Appearance = appearance182;
             this.ultraLabel57.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel57.Enabled = false;
             this.ultraLabel57.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel57.Location = new System.Drawing.Point(3, 54);
+            this.ultraLabel57.Location = new System.Drawing.Point(216, 30);
             this.ultraLabel57.Name = "ultraLabel57";
             this.ultraLabel57.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel57.Size = new System.Drawing.Size(293, 22);
+            this.ultraLabel57.Size = new System.Drawing.Size(80, 25);
             this.ultraLabel57.TabIndex = 173;
+            this.ultraLabel57.Text = "Length 1";
             // 
-            // ultraTextEditor2
+            // System_uText_Line07_Right
             // 
-            appearance129.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance129.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance129.TextHAlignAsString = "Center";
-            this.ultraTextEditor2.Appearance = appearance129;
-            this.ultraTextEditor2.AutoSize = false;
-            this.ultraTextEditor2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor2.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor2.Enabled = false;
-            this.ultraTextEditor2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor2.Location = new System.Drawing.Point(297, 54);
-            this.ultraTextEditor2.Name = "ultraTextEditor2";
-            this.ultraTextEditor2.Size = new System.Drawing.Size(81, 22);
-            this.ultraTextEditor2.TabIndex = 172;
+            appearance183.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance183.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance183.TextHAlignAsString = "Center";
+            this.System_uText_Line07_Right.Appearance = appearance183;
+            this.System_uText_Line07_Right.AutoSize = false;
+            this.System_uText_Line07_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uText_Line07_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uText_Line07_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uText_Line07_Right.Location = new System.Drawing.Point(134, 57);
+            this.System_uText_Line07_Right.Name = "System_uText_Line07_Right";
+            this.System_uText_Line07_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uText_Line07_Right.TabIndex = 172;
+            this.System_uText_Line07_Right.Text = "1";
             // 
             // ultraLabel58
             // 
-            appearance130.BackColor = System.Drawing.Color.DimGray;
-            appearance130.BackColor2 = System.Drawing.Color.Gray;
-            appearance130.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance130.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance130.ForeColor = System.Drawing.Color.White;
-            appearance130.TextHAlignAsString = "Center";
-            appearance130.TextVAlignAsString = "Middle";
-            this.ultraLabel58.Appearance = appearance130;
+            appearance184.BackColor = System.Drawing.Color.DimGray;
+            appearance184.BackColor2 = System.Drawing.Color.Gray;
+            appearance184.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance184.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance184.ForeColor = System.Drawing.Color.White;
+            appearance184.TextHAlignAsString = "Center";
+            appearance184.TextVAlignAsString = "Middle";
+            this.ultraLabel58.Appearance = appearance184;
             this.ultraLabel58.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel58.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel58.Location = new System.Drawing.Point(3, 3);
@@ -3142,156 +3893,182 @@
             this.ultraLabel58.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel58.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel58.TabIndex = 171;
-            this.ultraLabel58.Text = "시스템 항목 설정";
+            this.ultraLabel58.Text = "우측면 라인 검출 프로세싱 파라미터";
             this.ultraLabel58.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraLabel69
             // 
-            appearance131.BackColor = System.Drawing.Color.DimGray;
-            appearance131.BackColor2 = System.Drawing.Color.Gray;
-            appearance131.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance131.ForeColor = System.Drawing.Color.White;
-            appearance131.TextHAlignAsString = "Left";
-            appearance131.TextVAlignAsString = "Middle";
-            this.ultraLabel69.Appearance = appearance131;
+            appearance185.BackColor = System.Drawing.Color.DimGray;
+            appearance185.BackColor2 = System.Drawing.Color.Gray;
+            appearance185.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance185.ForeColor = System.Drawing.Color.White;
+            appearance185.TextHAlignAsString = "Left";
+            appearance185.TextVAlignAsString = "Middle";
+            this.ultraLabel69.Appearance = appearance185;
             this.ultraLabel69.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel69.Enabled = false;
             this.ultraLabel69.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel69.Location = new System.Drawing.Point(3, 30);
+            this.ultraLabel69.Location = new System.Drawing.Point(134, 30);
             this.ultraLabel69.Name = "ultraLabel69";
             this.ultraLabel69.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel69.Size = new System.Drawing.Size(293, 22);
+            this.ultraLabel69.Size = new System.Drawing.Size(80, 25);
             this.ultraLabel69.TabIndex = 168;
+            this.ultraLabel69.Text = "Threshold";
             // 
-            // ultraTextEditor4
+            // System_uText_Line08_Right
             // 
-            appearance132.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance132.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance132.TextHAlignAsString = "Center";
-            this.ultraTextEditor4.Appearance = appearance132;
-            this.ultraTextEditor4.AutoSize = false;
-            this.ultraTextEditor4.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor4.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor4.Enabled = false;
-            this.ultraTextEditor4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor4.Location = new System.Drawing.Point(297, 30);
-            this.ultraTextEditor4.Name = "ultraTextEditor4";
-            this.ultraTextEditor4.Size = new System.Drawing.Size(81, 22);
-            this.ultraTextEditor4.TabIndex = 165;
+            appearance186.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance186.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance186.TextHAlignAsString = "Center";
+            this.System_uText_Line08_Right.Appearance = appearance186;
+            this.System_uText_Line08_Right.AutoSize = false;
+            this.System_uText_Line08_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uText_Line08_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uText_Line08_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uText_Line08_Right.Location = new System.Drawing.Point(216, 57);
+            this.System_uText_Line08_Right.Name = "System_uText_Line08_Right";
+            this.System_uText_Line08_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uText_Line08_Right.TabIndex = 165;
+            this.System_uText_Line08_Right.Text = "5";
             // 
             // ultraPanel66
             // 
-            appearance133.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel66.Appearance = appearance133;
+            appearance187.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel66.Appearance = appearance187;
             // 
             // ultraPanel66.ClientArea
             // 
             this.ultraPanel66.ClientArea.Controls.Add(this.ultraPanel68);
-            this.ultraPanel66.Location = new System.Drawing.Point(800, 415);
+            this.ultraPanel66.Location = new System.Drawing.Point(800, 10);
             this.ultraPanel66.Name = "ultraPanel66";
-            this.ultraPanel66.Size = new System.Drawing.Size(444, 89);
+            this.ultraPanel66.Size = new System.Drawing.Size(444, 143);
             this.ultraPanel66.TabIndex = 147;
             this.ultraPanel66.TabStop = false;
             // 
             // ultraPanel68
             // 
-            appearance134.BackColor = System.Drawing.Color.White;
-            this.ultraPanel68.Appearance = appearance134;
+            appearance188.BackColor = System.Drawing.Color.White;
+            this.ultraPanel68.Appearance = appearance188;
             // 
             // ultraPanel68.ClientArea
             // 
-            this.ultraPanel68.ClientArea.Controls.Add(this.ultraTextEditor15);
-            this.ultraPanel68.ClientArea.Controls.Add(this.ultraTextEditor16);
+            this.ultraPanel68.ClientArea.Controls.Add(this.System_uTxt_ImagePath_Right);
+            this.ultraPanel68.ClientArea.Controls.Add(this.System_uBtn_ImagePath_Right);
             this.ultraPanel68.ClientArea.Controls.Add(this.ultraLabel84);
             this.ultraPanel68.ClientArea.Controls.Add(this.ultraLabel85);
-            this.ultraPanel68.ClientArea.Controls.Add(this.ultraComboEditor1);
+            this.ultraPanel68.ClientArea.Controls.Add(this.System_uLabel_EtcItem02);
+            this.ultraPanel68.ClientArea.Controls.Add(this.System_uCombo_ImageFail_Right);
             this.ultraPanel68.ClientArea.Controls.Add(this.ultraLabel55);
-            this.ultraPanel68.ClientArea.Controls.Add(this.ultraComboEditor2);
+            this.ultraPanel68.ClientArea.Controls.Add(this.System_uCombo_ImagePass_Right);
             this.ultraPanel68.ClientArea.Controls.Add(this.ultraLabel56);
             this.ultraPanel68.ClientArea.Controls.Add(this.ultraLabel61);
             this.ultraPanel68.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel68.Name = "ultraPanel68";
-            this.ultraPanel68.Size = new System.Drawing.Size(440, 85);
+            this.ultraPanel68.Size = new System.Drawing.Size(440, 138);
             this.ultraPanel68.TabIndex = 72;
             // 
-            // ultraTextEditor15
+            // System_uTxt_ImagePath_Right
             // 
-            appearance135.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance135.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance135.TextHAlignAsString = "Center";
-            this.ultraTextEditor15.Appearance = appearance135;
-            this.ultraTextEditor15.AutoSize = false;
-            this.ultraTextEditor15.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor15.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor15.Enabled = false;
-            this.ultraTextEditor15.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor15.Location = new System.Drawing.Point(357, 57);
-            this.ultraTextEditor15.Name = "ultraTextEditor15";
-            this.ultraTextEditor15.Size = new System.Drawing.Size(80, 25);
-            this.ultraTextEditor15.TabIndex = 187;
+            appearance189.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance189.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance189.TextHAlignAsString = "Left";
+            this.System_uTxt_ImagePath_Right.Appearance = appearance189;
+            this.System_uTxt_ImagePath_Right.AutoSize = false;
+            this.System_uTxt_ImagePath_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uTxt_ImagePath_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uTxt_ImagePath_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uTxt_ImagePath_Right.Location = new System.Drawing.Point(3, 111);
+            this.System_uTxt_ImagePath_Right.Name = "System_uTxt_ImagePath_Right";
+            this.System_uTxt_ImagePath_Right.ReadOnly = true;
+            this.System_uTxt_ImagePath_Right.Size = new System.Drawing.Size(434, 25);
+            this.System_uTxt_ImagePath_Right.TabIndex = 189;
+            this.System_uTxt_ImagePath_Right.Text = "Image Data  Save Directory is ...";
             // 
-            // ultraTextEditor16
+            // System_uBtn_ImagePath_Right
             // 
-            appearance136.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance136.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance136.TextHAlignAsString = "Center";
-            this.ultraTextEditor16.Appearance = appearance136;
-            this.ultraTextEditor16.AutoSize = false;
-            this.ultraTextEditor16.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor16.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor16.Enabled = false;
-            this.ultraTextEditor16.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor16.Location = new System.Drawing.Point(357, 30);
-            this.ultraTextEditor16.Name = "ultraTextEditor16";
-            this.ultraTextEditor16.Size = new System.Drawing.Size(80, 25);
-            this.ultraTextEditor16.TabIndex = 186;
+            appearance190.BackColor = System.Drawing.Color.DarkGray;
+            appearance190.BackColor2 = System.Drawing.Color.DimGray;
+            appearance190.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance190.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_ImagePath_Right.Appearance = appearance190;
+            this.System_uBtn_ImagePath_Right.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
+            this.System_uBtn_ImagePath_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            appearance191.BorderColor = System.Drawing.Color.White;
+            appearance191.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_ImagePath_Right.HotTrackAppearance = appearance191;
+            this.System_uBtn_ImagePath_Right.Location = new System.Drawing.Point(357, 84);
+            this.System_uBtn_ImagePath_Right.Name = "System_uBtn_ImagePath_Right";
+            this.System_uBtn_ImagePath_Right.ShowFocusRect = false;
+            this.System_uBtn_ImagePath_Right.ShowOutline = false;
+            this.System_uBtn_ImagePath_Right.Size = new System.Drawing.Size(81, 25);
+            this.System_uBtn_ImagePath_Right.TabIndex = 188;
+            this.System_uBtn_ImagePath_Right.Text = "찾아보기";
+            this.System_uBtn_ImagePath_Right.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.System_uBtn_ImagePath_Right.Click += new System.EventHandler(this.System_uBtn_ImagePath_Right_Click);
             // 
             // ultraLabel84
             // 
-            appearance137.BackColor = System.Drawing.Color.DimGray;
-            appearance137.BackColor2 = System.Drawing.Color.Gray;
-            appearance137.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance137.ForeColor = System.Drawing.Color.White;
-            appearance137.TextHAlignAsString = "Left";
-            appearance137.TextVAlignAsString = "Middle";
-            this.ultraLabel84.Appearance = appearance137;
+            appearance192.BackColor = System.Drawing.Color.DimGray;
+            appearance192.BackColor2 = System.Drawing.Color.Gray;
+            appearance192.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance192.ForeColor = System.Drawing.Color.White;
+            appearance192.TextHAlignAsString = "Left";
+            appearance192.TextVAlignAsString = "Middle";
+            this.ultraLabel84.Appearance = appearance192;
             this.ultraLabel84.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel84.Enabled = false;
             this.ultraLabel84.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel84.Location = new System.Drawing.Point(4, 30);
             this.ultraLabel84.Name = "ultraLabel84";
             this.ultraLabel84.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel84.Size = new System.Drawing.Size(352, 25);
             this.ultraLabel84.TabIndex = 185;
+            this.ultraLabel84.Text = "양품 이미지 저장";
             // 
             // ultraLabel85
             // 
-            appearance138.BackColor = System.Drawing.Color.DimGray;
-            appearance138.BackColor2 = System.Drawing.Color.Gray;
-            appearance138.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance138.ForeColor = System.Drawing.Color.White;
-            appearance138.TextHAlignAsString = "Left";
-            appearance138.TextVAlignAsString = "Middle";
-            this.ultraLabel85.Appearance = appearance138;
+            appearance193.BackColor = System.Drawing.Color.DimGray;
+            appearance193.BackColor2 = System.Drawing.Color.Gray;
+            appearance193.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance193.ForeColor = System.Drawing.Color.White;
+            appearance193.TextHAlignAsString = "Left";
+            appearance193.TextVAlignAsString = "Middle";
+            this.ultraLabel85.Appearance = appearance193;
             this.ultraLabel85.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel85.Enabled = false;
             this.ultraLabel85.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel85.Location = new System.Drawing.Point(4, 57);
             this.ultraLabel85.Name = "ultraLabel85";
             this.ultraLabel85.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel85.Size = new System.Drawing.Size(352, 25);
             this.ultraLabel85.TabIndex = 184;
+            this.ultraLabel85.Text = "불량 이미지 저장";
             // 
-            // ultraComboEditor1
+            // System_uLabel_EtcItem02
             // 
-            appearance139.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance139.FontData.BoldAsString = "True";
-            appearance139.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance139.TextHAlignAsString = "Center";
-            this.ultraComboEditor1.Appearance = appearance139;
-            this.ultraComboEditor1.AutoSize = false;
-            this.ultraComboEditor1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ultraComboEditor1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            appearance194.BackColor = System.Drawing.Color.DimGray;
+            appearance194.BackColor2 = System.Drawing.Color.Gray;
+            appearance194.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance194.ForeColor = System.Drawing.Color.White;
+            appearance194.TextHAlignAsString = "Left";
+            appearance194.TextVAlignAsString = "Middle";
+            this.System_uLabel_EtcItem02.Appearance = appearance194;
+            this.System_uLabel_EtcItem02.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.System_uLabel_EtcItem02.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uLabel_EtcItem02.Location = new System.Drawing.Point(4, 84);
+            this.System_uLabel_EtcItem02.Name = "System_uLabel_EtcItem02";
+            this.System_uLabel_EtcItem02.Padding = new System.Drawing.Size(2, 0);
+            this.System_uLabel_EtcItem02.Size = new System.Drawing.Size(352, 25);
+            this.System_uLabel_EtcItem02.TabIndex = 167;
+            this.System_uLabel_EtcItem02.Text = "장비 방향 하부 조명";
+            // 
+            // System_uCombo_ImageFail_Right
+            // 
+            appearance195.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance195.FontData.BoldAsString = "True";
+            appearance195.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance195.TextHAlignAsString = "Center";
+            this.System_uCombo_ImageFail_Right.Appearance = appearance195;
+            this.System_uCombo_ImageFail_Right.AutoSize = false;
+            this.System_uCombo_ImageFail_Right.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.System_uCombo_ImageFail_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             valueListItem500.DataValue = new decimal(new int[] {
             0,
             0,
@@ -3304,24 +4081,24 @@
             0,
             0});
             valueListItem501.DisplayText = "OFF";
-            this.ultraComboEditor1.Items.AddRange(new Infragistics.Win.ValueListItem[] {
+            this.System_uCombo_ImageFail_Right.Items.AddRange(new Infragistics.Win.ValueListItem[] {
             valueListItem500,
             valueListItem501});
-            this.ultraComboEditor1.Location = new System.Drawing.Point(357, 57);
-            this.ultraComboEditor1.Name = "ultraComboEditor1";
-            this.ultraComboEditor1.Size = new System.Drawing.Size(80, 25);
-            this.ultraComboEditor1.TabIndex = 180;
-            this.ultraComboEditor1.Text = "ON";
+            this.System_uCombo_ImageFail_Right.Location = new System.Drawing.Point(357, 57);
+            this.System_uCombo_ImageFail_Right.Name = "System_uCombo_ImageFail_Right";
+            this.System_uCombo_ImageFail_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uCombo_ImageFail_Right.TabIndex = 180;
+            this.System_uCombo_ImageFail_Right.Text = "ON";
             // 
             // ultraLabel55
             // 
-            appearance140.BackColor = System.Drawing.Color.DimGray;
-            appearance140.BackColor2 = System.Drawing.Color.Gray;
-            appearance140.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance140.ForeColor = System.Drawing.Color.White;
-            appearance140.TextHAlignAsString = "Left";
-            appearance140.TextVAlignAsString = "Middle";
-            this.ultraLabel55.Appearance = appearance140;
+            appearance196.BackColor = System.Drawing.Color.DimGray;
+            appearance196.BackColor2 = System.Drawing.Color.Gray;
+            appearance196.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance196.ForeColor = System.Drawing.Color.White;
+            appearance196.TextHAlignAsString = "Left";
+            appearance196.TextVAlignAsString = "Middle";
+            this.ultraLabel55.Appearance = appearance196;
             this.ultraLabel55.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel55.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel55.Location = new System.Drawing.Point(3, 57);
@@ -3331,16 +4108,16 @@
             this.ultraLabel55.TabIndex = 179;
             this.ultraLabel55.Text = "데이터 보정 사용";
             // 
-            // ultraComboEditor2
+            // System_uCombo_ImagePass_Right
             // 
-            appearance141.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance141.FontData.BoldAsString = "True";
-            appearance141.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance141.TextHAlignAsString = "Center";
-            this.ultraComboEditor2.Appearance = appearance141;
-            this.ultraComboEditor2.AutoSize = false;
-            this.ultraComboEditor2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ultraComboEditor2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            appearance197.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance197.FontData.BoldAsString = "True";
+            appearance197.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance197.TextHAlignAsString = "Center";
+            this.System_uCombo_ImagePass_Right.Appearance = appearance197;
+            this.System_uCombo_ImagePass_Right.AutoSize = false;
+            this.System_uCombo_ImagePass_Right.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.System_uCombo_ImagePass_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             valueListItem33.DataValue = new decimal(new int[] {
             0,
             0,
@@ -3353,24 +4130,24 @@
             0,
             0});
             valueListItem34.DisplayText = "OFF";
-            this.ultraComboEditor2.Items.AddRange(new Infragistics.Win.ValueListItem[] {
+            this.System_uCombo_ImagePass_Right.Items.AddRange(new Infragistics.Win.ValueListItem[] {
             valueListItem33,
             valueListItem34});
-            this.ultraComboEditor2.Location = new System.Drawing.Point(357, 30);
-            this.ultraComboEditor2.Name = "ultraComboEditor2";
-            this.ultraComboEditor2.Size = new System.Drawing.Size(80, 25);
-            this.ultraComboEditor2.TabIndex = 173;
-            this.ultraComboEditor2.Text = "ON";
+            this.System_uCombo_ImagePass_Right.Location = new System.Drawing.Point(357, 30);
+            this.System_uCombo_ImagePass_Right.Name = "System_uCombo_ImagePass_Right";
+            this.System_uCombo_ImagePass_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uCombo_ImagePass_Right.TabIndex = 173;
+            this.System_uCombo_ImagePass_Right.Text = "ON";
             // 
             // ultraLabel56
             // 
-            appearance142.BackColor = System.Drawing.Color.DimGray;
-            appearance142.BackColor2 = System.Drawing.Color.Gray;
-            appearance142.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance142.ForeColor = System.Drawing.Color.White;
-            appearance142.TextHAlignAsString = "Left";
-            appearance142.TextVAlignAsString = "Middle";
-            this.ultraLabel56.Appearance = appearance142;
+            appearance198.BackColor = System.Drawing.Color.DimGray;
+            appearance198.BackColor2 = System.Drawing.Color.Gray;
+            appearance198.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance198.ForeColor = System.Drawing.Color.White;
+            appearance198.TextHAlignAsString = "Left";
+            appearance198.TextVAlignAsString = "Middle";
+            this.ultraLabel56.Appearance = appearance198;
             this.ultraLabel56.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel56.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel56.Location = new System.Drawing.Point(3, 30);
@@ -3382,14 +4159,14 @@
             // 
             // ultraLabel61
             // 
-            appearance143.BackColor = System.Drawing.Color.DimGray;
-            appearance143.BackColor2 = System.Drawing.Color.Gray;
-            appearance143.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance143.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance143.ForeColor = System.Drawing.Color.White;
-            appearance143.TextHAlignAsString = "Center";
-            appearance143.TextVAlignAsString = "Middle";
-            this.ultraLabel61.Appearance = appearance143;
+            appearance199.BackColor = System.Drawing.Color.DimGray;
+            appearance199.BackColor2 = System.Drawing.Color.Gray;
+            appearance199.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance199.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance199.ForeColor = System.Drawing.Color.White;
+            appearance199.TextHAlignAsString = "Center";
+            appearance199.TextVAlignAsString = "Middle";
+            this.ultraLabel61.Appearance = appearance199;
             this.ultraLabel61.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel61.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel61.Location = new System.Drawing.Point(3, 3);
@@ -3397,188 +4174,146 @@
             this.ultraLabel61.Padding = new System.Drawing.Size(10, 0);
             this.ultraLabel61.Size = new System.Drawing.Size(434, 25);
             this.ultraLabel61.TabIndex = 164;
-            this.ultraLabel61.Text = "시스템 항목 설정";
+            this.ultraLabel61.Text = "우측면 이미지 저장 설정";
             this.ultraLabel61.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraPanel59
             // 
-            appearance144.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel59.Appearance = appearance144;
+            appearance200.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel59.Appearance = appearance200;
             // 
             // ultraPanel59.ClientArea
             // 
             this.ultraPanel59.ClientArea.Controls.Add(this.ultraPanel61);
-            this.ultraPanel59.Location = new System.Drawing.Point(800, 613);
+            this.ultraPanel59.Location = new System.Drawing.Point(800, 163);
             this.ultraPanel59.Name = "ultraPanel59";
-            this.ultraPanel59.Size = new System.Drawing.Size(444, 108);
+            this.ultraPanel59.Size = new System.Drawing.Size(385, 143);
             this.ultraPanel59.TabIndex = 146;
             this.ultraPanel59.TabStop = false;
             // 
             // ultraPanel61
             // 
-            appearance145.BackColor = System.Drawing.Color.White;
-            this.ultraPanel61.Appearance = appearance145;
+            appearance201.BackColor = System.Drawing.Color.White;
+            this.ultraPanel61.Appearance = appearance201;
             // 
             // ultraPanel61.ClientArea
             // 
-            this.ultraPanel61.ClientArea.Controls.Add(this.ultraTextEditor19);
-            this.ultraPanel61.ClientArea.Controls.Add(this.ultraTextEditor20);
-            this.ultraPanel61.ClientArea.Controls.Add(this.ultraTextEditor21);
+            this.ultraPanel61.ClientArea.Controls.Add(this.System_uTxt_MeasPath_Right);
+            this.ultraPanel61.ClientArea.Controls.Add(this.System_uBtn_MeasPath_Right);
             this.ultraPanel61.ClientArea.Controls.Add(this.ultraLabel46);
-            this.ultraPanel61.ClientArea.Controls.Add(this.ultraComboEditor3);
             this.ultraPanel61.ClientArea.Controls.Add(this.ultraLabel74);
             this.ultraPanel61.ClientArea.Controls.Add(this.ultraLabel75);
-            this.ultraPanel61.ClientArea.Controls.Add(this.ultraComboEditor11);
-            this.ultraPanel61.ClientArea.Controls.Add(this.System_uCombo_EtcItem03);
+            this.ultraPanel61.ClientArea.Controls.Add(this.System_uCombo_MeasFail_Right);
+            this.ultraPanel61.ClientArea.Controls.Add(this.System_uCombo_MeasPass_Right);
             this.ultraPanel61.ClientArea.Controls.Add(this.ultraLabel77);
             this.ultraPanel61.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel61.Name = "ultraPanel61";
-            this.ultraPanel61.Size = new System.Drawing.Size(440, 104);
+            this.ultraPanel61.Size = new System.Drawing.Size(381, 138);
             this.ultraPanel61.TabIndex = 72;
             // 
-            // ultraTextEditor19
+            // System_uTxt_MeasPath_Right
             // 
-            appearance146.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance146.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance146.TextHAlignAsString = "Center";
-            this.ultraTextEditor19.Appearance = appearance146;
-            this.ultraTextEditor19.AutoSize = false;
-            this.ultraTextEditor19.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor19.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor19.Enabled = false;
-            this.ultraTextEditor19.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor19.Location = new System.Drawing.Point(357, 80);
-            this.ultraTextEditor19.Name = "ultraTextEditor19";
-            this.ultraTextEditor19.Size = new System.Drawing.Size(80, 21);
-            this.ultraTextEditor19.TabIndex = 182;
+            appearance202.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance202.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance202.TextHAlignAsString = "Left";
+            this.System_uTxt_MeasPath_Right.Appearance = appearance202;
+            this.System_uTxt_MeasPath_Right.AutoSize = false;
+            this.System_uTxt_MeasPath_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uTxt_MeasPath_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uTxt_MeasPath_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uTxt_MeasPath_Right.Location = new System.Drawing.Point(3, 111);
+            this.System_uTxt_MeasPath_Right.Name = "System_uTxt_MeasPath_Right";
+            this.System_uTxt_MeasPath_Right.ReadOnly = true;
+            this.System_uTxt_MeasPath_Right.Size = new System.Drawing.Size(375, 25);
+            this.System_uTxt_MeasPath_Right.TabIndex = 183;
+            this.System_uTxt_MeasPath_Right.Text = "Measure Data  Directory  is ...";
             // 
-            // ultraTextEditor20
+            // System_uBtn_MeasPath_Right
             // 
-            appearance147.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance147.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance147.TextHAlignAsString = "Center";
-            this.ultraTextEditor20.Appearance = appearance147;
-            this.ultraTextEditor20.AutoSize = false;
-            this.ultraTextEditor20.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor20.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor20.Enabled = false;
-            this.ultraTextEditor20.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor20.Location = new System.Drawing.Point(357, 30);
-            this.ultraTextEditor20.Name = "ultraTextEditor20";
-            this.ultraTextEditor20.Size = new System.Drawing.Size(80, 24);
-            this.ultraTextEditor20.TabIndex = 183;
-            // 
-            // ultraTextEditor21
-            // 
-            appearance148.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance148.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance148.TextHAlignAsString = "Center";
-            this.ultraTextEditor21.Appearance = appearance148;
-            this.ultraTextEditor21.AutoSize = false;
-            this.ultraTextEditor21.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor21.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor21.Enabled = false;
-            this.ultraTextEditor21.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor21.Location = new System.Drawing.Point(357, 56);
-            this.ultraTextEditor21.Name = "ultraTextEditor21";
-            this.ultraTextEditor21.Size = new System.Drawing.Size(80, 22);
-            this.ultraTextEditor21.TabIndex = 181;
+            appearance203.BackColor = System.Drawing.Color.DarkGray;
+            appearance203.BackColor2 = System.Drawing.Color.DimGray;
+            appearance203.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance203.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_MeasPath_Right.Appearance = appearance203;
+            this.System_uBtn_MeasPath_Right.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
+            this.System_uBtn_MeasPath_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            appearance204.BorderColor = System.Drawing.Color.White;
+            appearance204.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_MeasPath_Right.HotTrackAppearance = appearance204;
+            this.System_uBtn_MeasPath_Right.Location = new System.Drawing.Point(297, 84);
+            this.System_uBtn_MeasPath_Right.Name = "System_uBtn_MeasPath_Right";
+            this.System_uBtn_MeasPath_Right.ShowFocusRect = false;
+            this.System_uBtn_MeasPath_Right.ShowOutline = false;
+            this.System_uBtn_MeasPath_Right.Size = new System.Drawing.Size(81, 25);
+            this.System_uBtn_MeasPath_Right.TabIndex = 182;
+            this.System_uBtn_MeasPath_Right.Text = "찾아보기";
+            this.System_uBtn_MeasPath_Right.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.System_uBtn_MeasPath_Right.Click += new System.EventHandler(this.System_uBtn_MeasPath_Right_Click);
             // 
             // ultraLabel46
             // 
-            appearance149.BackColor = System.Drawing.Color.DimGray;
-            appearance149.BackColor2 = System.Drawing.Color.Gray;
-            appearance149.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance149.ForeColor = System.Drawing.Color.White;
-            appearance149.TextHAlignAsString = "Left";
-            appearance149.TextVAlignAsString = "Middle";
-            this.ultraLabel46.Appearance = appearance149;
+            appearance205.BackColor = System.Drawing.Color.DimGray;
+            appearance205.BackColor2 = System.Drawing.Color.Gray;
+            appearance205.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance205.ForeColor = System.Drawing.Color.White;
+            appearance205.TextHAlignAsString = "Left";
+            appearance205.TextVAlignAsString = "Middle";
+            this.ultraLabel46.Appearance = appearance205;
             this.ultraLabel46.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel46.Enabled = false;
             this.ultraLabel46.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel46.Location = new System.Drawing.Point(3, 80);
+            this.ultraLabel46.Location = new System.Drawing.Point(3, 84);
             this.ultraLabel46.Name = "ultraLabel46";
             this.ultraLabel46.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel46.Size = new System.Drawing.Size(352, 21);
+            this.ultraLabel46.Size = new System.Drawing.Size(293, 25);
             this.ultraLabel46.TabIndex = 174;
-            // 
-            // ultraComboEditor3
-            // 
-            appearance150.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance150.FontData.BoldAsString = "True";
-            appearance150.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance150.TextHAlignAsString = "Center";
-            this.ultraComboEditor3.Appearance = appearance150;
-            this.ultraComboEditor3.AutoSize = false;
-            this.ultraComboEditor3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ultraComboEditor3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem35.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem35.DisplayText = "ON";
-            valueListItem36.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem36.DisplayText = "OFF";
-            this.ultraComboEditor3.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem35,
-            valueListItem36});
-            this.ultraComboEditor3.Location = new System.Drawing.Point(357, 80);
-            this.ultraComboEditor3.Name = "ultraComboEditor3";
-            this.ultraComboEditor3.Size = new System.Drawing.Size(80, 21);
-            this.ultraComboEditor3.TabIndex = 173;
-            this.ultraComboEditor3.Text = "ON";
+            this.ultraLabel46.Text = "측정값 저장 경로";
             // 
             // ultraLabel74
             // 
-            appearance151.BackColor = System.Drawing.Color.DimGray;
-            appearance151.BackColor2 = System.Drawing.Color.Gray;
-            appearance151.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance151.ForeColor = System.Drawing.Color.White;
-            appearance151.TextHAlignAsString = "Left";
-            appearance151.TextVAlignAsString = "Middle";
-            this.ultraLabel74.Appearance = appearance151;
+            appearance206.BackColor = System.Drawing.Color.DimGray;
+            appearance206.BackColor2 = System.Drawing.Color.Gray;
+            appearance206.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance206.ForeColor = System.Drawing.Color.White;
+            appearance206.TextHAlignAsString = "Left";
+            appearance206.TextVAlignAsString = "Middle";
+            this.ultraLabel74.Appearance = appearance206;
             this.ultraLabel74.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel74.Enabled = false;
             this.ultraLabel74.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel74.Location = new System.Drawing.Point(3, 30);
             this.ultraLabel74.Name = "ultraLabel74";
             this.ultraLabel74.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel74.Size = new System.Drawing.Size(352, 24);
+            this.ultraLabel74.Size = new System.Drawing.Size(293, 25);
             this.ultraLabel74.TabIndex = 172;
+            this.ultraLabel74.Text = "양품 측정값 저장";
             // 
             // ultraLabel75
             // 
-            appearance152.BackColor = System.Drawing.Color.DimGray;
-            appearance152.BackColor2 = System.Drawing.Color.Gray;
-            appearance152.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance152.ForeColor = System.Drawing.Color.White;
-            appearance152.TextHAlignAsString = "Left";
-            appearance152.TextVAlignAsString = "Middle";
-            this.ultraLabel75.Appearance = appearance152;
+            appearance207.BackColor = System.Drawing.Color.DimGray;
+            appearance207.BackColor2 = System.Drawing.Color.Gray;
+            appearance207.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance207.ForeColor = System.Drawing.Color.White;
+            appearance207.TextHAlignAsString = "Left";
+            appearance207.TextVAlignAsString = "Middle";
+            this.ultraLabel75.Appearance = appearance207;
             this.ultraLabel75.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel75.Enabled = false;
             this.ultraLabel75.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel75.Location = new System.Drawing.Point(3, 56);
+            this.ultraLabel75.Location = new System.Drawing.Point(3, 57);
             this.ultraLabel75.Name = "ultraLabel75";
             this.ultraLabel75.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel75.Size = new System.Drawing.Size(352, 22);
+            this.ultraLabel75.Size = new System.Drawing.Size(293, 25);
             this.ultraLabel75.TabIndex = 171;
+            this.ultraLabel75.Text = "불량 측정값 저장";
             // 
-            // ultraComboEditor11
+            // System_uCombo_MeasFail_Right
             // 
-            appearance153.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance153.FontData.BoldAsString = "True";
-            appearance153.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance153.TextHAlignAsString = "Center";
-            this.ultraComboEditor11.Appearance = appearance153;
-            this.ultraComboEditor11.AutoSize = false;
-            this.ultraComboEditor11.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ultraComboEditor11.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            appearance208.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance208.FontData.BoldAsString = "True";
+            appearance208.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance208.TextHAlignAsString = "Center";
+            this.System_uCombo_MeasFail_Right.Appearance = appearance208;
+            this.System_uCombo_MeasFail_Right.AutoSize = false;
+            this.System_uCombo_MeasFail_Right.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.System_uCombo_MeasFail_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             valueListItem50.DataValue = new decimal(new int[] {
             0,
             0,
@@ -3591,25 +4326,25 @@
             0,
             0});
             valueListItem51.DisplayText = "OFF";
-            this.ultraComboEditor11.Items.AddRange(new Infragistics.Win.ValueListItem[] {
+            this.System_uCombo_MeasFail_Right.Items.AddRange(new Infragistics.Win.ValueListItem[] {
             valueListItem50,
             valueListItem51});
-            this.ultraComboEditor11.Location = new System.Drawing.Point(357, 56);
-            this.ultraComboEditor11.Name = "ultraComboEditor11";
-            this.ultraComboEditor11.Size = new System.Drawing.Size(80, 22);
-            this.ultraComboEditor11.TabIndex = 170;
-            this.ultraComboEditor11.Text = "ON";
+            this.System_uCombo_MeasFail_Right.Location = new System.Drawing.Point(298, 57);
+            this.System_uCombo_MeasFail_Right.Name = "System_uCombo_MeasFail_Right";
+            this.System_uCombo_MeasFail_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uCombo_MeasFail_Right.TabIndex = 170;
+            this.System_uCombo_MeasFail_Right.Text = "ON";
             // 
-            // System_uCombo_EtcItem03
+            // System_uCombo_MeasPass_Right
             // 
-            appearance154.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance154.FontData.BoldAsString = "True";
-            appearance154.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance154.TextHAlignAsString = "Center";
-            this.System_uCombo_EtcItem03.Appearance = appearance154;
-            this.System_uCombo_EtcItem03.AutoSize = false;
-            this.System_uCombo_EtcItem03.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.System_uCombo_EtcItem03.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            appearance209.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance209.FontData.BoldAsString = "True";
+            appearance209.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance209.TextHAlignAsString = "Center";
+            this.System_uCombo_MeasPass_Right.Appearance = appearance209;
+            this.System_uCombo_MeasPass_Right.AutoSize = false;
+            this.System_uCombo_MeasPass_Right.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.System_uCombo_MeasPass_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             valueListItem516.DataValue = new decimal(new int[] {
             0,
             0,
@@ -3622,278 +4357,158 @@
             0,
             0});
             valueListItem517.DisplayText = "OFF";
-            this.System_uCombo_EtcItem03.Items.AddRange(new Infragistics.Win.ValueListItem[] {
+            this.System_uCombo_MeasPass_Right.Items.AddRange(new Infragistics.Win.ValueListItem[] {
             valueListItem516,
             valueListItem517});
-            this.System_uCombo_EtcItem03.Location = new System.Drawing.Point(357, 30);
-            this.System_uCombo_EtcItem03.Name = "System_uCombo_EtcItem03";
-            this.System_uCombo_EtcItem03.Size = new System.Drawing.Size(80, 24);
-            this.System_uCombo_EtcItem03.TabIndex = 169;
-            this.System_uCombo_EtcItem03.Text = "ON";
+            this.System_uCombo_MeasPass_Right.Location = new System.Drawing.Point(297, 31);
+            this.System_uCombo_MeasPass_Right.Name = "System_uCombo_MeasPass_Right";
+            this.System_uCombo_MeasPass_Right.Size = new System.Drawing.Size(80, 24);
+            this.System_uCombo_MeasPass_Right.TabIndex = 169;
+            this.System_uCombo_MeasPass_Right.Text = "ON";
             // 
             // ultraLabel77
             // 
-            appearance155.BackColor = System.Drawing.Color.DimGray;
-            appearance155.BackColor2 = System.Drawing.Color.Gray;
-            appearance155.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance155.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance155.ForeColor = System.Drawing.Color.White;
-            appearance155.TextHAlignAsString = "Center";
-            appearance155.TextVAlignAsString = "Middle";
-            this.ultraLabel77.Appearance = appearance155;
+            appearance210.BackColor = System.Drawing.Color.DimGray;
+            appearance210.BackColor2 = System.Drawing.Color.Gray;
+            appearance210.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance210.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance210.ForeColor = System.Drawing.Color.White;
+            appearance210.TextHAlignAsString = "Center";
+            appearance210.TextVAlignAsString = "Middle";
+            this.ultraLabel77.Appearance = appearance210;
             this.ultraLabel77.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel77.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel77.Location = new System.Drawing.Point(3, 3);
             this.ultraLabel77.Name = "ultraLabel77";
             this.ultraLabel77.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel77.Size = new System.Drawing.Size(434, 25);
+            this.ultraLabel77.Size = new System.Drawing.Size(374, 25);
             this.ultraLabel77.TabIndex = 164;
-            this.ultraLabel77.Text = "시스템 항목 설정";
+            this.ultraLabel77.Text = "우측면 측정값 저장 설정";
             this.ultraLabel77.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraPanel2
             // 
-            appearance156.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel2.Appearance = appearance156;
+            appearance211.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel2.Appearance = appearance211;
             // 
             // ultraPanel2.ClientArea
             // 
             this.ultraPanel2.ClientArea.Controls.Add(this.ultraPanel3);
             this.ultraPanel2.Location = new System.Drawing.Point(800, 514);
             this.ultraPanel2.Name = "ultraPanel2";
-            this.ultraPanel2.Size = new System.Drawing.Size(444, 89);
+            this.ultraPanel2.Size = new System.Drawing.Size(385, 89);
             this.ultraPanel2.TabIndex = 145;
             this.ultraPanel2.TabStop = false;
             // 
             // ultraPanel3
             // 
-            appearance157.BackColor = System.Drawing.Color.White;
-            this.ultraPanel3.Appearance = appearance157;
+            appearance212.BackColor = System.Drawing.Color.White;
+            this.ultraPanel3.Appearance = appearance212;
             // 
             // ultraPanel3.ClientArea
             // 
-            this.ultraPanel3.ClientArea.Controls.Add(this.ultraTextEditor17);
-            this.ultraPanel3.ClientArea.Controls.Add(this.ultraTextEditor18);
-            this.ultraPanel3.ClientArea.Controls.Add(this.ultraLabel86);
-            this.ultraPanel3.ClientArea.Controls.Add(this.ultraLabel87);
-            this.ultraPanel3.ClientArea.Controls.Add(this.ultraCheckEditor1);
+            this.ultraPanel3.ClientArea.Controls.Add(this.System_uText_Pix05_Right);
+            this.ultraPanel3.ClientArea.Controls.Add(this.System_uText_Pix03_Right);
             this.ultraPanel3.ClientArea.Controls.Add(this.ultraLabel59);
             this.ultraPanel3.ClientArea.Controls.Add(this.ultraLabel60);
-            this.ultraPanel3.ClientArea.Controls.Add(this.ultraComboEditor5);
-            this.ultraPanel3.ClientArea.Controls.Add(this.ultraComboEditor6);
             this.ultraPanel3.ClientArea.Controls.Add(this.ultraLabel67);
             this.ultraPanel3.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel3.Name = "ultraPanel3";
-            this.ultraPanel3.Size = new System.Drawing.Size(440, 85);
+            this.ultraPanel3.Size = new System.Drawing.Size(381, 85);
             this.ultraPanel3.TabIndex = 72;
             // 
-            // ultraTextEditor17
+            // System_uText_Pix05_Right
             // 
-            appearance158.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance158.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance158.TextHAlignAsString = "Center";
-            this.ultraTextEditor17.Appearance = appearance158;
-            this.ultraTextEditor17.AutoSize = false;
-            this.ultraTextEditor17.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor17.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor17.Enabled = false;
-            this.ultraTextEditor17.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor17.Location = new System.Drawing.Point(357, 57);
-            this.ultraTextEditor17.Name = "ultraTextEditor17";
-            this.ultraTextEditor17.Size = new System.Drawing.Size(80, 25);
-            this.ultraTextEditor17.TabIndex = 187;
+            appearance213.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance213.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance213.TextHAlignAsString = "Center";
+            this.System_uText_Pix05_Right.Appearance = appearance213;
+            this.System_uText_Pix05_Right.AutoSize = false;
+            this.System_uText_Pix05_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uText_Pix05_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uText_Pix05_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uText_Pix05_Right.Location = new System.Drawing.Point(298, 57);
+            this.System_uText_Pix05_Right.Name = "System_uText_Pix05_Right";
+            this.System_uText_Pix05_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uText_Pix05_Right.TabIndex = 187;
+            this.System_uText_Pix05_Right.Text = "4096";
             // 
-            // ultraTextEditor18
+            // System_uText_Pix03_Right
             // 
-            appearance159.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance159.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance159.TextHAlignAsString = "Center";
-            this.ultraTextEditor18.Appearance = appearance159;
-            this.ultraTextEditor18.AutoSize = false;
-            this.ultraTextEditor18.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor18.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor18.Enabled = false;
-            this.ultraTextEditor18.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor18.Location = new System.Drawing.Point(357, 30);
-            this.ultraTextEditor18.Name = "ultraTextEditor18";
-            this.ultraTextEditor18.Size = new System.Drawing.Size(80, 25);
-            this.ultraTextEditor18.TabIndex = 186;
-            // 
-            // ultraLabel86
-            // 
-            appearance160.BackColor = System.Drawing.Color.DimGray;
-            appearance160.BackColor2 = System.Drawing.Color.Gray;
-            appearance160.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance160.ForeColor = System.Drawing.Color.White;
-            appearance160.TextHAlignAsString = "Left";
-            appearance160.TextVAlignAsString = "Middle";
-            this.ultraLabel86.Appearance = appearance160;
-            this.ultraLabel86.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel86.Enabled = false;
-            this.ultraLabel86.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel86.Location = new System.Drawing.Point(4, 30);
-            this.ultraLabel86.Name = "ultraLabel86";
-            this.ultraLabel86.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel86.Size = new System.Drawing.Size(352, 25);
-            this.ultraLabel86.TabIndex = 185;
-            // 
-            // ultraLabel87
-            // 
-            appearance161.BackColor = System.Drawing.Color.DimGray;
-            appearance161.BackColor2 = System.Drawing.Color.Gray;
-            appearance161.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance161.ForeColor = System.Drawing.Color.White;
-            appearance161.TextHAlignAsString = "Left";
-            appearance161.TextVAlignAsString = "Middle";
-            this.ultraLabel87.Appearance = appearance161;
-            this.ultraLabel87.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel87.Enabled = false;
-            this.ultraLabel87.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel87.Location = new System.Drawing.Point(4, 57);
-            this.ultraLabel87.Name = "ultraLabel87";
-            this.ultraLabel87.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel87.Size = new System.Drawing.Size(352, 25);
-            this.ultraLabel87.TabIndex = 184;
-            // 
-            // ultraCheckEditor1
-            // 
-            appearance162.BackColor = System.Drawing.Color.DimGray;
-            appearance162.BackColor2 = System.Drawing.Color.Gray;
-            appearance162.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance162.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance162.FontData.BoldAsString = "True";
-            appearance162.ForeColor = System.Drawing.Color.White;
-            this.ultraCheckEditor1.Appearance = appearance162;
-            this.ultraCheckEditor1.BackColor = System.Drawing.Color.DimGray;
-            this.ultraCheckEditor1.BackColorInternal = System.Drawing.Color.Transparent;
-            this.ultraCheckEditor1.Location = new System.Drawing.Point(106, 60);
-            this.ultraCheckEditor1.Name = "ultraCheckEditor1";
-            this.ultraCheckEditor1.Size = new System.Drawing.Size(88, 20);
-            this.ultraCheckEditor1.TabIndex = 175;
-            this.ultraCheckEditor1.Text = "로그 저장";
+            appearance214.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance214.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance214.TextHAlignAsString = "Center";
+            this.System_uText_Pix03_Right.Appearance = appearance214;
+            this.System_uText_Pix03_Right.AutoSize = false;
+            this.System_uText_Pix03_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uText_Pix03_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uText_Pix03_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uText_Pix03_Right.Location = new System.Drawing.Point(298, 30);
+            this.System_uText_Pix03_Right.Name = "System_uText_Pix03_Right";
+            this.System_uText_Pix03_Right.Size = new System.Drawing.Size(80, 25);
+            this.System_uText_Pix03_Right.TabIndex = 186;
+            this.System_uText_Pix03_Right.Text = "3072";
             // 
             // ultraLabel59
             // 
-            appearance163.BackColor = System.Drawing.Color.DimGray;
-            appearance163.BackColor2 = System.Drawing.Color.Gray;
-            appearance163.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance163.ForeColor = System.Drawing.Color.White;
-            appearance163.TextHAlignAsString = "Left";
-            appearance163.TextVAlignAsString = "Middle";
-            this.ultraLabel59.Appearance = appearance163;
+            appearance215.BackColor = System.Drawing.Color.DimGray;
+            appearance215.BackColor2 = System.Drawing.Color.Gray;
+            appearance215.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance215.ForeColor = System.Drawing.Color.White;
+            appearance215.TextHAlignAsString = "Left";
+            appearance215.TextVAlignAsString = "Middle";
+            this.ultraLabel59.Appearance = appearance215;
             this.ultraLabel59.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel59.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel59.Location = new System.Drawing.Point(3, 30);
             this.ultraLabel59.Name = "ultraLabel59";
             this.ultraLabel59.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel59.Size = new System.Drawing.Size(352, 25);
+            this.ultraLabel59.Size = new System.Drawing.Size(293, 25);
             this.ultraLabel59.TabIndex = 172;
-            this.ultraLabel59.Text = "모델 변환 자동";
+            this.ultraLabel59.Text = "이미지 가로 픽셀";
             // 
             // ultraLabel60
             // 
-            appearance164.BackColor = System.Drawing.Color.DimGray;
-            appearance164.BackColor2 = System.Drawing.Color.Gray;
-            appearance164.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance164.ForeColor = System.Drawing.Color.White;
-            appearance164.TextHAlignAsString = "Left";
-            appearance164.TextVAlignAsString = "Middle";
-            this.ultraLabel60.Appearance = appearance164;
+            appearance216.BackColor = System.Drawing.Color.DimGray;
+            appearance216.BackColor2 = System.Drawing.Color.Gray;
+            appearance216.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance216.ForeColor = System.Drawing.Color.White;
+            appearance216.TextHAlignAsString = "Left";
+            appearance216.TextVAlignAsString = "Middle";
+            this.ultraLabel60.Appearance = appearance216;
             this.ultraLabel60.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel60.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel60.Location = new System.Drawing.Point(3, 57);
             this.ultraLabel60.Name = "ultraLabel60";
             this.ultraLabel60.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel60.Size = new System.Drawing.Size(352, 25);
+            this.ultraLabel60.Size = new System.Drawing.Size(293, 25);
             this.ultraLabel60.TabIndex = 171;
-            this.ultraLabel60.Text = "PLC  결과 전송";
-            // 
-            // ultraComboEditor5
-            // 
-            appearance165.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance165.FontData.BoldAsString = "True";
-            appearance165.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance165.TextHAlignAsString = "Center";
-            this.ultraComboEditor5.Appearance = appearance165;
-            this.ultraComboEditor5.AutoSize = false;
-            this.ultraComboEditor5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ultraComboEditor5.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem46.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem46.DisplayText = "ON";
-            valueListItem47.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem47.DisplayText = "OFF";
-            this.ultraComboEditor5.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem46,
-            valueListItem47});
-            this.ultraComboEditor5.Location = new System.Drawing.Point(357, 57);
-            this.ultraComboEditor5.Name = "ultraComboEditor5";
-            this.ultraComboEditor5.Size = new System.Drawing.Size(80, 25);
-            this.ultraComboEditor5.TabIndex = 170;
-            this.ultraComboEditor5.Text = "ON";
-            // 
-            // ultraComboEditor6
-            // 
-            appearance166.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance166.FontData.BoldAsString = "True";
-            appearance166.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance166.TextHAlignAsString = "Center";
-            this.ultraComboEditor6.Appearance = appearance166;
-            this.ultraComboEditor6.AutoSize = false;
-            this.ultraComboEditor6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ultraComboEditor6.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem48.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem48.DisplayText = "ON";
-            valueListItem49.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem49.DisplayText = "OFF";
-            this.ultraComboEditor6.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem48,
-            valueListItem49});
-            this.ultraComboEditor6.Location = new System.Drawing.Point(357, 30);
-            this.ultraComboEditor6.Name = "ultraComboEditor6";
-            this.ultraComboEditor6.Size = new System.Drawing.Size(80, 25);
-            this.ultraComboEditor6.TabIndex = 169;
-            this.ultraComboEditor6.Text = "ON";
+            this.ultraLabel60.Text = "이미지 세로 픽셀";
             // 
             // ultraLabel67
             // 
-            appearance167.BackColor = System.Drawing.Color.DimGray;
-            appearance167.BackColor2 = System.Drawing.Color.Gray;
-            appearance167.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance167.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance167.ForeColor = System.Drawing.Color.White;
-            appearance167.TextHAlignAsString = "Center";
-            appearance167.TextVAlignAsString = "Middle";
-            this.ultraLabel67.Appearance = appearance167;
+            appearance217.BackColor = System.Drawing.Color.DimGray;
+            appearance217.BackColor2 = System.Drawing.Color.Gray;
+            appearance217.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance217.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance217.ForeColor = System.Drawing.Color.White;
+            appearance217.TextHAlignAsString = "Center";
+            appearance217.TextVAlignAsString = "Middle";
+            this.ultraLabel67.Appearance = appearance217;
             this.ultraLabel67.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel67.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel67.Location = new System.Drawing.Point(3, 3);
             this.ultraLabel67.Name = "ultraLabel67";
             this.ultraLabel67.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel67.Size = new System.Drawing.Size(434, 25);
+            this.ultraLabel67.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel67.TabIndex = 164;
-            this.ultraLabel67.Text = "시스템 항목 설정";
+            this.ultraLabel67.Text = "우측면 이미지 픽셀 설정";
             this.ultraLabel67.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraPanel90
             // 
-            appearance168.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel90.Appearance = appearance168;
+            appearance218.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel90.Appearance = appearance218;
             // 
             // ultraPanel90.ClientArea
             // 
@@ -3906,8 +4521,8 @@
             // 
             // ultraPanel91
             // 
-            appearance169.BackColor = System.Drawing.Color.White;
-            this.ultraPanel91.Appearance = appearance169;
+            appearance219.BackColor = System.Drawing.Color.White;
+            this.ultraPanel91.Appearance = appearance219;
             // 
             // ultraPanel91.ClientArea
             // 
@@ -3922,10 +4537,10 @@
             // 
             // System_uTxt_DCF_Path_BiCell
             // 
-            appearance170.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance170.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance170.TextHAlignAsString = "Left";
-            this.System_uTxt_DCF_Path_BiCell.Appearance = appearance170;
+            appearance220.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance220.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance220.TextHAlignAsString = "Left";
+            this.System_uTxt_DCF_Path_BiCell.Appearance = appearance220;
             this.System_uTxt_DCF_Path_BiCell.AutoSize = false;
             this.System_uTxt_DCF_Path_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uTxt_DCF_Path_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -3939,14 +4554,14 @@
             // 
             // ultraLabel37
             // 
-            appearance171.BackColor = System.Drawing.Color.DimGray;
-            appearance171.BackColor2 = System.Drawing.Color.Gray;
-            appearance171.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance171.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance171.ForeColor = System.Drawing.Color.White;
-            appearance171.TextHAlignAsString = "Left";
-            appearance171.TextVAlignAsString = "Middle";
-            this.ultraLabel37.Appearance = appearance171;
+            appearance221.BackColor = System.Drawing.Color.DimGray;
+            appearance221.BackColor2 = System.Drawing.Color.Gray;
+            appearance221.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance221.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance221.ForeColor = System.Drawing.Color.White;
+            appearance221.TextHAlignAsString = "Left";
+            appearance221.TextVAlignAsString = "Middle";
+            this.ultraLabel37.Appearance = appearance221;
             this.ultraLabel37.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel37.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel37.Location = new System.Drawing.Point(3, 3);
@@ -3954,21 +4569,21 @@
             this.ultraLabel37.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel37.Size = new System.Drawing.Size(292, 25);
             this.ultraLabel37.TabIndex = 172;
-            this.ultraLabel37.Text = "하부 카메라 설정 파일";
+            this.ultraLabel37.Text = "좌측면 카메라 설정 파일";
             this.ultraLabel37.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // System_uBtn_DCF_File_BiCell
             // 
-            appearance172.BackColor = System.Drawing.Color.DarkGray;
-            appearance172.BackColor2 = System.Drawing.Color.DimGray;
-            appearance172.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance172.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.System_uBtn_DCF_File_BiCell.Appearance = appearance172;
+            appearance222.BackColor = System.Drawing.Color.DarkGray;
+            appearance222.BackColor2 = System.Drawing.Color.DimGray;
+            appearance222.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance222.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_DCF_File_BiCell.Appearance = appearance222;
             this.System_uBtn_DCF_File_BiCell.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.System_uBtn_DCF_File_BiCell.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance173.BorderColor = System.Drawing.Color.White;
-            appearance173.ForeColor = System.Drawing.Color.White;
-            this.System_uBtn_DCF_File_BiCell.HotTrackAppearance = appearance173;
+            appearance223.BorderColor = System.Drawing.Color.White;
+            appearance223.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_DCF_File_BiCell.HotTrackAppearance = appearance223;
             this.System_uBtn_DCF_File_BiCell.Location = new System.Drawing.Point(296, 3);
             this.System_uBtn_DCF_File_BiCell.Name = "System_uBtn_DCF_File_BiCell";
             this.System_uBtn_DCF_File_BiCell.Size = new System.Drawing.Size(82, 25);
@@ -3979,8 +4594,8 @@
             // 
             // ultraPanel92
             // 
-            appearance174.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel92.Appearance = appearance174;
+            appearance224.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel92.Appearance = appearance224;
             // 
             // ultraPanel92.ClientArea
             // 
@@ -3993,8 +4608,8 @@
             // 
             // ultraPanel93
             // 
-            appearance175.BackColor = System.Drawing.Color.White;
-            this.ultraPanel93.Appearance = appearance175;
+            appearance225.BackColor = System.Drawing.Color.White;
+            this.ultraPanel93.Appearance = appearance225;
             // 
             // ultraPanel93.ClientArea
             // 
@@ -4009,10 +4624,10 @@
             // 
             // System_uTxt_DCF_Path_Gap
             // 
-            appearance176.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance176.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance176.TextHAlignAsString = "Left";
-            this.System_uTxt_DCF_Path_Gap.Appearance = appearance176;
+            appearance226.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance226.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance226.TextHAlignAsString = "Left";
+            this.System_uTxt_DCF_Path_Gap.Appearance = appearance226;
             this.System_uTxt_DCF_Path_Gap.AutoSize = false;
             this.System_uTxt_DCF_Path_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uTxt_DCF_Path_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4026,14 +4641,14 @@
             // 
             // ultraLabel38
             // 
-            appearance177.BackColor = System.Drawing.Color.DimGray;
-            appearance177.BackColor2 = System.Drawing.Color.Gray;
-            appearance177.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance177.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance177.ForeColor = System.Drawing.Color.White;
-            appearance177.TextHAlignAsString = "Left";
-            appearance177.TextVAlignAsString = "Middle";
-            this.ultraLabel38.Appearance = appearance177;
+            appearance227.BackColor = System.Drawing.Color.DimGray;
+            appearance227.BackColor2 = System.Drawing.Color.Gray;
+            appearance227.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance227.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance227.ForeColor = System.Drawing.Color.White;
+            appearance227.TextHAlignAsString = "Left";
+            appearance227.TextVAlignAsString = "Middle";
+            this.ultraLabel38.Appearance = appearance227;
             this.ultraLabel38.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel38.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel38.Location = new System.Drawing.Point(3, 3);
@@ -4046,16 +4661,16 @@
             // 
             // System_uBtn_DCF_File_Gap
             // 
-            appearance178.BackColor = System.Drawing.Color.DarkGray;
-            appearance178.BackColor2 = System.Drawing.Color.DimGray;
-            appearance178.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance178.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.System_uBtn_DCF_File_Gap.Appearance = appearance178;
+            appearance228.BackColor = System.Drawing.Color.DarkGray;
+            appearance228.BackColor2 = System.Drawing.Color.DimGray;
+            appearance228.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance228.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_DCF_File_Gap.Appearance = appearance228;
             this.System_uBtn_DCF_File_Gap.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.System_uBtn_DCF_File_Gap.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance179.BorderColor = System.Drawing.Color.White;
-            appearance179.ForeColor = System.Drawing.Color.White;
-            this.System_uBtn_DCF_File_Gap.HotTrackAppearance = appearance179;
+            appearance229.BorderColor = System.Drawing.Color.White;
+            appearance229.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_DCF_File_Gap.HotTrackAppearance = appearance229;
             this.System_uBtn_DCF_File_Gap.Location = new System.Drawing.Point(296, 3);
             this.System_uBtn_DCF_File_Gap.Name = "System_uBtn_DCF_File_Gap";
             this.System_uBtn_DCF_File_Gap.Size = new System.Drawing.Size(82, 25);
@@ -4066,8 +4681,8 @@
             // 
             // ultraPanel29
             // 
-            appearance180.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel29.Appearance = appearance180;
+            appearance230.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel29.Appearance = appearance230;
             // 
             // ultraPanel29.ClientArea
             // 
@@ -4080,8 +4695,8 @@
             // 
             // ultraPanel30
             // 
-            appearance181.BackColor = System.Drawing.Color.White;
-            this.ultraPanel30.Appearance = appearance181;
+            appearance231.BackColor = System.Drawing.Color.White;
+            this.ultraPanel30.Appearance = appearance231;
             // 
             // ultraPanel30.ClientArea
             // 
@@ -4097,13 +4712,13 @@
             // 
             // ultraLabel33
             // 
-            appearance182.BackColor = System.Drawing.Color.DimGray;
-            appearance182.BackColor2 = System.Drawing.Color.Gray;
-            appearance182.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance182.ForeColor = System.Drawing.Color.White;
-            appearance182.TextHAlignAsString = "Left";
-            appearance182.TextVAlignAsString = "Middle";
-            this.ultraLabel33.Appearance = appearance182;
+            appearance232.BackColor = System.Drawing.Color.DimGray;
+            appearance232.BackColor2 = System.Drawing.Color.Gray;
+            appearance232.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance232.ForeColor = System.Drawing.Color.White;
+            appearance232.TextHAlignAsString = "Left";
+            appearance232.TextVAlignAsString = "Middle";
+            this.ultraLabel33.Appearance = appearance232;
             this.ultraLabel33.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel33.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel33.Location = new System.Drawing.Point(3, 57);
@@ -4115,10 +4730,10 @@
             // 
             // System_uText_Pix05_BiCell
             // 
-            appearance183.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance183.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance183.TextHAlignAsString = "Center";
-            this.System_uText_Pix05_BiCell.Appearance = appearance183;
+            appearance233.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance233.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance233.TextHAlignAsString = "Center";
+            this.System_uText_Pix05_BiCell.Appearance = appearance233;
             this.System_uText_Pix05_BiCell.AutoSize = false;
             this.System_uText_Pix05_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Pix05_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4131,14 +4746,14 @@
             // 
             // ultraLabel34
             // 
-            appearance184.BackColor = System.Drawing.Color.DimGray;
-            appearance184.BackColor2 = System.Drawing.Color.Gray;
-            appearance184.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance184.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance184.ForeColor = System.Drawing.Color.White;
-            appearance184.TextHAlignAsString = "Center";
-            appearance184.TextVAlignAsString = "Middle";
-            this.ultraLabel34.Appearance = appearance184;
+            appearance234.BackColor = System.Drawing.Color.DimGray;
+            appearance234.BackColor2 = System.Drawing.Color.Gray;
+            appearance234.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance234.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance234.ForeColor = System.Drawing.Color.White;
+            appearance234.TextHAlignAsString = "Center";
+            appearance234.TextVAlignAsString = "Middle";
+            this.ultraLabel34.Appearance = appearance234;
             this.ultraLabel34.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel34.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel34.Location = new System.Drawing.Point(3, 3);
@@ -4146,18 +4761,18 @@
             this.ultraLabel34.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel34.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel34.TabIndex = 171;
-            this.ultraLabel34.Text = "하부 이미지 픽셀 설정";
+            this.ultraLabel34.Text = "좌측면 이미지 픽셀 설정";
             this.ultraLabel34.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraLabel35
             // 
-            appearance185.BackColor = System.Drawing.Color.DimGray;
-            appearance185.BackColor2 = System.Drawing.Color.Gray;
-            appearance185.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance185.ForeColor = System.Drawing.Color.White;
-            appearance185.TextHAlignAsString = "Left";
-            appearance185.TextVAlignAsString = "Middle";
-            this.ultraLabel35.Appearance = appearance185;
+            appearance235.BackColor = System.Drawing.Color.DimGray;
+            appearance235.BackColor2 = System.Drawing.Color.Gray;
+            appearance235.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance235.ForeColor = System.Drawing.Color.White;
+            appearance235.TextHAlignAsString = "Left";
+            appearance235.TextVAlignAsString = "Middle";
+            this.ultraLabel35.Appearance = appearance235;
             this.ultraLabel35.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel35.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel35.Location = new System.Drawing.Point(3, 30);
@@ -4169,10 +4784,10 @@
             // 
             // System_uText_Pix03_BiCell
             // 
-            appearance186.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance186.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance186.TextHAlignAsString = "Center";
-            this.System_uText_Pix03_BiCell.Appearance = appearance186;
+            appearance236.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance236.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance236.TextHAlignAsString = "Center";
+            this.System_uText_Pix03_BiCell.Appearance = appearance236;
             this.System_uText_Pix03_BiCell.AutoSize = false;
             this.System_uText_Pix03_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Pix03_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4185,8 +4800,8 @@
             // 
             // ultraPanel26
             // 
-            appearance187.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel26.Appearance = appearance187;
+            appearance237.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel26.Appearance = appearance237;
             // 
             // ultraPanel26.ClientArea
             // 
@@ -4199,8 +4814,8 @@
             // 
             // ultraPanel27
             // 
-            appearance188.BackColor = System.Drawing.Color.White;
-            this.ultraPanel27.Appearance = appearance188;
+            appearance238.BackColor = System.Drawing.Color.White;
+            this.ultraPanel27.Appearance = appearance238;
             // 
             // ultraPanel27.ClientArea
             // 
@@ -4220,13 +4835,13 @@
             // 
             // ultraLabel27
             // 
-            appearance189.BackColor = System.Drawing.Color.DimGray;
-            appearance189.BackColor2 = System.Drawing.Color.Gray;
-            appearance189.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance189.ForeColor = System.Drawing.Color.White;
-            appearance189.TextHAlignAsString = "Center";
-            appearance189.TextVAlignAsString = "Middle";
-            this.ultraLabel27.Appearance = appearance189;
+            appearance239.BackColor = System.Drawing.Color.DimGray;
+            appearance239.BackColor2 = System.Drawing.Color.Gray;
+            appearance239.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance239.ForeColor = System.Drawing.Color.White;
+            appearance239.TextHAlignAsString = "Center";
+            appearance239.TextVAlignAsString = "Middle";
+            this.ultraLabel27.Appearance = appearance239;
             this.ultraLabel27.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.None;
             this.ultraLabel27.BorderStyleOuter = Infragistics.Win.UIElementBorderStyle.None;
             this.ultraLabel27.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -4242,13 +4857,13 @@
             // 
             // ultraLabel28
             // 
-            appearance190.BackColor = System.Drawing.Color.DimGray;
-            appearance190.BackColor2 = System.Drawing.Color.Gray;
-            appearance190.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance190.ForeColor = System.Drawing.Color.White;
-            appearance190.TextHAlignAsString = "Center";
-            appearance190.TextVAlignAsString = "Middle";
-            this.ultraLabel28.Appearance = appearance190;
+            appearance240.BackColor = System.Drawing.Color.DimGray;
+            appearance240.BackColor2 = System.Drawing.Color.Gray;
+            appearance240.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance240.ForeColor = System.Drawing.Color.White;
+            appearance240.TextHAlignAsString = "Center";
+            appearance240.TextVAlignAsString = "Middle";
+            this.ultraLabel28.Appearance = appearance240;
             this.ultraLabel28.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel28.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel28.Location = new System.Drawing.Point(216, 30);
@@ -4263,13 +4878,13 @@
             // 
             // ultraLabel29
             // 
-            appearance191.BackColor = System.Drawing.Color.DimGray;
-            appearance191.BackColor2 = System.Drawing.Color.Gray;
-            appearance191.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance191.ForeColor = System.Drawing.Color.White;
-            appearance191.TextHAlignAsString = "Center";
-            appearance191.TextVAlignAsString = "Middle";
-            this.ultraLabel29.Appearance = appearance191;
+            appearance241.BackColor = System.Drawing.Color.DimGray;
+            appearance241.BackColor2 = System.Drawing.Color.Gray;
+            appearance241.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance241.ForeColor = System.Drawing.Color.White;
+            appearance241.TextHAlignAsString = "Center";
+            appearance241.TextVAlignAsString = "Middle";
+            this.ultraLabel29.Appearance = appearance241;
             this.ultraLabel29.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel29.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel29.Location = new System.Drawing.Point(298, 30);
@@ -4284,13 +4899,13 @@
             // 
             // ultraLabel30
             // 
-            appearance192.BackColor = System.Drawing.Color.DimGray;
-            appearance192.BackColor2 = System.Drawing.Color.Gray;
-            appearance192.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance192.ForeColor = System.Drawing.Color.White;
-            appearance192.TextHAlignAsString = "Left";
-            appearance192.TextVAlignAsString = "Middle";
-            this.ultraLabel30.Appearance = appearance192;
+            appearance242.BackColor = System.Drawing.Color.DimGray;
+            appearance242.BackColor2 = System.Drawing.Color.Gray;
+            appearance242.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance242.ForeColor = System.Drawing.Color.White;
+            appearance242.TextHAlignAsString = "Left";
+            appearance242.TextVAlignAsString = "Middle";
+            this.ultraLabel30.Appearance = appearance242;
             this.ultraLabel30.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel30.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel30.Location = new System.Drawing.Point(3, 30);
@@ -4305,10 +4920,10 @@
             // 
             // System_uText_Line07_BiCell
             // 
-            appearance193.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance193.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance193.TextHAlignAsString = "Center";
-            this.System_uText_Line07_BiCell.Appearance = appearance193;
+            appearance243.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance243.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance243.TextHAlignAsString = "Center";
+            this.System_uText_Line07_BiCell.Appearance = appearance243;
             this.System_uText_Line07_BiCell.AutoSize = false;
             this.System_uText_Line07_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Line07_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4321,10 +4936,10 @@
             // 
             // System_uText_Line08_BiCell
             // 
-            appearance194.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance194.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance194.TextHAlignAsString = "Center";
-            this.System_uText_Line08_BiCell.Appearance = appearance194;
+            appearance244.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance244.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance244.TextHAlignAsString = "Center";
+            this.System_uText_Line08_BiCell.Appearance = appearance244;
             this.System_uText_Line08_BiCell.AutoSize = false;
             this.System_uText_Line08_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Line08_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4337,10 +4952,10 @@
             // 
             // System_uText_Line09_BiCell
             // 
-            appearance195.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance195.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance195.TextHAlignAsString = "Center";
-            this.System_uText_Line09_BiCell.Appearance = appearance195;
+            appearance245.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance245.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance245.TextHAlignAsString = "Center";
+            this.System_uText_Line09_BiCell.Appearance = appearance245;
             this.System_uText_Line09_BiCell.AutoSize = false;
             this.System_uText_Line09_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Line09_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4353,13 +4968,13 @@
             // 
             // ultraLabel31
             // 
-            appearance196.BackColor = System.Drawing.Color.DimGray;
-            appearance196.BackColor2 = System.Drawing.Color.Gray;
-            appearance196.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance196.ForeColor = System.Drawing.Color.White;
-            appearance196.TextHAlignAsString = "Left";
-            appearance196.TextVAlignAsString = "Middle";
-            this.ultraLabel31.Appearance = appearance196;
+            appearance246.BackColor = System.Drawing.Color.DimGray;
+            appearance246.BackColor2 = System.Drawing.Color.Gray;
+            appearance246.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance246.ForeColor = System.Drawing.Color.White;
+            appearance246.TextHAlignAsString = "Left";
+            appearance246.TextVAlignAsString = "Middle";
+            this.ultraLabel31.Appearance = appearance246;
             this.ultraLabel31.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel31.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel31.Location = new System.Drawing.Point(3, 57);
@@ -4371,14 +4986,14 @@
             // 
             // ultraLabel32
             // 
-            appearance197.BackColor = System.Drawing.Color.DimGray;
-            appearance197.BackColor2 = System.Drawing.Color.Gray;
-            appearance197.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance197.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance197.ForeColor = System.Drawing.Color.White;
-            appearance197.TextHAlignAsString = "Center";
-            appearance197.TextVAlignAsString = "Middle";
-            this.ultraLabel32.Appearance = appearance197;
+            appearance247.BackColor = System.Drawing.Color.DimGray;
+            appearance247.BackColor2 = System.Drawing.Color.Gray;
+            appearance247.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance247.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance247.ForeColor = System.Drawing.Color.White;
+            appearance247.TextHAlignAsString = "Center";
+            appearance247.TextVAlignAsString = "Middle";
+            this.ultraLabel32.Appearance = appearance247;
             this.ultraLabel32.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel32.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel32.Location = new System.Drawing.Point(3, 3);
@@ -4386,13 +5001,13 @@
             this.ultraLabel32.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel32.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel32.TabIndex = 72;
-            this.ultraLabel32.Text = "하부 라인 검출 프로세싱 파라미터";
+            this.ultraLabel32.Text = "좌측면 라인 검출 프로세싱 파라미터";
             this.ultraLabel32.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraPanel18
             // 
-            appearance198.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel18.Appearance = appearance198;
+            appearance248.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel18.Appearance = appearance248;
             // 
             // ultraPanel18.ClientArea
             // 
@@ -4405,8 +5020,8 @@
             // 
             // ultraPanel19
             // 
-            appearance199.BackColor = System.Drawing.Color.White;
-            this.ultraPanel19.Appearance = appearance199;
+            appearance249.BackColor = System.Drawing.Color.White;
+            this.ultraPanel19.Appearance = appearance249;
             // 
             // ultraPanel19.ClientArea
             // 
@@ -4426,13 +5041,13 @@
             // 
             // ultraLabel21
             // 
-            appearance200.BackColor = System.Drawing.Color.DimGray;
-            appearance200.BackColor2 = System.Drawing.Color.Gray;
-            appearance200.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance200.ForeColor = System.Drawing.Color.White;
-            appearance200.TextHAlignAsString = "Center";
-            appearance200.TextVAlignAsString = "Middle";
-            this.ultraLabel21.Appearance = appearance200;
+            appearance250.BackColor = System.Drawing.Color.DimGray;
+            appearance250.BackColor2 = System.Drawing.Color.Gray;
+            appearance250.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance250.ForeColor = System.Drawing.Color.White;
+            appearance250.TextHAlignAsString = "Center";
+            appearance250.TextVAlignAsString = "Middle";
+            this.ultraLabel21.Appearance = appearance250;
             this.ultraLabel21.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel21.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel21.Location = new System.Drawing.Point(134, 30);
@@ -4444,13 +5059,13 @@
             // 
             // ultraLabel22
             // 
-            appearance201.BackColor = System.Drawing.Color.DimGray;
-            appearance201.BackColor2 = System.Drawing.Color.Gray;
-            appearance201.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance201.ForeColor = System.Drawing.Color.White;
-            appearance201.TextHAlignAsString = "Center";
-            appearance201.TextVAlignAsString = "Middle";
-            this.ultraLabel22.Appearance = appearance201;
+            appearance251.BackColor = System.Drawing.Color.DimGray;
+            appearance251.BackColor2 = System.Drawing.Color.Gray;
+            appearance251.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance251.ForeColor = System.Drawing.Color.White;
+            appearance251.TextHAlignAsString = "Center";
+            appearance251.TextVAlignAsString = "Middle";
+            this.ultraLabel22.Appearance = appearance251;
             this.ultraLabel22.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel22.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel22.Location = new System.Drawing.Point(216, 30);
@@ -4462,10 +5077,10 @@
             // 
             // System_uText_Edge07_BiCell
             // 
-            appearance202.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance202.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance202.TextHAlignAsString = "Center";
-            this.System_uText_Edge07_BiCell.Appearance = appearance202;
+            appearance252.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance252.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance252.TextHAlignAsString = "Center";
+            this.System_uText_Edge07_BiCell.Appearance = appearance252;
             this.System_uText_Edge07_BiCell.AutoSize = false;
             this.System_uText_Edge07_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Edge07_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4478,10 +5093,10 @@
             // 
             // System_uText_Edge08_BiCell
             // 
-            appearance203.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance203.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance203.TextHAlignAsString = "Center";
-            this.System_uText_Edge08_BiCell.Appearance = appearance203;
+            appearance253.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance253.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance253.TextHAlignAsString = "Center";
+            this.System_uText_Edge08_BiCell.Appearance = appearance253;
             this.System_uText_Edge08_BiCell.AutoSize = false;
             this.System_uText_Edge08_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Edge08_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4494,13 +5109,13 @@
             // 
             // ultraLabel23
             // 
-            appearance204.BackColor = System.Drawing.Color.DimGray;
-            appearance204.BackColor2 = System.Drawing.Color.Gray;
-            appearance204.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance204.ForeColor = System.Drawing.Color.White;
-            appearance204.TextHAlignAsString = "Center";
-            appearance204.TextVAlignAsString = "Middle";
-            this.ultraLabel23.Appearance = appearance204;
+            appearance254.BackColor = System.Drawing.Color.DimGray;
+            appearance254.BackColor2 = System.Drawing.Color.Gray;
+            appearance254.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance254.ForeColor = System.Drawing.Color.White;
+            appearance254.TextHAlignAsString = "Center";
+            appearance254.TextVAlignAsString = "Middle";
+            this.ultraLabel23.Appearance = appearance254;
             this.ultraLabel23.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel23.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel23.Location = new System.Drawing.Point(298, 30);
@@ -4512,10 +5127,10 @@
             // 
             // System_uText_Edge09_BiCell
             // 
-            appearance205.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance205.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance205.TextHAlignAsString = "Center";
-            this.System_uText_Edge09_BiCell.Appearance = appearance205;
+            appearance255.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance255.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance255.TextHAlignAsString = "Center";
+            this.System_uText_Edge09_BiCell.Appearance = appearance255;
             this.System_uText_Edge09_BiCell.AutoSize = false;
             this.System_uText_Edge09_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Edge09_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4528,13 +5143,13 @@
             // 
             // ultraLabel24
             // 
-            appearance206.BackColor = System.Drawing.Color.DimGray;
-            appearance206.BackColor2 = System.Drawing.Color.Gray;
-            appearance206.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance206.ForeColor = System.Drawing.Color.White;
-            appearance206.TextHAlignAsString = "Left";
-            appearance206.TextVAlignAsString = "Middle";
-            this.ultraLabel24.Appearance = appearance206;
+            appearance256.BackColor = System.Drawing.Color.DimGray;
+            appearance256.BackColor2 = System.Drawing.Color.Gray;
+            appearance256.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance256.ForeColor = System.Drawing.Color.White;
+            appearance256.TextHAlignAsString = "Left";
+            appearance256.TextVAlignAsString = "Middle";
+            this.ultraLabel24.Appearance = appearance256;
             this.ultraLabel24.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel24.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel24.Location = new System.Drawing.Point(3, 57);
@@ -4546,13 +5161,13 @@
             // 
             // ultraLabel25
             // 
-            appearance207.BackColor = System.Drawing.Color.DimGray;
-            appearance207.BackColor2 = System.Drawing.Color.Gray;
-            appearance207.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance207.ForeColor = System.Drawing.Color.White;
-            appearance207.TextHAlignAsString = "Left";
-            appearance207.TextVAlignAsString = "Middle";
-            this.ultraLabel25.Appearance = appearance207;
+            appearance257.BackColor = System.Drawing.Color.DimGray;
+            appearance257.BackColor2 = System.Drawing.Color.Gray;
+            appearance257.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance257.ForeColor = System.Drawing.Color.White;
+            appearance257.TextHAlignAsString = "Left";
+            appearance257.TextVAlignAsString = "Middle";
+            this.ultraLabel25.Appearance = appearance257;
             this.ultraLabel25.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel25.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel25.Location = new System.Drawing.Point(3, 30);
@@ -4564,14 +5179,14 @@
             // 
             // ultraLabel26
             // 
-            appearance208.BackColor = System.Drawing.Color.DimGray;
-            appearance208.BackColor2 = System.Drawing.Color.Gray;
-            appearance208.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance208.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance208.ForeColor = System.Drawing.Color.White;
-            appearance208.TextHAlignAsString = "Center";
-            appearance208.TextVAlignAsString = "Middle";
-            this.ultraLabel26.Appearance = appearance208;
+            appearance258.BackColor = System.Drawing.Color.DimGray;
+            appearance258.BackColor2 = System.Drawing.Color.Gray;
+            appearance258.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance258.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance258.ForeColor = System.Drawing.Color.White;
+            appearance258.TextHAlignAsString = "Center";
+            appearance258.TextVAlignAsString = "Middle";
+            this.ultraLabel26.Appearance = appearance258;
             this.ultraLabel26.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel26.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel26.Location = new System.Drawing.Point(3, 3);
@@ -4579,13 +5194,13 @@
             this.ultraLabel26.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel26.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel26.TabIndex = 72;
-            this.ultraLabel26.Text = "하부 엣지 검출 프로세싱 파라미터";
+            this.ultraLabel26.Text = "좌측면 엣지 검출 프로세싱 파라미터";
             this.ultraLabel26.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraPanel16
             // 
-            appearance209.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel16.Appearance = appearance209;
+            appearance259.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel16.Appearance = appearance259;
             // 
             // ultraPanel16.ClientArea
             // 
@@ -4598,8 +5213,8 @@
             // 
             // ultraPanel17
             // 
-            appearance210.BackColor = System.Drawing.Color.White;
-            this.ultraPanel17.Appearance = appearance210;
+            appearance260.BackColor = System.Drawing.Color.White;
+            this.ultraPanel17.Appearance = appearance260;
             // 
             // ultraPanel17.ClientArea
             // 
@@ -4618,14 +5233,14 @@
             // 
             // ultraLabel17
             // 
-            appearance211.BackColor = System.Drawing.Color.DimGray;
-            appearance211.BackColor2 = System.Drawing.Color.Gray;
-            appearance211.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance211.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance211.ForeColor = System.Drawing.Color.White;
-            appearance211.TextHAlignAsString = "Center";
-            appearance211.TextVAlignAsString = "Middle";
-            this.ultraLabel17.Appearance = appearance211;
+            appearance261.BackColor = System.Drawing.Color.DimGray;
+            appearance261.BackColor2 = System.Drawing.Color.Gray;
+            appearance261.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance261.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance261.ForeColor = System.Drawing.Color.White;
+            appearance261.TextHAlignAsString = "Center";
+            appearance261.TextVAlignAsString = "Middle";
+            this.ultraLabel17.Appearance = appearance261;
             this.ultraLabel17.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel17.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel17.Location = new System.Drawing.Point(3, 3);
@@ -4633,16 +5248,16 @@
             this.ultraLabel17.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel17.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel17.TabIndex = 164;
-            this.ultraLabel17.Text = "하부 이미지 저장 설정";
+            this.ultraLabel17.Text = "좌측면 이미지 저장 설정";
             this.ultraLabel17.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // System_uCombo_ImageFail_BiCell
             // 
-            appearance212.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance212.FontData.BoldAsString = "True";
-            appearance212.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance212.TextHAlignAsString = "Center";
-            this.System_uCombo_ImageFail_BiCell.Appearance = appearance212;
+            appearance262.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance262.FontData.BoldAsString = "True";
+            appearance262.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance262.TextHAlignAsString = "Center";
+            this.System_uCombo_ImageFail_BiCell.Appearance = appearance262;
             this.System_uCombo_ImageFail_BiCell.AutoSize = false;
             this.System_uCombo_ImageFail_BiCell.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_ImageFail_BiCell.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -4669,11 +5284,11 @@
             // 
             // System_uCombo_ImagePass_BiCell
             // 
-            appearance213.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance213.FontData.BoldAsString = "True";
-            appearance213.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance213.TextHAlignAsString = "Center";
-            this.System_uCombo_ImagePass_BiCell.Appearance = appearance213;
+            appearance263.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance263.FontData.BoldAsString = "True";
+            appearance263.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance263.TextHAlignAsString = "Center";
+            this.System_uCombo_ImagePass_BiCell.Appearance = appearance263;
             this.System_uCombo_ImagePass_BiCell.AutoSize = false;
             this.System_uCombo_ImagePass_BiCell.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_ImagePass_BiCell.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -4700,16 +5315,16 @@
             // 
             // System_uBtn_ImagePath_BiCell
             // 
-            appearance214.BackColor = System.Drawing.Color.DarkGray;
-            appearance214.BackColor2 = System.Drawing.Color.DimGray;
-            appearance214.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance214.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.System_uBtn_ImagePath_BiCell.Appearance = appearance214;
+            appearance264.BackColor = System.Drawing.Color.DarkGray;
+            appearance264.BackColor2 = System.Drawing.Color.DimGray;
+            appearance264.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance264.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_ImagePath_BiCell.Appearance = appearance264;
             this.System_uBtn_ImagePath_BiCell.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.System_uBtn_ImagePath_BiCell.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance215.BorderColor = System.Drawing.Color.White;
-            appearance215.ForeColor = System.Drawing.Color.White;
-            this.System_uBtn_ImagePath_BiCell.HotTrackAppearance = appearance215;
+            appearance265.BorderColor = System.Drawing.Color.White;
+            appearance265.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_ImagePath_BiCell.HotTrackAppearance = appearance265;
             this.System_uBtn_ImagePath_BiCell.Location = new System.Drawing.Point(297, 84);
             this.System_uBtn_ImagePath_BiCell.Name = "System_uBtn_ImagePath_BiCell";
             this.System_uBtn_ImagePath_BiCell.ShowFocusRect = false;
@@ -4722,13 +5337,13 @@
             // 
             // ultraLabel18
             // 
-            appearance216.BackColor = System.Drawing.Color.DimGray;
-            appearance216.BackColor2 = System.Drawing.Color.Gray;
-            appearance216.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance216.ForeColor = System.Drawing.Color.White;
-            appearance216.TextHAlignAsString = "Left";
-            appearance216.TextVAlignAsString = "Middle";
-            this.ultraLabel18.Appearance = appearance216;
+            appearance266.BackColor = System.Drawing.Color.DimGray;
+            appearance266.BackColor2 = System.Drawing.Color.Gray;
+            appearance266.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance266.ForeColor = System.Drawing.Color.White;
+            appearance266.TextHAlignAsString = "Left";
+            appearance266.TextVAlignAsString = "Middle";
+            this.ultraLabel18.Appearance = appearance266;
             this.ultraLabel18.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel18.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel18.Location = new System.Drawing.Point(3, 57);
@@ -4740,10 +5355,10 @@
             // 
             // System_uTxt_ImagePath_BiCell
             // 
-            appearance217.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance217.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance217.TextHAlignAsString = "Left";
-            this.System_uTxt_ImagePath_BiCell.Appearance = appearance217;
+            appearance267.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance267.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance267.TextHAlignAsString = "Left";
+            this.System_uTxt_ImagePath_BiCell.Appearance = appearance267;
             this.System_uTxt_ImagePath_BiCell.AutoSize = false;
             this.System_uTxt_ImagePath_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uTxt_ImagePath_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4757,13 +5372,13 @@
             // 
             // ultraLabel19
             // 
-            appearance218.BackColor = System.Drawing.Color.DimGray;
-            appearance218.BackColor2 = System.Drawing.Color.Gray;
-            appearance218.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance218.ForeColor = System.Drawing.Color.White;
-            appearance218.TextHAlignAsString = "Left";
-            appearance218.TextVAlignAsString = "Middle";
-            this.ultraLabel19.Appearance = appearance218;
+            appearance268.BackColor = System.Drawing.Color.DimGray;
+            appearance268.BackColor2 = System.Drawing.Color.Gray;
+            appearance268.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance268.ForeColor = System.Drawing.Color.White;
+            appearance268.TextHAlignAsString = "Left";
+            appearance268.TextVAlignAsString = "Middle";
+            this.ultraLabel19.Appearance = appearance268;
             this.ultraLabel19.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel19.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel19.Location = new System.Drawing.Point(3, 84);
@@ -4775,13 +5390,13 @@
             // 
             // ultraLabel20
             // 
-            appearance219.BackColor = System.Drawing.Color.DimGray;
-            appearance219.BackColor2 = System.Drawing.Color.Gray;
-            appearance219.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance219.ForeColor = System.Drawing.Color.White;
-            appearance219.TextHAlignAsString = "Left";
-            appearance219.TextVAlignAsString = "Middle";
-            this.ultraLabel20.Appearance = appearance219;
+            appearance269.BackColor = System.Drawing.Color.DimGray;
+            appearance269.BackColor2 = System.Drawing.Color.Gray;
+            appearance269.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance269.ForeColor = System.Drawing.Color.White;
+            appearance269.TextHAlignAsString = "Left";
+            appearance269.TextVAlignAsString = "Middle";
+            this.ultraLabel20.Appearance = appearance269;
             this.ultraLabel20.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel20.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel20.Location = new System.Drawing.Point(3, 30);
@@ -4793,8 +5408,8 @@
             // 
             // ultraPanel8
             // 
-            appearance220.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel8.Appearance = appearance220;
+            appearance270.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel8.Appearance = appearance270;
             // 
             // ultraPanel8.ClientArea
             // 
@@ -4807,8 +5422,8 @@
             // 
             // ultraPanel15
             // 
-            appearance221.BackColor = System.Drawing.Color.White;
-            this.ultraPanel15.Appearance = appearance221;
+            appearance271.BackColor = System.Drawing.Color.White;
+            this.ultraPanel15.Appearance = appearance271;
             // 
             // ultraPanel15.ClientArea
             // 
@@ -4827,14 +5442,14 @@
             // 
             // ultraLabel9
             // 
-            appearance222.BackColor = System.Drawing.Color.DimGray;
-            appearance222.BackColor2 = System.Drawing.Color.Gray;
-            appearance222.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance222.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance222.ForeColor = System.Drawing.Color.White;
-            appearance222.TextHAlignAsString = "Center";
-            appearance222.TextVAlignAsString = "Middle";
-            this.ultraLabel9.Appearance = appearance222;
+            appearance272.BackColor = System.Drawing.Color.DimGray;
+            appearance272.BackColor2 = System.Drawing.Color.Gray;
+            appearance272.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance272.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance272.ForeColor = System.Drawing.Color.White;
+            appearance272.TextHAlignAsString = "Center";
+            appearance272.TextVAlignAsString = "Middle";
+            this.ultraLabel9.Appearance = appearance272;
             this.ultraLabel9.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel9.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel9.Location = new System.Drawing.Point(3, 3);
@@ -4842,16 +5457,16 @@
             this.ultraLabel9.Padding = new System.Drawing.Size(2, 0);
             this.ultraLabel9.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel9.TabIndex = 164;
-            this.ultraLabel9.Text = "하부 측정값 저장 설정";
+            this.ultraLabel9.Text = "좌측면 측정값 저장 설정";
             this.ultraLabel9.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // System_uCombo_MeasFail_BiCell
             // 
-            appearance223.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance223.FontData.BoldAsString = "True";
-            appearance223.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance223.TextHAlignAsString = "Center";
-            this.System_uCombo_MeasFail_BiCell.Appearance = appearance223;
+            appearance273.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance273.FontData.BoldAsString = "True";
+            appearance273.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance273.TextHAlignAsString = "Center";
+            this.System_uCombo_MeasFail_BiCell.Appearance = appearance273;
             this.System_uCombo_MeasFail_BiCell.AutoSize = false;
             this.System_uCombo_MeasFail_BiCell.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_MeasFail_BiCell.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -4878,11 +5493,11 @@
             // 
             // System_uCombo_MeasPass_BiCell
             // 
-            appearance224.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance224.FontData.BoldAsString = "True";
-            appearance224.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance224.TextHAlignAsString = "Center";
-            this.System_uCombo_MeasPass_BiCell.Appearance = appearance224;
+            appearance274.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance274.FontData.BoldAsString = "True";
+            appearance274.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance274.TextHAlignAsString = "Center";
+            this.System_uCombo_MeasPass_BiCell.Appearance = appearance274;
             this.System_uCombo_MeasPass_BiCell.AutoSize = false;
             this.System_uCombo_MeasPass_BiCell.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_MeasPass_BiCell.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -4909,16 +5524,16 @@
             // 
             // System_uBtn_MeasPath_BiCell
             // 
-            appearance225.BackColor = System.Drawing.Color.DarkGray;
-            appearance225.BackColor2 = System.Drawing.Color.DimGray;
-            appearance225.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance225.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.System_uBtn_MeasPath_BiCell.Appearance = appearance225;
+            appearance275.BackColor = System.Drawing.Color.DarkGray;
+            appearance275.BackColor2 = System.Drawing.Color.DimGray;
+            appearance275.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance275.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_MeasPath_BiCell.Appearance = appearance275;
             this.System_uBtn_MeasPath_BiCell.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.System_uBtn_MeasPath_BiCell.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance226.BorderColor = System.Drawing.Color.White;
-            appearance226.ForeColor = System.Drawing.Color.White;
-            this.System_uBtn_MeasPath_BiCell.HotTrackAppearance = appearance226;
+            appearance276.BorderColor = System.Drawing.Color.White;
+            appearance276.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_MeasPath_BiCell.HotTrackAppearance = appearance276;
             this.System_uBtn_MeasPath_BiCell.Location = new System.Drawing.Point(297, 84);
             this.System_uBtn_MeasPath_BiCell.Name = "System_uBtn_MeasPath_BiCell";
             this.System_uBtn_MeasPath_BiCell.ShowFocusRect = false;
@@ -4931,13 +5546,13 @@
             // 
             // ultraLabel14
             // 
-            appearance227.BackColor = System.Drawing.Color.DimGray;
-            appearance227.BackColor2 = System.Drawing.Color.Gray;
-            appearance227.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance227.ForeColor = System.Drawing.Color.White;
-            appearance227.TextHAlignAsString = "Left";
-            appearance227.TextVAlignAsString = "Middle";
-            this.ultraLabel14.Appearance = appearance227;
+            appearance277.BackColor = System.Drawing.Color.DimGray;
+            appearance277.BackColor2 = System.Drawing.Color.Gray;
+            appearance277.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance277.ForeColor = System.Drawing.Color.White;
+            appearance277.TextHAlignAsString = "Left";
+            appearance277.TextVAlignAsString = "Middle";
+            this.ultraLabel14.Appearance = appearance277;
             this.ultraLabel14.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel14.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel14.Location = new System.Drawing.Point(3, 57);
@@ -4949,10 +5564,10 @@
             // 
             // System_uTxt_MeasPath_BiCell
             // 
-            appearance228.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance228.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance228.TextHAlignAsString = "Left";
-            this.System_uTxt_MeasPath_BiCell.Appearance = appearance228;
+            appearance278.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance278.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance278.TextHAlignAsString = "Left";
+            this.System_uTxt_MeasPath_BiCell.Appearance = appearance278;
             this.System_uTxt_MeasPath_BiCell.AutoSize = false;
             this.System_uTxt_MeasPath_BiCell.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uTxt_MeasPath_BiCell.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -4966,13 +5581,13 @@
             // 
             // ultraLabel15
             // 
-            appearance229.BackColor = System.Drawing.Color.DimGray;
-            appearance229.BackColor2 = System.Drawing.Color.Gray;
-            appearance229.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance229.ForeColor = System.Drawing.Color.White;
-            appearance229.TextHAlignAsString = "Left";
-            appearance229.TextVAlignAsString = "Middle";
-            this.ultraLabel15.Appearance = appearance229;
+            appearance279.BackColor = System.Drawing.Color.DimGray;
+            appearance279.BackColor2 = System.Drawing.Color.Gray;
+            appearance279.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance279.ForeColor = System.Drawing.Color.White;
+            appearance279.TextHAlignAsString = "Left";
+            appearance279.TextVAlignAsString = "Middle";
+            this.ultraLabel15.Appearance = appearance279;
             this.ultraLabel15.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel15.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel15.Location = new System.Drawing.Point(3, 84);
@@ -4984,13 +5599,13 @@
             // 
             // ultraLabel16
             // 
-            appearance230.BackColor = System.Drawing.Color.DimGray;
-            appearance230.BackColor2 = System.Drawing.Color.Gray;
-            appearance230.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance230.ForeColor = System.Drawing.Color.White;
-            appearance230.TextHAlignAsString = "Left";
-            appearance230.TextVAlignAsString = "Middle";
-            this.ultraLabel16.Appearance = appearance230;
+            appearance280.BackColor = System.Drawing.Color.DimGray;
+            appearance280.BackColor2 = System.Drawing.Color.Gray;
+            appearance280.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance280.ForeColor = System.Drawing.Color.White;
+            appearance280.TextHAlignAsString = "Left";
+            appearance280.TextVAlignAsString = "Middle";
+            this.ultraLabel16.Appearance = appearance280;
             this.ultraLabel16.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel16.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel16.Location = new System.Drawing.Point(3, 30);
@@ -5002,8 +5617,8 @@
             // 
             // ultraPanel13
             // 
-            appearance231.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel13.Appearance = appearance231;
+            appearance281.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel13.Appearance = appearance281;
             // 
             // ultraPanel13.ClientArea
             // 
@@ -5016,8 +5631,8 @@
             // 
             // ultraPanel14
             // 
-            appearance232.BackColor = System.Drawing.Color.White;
-            this.ultraPanel14.Appearance = appearance232;
+            appearance282.BackColor = System.Drawing.Color.White;
+            this.ultraPanel14.Appearance = appearance282;
             // 
             // ultraPanel14.ClientArea
             // 
@@ -5033,13 +5648,13 @@
             // 
             // ultraLabel11
             // 
-            appearance233.BackColor = System.Drawing.Color.DimGray;
-            appearance233.BackColor2 = System.Drawing.Color.Gray;
-            appearance233.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance233.ForeColor = System.Drawing.Color.White;
-            appearance233.TextHAlignAsString = "Left";
-            appearance233.TextVAlignAsString = "Middle";
-            this.ultraLabel11.Appearance = appearance233;
+            appearance283.BackColor = System.Drawing.Color.DimGray;
+            appearance283.BackColor2 = System.Drawing.Color.Gray;
+            appearance283.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance283.ForeColor = System.Drawing.Color.White;
+            appearance283.TextHAlignAsString = "Left";
+            appearance283.TextVAlignAsString = "Middle";
+            this.ultraLabel11.Appearance = appearance283;
             this.ultraLabel11.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel11.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel11.Location = new System.Drawing.Point(3, 57);
@@ -5051,10 +5666,10 @@
             // 
             // System_uText_Pix05_Gap
             // 
-            appearance234.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance234.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance234.TextHAlignAsString = "Center";
-            this.System_uText_Pix05_Gap.Appearance = appearance234;
+            appearance284.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance284.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance284.TextHAlignAsString = "Center";
+            this.System_uText_Pix05_Gap.Appearance = appearance284;
             this.System_uText_Pix05_Gap.AutoSize = false;
             this.System_uText_Pix05_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Pix05_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -5067,14 +5682,14 @@
             // 
             // ultraLabel12
             // 
-            appearance235.BackColor = System.Drawing.Color.DimGray;
-            appearance235.BackColor2 = System.Drawing.Color.Gray;
-            appearance235.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance235.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance235.ForeColor = System.Drawing.Color.White;
-            appearance235.TextHAlignAsString = "Center";
-            appearance235.TextVAlignAsString = "Middle";
-            this.ultraLabel12.Appearance = appearance235;
+            appearance285.BackColor = System.Drawing.Color.DimGray;
+            appearance285.BackColor2 = System.Drawing.Color.Gray;
+            appearance285.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance285.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance285.ForeColor = System.Drawing.Color.White;
+            appearance285.TextHAlignAsString = "Center";
+            appearance285.TextVAlignAsString = "Middle";
+            this.ultraLabel12.Appearance = appearance285;
             this.ultraLabel12.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel12.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel12.Location = new System.Drawing.Point(3, 3);
@@ -5087,13 +5702,13 @@
             // 
             // ultraLabel13
             // 
-            appearance236.BackColor = System.Drawing.Color.DimGray;
-            appearance236.BackColor2 = System.Drawing.Color.Gray;
-            appearance236.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance236.ForeColor = System.Drawing.Color.White;
-            appearance236.TextHAlignAsString = "Left";
-            appearance236.TextVAlignAsString = "Middle";
-            this.ultraLabel13.Appearance = appearance236;
+            appearance286.BackColor = System.Drawing.Color.DimGray;
+            appearance286.BackColor2 = System.Drawing.Color.Gray;
+            appearance286.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance286.ForeColor = System.Drawing.Color.White;
+            appearance286.TextHAlignAsString = "Left";
+            appearance286.TextVAlignAsString = "Middle";
+            this.ultraLabel13.Appearance = appearance286;
             this.ultraLabel13.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel13.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel13.Location = new System.Drawing.Point(3, 30);
@@ -5105,10 +5720,10 @@
             // 
             // System_uText_Pix03_Gap
             // 
-            appearance237.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance237.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance237.TextHAlignAsString = "Center";
-            this.System_uText_Pix03_Gap.Appearance = appearance237;
+            appearance287.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance287.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance287.TextHAlignAsString = "Center";
+            this.System_uText_Pix03_Gap.Appearance = appearance287;
             this.System_uText_Pix03_Gap.AutoSize = false;
             this.System_uText_Pix03_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Pix03_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -5121,8 +5736,8 @@
             // 
             // ultraPanel24
             // 
-            appearance238.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel24.Appearance = appearance238;
+            appearance288.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel24.Appearance = appearance288;
             // 
             // ultraPanel24.ClientArea
             // 
@@ -5135,8 +5750,8 @@
             // 
             // ultraPanel25
             // 
-            appearance239.BackColor = System.Drawing.Color.White;
-            this.ultraPanel25.Appearance = appearance239;
+            appearance289.BackColor = System.Drawing.Color.White;
+            this.ultraPanel25.Appearance = appearance289;
             // 
             // ultraPanel25.ClientArea
             // 
@@ -5156,13 +5771,13 @@
             // 
             // ultraLabel122
             // 
-            appearance240.BackColor = System.Drawing.Color.DimGray;
-            appearance240.BackColor2 = System.Drawing.Color.Gray;
-            appearance240.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance240.ForeColor = System.Drawing.Color.White;
-            appearance240.TextHAlignAsString = "Center";
-            appearance240.TextVAlignAsString = "Middle";
-            this.ultraLabel122.Appearance = appearance240;
+            appearance290.BackColor = System.Drawing.Color.DimGray;
+            appearance290.BackColor2 = System.Drawing.Color.Gray;
+            appearance290.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance290.ForeColor = System.Drawing.Color.White;
+            appearance290.TextHAlignAsString = "Center";
+            appearance290.TextVAlignAsString = "Middle";
+            this.ultraLabel122.Appearance = appearance290;
             this.ultraLabel122.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.None;
             this.ultraLabel122.BorderStyleOuter = Infragistics.Win.UIElementBorderStyle.None;
             this.ultraLabel122.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -5178,13 +5793,13 @@
             // 
             // ultraLabel123
             // 
-            appearance241.BackColor = System.Drawing.Color.DimGray;
-            appearance241.BackColor2 = System.Drawing.Color.Gray;
-            appearance241.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance241.ForeColor = System.Drawing.Color.White;
-            appearance241.TextHAlignAsString = "Center";
-            appearance241.TextVAlignAsString = "Middle";
-            this.ultraLabel123.Appearance = appearance241;
+            appearance291.BackColor = System.Drawing.Color.DimGray;
+            appearance291.BackColor2 = System.Drawing.Color.Gray;
+            appearance291.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance291.ForeColor = System.Drawing.Color.White;
+            appearance291.TextHAlignAsString = "Center";
+            appearance291.TextVAlignAsString = "Middle";
+            this.ultraLabel123.Appearance = appearance291;
             this.ultraLabel123.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel123.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel123.Location = new System.Drawing.Point(216, 30);
@@ -5199,13 +5814,13 @@
             // 
             // ultraLabel124
             // 
-            appearance242.BackColor = System.Drawing.Color.DimGray;
-            appearance242.BackColor2 = System.Drawing.Color.Gray;
-            appearance242.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance242.ForeColor = System.Drawing.Color.White;
-            appearance242.TextHAlignAsString = "Center";
-            appearance242.TextVAlignAsString = "Middle";
-            this.ultraLabel124.Appearance = appearance242;
+            appearance292.BackColor = System.Drawing.Color.DimGray;
+            appearance292.BackColor2 = System.Drawing.Color.Gray;
+            appearance292.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance292.ForeColor = System.Drawing.Color.White;
+            appearance292.TextHAlignAsString = "Center";
+            appearance292.TextVAlignAsString = "Middle";
+            this.ultraLabel124.Appearance = appearance292;
             this.ultraLabel124.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel124.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel124.Location = new System.Drawing.Point(298, 30);
@@ -5220,13 +5835,13 @@
             // 
             // ultraLabel125
             // 
-            appearance243.BackColor = System.Drawing.Color.DimGray;
-            appearance243.BackColor2 = System.Drawing.Color.Gray;
-            appearance243.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance243.ForeColor = System.Drawing.Color.White;
-            appearance243.TextHAlignAsString = "Left";
-            appearance243.TextVAlignAsString = "Middle";
-            this.ultraLabel125.Appearance = appearance243;
+            appearance293.BackColor = System.Drawing.Color.DimGray;
+            appearance293.BackColor2 = System.Drawing.Color.Gray;
+            appearance293.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance293.ForeColor = System.Drawing.Color.White;
+            appearance293.TextHAlignAsString = "Left";
+            appearance293.TextVAlignAsString = "Middle";
+            this.ultraLabel125.Appearance = appearance293;
             this.ultraLabel125.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel125.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel125.Location = new System.Drawing.Point(3, 30);
@@ -5241,10 +5856,10 @@
             // 
             // System_uText_Line07_Gap
             // 
-            appearance244.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance244.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance244.TextHAlignAsString = "Center";
-            this.System_uText_Line07_Gap.Appearance = appearance244;
+            appearance294.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance294.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance294.TextHAlignAsString = "Center";
+            this.System_uText_Line07_Gap.Appearance = appearance294;
             this.System_uText_Line07_Gap.AutoSize = false;
             this.System_uText_Line07_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Line07_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -5257,10 +5872,10 @@
             // 
             // System_uText_Line08_Gap
             // 
-            appearance245.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance245.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance245.TextHAlignAsString = "Center";
-            this.System_uText_Line08_Gap.Appearance = appearance245;
+            appearance295.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance295.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance295.TextHAlignAsString = "Center";
+            this.System_uText_Line08_Gap.Appearance = appearance295;
             this.System_uText_Line08_Gap.AutoSize = false;
             this.System_uText_Line08_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Line08_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -5273,10 +5888,10 @@
             // 
             // System_uText_Line09_Gap
             // 
-            appearance246.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance246.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance246.TextHAlignAsString = "Center";
-            this.System_uText_Line09_Gap.Appearance = appearance246;
+            appearance296.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance296.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance296.TextHAlignAsString = "Center";
+            this.System_uText_Line09_Gap.Appearance = appearance296;
             this.System_uText_Line09_Gap.AutoSize = false;
             this.System_uText_Line09_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Line09_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -5289,13 +5904,13 @@
             // 
             // ultraLabel127
             // 
-            appearance247.BackColor = System.Drawing.Color.DimGray;
-            appearance247.BackColor2 = System.Drawing.Color.Gray;
-            appearance247.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance247.ForeColor = System.Drawing.Color.White;
-            appearance247.TextHAlignAsString = "Left";
-            appearance247.TextVAlignAsString = "Middle";
-            this.ultraLabel127.Appearance = appearance247;
+            appearance297.BackColor = System.Drawing.Color.DimGray;
+            appearance297.BackColor2 = System.Drawing.Color.Gray;
+            appearance297.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance297.ForeColor = System.Drawing.Color.White;
+            appearance297.TextHAlignAsString = "Left";
+            appearance297.TextVAlignAsString = "Middle";
+            this.ultraLabel127.Appearance = appearance297;
             this.ultraLabel127.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel127.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel127.Location = new System.Drawing.Point(3, 57);
@@ -5307,14 +5922,14 @@
             // 
             // ultraLabel135
             // 
-            appearance248.BackColor = System.Drawing.Color.DimGray;
-            appearance248.BackColor2 = System.Drawing.Color.Gray;
-            appearance248.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance248.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance248.ForeColor = System.Drawing.Color.White;
-            appearance248.TextHAlignAsString = "Center";
-            appearance248.TextVAlignAsString = "Middle";
-            this.ultraLabel135.Appearance = appearance248;
+            appearance298.BackColor = System.Drawing.Color.DimGray;
+            appearance298.BackColor2 = System.Drawing.Color.Gray;
+            appearance298.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance298.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance298.ForeColor = System.Drawing.Color.White;
+            appearance298.TextHAlignAsString = "Center";
+            appearance298.TextVAlignAsString = "Middle";
+            this.ultraLabel135.Appearance = appearance298;
             this.ultraLabel135.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel135.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel135.Location = new System.Drawing.Point(3, 3);
@@ -5327,8 +5942,8 @@
             // 
             // ultraPanel20
             // 
-            appearance249.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel20.Appearance = appearance249;
+            appearance299.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel20.Appearance = appearance299;
             // 
             // ultraPanel20.ClientArea
             // 
@@ -5341,8 +5956,8 @@
             // 
             // ultraPanel21
             // 
-            appearance250.BackColor = System.Drawing.Color.White;
-            this.ultraPanel21.Appearance = appearance250;
+            appearance300.BackColor = System.Drawing.Color.White;
+            this.ultraPanel21.Appearance = appearance300;
             // 
             // ultraPanel21.ClientArea
             // 
@@ -5362,13 +5977,13 @@
             // 
             // ultraLabel109
             // 
-            appearance251.BackColor = System.Drawing.Color.DimGray;
-            appearance251.BackColor2 = System.Drawing.Color.Gray;
-            appearance251.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance251.ForeColor = System.Drawing.Color.White;
-            appearance251.TextHAlignAsString = "Center";
-            appearance251.TextVAlignAsString = "Middle";
-            this.ultraLabel109.Appearance = appearance251;
+            appearance301.BackColor = System.Drawing.Color.DimGray;
+            appearance301.BackColor2 = System.Drawing.Color.Gray;
+            appearance301.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance301.ForeColor = System.Drawing.Color.White;
+            appearance301.TextHAlignAsString = "Center";
+            appearance301.TextVAlignAsString = "Middle";
+            this.ultraLabel109.Appearance = appearance301;
             this.ultraLabel109.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel109.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel109.Location = new System.Drawing.Point(134, 30);
@@ -5380,13 +5995,13 @@
             // 
             // ultraLabel110
             // 
-            appearance252.BackColor = System.Drawing.Color.DimGray;
-            appearance252.BackColor2 = System.Drawing.Color.Gray;
-            appearance252.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance252.ForeColor = System.Drawing.Color.White;
-            appearance252.TextHAlignAsString = "Center";
-            appearance252.TextVAlignAsString = "Middle";
-            this.ultraLabel110.Appearance = appearance252;
+            appearance302.BackColor = System.Drawing.Color.DimGray;
+            appearance302.BackColor2 = System.Drawing.Color.Gray;
+            appearance302.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance302.ForeColor = System.Drawing.Color.White;
+            appearance302.TextHAlignAsString = "Center";
+            appearance302.TextVAlignAsString = "Middle";
+            this.ultraLabel110.Appearance = appearance302;
             this.ultraLabel110.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel110.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel110.Location = new System.Drawing.Point(216, 30);
@@ -5398,10 +6013,10 @@
             // 
             // System_uText_Edge07_Gap
             // 
-            appearance253.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance253.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance253.TextHAlignAsString = "Center";
-            this.System_uText_Edge07_Gap.Appearance = appearance253;
+            appearance303.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance303.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance303.TextHAlignAsString = "Center";
+            this.System_uText_Edge07_Gap.Appearance = appearance303;
             this.System_uText_Edge07_Gap.AutoSize = false;
             this.System_uText_Edge07_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Edge07_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -5414,10 +6029,10 @@
             // 
             // System_uText_Edge08_Gap
             // 
-            appearance254.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance254.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance254.TextHAlignAsString = "Center";
-            this.System_uText_Edge08_Gap.Appearance = appearance254;
+            appearance304.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance304.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance304.TextHAlignAsString = "Center";
+            this.System_uText_Edge08_Gap.Appearance = appearance304;
             this.System_uText_Edge08_Gap.AutoSize = false;
             this.System_uText_Edge08_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Edge08_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -5430,13 +6045,13 @@
             // 
             // ultraLabel112
             // 
-            appearance255.BackColor = System.Drawing.Color.DimGray;
-            appearance255.BackColor2 = System.Drawing.Color.Gray;
-            appearance255.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance255.ForeColor = System.Drawing.Color.White;
-            appearance255.TextHAlignAsString = "Center";
-            appearance255.TextVAlignAsString = "Middle";
-            this.ultraLabel112.Appearance = appearance255;
+            appearance305.BackColor = System.Drawing.Color.DimGray;
+            appearance305.BackColor2 = System.Drawing.Color.Gray;
+            appearance305.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance305.ForeColor = System.Drawing.Color.White;
+            appearance305.TextHAlignAsString = "Center";
+            appearance305.TextVAlignAsString = "Middle";
+            this.ultraLabel112.Appearance = appearance305;
             this.ultraLabel112.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel112.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel112.Location = new System.Drawing.Point(298, 30);
@@ -5448,10 +6063,10 @@
             // 
             // System_uText_Edge09_Gap
             // 
-            appearance256.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance256.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance256.TextHAlignAsString = "Center";
-            this.System_uText_Edge09_Gap.Appearance = appearance256;
+            appearance306.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance306.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance306.TextHAlignAsString = "Center";
+            this.System_uText_Edge09_Gap.Appearance = appearance306;
             this.System_uText_Edge09_Gap.AutoSize = false;
             this.System_uText_Edge09_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_Edge09_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -5464,13 +6079,13 @@
             // 
             // ultraLabel113
             // 
-            appearance257.BackColor = System.Drawing.Color.DimGray;
-            appearance257.BackColor2 = System.Drawing.Color.Gray;
-            appearance257.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance257.ForeColor = System.Drawing.Color.White;
-            appearance257.TextHAlignAsString = "Left";
-            appearance257.TextVAlignAsString = "Middle";
-            this.ultraLabel113.Appearance = appearance257;
+            appearance307.BackColor = System.Drawing.Color.DimGray;
+            appearance307.BackColor2 = System.Drawing.Color.Gray;
+            appearance307.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance307.ForeColor = System.Drawing.Color.White;
+            appearance307.TextHAlignAsString = "Left";
+            appearance307.TextVAlignAsString = "Middle";
+            this.ultraLabel113.Appearance = appearance307;
             this.ultraLabel113.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel113.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel113.Location = new System.Drawing.Point(3, 57);
@@ -5482,13 +6097,13 @@
             // 
             // ultraLabel114
             // 
-            appearance258.BackColor = System.Drawing.Color.DimGray;
-            appearance258.BackColor2 = System.Drawing.Color.Gray;
-            appearance258.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance258.ForeColor = System.Drawing.Color.White;
-            appearance258.TextHAlignAsString = "Left";
-            appearance258.TextVAlignAsString = "Middle";
-            this.ultraLabel114.Appearance = appearance258;
+            appearance308.BackColor = System.Drawing.Color.DimGray;
+            appearance308.BackColor2 = System.Drawing.Color.Gray;
+            appearance308.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance308.ForeColor = System.Drawing.Color.White;
+            appearance308.TextHAlignAsString = "Left";
+            appearance308.TextVAlignAsString = "Middle";
+            this.ultraLabel114.Appearance = appearance308;
             this.ultraLabel114.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel114.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel114.Location = new System.Drawing.Point(3, 30);
@@ -5500,14 +6115,14 @@
             // 
             // ultraLabel115
             // 
-            appearance259.BackColor = System.Drawing.Color.DimGray;
-            appearance259.BackColor2 = System.Drawing.Color.Gray;
-            appearance259.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance259.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance259.ForeColor = System.Drawing.Color.White;
-            appearance259.TextHAlignAsString = "Center";
-            appearance259.TextVAlignAsString = "Middle";
-            this.ultraLabel115.Appearance = appearance259;
+            appearance309.BackColor = System.Drawing.Color.DimGray;
+            appearance309.BackColor2 = System.Drawing.Color.Gray;
+            appearance309.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance309.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance309.ForeColor = System.Drawing.Color.White;
+            appearance309.TextHAlignAsString = "Center";
+            appearance309.TextVAlignAsString = "Middle";
+            this.ultraLabel115.Appearance = appearance309;
             this.ultraLabel115.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel115.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel115.Location = new System.Drawing.Point(3, 3);
@@ -5520,227 +6135,186 @@
             // 
             // ultraPanel4
             // 
-            appearance260.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel4.Appearance = appearance260;
+            appearance310.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel4.Appearance = appearance310;
             // 
             // ultraPanel4.ClientArea
             // 
             this.ultraPanel4.ClientArea.Controls.Add(this.ultraPanel5);
-            this.ultraPanel4.Location = new System.Drawing.Point(800, 163);
+            this.ultraPanel4.Location = new System.Drawing.Point(405, 685);
             this.ultraPanel4.Name = "ultraPanel4";
-            this.ultraPanel4.Size = new System.Drawing.Size(444, 143);
+            this.ultraPanel4.Size = new System.Drawing.Size(385, 89);
             this.ultraPanel4.TabIndex = 138;
             this.ultraPanel4.TabStop = false;
             // 
             // ultraPanel5
             // 
-            appearance261.BackColor = System.Drawing.Color.White;
-            this.ultraPanel5.Appearance = appearance261;
+            appearance311.BackColor = System.Drawing.Color.White;
+            this.ultraPanel5.Appearance = appearance311;
             // 
             // ultraPanel5.ClientArea
             // 
-            this.ultraPanel5.ClientArea.Controls.Add(this.ultraTextEditor10);
-            this.ultraPanel5.ClientArea.Controls.Add(this.ultraLabel79);
-            this.ultraPanel5.ClientArea.Controls.Add(this.ultraTextEditor11);
-            this.ultraPanel5.ClientArea.Controls.Add(this.ultraTextEditor9);
-            this.ultraPanel5.ClientArea.Controls.Add(this.ultraLabel78);
-            this.ultraPanel5.ClientArea.Controls.Add(this.ultraLabel80);
+            this.ultraPanel5.ClientArea.Controls.Add(this.System_uLabel_EtcItem04);
             this.ultraPanel5.ClientArea.Controls.Add(this.ultraLabel54);
             this.ultraPanel5.ClientArea.Controls.Add(this.System_uLabel_ImageDelete);
             this.ultraPanel5.ClientArea.Controls.Add(this.System_uTxt_ImageDelete02);
+            this.ultraPanel5.ClientArea.Controls.Add(this.System_uTxt_EtcItem05);
             this.ultraPanel5.ClientArea.Controls.Add(this.ultraLabel3);
+            this.ultraPanel5.ClientArea.Controls.Add(this.System_uCombo_EtcItem04);
             this.ultraPanel5.ClientArea.Controls.Add(this.System_uCombo_AlramCount01);
             this.ultraPanel5.ClientArea.Controls.Add(this.System_uLabel_AlramCount);
             this.ultraPanel5.ClientArea.Controls.Add(this.System_uText_AlramCount02);
-            this.ultraPanel5.ClientArea.Controls.Add(this.ultraLabel1);
             this.ultraPanel5.ClientArea.Controls.Add(this.System_uCombo_ImageDelete01);
             this.ultraPanel5.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel5.Name = "ultraPanel5";
-            this.ultraPanel5.Size = new System.Drawing.Size(440, 139);
+            this.ultraPanel5.Size = new System.Drawing.Size(381, 85);
             this.ultraPanel5.TabIndex = 72;
             // 
-            // ultraTextEditor10
+            // System_uLabel_EtcItem04
             // 
-            appearance262.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance262.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance262.TextHAlignAsString = "Center";
-            this.ultraTextEditor10.Appearance = appearance262;
-            this.ultraTextEditor10.AutoSize = false;
-            this.ultraTextEditor10.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor10.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor10.Enabled = false;
-            this.ultraTextEditor10.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor10.Location = new System.Drawing.Point(357, 57);
-            this.ultraTextEditor10.Name = "ultraTextEditor10";
-            this.ultraTextEditor10.Size = new System.Drawing.Size(80, 25);
-            this.ultraTextEditor10.TabIndex = 181;
-            // 
-            // ultraLabel79
-            // 
-            appearance263.BackColor = System.Drawing.Color.DimGray;
-            appearance263.BackColor2 = System.Drawing.Color.Gray;
-            appearance263.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance263.ForeColor = System.Drawing.Color.White;
-            appearance263.TextHAlignAsString = "Left";
-            appearance263.TextVAlignAsString = "Middle";
-            this.ultraLabel79.Appearance = appearance263;
-            this.ultraLabel79.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel79.Enabled = false;
-            this.ultraLabel79.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel79.Location = new System.Drawing.Point(4, 57);
-            this.ultraLabel79.Name = "ultraLabel79";
-            this.ultraLabel79.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel79.Size = new System.Drawing.Size(352, 25);
-            this.ultraLabel79.TabIndex = 180;
-            // 
-            // ultraTextEditor11
-            // 
-            appearance264.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance264.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance264.TextHAlignAsString = "Center";
-            this.ultraTextEditor11.Appearance = appearance264;
-            this.ultraTextEditor11.AutoSize = false;
-            this.ultraTextEditor11.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor11.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor11.Enabled = false;
-            this.ultraTextEditor11.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor11.Location = new System.Drawing.Point(357, 111);
-            this.ultraTextEditor11.Name = "ultraTextEditor11";
-            this.ultraTextEditor11.Size = new System.Drawing.Size(80, 25);
-            this.ultraTextEditor11.TabIndex = 179;
-            // 
-            // ultraTextEditor9
-            // 
-            appearance265.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance265.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance265.TextHAlignAsString = "Center";
-            this.ultraTextEditor9.Appearance = appearance265;
-            this.ultraTextEditor9.AutoSize = false;
-            this.ultraTextEditor9.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ultraTextEditor9.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.ultraTextEditor9.Enabled = false;
-            this.ultraTextEditor9.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraTextEditor9.Location = new System.Drawing.Point(357, 84);
-            this.ultraTextEditor9.Name = "ultraTextEditor9";
-            this.ultraTextEditor9.Size = new System.Drawing.Size(80, 25);
-            this.ultraTextEditor9.TabIndex = 177;
-            // 
-            // ultraLabel78
-            // 
-            appearance266.BackColor = System.Drawing.Color.DimGray;
-            appearance266.BackColor2 = System.Drawing.Color.Gray;
-            appearance266.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance266.ForeColor = System.Drawing.Color.White;
-            appearance266.TextHAlignAsString = "Left";
-            appearance266.TextVAlignAsString = "Middle";
-            this.ultraLabel78.Appearance = appearance266;
-            this.ultraLabel78.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel78.Enabled = false;
-            this.ultraLabel78.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel78.Location = new System.Drawing.Point(4, 84);
-            this.ultraLabel78.Name = "ultraLabel78";
-            this.ultraLabel78.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel78.Size = new System.Drawing.Size(352, 25);
-            this.ultraLabel78.TabIndex = 176;
-            // 
-            // ultraLabel80
-            // 
-            appearance267.BackColor = System.Drawing.Color.DimGray;
-            appearance267.BackColor2 = System.Drawing.Color.Gray;
-            appearance267.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance267.ForeColor = System.Drawing.Color.White;
-            appearance267.TextHAlignAsString = "Left";
-            appearance267.TextVAlignAsString = "Middle";
-            this.ultraLabel80.Appearance = appearance267;
-            this.ultraLabel80.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel80.Enabled = false;
-            this.ultraLabel80.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel80.Location = new System.Drawing.Point(4, 111);
-            this.ultraLabel80.Name = "ultraLabel80";
-            this.ultraLabel80.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel80.Size = new System.Drawing.Size(352, 25);
-            this.ultraLabel80.TabIndex = 173;
+            appearance312.BackColor = System.Drawing.Color.DimGray;
+            appearance312.BackColor2 = System.Drawing.Color.Gray;
+            appearance312.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance312.ForeColor = System.Drawing.Color.White;
+            appearance312.TextHAlignAsString = "Left";
+            appearance312.TextVAlignAsString = "Middle";
+            this.System_uLabel_EtcItem04.Appearance = appearance312;
+            this.System_uLabel_EtcItem04.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.System_uLabel_EtcItem04.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uLabel_EtcItem04.Location = new System.Drawing.Point(3, 58);
+            this.System_uLabel_EtcItem04.Name = "System_uLabel_EtcItem04";
+            this.System_uLabel_EtcItem04.Padding = new System.Drawing.Size(2, 0);
+            this.System_uLabel_EtcItem04.Size = new System.Drawing.Size(211, 25);
+            this.System_uLabel_EtcItem04.TabIndex = 171;
+            this.System_uLabel_EtcItem04.Text = "켈리브레시션 테이블 사용";
             // 
             // ultraLabel54
             // 
-            appearance268.BackColor = System.Drawing.Color.DimGray;
-            appearance268.BackColor2 = System.Drawing.Color.Gray;
-            appearance268.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance268.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance268.ForeColor = System.Drawing.Color.White;
-            appearance268.TextHAlignAsString = "Center";
-            appearance268.TextVAlignAsString = "Middle";
-            this.ultraLabel54.Appearance = appearance268;
+            appearance313.BackColor = System.Drawing.Color.DimGray;
+            appearance313.BackColor2 = System.Drawing.Color.Gray;
+            appearance313.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance313.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance313.ForeColor = System.Drawing.Color.White;
+            appearance313.TextHAlignAsString = "Center";
+            appearance313.TextVAlignAsString = "Middle";
+            this.ultraLabel54.Appearance = appearance313;
             this.ultraLabel54.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel54.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel54.Location = new System.Drawing.Point(3, 3);
             this.ultraLabel54.Name = "ultraLabel54";
             this.ultraLabel54.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel54.Size = new System.Drawing.Size(434, 25);
+            this.ultraLabel54.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel54.TabIndex = 172;
             this.ultraLabel54.Text = "저장 데이터 크기 설정";
             this.ultraLabel54.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // System_uLabel_ImageDelete
             // 
-            appearance269.BackColor = System.Drawing.Color.DimGray;
-            appearance269.BackColor2 = System.Drawing.Color.Gray;
-            appearance269.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance269.ForeColor = System.Drawing.Color.White;
-            appearance269.TextHAlignAsString = "Left";
-            appearance269.TextVAlignAsString = "Middle";
-            this.System_uLabel_ImageDelete.Appearance = appearance269;
+            appearance314.BackColor = System.Drawing.Color.DimGray;
+            appearance314.BackColor2 = System.Drawing.Color.Gray;
+            appearance314.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance314.ForeColor = System.Drawing.Color.White;
+            appearance314.TextHAlignAsString = "Left";
+            appearance314.TextVAlignAsString = "Middle";
+            this.System_uLabel_ImageDelete.Appearance = appearance314;
             this.System_uLabel_ImageDelete.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.System_uLabel_ImageDelete.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.System_uLabel_ImageDelete.Location = new System.Drawing.Point(3, 30);
             this.System_uLabel_ImageDelete.Name = "System_uLabel_ImageDelete";
             this.System_uLabel_ImageDelete.Padding = new System.Drawing.Size(2, 0);
-            this.System_uLabel_ImageDelete.Size = new System.Drawing.Size(352, 25);
+            this.System_uLabel_ImageDelete.Size = new System.Drawing.Size(211, 25);
             this.System_uLabel_ImageDelete.TabIndex = 168;
             this.System_uLabel_ImageDelete.Text = "이미지 삭제 알람 - HardDisk %";
             // 
             // System_uTxt_ImageDelete02
             // 
-            appearance270.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance270.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance270.TextHAlignAsString = "Center";
-            this.System_uTxt_ImageDelete02.Appearance = appearance270;
+            appearance315.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance315.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance315.TextHAlignAsString = "Center";
+            this.System_uTxt_ImageDelete02.Appearance = appearance315;
             this.System_uTxt_ImageDelete02.AutoSize = false;
             this.System_uTxt_ImageDelete02.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uTxt_ImageDelete02.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.System_uTxt_ImageDelete02.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uTxt_ImageDelete02.Location = new System.Drawing.Point(357, 30);
+            this.System_uTxt_ImageDelete02.Location = new System.Drawing.Point(298, 30);
             this.System_uTxt_ImageDelete02.Name = "System_uTxt_ImageDelete02";
             this.System_uTxt_ImageDelete02.Size = new System.Drawing.Size(80, 25);
             this.System_uTxt_ImageDelete02.TabIndex = 165;
             this.System_uTxt_ImageDelete02.Text = "90";
             // 
+            // System_uTxt_EtcItem05
+            // 
+            appearance316.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance316.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance316.TextHAlignAsString = "Center";
+            this.System_uTxt_EtcItem05.Appearance = appearance316;
+            this.System_uTxt_EtcItem05.AutoSize = false;
+            this.System_uTxt_EtcItem05.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uTxt_EtcItem05.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uTxt_EtcItem05.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uTxt_EtcItem05.Location = new System.Drawing.Point(298, 58);
+            this.System_uTxt_EtcItem05.Name = "System_uTxt_EtcItem05";
+            this.System_uTxt_EtcItem05.Size = new System.Drawing.Size(80, 25);
+            this.System_uTxt_EtcItem05.TabIndex = 175;
+            this.System_uTxt_EtcItem05.Text = "90";
+            // 
             // ultraLabel3
             // 
-            appearance271.BackColor = System.Drawing.Color.DimGray;
-            appearance271.BackColor2 = System.Drawing.Color.Gray;
-            appearance271.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance271.ForeColor = System.Drawing.Color.White;
-            appearance271.TextHAlignAsString = "Left";
-            appearance271.TextVAlignAsString = "Middle";
-            this.ultraLabel3.Appearance = appearance271;
+            appearance317.BackColor = System.Drawing.Color.DimGray;
+            appearance317.BackColor2 = System.Drawing.Color.Gray;
+            appearance317.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance317.ForeColor = System.Drawing.Color.White;
+            appearance317.TextHAlignAsString = "Left";
+            appearance317.TextVAlignAsString = "Middle";
+            this.ultraLabel3.Appearance = appearance317;
             this.ultraLabel3.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel3.Location = new System.Drawing.Point(3, 84);
+            this.ultraLabel3.Location = new System.Drawing.Point(9, 62);
             this.ultraLabel3.Name = "ultraLabel3";
             this.ultraLabel3.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel3.Size = new System.Drawing.Size(352, 25);
+            this.ultraLabel3.Size = new System.Drawing.Size(182, 18);
             this.ultraLabel3.TabIndex = 170;
             this.ultraLabel3.Text = "연속 불량 발생 시 알람 사용";
             this.ultraLabel3.Click += new System.EventHandler(this.ultraLabel3_Click);
             // 
+            // System_uCombo_EtcItem04
+            // 
+            appearance318.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance318.FontData.BoldAsString = "True";
+            appearance318.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance318.TextHAlignAsString = "Center";
+            this.System_uCombo_EtcItem04.Appearance = appearance318;
+            this.System_uCombo_EtcItem04.AutoSize = false;
+            this.System_uCombo_EtcItem04.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.System_uCombo_EtcItem04.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            valueListItem37.DataValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            valueListItem37.DisplayText = "ON";
+            valueListItem39.DataValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            valueListItem39.DisplayText = "OFF";
+            this.System_uCombo_EtcItem04.Items.AddRange(new Infragistics.Win.ValueListItem[] {
+            valueListItem37,
+            valueListItem39});
+            this.System_uCombo_EtcItem04.Location = new System.Drawing.Point(216, 58);
+            this.System_uCombo_EtcItem04.Name = "System_uCombo_EtcItem04";
+            this.System_uCombo_EtcItem04.Size = new System.Drawing.Size(80, 25);
+            this.System_uCombo_EtcItem04.TabIndex = 174;
+            this.System_uCombo_EtcItem04.Text = "ON";
+            // 
             // System_uCombo_AlramCount01
             // 
-            appearance272.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance272.FontData.BoldAsString = "True";
-            appearance272.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance272.TextHAlignAsString = "Center";
-            this.System_uCombo_AlramCount01.Appearance = appearance272;
+            appearance319.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance319.FontData.BoldAsString = "True";
+            appearance319.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance319.TextHAlignAsString = "Center";
+            this.System_uCombo_AlramCount01.Appearance = appearance319;
             this.System_uCombo_AlramCount01.AutoSize = false;
             this.System_uCombo_AlramCount01.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_AlramCount01.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -5759,71 +6333,53 @@
             this.System_uCombo_AlramCount01.Items.AddRange(new Infragistics.Win.ValueListItem[] {
             valueListItem335,
             valueListItem468});
-            this.System_uCombo_AlramCount01.Location = new System.Drawing.Point(357, 84);
+            this.System_uCombo_AlramCount01.Location = new System.Drawing.Point(220, 62);
             this.System_uCombo_AlramCount01.Name = "System_uCombo_AlramCount01";
-            this.System_uCombo_AlramCount01.Size = new System.Drawing.Size(80, 25);
+            this.System_uCombo_AlramCount01.Size = new System.Drawing.Size(48, 17);
             this.System_uCombo_AlramCount01.TabIndex = 169;
             this.System_uCombo_AlramCount01.Text = "ON";
             // 
             // System_uLabel_AlramCount
             // 
-            appearance273.BackColor = System.Drawing.Color.DimGray;
-            appearance273.BackColor2 = System.Drawing.Color.Gray;
-            appearance273.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance273.ForeColor = System.Drawing.Color.White;
-            appearance273.TextHAlignAsString = "Left";
-            appearance273.TextVAlignAsString = "Middle";
-            this.System_uLabel_AlramCount.Appearance = appearance273;
+            appearance320.BackColor = System.Drawing.Color.DimGray;
+            appearance320.BackColor2 = System.Drawing.Color.Gray;
+            appearance320.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance320.ForeColor = System.Drawing.Color.White;
+            appearance320.TextHAlignAsString = "Left";
+            appearance320.TextVAlignAsString = "Middle";
+            this.System_uLabel_AlramCount.Appearance = appearance320;
             this.System_uLabel_AlramCount.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.System_uLabel_AlramCount.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uLabel_AlramCount.Location = new System.Drawing.Point(3, 111);
+            this.System_uLabel_AlramCount.Location = new System.Drawing.Point(31, 62);
             this.System_uLabel_AlramCount.Name = "System_uLabel_AlramCount";
             this.System_uLabel_AlramCount.Padding = new System.Drawing.Size(2, 0);
-            this.System_uLabel_AlramCount.Size = new System.Drawing.Size(352, 25);
+            this.System_uLabel_AlramCount.Size = new System.Drawing.Size(160, 17);
             this.System_uLabel_AlramCount.TabIndex = 168;
             this.System_uLabel_AlramCount.Text = "연속 불량 알람 시 수량";
             // 
             // System_uText_AlramCount02
             // 
-            appearance274.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance274.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance274.TextHAlignAsString = "Center";
-            this.System_uText_AlramCount02.Appearance = appearance274;
+            appearance321.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance321.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance321.TextHAlignAsString = "Center";
+            this.System_uText_AlramCount02.Appearance = appearance321;
             this.System_uText_AlramCount02.AutoSize = false;
             this.System_uText_AlramCount02.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_AlramCount02.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.System_uText_AlramCount02.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uText_AlramCount02.Location = new System.Drawing.Point(357, 111);
+            this.System_uText_AlramCount02.Location = new System.Drawing.Point(236, 62);
             this.System_uText_AlramCount02.Name = "System_uText_AlramCount02";
-            this.System_uText_AlramCount02.Size = new System.Drawing.Size(80, 25);
+            this.System_uText_AlramCount02.Size = new System.Drawing.Size(48, 15);
             this.System_uText_AlramCount02.TabIndex = 165;
             this.System_uText_AlramCount02.Text = "10";
             // 
-            // ultraLabel1
-            // 
-            appearance275.BackColor = System.Drawing.Color.DimGray;
-            appearance275.BackColor2 = System.Drawing.Color.Gray;
-            appearance275.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance275.ForeColor = System.Drawing.Color.White;
-            appearance275.TextHAlignAsString = "Left";
-            appearance275.TextVAlignAsString = "Middle";
-            this.ultraLabel1.Appearance = appearance275;
-            this.ultraLabel1.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel1.Location = new System.Drawing.Point(3, 57);
-            this.ultraLabel1.Name = "ultraLabel1";
-            this.ultraLabel1.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel1.Size = new System.Drawing.Size(352, 25);
-            this.ultraLabel1.TabIndex = 171;
-            this.ultraLabel1.Text = "이미지 테이터 크기 확인 후 자동 삭제";
-            // 
             // System_uCombo_ImageDelete01
             // 
-            appearance276.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance276.FontData.BoldAsString = "True";
-            appearance276.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance276.TextHAlignAsString = "Center";
-            this.System_uCombo_ImageDelete01.Appearance = appearance276;
+            appearance322.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance322.FontData.BoldAsString = "True";
+            appearance322.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance322.TextHAlignAsString = "Center";
+            this.System_uCombo_ImageDelete01.Appearance = appearance322;
             this.System_uCombo_ImageDelete01.AutoSize = false;
             this.System_uCombo_ImageDelete01.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_ImageDelete01.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -5842,7 +6398,7 @@
             this.System_uCombo_ImageDelete01.Items.AddRange(new Infragistics.Win.ValueListItem[] {
             valueListItem19,
             valueListItem20});
-            this.System_uCombo_ImageDelete01.Location = new System.Drawing.Point(357, 57);
+            this.System_uCombo_ImageDelete01.Location = new System.Drawing.Point(216, 30);
             this.System_uCombo_ImageDelete01.Name = "System_uCombo_ImageDelete01";
             this.System_uCombo_ImageDelete01.Size = new System.Drawing.Size(80, 25);
             this.System_uCombo_ImageDelete01.TabIndex = 169;
@@ -5850,8 +6406,8 @@
             // 
             // ultraPanel32
             // 
-            appearance277.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel32.Appearance = appearance277;
+            appearance323.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel32.Appearance = appearance323;
             // 
             // ultraPanel32.ClientArea
             // 
@@ -5864,8 +6420,8 @@
             // 
             // ultraPanel33
             // 
-            appearance278.BackColor = System.Drawing.Color.White;
-            this.ultraPanel33.Appearance = appearance278;
+            appearance324.BackColor = System.Drawing.Color.White;
+            this.ultraPanel33.Appearance = appearance324;
             // 
             // ultraPanel33.ClientArea
             // 
@@ -5884,14 +6440,15 @@
             // 
             // ultraLabel104
             // 
-            appearance279.BackColor = System.Drawing.Color.DimGray;
-            appearance279.BackColor2 = System.Drawing.Color.Gray;
-            appearance279.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance279.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance279.ForeColor = System.Drawing.Color.White;
-            appearance279.TextHAlignAsString = "Center";
-            appearance279.TextVAlignAsString = "Middle";
-            this.ultraLabel104.Appearance = appearance279;
+            appearance325.BackColor = System.Drawing.Color.DimGray;
+            appearance325.BackColor2 = System.Drawing.Color.Gray;
+            appearance325.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance325.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance325.FontData.Name = "MS Reference Sans Serif";
+            appearance325.ForeColor = System.Drawing.Color.White;
+            appearance325.TextHAlignAsString = "Center";
+            appearance325.TextVAlignAsString = "Middle";
+            this.ultraLabel104.Appearance = appearance325;
             this.ultraLabel104.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel104.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel104.Location = new System.Drawing.Point(3, 3);
@@ -5904,11 +6461,11 @@
             // 
             // System_uCombo_ImageFail_Gap
             // 
-            appearance280.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance280.FontData.BoldAsString = "True";
-            appearance280.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance280.TextHAlignAsString = "Center";
-            this.System_uCombo_ImageFail_Gap.Appearance = appearance280;
+            appearance326.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance326.FontData.BoldAsString = "True";
+            appearance326.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance326.TextHAlignAsString = "Center";
+            this.System_uCombo_ImageFail_Gap.Appearance = appearance326;
             this.System_uCombo_ImageFail_Gap.AutoSize = false;
             this.System_uCombo_ImageFail_Gap.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_ImageFail_Gap.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -5935,11 +6492,11 @@
             // 
             // System_uCombo_ImagePass_Gap
             // 
-            appearance281.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance281.FontData.BoldAsString = "True";
-            appearance281.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance281.TextHAlignAsString = "Center";
-            this.System_uCombo_ImagePass_Gap.Appearance = appearance281;
+            appearance327.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance327.FontData.BoldAsString = "True";
+            appearance327.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance327.TextHAlignAsString = "Center";
+            this.System_uCombo_ImagePass_Gap.Appearance = appearance327;
             this.System_uCombo_ImagePass_Gap.AutoSize = false;
             this.System_uCombo_ImagePass_Gap.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_ImagePass_Gap.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -5966,16 +6523,16 @@
             // 
             // System_uBtn_ImagePath_Gap
             // 
-            appearance282.BackColor = System.Drawing.Color.DarkGray;
-            appearance282.BackColor2 = System.Drawing.Color.DimGray;
-            appearance282.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance282.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.System_uBtn_ImagePath_Gap.Appearance = appearance282;
+            appearance328.BackColor = System.Drawing.Color.DarkGray;
+            appearance328.BackColor2 = System.Drawing.Color.DimGray;
+            appearance328.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance328.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_ImagePath_Gap.Appearance = appearance328;
             this.System_uBtn_ImagePath_Gap.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.System_uBtn_ImagePath_Gap.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance283.BorderColor = System.Drawing.Color.White;
-            appearance283.ForeColor = System.Drawing.Color.White;
-            this.System_uBtn_ImagePath_Gap.HotTrackAppearance = appearance283;
+            appearance329.BorderColor = System.Drawing.Color.White;
+            appearance329.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_ImagePath_Gap.HotTrackAppearance = appearance329;
             this.System_uBtn_ImagePath_Gap.Location = new System.Drawing.Point(297, 84);
             this.System_uBtn_ImagePath_Gap.Name = "System_uBtn_ImagePath_Gap";
             this.System_uBtn_ImagePath_Gap.ShowFocusRect = false;
@@ -5988,13 +6545,13 @@
             // 
             // System_uLabel_ImageFail
             // 
-            appearance284.BackColor = System.Drawing.Color.DimGray;
-            appearance284.BackColor2 = System.Drawing.Color.Gray;
-            appearance284.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance284.ForeColor = System.Drawing.Color.White;
-            appearance284.TextHAlignAsString = "Left";
-            appearance284.TextVAlignAsString = "Middle";
-            this.System_uLabel_ImageFail.Appearance = appearance284;
+            appearance330.BackColor = System.Drawing.Color.DimGray;
+            appearance330.BackColor2 = System.Drawing.Color.Gray;
+            appearance330.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance330.ForeColor = System.Drawing.Color.White;
+            appearance330.TextHAlignAsString = "Left";
+            appearance330.TextVAlignAsString = "Middle";
+            this.System_uLabel_ImageFail.Appearance = appearance330;
             this.System_uLabel_ImageFail.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.System_uLabel_ImageFail.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.System_uLabel_ImageFail.Location = new System.Drawing.Point(3, 57);
@@ -6006,10 +6563,10 @@
             // 
             // System_uTxt_ImagePath_Gap
             // 
-            appearance285.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance285.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance285.TextHAlignAsString = "Left";
-            this.System_uTxt_ImagePath_Gap.Appearance = appearance285;
+            appearance331.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance331.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance331.TextHAlignAsString = "Left";
+            this.System_uTxt_ImagePath_Gap.Appearance = appearance331;
             this.System_uTxt_ImagePath_Gap.AutoSize = false;
             this.System_uTxt_ImagePath_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uTxt_ImagePath_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -6023,13 +6580,13 @@
             // 
             // System_uLabel_ImagePath
             // 
-            appearance286.BackColor = System.Drawing.Color.DimGray;
-            appearance286.BackColor2 = System.Drawing.Color.Gray;
-            appearance286.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance286.ForeColor = System.Drawing.Color.White;
-            appearance286.TextHAlignAsString = "Left";
-            appearance286.TextVAlignAsString = "Middle";
-            this.System_uLabel_ImagePath.Appearance = appearance286;
+            appearance332.BackColor = System.Drawing.Color.DimGray;
+            appearance332.BackColor2 = System.Drawing.Color.Gray;
+            appearance332.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance332.ForeColor = System.Drawing.Color.White;
+            appearance332.TextHAlignAsString = "Left";
+            appearance332.TextVAlignAsString = "Middle";
+            this.System_uLabel_ImagePath.Appearance = appearance332;
             this.System_uLabel_ImagePath.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.System_uLabel_ImagePath.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.System_uLabel_ImagePath.Location = new System.Drawing.Point(3, 84);
@@ -6041,13 +6598,13 @@
             // 
             // System_uLabel_ImagePass
             // 
-            appearance287.BackColor = System.Drawing.Color.DimGray;
-            appearance287.BackColor2 = System.Drawing.Color.Gray;
-            appearance287.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance287.ForeColor = System.Drawing.Color.White;
-            appearance287.TextHAlignAsString = "Left";
-            appearance287.TextVAlignAsString = "Middle";
-            this.System_uLabel_ImagePass.Appearance = appearance287;
+            appearance333.BackColor = System.Drawing.Color.DimGray;
+            appearance333.BackColor2 = System.Drawing.Color.Gray;
+            appearance333.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance333.ForeColor = System.Drawing.Color.White;
+            appearance333.TextHAlignAsString = "Left";
+            appearance333.TextVAlignAsString = "Middle";
+            this.System_uLabel_ImagePass.Appearance = appearance333;
             this.System_uLabel_ImagePass.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.System_uLabel_ImagePass.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.System_uLabel_ImagePass.Location = new System.Drawing.Point(3, 30);
@@ -6059,8 +6616,8 @@
             // 
             // ultraPanel45
             // 
-            appearance288.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel45.Appearance = appearance288;
+            appearance334.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel45.Appearance = appearance334;
             // 
             // ultraPanel45.ClientArea
             // 
@@ -6073,8 +6630,8 @@
             // 
             // ultraPanel46
             // 
-            appearance289.BackColor = System.Drawing.Color.White;
-            this.ultraPanel46.Appearance = appearance289;
+            appearance335.BackColor = System.Drawing.Color.White;
+            this.ultraPanel46.Appearance = appearance335;
             // 
             // ultraPanel46.ClientArea
             // 
@@ -6087,16 +6644,16 @@
             // 
             // System_uBtn_SetupInit
             // 
-            appearance290.BackColor = System.Drawing.Color.DarkGray;
-            appearance290.BackColor2 = System.Drawing.Color.DimGray;
-            appearance290.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance290.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.System_uBtn_SetupInit.Appearance = appearance290;
+            appearance336.BackColor = System.Drawing.Color.DarkGray;
+            appearance336.BackColor2 = System.Drawing.Color.DimGray;
+            appearance336.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance336.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_SetupInit.Appearance = appearance336;
             this.System_uBtn_SetupInit.Enabled = false;
             this.System_uBtn_SetupInit.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance291.BorderColor = System.Drawing.Color.White;
-            appearance291.ForeColor = System.Drawing.Color.White;
-            this.System_uBtn_SetupInit.HotTrackAppearance = appearance291;
+            appearance337.BorderColor = System.Drawing.Color.White;
+            appearance337.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_SetupInit.HotTrackAppearance = appearance337;
             this.System_uBtn_SetupInit.Location = new System.Drawing.Point(3, 3);
             this.System_uBtn_SetupInit.Name = "System_uBtn_SetupInit";
             this.System_uBtn_SetupInit.Size = new System.Drawing.Size(216, 51);
@@ -6109,15 +6666,15 @@
             // 
             // System_uBtn_SetupApply
             // 
-            appearance292.BackColor = System.Drawing.Color.DarkGray;
-            appearance292.BackColor2 = System.Drawing.Color.DimGray;
-            appearance292.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance292.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.System_uBtn_SetupApply.Appearance = appearance292;
+            appearance338.BackColor = System.Drawing.Color.DarkGray;
+            appearance338.BackColor2 = System.Drawing.Color.DimGray;
+            appearance338.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance338.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_SetupApply.Appearance = appearance338;
             this.System_uBtn_SetupApply.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance293.BorderColor = System.Drawing.Color.White;
-            appearance293.ForeColor = System.Drawing.Color.White;
-            this.System_uBtn_SetupApply.HotTrackAppearance = appearance293;
+            appearance339.BorderColor = System.Drawing.Color.White;
+            appearance339.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_SetupApply.HotTrackAppearance = appearance339;
             this.System_uBtn_SetupApply.Location = new System.Drawing.Point(221, 3);
             this.System_uBtn_SetupApply.Name = "System_uBtn_SetupApply";
             this.System_uBtn_SetupApply.Size = new System.Drawing.Size(216, 51);
@@ -6130,8 +6687,8 @@
             // 
             // ultraPanel35
             // 
-            appearance294.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel35.Appearance = appearance294;
+            appearance340.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel35.Appearance = appearance340;
             // 
             // ultraPanel35.ClientArea
             // 
@@ -6144,8 +6701,8 @@
             // 
             // ultraPanel44
             // 
-            appearance295.BackColor = System.Drawing.Color.White;
-            this.ultraPanel44.Appearance = appearance295;
+            appearance341.BackColor = System.Drawing.Color.White;
+            this.ultraPanel44.Appearance = appearance341;
             // 
             // ultraPanel44.ClientArea
             // 
@@ -6164,14 +6721,14 @@
             // 
             // ultraLabel111
             // 
-            appearance296.BackColor = System.Drawing.Color.DimGray;
-            appearance296.BackColor2 = System.Drawing.Color.Gray;
-            appearance296.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance296.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance296.ForeColor = System.Drawing.Color.White;
-            appearance296.TextHAlignAsString = "Center";
-            appearance296.TextVAlignAsString = "Middle";
-            this.ultraLabel111.Appearance = appearance296;
+            appearance342.BackColor = System.Drawing.Color.DimGray;
+            appearance342.BackColor2 = System.Drawing.Color.Gray;
+            appearance342.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance342.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance342.ForeColor = System.Drawing.Color.White;
+            appearance342.TextHAlignAsString = "Center";
+            appearance342.TextVAlignAsString = "Middle";
+            this.ultraLabel111.Appearance = appearance342;
             this.ultraLabel111.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel111.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel111.Location = new System.Drawing.Point(3, 3);
@@ -6184,11 +6741,11 @@
             // 
             // System_uCombo_MeasFail_Gap
             // 
-            appearance297.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance297.FontData.BoldAsString = "True";
-            appearance297.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance297.TextHAlignAsString = "Center";
-            this.System_uCombo_MeasFail_Gap.Appearance = appearance297;
+            appearance343.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance343.FontData.BoldAsString = "True";
+            appearance343.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance343.TextHAlignAsString = "Center";
+            this.System_uCombo_MeasFail_Gap.Appearance = appearance343;
             this.System_uCombo_MeasFail_Gap.AutoSize = false;
             this.System_uCombo_MeasFail_Gap.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_MeasFail_Gap.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -6215,11 +6772,11 @@
             // 
             // System_uCombo_MeasPass_Gap
             // 
-            appearance298.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance298.FontData.BoldAsString = "True";
-            appearance298.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance298.TextHAlignAsString = "Center";
-            this.System_uCombo_MeasPass_Gap.Appearance = appearance298;
+            appearance344.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance344.FontData.BoldAsString = "True";
+            appearance344.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance344.TextHAlignAsString = "Center";
+            this.System_uCombo_MeasPass_Gap.Appearance = appearance344;
             this.System_uCombo_MeasPass_Gap.AutoSize = false;
             this.System_uCombo_MeasPass_Gap.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_MeasPass_Gap.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -6246,16 +6803,16 @@
             // 
             // System_uBtn_MeasPath_Gap
             // 
-            appearance299.BackColor = System.Drawing.Color.DarkGray;
-            appearance299.BackColor2 = System.Drawing.Color.DimGray;
-            appearance299.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance299.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.System_uBtn_MeasPath_Gap.Appearance = appearance299;
+            appearance345.BackColor = System.Drawing.Color.DarkGray;
+            appearance345.BackColor2 = System.Drawing.Color.DimGray;
+            appearance345.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance345.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.System_uBtn_MeasPath_Gap.Appearance = appearance345;
             this.System_uBtn_MeasPath_Gap.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.System_uBtn_MeasPath_Gap.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance300.BorderColor = System.Drawing.Color.White;
-            appearance300.ForeColor = System.Drawing.Color.White;
-            this.System_uBtn_MeasPath_Gap.HotTrackAppearance = appearance300;
+            appearance346.BorderColor = System.Drawing.Color.White;
+            appearance346.ForeColor = System.Drawing.Color.White;
+            this.System_uBtn_MeasPath_Gap.HotTrackAppearance = appearance346;
             this.System_uBtn_MeasPath_Gap.Location = new System.Drawing.Point(297, 84);
             this.System_uBtn_MeasPath_Gap.Name = "System_uBtn_MeasPath_Gap";
             this.System_uBtn_MeasPath_Gap.ShowFocusRect = false;
@@ -6268,13 +6825,13 @@
             // 
             // System_uLabel_MeasFail
             // 
-            appearance301.BackColor = System.Drawing.Color.DimGray;
-            appearance301.BackColor2 = System.Drawing.Color.Gray;
-            appearance301.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance301.ForeColor = System.Drawing.Color.White;
-            appearance301.TextHAlignAsString = "Left";
-            appearance301.TextVAlignAsString = "Middle";
-            this.System_uLabel_MeasFail.Appearance = appearance301;
+            appearance347.BackColor = System.Drawing.Color.DimGray;
+            appearance347.BackColor2 = System.Drawing.Color.Gray;
+            appearance347.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance347.ForeColor = System.Drawing.Color.White;
+            appearance347.TextHAlignAsString = "Left";
+            appearance347.TextVAlignAsString = "Middle";
+            this.System_uLabel_MeasFail.Appearance = appearance347;
             this.System_uLabel_MeasFail.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.System_uLabel_MeasFail.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.System_uLabel_MeasFail.Location = new System.Drawing.Point(3, 57);
@@ -6286,10 +6843,10 @@
             // 
             // System_uTxt_MeasPath_Gap
             // 
-            appearance302.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance302.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance302.TextHAlignAsString = "Left";
-            this.System_uTxt_MeasPath_Gap.Appearance = appearance302;
+            appearance348.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance348.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance348.TextHAlignAsString = "Left";
+            this.System_uTxt_MeasPath_Gap.Appearance = appearance348;
             this.System_uTxt_MeasPath_Gap.AutoSize = false;
             this.System_uTxt_MeasPath_Gap.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uTxt_MeasPath_Gap.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -6303,13 +6860,13 @@
             // 
             // System_uLabel_MeasPath
             // 
-            appearance303.BackColor = System.Drawing.Color.DimGray;
-            appearance303.BackColor2 = System.Drawing.Color.Gray;
-            appearance303.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance303.ForeColor = System.Drawing.Color.White;
-            appearance303.TextHAlignAsString = "Left";
-            appearance303.TextVAlignAsString = "Middle";
-            this.System_uLabel_MeasPath.Appearance = appearance303;
+            appearance349.BackColor = System.Drawing.Color.DimGray;
+            appearance349.BackColor2 = System.Drawing.Color.Gray;
+            appearance349.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance349.ForeColor = System.Drawing.Color.White;
+            appearance349.TextHAlignAsString = "Left";
+            appearance349.TextVAlignAsString = "Middle";
+            this.System_uLabel_MeasPath.Appearance = appearance349;
             this.System_uLabel_MeasPath.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.System_uLabel_MeasPath.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.System_uLabel_MeasPath.Location = new System.Drawing.Point(3, 84);
@@ -6321,13 +6878,13 @@
             // 
             // System_uLabel_MeasPass
             // 
-            appearance304.BackColor = System.Drawing.Color.DimGray;
-            appearance304.BackColor2 = System.Drawing.Color.Gray;
-            appearance304.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance304.ForeColor = System.Drawing.Color.White;
-            appearance304.TextHAlignAsString = "Left";
-            appearance304.TextVAlignAsString = "Middle";
-            this.System_uLabel_MeasPass.Appearance = appearance304;
+            appearance350.BackColor = System.Drawing.Color.DimGray;
+            appearance350.BackColor2 = System.Drawing.Color.Gray;
+            appearance350.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance350.ForeColor = System.Drawing.Color.White;
+            appearance350.TextHAlignAsString = "Left";
+            appearance350.TextVAlignAsString = "Middle";
+            this.System_uLabel_MeasPass.Appearance = appearance350;
             this.System_uLabel_MeasPass.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.System_uLabel_MeasPass.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.System_uLabel_MeasPass.Location = new System.Drawing.Point(3, 30);
@@ -6339,173 +6896,108 @@
             // 
             // ultraPanel42
             // 
-            appearance305.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel42.Appearance = appearance305;
+            appearance351.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel42.Appearance = appearance351;
             // 
             // ultraPanel42.ClientArea
             // 
             this.ultraPanel42.ClientArea.Controls.Add(this.ultraPanel43);
-            this.ultraPanel42.Location = new System.Drawing.Point(800, 316);
+            this.ultraPanel42.Location = new System.Drawing.Point(800, 613);
             this.ultraPanel42.Name = "ultraPanel42";
-            this.ultraPanel42.Size = new System.Drawing.Size(444, 89);
+            this.ultraPanel42.Size = new System.Drawing.Size(385, 62);
             this.ultraPanel42.TabIndex = 104;
             this.ultraPanel42.TabStop = false;
             // 
             // ultraPanel43
             // 
-            appearance306.BackColor = System.Drawing.Color.White;
-            this.ultraPanel43.Appearance = appearance306;
+            appearance352.BackColor = System.Drawing.Color.White;
+            this.ultraPanel43.Appearance = appearance352;
             // 
             // ultraPanel43.ClientArea
             // 
-            this.ultraPanel43.ClientArea.Controls.Add(this.System_uCombo_EtcItem02);
-            this.ultraPanel43.ClientArea.Controls.Add(this.System_uCombo_EtcItem01);
-            this.ultraPanel43.ClientArea.Controls.Add(this.System_uLabel_EtcItem01);
-            this.ultraPanel43.ClientArea.Controls.Add(this.System_uLabel_EtcItem02);
-            this.ultraPanel43.ClientArea.Controls.Add(this.ultraLabel126);
+            this.ultraPanel43.ClientArea.Controls.Add(this.ultraLabel1);
+            this.ultraPanel43.ClientArea.Controls.Add(this.System_uTxt_DCF_Path_Right);
+            this.ultraPanel43.ClientArea.Controls.Add(this.uSystem_uBtn_DCF_File_Right);
             this.ultraPanel43.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel43.Name = "ultraPanel43";
-            this.ultraPanel43.Size = new System.Drawing.Size(440, 85);
+            this.ultraPanel43.Size = new System.Drawing.Size(381, 58);
             this.ultraPanel43.TabIndex = 72;
             // 
-            // System_uCombo_EtcItem02
+            // ultraLabel1
             // 
-            appearance307.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance307.FontData.BoldAsString = "True";
-            appearance307.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance307.TextHAlignAsString = "Center";
-            this.System_uCombo_EtcItem02.Appearance = appearance307;
-            this.System_uCombo_EtcItem02.AutoSize = false;
-            this.System_uCombo_EtcItem02.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.System_uCombo_EtcItem02.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem52.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem52.DisplayText = "ON";
-            valueListItem53.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem53.DisplayText = "OFF";
-            this.System_uCombo_EtcItem02.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem52,
-            valueListItem53});
-            this.System_uCombo_EtcItem02.Location = new System.Drawing.Point(357, 57);
-            this.System_uCombo_EtcItem02.Name = "System_uCombo_EtcItem02";
-            this.System_uCombo_EtcItem02.Size = new System.Drawing.Size(80, 25);
-            this.System_uCombo_EtcItem02.TabIndex = 170;
-            this.System_uCombo_EtcItem02.Text = "ON";
-            this.System_uCombo_EtcItem02.ValueChanged += new System.EventHandler(this.System_uCombo_EtcItem02_ValueChanged);
+            appearance353.BackColor = System.Drawing.Color.DimGray;
+            appearance353.BackColor2 = System.Drawing.Color.Gray;
+            appearance353.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance353.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance353.ForeColor = System.Drawing.Color.White;
+            appearance353.TextHAlignAsString = "Left";
+            appearance353.TextVAlignAsString = "Middle";
+            this.ultraLabel1.Appearance = appearance353;
+            this.ultraLabel1.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel1.Location = new System.Drawing.Point(3, 3);
+            this.ultraLabel1.Name = "ultraLabel1";
+            this.ultraLabel1.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel1.Size = new System.Drawing.Size(292, 25);
+            this.ultraLabel1.TabIndex = 175;
+            this.ultraLabel1.Text = "우측면 카메라 설정 파일";
+            this.ultraLabel1.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
-            // System_uCombo_EtcItem01
+            // System_uTxt_DCF_Path_Right
             // 
-            appearance308.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance308.FontData.BoldAsString = "True";
-            appearance308.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance308.TextHAlignAsString = "Center";
-            this.System_uCombo_EtcItem01.Appearance = appearance308;
-            this.System_uCombo_EtcItem01.AutoSize = false;
-            this.System_uCombo_EtcItem01.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.System_uCombo_EtcItem01.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem54.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem54.DisplayText = "ON";
-            valueListItem55.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem55.DisplayText = "OFF";
-            this.System_uCombo_EtcItem01.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem54,
-            valueListItem55});
-            this.System_uCombo_EtcItem01.Location = new System.Drawing.Point(357, 30);
-            this.System_uCombo_EtcItem01.Name = "System_uCombo_EtcItem01";
-            this.System_uCombo_EtcItem01.Size = new System.Drawing.Size(80, 25);
-            this.System_uCombo_EtcItem01.TabIndex = 169;
-            this.System_uCombo_EtcItem01.Text = "ON";
-            this.System_uCombo_EtcItem01.ValueChanged += new System.EventHandler(this.System_uCombo_EtcItem01_ValueChanged);
+            appearance354.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance354.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance354.TextHAlignAsString = "Left";
+            this.System_uTxt_DCF_Path_Right.Appearance = appearance354;
+            this.System_uTxt_DCF_Path_Right.AutoSize = false;
+            this.System_uTxt_DCF_Path_Right.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.System_uTxt_DCF_Path_Right.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.System_uTxt_DCF_Path_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_uTxt_DCF_Path_Right.Location = new System.Drawing.Point(3, 30);
+            this.System_uTxt_DCF_Path_Right.Name = "System_uTxt_DCF_Path_Right";
+            this.System_uTxt_DCF_Path_Right.ReadOnly = true;
+            this.System_uTxt_DCF_Path_Right.Size = new System.Drawing.Size(375, 25);
+            this.System_uTxt_DCF_Path_Right.TabIndex = 174;
+            this.System_uTxt_DCF_Path_Right.Text = "DCF  File  is ...";
             // 
-            // System_uLabel_EtcItem01
+            // uSystem_uBtn_DCF_File_Right
             // 
-            appearance309.BackColor = System.Drawing.Color.DimGray;
-            appearance309.BackColor2 = System.Drawing.Color.Gray;
-            appearance309.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance309.ForeColor = System.Drawing.Color.White;
-            appearance309.TextHAlignAsString = "Left";
-            appearance309.TextVAlignAsString = "Middle";
-            this.System_uLabel_EtcItem01.Appearance = appearance309;
-            this.System_uLabel_EtcItem01.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.System_uLabel_EtcItem01.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uLabel_EtcItem01.Location = new System.Drawing.Point(3, 30);
-            this.System_uLabel_EtcItem01.Name = "System_uLabel_EtcItem01";
-            this.System_uLabel_EtcItem01.Padding = new System.Drawing.Size(2, 0);
-            this.System_uLabel_EtcItem01.Size = new System.Drawing.Size(352, 25);
-            this.System_uLabel_EtcItem01.TabIndex = 168;
-            this.System_uLabel_EtcItem01.Text = "오피 방향 하부 조명";
-            // 
-            // System_uLabel_EtcItem02
-            // 
-            appearance310.BackColor = System.Drawing.Color.DimGray;
-            appearance310.BackColor2 = System.Drawing.Color.Gray;
-            appearance310.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance310.ForeColor = System.Drawing.Color.White;
-            appearance310.TextHAlignAsString = "Left";
-            appearance310.TextVAlignAsString = "Middle";
-            this.System_uLabel_EtcItem02.Appearance = appearance310;
-            this.System_uLabel_EtcItem02.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.System_uLabel_EtcItem02.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uLabel_EtcItem02.Location = new System.Drawing.Point(3, 57);
-            this.System_uLabel_EtcItem02.Name = "System_uLabel_EtcItem02";
-            this.System_uLabel_EtcItem02.Padding = new System.Drawing.Size(2, 0);
-            this.System_uLabel_EtcItem02.Size = new System.Drawing.Size(352, 25);
-            this.System_uLabel_EtcItem02.TabIndex = 167;
-            this.System_uLabel_EtcItem02.Text = "장비 방향 하부 조명";
-            // 
-            // ultraLabel126
-            // 
-            appearance311.BackColor = System.Drawing.Color.DimGray;
-            appearance311.BackColor2 = System.Drawing.Color.Gray;
-            appearance311.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance311.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance311.ForeColor = System.Drawing.Color.White;
-            appearance311.TextHAlignAsString = "Center";
-            appearance311.TextVAlignAsString = "Middle";
-            this.ultraLabel126.Appearance = appearance311;
-            this.ultraLabel126.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel126.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel126.Location = new System.Drawing.Point(3, 3);
-            this.ultraLabel126.Name = "ultraLabel126";
-            this.ultraLabel126.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel126.Size = new System.Drawing.Size(434, 25);
-            this.ultraLabel126.TabIndex = 164;
-            this.ultraLabel126.Text = "하부 조명 설정";
-            this.ultraLabel126.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
+            appearance355.BackColor = System.Drawing.Color.DarkGray;
+            appearance355.BackColor2 = System.Drawing.Color.DimGray;
+            appearance355.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance355.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.uSystem_uBtn_DCF_File_Right.Appearance = appearance355;
+            this.uSystem_uBtn_DCF_File_Right.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
+            this.uSystem_uBtn_DCF_File_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            appearance356.BorderColor = System.Drawing.Color.White;
+            appearance356.ForeColor = System.Drawing.Color.White;
+            this.uSystem_uBtn_DCF_File_Right.HotTrackAppearance = appearance356;
+            this.uSystem_uBtn_DCF_File_Right.Location = new System.Drawing.Point(296, 3);
+            this.uSystem_uBtn_DCF_File_Right.Name = "uSystem_uBtn_DCF_File_Right";
+            this.uSystem_uBtn_DCF_File_Right.Size = new System.Drawing.Size(82, 25);
+            this.uSystem_uBtn_DCF_File_Right.TabIndex = 169;
+            this.uSystem_uBtn_DCF_File_Right.Text = "가져오기";
+            this.uSystem_uBtn_DCF_File_Right.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.uSystem_uBtn_DCF_File_Right.Click += new System.EventHandler(this.uSystem_uBtn_DCF_File_Right_Click);
             // 
             // ultraPanel40
             // 
-            appearance312.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel40.Appearance = appearance312;
+            appearance357.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel40.Appearance = appearance357;
             // 
             // ultraPanel40.ClientArea
             // 
             this.ultraPanel40.ClientArea.Controls.Add(this.ultraPanel41);
-            this.ultraPanel40.Location = new System.Drawing.Point(800, 10);
+            this.ultraPanel40.Location = new System.Drawing.Point(10, 685);
             this.ultraPanel40.Name = "ultraPanel40";
-            this.ultraPanel40.Size = new System.Drawing.Size(444, 143);
+            this.ultraPanel40.Size = new System.Drawing.Size(385, 89);
             this.ultraPanel40.TabIndex = 103;
             this.ultraPanel40.TabStop = false;
             // 
             // ultraPanel41
             // 
-            appearance313.BackColor = System.Drawing.Color.White;
-            this.ultraPanel41.Appearance = appearance313;
+            appearance358.BackColor = System.Drawing.Color.White;
+            this.ultraPanel41.Appearance = appearance358;
             // 
             // ultraPanel41.ClientArea
             // 
@@ -6513,37 +7005,23 @@
             this.ultraPanel41.ClientArea.Controls.Add(this.System_uText_SystemItem08);
             this.ultraPanel41.ClientArea.Controls.Add(this.ultraLabel52);
             this.ultraPanel41.ClientArea.Controls.Add(this.ultraLabel51);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uCombo_SystemItem05);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uTxt_EtcItem05);
-            this.ultraPanel41.ClientArea.Controls.Add(this.ultraLabel53);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uCombo_EtcItem04);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uLabel_EtcItem04);
-            this.ultraPanel41.ClientArea.Controls.Add(this.ultraLabel47);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uCheck_SystemItem05);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uCombo_SystemItem04);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uCombo_SystemItem03);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uLabel_SystemItem03);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uLabel_SystemItem04);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uCombo_SystemItem02);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uCombo_SystemItem01);
-            this.ultraPanel41.ClientArea.Controls.Add(this.System_uLabel_SystemItem01);
             this.ultraPanel41.ClientArea.Controls.Add(this.ultraLabel117);
             this.ultraPanel41.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel41.Name = "ultraPanel41";
-            this.ultraPanel41.Size = new System.Drawing.Size(440, 139);
+            this.ultraPanel41.Size = new System.Drawing.Size(381, 85);
             this.ultraPanel41.TabIndex = 72;
             // 
             // System_uText_SystemItem09
             // 
-            appearance314.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance314.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance314.TextHAlignAsString = "Center";
-            this.System_uText_SystemItem09.Appearance = appearance314;
+            appearance359.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance359.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance359.TextHAlignAsString = "Center";
+            this.System_uText_SystemItem09.Appearance = appearance359;
             this.System_uText_SystemItem09.AutoSize = false;
             this.System_uText_SystemItem09.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_SystemItem09.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.System_uText_SystemItem09.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uText_SystemItem09.Location = new System.Drawing.Point(357, 57);
+            this.System_uText_SystemItem09.Location = new System.Drawing.Point(298, 57);
             this.System_uText_SystemItem09.Name = "System_uText_SystemItem09";
             this.System_uText_SystemItem09.Size = new System.Drawing.Size(80, 25);
             this.System_uText_SystemItem09.TabIndex = 182;
@@ -6551,15 +7029,15 @@
             // 
             // System_uText_SystemItem08
             // 
-            appearance315.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance315.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance315.TextHAlignAsString = "Center";
-            this.System_uText_SystemItem08.Appearance = appearance315;
+            appearance360.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance360.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance360.TextHAlignAsString = "Center";
+            this.System_uText_SystemItem08.Appearance = appearance360;
             this.System_uText_SystemItem08.AutoSize = false;
             this.System_uText_SystemItem08.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_SystemItem08.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.System_uText_SystemItem08.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uText_SystemItem08.Location = new System.Drawing.Point(357, 30);
+            this.System_uText_SystemItem08.Location = new System.Drawing.Point(298, 30);
             this.System_uText_SystemItem08.Name = "System_uText_SystemItem08";
             this.System_uText_SystemItem08.Size = new System.Drawing.Size(80, 25);
             this.System_uText_SystemItem08.TabIndex = 181;
@@ -6567,362 +7045,56 @@
             // 
             // ultraLabel52
             // 
-            appearance316.BackColor = System.Drawing.Color.DimGray;
-            appearance316.BackColor2 = System.Drawing.Color.Gray;
-            appearance316.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance316.ForeColor = System.Drawing.Color.White;
-            appearance316.TextHAlignAsString = "Left";
-            appearance316.TextVAlignAsString = "Middle";
-            this.ultraLabel52.Appearance = appearance316;
+            appearance361.BackColor = System.Drawing.Color.DimGray;
+            appearance361.BackColor2 = System.Drawing.Color.Gray;
+            appearance361.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance361.ForeColor = System.Drawing.Color.White;
+            appearance361.TextHAlignAsString = "Left";
+            appearance361.TextVAlignAsString = "Middle";
+            this.ultraLabel52.Appearance = appearance361;
             this.ultraLabel52.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel52.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel52.Location = new System.Drawing.Point(3, 57);
             this.ultraLabel52.Name = "ultraLabel52";
             this.ultraLabel52.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel52.Size = new System.Drawing.Size(352, 25);
+            this.ultraLabel52.Size = new System.Drawing.Size(293, 25);
             this.ultraLabel52.TabIndex = 180;
             this.ultraLabel52.Text = "하부 트리거 간격";
             // 
             // ultraLabel51
             // 
-            appearance317.BackColor = System.Drawing.Color.DimGray;
-            appearance317.BackColor2 = System.Drawing.Color.Gray;
-            appearance317.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance317.ForeColor = System.Drawing.Color.White;
-            appearance317.TextHAlignAsString = "Left";
-            appearance317.TextVAlignAsString = "Middle";
-            this.ultraLabel51.Appearance = appearance317;
+            appearance362.BackColor = System.Drawing.Color.DimGray;
+            appearance362.BackColor2 = System.Drawing.Color.Gray;
+            appearance362.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance362.ForeColor = System.Drawing.Color.White;
+            appearance362.TextHAlignAsString = "Left";
+            appearance362.TextVAlignAsString = "Middle";
+            this.ultraLabel51.Appearance = appearance362;
             this.ultraLabel51.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel51.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel51.Location = new System.Drawing.Point(3, 30);
             this.ultraLabel51.Name = "ultraLabel51";
             this.ultraLabel51.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel51.Size = new System.Drawing.Size(352, 25);
+            this.ultraLabel51.Size = new System.Drawing.Size(293, 25);
             this.ultraLabel51.TabIndex = 179;
             this.ultraLabel51.Text = "상부 트리거 간격";
             // 
-            // System_uCombo_SystemItem05
-            // 
-            appearance318.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance318.FontData.BoldAsString = "True";
-            appearance318.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance318.TextHAlignAsString = "Center";
-            this.System_uCombo_SystemItem05.Appearance = appearance318;
-            this.System_uCombo_SystemItem05.AutoSize = false;
-            this.System_uCombo_SystemItem05.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.System_uCombo_SystemItem05.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem42.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem42.DisplayText = "OFF";
-            this.System_uCombo_SystemItem05.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem42});
-            this.System_uCombo_SystemItem05.Location = new System.Drawing.Point(357, 84);
-            this.System_uCombo_SystemItem05.Name = "System_uCombo_SystemItem05";
-            this.System_uCombo_SystemItem05.Size = new System.Drawing.Size(80, 25);
-            this.System_uCombo_SystemItem05.TabIndex = 178;
-            this.System_uCombo_SystemItem05.Text = "OFF";
-            // 
-            // System_uTxt_EtcItem05
-            // 
-            appearance319.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance319.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance319.TextHAlignAsString = "Center";
-            this.System_uTxt_EtcItem05.Appearance = appearance319;
-            this.System_uTxt_EtcItem05.AutoSize = false;
-            this.System_uTxt_EtcItem05.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.System_uTxt_EtcItem05.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
-            this.System_uTxt_EtcItem05.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uTxt_EtcItem05.Location = new System.Drawing.Point(357, 111);
-            this.System_uTxt_EtcItem05.Name = "System_uTxt_EtcItem05";
-            this.System_uTxt_EtcItem05.Size = new System.Drawing.Size(80, 25);
-            this.System_uTxt_EtcItem05.TabIndex = 175;
-            this.System_uTxt_EtcItem05.Text = "10";
-            // 
-            // ultraLabel53
-            // 
-            appearance320.BackColor = System.Drawing.Color.DimGray;
-            appearance320.BackColor2 = System.Drawing.Color.Gray;
-            appearance320.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance320.ForeColor = System.Drawing.Color.White;
-            appearance320.TextHAlignAsString = "Left";
-            appearance320.TextVAlignAsString = "Middle";
-            this.ultraLabel53.Appearance = appearance320;
-            this.ultraLabel53.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel53.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel53.Location = new System.Drawing.Point(3, 84);
-            this.ultraLabel53.Name = "ultraLabel53";
-            this.ultraLabel53.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel53.Size = new System.Drawing.Size(352, 25);
-            this.ultraLabel53.TabIndex = 176;
-            this.ultraLabel53.Text = "검사 영역 디스플레이";
-            // 
-            // System_uCombo_EtcItem04
-            // 
-            appearance321.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance321.FontData.BoldAsString = "True";
-            appearance321.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance321.TextHAlignAsString = "Center";
-            this.System_uCombo_EtcItem04.Appearance = appearance321;
-            this.System_uCombo_EtcItem04.AutoSize = false;
-            this.System_uCombo_EtcItem04.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.System_uCombo_EtcItem04.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem37.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem37.DisplayText = "ON";
-            valueListItem39.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem39.DisplayText = "OFF";
-            this.System_uCombo_EtcItem04.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem37,
-            valueListItem39});
-            this.System_uCombo_EtcItem04.Location = new System.Drawing.Point(275, 111);
-            this.System_uCombo_EtcItem04.Name = "System_uCombo_EtcItem04";
-            this.System_uCombo_EtcItem04.Size = new System.Drawing.Size(80, 25);
-            this.System_uCombo_EtcItem04.TabIndex = 174;
-            this.System_uCombo_EtcItem04.Text = "ON";
-            // 
-            // System_uLabel_EtcItem04
-            // 
-            appearance322.BackColor = System.Drawing.Color.DimGray;
-            appearance322.BackColor2 = System.Drawing.Color.Gray;
-            appearance322.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance322.ForeColor = System.Drawing.Color.White;
-            appearance322.TextHAlignAsString = "Left";
-            appearance322.TextVAlignAsString = "Middle";
-            this.System_uLabel_EtcItem04.Appearance = appearance322;
-            this.System_uLabel_EtcItem04.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.System_uLabel_EtcItem04.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uLabel_EtcItem04.Location = new System.Drawing.Point(3, 111);
-            this.System_uLabel_EtcItem04.Name = "System_uLabel_EtcItem04";
-            this.System_uLabel_EtcItem04.Padding = new System.Drawing.Size(2, 0);
-            this.System_uLabel_EtcItem04.Size = new System.Drawing.Size(270, 25);
-            this.System_uLabel_EtcItem04.TabIndex = 171;
-            this.System_uLabel_EtcItem04.Text = "켈리브레시션 테이블 사용";
-            // 
-            // ultraLabel47
-            // 
-            appearance323.BackColor = System.Drawing.Color.DimGray;
-            appearance323.BackColor2 = System.Drawing.Color.Gray;
-            appearance323.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance323.ForeColor = System.Drawing.Color.White;
-            appearance323.TextHAlignAsString = "Left";
-            appearance323.TextVAlignAsString = "Middle";
-            this.ultraLabel47.Appearance = appearance323;
-            this.ultraLabel47.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.ultraLabel47.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel47.Location = new System.Drawing.Point(18, 111);
-            this.ultraLabel47.Name = "ultraLabel47";
-            this.ultraLabel47.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel47.Size = new System.Drawing.Size(223, 23);
-            this.ultraLabel47.TabIndex = 177;
-            this.ultraLabel47.Text = "켈리브레이션 테이블 사용";
-            // 
-            // System_uCheck_SystemItem05
-            // 
-            appearance324.BackColor = System.Drawing.Color.DimGray;
-            appearance324.BackColor2 = System.Drawing.Color.Gray;
-            appearance324.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance324.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance324.FontData.BoldAsString = "True";
-            appearance324.ForeColor = System.Drawing.Color.White;
-            this.System_uCheck_SystemItem05.Appearance = appearance324;
-            this.System_uCheck_SystemItem05.BackColor = System.Drawing.Color.DimGray;
-            this.System_uCheck_SystemItem05.BackColorInternal = System.Drawing.Color.Transparent;
-            this.System_uCheck_SystemItem05.Location = new System.Drawing.Point(106, 60);
-            this.System_uCheck_SystemItem05.Name = "System_uCheck_SystemItem05";
-            this.System_uCheck_SystemItem05.Size = new System.Drawing.Size(88, 20);
-            this.System_uCheck_SystemItem05.TabIndex = 175;
-            this.System_uCheck_SystemItem05.Text = "로그 저장";
-            // 
-            // System_uCombo_SystemItem04
-            // 
-            appearance325.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance325.FontData.BoldAsString = "True";
-            appearance325.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance325.TextHAlignAsString = "Center";
-            this.System_uCombo_SystemItem04.Appearance = appearance325;
-            this.System_uCombo_SystemItem04.AutoSize = false;
-            this.System_uCombo_SystemItem04.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.System_uCombo_SystemItem04.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem41.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem41.DisplayText = "ON";
-            valueListItem43.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem43.DisplayText = "OFF";
-            this.System_uCombo_SystemItem04.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem41,
-            valueListItem43});
-            this.System_uCombo_SystemItem04.Location = new System.Drawing.Point(363, 113);
-            this.System_uCombo_SystemItem04.Name = "System_uCombo_SystemItem04";
-            this.System_uCombo_SystemItem04.Size = new System.Drawing.Size(66, 21);
-            this.System_uCombo_SystemItem04.TabIndex = 174;
-            this.System_uCombo_SystemItem04.Text = "ON";
-            // 
-            // System_uCombo_SystemItem03
-            // 
-            appearance326.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance326.FontData.BoldAsString = "True";
-            appearance326.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance326.TextHAlignAsString = "Center";
-            this.System_uCombo_SystemItem03.Appearance = appearance326;
-            this.System_uCombo_SystemItem03.AutoSize = false;
-            this.System_uCombo_SystemItem03.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.System_uCombo_SystemItem03.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem44.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem44.DisplayText = "ON";
-            valueListItem45.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem45.DisplayText = "OFF";
-            this.System_uCombo_SystemItem03.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem44,
-            valueListItem45});
-            this.System_uCombo_SystemItem03.Location = new System.Drawing.Point(364, 86);
-            this.System_uCombo_SystemItem03.Name = "System_uCombo_SystemItem03";
-            this.System_uCombo_SystemItem03.Size = new System.Drawing.Size(66, 21);
-            this.System_uCombo_SystemItem03.TabIndex = 173;
-            this.System_uCombo_SystemItem03.Text = "ON";
-            // 
-            // System_uLabel_SystemItem03
-            // 
-            appearance327.BackColor = System.Drawing.Color.DimGray;
-            appearance327.BackColor2 = System.Drawing.Color.Gray;
-            appearance327.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance327.ForeColor = System.Drawing.Color.White;
-            appearance327.TextHAlignAsString = "Left";
-            appearance327.TextVAlignAsString = "Middle";
-            this.System_uLabel_SystemItem03.Appearance = appearance327;
-            this.System_uLabel_SystemItem03.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.System_uLabel_SystemItem03.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uLabel_SystemItem03.Location = new System.Drawing.Point(3, 30);
-            this.System_uLabel_SystemItem03.Name = "System_uLabel_SystemItem03";
-            this.System_uLabel_SystemItem03.Padding = new System.Drawing.Size(2, 0);
-            this.System_uLabel_SystemItem03.Size = new System.Drawing.Size(352, 25);
-            this.System_uLabel_SystemItem03.TabIndex = 172;
-            this.System_uLabel_SystemItem03.Text = "모델 변환 자동";
-            // 
-            // System_uLabel_SystemItem04
-            // 
-            appearance328.BackColor = System.Drawing.Color.DimGray;
-            appearance328.BackColor2 = System.Drawing.Color.Gray;
-            appearance328.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance328.ForeColor = System.Drawing.Color.White;
-            appearance328.TextHAlignAsString = "Left";
-            appearance328.TextVAlignAsString = "Middle";
-            this.System_uLabel_SystemItem04.Appearance = appearance328;
-            this.System_uLabel_SystemItem04.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.System_uLabel_SystemItem04.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uLabel_SystemItem04.Location = new System.Drawing.Point(3, 57);
-            this.System_uLabel_SystemItem04.Name = "System_uLabel_SystemItem04";
-            this.System_uLabel_SystemItem04.Padding = new System.Drawing.Size(2, 0);
-            this.System_uLabel_SystemItem04.Size = new System.Drawing.Size(352, 25);
-            this.System_uLabel_SystemItem04.TabIndex = 171;
-            this.System_uLabel_SystemItem04.Text = "PLC  결과 전송";
-            // 
-            // System_uCombo_SystemItem02
-            // 
-            appearance329.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance329.FontData.BoldAsString = "True";
-            appearance329.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance329.TextHAlignAsString = "Center";
-            this.System_uCombo_SystemItem02.Appearance = appearance329;
-            this.System_uCombo_SystemItem02.AutoSize = false;
-            this.System_uCombo_SystemItem02.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.System_uCombo_SystemItem02.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem40.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem40.DisplayText = "OFF";
-            this.System_uCombo_SystemItem02.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem40});
-            this.System_uCombo_SystemItem02.Location = new System.Drawing.Point(357, 57);
-            this.System_uCombo_SystemItem02.Name = "System_uCombo_SystemItem02";
-            this.System_uCombo_SystemItem02.Size = new System.Drawing.Size(80, 25);
-            this.System_uCombo_SystemItem02.TabIndex = 170;
-            this.System_uCombo_SystemItem02.Text = "OFF";
-            // 
-            // System_uCombo_SystemItem01
-            // 
-            appearance330.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance330.FontData.BoldAsString = "True";
-            appearance330.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance330.TextHAlignAsString = "Center";
-            this.System_uCombo_SystemItem01.Appearance = appearance330;
-            this.System_uCombo_SystemItem01.AutoSize = false;
-            this.System_uCombo_SystemItem01.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.System_uCombo_SystemItem01.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            valueListItem38.DataValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            valueListItem38.DisplayText = "OFF";
-            this.System_uCombo_SystemItem01.Items.AddRange(new Infragistics.Win.ValueListItem[] {
-            valueListItem38});
-            this.System_uCombo_SystemItem01.Location = new System.Drawing.Point(357, 30);
-            this.System_uCombo_SystemItem01.Name = "System_uCombo_SystemItem01";
-            this.System_uCombo_SystemItem01.Size = new System.Drawing.Size(80, 25);
-            this.System_uCombo_SystemItem01.TabIndex = 169;
-            this.System_uCombo_SystemItem01.Text = "OFF";
-            // 
-            // System_uLabel_SystemItem01
-            // 
-            appearance331.BackColor = System.Drawing.Color.DimGray;
-            appearance331.BackColor2 = System.Drawing.Color.Gray;
-            appearance331.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance331.ForeColor = System.Drawing.Color.White;
-            appearance331.TextHAlignAsString = "Left";
-            appearance331.TextVAlignAsString = "Middle";
-            this.System_uLabel_SystemItem01.Appearance = appearance331;
-            this.System_uLabel_SystemItem01.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.System_uLabel_SystemItem01.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.System_uLabel_SystemItem01.Location = new System.Drawing.Point(11, 86);
-            this.System_uLabel_SystemItem01.Name = "System_uLabel_SystemItem01";
-            this.System_uLabel_SystemItem01.Padding = new System.Drawing.Size(2, 0);
-            this.System_uLabel_SystemItem01.Size = new System.Drawing.Size(308, 21);
-            this.System_uLabel_SystemItem01.TabIndex = 168;
-            this.System_uLabel_SystemItem01.Text = "비전외 NG(PASS) 사용";
-            // 
             // ultraLabel117
             // 
-            appearance332.BackColor = System.Drawing.Color.DimGray;
-            appearance332.BackColor2 = System.Drawing.Color.Gray;
-            appearance332.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance332.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance332.ForeColor = System.Drawing.Color.White;
-            appearance332.TextHAlignAsString = "Center";
-            appearance332.TextVAlignAsString = "Middle";
-            this.ultraLabel117.Appearance = appearance332;
+            appearance363.BackColor = System.Drawing.Color.DimGray;
+            appearance363.BackColor2 = System.Drawing.Color.Gray;
+            appearance363.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance363.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance363.ForeColor = System.Drawing.Color.White;
+            appearance363.TextHAlignAsString = "Center";
+            appearance363.TextVAlignAsString = "Middle";
+            this.ultraLabel117.Appearance = appearance363;
             this.ultraLabel117.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel117.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel117.Location = new System.Drawing.Point(3, 3);
             this.ultraLabel117.Name = "ultraLabel117";
             this.ultraLabel117.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel117.Size = new System.Drawing.Size(434, 25);
+            this.ultraLabel117.Size = new System.Drawing.Size(375, 25);
             this.ultraLabel117.TabIndex = 164;
             this.ultraLabel117.Text = "트리거 항목 설정";
             this.ultraLabel117.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
@@ -6936,11 +7108,12 @@
             // 
             // VisionGapConfig_Tab_BackPanel
             // 
-            appearance333.BackColor = System.Drawing.Color.Silver;
-            this.VisionGapConfig_Tab_BackPanel.Appearance = appearance333;
+            appearance364.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VisionGapConfig_Tab_BackPanel.Appearance = appearance364;
             // 
             // VisionGapConfig_Tab_BackPanel.ClientArea
             // 
+            this.VisionGapConfig_Tab_BackPanel.ClientArea.Controls.Add(this.ultraPanel71);
             this.VisionGapConfig_Tab_BackPanel.ClientArea.Controls.Add(this.ultraPanel52);
             this.VisionGapConfig_Tab_BackPanel.ClientArea.Controls.Add(this.ultraPanel50);
             this.VisionGapConfig_Tab_BackPanel.ClientArea.Controls.Add(this.ultraPanel60);
@@ -6952,24 +7125,381 @@
             this.VisionGapConfig_Tab_BackPanel.Size = new System.Drawing.Size(1259, 805);
             this.VisionGapConfig_Tab_BackPanel.TabIndex = 0;
             // 
+            // ultraPanel71
+            // 
+            appearance365.BackColor = System.Drawing.Color.Gray;
+            this.ultraPanel71.Appearance = appearance365;
+            // 
+            // ultraPanel71.ClientArea
+            // 
+            this.ultraPanel71.ClientArea.Controls.Add(this.ultraPanel72);
+            this.ultraPanel71.Location = new System.Drawing.Point(534, 608);
+            this.ultraPanel71.Name = "ultraPanel71";
+            this.ultraPanel71.Size = new System.Drawing.Size(265, 186);
+            this.ultraPanel71.TabIndex = 109;
+            this.ultraPanel71.TabStop = false;
+            // 
+            // ultraPanel72
+            // 
+            appearance366.BackColor = System.Drawing.Color.White;
+            this.ultraPanel72.Appearance = appearance366;
+            // 
+            // ultraPanel72.ClientArea
+            // 
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraButton4);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraLabel47);
+            this.ultraPanel72.ClientArea.Controls.Add(this.uTxt_Pix3_04_Lami);
+            this.ultraPanel72.ClientArea.Controls.Add(this.uTxt_Pix3_05_Lami);
+            this.ultraPanel72.ClientArea.Controls.Add(this.uTxt_Pix3_06_Lami);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraLabel53);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraLabel80);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraLabel81);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraButton6);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraLabel82);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraLabel83);
+            this.ultraPanel72.ClientArea.Controls.Add(this.uTxt_Pix3_01_Lami);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraLabel88);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraLabel89);
+            this.ultraPanel72.ClientArea.Controls.Add(this.uTxt_Pix3_02_Lami);
+            this.ultraPanel72.ClientArea.Controls.Add(this.uTxt_Pix3_03_Lami);
+            this.ultraPanel72.ClientArea.Controls.Add(this.ultraLabel91);
+            this.ultraPanel72.Location = new System.Drawing.Point(2, 2);
+            this.ultraPanel72.Name = "ultraPanel72";
+            this.ultraPanel72.Size = new System.Drawing.Size(256, 182);
+            this.ultraPanel72.TabIndex = 72;
+            // 
+            // ultraButton4
+            // 
+            appearance367.BackColor = System.Drawing.Color.DarkGray;
+            appearance367.BackColor2 = System.Drawing.Color.DimGray;
+            appearance367.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance367.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance367.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.ultraButton4.Appearance = appearance367;
+            this.ultraButton4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            appearance368.BorderColor = System.Drawing.Color.White;
+            appearance368.ForeColor = System.Drawing.Color.White;
+            this.ultraButton4.HotTrackAppearance = appearance368;
+            this.ultraButton4.Location = new System.Drawing.Point(172, 110);
+            this.ultraButton4.Name = "ultraButton4";
+            this.ultraButton4.ShowFocusRect = false;
+            this.ultraButton4.ShowOutline = false;
+            this.ultraButton4.Size = new System.Drawing.Size(76, 33);
+            this.ultraButton4.TabIndex = 178;
+            this.ultraButton4.Text = "해상도";
+            this.ultraButton4.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraButton4.UseHotTracking = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraButton4.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ultraButton4.Click += new System.EventHandler(this.ultraButton4_Click);
+            // 
+            // ultraLabel47
+            // 
+            appearance369.BackColor = System.Drawing.Color.DimGray;
+            appearance369.BackColor2 = System.Drawing.Color.Gray;
+            appearance369.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance369.ForeColor = System.Drawing.Color.White;
+            appearance369.TextHAlignAsString = "Center";
+            appearance369.TextVAlignAsString = "Middle";
+            this.ultraLabel47.Appearance = appearance369;
+            this.ultraLabel47.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel47.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel47.Location = new System.Drawing.Point(3, 145);
+            this.ultraLabel47.Name = "ultraLabel47";
+            this.ultraLabel47.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel47.Size = new System.Drawing.Size(51, 34);
+            this.ultraLabel47.TabIndex = 177;
+            this.ultraLabel47.Text = "세로 해상도";
+            // 
+            // uTxt_Pix3_04_Lami
+            // 
+            appearance370.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance370.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance370.TextHAlignAsString = "Center";
+            appearance370.TextVAlignAsString = "Middle";
+            this.uTxt_Pix3_04_Lami.Appearance = appearance370;
+            this.uTxt_Pix3_04_Lami.AutoSize = false;
+            this.uTxt_Pix3_04_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.uTxt_Pix3_04_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.uTxt_Pix3_04_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uTxt_Pix3_04_Lami.Location = new System.Drawing.Point(56, 145);
+            this.uTxt_Pix3_04_Lami.Name = "uTxt_Pix3_04_Lami";
+            this.uTxt_Pix3_04_Lami.Size = new System.Drawing.Size(56, 34);
+            this.uTxt_Pix3_04_Lami.TabIndex = 176;
+            this.uTxt_Pix3_04_Lami.Text = "1043";
+            // 
+            // uTxt_Pix3_05_Lami
+            // 
+            appearance371.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance371.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance371.TextHAlignAsString = "Center";
+            appearance371.TextVAlignAsString = "Middle";
+            this.uTxt_Pix3_05_Lami.Appearance = appearance371;
+            this.uTxt_Pix3_05_Lami.AutoSize = false;
+            this.uTxt_Pix3_05_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.uTxt_Pix3_05_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.uTxt_Pix3_05_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uTxt_Pix3_05_Lami.Location = new System.Drawing.Point(114, 145);
+            this.uTxt_Pix3_05_Lami.Name = "uTxt_Pix3_05_Lami";
+            this.uTxt_Pix3_05_Lami.Size = new System.Drawing.Size(56, 34);
+            this.uTxt_Pix3_05_Lami.TabIndex = 175;
+            this.uTxt_Pix3_05_Lami.Text = "91737";
+            // 
+            // uTxt_Pix3_06_Lami
+            // 
+            appearance372.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance372.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance372.TextHAlignAsString = "Center";
+            this.uTxt_Pix3_06_Lami.Appearance = appearance372;
+            this.uTxt_Pix3_06_Lami.AutoSize = false;
+            this.uTxt_Pix3_06_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.uTxt_Pix3_06_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.uTxt_Pix3_06_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uTxt_Pix3_06_Lami.Location = new System.Drawing.Point(172, 145);
+            this.uTxt_Pix3_06_Lami.Name = "uTxt_Pix3_06_Lami";
+            this.uTxt_Pix3_06_Lami.ReadOnly = true;
+            this.uTxt_Pix3_06_Lami.Size = new System.Drawing.Size(76, 34);
+            this.uTxt_Pix3_06_Lami.TabIndex = 174;
+            this.uTxt_Pix3_06_Lami.Text = "8.818393";
+            // 
+            // ultraLabel53
+            // 
+            appearance373.BackColor = System.Drawing.Color.DimGray;
+            appearance373.BackColor2 = System.Drawing.Color.Gray;
+            appearance373.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance373.ForeColor = System.Drawing.Color.White;
+            appearance373.TextHAlignAsString = "Center";
+            appearance373.TextVAlignAsString = "Middle";
+            this.ultraLabel53.Appearance = appearance373;
+            this.ultraLabel53.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel53.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel53.Location = new System.Drawing.Point(56, 110);
+            this.ultraLabel53.Name = "ultraLabel53";
+            this.ultraLabel53.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel53.Size = new System.Drawing.Size(56, 33);
+            this.ultraLabel53.TabIndex = 173;
+            this.ultraLabel53.Text = "Pixel";
+            // 
+            // ultraLabel80
+            // 
+            appearance374.BackColor = System.Drawing.Color.DimGray;
+            appearance374.BackColor2 = System.Drawing.Color.Gray;
+            appearance374.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance374.ForeColor = System.Drawing.Color.White;
+            appearance374.TextHAlignAsString = "Center";
+            appearance374.TextVAlignAsString = "Middle";
+            this.ultraLabel80.Appearance = appearance374;
+            this.ultraLabel80.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel80.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel80.Location = new System.Drawing.Point(3, 110);
+            this.ultraLabel80.Name = "ultraLabel80";
+            this.ultraLabel80.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel80.Size = new System.Drawing.Size(51, 33);
+            this.ultraLabel80.TabIndex = 172;
+            this.ultraLabel80.Text = "항목";
+            // 
+            // ultraLabel81
+            // 
+            appearance375.BackColor = System.Drawing.Color.DimGray;
+            appearance375.BackColor2 = System.Drawing.Color.Gray;
+            appearance375.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance375.ForeColor = System.Drawing.Color.White;
+            appearance375.TextHAlignAsString = "Center";
+            appearance375.TextVAlignAsString = "Middle";
+            this.ultraLabel81.Appearance = appearance375;
+            this.ultraLabel81.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel81.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel81.Location = new System.Drawing.Point(114, 110);
+            this.ultraLabel81.Name = "ultraLabel81";
+            this.ultraLabel81.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel81.Size = new System.Drawing.Size(56, 33);
+            this.ultraLabel81.TabIndex = 171;
+            this.ultraLabel81.Text = "실측값 mm";
+            // 
+            // ultraButton6
+            // 
+            appearance376.BackColor = System.Drawing.Color.DarkGray;
+            appearance376.BackColor2 = System.Drawing.Color.DimGray;
+            appearance376.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance376.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance376.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.ultraButton6.Appearance = appearance376;
+            this.ultraButton6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            appearance377.BorderColor = System.Drawing.Color.White;
+            appearance377.ForeColor = System.Drawing.Color.White;
+            this.ultraButton6.HotTrackAppearance = appearance377;
+            this.ultraButton6.Location = new System.Drawing.Point(172, 39);
+            this.ultraButton6.Name = "ultraButton6";
+            this.ultraButton6.ShowFocusRect = false;
+            this.ultraButton6.ShowOutline = false;
+            this.ultraButton6.Size = new System.Drawing.Size(76, 33);
+            this.ultraButton6.TabIndex = 161;
+            this.ultraButton6.Text = "해상도";
+            this.ultraButton6.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraButton6.UseHotTracking = Infragistics.Win.DefaultableBoolean.True;
+            this.ultraButton6.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.ultraButton6.Click += new System.EventHandler(this.ultraButton6_Click);
+            // 
+            // ultraLabel82
+            // 
+            appearance378.BackColor = System.Drawing.Color.DimGray;
+            appearance378.BackColor2 = System.Drawing.Color.Gray;
+            appearance378.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance378.ForeColor = System.Drawing.Color.White;
+            appearance378.TextHAlignAsString = "Center";
+            appearance378.TextVAlignAsString = "Middle";
+            this.ultraLabel82.Appearance = appearance378;
+            this.ultraLabel82.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel82.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel82.Location = new System.Drawing.Point(3, 74);
+            this.ultraLabel82.Name = "ultraLabel82";
+            this.ultraLabel82.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel82.Size = new System.Drawing.Size(51, 34);
+            this.ultraLabel82.TabIndex = 160;
+            this.ultraLabel82.Text = "가로 해상도";
+            // 
+            // ultraLabel83
+            // 
+            appearance379.BackColor = System.Drawing.Color.DimGray;
+            appearance379.BackColor2 = System.Drawing.Color.Gray;
+            appearance379.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance379.ForeColor = System.Drawing.Color.White;
+            appearance379.TextHAlignAsString = "Center";
+            appearance379.TextVAlignAsString = "Middle";
+            this.ultraLabel83.Appearance = appearance379;
+            this.ultraLabel83.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel83.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel83.Location = new System.Drawing.Point(56, 39);
+            this.ultraLabel83.Name = "ultraLabel83";
+            this.ultraLabel83.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel83.Size = new System.Drawing.Size(56, 33);
+            this.ultraLabel83.TabIndex = 156;
+            this.ultraLabel83.Text = "Pixel";
+            // 
+            // uTxt_Pix3_01_Lami
+            // 
+            appearance380.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance380.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance380.TextHAlignAsString = "Center";
+            appearance380.TextVAlignAsString = "Middle";
+            this.uTxt_Pix3_01_Lami.Appearance = appearance380;
+            this.uTxt_Pix3_01_Lami.AutoSize = false;
+            this.uTxt_Pix3_01_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.uTxt_Pix3_01_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.uTxt_Pix3_01_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uTxt_Pix3_01_Lami.Location = new System.Drawing.Point(56, 74);
+            this.uTxt_Pix3_01_Lami.Name = "uTxt_Pix3_01_Lami";
+            this.uTxt_Pix3_01_Lami.Size = new System.Drawing.Size(56, 34);
+            this.uTxt_Pix3_01_Lami.TabIndex = 155;
+            this.uTxt_Pix3_01_Lami.Text = "3436";
+            // 
+            // ultraLabel88
+            // 
+            appearance381.BackColor = System.Drawing.Color.DimGray;
+            appearance381.BackColor2 = System.Drawing.Color.Gray;
+            appearance381.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance381.ForeColor = System.Drawing.Color.White;
+            appearance381.TextHAlignAsString = "Center";
+            appearance381.TextVAlignAsString = "Middle";
+            this.ultraLabel88.Appearance = appearance381;
+            this.ultraLabel88.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel88.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel88.Location = new System.Drawing.Point(3, 39);
+            this.ultraLabel88.Name = "ultraLabel88";
+            this.ultraLabel88.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel88.Size = new System.Drawing.Size(51, 33);
+            this.ultraLabel88.TabIndex = 138;
+            this.ultraLabel88.Text = "항목";
+            // 
+            // ultraLabel89
+            // 
+            appearance382.BackColor = System.Drawing.Color.DimGray;
+            appearance382.BackColor2 = System.Drawing.Color.Gray;
+            appearance382.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance382.ForeColor = System.Drawing.Color.White;
+            appearance382.TextHAlignAsString = "Center";
+            appearance382.TextVAlignAsString = "Middle";
+            this.ultraLabel89.Appearance = appearance382;
+            this.ultraLabel89.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel89.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel89.Location = new System.Drawing.Point(114, 39);
+            this.ultraLabel89.Name = "ultraLabel89";
+            this.ultraLabel89.Padding = new System.Drawing.Size(2, 0);
+            this.ultraLabel89.Size = new System.Drawing.Size(56, 33);
+            this.ultraLabel89.TabIndex = 137;
+            this.ultraLabel89.Text = "실측값 mm";
+            // 
+            // uTxt_Pix3_02_Lami
+            // 
+            appearance383.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance383.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance383.TextHAlignAsString = "Center";
+            appearance383.TextVAlignAsString = "Middle";
+            this.uTxt_Pix3_02_Lami.Appearance = appearance383;
+            this.uTxt_Pix3_02_Lami.AutoSize = false;
+            this.uTxt_Pix3_02_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.uTxt_Pix3_02_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.uTxt_Pix3_02_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uTxt_Pix3_02_Lami.Location = new System.Drawing.Point(114, 74);
+            this.uTxt_Pix3_02_Lami.Name = "uTxt_Pix3_02_Lami";
+            this.uTxt_Pix3_02_Lami.Size = new System.Drawing.Size(56, 34);
+            this.uTxt_Pix3_02_Lami.TabIndex = 135;
+            this.uTxt_Pix3_02_Lami.Text = "303.0";
+            // 
+            // uTxt_Pix3_03_Lami
+            // 
+            appearance384.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance384.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance384.TextHAlignAsString = "Center";
+            this.uTxt_Pix3_03_Lami.Appearance = appearance384;
+            this.uTxt_Pix3_03_Lami.AutoSize = false;
+            this.uTxt_Pix3_03_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.uTxt_Pix3_03_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
+            this.uTxt_Pix3_03_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uTxt_Pix3_03_Lami.Location = new System.Drawing.Point(172, 74);
+            this.uTxt_Pix3_03_Lami.Name = "uTxt_Pix3_03_Lami";
+            this.uTxt_Pix3_03_Lami.ReadOnly = true;
+            this.uTxt_Pix3_03_Lami.Size = new System.Drawing.Size(76, 34);
+            this.uTxt_Pix3_03_Lami.TabIndex = 75;
+            this.uTxt_Pix3_03_Lami.Text = "8.804469";
+            // 
+            // ultraLabel91
+            // 
+            appearance385.BackColor = System.Drawing.Color.DimGray;
+            appearance385.BackColor2 = System.Drawing.Color.Gray;
+            appearance385.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance385.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance385.ForeColor = System.Drawing.Color.White;
+            appearance385.TextHAlignAsString = "Center";
+            appearance385.TextVAlignAsString = "Middle";
+            this.ultraLabel91.Appearance = appearance385;
+            this.ultraLabel91.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.ultraLabel91.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ultraLabel91.Location = new System.Drawing.Point(3, 3);
+            this.ultraLabel91.Name = "ultraLabel91";
+            this.ultraLabel91.Padding = new System.Drawing.Size(10, 0);
+            this.ultraLabel91.Size = new System.Drawing.Size(245, 34);
+            this.ultraLabel91.TabIndex = 72;
+            this.ultraLabel91.Text = "우측 해상도 설정";
+            this.ultraLabel91.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
+            // 
             // ultraPanel52
             // 
-            appearance334.BackColor = System.Drawing.Color.Gray;
-            this.ultraPanel52.Appearance = appearance334;
+            appearance386.BackColor = System.Drawing.Color.Gray;
+            this.ultraPanel52.Appearance = appearance386;
             // 
             // ultraPanel52.ClientArea
             // 
             this.ultraPanel52.ClientArea.Controls.Add(this.ultraPanel53);
-            this.ultraPanel52.Location = new System.Drawing.Point(405, 606);
+            this.ultraPanel52.Location = new System.Drawing.Point(275, 608);
             this.ultraPanel52.Name = "ultraPanel52";
-            this.ultraPanel52.Size = new System.Drawing.Size(385, 186);
+            this.ultraPanel52.Size = new System.Drawing.Size(257, 186);
             this.ultraPanel52.TabIndex = 108;
             this.ultraPanel52.TabStop = false;
             // 
             // ultraPanel53
             // 
-            appearance335.BackColor = System.Drawing.Color.White;
-            this.ultraPanel53.Appearance = appearance335;
+            appearance387.BackColor = System.Drawing.Color.White;
+            this.ultraPanel53.Appearance = appearance387;
             // 
             // ultraPanel53.ClientArea
             // 
@@ -6992,26 +7522,26 @@
             this.ultraPanel53.ClientArea.Controls.Add(this.ultraLabel49);
             this.ultraPanel53.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel53.Name = "ultraPanel53";
-            this.ultraPanel53.Size = new System.Drawing.Size(381, 182);
+            this.ultraPanel53.Size = new System.Drawing.Size(253, 182);
             this.ultraPanel53.TabIndex = 72;
             // 
             // ultraButton11
             // 
-            appearance336.BackColor = System.Drawing.Color.DarkGray;
-            appearance336.BackColor2 = System.Drawing.Color.DimGray;
-            appearance336.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance336.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance336.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.ultraButton11.Appearance = appearance336;
+            appearance388.BackColor = System.Drawing.Color.DarkGray;
+            appearance388.BackColor2 = System.Drawing.Color.DimGray;
+            appearance388.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance388.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance388.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.ultraButton11.Appearance = appearance388;
             this.ultraButton11.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance337.BorderColor = System.Drawing.Color.White;
-            appearance337.ForeColor = System.Drawing.Color.White;
-            this.ultraButton11.HotTrackAppearance = appearance337;
-            this.ultraButton11.Location = new System.Drawing.Point(283, 110);
+            appearance389.BorderColor = System.Drawing.Color.White;
+            appearance389.ForeColor = System.Drawing.Color.White;
+            this.ultraButton11.HotTrackAppearance = appearance389;
+            this.ultraButton11.Location = new System.Drawing.Point(172, 110);
             this.ultraButton11.Name = "ultraButton11";
             this.ultraButton11.ShowFocusRect = false;
             this.ultraButton11.ShowOutline = false;
-            this.ultraButton11.Size = new System.Drawing.Size(95, 33);
+            this.ultraButton11.Size = new System.Drawing.Size(76, 33);
             this.ultraButton11.TabIndex = 194;
             this.ultraButton11.Text = "해상도";
             this.ultraButton11.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
@@ -7021,144 +7551,144 @@
             // 
             // ultraLabel2
             // 
-            appearance338.BackColor = System.Drawing.Color.DimGray;
-            appearance338.BackColor2 = System.Drawing.Color.Gray;
-            appearance338.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance338.ForeColor = System.Drawing.Color.White;
-            appearance338.TextHAlignAsString = "Center";
-            appearance338.TextVAlignAsString = "Middle";
-            this.ultraLabel2.Appearance = appearance338;
+            appearance390.BackColor = System.Drawing.Color.DimGray;
+            appearance390.BackColor2 = System.Drawing.Color.Gray;
+            appearance390.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance390.ForeColor = System.Drawing.Color.White;
+            appearance390.TextHAlignAsString = "Center";
+            appearance390.TextVAlignAsString = "Middle";
+            this.ultraLabel2.Appearance = appearance390;
             this.ultraLabel2.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel2.Location = new System.Drawing.Point(3, 145);
             this.ultraLabel2.Name = "ultraLabel2";
             this.ultraLabel2.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel2.Size = new System.Drawing.Size(97, 34);
+            this.ultraLabel2.Size = new System.Drawing.Size(51, 34);
             this.ultraLabel2.TabIndex = 193;
             this.ultraLabel2.Text = "세로 해상도";
             // 
             // uTxt_Pix2_04_Lami
             // 
-            appearance339.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance339.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance339.TextHAlignAsString = "Center";
-            appearance339.TextVAlignAsString = "Middle";
-            this.uTxt_Pix2_04_Lami.Appearance = appearance339;
+            appearance391.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance391.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance391.TextHAlignAsString = "Center";
+            appearance391.TextVAlignAsString = "Middle";
+            this.uTxt_Pix2_04_Lami.Appearance = appearance391;
             this.uTxt_Pix2_04_Lami.AutoSize = false;
             this.uTxt_Pix2_04_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix2_04_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix2_04_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix2_04_Lami.Location = new System.Drawing.Point(101, 145);
+            this.uTxt_Pix2_04_Lami.Location = new System.Drawing.Point(56, 145);
             this.uTxt_Pix2_04_Lami.Name = "uTxt_Pix2_04_Lami";
-            this.uTxt_Pix2_04_Lami.Size = new System.Drawing.Size(90, 34);
+            this.uTxt_Pix2_04_Lami.Size = new System.Drawing.Size(56, 33);
             this.uTxt_Pix2_04_Lami.TabIndex = 192;
             this.uTxt_Pix2_04_Lami.Text = "1034";
             // 
             // uTxt_Pix2_05_Lami
             // 
-            appearance340.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance340.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance340.TextHAlignAsString = "Center";
-            appearance340.TextVAlignAsString = "Middle";
-            this.uTxt_Pix2_05_Lami.Appearance = appearance340;
+            appearance392.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance392.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance392.TextHAlignAsString = "Center";
+            appearance392.TextVAlignAsString = "Middle";
+            this.uTxt_Pix2_05_Lami.Appearance = appearance392;
             this.uTxt_Pix2_05_Lami.AutoSize = false;
             this.uTxt_Pix2_05_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix2_05_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix2_05_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix2_05_Lami.Location = new System.Drawing.Point(192, 145);
+            this.uTxt_Pix2_05_Lami.Location = new System.Drawing.Point(114, 145);
             this.uTxt_Pix2_05_Lami.Name = "uTxt_Pix2_05_Lami";
-            this.uTxt_Pix2_05_Lami.Size = new System.Drawing.Size(90, 34);
+            this.uTxt_Pix2_05_Lami.Size = new System.Drawing.Size(56, 33);
             this.uTxt_Pix2_05_Lami.TabIndex = 191;
             this.uTxt_Pix2_05_Lami.Text = "91.55";
             // 
             // uTxt_Pix2_06_Lami
             // 
-            appearance341.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance341.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance341.TextHAlignAsString = "Center";
-            this.uTxt_Pix2_06_Lami.Appearance = appearance341;
+            appearance393.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance393.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance393.TextHAlignAsString = "Center";
+            this.uTxt_Pix2_06_Lami.Appearance = appearance393;
             this.uTxt_Pix2_06_Lami.AutoSize = false;
             this.uTxt_Pix2_06_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix2_06_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix2_06_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix2_06_Lami.Location = new System.Drawing.Point(283, 145);
+            this.uTxt_Pix2_06_Lami.Location = new System.Drawing.Point(172, 145);
             this.uTxt_Pix2_06_Lami.Name = "uTxt_Pix2_06_Lami";
             this.uTxt_Pix2_06_Lami.ReadOnly = true;
-            this.uTxt_Pix2_06_Lami.Size = new System.Drawing.Size(95, 34);
+            this.uTxt_Pix2_06_Lami.Size = new System.Drawing.Size(76, 34);
             this.uTxt_Pix2_06_Lami.TabIndex = 190;
             this.uTxt_Pix2_06_Lami.Text = "8.8540";
             // 
             // ultraLabel39
             // 
-            appearance342.BackColor = System.Drawing.Color.DimGray;
-            appearance342.BackColor2 = System.Drawing.Color.Gray;
-            appearance342.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance342.ForeColor = System.Drawing.Color.White;
-            appearance342.TextHAlignAsString = "Center";
-            appearance342.TextVAlignAsString = "Middle";
-            this.ultraLabel39.Appearance = appearance342;
+            appearance394.BackColor = System.Drawing.Color.DimGray;
+            appearance394.BackColor2 = System.Drawing.Color.Gray;
+            appearance394.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance394.ForeColor = System.Drawing.Color.White;
+            appearance394.TextHAlignAsString = "Center";
+            appearance394.TextVAlignAsString = "Middle";
+            this.ultraLabel39.Appearance = appearance394;
             this.ultraLabel39.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel39.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel39.Location = new System.Drawing.Point(101, 110);
+            this.ultraLabel39.Location = new System.Drawing.Point(56, 110);
             this.ultraLabel39.Name = "ultraLabel39";
             this.ultraLabel39.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel39.Size = new System.Drawing.Size(90, 33);
+            this.ultraLabel39.Size = new System.Drawing.Size(56, 33);
             this.ultraLabel39.TabIndex = 189;
             this.ultraLabel39.Text = "Pixel";
             // 
             // ultraLabel40
             // 
-            appearance343.BackColor = System.Drawing.Color.DimGray;
-            appearance343.BackColor2 = System.Drawing.Color.Gray;
-            appearance343.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance343.ForeColor = System.Drawing.Color.White;
-            appearance343.TextHAlignAsString = "Center";
-            appearance343.TextVAlignAsString = "Middle";
-            this.ultraLabel40.Appearance = appearance343;
+            appearance395.BackColor = System.Drawing.Color.DimGray;
+            appearance395.BackColor2 = System.Drawing.Color.Gray;
+            appearance395.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance395.ForeColor = System.Drawing.Color.White;
+            appearance395.TextHAlignAsString = "Center";
+            appearance395.TextVAlignAsString = "Middle";
+            this.ultraLabel40.Appearance = appearance395;
             this.ultraLabel40.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel40.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel40.Location = new System.Drawing.Point(3, 110);
             this.ultraLabel40.Name = "ultraLabel40";
             this.ultraLabel40.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel40.Size = new System.Drawing.Size(97, 33);
+            this.ultraLabel40.Size = new System.Drawing.Size(51, 34);
             this.ultraLabel40.TabIndex = 188;
             this.ultraLabel40.Text = "항목";
             // 
             // ultraLabel41
             // 
-            appearance344.BackColor = System.Drawing.Color.DimGray;
-            appearance344.BackColor2 = System.Drawing.Color.Gray;
-            appearance344.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance344.ForeColor = System.Drawing.Color.White;
-            appearance344.TextHAlignAsString = "Center";
-            appearance344.TextVAlignAsString = "Middle";
-            this.ultraLabel41.Appearance = appearance344;
+            appearance396.BackColor = System.Drawing.Color.DimGray;
+            appearance396.BackColor2 = System.Drawing.Color.Gray;
+            appearance396.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance396.ForeColor = System.Drawing.Color.White;
+            appearance396.TextHAlignAsString = "Center";
+            appearance396.TextVAlignAsString = "Middle";
+            this.ultraLabel41.Appearance = appearance396;
             this.ultraLabel41.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel41.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel41.Location = new System.Drawing.Point(192, 110);
+            this.ultraLabel41.Location = new System.Drawing.Point(114, 110);
             this.ultraLabel41.Name = "ultraLabel41";
             this.ultraLabel41.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel41.Size = new System.Drawing.Size(90, 33);
+            this.ultraLabel41.Size = new System.Drawing.Size(56, 33);
             this.ultraLabel41.TabIndex = 187;
             this.ultraLabel41.Text = "실측값 mm";
             // 
             // ultraButton12
             // 
-            appearance345.BackColor = System.Drawing.Color.DarkGray;
-            appearance345.BackColor2 = System.Drawing.Color.DimGray;
-            appearance345.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance345.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance345.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.ultraButton12.Appearance = appearance345;
+            appearance397.BackColor = System.Drawing.Color.DarkGray;
+            appearance397.BackColor2 = System.Drawing.Color.DimGray;
+            appearance397.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance397.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance397.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.ultraButton12.Appearance = appearance397;
             this.ultraButton12.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance346.BorderColor = System.Drawing.Color.White;
-            appearance346.ForeColor = System.Drawing.Color.White;
-            this.ultraButton12.HotTrackAppearance = appearance346;
-            this.ultraButton12.Location = new System.Drawing.Point(283, 39);
+            appearance398.BorderColor = System.Drawing.Color.White;
+            appearance398.ForeColor = System.Drawing.Color.White;
+            this.ultraButton12.HotTrackAppearance = appearance398;
+            this.ultraButton12.Location = new System.Drawing.Point(172, 39);
             this.ultraButton12.Name = "ultraButton12";
             this.ultraButton12.ShowFocusRect = false;
             this.ultraButton12.ShowOutline = false;
-            this.ultraButton12.Size = new System.Drawing.Size(95, 33);
+            this.ultraButton12.Size = new System.Drawing.Size(76, 33);
             this.ultraButton12.TabIndex = 186;
             this.ultraButton12.Text = "해상도";
             this.ultraButton12.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
@@ -7168,165 +7698,165 @@
             // 
             // ultraLabel42
             // 
-            appearance347.BackColor = System.Drawing.Color.DimGray;
-            appearance347.BackColor2 = System.Drawing.Color.Gray;
-            appearance347.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance347.ForeColor = System.Drawing.Color.White;
-            appearance347.TextHAlignAsString = "Center";
-            appearance347.TextVAlignAsString = "Middle";
-            this.ultraLabel42.Appearance = appearance347;
+            appearance399.BackColor = System.Drawing.Color.DimGray;
+            appearance399.BackColor2 = System.Drawing.Color.Gray;
+            appearance399.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance399.ForeColor = System.Drawing.Color.White;
+            appearance399.TextHAlignAsString = "Center";
+            appearance399.TextVAlignAsString = "Middle";
+            this.ultraLabel42.Appearance = appearance399;
             this.ultraLabel42.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel42.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel42.Location = new System.Drawing.Point(3, 74);
             this.ultraLabel42.Name = "ultraLabel42";
             this.ultraLabel42.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel42.Size = new System.Drawing.Size(97, 34);
+            this.ultraLabel42.Size = new System.Drawing.Size(51, 34);
             this.ultraLabel42.TabIndex = 185;
             this.ultraLabel42.Text = "가로 해상도";
             // 
             // ultraLabel43
             // 
-            appearance348.BackColor = System.Drawing.Color.DimGray;
-            appearance348.BackColor2 = System.Drawing.Color.Gray;
-            appearance348.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance348.ForeColor = System.Drawing.Color.White;
-            appearance348.TextHAlignAsString = "Center";
-            appearance348.TextVAlignAsString = "Middle";
-            this.ultraLabel43.Appearance = appearance348;
+            appearance400.BackColor = System.Drawing.Color.DimGray;
+            appearance400.BackColor2 = System.Drawing.Color.Gray;
+            appearance400.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance400.ForeColor = System.Drawing.Color.White;
+            appearance400.TextHAlignAsString = "Center";
+            appearance400.TextVAlignAsString = "Middle";
+            this.ultraLabel43.Appearance = appearance400;
             this.ultraLabel43.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel43.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel43.Location = new System.Drawing.Point(101, 39);
+            this.ultraLabel43.Location = new System.Drawing.Point(56, 39);
             this.ultraLabel43.Name = "ultraLabel43";
             this.ultraLabel43.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel43.Size = new System.Drawing.Size(90, 33);
+            this.ultraLabel43.Size = new System.Drawing.Size(56, 33);
             this.ultraLabel43.TabIndex = 184;
             this.ultraLabel43.Text = "Pixel";
             // 
             // uTxt_Pix2_01_Lami
             // 
-            appearance349.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance349.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance349.TextHAlignAsString = "Center";
-            appearance349.TextVAlignAsString = "Middle";
-            this.uTxt_Pix2_01_Lami.Appearance = appearance349;
+            appearance401.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance401.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance401.TextHAlignAsString = "Center";
+            appearance401.TextVAlignAsString = "Middle";
+            this.uTxt_Pix2_01_Lami.Appearance = appearance401;
             this.uTxt_Pix2_01_Lami.AutoSize = false;
             this.uTxt_Pix2_01_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix2_01_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix2_01_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix2_01_Lami.Location = new System.Drawing.Point(101, 74);
+            this.uTxt_Pix2_01_Lami.Location = new System.Drawing.Point(56, 74);
             this.uTxt_Pix2_01_Lami.Name = "uTxt_Pix2_01_Lami";
-            this.uTxt_Pix2_01_Lami.Size = new System.Drawing.Size(90, 34);
+            this.uTxt_Pix2_01_Lami.Size = new System.Drawing.Size(56, 33);
             this.uTxt_Pix2_01_Lami.TabIndex = 183;
             this.uTxt_Pix2_01_Lami.Text = "3431";
             // 
             // ultraLabel48
             // 
-            appearance350.BackColor = System.Drawing.Color.DimGray;
-            appearance350.BackColor2 = System.Drawing.Color.Gray;
-            appearance350.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance350.ForeColor = System.Drawing.Color.White;
-            appearance350.TextHAlignAsString = "Center";
-            appearance350.TextVAlignAsString = "Middle";
-            this.ultraLabel48.Appearance = appearance350;
+            appearance402.BackColor = System.Drawing.Color.DimGray;
+            appearance402.BackColor2 = System.Drawing.Color.Gray;
+            appearance402.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance402.ForeColor = System.Drawing.Color.White;
+            appearance402.TextHAlignAsString = "Center";
+            appearance402.TextVAlignAsString = "Middle";
+            this.ultraLabel48.Appearance = appearance402;
             this.ultraLabel48.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel48.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel48.Location = new System.Drawing.Point(3, 39);
             this.ultraLabel48.Name = "ultraLabel48";
             this.ultraLabel48.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel48.Size = new System.Drawing.Size(97, 33);
+            this.ultraLabel48.Size = new System.Drawing.Size(51, 33);
             this.ultraLabel48.TabIndex = 182;
             this.ultraLabel48.Text = "항목";
             // 
             // ultraLabel50
             // 
-            appearance351.BackColor = System.Drawing.Color.DimGray;
-            appearance351.BackColor2 = System.Drawing.Color.Gray;
-            appearance351.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance351.ForeColor = System.Drawing.Color.White;
-            appearance351.TextHAlignAsString = "Center";
-            appearance351.TextVAlignAsString = "Middle";
-            this.ultraLabel50.Appearance = appearance351;
+            appearance403.BackColor = System.Drawing.Color.DimGray;
+            appearance403.BackColor2 = System.Drawing.Color.Gray;
+            appearance403.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance403.ForeColor = System.Drawing.Color.White;
+            appearance403.TextHAlignAsString = "Center";
+            appearance403.TextVAlignAsString = "Middle";
+            this.ultraLabel50.Appearance = appearance403;
             this.ultraLabel50.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel50.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel50.Location = new System.Drawing.Point(192, 39);
+            this.ultraLabel50.Location = new System.Drawing.Point(114, 39);
             this.ultraLabel50.Name = "ultraLabel50";
             this.ultraLabel50.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel50.Size = new System.Drawing.Size(90, 33);
+            this.ultraLabel50.Size = new System.Drawing.Size(56, 33);
             this.ultraLabel50.TabIndex = 181;
             this.ultraLabel50.Text = "실측값 mm";
             // 
             // uTxt_Pix2_02_Lami
             // 
-            appearance352.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance352.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance352.TextHAlignAsString = "Center";
-            appearance352.TextVAlignAsString = "Middle";
-            this.uTxt_Pix2_02_Lami.Appearance = appearance352;
+            appearance404.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance404.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance404.TextHAlignAsString = "Center";
+            appearance404.TextVAlignAsString = "Middle";
+            this.uTxt_Pix2_02_Lami.Appearance = appearance404;
             this.uTxt_Pix2_02_Lami.AutoSize = false;
             this.uTxt_Pix2_02_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix2_02_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix2_02_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix2_02_Lami.Location = new System.Drawing.Point(192, 74);
+            this.uTxt_Pix2_02_Lami.Location = new System.Drawing.Point(114, 74);
             this.uTxt_Pix2_02_Lami.Name = "uTxt_Pix2_02_Lami";
-            this.uTxt_Pix2_02_Lami.Size = new System.Drawing.Size(90, 34);
+            this.uTxt_Pix2_02_Lami.Size = new System.Drawing.Size(56, 33);
             this.uTxt_Pix2_02_Lami.TabIndex = 180;
             this.uTxt_Pix2_02_Lami.Text = "303.0";
             // 
             // uTxt_Pix2_03_Lami
             // 
-            appearance353.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance353.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance353.TextHAlignAsString = "Center";
-            this.uTxt_Pix2_03_Lami.Appearance = appearance353;
+            appearance405.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance405.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance405.TextHAlignAsString = "Center";
+            this.uTxt_Pix2_03_Lami.Appearance = appearance405;
             this.uTxt_Pix2_03_Lami.AutoSize = false;
             this.uTxt_Pix2_03_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix2_03_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix2_03_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix2_03_Lami.Location = new System.Drawing.Point(283, 74);
+            this.uTxt_Pix2_03_Lami.Location = new System.Drawing.Point(172, 74);
             this.uTxt_Pix2_03_Lami.Name = "uTxt_Pix2_03_Lami";
             this.uTxt_Pix2_03_Lami.ReadOnly = true;
-            this.uTxt_Pix2_03_Lami.Size = new System.Drawing.Size(95, 34);
+            this.uTxt_Pix2_03_Lami.Size = new System.Drawing.Size(76, 34);
             this.uTxt_Pix2_03_Lami.TabIndex = 179;
             this.uTxt_Pix2_03_Lami.Text = "8.8321";
             // 
             // ultraLabel49
             // 
-            appearance354.BackColor = System.Drawing.Color.DimGray;
-            appearance354.BackColor2 = System.Drawing.Color.Gray;
-            appearance354.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance354.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance354.ForeColor = System.Drawing.Color.White;
-            appearance354.TextHAlignAsString = "Center";
-            appearance354.TextVAlignAsString = "Middle";
-            this.ultraLabel49.Appearance = appearance354;
+            appearance406.BackColor = System.Drawing.Color.DimGray;
+            appearance406.BackColor2 = System.Drawing.Color.Gray;
+            appearance406.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance406.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance406.ForeColor = System.Drawing.Color.White;
+            appearance406.TextHAlignAsString = "Center";
+            appearance406.TextVAlignAsString = "Middle";
+            this.ultraLabel49.Appearance = appearance406;
             this.ultraLabel49.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel49.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel49.Location = new System.Drawing.Point(3, 3);
             this.ultraLabel49.Name = "ultraLabel49";
             this.ultraLabel49.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel49.Size = new System.Drawing.Size(375, 34);
+            this.ultraLabel49.Size = new System.Drawing.Size(245, 34);
             this.ultraLabel49.TabIndex = 72;
-            this.ultraLabel49.Text = "하부 해상도 설정";
+            this.ultraLabel49.Text = "좌측 해상도 설정";
             this.ultraLabel49.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraPanel50
             // 
-            appearance355.BackColor = System.Drawing.Color.Gray;
-            this.ultraPanel50.Appearance = appearance355;
+            appearance407.BackColor = System.Drawing.Color.Gray;
+            this.ultraPanel50.Appearance = appearance407;
             // 
             // ultraPanel50.ClientArea
             // 
             this.ultraPanel50.ClientArea.Controls.Add(this.ultraPanel51);
             this.ultraPanel50.Location = new System.Drawing.Point(10, 606);
             this.ultraPanel50.Name = "ultraPanel50";
-            this.ultraPanel50.Size = new System.Drawing.Size(385, 186);
+            this.ultraPanel50.Size = new System.Drawing.Size(265, 186);
             this.ultraPanel50.TabIndex = 107;
             this.ultraPanel50.TabStop = false;
             // 
             // ultraPanel51
             // 
-            appearance356.BackColor = System.Drawing.Color.White;
-            this.ultraPanel51.Appearance = appearance356;
+            appearance408.BackColor = System.Drawing.Color.White;
+            this.ultraPanel51.Appearance = appearance408;
             // 
             // ultraPanel51.ClientArea
             // 
@@ -7349,26 +7879,26 @@
             this.ultraPanel51.ClientArea.Controls.Add(this.ultraLabel68);
             this.ultraPanel51.Location = new System.Drawing.Point(2, 2);
             this.ultraPanel51.Name = "ultraPanel51";
-            this.ultraPanel51.Size = new System.Drawing.Size(381, 182);
+            this.ultraPanel51.Size = new System.Drawing.Size(256, 182);
             this.ultraPanel51.TabIndex = 72;
             // 
             // ultraButton10
             // 
-            appearance357.BackColor = System.Drawing.Color.DarkGray;
-            appearance357.BackColor2 = System.Drawing.Color.DimGray;
-            appearance357.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance357.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance357.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.ultraButton10.Appearance = appearance357;
+            appearance409.BackColor = System.Drawing.Color.DarkGray;
+            appearance409.BackColor2 = System.Drawing.Color.DimGray;
+            appearance409.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance409.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance409.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.ultraButton10.Appearance = appearance409;
             this.ultraButton10.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance358.BorderColor = System.Drawing.Color.White;
-            appearance358.ForeColor = System.Drawing.Color.White;
-            this.ultraButton10.HotTrackAppearance = appearance358;
-            this.ultraButton10.Location = new System.Drawing.Point(283, 110);
+            appearance410.BorderColor = System.Drawing.Color.White;
+            appearance410.ForeColor = System.Drawing.Color.White;
+            this.ultraButton10.HotTrackAppearance = appearance410;
+            this.ultraButton10.Location = new System.Drawing.Point(172, 110);
             this.ultraButton10.Name = "ultraButton10";
             this.ultraButton10.ShowFocusRect = false;
             this.ultraButton10.ShowOutline = false;
-            this.ultraButton10.Size = new System.Drawing.Size(95, 33);
+            this.ultraButton10.Size = new System.Drawing.Size(76, 33);
             this.ultraButton10.TabIndex = 178;
             this.ultraButton10.Text = "해상도";
             this.ultraButton10.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
@@ -7378,144 +7908,144 @@
             // 
             // ultraLabel62
             // 
-            appearance359.BackColor = System.Drawing.Color.DimGray;
-            appearance359.BackColor2 = System.Drawing.Color.Gray;
-            appearance359.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance359.ForeColor = System.Drawing.Color.White;
-            appearance359.TextHAlignAsString = "Center";
-            appearance359.TextVAlignAsString = "Middle";
-            this.ultraLabel62.Appearance = appearance359;
+            appearance411.BackColor = System.Drawing.Color.DimGray;
+            appearance411.BackColor2 = System.Drawing.Color.Gray;
+            appearance411.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance411.ForeColor = System.Drawing.Color.White;
+            appearance411.TextHAlignAsString = "Center";
+            appearance411.TextVAlignAsString = "Middle";
+            this.ultraLabel62.Appearance = appearance411;
             this.ultraLabel62.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel62.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel62.Location = new System.Drawing.Point(3, 145);
             this.ultraLabel62.Name = "ultraLabel62";
             this.ultraLabel62.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel62.Size = new System.Drawing.Size(97, 34);
+            this.ultraLabel62.Size = new System.Drawing.Size(51, 34);
             this.ultraLabel62.TabIndex = 177;
             this.ultraLabel62.Text = "세로 해상도";
             // 
             // uTxt_Pix1_04_Lami
             // 
-            appearance360.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance360.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance360.TextHAlignAsString = "Center";
-            appearance360.TextVAlignAsString = "Middle";
-            this.uTxt_Pix1_04_Lami.Appearance = appearance360;
+            appearance412.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance412.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance412.TextHAlignAsString = "Center";
+            appearance412.TextVAlignAsString = "Middle";
+            this.uTxt_Pix1_04_Lami.Appearance = appearance412;
             this.uTxt_Pix1_04_Lami.AutoSize = false;
             this.uTxt_Pix1_04_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix1_04_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix1_04_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix1_04_Lami.Location = new System.Drawing.Point(101, 145);
+            this.uTxt_Pix1_04_Lami.Location = new System.Drawing.Point(56, 145);
             this.uTxt_Pix1_04_Lami.Name = "uTxt_Pix1_04_Lami";
-            this.uTxt_Pix1_04_Lami.Size = new System.Drawing.Size(90, 34);
+            this.uTxt_Pix1_04_Lami.Size = new System.Drawing.Size(56, 34);
             this.uTxt_Pix1_04_Lami.TabIndex = 176;
             this.uTxt_Pix1_04_Lami.Text = "1043";
             // 
             // uTxt_Pix1_05_Lami
             // 
-            appearance361.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance361.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance361.TextHAlignAsString = "Center";
-            appearance361.TextVAlignAsString = "Middle";
-            this.uTxt_Pix1_05_Lami.Appearance = appearance361;
+            appearance413.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance413.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance413.TextHAlignAsString = "Center";
+            appearance413.TextVAlignAsString = "Middle";
+            this.uTxt_Pix1_05_Lami.Appearance = appearance413;
             this.uTxt_Pix1_05_Lami.AutoSize = false;
             this.uTxt_Pix1_05_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix1_05_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix1_05_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix1_05_Lami.Location = new System.Drawing.Point(192, 145);
+            this.uTxt_Pix1_05_Lami.Location = new System.Drawing.Point(114, 145);
             this.uTxt_Pix1_05_Lami.Name = "uTxt_Pix1_05_Lami";
-            this.uTxt_Pix1_05_Lami.Size = new System.Drawing.Size(90, 34);
+            this.uTxt_Pix1_05_Lami.Size = new System.Drawing.Size(56, 34);
             this.uTxt_Pix1_05_Lami.TabIndex = 175;
             this.uTxt_Pix1_05_Lami.Text = "91737";
             // 
             // uTxt_Pix1_06_Lami
             // 
-            appearance362.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance362.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance362.TextHAlignAsString = "Center";
-            this.uTxt_Pix1_06_Lami.Appearance = appearance362;
+            appearance414.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance414.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance414.TextHAlignAsString = "Center";
+            this.uTxt_Pix1_06_Lami.Appearance = appearance414;
             this.uTxt_Pix1_06_Lami.AutoSize = false;
             this.uTxt_Pix1_06_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix1_06_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix1_06_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix1_06_Lami.Location = new System.Drawing.Point(283, 145);
+            this.uTxt_Pix1_06_Lami.Location = new System.Drawing.Point(172, 145);
             this.uTxt_Pix1_06_Lami.Name = "uTxt_Pix1_06_Lami";
             this.uTxt_Pix1_06_Lami.ReadOnly = true;
-            this.uTxt_Pix1_06_Lami.Size = new System.Drawing.Size(95, 34);
+            this.uTxt_Pix1_06_Lami.Size = new System.Drawing.Size(76, 34);
             this.uTxt_Pix1_06_Lami.TabIndex = 174;
             this.uTxt_Pix1_06_Lami.Text = "8.818393";
             // 
             // ultraLabel4
             // 
-            appearance363.BackColor = System.Drawing.Color.DimGray;
-            appearance363.BackColor2 = System.Drawing.Color.Gray;
-            appearance363.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance363.ForeColor = System.Drawing.Color.White;
-            appearance363.TextHAlignAsString = "Center";
-            appearance363.TextVAlignAsString = "Middle";
-            this.ultraLabel4.Appearance = appearance363;
+            appearance415.BackColor = System.Drawing.Color.DimGray;
+            appearance415.BackColor2 = System.Drawing.Color.Gray;
+            appearance415.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance415.ForeColor = System.Drawing.Color.White;
+            appearance415.TextHAlignAsString = "Center";
+            appearance415.TextVAlignAsString = "Middle";
+            this.ultraLabel4.Appearance = appearance415;
             this.ultraLabel4.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel4.Location = new System.Drawing.Point(101, 110);
+            this.ultraLabel4.Location = new System.Drawing.Point(56, 110);
             this.ultraLabel4.Name = "ultraLabel4";
             this.ultraLabel4.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel4.Size = new System.Drawing.Size(90, 33);
+            this.ultraLabel4.Size = new System.Drawing.Size(56, 33);
             this.ultraLabel4.TabIndex = 173;
             this.ultraLabel4.Text = "Pixel";
             // 
             // ultraLabel44
             // 
-            appearance364.BackColor = System.Drawing.Color.DimGray;
-            appearance364.BackColor2 = System.Drawing.Color.Gray;
-            appearance364.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance364.ForeColor = System.Drawing.Color.White;
-            appearance364.TextHAlignAsString = "Center";
-            appearance364.TextVAlignAsString = "Middle";
-            this.ultraLabel44.Appearance = appearance364;
+            appearance416.BackColor = System.Drawing.Color.DimGray;
+            appearance416.BackColor2 = System.Drawing.Color.Gray;
+            appearance416.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance416.ForeColor = System.Drawing.Color.White;
+            appearance416.TextHAlignAsString = "Center";
+            appearance416.TextVAlignAsString = "Middle";
+            this.ultraLabel44.Appearance = appearance416;
             this.ultraLabel44.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel44.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel44.Location = new System.Drawing.Point(3, 110);
             this.ultraLabel44.Name = "ultraLabel44";
             this.ultraLabel44.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel44.Size = new System.Drawing.Size(97, 33);
+            this.ultraLabel44.Size = new System.Drawing.Size(51, 33);
             this.ultraLabel44.TabIndex = 172;
             this.ultraLabel44.Text = "항목";
             // 
             // ultraLabel45
             // 
-            appearance365.BackColor = System.Drawing.Color.DimGray;
-            appearance365.BackColor2 = System.Drawing.Color.Gray;
-            appearance365.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance365.ForeColor = System.Drawing.Color.White;
-            appearance365.TextHAlignAsString = "Center";
-            appearance365.TextVAlignAsString = "Middle";
-            this.ultraLabel45.Appearance = appearance365;
+            appearance417.BackColor = System.Drawing.Color.DimGray;
+            appearance417.BackColor2 = System.Drawing.Color.Gray;
+            appearance417.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance417.ForeColor = System.Drawing.Color.White;
+            appearance417.TextHAlignAsString = "Center";
+            appearance417.TextVAlignAsString = "Middle";
+            this.ultraLabel45.Appearance = appearance417;
             this.ultraLabel45.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel45.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel45.Location = new System.Drawing.Point(192, 110);
+            this.ultraLabel45.Location = new System.Drawing.Point(114, 110);
             this.ultraLabel45.Name = "ultraLabel45";
             this.ultraLabel45.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel45.Size = new System.Drawing.Size(90, 33);
+            this.ultraLabel45.Size = new System.Drawing.Size(56, 33);
             this.ultraLabel45.TabIndex = 171;
             this.ultraLabel45.Text = "실측값 mm";
             // 
             // ultraButton9
             // 
-            appearance366.BackColor = System.Drawing.Color.DarkGray;
-            appearance366.BackColor2 = System.Drawing.Color.DimGray;
-            appearance366.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance366.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance366.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.ultraButton9.Appearance = appearance366;
+            appearance418.BackColor = System.Drawing.Color.DarkGray;
+            appearance418.BackColor2 = System.Drawing.Color.DimGray;
+            appearance418.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance418.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance418.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.ultraButton9.Appearance = appearance418;
             this.ultraButton9.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance367.BorderColor = System.Drawing.Color.White;
-            appearance367.ForeColor = System.Drawing.Color.White;
-            this.ultraButton9.HotTrackAppearance = appearance367;
-            this.ultraButton9.Location = new System.Drawing.Point(283, 39);
+            appearance419.BorderColor = System.Drawing.Color.White;
+            appearance419.ForeColor = System.Drawing.Color.White;
+            this.ultraButton9.HotTrackAppearance = appearance419;
+            this.ultraButton9.Location = new System.Drawing.Point(172, 39);
             this.ultraButton9.Name = "ultraButton9";
             this.ultraButton9.ShowFocusRect = false;
             this.ultraButton9.ShowOutline = false;
-            this.ultraButton9.Size = new System.Drawing.Size(95, 33);
+            this.ultraButton9.Size = new System.Drawing.Size(76, 33);
             this.ultraButton9.TabIndex = 161;
             this.ultraButton9.Text = "해상도";
             this.ultraButton9.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
@@ -7525,152 +8055,152 @@
             // 
             // ultraLabel63
             // 
-            appearance368.BackColor = System.Drawing.Color.DimGray;
-            appearance368.BackColor2 = System.Drawing.Color.Gray;
-            appearance368.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance368.ForeColor = System.Drawing.Color.White;
-            appearance368.TextHAlignAsString = "Center";
-            appearance368.TextVAlignAsString = "Middle";
-            this.ultraLabel63.Appearance = appearance368;
+            appearance420.BackColor = System.Drawing.Color.DimGray;
+            appearance420.BackColor2 = System.Drawing.Color.Gray;
+            appearance420.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance420.ForeColor = System.Drawing.Color.White;
+            appearance420.TextHAlignAsString = "Center";
+            appearance420.TextVAlignAsString = "Middle";
+            this.ultraLabel63.Appearance = appearance420;
             this.ultraLabel63.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel63.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel63.Location = new System.Drawing.Point(3, 74);
             this.ultraLabel63.Name = "ultraLabel63";
             this.ultraLabel63.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel63.Size = new System.Drawing.Size(97, 34);
+            this.ultraLabel63.Size = new System.Drawing.Size(51, 34);
             this.ultraLabel63.TabIndex = 160;
             this.ultraLabel63.Text = "가로 해상도";
             // 
             // ultraLabel64
             // 
-            appearance369.BackColor = System.Drawing.Color.DimGray;
-            appearance369.BackColor2 = System.Drawing.Color.Gray;
-            appearance369.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance369.ForeColor = System.Drawing.Color.White;
-            appearance369.TextHAlignAsString = "Center";
-            appearance369.TextVAlignAsString = "Middle";
-            this.ultraLabel64.Appearance = appearance369;
+            appearance421.BackColor = System.Drawing.Color.DimGray;
+            appearance421.BackColor2 = System.Drawing.Color.Gray;
+            appearance421.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance421.ForeColor = System.Drawing.Color.White;
+            appearance421.TextHAlignAsString = "Center";
+            appearance421.TextVAlignAsString = "Middle";
+            this.ultraLabel64.Appearance = appearance421;
             this.ultraLabel64.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel64.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel64.Location = new System.Drawing.Point(101, 39);
+            this.ultraLabel64.Location = new System.Drawing.Point(56, 39);
             this.ultraLabel64.Name = "ultraLabel64";
             this.ultraLabel64.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel64.Size = new System.Drawing.Size(90, 33);
+            this.ultraLabel64.Size = new System.Drawing.Size(56, 33);
             this.ultraLabel64.TabIndex = 156;
             this.ultraLabel64.Text = "Pixel";
             // 
             // uTxt_Pix1_01_Lami
             // 
-            appearance370.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance370.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance370.TextHAlignAsString = "Center";
-            appearance370.TextVAlignAsString = "Middle";
-            this.uTxt_Pix1_01_Lami.Appearance = appearance370;
+            appearance422.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance422.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance422.TextHAlignAsString = "Center";
+            appearance422.TextVAlignAsString = "Middle";
+            this.uTxt_Pix1_01_Lami.Appearance = appearance422;
             this.uTxt_Pix1_01_Lami.AutoSize = false;
             this.uTxt_Pix1_01_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix1_01_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix1_01_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix1_01_Lami.Location = new System.Drawing.Point(101, 74);
+            this.uTxt_Pix1_01_Lami.Location = new System.Drawing.Point(56, 74);
             this.uTxt_Pix1_01_Lami.Name = "uTxt_Pix1_01_Lami";
-            this.uTxt_Pix1_01_Lami.Size = new System.Drawing.Size(90, 34);
+            this.uTxt_Pix1_01_Lami.Size = new System.Drawing.Size(56, 34);
             this.uTxt_Pix1_01_Lami.TabIndex = 155;
             this.uTxt_Pix1_01_Lami.Text = "3436";
             // 
             // ultraLabel65
             // 
-            appearance371.BackColor = System.Drawing.Color.DimGray;
-            appearance371.BackColor2 = System.Drawing.Color.Gray;
-            appearance371.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance371.ForeColor = System.Drawing.Color.White;
-            appearance371.TextHAlignAsString = "Center";
-            appearance371.TextVAlignAsString = "Middle";
-            this.ultraLabel65.Appearance = appearance371;
+            appearance423.BackColor = System.Drawing.Color.DimGray;
+            appearance423.BackColor2 = System.Drawing.Color.Gray;
+            appearance423.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance423.ForeColor = System.Drawing.Color.White;
+            appearance423.TextHAlignAsString = "Center";
+            appearance423.TextVAlignAsString = "Middle";
+            this.ultraLabel65.Appearance = appearance423;
             this.ultraLabel65.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel65.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel65.Location = new System.Drawing.Point(3, 39);
             this.ultraLabel65.Name = "ultraLabel65";
             this.ultraLabel65.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel65.Size = new System.Drawing.Size(97, 33);
+            this.ultraLabel65.Size = new System.Drawing.Size(51, 33);
             this.ultraLabel65.TabIndex = 138;
             this.ultraLabel65.Text = "항목";
             // 
             // ultraLabel66
             // 
-            appearance372.BackColor = System.Drawing.Color.DimGray;
-            appearance372.BackColor2 = System.Drawing.Color.Gray;
-            appearance372.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance372.ForeColor = System.Drawing.Color.White;
-            appearance372.TextHAlignAsString = "Center";
-            appearance372.TextVAlignAsString = "Middle";
-            this.ultraLabel66.Appearance = appearance372;
+            appearance424.BackColor = System.Drawing.Color.DimGray;
+            appearance424.BackColor2 = System.Drawing.Color.Gray;
+            appearance424.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance424.ForeColor = System.Drawing.Color.White;
+            appearance424.TextHAlignAsString = "Center";
+            appearance424.TextVAlignAsString = "Middle";
+            this.ultraLabel66.Appearance = appearance424;
             this.ultraLabel66.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel66.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultraLabel66.Location = new System.Drawing.Point(192, 39);
+            this.ultraLabel66.Location = new System.Drawing.Point(114, 39);
             this.ultraLabel66.Name = "ultraLabel66";
             this.ultraLabel66.Padding = new System.Drawing.Size(2, 0);
-            this.ultraLabel66.Size = new System.Drawing.Size(90, 33);
+            this.ultraLabel66.Size = new System.Drawing.Size(56, 33);
             this.ultraLabel66.TabIndex = 137;
             this.ultraLabel66.Text = "실측값 mm";
             // 
             // uTxt_Pix1_02_Lami
             // 
-            appearance373.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance373.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance373.TextHAlignAsString = "Center";
-            appearance373.TextVAlignAsString = "Middle";
-            this.uTxt_Pix1_02_Lami.Appearance = appearance373;
+            appearance425.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance425.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance425.TextHAlignAsString = "Center";
+            appearance425.TextVAlignAsString = "Middle";
+            this.uTxt_Pix1_02_Lami.Appearance = appearance425;
             this.uTxt_Pix1_02_Lami.AutoSize = false;
             this.uTxt_Pix1_02_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix1_02_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix1_02_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix1_02_Lami.Location = new System.Drawing.Point(192, 74);
+            this.uTxt_Pix1_02_Lami.Location = new System.Drawing.Point(114, 74);
             this.uTxt_Pix1_02_Lami.Name = "uTxt_Pix1_02_Lami";
-            this.uTxt_Pix1_02_Lami.Size = new System.Drawing.Size(90, 34);
+            this.uTxt_Pix1_02_Lami.Size = new System.Drawing.Size(56, 34);
             this.uTxt_Pix1_02_Lami.TabIndex = 135;
             this.uTxt_Pix1_02_Lami.Text = "303.0";
             // 
             // uTxt_Pix1_03_Lami
             // 
-            appearance374.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance374.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance374.TextHAlignAsString = "Center";
-            this.uTxt_Pix1_03_Lami.Appearance = appearance374;
+            appearance426.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance426.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance426.TextHAlignAsString = "Center";
+            this.uTxt_Pix1_03_Lami.Appearance = appearance426;
             this.uTxt_Pix1_03_Lami.AutoSize = false;
             this.uTxt_Pix1_03_Lami.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Pix1_03_Lami.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
             this.uTxt_Pix1_03_Lami.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTxt_Pix1_03_Lami.Location = new System.Drawing.Point(283, 74);
+            this.uTxt_Pix1_03_Lami.Location = new System.Drawing.Point(172, 74);
             this.uTxt_Pix1_03_Lami.Name = "uTxt_Pix1_03_Lami";
             this.uTxt_Pix1_03_Lami.ReadOnly = true;
-            this.uTxt_Pix1_03_Lami.Size = new System.Drawing.Size(95, 34);
+            this.uTxt_Pix1_03_Lami.Size = new System.Drawing.Size(76, 34);
             this.uTxt_Pix1_03_Lami.TabIndex = 75;
             this.uTxt_Pix1_03_Lami.Text = "8.804469";
             this.uTxt_Pix1_03_Lami.ValueChanged += new System.EventHandler(this.uTxt_Pix1_03_Lami_ValueChanged);
             // 
             // ultraLabel68
             // 
-            appearance375.BackColor = System.Drawing.Color.DimGray;
-            appearance375.BackColor2 = System.Drawing.Color.Gray;
-            appearance375.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance375.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance375.ForeColor = System.Drawing.Color.White;
-            appearance375.TextHAlignAsString = "Center";
-            appearance375.TextVAlignAsString = "Middle";
-            this.ultraLabel68.Appearance = appearance375;
+            appearance427.BackColor = System.Drawing.Color.DimGray;
+            appearance427.BackColor2 = System.Drawing.Color.Gray;
+            appearance427.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance427.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance427.ForeColor = System.Drawing.Color.White;
+            appearance427.TextHAlignAsString = "Center";
+            appearance427.TextVAlignAsString = "Middle";
+            this.ultraLabel68.Appearance = appearance427;
             this.ultraLabel68.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel68.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel68.Location = new System.Drawing.Point(3, 3);
             this.ultraLabel68.Name = "ultraLabel68";
             this.ultraLabel68.Padding = new System.Drawing.Size(10, 0);
-            this.ultraLabel68.Size = new System.Drawing.Size(375, 34);
+            this.ultraLabel68.Size = new System.Drawing.Size(245, 34);
             this.ultraLabel68.TabIndex = 72;
             this.ultraLabel68.Text = "상부 해상도 설정";
             this.ultraLabel68.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
             // 
             // ultraPanel60
             // 
-            appearance376.BackColor = System.Drawing.Color.Gray;
-            this.ultraPanel60.Appearance = appearance376;
+            appearance428.BackColor = System.Drawing.Color.Gray;
+            this.ultraPanel60.Appearance = appearance428;
             // 
             // ultraPanel60.ClientArea
             // 
@@ -7683,8 +8213,8 @@
             // 
             // ultraPanel62
             // 
-            appearance377.BackColor = System.Drawing.Color.White;
-            this.ultraPanel62.Appearance = appearance377;
+            appearance429.BackColor = System.Drawing.Color.White;
+            this.ultraPanel62.Appearance = appearance429;
             // 
             // ultraPanel62.ClientArea
             // 
@@ -7697,16 +8227,16 @@
             // 
             // VisionGap_uBtn_TestManual
             // 
-            appearance378.BackColor = System.Drawing.Color.DarkGray;
-            appearance378.BackColor2 = System.Drawing.Color.DimGray;
-            appearance378.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance378.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.VisionGap_uBtn_TestManual.Appearance = appearance378;
+            appearance430.BackColor = System.Drawing.Color.DarkGray;
+            appearance430.BackColor2 = System.Drawing.Color.DimGray;
+            appearance430.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance430.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VisionGap_uBtn_TestManual.Appearance = appearance430;
             this.VisionGap_uBtn_TestManual.Enabled = false;
             this.VisionGap_uBtn_TestManual.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance379.BorderColor = System.Drawing.Color.White;
-            appearance379.ForeColor = System.Drawing.Color.White;
-            this.VisionGap_uBtn_TestManual.HotTrackAppearance = appearance379;
+            appearance431.BorderColor = System.Drawing.Color.White;
+            appearance431.ForeColor = System.Drawing.Color.White;
+            this.VisionGap_uBtn_TestManual.HotTrackAppearance = appearance431;
             this.VisionGap_uBtn_TestManual.Location = new System.Drawing.Point(3, 3);
             this.VisionGap_uBtn_TestManual.Name = "VisionGap_uBtn_TestManual";
             this.VisionGap_uBtn_TestManual.ShowFocusRect = false;
@@ -7721,15 +8251,15 @@
             // 
             // VisionGap_uBtn_ParamApply
             // 
-            appearance380.BackColor = System.Drawing.Color.DarkGray;
-            appearance380.BackColor2 = System.Drawing.Color.DimGray;
-            appearance380.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance380.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.VisionGap_uBtn_ParamApply.Appearance = appearance380;
+            appearance432.BackColor = System.Drawing.Color.DarkGray;
+            appearance432.BackColor2 = System.Drawing.Color.DimGray;
+            appearance432.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance432.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VisionGap_uBtn_ParamApply.Appearance = appearance432;
             this.VisionGap_uBtn_ParamApply.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance381.BorderColor = System.Drawing.Color.White;
-            appearance381.ForeColor = System.Drawing.Color.White;
-            this.VisionGap_uBtn_ParamApply.HotTrackAppearance = appearance381;
+            appearance433.BorderColor = System.Drawing.Color.White;
+            appearance433.ForeColor = System.Drawing.Color.White;
+            this.VisionGap_uBtn_ParamApply.HotTrackAppearance = appearance433;
             this.VisionGap_uBtn_ParamApply.Location = new System.Drawing.Point(221, 3);
             this.VisionGap_uBtn_ParamApply.Name = "VisionGap_uBtn_ParamApply";
             this.VisionGap_uBtn_ParamApply.ShowFocusRect = false;
@@ -7744,8 +8274,8 @@
             // 
             // ultraPanel57
             // 
-            appearance382.BackColor = System.Drawing.Color.Gray;
-            this.ultraPanel57.Appearance = appearance382;
+            appearance434.BackColor = System.Drawing.Color.Gray;
+            this.ultraPanel57.Appearance = appearance434;
             // 
             // ultraPanel57.ClientArea
             // 
@@ -7758,8 +8288,8 @@
             // 
             // ultraPanel58
             // 
-            appearance383.BackColor = System.Drawing.Color.White;
-            this.ultraPanel58.Appearance = appearance383;
+            appearance435.BackColor = System.Drawing.Color.White;
+            this.ultraPanel58.Appearance = appearance435;
             // 
             // ultraPanel58.ClientArea
             // 
@@ -7774,15 +8304,15 @@
             // 
             // VisionGap_uBtn_TabMeas
             // 
-            appearance384.BackColor = System.Drawing.Color.DarkGray;
-            appearance384.BackColor2 = System.Drawing.Color.DimGray;
-            appearance384.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance384.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.VisionGap_uBtn_TabMeas.Appearance = appearance384;
+            appearance436.BackColor = System.Drawing.Color.DarkGray;
+            appearance436.BackColor2 = System.Drawing.Color.DimGray;
+            appearance436.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance436.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VisionGap_uBtn_TabMeas.Appearance = appearance436;
             this.VisionGap_uBtn_TabMeas.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance385.BorderColor = System.Drawing.Color.White;
-            appearance385.ForeColor = System.Drawing.Color.White;
-            this.VisionGap_uBtn_TabMeas.HotTrackAppearance = appearance385;
+            appearance437.BorderColor = System.Drawing.Color.White;
+            appearance437.ForeColor = System.Drawing.Color.White;
+            this.VisionGap_uBtn_TabMeas.HotTrackAppearance = appearance437;
             this.VisionGap_uBtn_TabMeas.Location = new System.Drawing.Point(3, 56);
             this.VisionGap_uBtn_TabMeas.Name = "VisionGap_uBtn_TabMeas";
             this.VisionGap_uBtn_TabMeas.ShowFocusRect = false;
@@ -7797,16 +8327,16 @@
             // 
             // VisionGap_uBtn_GrabNone
             // 
-            appearance386.BackColor = System.Drawing.Color.DarkGray;
-            appearance386.BackColor2 = System.Drawing.Color.DimGray;
-            appearance386.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance386.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.VisionGap_uBtn_GrabNone.Appearance = appearance386;
+            appearance438.BackColor = System.Drawing.Color.DarkGray;
+            appearance438.BackColor2 = System.Drawing.Color.DimGray;
+            appearance438.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance438.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VisionGap_uBtn_GrabNone.Appearance = appearance438;
             this.VisionGap_uBtn_GrabNone.Enabled = false;
             this.VisionGap_uBtn_GrabNone.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance387.BorderColor = System.Drawing.Color.White;
-            appearance387.ForeColor = System.Drawing.Color.White;
-            this.VisionGap_uBtn_GrabNone.HotTrackAppearance = appearance387;
+            appearance439.BorderColor = System.Drawing.Color.White;
+            appearance439.ForeColor = System.Drawing.Color.White;
+            this.VisionGap_uBtn_GrabNone.HotTrackAppearance = appearance439;
             this.VisionGap_uBtn_GrabNone.Location = new System.Drawing.Point(221, 56);
             this.VisionGap_uBtn_GrabNone.Name = "VisionGap_uBtn_GrabNone";
             this.VisionGap_uBtn_GrabNone.Size = new System.Drawing.Size(216, 52);
@@ -7818,15 +8348,15 @@
             // 
             // VisionGap_uBtn_ImageRead
             // 
-            appearance388.BackColor = System.Drawing.Color.DarkGray;
-            appearance388.BackColor2 = System.Drawing.Color.DimGray;
-            appearance388.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance388.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.VisionGap_uBtn_ImageRead.Appearance = appearance388;
+            appearance440.BackColor = System.Drawing.Color.DarkGray;
+            appearance440.BackColor2 = System.Drawing.Color.DimGray;
+            appearance440.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance440.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VisionGap_uBtn_ImageRead.Appearance = appearance440;
             this.VisionGap_uBtn_ImageRead.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance389.BorderColor = System.Drawing.Color.White;
-            appearance389.ForeColor = System.Drawing.Color.White;
-            this.VisionGap_uBtn_ImageRead.HotTrackAppearance = appearance389;
+            appearance441.BorderColor = System.Drawing.Color.White;
+            appearance441.ForeColor = System.Drawing.Color.White;
+            this.VisionGap_uBtn_ImageRead.HotTrackAppearance = appearance441;
             this.VisionGap_uBtn_ImageRead.Location = new System.Drawing.Point(3, 3);
             this.VisionGap_uBtn_ImageRead.Name = "VisionGap_uBtn_ImageRead";
             this.VisionGap_uBtn_ImageRead.ShowFocusRect = false;
@@ -7841,15 +8371,15 @@
             // 
             // VisionGap_uBtn_ImageSave
             // 
-            appearance390.BackColor = System.Drawing.Color.DarkGray;
-            appearance390.BackColor2 = System.Drawing.Color.DimGray;
-            appearance390.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance390.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.VisionGap_uBtn_ImageSave.Appearance = appearance390;
+            appearance442.BackColor = System.Drawing.Color.DarkGray;
+            appearance442.BackColor2 = System.Drawing.Color.DimGray;
+            appearance442.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance442.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VisionGap_uBtn_ImageSave.Appearance = appearance442;
             this.VisionGap_uBtn_ImageSave.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance391.BorderColor = System.Drawing.Color.White;
-            appearance391.ForeColor = System.Drawing.Color.White;
-            this.VisionGap_uBtn_ImageSave.HotTrackAppearance = appearance391;
+            appearance443.BorderColor = System.Drawing.Color.White;
+            appearance443.ForeColor = System.Drawing.Color.White;
+            this.VisionGap_uBtn_ImageSave.HotTrackAppearance = appearance443;
             this.VisionGap_uBtn_ImageSave.Location = new System.Drawing.Point(221, 3);
             this.VisionGap_uBtn_ImageSave.Name = "VisionGap_uBtn_ImageSave";
             this.VisionGap_uBtn_ImageSave.ShowFocusRect = false;
@@ -7864,8 +8394,8 @@
             // 
             // ultraPanel54
             // 
-            appearance392.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel54.Appearance = appearance392;
+            appearance444.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel54.Appearance = appearance444;
             // 
             // ultraPanel54.ClientArea
             // 
@@ -7878,8 +8408,8 @@
             // 
             // ultraPanel55
             // 
-            appearance393.BackColor = System.Drawing.Color.White;
-            this.ultraPanel55.Appearance = appearance393;
+            appearance445.BackColor = System.Drawing.Color.White;
+            this.ultraPanel55.Appearance = appearance445;
             // 
             // ultraPanel55.ClientArea
             // 
@@ -7896,15 +8426,15 @@
             // 
             // ultraLabel36
             // 
-            appearance394.BackColor = System.Drawing.Color.DimGray;
-            appearance394.BackColor2 = System.Drawing.Color.Gray;
-            appearance394.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance394.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance394.FontData.Name = "MS Reference Sans Serif";
-            appearance394.ForeColor = System.Drawing.Color.White;
-            appearance394.TextHAlignAsString = "Center";
-            appearance394.TextVAlignAsString = "Middle";
-            this.ultraLabel36.Appearance = appearance394;
+            appearance446.BackColor = System.Drawing.Color.DimGray;
+            appearance446.BackColor2 = System.Drawing.Color.Gray;
+            appearance446.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance446.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance446.FontData.Name = "MS Reference Sans Serif";
+            appearance446.ForeColor = System.Drawing.Color.White;
+            appearance446.TextHAlignAsString = "Center";
+            appearance446.TextVAlignAsString = "Middle";
+            this.ultraLabel36.Appearance = appearance446;
             this.ultraLabel36.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel36.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel36.Location = new System.Drawing.Point(3, 3);
@@ -7917,20 +8447,21 @@
             // 
             // ultraTabControl1
             // 
-            appearance395.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ultraTabControl1.ActiveTabAppearance = appearance395;
+            appearance447.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ultraTabControl1.ActiveTabAppearance = appearance447;
             this.ultraTabControl1.AlphaBlendMode = Infragistics.Win.AlphaBlendMode.Standard;
-            appearance396.BackColor = System.Drawing.Color.Silver;
-            appearance396.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ultraTabControl1.Appearance = appearance396;
+            appearance448.BackColor = System.Drawing.Color.Silver;
+            appearance448.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ultraTabControl1.Appearance = appearance448;
             this.ultraTabControl1.Controls.Add(this.ultraTabSharedControlsPage2);
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl9);
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl10);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl12);
             this.ultraTabControl1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ultraTabControl1.Location = new System.Drawing.Point(3, 30);
             this.ultraTabControl1.Name = "ultraTabControl1";
-            appearance397.BackColor = System.Drawing.Color.Silver;
-            this.ultraTabControl1.SelectedTabAppearance = appearance397;
+            appearance449.BackColor = System.Drawing.Color.Silver;
+            this.ultraTabControl1.SelectedTabAppearance = appearance449;
             this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage2;
             this.ultraTabControl1.ShowPartialTabs = Infragistics.Win.DefaultableBoolean.False;
             this.ultraTabControl1.ShowTabListButton = Infragistics.Win.DefaultableBoolean.False;
@@ -7939,16 +8470,20 @@
             this.ultraTabControl1.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
             this.ultraTabControl1.TabIndex = 140;
             ultraTab6.Key = "RecipeUper";
-            appearance398.ForeColor = System.Drawing.Color.White;
-            ultraTab6.SelectedAppearance = appearance398;
+            appearance450.ForeColor = System.Drawing.Color.White;
+            ultraTab6.SelectedAppearance = appearance450;
             ultraTab6.TabPage = this.ultraTabPageControl9;
             ultraTab6.Text = "상부 설정";
             ultraTab7.Key = "RecipeDown";
             ultraTab7.TabPage = this.ultraTabPageControl10;
-            ultraTab7.Text = "하부 설정";
+            ultraTab7.Text = "좌측 설정";
+            ultraTab12.Key = "RecipeRight";
+            ultraTab12.TabPage = this.ultraTabPageControl12;
+            ultraTab12.Text = "우측 설정";
             this.ultraTabControl1.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
             ultraTab6,
-            ultraTab7});
+            ultraTab7,
+            ultraTab12});
             this.ultraTabControl1.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
             this.ultraTabControl1.UseHotTracking = Infragistics.Win.DefaultableBoolean.False;
             this.ultraTabControl1.UseMnemonics = Infragistics.Win.DefaultableBoolean.False;
@@ -7963,17 +8498,17 @@
             // 
             // Vision_uBtn_01
             // 
-            appearance399.BackColor = System.Drawing.Color.DarkGray;
-            appearance399.BackColor2 = System.Drawing.Color.DimGray;
-            appearance399.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance399.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance399.ImageBackground = global::SystemAlign.Properties.Resources._112;
-            appearance399.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.Vision_uBtn_01.Appearance = appearance399;
+            appearance451.BackColor = System.Drawing.Color.DarkGray;
+            appearance451.BackColor2 = System.Drawing.Color.DimGray;
+            appearance451.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance451.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance451.ImageBackground = global::SystemAlign.Properties.Resources._112;
+            appearance451.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.Vision_uBtn_01.Appearance = appearance451;
             this.Vision_uBtn_01.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance400.BorderColor = System.Drawing.Color.White;
-            appearance400.ForeColor = System.Drawing.Color.White;
-            this.Vision_uBtn_01.HotTrackAppearance = appearance400;
+            appearance452.BorderColor = System.Drawing.Color.White;
+            appearance452.ForeColor = System.Drawing.Color.White;
+            this.Vision_uBtn_01.HotTrackAppearance = appearance452;
             this.Vision_uBtn_01.Location = new System.Drawing.Point(3, 516);
             this.Vision_uBtn_01.Name = "Vision_uBtn_01";
             this.Vision_uBtn_01.ShowFocusRect = false;
@@ -7987,17 +8522,17 @@
             // 
             // Vision_uBtn_02
             // 
-            appearance401.BackColor = System.Drawing.Color.DarkGray;
-            appearance401.BackColor2 = System.Drawing.Color.DimGray;
-            appearance401.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance401.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance401.ImageBackground = global::SystemAlign.Properties.Resources._117;
-            appearance401.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.Vision_uBtn_02.Appearance = appearance401;
+            appearance453.BackColor = System.Drawing.Color.DarkGray;
+            appearance453.BackColor2 = System.Drawing.Color.DimGray;
+            appearance453.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance453.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance453.ImageBackground = global::SystemAlign.Properties.Resources._117;
+            appearance453.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.Vision_uBtn_02.Appearance = appearance453;
             this.Vision_uBtn_02.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance402.BorderColor = System.Drawing.Color.White;
-            appearance402.ForeColor = System.Drawing.Color.White;
-            this.Vision_uBtn_02.HotTrackAppearance = appearance402;
+            appearance454.BorderColor = System.Drawing.Color.White;
+            appearance454.ForeColor = System.Drawing.Color.White;
+            this.Vision_uBtn_02.HotTrackAppearance = appearance454;
             this.Vision_uBtn_02.Location = new System.Drawing.Point(112, 516);
             this.Vision_uBtn_02.Name = "Vision_uBtn_02";
             this.Vision_uBtn_02.ShowFocusRect = false;
@@ -8011,18 +8546,18 @@
             // 
             // VisionGap_uBtn_BiCell03
             // 
-            appearance403.BackColor = System.Drawing.Color.DarkGray;
-            appearance403.BackColor2 = System.Drawing.Color.DimGray;
-            appearance403.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance403.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance403.ImageBackground = global::SystemAlign.Properties.Resources._19;
-            appearance403.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.VisionGap_uBtn_BiCell03.Appearance = appearance403;
+            appearance455.BackColor = System.Drawing.Color.DarkGray;
+            appearance455.BackColor2 = System.Drawing.Color.DimGray;
+            appearance455.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance455.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance455.ImageBackground = global::SystemAlign.Properties.Resources._19;
+            appearance455.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.VisionGap_uBtn_BiCell03.Appearance = appearance455;
             this.VisionGap_uBtn_BiCell03.Enabled = false;
             this.VisionGap_uBtn_BiCell03.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance404.BorderColor = System.Drawing.Color.White;
-            appearance404.ForeColor = System.Drawing.Color.White;
-            this.VisionGap_uBtn_BiCell03.HotTrackAppearance = appearance404;
+            appearance456.BorderColor = System.Drawing.Color.White;
+            appearance456.ForeColor = System.Drawing.Color.White;
+            this.VisionGap_uBtn_BiCell03.HotTrackAppearance = appearance456;
             this.VisionGap_uBtn_BiCell03.Location = new System.Drawing.Point(221, 516);
             this.VisionGap_uBtn_BiCell03.Name = "VisionGap_uBtn_BiCell03";
             this.VisionGap_uBtn_BiCell03.ShowFocusRect = false;
@@ -8036,18 +8571,18 @@
             // 
             // VisionGap_uBtn_BiCell04
             // 
-            appearance405.BackColor = System.Drawing.Color.DarkGray;
-            appearance405.BackColor2 = System.Drawing.Color.DimGray;
-            appearance405.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance405.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance405.ImageBackground = global::SystemAlign.Properties.Resources._24;
-            appearance405.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.VisionGap_uBtn_BiCell04.Appearance = appearance405;
+            appearance457.BackColor = System.Drawing.Color.DarkGray;
+            appearance457.BackColor2 = System.Drawing.Color.DimGray;
+            appearance457.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance457.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance457.ImageBackground = global::SystemAlign.Properties.Resources._24;
+            appearance457.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.VisionGap_uBtn_BiCell04.Appearance = appearance457;
             this.VisionGap_uBtn_BiCell04.Enabled = false;
             this.VisionGap_uBtn_BiCell04.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance406.BorderColor = System.Drawing.Color.White;
-            appearance406.ForeColor = System.Drawing.Color.White;
-            this.VisionGap_uBtn_BiCell04.HotTrackAppearance = appearance406;
+            appearance458.BorderColor = System.Drawing.Color.White;
+            appearance458.ForeColor = System.Drawing.Color.White;
+            this.VisionGap_uBtn_BiCell04.HotTrackAppearance = appearance458;
             this.VisionGap_uBtn_BiCell04.Location = new System.Drawing.Point(330, 516);
             this.VisionGap_uBtn_BiCell04.Name = "VisionGap_uBtn_BiCell04";
             this.VisionGap_uBtn_BiCell04.ShowFocusRect = false;
@@ -8061,8 +8596,8 @@
             // 
             // ultraPanel48
             // 
-            appearance407.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel48.Appearance = appearance407;
+            appearance459.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel48.Appearance = appearance459;
             // 
             // ultraPanel48.ClientArea
             // 
@@ -8075,8 +8610,8 @@
             // 
             // ultraPanel49
             // 
-            appearance408.BackColor = System.Drawing.Color.White;
-            this.ultraPanel49.Appearance = appearance408;
+            appearance460.BackColor = System.Drawing.Color.White;
+            this.ultraPanel49.Appearance = appearance460;
             // 
             // ultraPanel49.ClientArea
             // 
@@ -8118,8 +8653,8 @@
             // 
             // RecipeConfig_Tab_BackPanel_Gap
             // 
-            appearance409.BackColor = System.Drawing.Color.Silver;
-            this.RecipeConfig_Tab_BackPanel_Gap.Appearance = appearance409;
+            appearance461.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.RecipeConfig_Tab_BackPanel_Gap.Appearance = appearance461;
             // 
             // RecipeConfig_Tab_BackPanel_Gap.ClientArea
             // 
@@ -8135,8 +8670,8 @@
             // 
             // ultraPanel38
             // 
-            appearance410.BackColor = System.Drawing.Color.Gray;
-            this.ultraPanel38.Appearance = appearance410;
+            appearance462.BackColor = System.Drawing.Color.Gray;
+            this.ultraPanel38.Appearance = appearance462;
             // 
             // ultraPanel38.ClientArea
             // 
@@ -8149,8 +8684,8 @@
             // 
             // ultraPanel39
             // 
-            appearance411.BackColor = System.Drawing.Color.White;
-            this.ultraPanel39.Appearance = appearance411;
+            appearance463.BackColor = System.Drawing.Color.White;
+            this.ultraPanel39.Appearance = appearance463;
             // 
             // ultraPanel39.ClientArea
             // 
@@ -8163,17 +8698,17 @@
             // 
             // Recipe_uBtn_TestManual
             // 
-            appearance412.BackColor = System.Drawing.Color.DarkGray;
-            appearance412.BackColor2 = System.Drawing.Color.DimGray;
-            appearance412.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance412.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance412.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Recipe_uBtn_TestManual.Appearance = appearance412;
+            appearance464.BackColor = System.Drawing.Color.DarkGray;
+            appearance464.BackColor2 = System.Drawing.Color.DimGray;
+            appearance464.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance464.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance464.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Recipe_uBtn_TestManual.Appearance = appearance464;
             this.Recipe_uBtn_TestManual.Enabled = false;
             this.Recipe_uBtn_TestManual.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance413.BorderColor = System.Drawing.Color.White;
-            appearance413.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_TestManual.HotTrackAppearance = appearance413;
+            appearance465.BorderColor = System.Drawing.Color.White;
+            appearance465.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_TestManual.HotTrackAppearance = appearance465;
             this.Recipe_uBtn_TestManual.Location = new System.Drawing.Point(3, 3);
             this.Recipe_uBtn_TestManual.Name = "Recipe_uBtn_TestManual";
             this.Recipe_uBtn_TestManual.ShowFocusRect = false;
@@ -8187,16 +8722,16 @@
             // 
             // Recipe_uBtn_ParamApply
             // 
-            appearance414.BackColor = System.Drawing.Color.DarkGray;
-            appearance414.BackColor2 = System.Drawing.Color.DimGray;
-            appearance414.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance414.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance414.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Recipe_uBtn_ParamApply.Appearance = appearance414;
+            appearance466.BackColor = System.Drawing.Color.DarkGray;
+            appearance466.BackColor2 = System.Drawing.Color.DimGray;
+            appearance466.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance466.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance466.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Recipe_uBtn_ParamApply.Appearance = appearance466;
             this.Recipe_uBtn_ParamApply.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance415.BorderColor = System.Drawing.Color.White;
-            appearance415.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_ParamApply.HotTrackAppearance = appearance415;
+            appearance467.BorderColor = System.Drawing.Color.White;
+            appearance467.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_ParamApply.HotTrackAppearance = appearance467;
             this.Recipe_uBtn_ParamApply.Location = new System.Drawing.Point(221, 3);
             this.Recipe_uBtn_ParamApply.Name = "Recipe_uBtn_ParamApply";
             this.Recipe_uBtn_ParamApply.ShowFocusRect = false;
@@ -8211,8 +8746,8 @@
             // 
             // ultraPanel65
             // 
-            appearance416.BackColor = System.Drawing.Color.Gray;
-            this.ultraPanel65.Appearance = appearance416;
+            appearance468.BackColor = System.Drawing.Color.Gray;
+            this.ultraPanel65.Appearance = appearance468;
             // 
             // ultraPanel65.ClientArea
             // 
@@ -8225,8 +8760,8 @@
             // 
             // ultraPanel67
             // 
-            appearance417.BackColor = System.Drawing.Color.White;
-            this.ultraPanel67.Appearance = appearance417;
+            appearance469.BackColor = System.Drawing.Color.White;
+            this.ultraPanel67.Appearance = appearance469;
             // 
             // ultraPanel67.ClientArea
             // 
@@ -8242,18 +8777,18 @@
             // 
             // Recipe_uBtn_GrabNone
             // 
-            appearance418.BackColor = System.Drawing.Color.DarkGray;
-            appearance418.BackColor2 = System.Drawing.Color.DimGray;
-            appearance418.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance418.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance418.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance418.TextHAlignAsString = "Center";
-            appearance418.TextVAlignAsString = "Middle";
-            this.Recipe_uBtn_GrabNone.Appearance = appearance418;
+            appearance470.BackColor = System.Drawing.Color.DarkGray;
+            appearance470.BackColor2 = System.Drawing.Color.DimGray;
+            appearance470.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance470.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance470.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance470.TextHAlignAsString = "Center";
+            appearance470.TextVAlignAsString = "Middle";
+            this.Recipe_uBtn_GrabNone.Appearance = appearance470;
             this.Recipe_uBtn_GrabNone.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance419.BorderColor = System.Drawing.Color.White;
-            appearance419.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_GrabNone.HotTrackAppearance = appearance419;
+            appearance471.BorderColor = System.Drawing.Color.White;
+            appearance471.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_GrabNone.HotTrackAppearance = appearance471;
             this.Recipe_uBtn_GrabNone.Location = new System.Drawing.Point(221, 56);
             this.Recipe_uBtn_GrabNone.Name = "Recipe_uBtn_GrabNone";
             this.Recipe_uBtn_GrabNone.ShowFocusRect = false;
@@ -8268,10 +8803,10 @@
             // 
             // uTxt_Manual_GapNo
             // 
-            appearance420.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance420.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance420.TextHAlignAsString = "Center";
-            this.uTxt_Manual_GapNo.Appearance = appearance420;
+            appearance472.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance472.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance472.TextHAlignAsString = "Center";
+            this.uTxt_Manual_GapNo.Appearance = appearance472;
             this.uTxt_Manual_GapNo.AutoSize = false;
             this.uTxt_Manual_GapNo.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.uTxt_Manual_GapNo.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -8284,16 +8819,16 @@
             // 
             // Recipe_uBtn_Tab_Meas
             // 
-            appearance421.BackColor = System.Drawing.Color.DarkGray;
-            appearance421.BackColor2 = System.Drawing.Color.DimGray;
-            appearance421.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance421.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance421.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Recipe_uBtn_Tab_Meas.Appearance = appearance421;
+            appearance473.BackColor = System.Drawing.Color.DarkGray;
+            appearance473.BackColor2 = System.Drawing.Color.DimGray;
+            appearance473.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance473.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance473.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Recipe_uBtn_Tab_Meas.Appearance = appearance473;
             this.Recipe_uBtn_Tab_Meas.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance422.BorderColor = System.Drawing.Color.White;
-            appearance422.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_Tab_Meas.HotTrackAppearance = appearance422;
+            appearance474.BorderColor = System.Drawing.Color.White;
+            appearance474.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_Tab_Meas.HotTrackAppearance = appearance474;
             this.Recipe_uBtn_Tab_Meas.Location = new System.Drawing.Point(3, 56);
             this.Recipe_uBtn_Tab_Meas.Name = "Recipe_uBtn_Tab_Meas";
             this.Recipe_uBtn_Tab_Meas.ShowFocusRect = false;
@@ -8308,16 +8843,16 @@
             // 
             // Recipe_uBtn_ImageRead
             // 
-            appearance423.BackColor = System.Drawing.Color.DarkGray;
-            appearance423.BackColor2 = System.Drawing.Color.DimGray;
-            appearance423.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance423.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance423.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Recipe_uBtn_ImageRead.Appearance = appearance423;
+            appearance475.BackColor = System.Drawing.Color.DarkGray;
+            appearance475.BackColor2 = System.Drawing.Color.DimGray;
+            appearance475.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance475.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance475.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Recipe_uBtn_ImageRead.Appearance = appearance475;
             this.Recipe_uBtn_ImageRead.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance424.BorderColor = System.Drawing.Color.White;
-            appearance424.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_ImageRead.HotTrackAppearance = appearance424;
+            appearance476.BorderColor = System.Drawing.Color.White;
+            appearance476.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_ImageRead.HotTrackAppearance = appearance476;
             this.Recipe_uBtn_ImageRead.Location = new System.Drawing.Point(3, 3);
             this.Recipe_uBtn_ImageRead.Name = "Recipe_uBtn_ImageRead";
             this.Recipe_uBtn_ImageRead.ShowFocusRect = false;
@@ -8332,16 +8867,16 @@
             // 
             // Recipe_uBtn_ImageSave
             // 
-            appearance425.BackColor = System.Drawing.Color.DarkGray;
-            appearance425.BackColor2 = System.Drawing.Color.DimGray;
-            appearance425.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance425.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance425.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Recipe_uBtn_ImageSave.Appearance = appearance425;
+            appearance477.BackColor = System.Drawing.Color.DarkGray;
+            appearance477.BackColor2 = System.Drawing.Color.DimGray;
+            appearance477.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance477.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance477.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Recipe_uBtn_ImageSave.Appearance = appearance477;
             this.Recipe_uBtn_ImageSave.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance426.BorderColor = System.Drawing.Color.White;
-            appearance426.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_ImageSave.HotTrackAppearance = appearance426;
+            appearance478.BorderColor = System.Drawing.Color.White;
+            appearance478.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_ImageSave.HotTrackAppearance = appearance478;
             this.Recipe_uBtn_ImageSave.Location = new System.Drawing.Point(221, 3);
             this.Recipe_uBtn_ImageSave.Name = "Recipe_uBtn_ImageSave";
             this.Recipe_uBtn_ImageSave.ShowFocusRect = false;
@@ -8356,8 +8891,8 @@
             // 
             // ultraPanel31
             // 
-            appearance427.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel31.Appearance = appearance427;
+            appearance479.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel31.Appearance = appearance479;
             // 
             // ultraPanel31.ClientArea
             // 
@@ -8370,11 +8905,12 @@
             // 
             // ultraPanel34
             // 
-            appearance428.BackColor = System.Drawing.Color.White;
-            this.ultraPanel34.Appearance = appearance428;
+            appearance480.BackColor = System.Drawing.Color.White;
+            this.ultraPanel34.Appearance = appearance480;
             // 
             // ultraPanel34.ClientArea
             // 
+            this.ultraPanel34.ClientArea.Controls.Add(this.uGrd_Recipe_Test_Right);
             this.ultraPanel34.ClientArea.Controls.Add(this.uGrd_Recipe_Test_Uper);
             this.ultraPanel34.ClientArea.Controls.Add(this.ultraLabel90);
             this.ultraPanel34.ClientArea.Controls.Add(this.uGrd_Recipe_Test_Down);
@@ -8383,59 +8919,172 @@
             this.ultraPanel34.Size = new System.Drawing.Size(776, 182);
             this.ultraPanel34.TabIndex = 72;
             // 
+            // uGrd_Recipe_Test_Right
+            // 
+            this.uGrd_Recipe_Test_Right.DataSource = this.uDS_Test_Down;
+            appearance481.BackColor = System.Drawing.Color.White;
+            appearance481.BackColor2 = System.Drawing.Color.DarkGray;
+            appearance481.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
+            appearance481.FontData.BoldAsString = "True";
+            appearance481.FontData.Name = "Bookman Old Style";
+            appearance481.FontData.SizeInPoints = 7F;
+            appearance481.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance481.TextHAlignAsString = "Center";
+            appearance481.TextVAlignAsString = "Bottom";
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Appearance = appearance481;
+            ultraGridColumn125.Header.Caption = "하부";
+            ultraGridColumn125.Header.VisiblePosition = 0;
+            ultraGridColumn125.Width = 42;
+            ultraGridColumn137.Header.Caption = "항목";
+            ultraGridColumn137.Header.VisiblePosition = 1;
+            ultraGridColumn137.Width = 78;
+            ultraGridColumn138.Header.Caption = "중심";
+            ultraGridColumn138.Header.VisiblePosition = 2;
+            ultraGridColumn138.Width = 55;
+            ultraGridColumn153.Header.Caption = "상한";
+            ultraGridColumn153.Header.VisiblePosition = 3;
+            ultraGridColumn153.Width = 55;
+            ultraGridColumn154.Header.Caption = "하한";
+            ultraGridColumn154.Header.VisiblePosition = 4;
+            ultraGridColumn154.Width = 55;
+            ultraGridColumn155.Header.VisiblePosition = 5;
+            ultraGridColumn155.Width = 55;
+            ultraGridColumn156.Header.Caption = "판정";
+            ultraGridColumn156.Header.VisiblePosition = 6;
+            ultraGridColumn156.Width = 41;
+            ultraGridBand7.Columns.AddRange(new object[] {
+            ultraGridColumn125,
+            ultraGridColumn137,
+            ultraGridColumn138,
+            ultraGridColumn153,
+            ultraGridColumn154,
+            ultraGridColumn155,
+            ultraGridColumn156});
+            this.uGrd_Recipe_Test_Right.DisplayLayout.BandsSerializer.Add(ultraGridBand7);
+            this.uGrd_Recipe_Test_Right.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.MaxColScrollRegions = 1;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.MaxRowScrollRegions = 1;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.ActiveAppearancesEnabled = Infragistics.Win.DefaultableBoolean.False;
+            appearance482.BackColor = System.Drawing.SystemColors.Window;
+            appearance482.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.ActiveCellAppearance = appearance482;
+            appearance483.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance483.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.ActiveRowAppearance = appearance483;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.AllowColSwapping = Infragistics.Win.UltraWinGrid.AllowColSwapping.NotAllowed;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.AllowRowFiltering = Infragistics.Win.DefaultableBoolean.False;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.AllowRowSummaries = Infragistics.Win.UltraWinGrid.AllowRowSummaries.False;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
+            appearance484.BackColor = System.Drawing.Color.White;
+            appearance484.BackColor2 = System.Drawing.Color.DarkGray;
+            appearance484.BackGradientAlignment = Infragistics.Win.GradientAlignment.Client;
+            appearance484.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
+            appearance484.BorderColor = System.Drawing.Color.Silver;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.CellAppearance = appearance484;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.CellPadding = 0;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Hidden;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden;
+            appearance485.BackColor = System.Drawing.SystemColors.Control;
+            appearance485.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance485.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance485.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance485.BorderColor = System.Drawing.SystemColors.Window;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.GroupByRowAppearance = appearance485;
+            appearance486.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            appearance486.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance486.FontData.Name = "휴먼모음T";
+            appearance486.FontData.SizeInPoints = 9F;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.HeaderAppearance = appearance486;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.MergedCellContentArea = Infragistics.Win.UltraWinGrid.MergedCellContentArea.VisibleRect;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.MergedCellStyle = Infragistics.Win.UltraWinGrid.MergedCellStyle.Never;
+            appearance487.BackColor = System.Drawing.SystemColors.Window;
+            appearance487.BorderColor = System.Drawing.Color.Silver;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.RowAppearance = appearance487;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.RowFilterAction = Infragistics.Win.UltraWinGrid.RowFilterAction.DisableFilteredOutRows;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
+            appearance488.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.Override.TemplateAddRowAppearance = appearance488;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.uGrd_Recipe_Test_Right.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
+            this.uGrd_Recipe_Test_Right.Font = new System.Drawing.Font("Bookman Old Style", 7F, System.Drawing.FontStyle.Bold);
+            this.uGrd_Recipe_Test_Right.Location = new System.Drawing.Point(389, 100);
+            this.uGrd_Recipe_Test_Right.Name = "uGrd_Recipe_Test_Right";
+            this.uGrd_Recipe_Test_Right.Size = new System.Drawing.Size(383, 67);
+            this.uGrd_Recipe_Test_Right.TabIndex = 82;
+            this.uGrd_Recipe_Test_Right.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            // 
+            // uDS_Test_Down
+            // 
+            this.uDS_Test_Down.Band.Columns.AddRange(new object[] {
+            ultraDataColumn61,
+            ultraDataColumn62,
+            ultraDataColumn63,
+            ultraDataColumn64,
+            ultraDataColumn65,
+            ultraDataColumn66,
+            ultraDataColumn67});
+            // 
             // uGrd_Recipe_Test_Uper
             // 
             this.uGrd_Recipe_Test_Uper.DataSource = this.uDS_Test_Uper;
-            appearance429.BackColor = System.Drawing.Color.White;
-            appearance429.BackColor2 = System.Drawing.Color.DarkGray;
-            appearance429.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
-            appearance429.FontData.BoldAsString = "True";
-            appearance429.FontData.Name = "Bookman Old Style";
-            appearance429.FontData.SizeInPoints = 7F;
-            appearance429.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance429.TextHAlignAsString = "Center";
-            appearance429.TextVAlignAsString = "Bottom";
-            this.uGrd_Recipe_Test_Uper.DisplayLayout.Appearance = appearance429;
-            ultraGridColumn55.Header.Caption = "상부";
-            ultraGridColumn55.Header.VisiblePosition = 0;
-            ultraGridColumn55.Width = 42;
-            ultraGridColumn56.Header.Caption = "항목";
-            ultraGridColumn56.Header.VisiblePosition = 1;
-            ultraGridColumn56.Width = 68;
-            ultraGridColumn57.Header.Caption = "중심";
-            ultraGridColumn57.Header.VisiblePosition = 2;
-            ultraGridColumn57.Width = 55;
-            ultraGridColumn58.Header.Caption = "상한";
-            ultraGridColumn58.Header.VisiblePosition = 3;
-            ultraGridColumn58.Width = 55;
-            ultraGridColumn59.Header.Caption = "하한";
-            ultraGridColumn59.Header.VisiblePosition = 4;
-            ultraGridColumn59.Width = 55;
-            ultraGridColumn60.Header.VisiblePosition = 5;
-            ultraGridColumn60.Width = 55;
-            ultraGridColumn61.Header.Caption = "판정";
-            ultraGridColumn61.Header.VisiblePosition = 6;
-            ultraGridColumn61.Width = 51;
-            ultraGridBand5.Columns.AddRange(new object[] {
-            ultraGridColumn55,
-            ultraGridColumn56,
-            ultraGridColumn57,
-            ultraGridColumn58,
-            ultraGridColumn59,
-            ultraGridColumn60,
-            ultraGridColumn61});
-            this.uGrd_Recipe_Test_Uper.DisplayLayout.BandsSerializer.Add(ultraGridBand5);
+            appearance489.BackColor = System.Drawing.Color.White;
+            appearance489.BackColor2 = System.Drawing.Color.DarkGray;
+            appearance489.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
+            appearance489.FontData.BoldAsString = "True";
+            appearance489.FontData.Name = "Bookman Old Style";
+            appearance489.FontData.SizeInPoints = 7F;
+            appearance489.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance489.TextHAlignAsString = "Center";
+            appearance489.TextVAlignAsString = "Bottom";
+            this.uGrd_Recipe_Test_Uper.DisplayLayout.Appearance = appearance489;
+            ultraGridColumn157.Header.Caption = "상부";
+            ultraGridColumn157.Header.VisiblePosition = 0;
+            ultraGridColumn157.Width = 42;
+            ultraGridColumn158.Header.Caption = "항목";
+            ultraGridColumn158.Header.VisiblePosition = 1;
+            ultraGridColumn158.Width = 68;
+            ultraGridColumn159.Header.Caption = "중심";
+            ultraGridColumn159.Header.VisiblePosition = 2;
+            ultraGridColumn159.Width = 55;
+            ultraGridColumn160.Header.Caption = "상한";
+            ultraGridColumn160.Header.VisiblePosition = 3;
+            ultraGridColumn160.Width = 55;
+            ultraGridColumn161.Header.Caption = "하한";
+            ultraGridColumn161.Header.VisiblePosition = 4;
+            ultraGridColumn161.Width = 55;
+            ultraGridColumn162.Header.VisiblePosition = 5;
+            ultraGridColumn162.Width = 55;
+            ultraGridColumn163.Header.Caption = "판정";
+            ultraGridColumn163.Header.VisiblePosition = 6;
+            ultraGridColumn163.Width = 51;
+            ultraGridBand8.Columns.AddRange(new object[] {
+            ultraGridColumn157,
+            ultraGridColumn158,
+            ultraGridColumn159,
+            ultraGridColumn160,
+            ultraGridColumn161,
+            ultraGridColumn162,
+            ultraGridColumn163});
+            this.uGrd_Recipe_Test_Uper.DisplayLayout.BandsSerializer.Add(ultraGridBand8);
             this.uGrd_Recipe_Test_Uper.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.MaxColScrollRegions = 1;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.MaxRowScrollRegions = 1;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.ActiveAppearancesEnabled = Infragistics.Win.DefaultableBoolean.False;
-            appearance430.BackColor = System.Drawing.SystemColors.Window;
-            appearance430.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.ActiveCellAppearance = appearance430;
-            appearance431.BackColor = System.Drawing.SystemColors.Highlight;
-            appearance431.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.ActiveRowAppearance = appearance431;
+            appearance490.BackColor = System.Drawing.SystemColors.Window;
+            appearance490.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.ActiveCellAppearance = appearance490;
+            appearance491.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance491.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.ActiveRowAppearance = appearance491;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.AllowColSwapping = Infragistics.Win.UltraWinGrid.AllowColSwapping.NotAllowed;
@@ -8443,39 +9092,39 @@
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.AllowRowSummaries = Infragistics.Win.UltraWinGrid.AllowRowSummaries.False;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
-            appearance432.BackColor = System.Drawing.Color.White;
-            appearance432.BackColor2 = System.Drawing.Color.DarkGray;
-            appearance432.BackGradientAlignment = Infragistics.Win.GradientAlignment.Client;
-            appearance432.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
-            appearance432.BorderColor = System.Drawing.Color.Silver;
-            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.CellAppearance = appearance432;
+            appearance492.BackColor = System.Drawing.Color.White;
+            appearance492.BackColor2 = System.Drawing.Color.DarkGray;
+            appearance492.BackGradientAlignment = Infragistics.Win.GradientAlignment.Client;
+            appearance492.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
+            appearance492.BorderColor = System.Drawing.Color.Silver;
+            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.CellAppearance = appearance492;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.CellPadding = 0;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Hidden;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden;
-            appearance433.BackColor = System.Drawing.SystemColors.Control;
-            appearance433.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance433.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance433.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance433.BorderColor = System.Drawing.SystemColors.Window;
-            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.GroupByRowAppearance = appearance433;
-            appearance434.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            appearance434.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance434.FontData.Name = "휴먼모음T";
-            appearance434.FontData.SizeInPoints = 9F;
-            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.HeaderAppearance = appearance434;
+            appearance493.BackColor = System.Drawing.SystemColors.Control;
+            appearance493.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance493.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance493.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance493.BorderColor = System.Drawing.SystemColors.Window;
+            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.GroupByRowAppearance = appearance493;
+            appearance494.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            appearance494.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance494.FontData.Name = "휴먼모음T";
+            appearance494.FontData.SizeInPoints = 9F;
+            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.HeaderAppearance = appearance494;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.MergedCellContentArea = Infragistics.Win.UltraWinGrid.MergedCellContentArea.VisibleRect;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.MergedCellStyle = Infragistics.Win.UltraWinGrid.MergedCellStyle.Never;
-            appearance435.BackColor = System.Drawing.SystemColors.Window;
-            appearance435.BorderColor = System.Drawing.Color.Silver;
-            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.RowAppearance = appearance435;
+            appearance495.BackColor = System.Drawing.SystemColors.Window;
+            appearance495.BorderColor = System.Drawing.Color.Silver;
+            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.RowAppearance = appearance495;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.RowFilterAction = Infragistics.Win.UltraWinGrid.RowFilterAction.DisableFilteredOutRows;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
-            appearance436.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.TemplateAddRowAppearance = appearance436;
+            appearance496.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.uGrd_Recipe_Test_Uper.DisplayLayout.Override.TemplateAddRowAppearance = appearance496;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
             this.uGrd_Recipe_Test_Uper.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
             this.uGrd_Recipe_Test_Uper.Font = new System.Drawing.Font("Bookman Old Style", 7F, System.Drawing.FontStyle.Bold);
@@ -8488,25 +9137,25 @@
             // uDS_Test_Uper
             // 
             this.uDS_Test_Uper.Band.Columns.AddRange(new object[] {
-            ultraDataColumn41,
-            ultraDataColumn42,
-            ultraDataColumn43,
-            ultraDataColumn44,
-            ultraDataColumn45,
-            ultraDataColumn46,
-            ultraDataColumn47});
+            ultraDataColumn68,
+            ultraDataColumn69,
+            ultraDataColumn70,
+            ultraDataColumn71,
+            ultraDataColumn72,
+            ultraDataColumn73,
+            ultraDataColumn74});
             // 
             // ultraLabel90
             // 
-            appearance437.BackColor = System.Drawing.Color.DimGray;
-            appearance437.BackColor2 = System.Drawing.Color.Gray;
-            appearance437.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance437.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance437.FontData.Name = "MS Reference Sans Serif";
-            appearance437.ForeColor = System.Drawing.Color.White;
-            appearance437.TextHAlignAsString = "Center";
-            appearance437.TextVAlignAsString = "Middle";
-            this.ultraLabel90.Appearance = appearance437;
+            appearance497.BackColor = System.Drawing.Color.DimGray;
+            appearance497.BackColor2 = System.Drawing.Color.Gray;
+            appearance497.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance497.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance497.FontData.Name = "MS Reference Sans Serif";
+            appearance497.ForeColor = System.Drawing.Color.White;
+            appearance497.TextHAlignAsString = "Center";
+            appearance497.TextVAlignAsString = "Middle";
+            this.ultraLabel90.Appearance = appearance497;
             this.ultraLabel90.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel90.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel90.Location = new System.Drawing.Point(3, 3);
@@ -8520,56 +9169,56 @@
             // uGrd_Recipe_Test_Down
             // 
             this.uGrd_Recipe_Test_Down.DataSource = this.uDS_Test_Down;
-            appearance438.BackColor = System.Drawing.Color.White;
-            appearance438.BackColor2 = System.Drawing.Color.DarkGray;
-            appearance438.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
-            appearance438.FontData.BoldAsString = "True";
-            appearance438.FontData.Name = "Bookman Old Style";
-            appearance438.FontData.SizeInPoints = 7F;
-            appearance438.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance438.TextHAlignAsString = "Center";
-            appearance438.TextVAlignAsString = "Bottom";
-            this.uGrd_Recipe_Test_Down.DisplayLayout.Appearance = appearance438;
-            ultraGridColumn62.Header.Caption = "하부";
-            ultraGridColumn62.Header.VisiblePosition = 0;
-            ultraGridColumn62.Width = 42;
-            ultraGridColumn63.Header.Caption = "항목";
-            ultraGridColumn63.Header.VisiblePosition = 1;
-            ultraGridColumn63.Width = 78;
-            ultraGridColumn64.Header.Caption = "중심";
-            ultraGridColumn64.Header.VisiblePosition = 2;
-            ultraGridColumn64.Width = 55;
-            ultraGridColumn65.Header.Caption = "상한";
-            ultraGridColumn65.Header.VisiblePosition = 3;
-            ultraGridColumn65.Width = 55;
-            ultraGridColumn66.Header.Caption = "하한";
-            ultraGridColumn66.Header.VisiblePosition = 4;
-            ultraGridColumn66.Width = 55;
-            ultraGridColumn67.Header.VisiblePosition = 5;
-            ultraGridColumn67.Width = 55;
-            ultraGridColumn68.Header.Caption = "판정";
-            ultraGridColumn68.Header.VisiblePosition = 6;
-            ultraGridColumn68.Width = 41;
-            ultraGridBand6.Columns.AddRange(new object[] {
-            ultraGridColumn62,
-            ultraGridColumn63,
-            ultraGridColumn64,
-            ultraGridColumn65,
-            ultraGridColumn66,
-            ultraGridColumn67,
-            ultraGridColumn68});
-            this.uGrd_Recipe_Test_Down.DisplayLayout.BandsSerializer.Add(ultraGridBand6);
+            appearance498.BackColor = System.Drawing.Color.White;
+            appearance498.BackColor2 = System.Drawing.Color.DarkGray;
+            appearance498.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
+            appearance498.FontData.BoldAsString = "True";
+            appearance498.FontData.Name = "Bookman Old Style";
+            appearance498.FontData.SizeInPoints = 7F;
+            appearance498.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance498.TextHAlignAsString = "Center";
+            appearance498.TextVAlignAsString = "Bottom";
+            this.uGrd_Recipe_Test_Down.DisplayLayout.Appearance = appearance498;
+            ultraGridColumn164.Header.Caption = "하부";
+            ultraGridColumn164.Header.VisiblePosition = 0;
+            ultraGridColumn164.Width = 42;
+            ultraGridColumn165.Header.Caption = "항목";
+            ultraGridColumn165.Header.VisiblePosition = 1;
+            ultraGridColumn165.Width = 78;
+            ultraGridColumn166.Header.Caption = "중심";
+            ultraGridColumn166.Header.VisiblePosition = 2;
+            ultraGridColumn166.Width = 55;
+            ultraGridColumn169.Header.Caption = "상한";
+            ultraGridColumn169.Header.VisiblePosition = 3;
+            ultraGridColumn169.Width = 55;
+            ultraGridColumn170.Header.Caption = "하한";
+            ultraGridColumn170.Header.VisiblePosition = 4;
+            ultraGridColumn170.Width = 55;
+            ultraGridColumn171.Header.VisiblePosition = 5;
+            ultraGridColumn171.Width = 55;
+            ultraGridColumn172.Header.Caption = "판정";
+            ultraGridColumn172.Header.VisiblePosition = 6;
+            ultraGridColumn172.Width = 41;
+            ultraGridBand9.Columns.AddRange(new object[] {
+            ultraGridColumn164,
+            ultraGridColumn165,
+            ultraGridColumn166,
+            ultraGridColumn169,
+            ultraGridColumn170,
+            ultraGridColumn171,
+            ultraGridColumn172});
+            this.uGrd_Recipe_Test_Down.DisplayLayout.BandsSerializer.Add(ultraGridBand9);
             this.uGrd_Recipe_Test_Down.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
             this.uGrd_Recipe_Test_Down.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
             this.uGrd_Recipe_Test_Down.DisplayLayout.MaxColScrollRegions = 1;
             this.uGrd_Recipe_Test_Down.DisplayLayout.MaxRowScrollRegions = 1;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.ActiveAppearancesEnabled = Infragistics.Win.DefaultableBoolean.False;
-            appearance439.BackColor = System.Drawing.SystemColors.Window;
-            appearance439.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.ActiveCellAppearance = appearance439;
-            appearance440.BackColor = System.Drawing.SystemColors.Highlight;
-            appearance440.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.ActiveRowAppearance = appearance440;
+            appearance499.BackColor = System.Drawing.SystemColors.Window;
+            appearance499.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.ActiveCellAppearance = appearance499;
+            appearance500.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance500.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.ActiveRowAppearance = appearance500;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.AllowColSwapping = Infragistics.Win.UltraWinGrid.AllowColSwapping.NotAllowed;
@@ -8577,63 +9226,52 @@
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.AllowRowSummaries = Infragistics.Win.UltraWinGrid.AllowRowSummaries.False;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
-            appearance441.BackColor = System.Drawing.Color.White;
-            appearance441.BackColor2 = System.Drawing.Color.DarkGray;
-            appearance441.BackGradientAlignment = Infragistics.Win.GradientAlignment.Client;
-            appearance441.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
-            appearance441.BorderColor = System.Drawing.Color.Silver;
-            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.CellAppearance = appearance441;
+            appearance501.BackColor = System.Drawing.Color.White;
+            appearance501.BackColor2 = System.Drawing.Color.DarkGray;
+            appearance501.BackGradientAlignment = Infragistics.Win.GradientAlignment.Client;
+            appearance501.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
+            appearance501.BorderColor = System.Drawing.Color.Silver;
+            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.CellAppearance = appearance501;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.CellPadding = 0;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.FilterClearButtonLocation = Infragistics.Win.UltraWinGrid.FilterClearButtonLocation.Hidden;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.FilterOperatorLocation = Infragistics.Win.UltraWinGrid.FilterOperatorLocation.Hidden;
-            appearance442.BackColor = System.Drawing.SystemColors.Control;
-            appearance442.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance442.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance442.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance442.BorderColor = System.Drawing.SystemColors.Window;
-            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.GroupByRowAppearance = appearance442;
-            appearance443.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            appearance443.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance443.FontData.Name = "휴먼모음T";
-            appearance443.FontData.SizeInPoints = 9F;
-            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.HeaderAppearance = appearance443;
+            appearance502.BackColor = System.Drawing.SystemColors.Control;
+            appearance502.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance502.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance502.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance502.BorderColor = System.Drawing.SystemColors.Window;
+            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.GroupByRowAppearance = appearance502;
+            appearance503.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            appearance503.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance503.FontData.Name = "휴먼모음T";
+            appearance503.FontData.SizeInPoints = 9F;
+            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.HeaderAppearance = appearance503;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.MergedCellContentArea = Infragistics.Win.UltraWinGrid.MergedCellContentArea.VisibleRect;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.MergedCellStyle = Infragistics.Win.UltraWinGrid.MergedCellStyle.Never;
-            appearance444.BackColor = System.Drawing.SystemColors.Window;
-            appearance444.BorderColor = System.Drawing.Color.Silver;
-            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.RowAppearance = appearance444;
+            appearance504.BackColor = System.Drawing.SystemColors.Window;
+            appearance504.BorderColor = System.Drawing.Color.Silver;
+            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.RowAppearance = appearance504;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.RowFilterAction = Infragistics.Win.UltraWinGrid.RowFilterAction.DisableFilteredOutRows;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_Test_Down.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
-            appearance445.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.TemplateAddRowAppearance = appearance445;
+            appearance505.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.uGrd_Recipe_Test_Down.DisplayLayout.Override.TemplateAddRowAppearance = appearance505;
             this.uGrd_Recipe_Test_Down.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
             this.uGrd_Recipe_Test_Down.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
             this.uGrd_Recipe_Test_Down.Font = new System.Drawing.Font("Bookman Old Style", 7F, System.Drawing.FontStyle.Bold);
             this.uGrd_Recipe_Test_Down.Location = new System.Drawing.Point(390, 24);
             this.uGrd_Recipe_Test_Down.Name = "uGrd_Recipe_Test_Down";
-            this.uGrd_Recipe_Test_Down.Size = new System.Drawing.Size(383, 155);
+            this.uGrd_Recipe_Test_Down.Size = new System.Drawing.Size(383, 66);
             this.uGrd_Recipe_Test_Down.TabIndex = 81;
             this.uGrd_Recipe_Test_Down.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
             // 
-            // uDS_Test_Down
-            // 
-            this.uDS_Test_Down.Band.Columns.AddRange(new object[] {
-            ultraDataColumn48,
-            ultraDataColumn49,
-            ultraDataColumn50,
-            ultraDataColumn51,
-            ultraDataColumn52,
-            ultraDataColumn53,
-            ultraDataColumn54});
-            // 
             // ultraPanel63
             // 
-            appearance446.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel63.Appearance = appearance446;
+            appearance506.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel63.Appearance = appearance506;
             // 
             // ultraPanel63.ClientArea
             // 
@@ -8646,8 +9284,8 @@
             // 
             // ultraPanel64
             // 
-            appearance447.BackColor = System.Drawing.Color.White;
-            this.ultraPanel64.Appearance = appearance447;
+            appearance507.BackColor = System.Drawing.Color.White;
+            this.ultraPanel64.Appearance = appearance507;
             // 
             // ultraPanel64.ClientArea
             // 
@@ -8664,17 +9302,17 @@
             // 
             // Recipe_uBtn_01
             // 
-            appearance448.BackColor = System.Drawing.Color.DarkGray;
-            appearance448.BackColor2 = System.Drawing.Color.DimGray;
-            appearance448.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance448.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance448.ImageBackground = global::SystemAlign.Properties.Resources._112;
-            appearance448.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.Recipe_uBtn_01.Appearance = appearance448;
+            appearance508.BackColor = System.Drawing.Color.DarkGray;
+            appearance508.BackColor2 = System.Drawing.Color.DimGray;
+            appearance508.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance508.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance508.ImageBackground = global::SystemAlign.Properties.Resources._112;
+            appearance508.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.Recipe_uBtn_01.Appearance = appearance508;
             this.Recipe_uBtn_01.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance449.BorderColor = System.Drawing.Color.White;
-            appearance449.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_01.HotTrackAppearance = appearance449;
+            appearance509.BorderColor = System.Drawing.Color.White;
+            appearance509.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_01.HotTrackAppearance = appearance509;
             this.Recipe_uBtn_01.Location = new System.Drawing.Point(3, 516);
             this.Recipe_uBtn_01.Name = "Recipe_uBtn_01";
             this.Recipe_uBtn_01.ShowFocusRect = false;
@@ -8688,17 +9326,17 @@
             // 
             // Recipe_uBtn_02
             // 
-            appearance450.BackColor = System.Drawing.Color.DarkGray;
-            appearance450.BackColor2 = System.Drawing.Color.DimGray;
-            appearance450.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance450.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance450.ImageBackground = global::SystemAlign.Properties.Resources._117;
-            appearance450.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.Recipe_uBtn_02.Appearance = appearance450;
+            appearance510.BackColor = System.Drawing.Color.DarkGray;
+            appearance510.BackColor2 = System.Drawing.Color.DimGray;
+            appearance510.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance510.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance510.ImageBackground = global::SystemAlign.Properties.Resources._117;
+            appearance510.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.Recipe_uBtn_02.Appearance = appearance510;
             this.Recipe_uBtn_02.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance451.BorderColor = System.Drawing.Color.White;
-            appearance451.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_02.HotTrackAppearance = appearance451;
+            appearance511.BorderColor = System.Drawing.Color.White;
+            appearance511.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_02.HotTrackAppearance = appearance511;
             this.Recipe_uBtn_02.Location = new System.Drawing.Point(112, 516);
             this.Recipe_uBtn_02.Name = "Recipe_uBtn_02";
             this.Recipe_uBtn_02.ShowFocusRect = false;
@@ -8712,17 +9350,17 @@
             // 
             // Recipe_uBtn_03
             // 
-            appearance452.BackColor = System.Drawing.Color.DarkGray;
-            appearance452.BackColor2 = System.Drawing.Color.DimGray;
-            appearance452.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance452.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance452.ImageBackground = global::SystemAlign.Properties.Resources._19;
-            appearance452.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.Recipe_uBtn_03.Appearance = appearance452;
+            appearance512.BackColor = System.Drawing.Color.DarkGray;
+            appearance512.BackColor2 = System.Drawing.Color.DimGray;
+            appearance512.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance512.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance512.ImageBackground = global::SystemAlign.Properties.Resources._19;
+            appearance512.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.Recipe_uBtn_03.Appearance = appearance512;
             this.Recipe_uBtn_03.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance453.BorderColor = System.Drawing.Color.White;
-            appearance453.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_03.HotTrackAppearance = appearance453;
+            appearance513.BorderColor = System.Drawing.Color.White;
+            appearance513.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_03.HotTrackAppearance = appearance513;
             this.Recipe_uBtn_03.Location = new System.Drawing.Point(221, 516);
             this.Recipe_uBtn_03.Name = "Recipe_uBtn_03";
             this.Recipe_uBtn_03.ShowFocusRect = false;
@@ -8736,17 +9374,17 @@
             // 
             // Recipe_uBtn_04
             // 
-            appearance454.BackColor = System.Drawing.Color.DarkGray;
-            appearance454.BackColor2 = System.Drawing.Color.DimGray;
-            appearance454.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance454.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance454.ImageBackground = global::SystemAlign.Properties.Resources._24;
-            appearance454.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            this.Recipe_uBtn_04.Appearance = appearance454;
+            appearance514.BackColor = System.Drawing.Color.DarkGray;
+            appearance514.BackColor2 = System.Drawing.Color.DimGray;
+            appearance514.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance514.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance514.ImageBackground = global::SystemAlign.Properties.Resources._24;
+            appearance514.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
+            this.Recipe_uBtn_04.Appearance = appearance514;
             this.Recipe_uBtn_04.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance455.BorderColor = System.Drawing.Color.White;
-            appearance455.ForeColor = System.Drawing.Color.White;
-            this.Recipe_uBtn_04.HotTrackAppearance = appearance455;
+            appearance515.BorderColor = System.Drawing.Color.White;
+            appearance515.ForeColor = System.Drawing.Color.White;
+            this.Recipe_uBtn_04.HotTrackAppearance = appearance515;
             this.Recipe_uBtn_04.Location = new System.Drawing.Point(330, 516);
             this.Recipe_uBtn_04.Name = "Recipe_uBtn_04";
             this.Recipe_uBtn_04.ShowFocusRect = false;
@@ -8760,20 +9398,21 @@
             // 
             // ultraTabControl2
             // 
-            appearance456.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ultraTabControl2.ActiveTabAppearance = appearance456;
+            appearance516.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ultraTabControl2.ActiveTabAppearance = appearance516;
             this.ultraTabControl2.AlphaBlendMode = Infragistics.Win.AlphaBlendMode.Standard;
-            appearance457.BackColor = System.Drawing.Color.Silver;
-            appearance457.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ultraTabControl2.Appearance = appearance457;
+            appearance517.BackColor = System.Drawing.Color.Silver;
+            appearance517.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ultraTabControl2.Appearance = appearance517;
             this.ultraTabControl2.Controls.Add(this.ultraTabSharedControlsPage3);
             this.ultraTabControl2.Controls.Add(this.ultraTabPageControl6);
             this.ultraTabControl2.Controls.Add(this.ultraTabPageControl7);
+            this.ultraTabControl2.Controls.Add(this.ultraTabPageControl11);
             this.ultraTabControl2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ultraTabControl2.Location = new System.Drawing.Point(3, 30);
             this.ultraTabControl2.Name = "ultraTabControl2";
-            appearance458.BackColor = System.Drawing.Color.Silver;
-            this.ultraTabControl2.SelectedTabAppearance = appearance458;
+            appearance518.BackColor = System.Drawing.Color.Silver;
+            this.ultraTabControl2.SelectedTabAppearance = appearance518;
             this.ultraTabControl2.SharedControlsPage = this.ultraTabSharedControlsPage3;
             this.ultraTabControl2.ShowPartialTabs = Infragistics.Win.DefaultableBoolean.False;
             this.ultraTabControl2.ShowTabListButton = Infragistics.Win.DefaultableBoolean.False;
@@ -8782,16 +9421,20 @@
             this.ultraTabControl2.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.FlatBorderless;
             this.ultraTabControl2.TabIndex = 141;
             ultraTab9.Key = "UperRecipe";
-            appearance459.ForeColor = System.Drawing.Color.White;
-            ultraTab9.SelectedAppearance = appearance459;
+            appearance519.ForeColor = System.Drawing.Color.White;
+            ultraTab9.SelectedAppearance = appearance519;
             ultraTab9.TabPage = this.ultraTabPageControl6;
             ultraTab9.Text = "상부 설정";
             ultraTab10.Key = "DownRecipe";
             ultraTab10.TabPage = this.ultraTabPageControl7;
-            ultraTab10.Text = "하부 설정";
+            ultraTab10.Text = "좌측 설정";
+            ultraTab11.Key = "RightRecipe";
+            ultraTab11.TabPage = this.ultraTabPageControl11;
+            ultraTab11.Text = "우측 설정";
             this.ultraTabControl2.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
             ultraTab9,
-            ultraTab10});
+            ultraTab10,
+            ultraTab11});
             this.ultraTabControl2.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
             this.ultraTabControl2.UseHotTracking = Infragistics.Win.DefaultableBoolean.False;
             this.ultraTabControl2.UseMnemonics = Infragistics.Win.DefaultableBoolean.False;
@@ -8806,15 +9449,15 @@
             // 
             // ultraLabel141
             // 
-            appearance460.BackColor = System.Drawing.Color.DimGray;
-            appearance460.BackColor2 = System.Drawing.Color.Gray;
-            appearance460.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance460.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance460.FontData.Name = "MS Reference Sans Serif";
-            appearance460.ForeColor = System.Drawing.Color.White;
-            appearance460.TextHAlignAsString = "Center";
-            appearance460.TextVAlignAsString = "Middle";
-            this.ultraLabel141.Appearance = appearance460;
+            appearance520.BackColor = System.Drawing.Color.DimGray;
+            appearance520.BackColor2 = System.Drawing.Color.Gray;
+            appearance520.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance520.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance520.FontData.Name = "MS Reference Sans Serif";
+            appearance520.ForeColor = System.Drawing.Color.White;
+            appearance520.TextHAlignAsString = "Center";
+            appearance520.TextVAlignAsString = "Middle";
+            this.ultraLabel141.Appearance = appearance520;
             this.ultraLabel141.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel141.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel141.Location = new System.Drawing.Point(3, 3);
@@ -8827,98 +9470,208 @@
             // 
             // ultraPanel56
             // 
-            appearance461.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel56.Appearance = appearance461;
+            appearance521.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel56.Appearance = appearance521;
             // 
             // ultraPanel56.ClientArea
             // 
+            this.ultraPanel56.ClientArea.Controls.Add(this.uGrd_Recipe_Inspect_Right);
             this.ultraPanel56.ClientArea.Controls.Add(this.uGrd_Recipe_Inspect_Down);
             this.ultraPanel56.ClientArea.Controls.Add(this.uGrd_Recipe_Inspect_Uper);
             this.ultraPanel56.ClientArea.Controls.Add(this.RecipeGap_drawArea2);
             this.ultraPanel56.ClientArea.Controls.Add(this.RecipeGap_drawArea1);
+            this.ultraPanel56.ClientArea.Controls.Add(this.RecipeGap_drawArea3);
             this.ultraPanel56.Location = new System.Drawing.Point(10, 10);
             this.ultraPanel56.Name = "ultraPanel56";
             this.ultraPanel56.Size = new System.Drawing.Size(780, 586);
             this.ultraPanel56.TabIndex = 100;
             this.ultraPanel56.TabStop = false;
             // 
+            // uGrd_Recipe_Inspect_Right
+            // 
+            this.uGrd_Recipe_Inspect_Right.DataSource = this.uDS_Inspect_Right;
+            appearance522.BackColor = System.Drawing.SystemColors.ControlLight;
+            appearance522.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance522.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Appearance = appearance522;
+            ultraGridColumn173.Header.VisiblePosition = 0;
+            ultraGridColumn173.Width = 49;
+            ultraGridColumn174.Header.VisiblePosition = 1;
+            ultraGridColumn174.Width = 50;
+            ultraGridColumn175.Header.VisiblePosition = 2;
+            ultraGridColumn175.Width = 53;
+            ultraGridColumn176.Header.VisiblePosition = 3;
+            ultraGridColumn176.Width = 60;
+            ultraGridColumn177.Header.VisiblePosition = 4;
+            ultraGridColumn177.Width = 43;
+            ultraGridColumn178.Header.VisiblePosition = 5;
+            ultraGridColumn178.Width = 42;
+            ultraGridColumn179.Header.VisiblePosition = 6;
+            ultraGridColumn179.Width = 49;
+            ultraGridColumn180.Header.VisiblePosition = 7;
+            ultraGridColumn180.Width = 63;
+            ultraGridColumn181.Header.VisiblePosition = 8;
+            ultraGridColumn181.Width = 54;
+            ultraGridColumn182.Header.VisiblePosition = 9;
+            ultraGridColumn182.Width = 51;
+            ultraGridColumn183.Header.VisiblePosition = 10;
+            ultraGridColumn183.Width = 37;
+            ultraGridColumn184.Header.VisiblePosition = 11;
+            ultraGridColumn184.Width = 46;
+            ultraGridColumn185.Header.VisiblePosition = 12;
+            ultraGridColumn185.Width = 35;
+            ultraGridColumn186.Header.VisiblePosition = 13;
+            ultraGridBand10.Columns.AddRange(new object[] {
+            ultraGridColumn173,
+            ultraGridColumn174,
+            ultraGridColumn175,
+            ultraGridColumn176,
+            ultraGridColumn177,
+            ultraGridColumn178,
+            ultraGridColumn179,
+            ultraGridColumn180,
+            ultraGridColumn181,
+            ultraGridColumn182,
+            ultraGridColumn183,
+            ultraGridColumn184,
+            ultraGridColumn185,
+            ultraGridColumn186});
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.BandsSerializer.Add(ultraGridBand10);
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.InterBandSpacing = 10;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
+            appearance523.BackColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.CardAreaAppearance = appearance523;
+            appearance524.BackColor = System.Drawing.SystemColors.Control;
+            appearance524.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
+            appearance524.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.CellAppearance = appearance524;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.FixedRowIndicator = Infragistics.Win.UltraWinGrid.FixedRowIndicator.None;
+            appearance525.BackColor = System.Drawing.SystemColors.Control;
+            appearance525.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance525.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            appearance525.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.HeaderAppearance = appearance525;
+            appearance526.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.RowSelectorAppearance = appearance526;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.RowSizing = Infragistics.Win.UltraWinGrid.RowSizing.Fixed;
+            appearance527.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance527.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance527.BorderColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.SelectedCellAppearance = appearance527;
+            appearance528.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            appearance528.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            appearance528.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.SelectedRowAppearance = appearance528;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.RowConnectorColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.RowConnectorStyle = Infragistics.Win.UltraWinGrid.RowConnectorStyle.Dashed;
+            this.uGrd_Recipe_Inspect_Right.DisplayLayout.Scrollbars = Infragistics.Win.UltraWinGrid.Scrollbars.Vertical;
+            this.uGrd_Recipe_Inspect_Right.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.uGrd_Recipe_Inspect_Right.Location = new System.Drawing.Point(6, 238);
+            this.uGrd_Recipe_Inspect_Right.Name = "uGrd_Recipe_Inspect_Right";
+            this.uGrd_Recipe_Inspect_Right.Size = new System.Drawing.Size(768, 111);
+            this.uGrd_Recipe_Inspect_Right.TabIndex = 182;
+            this.uGrd_Recipe_Inspect_Right.Visible = false;
+            // 
+            // uDS_Inspect_Right
+            // 
+            this.uDS_Inspect_Right.Band.Columns.AddRange(new object[] {
+            ultraDataColumn75,
+            ultraDataColumn76,
+            ultraDataColumn77,
+            ultraDataColumn78,
+            ultraDataColumn79,
+            ultraDataColumn80,
+            ultraDataColumn81,
+            ultraDataColumn82,
+            ultraDataColumn83,
+            ultraDataColumn84,
+            ultraDataColumn85,
+            ultraDataColumn86,
+            ultraDataColumn87,
+            ultraDataColumn88});
+            // 
             // uGrd_Recipe_Inspect_Down
             // 
             this.uGrd_Recipe_Inspect_Down.DataSource = this.uDS_Inspect_Down;
-            appearance462.BackColor = System.Drawing.SystemColors.ControlLight;
-            appearance462.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance462.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Appearance = appearance462;
-            ultraGridColumn69.Header.VisiblePosition = 0;
-            ultraGridColumn69.Width = 49;
-            ultraGridColumn70.Header.VisiblePosition = 1;
-            ultraGridColumn70.Width = 50;
-            ultraGridColumn71.Header.VisiblePosition = 2;
-            ultraGridColumn71.Width = 53;
-            ultraGridColumn72.Header.VisiblePosition = 3;
-            ultraGridColumn72.Width = 60;
-            ultraGridColumn73.Header.VisiblePosition = 4;
-            ultraGridColumn73.Width = 43;
-            ultraGridColumn74.Header.VisiblePosition = 5;
-            ultraGridColumn74.Width = 42;
-            ultraGridColumn75.Header.VisiblePosition = 6;
-            ultraGridColumn75.Width = 49;
-            ultraGridColumn76.Header.VisiblePosition = 7;
-            ultraGridColumn76.Width = 63;
-            ultraGridColumn77.Header.VisiblePosition = 8;
-            ultraGridColumn77.Width = 54;
-            ultraGridColumn78.Header.VisiblePosition = 9;
-            ultraGridColumn78.Width = 51;
-            ultraGridColumn79.Header.VisiblePosition = 10;
-            ultraGridColumn79.Width = 37;
-            ultraGridColumn80.Header.VisiblePosition = 11;
-            ultraGridColumn80.Width = 46;
-            ultraGridColumn81.Header.VisiblePosition = 12;
-            ultraGridColumn81.Width = 35;
-            ultraGridColumn82.Header.VisiblePosition = 13;
-            ultraGridBand7.Columns.AddRange(new object[] {
-            ultraGridColumn69,
-            ultraGridColumn70,
-            ultraGridColumn71,
-            ultraGridColumn72,
-            ultraGridColumn73,
-            ultraGridColumn74,
-            ultraGridColumn75,
-            ultraGridColumn76,
-            ultraGridColumn77,
-            ultraGridColumn78,
-            ultraGridColumn79,
-            ultraGridColumn80,
-            ultraGridColumn81,
-            ultraGridColumn82});
-            this.uGrd_Recipe_Inspect_Down.DisplayLayout.BandsSerializer.Add(ultraGridBand7);
+            appearance529.BackColor = System.Drawing.SystemColors.ControlLight;
+            appearance529.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance529.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Appearance = appearance529;
+            ultraGridColumn187.Header.VisiblePosition = 0;
+            ultraGridColumn187.Width = 49;
+            ultraGridColumn188.Header.VisiblePosition = 1;
+            ultraGridColumn188.Width = 50;
+            ultraGridColumn189.Header.VisiblePosition = 2;
+            ultraGridColumn189.Width = 53;
+            ultraGridColumn190.Header.VisiblePosition = 3;
+            ultraGridColumn190.Width = 60;
+            ultraGridColumn191.Header.VisiblePosition = 4;
+            ultraGridColumn191.Width = 43;
+            ultraGridColumn192.Header.VisiblePosition = 5;
+            ultraGridColumn192.Width = 42;
+            ultraGridColumn193.Header.VisiblePosition = 6;
+            ultraGridColumn193.Width = 49;
+            ultraGridColumn194.Header.VisiblePosition = 7;
+            ultraGridColumn194.Width = 63;
+            ultraGridColumn195.Header.VisiblePosition = 8;
+            ultraGridColumn195.Width = 54;
+            ultraGridColumn196.Header.VisiblePosition = 9;
+            ultraGridColumn196.Width = 51;
+            ultraGridColumn197.Header.VisiblePosition = 10;
+            ultraGridColumn197.Width = 37;
+            ultraGridColumn198.Header.VisiblePosition = 11;
+            ultraGridColumn198.Width = 46;
+            ultraGridColumn199.Header.VisiblePosition = 12;
+            ultraGridColumn199.Width = 35;
+            ultraGridColumn200.Header.VisiblePosition = 13;
+            ultraGridBand11.Columns.AddRange(new object[] {
+            ultraGridColumn187,
+            ultraGridColumn188,
+            ultraGridColumn189,
+            ultraGridColumn190,
+            ultraGridColumn191,
+            ultraGridColumn192,
+            ultraGridColumn193,
+            ultraGridColumn194,
+            ultraGridColumn195,
+            ultraGridColumn196,
+            ultraGridColumn197,
+            ultraGridColumn198,
+            ultraGridColumn199,
+            ultraGridColumn200});
+            this.uGrd_Recipe_Inspect_Down.DisplayLayout.BandsSerializer.Add(ultraGridBand11);
             this.uGrd_Recipe_Inspect_Down.DisplayLayout.InterBandSpacing = 10;
             this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
             this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
-            appearance463.BackColor = System.Drawing.Color.Transparent;
-            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.CardAreaAppearance = appearance463;
-            appearance464.BackColor = System.Drawing.SystemColors.Control;
-            appearance464.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
-            appearance464.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.CellAppearance = appearance464;
+            appearance530.BackColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.CardAreaAppearance = appearance530;
+            appearance531.BackColor = System.Drawing.SystemColors.Control;
+            appearance531.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
+            appearance531.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.CellAppearance = appearance531;
             this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.FixedRowIndicator = Infragistics.Win.UltraWinGrid.FixedRowIndicator.None;
-            appearance465.BackColor = System.Drawing.SystemColors.Control;
-            appearance465.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance465.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            appearance465.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.HeaderAppearance = appearance465;
-            appearance466.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.RowSelectorAppearance = appearance466;
+            appearance532.BackColor = System.Drawing.SystemColors.Control;
+            appearance532.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance532.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            appearance532.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.HeaderAppearance = appearance532;
+            appearance533.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.RowSelectorAppearance = appearance533;
             this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
             this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.RowSizing = Infragistics.Win.UltraWinGrid.RowSizing.Fixed;
-            appearance467.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance467.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance467.BorderColor = System.Drawing.Color.Transparent;
-            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.SelectedCellAppearance = appearance467;
-            appearance468.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            appearance468.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            appearance468.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.SelectedRowAppearance = appearance468;
+            appearance534.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance534.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance534.BorderColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.SelectedCellAppearance = appearance534;
+            appearance535.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            appearance535.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            appearance535.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.SelectedRowAppearance = appearance535;
             this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_Inspect_Down.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
@@ -8936,98 +9689,98 @@
             // uDS_Inspect_Down
             // 
             this.uDS_Inspect_Down.Band.Columns.AddRange(new object[] {
-            ultraDataColumn55,
-            ultraDataColumn56,
-            ultraDataColumn57,
-            ultraDataColumn58,
-            ultraDataColumn59,
-            ultraDataColumn60,
-            ultraDataColumn61,
-            ultraDataColumn62,
-            ultraDataColumn63,
-            ultraDataColumn64,
-            ultraDataColumn65,
-            ultraDataColumn66,
-            ultraDataColumn67,
-            ultraDataColumn68});
+            ultraDataColumn89,
+            ultraDataColumn90,
+            ultraDataColumn91,
+            ultraDataColumn92,
+            ultraDataColumn93,
+            ultraDataColumn94,
+            ultraDataColumn95,
+            ultraDataColumn96,
+            ultraDataColumn97,
+            ultraDataColumn98,
+            ultraDataColumn99,
+            ultraDataColumn100,
+            ultraDataColumn101,
+            ultraDataColumn102});
             // 
             // uGrd_Recipe_Inspect_Uper
             // 
             this.uGrd_Recipe_Inspect_Uper.DataSource = this.uDS_Inspect_Uper;
-            appearance469.BackColor = System.Drawing.SystemColors.ControlLight;
-            appearance469.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance469.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Appearance = appearance469;
-            ultraGridColumn1.Header.VisiblePosition = 0;
-            ultraGridColumn1.Width = 49;
-            ultraGridColumn2.Header.VisiblePosition = 1;
-            ultraGridColumn2.Width = 50;
-            ultraGridColumn3.Header.VisiblePosition = 2;
-            ultraGridColumn3.Width = 53;
-            ultraGridColumn4.Header.VisiblePosition = 3;
-            ultraGridColumn4.Width = 60;
-            ultraGridColumn5.Header.VisiblePosition = 4;
-            ultraGridColumn5.Width = 43;
-            ultraGridColumn6.Header.VisiblePosition = 5;
-            ultraGridColumn6.Width = 42;
-            ultraGridColumn7.Header.VisiblePosition = 6;
-            ultraGridColumn7.Width = 49;
-            ultraGridColumn8.Header.VisiblePosition = 7;
-            ultraGridColumn8.Width = 63;
-            ultraGridColumn9.Header.VisiblePosition = 8;
-            ultraGridColumn9.Width = 54;
-            ultraGridColumn10.Header.VisiblePosition = 9;
-            ultraGridColumn10.Width = 51;
-            ultraGridColumn11.Header.VisiblePosition = 10;
-            ultraGridColumn11.Width = 37;
-            ultraGridColumn12.Header.VisiblePosition = 11;
-            ultraGridColumn12.Width = 46;
-            ultraGridColumn13.Header.VisiblePosition = 12;
-            ultraGridColumn13.Width = 35;
-            ultraGridColumn14.Header.VisiblePosition = 13;
-            ultraGridBand8.Columns.AddRange(new object[] {
-            ultraGridColumn1,
-            ultraGridColumn2,
-            ultraGridColumn3,
-            ultraGridColumn4,
-            ultraGridColumn5,
-            ultraGridColumn6,
-            ultraGridColumn7,
-            ultraGridColumn8,
-            ultraGridColumn9,
-            ultraGridColumn10,
-            ultraGridColumn11,
-            ultraGridColumn12,
-            ultraGridColumn13,
-            ultraGridColumn14});
-            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.BandsSerializer.Add(ultraGridBand8);
+            appearance536.BackColor = System.Drawing.SystemColors.ControlLight;
+            appearance536.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance536.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Appearance = appearance536;
+            ultraGridColumn201.Header.VisiblePosition = 0;
+            ultraGridColumn201.Width = 49;
+            ultraGridColumn202.Header.VisiblePosition = 1;
+            ultraGridColumn202.Width = 50;
+            ultraGridColumn203.Header.VisiblePosition = 2;
+            ultraGridColumn203.Width = 53;
+            ultraGridColumn204.Header.VisiblePosition = 3;
+            ultraGridColumn204.Width = 60;
+            ultraGridColumn205.Header.VisiblePosition = 4;
+            ultraGridColumn205.Width = 43;
+            ultraGridColumn206.Header.VisiblePosition = 5;
+            ultraGridColumn206.Width = 42;
+            ultraGridColumn207.Header.VisiblePosition = 6;
+            ultraGridColumn207.Width = 49;
+            ultraGridColumn208.Header.VisiblePosition = 7;
+            ultraGridColumn208.Width = 63;
+            ultraGridColumn209.Header.VisiblePosition = 8;
+            ultraGridColumn209.Width = 54;
+            ultraGridColumn210.Header.VisiblePosition = 9;
+            ultraGridColumn210.Width = 51;
+            ultraGridColumn211.Header.VisiblePosition = 10;
+            ultraGridColumn211.Width = 37;
+            ultraGridColumn212.Header.VisiblePosition = 11;
+            ultraGridColumn212.Width = 46;
+            ultraGridColumn213.Header.VisiblePosition = 12;
+            ultraGridColumn213.Width = 35;
+            ultraGridColumn214.Header.VisiblePosition = 13;
+            ultraGridBand12.Columns.AddRange(new object[] {
+            ultraGridColumn201,
+            ultraGridColumn202,
+            ultraGridColumn203,
+            ultraGridColumn204,
+            ultraGridColumn205,
+            ultraGridColumn206,
+            ultraGridColumn207,
+            ultraGridColumn208,
+            ultraGridColumn209,
+            ultraGridColumn210,
+            ultraGridColumn211,
+            ultraGridColumn212,
+            ultraGridColumn213,
+            ultraGridColumn214});
+            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.BandsSerializer.Add(ultraGridBand12);
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.InterBandSpacing = 10;
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.AllowColSizing = Infragistics.Win.UltraWinGrid.AllowColSizing.None;
-            appearance470.BackColor = System.Drawing.Color.Transparent;
-            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.CardAreaAppearance = appearance470;
-            appearance471.BackColor = System.Drawing.SystemColors.Control;
-            appearance471.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
-            appearance471.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.CellAppearance = appearance471;
+            appearance537.BackColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.CardAreaAppearance = appearance537;
+            appearance538.BackColor = System.Drawing.SystemColors.Control;
+            appearance538.BackColor2 = System.Drawing.SystemColors.ControlLightLight;
+            appearance538.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.CellAppearance = appearance538;
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.FixedRowIndicator = Infragistics.Win.UltraWinGrid.FixedRowIndicator.None;
-            appearance472.BackColor = System.Drawing.SystemColors.Control;
-            appearance472.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance472.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            appearance472.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
-            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.HeaderAppearance = appearance472;
-            appearance473.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.RowSelectorAppearance = appearance473;
+            appearance539.BackColor = System.Drawing.SystemColors.Control;
+            appearance539.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance539.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            appearance539.ThemedElementAlpha = Infragistics.Win.Alpha.Transparent;
+            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.HeaderAppearance = appearance539;
+            appearance540.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.RowSelectorAppearance = appearance540;
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.RowSizing = Infragistics.Win.UltraWinGrid.RowSizing.Fixed;
-            appearance474.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance474.BorderAlpha = Infragistics.Win.Alpha.Transparent;
-            appearance474.BorderColor = System.Drawing.Color.Transparent;
-            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.SelectedCellAppearance = appearance474;
-            appearance475.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            appearance475.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
-            appearance475.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
-            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.SelectedRowAppearance = appearance475;
+            appearance541.BackColorAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance541.BorderAlpha = Infragistics.Win.Alpha.Transparent;
+            appearance541.BorderColor = System.Drawing.Color.Transparent;
+            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.SelectedCellAppearance = appearance541;
+            appearance542.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            appearance542.BackColor2 = System.Drawing.SystemColors.ActiveCaption;
+            appearance542.BackGradientStyle = Infragistics.Win.GradientStyle.VerticalBump;
+            this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.SelectedRowAppearance = appearance542;
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.SelectTypeCell = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.SelectTypeCol = Infragistics.Win.UltraWinGrid.SelectType.None;
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Override.SelectTypeRow = Infragistics.Win.UltraWinGrid.SelectType.None;
@@ -9035,7 +9788,7 @@
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.RowConnectorStyle = Infragistics.Win.UltraWinGrid.RowConnectorStyle.Dashed;
             this.uGrd_Recipe_Inspect_Uper.DisplayLayout.Scrollbars = Infragistics.Win.UltraWinGrid.Scrollbars.Vertical;
             this.uGrd_Recipe_Inspect_Uper.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.uGrd_Recipe_Inspect_Uper.Location = new System.Drawing.Point(225, 19);
+            this.uGrd_Recipe_Inspect_Uper.Location = new System.Drawing.Point(12, 353);
             this.uGrd_Recipe_Inspect_Uper.Name = "uGrd_Recipe_Inspect_Uper";
             this.uGrd_Recipe_Inspect_Uper.Size = new System.Drawing.Size(768, 111);
             this.uGrd_Recipe_Inspect_Uper.TabIndex = 75;
@@ -9045,24 +9798,25 @@
             // uDS_Inspect_Uper
             // 
             this.uDS_Inspect_Uper.Band.Columns.AddRange(new object[] {
-            ultraDataColumn69,
-            ultraDataColumn70,
-            ultraDataColumn71,
-            ultraDataColumn72,
-            ultraDataColumn73,
-            ultraDataColumn74,
-            ultraDataColumn75,
-            ultraDataColumn76,
-            ultraDataColumn77,
-            ultraDataColumn78,
-            ultraDataColumn79,
-            ultraDataColumn80,
-            ultraDataColumn81,
-            ultraDataColumn82});
+            ultraDataColumn103,
+            ultraDataColumn104,
+            ultraDataColumn105,
+            ultraDataColumn106,
+            ultraDataColumn107,
+            ultraDataColumn108,
+            ultraDataColumn109,
+            ultraDataColumn110,
+            ultraDataColumn111,
+            ultraDataColumn112,
+            ultraDataColumn113,
+            ultraDataColumn114,
+            ultraDataColumn115,
+            ultraDataColumn116});
             // 
             // RecipeGap_drawArea2
             // 
             this.RecipeGap_drawArea2.BackColor = System.Drawing.Color.White;
+            this.RecipeGap_drawArea2.GetSet_ImageLoadPass = false;
             this.RecipeGap_drawArea2.GetSetCursor = System.Windows.Forms.Cursors.Default;
             this.RecipeGap_drawArea2.GetSetGraphicsList = null;
             this.RecipeGap_drawArea2.Location = new System.Drawing.Point(3, 2);
@@ -9076,6 +9830,7 @@
             // RecipeGap_drawArea1
             // 
             this.RecipeGap_drawArea1.BackColor = System.Drawing.Color.White;
+            this.RecipeGap_drawArea1.GetSet_ImageLoadPass = false;
             this.RecipeGap_drawArea1.GetSetCursor = System.Windows.Forms.Cursors.Default;
             this.RecipeGap_drawArea1.GetSetGraphicsList = null;
             this.RecipeGap_drawArea1.Location = new System.Drawing.Point(3, 2);
@@ -9084,6 +9839,20 @@
             this.RecipeGap_drawArea1.Owner = null;
             this.RecipeGap_drawArea1.Size = new System.Drawing.Size(774, 582);
             this.RecipeGap_drawArea1.TabIndex = 0;
+            // 
+            // RecipeGap_drawArea3
+            // 
+            this.RecipeGap_drawArea3.BackColor = System.Drawing.Color.White;
+            this.RecipeGap_drawArea3.GetSet_ImageLoadPass = false;
+            this.RecipeGap_drawArea3.GetSetCursor = System.Windows.Forms.Cursors.Default;
+            this.RecipeGap_drawArea3.GetSetGraphicsList = null;
+            this.RecipeGap_drawArea3.Location = new System.Drawing.Point(3, 2);
+            this.RecipeGap_drawArea3.MakeMode = false;
+            this.RecipeGap_drawArea3.Name = "RecipeGap_drawArea3";
+            this.RecipeGap_drawArea3.Owner = null;
+            this.RecipeGap_drawArea3.Size = new System.Drawing.Size(774, 582);
+            this.RecipeGap_drawArea3.TabIndex = 181;
+            this.RecipeGap_drawArea3.Visible = false;
             // 
             // ultraTabPageControl4
             // 
@@ -9094,8 +9863,8 @@
             // 
             // EquipmentConfig_Tab_BackPanel
             // 
-            appearance476.BackColor = System.Drawing.Color.Silver;
-            this.EquipmentConfig_Tab_BackPanel.Appearance = appearance476;
+            appearance543.BackColor = System.Drawing.Color.Silver;
+            this.EquipmentConfig_Tab_BackPanel.Appearance = appearance543;
             // 
             // EquipmentConfig_Tab_BackPanel.ClientArea
             // 
@@ -9110,8 +9879,8 @@
             // 
             // ultraPanel9
             // 
-            appearance477.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel9.Appearance = appearance477;
+            appearance544.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel9.Appearance = appearance544;
             // 
             // ultraPanel9.ClientArea
             // 
@@ -9124,8 +9893,8 @@
             // 
             // ultraPanel10
             // 
-            appearance478.BackColor = System.Drawing.Color.White;
-            this.ultraPanel10.Appearance = appearance478;
+            appearance545.BackColor = System.Drawing.Color.White;
+            this.ultraPanel10.Appearance = appearance545;
             // 
             // ultraPanel10.ClientArea
             // 
@@ -9145,11 +9914,11 @@
             // 
             // Commu_uCom04_Port
             // 
-            appearance479.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance479.FontData.BoldAsString = "True";
-            appearance479.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance479.TextHAlignAsString = "Center";
-            this.Commu_uCom04_Port.Appearance = appearance479;
+            appearance546.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance546.FontData.BoldAsString = "True";
+            appearance546.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance546.TextHAlignAsString = "Center";
+            this.Commu_uCom04_Port.Appearance = appearance546;
             this.Commu_uCom04_Port.AutoSize = false;
             this.Commu_uCom04_Port.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Commu_uCom04_Port.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -9186,12 +9955,12 @@
             // 
             // ultraTextEditor1
             // 
-            appearance480.BackColor = System.Drawing.Color.DimGray;
-            appearance480.BackColor2 = System.Drawing.Color.Gray;
-            appearance480.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance480.ForeColor = System.Drawing.Color.White;
-            appearance480.TextHAlignAsString = "Left";
-            this.ultraTextEditor1.Appearance = appearance480;
+            appearance547.BackColor = System.Drawing.Color.DimGray;
+            appearance547.BackColor2 = System.Drawing.Color.Gray;
+            appearance547.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance547.ForeColor = System.Drawing.Color.White;
+            appearance547.TextHAlignAsString = "Left";
+            this.ultraTextEditor1.Appearance = appearance547;
             this.ultraTextEditor1.AutoSize = false;
             this.ultraTextEditor1.BackColor = System.Drawing.Color.DimGray;
             this.ultraTextEditor1.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9203,15 +9972,15 @@
             // 
             // ultraButton1
             // 
-            appearance481.BackColor = System.Drawing.Color.DarkGray;
-            appearance481.BackColor2 = System.Drawing.Color.DimGray;
-            appearance481.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance481.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ultraButton1.Appearance = appearance481;
+            appearance548.BackColor = System.Drawing.Color.DarkGray;
+            appearance548.BackColor2 = System.Drawing.Color.DimGray;
+            appearance548.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance548.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ultraButton1.Appearance = appearance548;
             this.ultraButton1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance482.BorderColor = System.Drawing.Color.White;
-            appearance482.ForeColor = System.Drawing.Color.White;
-            this.ultraButton1.HotTrackAppearance = appearance482;
+            appearance549.BorderColor = System.Drawing.Color.White;
+            appearance549.ForeColor = System.Drawing.Color.White;
+            this.ultraButton1.HotTrackAppearance = appearance549;
             this.ultraButton1.Location = new System.Drawing.Point(325, 722);
             this.ultraButton1.Name = "ultraButton1";
             this.ultraButton1.Size = new System.Drawing.Size(82, 25);
@@ -9223,15 +9992,15 @@
             // 
             // ultraButton2
             // 
-            appearance483.BackColor = System.Drawing.Color.DarkGray;
-            appearance483.BackColor2 = System.Drawing.Color.DimGray;
-            appearance483.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance483.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ultraButton2.Appearance = appearance483;
+            appearance550.BackColor = System.Drawing.Color.DarkGray;
+            appearance550.BackColor2 = System.Drawing.Color.DimGray;
+            appearance550.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance550.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ultraButton2.Appearance = appearance550;
             this.ultraButton2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance484.BorderColor = System.Drawing.Color.White;
-            appearance484.ForeColor = System.Drawing.Color.White;
-            this.ultraButton2.HotTrackAppearance = appearance484;
+            appearance551.BorderColor = System.Drawing.Color.White;
+            appearance551.ForeColor = System.Drawing.Color.White;
+            this.ultraButton2.HotTrackAppearance = appearance551;
             this.ultraButton2.Location = new System.Drawing.Point(325, 749);
             this.ultraButton2.Name = "ultraButton2";
             this.ultraButton2.Size = new System.Drawing.Size(82, 25);
@@ -9243,14 +10012,14 @@
             // 
             // ultraLabel5
             // 
-            appearance485.BackColor = System.Drawing.Color.DimGray;
-            appearance485.BackColor2 = System.Drawing.Color.Gray;
-            appearance485.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance485.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance485.ForeColor = System.Drawing.Color.White;
-            appearance485.TextHAlignAsString = "Center";
-            appearance485.TextVAlignAsString = "Middle";
-            this.ultraLabel5.Appearance = appearance485;
+            appearance552.BackColor = System.Drawing.Color.DimGray;
+            appearance552.BackColor2 = System.Drawing.Color.Gray;
+            appearance552.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance552.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance552.ForeColor = System.Drawing.Color.White;
+            appearance552.TextHAlignAsString = "Center";
+            appearance552.TextVAlignAsString = "Middle";
+            this.ultraLabel5.Appearance = appearance552;
             this.ultraLabel5.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel5.Location = new System.Drawing.Point(3, 3);
@@ -9263,11 +10032,11 @@
             // 
             // Commu_uCom06_bps
             // 
-            appearance486.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance486.FontData.BoldAsString = "True";
-            appearance486.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance486.TextHAlignAsString = "Center";
-            this.Commu_uCom06_bps.Appearance = appearance486;
+            appearance553.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance553.FontData.BoldAsString = "True";
+            appearance553.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance553.TextHAlignAsString = "Center";
+            this.Commu_uCom06_bps.Appearance = appearance553;
             this.Commu_uCom06_bps.AutoSize = false;
             this.Commu_uCom06_bps.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Commu_uCom06_bps.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -9286,12 +10055,12 @@
             // 
             // ultraTextEditor3
             // 
-            appearance487.BackColor = System.Drawing.Color.DimGray;
-            appearance487.BackColor2 = System.Drawing.Color.Gray;
-            appearance487.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance487.ForeColor = System.Drawing.Color.White;
-            appearance487.TextHAlignAsString = "Left";
-            this.ultraTextEditor3.Appearance = appearance487;
+            appearance554.BackColor = System.Drawing.Color.DimGray;
+            appearance554.BackColor2 = System.Drawing.Color.Gray;
+            appearance554.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance554.ForeColor = System.Drawing.Color.White;
+            appearance554.TextHAlignAsString = "Left";
+            this.ultraTextEditor3.Appearance = appearance554;
             this.ultraTextEditor3.AutoSize = false;
             this.ultraTextEditor3.BackColor = System.Drawing.Color.DimGray;
             this.ultraTextEditor3.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9306,13 +10075,13 @@
             // 
             // ultraLabel6
             // 
-            appearance488.BackColor = System.Drawing.Color.DimGray;
-            appearance488.BackColor2 = System.Drawing.Color.Gray;
-            appearance488.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance488.ForeColor = System.Drawing.Color.White;
-            appearance488.TextHAlignAsString = "Center";
-            appearance488.TextVAlignAsString = "Middle";
-            this.ultraLabel6.Appearance = appearance488;
+            appearance555.BackColor = System.Drawing.Color.DimGray;
+            appearance555.BackColor2 = System.Drawing.Color.Gray;
+            appearance555.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance555.ForeColor = System.Drawing.Color.White;
+            appearance555.TextHAlignAsString = "Center";
+            appearance555.TextVAlignAsString = "Middle";
+            this.ultraLabel6.Appearance = appearance555;
             this.ultraLabel6.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel6.Location = new System.Drawing.Point(3, 722);
@@ -9324,13 +10093,13 @@
             // 
             // ultraLabel8
             // 
-            appearance489.BackColor = System.Drawing.Color.DimGray;
-            appearance489.BackColor2 = System.Drawing.Color.Gray;
-            appearance489.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance489.ForeColor = System.Drawing.Color.White;
-            appearance489.TextHAlignAsString = "Center";
-            appearance489.TextVAlignAsString = "Middle";
-            this.ultraLabel8.Appearance = appearance489;
+            appearance556.BackColor = System.Drawing.Color.DimGray;
+            appearance556.BackColor2 = System.Drawing.Color.Gray;
+            appearance556.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance556.ForeColor = System.Drawing.Color.White;
+            appearance556.TextHAlignAsString = "Center";
+            appearance556.TextVAlignAsString = "Middle";
+            this.ultraLabel8.Appearance = appearance556;
             this.ultraLabel8.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel8.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel8.Location = new System.Drawing.Point(3, 695);
@@ -9342,8 +10111,8 @@
             // 
             // ultraPanel28
             // 
-            appearance490.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel28.Appearance = appearance490;
+            appearance557.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel28.Appearance = appearance557;
             // 
             // ultraPanel28.ClientArea
             // 
@@ -9356,8 +10125,8 @@
             // 
             // ultraPanel47
             // 
-            appearance491.BackColor = System.Drawing.Color.White;
-            this.ultraPanel47.Appearance = appearance491;
+            appearance558.BackColor = System.Drawing.Color.White;
+            this.ultraPanel47.Appearance = appearance558;
             // 
             // ultraPanel47.ClientArea
             // 
@@ -9377,11 +10146,11 @@
             // 
             // ultraTextEditor77
             // 
-            appearance492.BackColor = System.Drawing.Color.DimGray;
-            appearance492.BackColor2 = System.Drawing.Color.Gray;
-            appearance492.ForeColor = System.Drawing.Color.White;
-            appearance492.TextHAlignAsString = "Left";
-            this.ultraTextEditor77.Appearance = appearance492;
+            appearance559.BackColor = System.Drawing.Color.DimGray;
+            appearance559.BackColor2 = System.Drawing.Color.Gray;
+            appearance559.ForeColor = System.Drawing.Color.White;
+            appearance559.TextHAlignAsString = "Left";
+            this.ultraTextEditor77.Appearance = appearance559;
             this.ultraTextEditor77.AutoSize = false;
             this.ultraTextEditor77.BackColor = System.Drawing.Color.DimGray;
             this.ultraTextEditor77.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9393,15 +10162,15 @@
             // 
             // ultraButton5
             // 
-            appearance493.BackColor = System.Drawing.Color.DarkGray;
-            appearance493.BackColor2 = System.Drawing.Color.DimGray;
-            appearance493.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance493.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ultraButton5.Appearance = appearance493;
+            appearance560.BackColor = System.Drawing.Color.DarkGray;
+            appearance560.BackColor2 = System.Drawing.Color.DimGray;
+            appearance560.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance560.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ultraButton5.Appearance = appearance560;
             this.ultraButton5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance494.BorderColor = System.Drawing.Color.White;
-            appearance494.ForeColor = System.Drawing.Color.White;
-            this.ultraButton5.HotTrackAppearance = appearance494;
+            appearance561.BorderColor = System.Drawing.Color.White;
+            appearance561.ForeColor = System.Drawing.Color.White;
+            this.ultraButton5.HotTrackAppearance = appearance561;
             this.ultraButton5.Location = new System.Drawing.Point(311, 749);
             this.ultraButton5.Name = "ultraButton5";
             this.ultraButton5.Size = new System.Drawing.Size(82, 25);
@@ -9413,13 +10182,13 @@
             // 
             // ultraLabel102
             // 
-            appearance495.BackColor = System.Drawing.Color.DimGray;
-            appearance495.BackColor2 = System.Drawing.Color.Gray;
-            appearance495.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance495.ForeColor = System.Drawing.Color.White;
-            appearance495.TextHAlignAsString = "Center";
-            appearance495.TextVAlignAsString = "Middle";
-            this.ultraLabel102.Appearance = appearance495;
+            appearance562.BackColor = System.Drawing.Color.DimGray;
+            appearance562.BackColor2 = System.Drawing.Color.Gray;
+            appearance562.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance562.ForeColor = System.Drawing.Color.White;
+            appearance562.TextHAlignAsString = "Center";
+            appearance562.TextVAlignAsString = "Middle";
+            this.ultraLabel102.Appearance = appearance562;
             this.ultraLabel102.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel102.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel102.Location = new System.Drawing.Point(3, 695);
@@ -9431,10 +10200,10 @@
             // 
             // ultraTextEditor74
             // 
-            appearance496.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance496.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance496.TextHAlignAsString = "Center";
-            this.ultraTextEditor74.Appearance = appearance496;
+            appearance563.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance563.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance563.TextHAlignAsString = "Center";
+            this.ultraTextEditor74.Appearance = appearance563;
             this.ultraTextEditor74.AutoSize = false;
             this.ultraTextEditor74.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ultraTextEditor74.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9447,12 +10216,12 @@
             // 
             // ultraTextEditor76
             // 
-            appearance497.BackColor = System.Drawing.Color.DimGray;
-            appearance497.BackColor2 = System.Drawing.Color.Gray;
-            appearance497.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance497.ForeColor = System.Drawing.Color.White;
-            appearance497.TextHAlignAsString = "Left";
-            this.ultraTextEditor76.Appearance = appearance497;
+            appearance564.BackColor = System.Drawing.Color.DimGray;
+            appearance564.BackColor2 = System.Drawing.Color.Gray;
+            appearance564.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance564.ForeColor = System.Drawing.Color.White;
+            appearance564.TextHAlignAsString = "Left";
+            this.ultraTextEditor76.Appearance = appearance564;
             this.ultraTextEditor76.AutoSize = false;
             this.ultraTextEditor76.BackColor = System.Drawing.Color.DimGray;
             this.ultraTextEditor76.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9467,13 +10236,13 @@
             // 
             // ultraLabel101
             // 
-            appearance498.BackColor = System.Drawing.Color.DimGray;
-            appearance498.BackColor2 = System.Drawing.Color.Gray;
-            appearance498.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance498.ForeColor = System.Drawing.Color.White;
-            appearance498.TextHAlignAsString = "Center";
-            appearance498.TextVAlignAsString = "Middle";
-            this.ultraLabel101.Appearance = appearance498;
+            appearance565.BackColor = System.Drawing.Color.DimGray;
+            appearance565.BackColor2 = System.Drawing.Color.Gray;
+            appearance565.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance565.ForeColor = System.Drawing.Color.White;
+            appearance565.TextHAlignAsString = "Center";
+            appearance565.TextVAlignAsString = "Middle";
+            this.ultraLabel101.Appearance = appearance565;
             this.ultraLabel101.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel101.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel101.Location = new System.Drawing.Point(3, 722);
@@ -9485,14 +10254,14 @@
             // 
             // ultraLabel10
             // 
-            appearance499.BackColor = System.Drawing.Color.DimGray;
-            appearance499.BackColor2 = System.Drawing.Color.Gray;
-            appearance499.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance499.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance499.ForeColor = System.Drawing.Color.White;
-            appearance499.TextHAlignAsString = "Center";
-            appearance499.TextVAlignAsString = "Middle";
-            this.ultraLabel10.Appearance = appearance499;
+            appearance566.BackColor = System.Drawing.Color.DimGray;
+            appearance566.BackColor2 = System.Drawing.Color.Gray;
+            appearance566.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance566.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance566.ForeColor = System.Drawing.Color.White;
+            appearance566.TextHAlignAsString = "Center";
+            appearance566.TextVAlignAsString = "Middle";
+            this.ultraLabel10.Appearance = appearance566;
             this.ultraLabel10.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel10.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel10.Location = new System.Drawing.Point(3, 3);
@@ -9505,15 +10274,15 @@
             // 
             // ultraButton3
             // 
-            appearance500.BackColor = System.Drawing.Color.DarkGray;
-            appearance500.BackColor2 = System.Drawing.Color.DimGray;
-            appearance500.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance500.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ultraButton3.Appearance = appearance500;
+            appearance567.BackColor = System.Drawing.Color.DarkGray;
+            appearance567.BackColor2 = System.Drawing.Color.DimGray;
+            appearance567.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance567.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ultraButton3.Appearance = appearance567;
             this.ultraButton3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance501.BorderColor = System.Drawing.Color.White;
-            appearance501.ForeColor = System.Drawing.Color.White;
-            this.ultraButton3.HotTrackAppearance = appearance501;
+            appearance568.BorderColor = System.Drawing.Color.White;
+            appearance568.ForeColor = System.Drawing.Color.White;
+            this.ultraButton3.HotTrackAppearance = appearance568;
             this.ultraButton3.Location = new System.Drawing.Point(311, 722);
             this.ultraButton3.Name = "ultraButton3";
             this.ultraButton3.Size = new System.Drawing.Size(82, 25);
@@ -9525,10 +10294,10 @@
             // 
             // ultraTextEditor73
             // 
-            appearance502.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance502.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance502.TextHAlignAsString = "Center";
-            this.ultraTextEditor73.Appearance = appearance502;
+            appearance569.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance569.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance569.TextHAlignAsString = "Center";
+            this.ultraTextEditor73.Appearance = appearance569;
             this.ultraTextEditor73.AutoSize = false;
             this.ultraTextEditor73.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ultraTextEditor73.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9541,8 +10310,8 @@
             // 
             // ultraPanel11
             // 
-            appearance503.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel11.Appearance = appearance503;
+            appearance570.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel11.Appearance = appearance570;
             // 
             // ultraPanel11.ClientArea
             // 
@@ -9555,8 +10324,8 @@
             // 
             // ultraPanel12
             // 
-            appearance504.BackColor = System.Drawing.Color.White;
-            this.ultraPanel12.Appearance = appearance504;
+            appearance571.BackColor = System.Drawing.Color.White;
+            this.ultraPanel12.Appearance = appearance571;
             // 
             // ultraPanel12.ClientArea
             // 
@@ -9576,12 +10345,12 @@
             // 
             // Equipment_Umac05_uTxt
             // 
-            appearance505.BackColor = System.Drawing.Color.DimGray;
-            appearance505.BackColor2 = System.Drawing.Color.Gray;
-            appearance505.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance505.ForeColor = System.Drawing.Color.White;
-            appearance505.TextHAlignAsString = "Left";
-            this.Equipment_Umac05_uTxt.Appearance = appearance505;
+            appearance572.BackColor = System.Drawing.Color.DimGray;
+            appearance572.BackColor2 = System.Drawing.Color.Gray;
+            appearance572.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance572.ForeColor = System.Drawing.Color.White;
+            appearance572.TextHAlignAsString = "Left";
+            this.Equipment_Umac05_uTxt.Appearance = appearance572;
             this.Equipment_Umac05_uTxt.AutoSize = false;
             this.Equipment_Umac05_uTxt.BackColor = System.Drawing.Color.DimGray;
             this.Equipment_Umac05_uTxt.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9593,15 +10362,15 @@
             // 
             // Equipment_Umac08_uTxt
             // 
-            appearance506.BackColor = System.Drawing.Color.DarkGray;
-            appearance506.BackColor2 = System.Drawing.Color.DimGray;
-            appearance506.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance506.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Equipment_Umac08_uTxt.Appearance = appearance506;
+            appearance573.BackColor = System.Drawing.Color.DarkGray;
+            appearance573.BackColor2 = System.Drawing.Color.DimGray;
+            appearance573.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance573.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Equipment_Umac08_uTxt.Appearance = appearance573;
             this.Equipment_Umac08_uTxt.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance507.BorderColor = System.Drawing.Color.White;
-            appearance507.ForeColor = System.Drawing.Color.White;
-            this.Equipment_Umac08_uTxt.HotTrackAppearance = appearance507;
+            appearance574.BorderColor = System.Drawing.Color.White;
+            appearance574.ForeColor = System.Drawing.Color.White;
+            this.Equipment_Umac08_uTxt.HotTrackAppearance = appearance574;
             this.Equipment_Umac08_uTxt.Location = new System.Drawing.Point(311, 722);
             this.Equipment_Umac08_uTxt.Name = "Equipment_Umac08_uTxt";
             this.Equipment_Umac08_uTxt.Size = new System.Drawing.Size(82, 25);
@@ -9614,15 +10383,15 @@
             // 
             // Equipment_Umac06_uTxt
             // 
-            appearance508.BackColor = System.Drawing.Color.DarkGray;
-            appearance508.BackColor2 = System.Drawing.Color.DimGray;
-            appearance508.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance508.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Equipment_Umac06_uTxt.Appearance = appearance508;
+            appearance575.BackColor = System.Drawing.Color.DarkGray;
+            appearance575.BackColor2 = System.Drawing.Color.DimGray;
+            appearance575.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance575.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Equipment_Umac06_uTxt.Appearance = appearance575;
             this.Equipment_Umac06_uTxt.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance509.BorderColor = System.Drawing.Color.White;
-            appearance509.ForeColor = System.Drawing.Color.White;
-            this.Equipment_Umac06_uTxt.HotTrackAppearance = appearance509;
+            appearance576.BorderColor = System.Drawing.Color.White;
+            appearance576.ForeColor = System.Drawing.Color.White;
+            this.Equipment_Umac06_uTxt.HotTrackAppearance = appearance576;
             this.Equipment_Umac06_uTxt.Location = new System.Drawing.Point(311, 749);
             this.Equipment_Umac06_uTxt.Name = "Equipment_Umac06_uTxt";
             this.Equipment_Umac06_uTxt.Size = new System.Drawing.Size(82, 25);
@@ -9635,10 +10404,10 @@
             // 
             // Equipment_Umac02_uTxt
             // 
-            appearance510.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance510.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance510.TextHAlignAsString = "Center";
-            this.Equipment_Umac02_uTxt.Appearance = appearance510;
+            appearance577.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance577.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance577.TextHAlignAsString = "Center";
+            this.Equipment_Umac02_uTxt.Appearance = appearance577;
             this.Equipment_Umac02_uTxt.AutoSize = false;
             this.Equipment_Umac02_uTxt.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Equipment_Umac02_uTxt.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9651,14 +10420,14 @@
             // 
             // ultraLabel7
             // 
-            appearance511.BackColor = System.Drawing.Color.DimGray;
-            appearance511.BackColor2 = System.Drawing.Color.Gray;
-            appearance511.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance511.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance511.ForeColor = System.Drawing.Color.White;
-            appearance511.TextHAlignAsString = "Center";
-            appearance511.TextVAlignAsString = "Middle";
-            this.ultraLabel7.Appearance = appearance511;
+            appearance578.BackColor = System.Drawing.Color.DimGray;
+            appearance578.BackColor2 = System.Drawing.Color.Gray;
+            appearance578.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance578.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance578.ForeColor = System.Drawing.Color.White;
+            appearance578.TextHAlignAsString = "Center";
+            appearance578.TextVAlignAsString = "Middle";
+            this.ultraLabel7.Appearance = appearance578;
             this.ultraLabel7.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel7.Location = new System.Drawing.Point(3, 3);
@@ -9671,11 +10440,11 @@
             // 
             // Equipment_Umac04_uCom
             // 
-            appearance512.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance512.FontData.BoldAsString = "True";
-            appearance512.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance512.TextHAlignAsString = "Center";
-            this.Equipment_Umac04_uCom.Appearance = appearance512;
+            appearance579.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance579.FontData.BoldAsString = "True";
+            appearance579.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance579.TextHAlignAsString = "Center";
+            this.Equipment_Umac04_uCom.Appearance = appearance579;
             this.Equipment_Umac04_uCom.AutoSize = false;
             this.Equipment_Umac04_uCom.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Equipment_Umac04_uCom.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -9712,12 +10481,12 @@
             // 
             // Equipment_Umac07_uTxt
             // 
-            appearance513.BackColor = System.Drawing.Color.DimGray;
-            appearance513.BackColor2 = System.Drawing.Color.Gray;
-            appearance513.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance513.ForeColor = System.Drawing.Color.White;
-            appearance513.TextHAlignAsString = "Left";
-            this.Equipment_Umac07_uTxt.Appearance = appearance513;
+            appearance580.BackColor = System.Drawing.Color.DimGray;
+            appearance580.BackColor2 = System.Drawing.Color.Gray;
+            appearance580.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance580.ForeColor = System.Drawing.Color.White;
+            appearance580.TextHAlignAsString = "Left";
+            this.Equipment_Umac07_uTxt.Appearance = appearance580;
             this.Equipment_Umac07_uTxt.AutoSize = false;
             this.Equipment_Umac07_uTxt.BackColor = System.Drawing.Color.DimGray;
             this.Equipment_Umac07_uTxt.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9732,13 +10501,13 @@
             // 
             // Equipment_Umac03_uLabel
             // 
-            appearance514.BackColor = System.Drawing.Color.DimGray;
-            appearance514.BackColor2 = System.Drawing.Color.Gray;
-            appearance514.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance514.ForeColor = System.Drawing.Color.White;
-            appearance514.TextHAlignAsString = "Center";
-            appearance514.TextVAlignAsString = "Middle";
-            this.Equipment_Umac03_uLabel.Appearance = appearance514;
+            appearance581.BackColor = System.Drawing.Color.DimGray;
+            appearance581.BackColor2 = System.Drawing.Color.Gray;
+            appearance581.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance581.ForeColor = System.Drawing.Color.White;
+            appearance581.TextHAlignAsString = "Center";
+            appearance581.TextVAlignAsString = "Middle";
+            this.Equipment_Umac03_uLabel.Appearance = appearance581;
             this.Equipment_Umac03_uLabel.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.Equipment_Umac03_uLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Equipment_Umac03_uLabel.Location = new System.Drawing.Point(3, 722);
@@ -9750,13 +10519,13 @@
             // 
             // Equipment_Umac01_ulabel
             // 
-            appearance515.BackColor = System.Drawing.Color.DimGray;
-            appearance515.BackColor2 = System.Drawing.Color.Gray;
-            appearance515.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance515.ForeColor = System.Drawing.Color.White;
-            appearance515.TextHAlignAsString = "Center";
-            appearance515.TextVAlignAsString = "Middle";
-            this.Equipment_Umac01_ulabel.Appearance = appearance515;
+            appearance582.BackColor = System.Drawing.Color.DimGray;
+            appearance582.BackColor2 = System.Drawing.Color.Gray;
+            appearance582.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance582.ForeColor = System.Drawing.Color.White;
+            appearance582.TextHAlignAsString = "Center";
+            appearance582.TextVAlignAsString = "Middle";
+            this.Equipment_Umac01_ulabel.Appearance = appearance582;
             this.Equipment_Umac01_ulabel.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.Equipment_Umac01_ulabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Equipment_Umac01_ulabel.Location = new System.Drawing.Point(3, 695);
@@ -9775,8 +10544,8 @@
             // 
             // upnlRecipeTestBack
             // 
-            appearance516.BackColor = System.Drawing.Color.DarkGray;
-            this.upnlRecipeTestBack.Appearance = appearance516;
+            appearance583.BackColor = System.Drawing.Color.DarkGray;
+            this.upnlRecipeTestBack.Appearance = appearance583;
             // 
             // upnlRecipeTestBack.ClientArea
             // 
@@ -9793,8 +10562,8 @@
             // 
             // ultraPanel22
             // 
-            appearance517.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel22.Appearance = appearance517;
+            appearance584.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel22.Appearance = appearance584;
             // 
             // ultraPanel22.ClientArea
             // 
@@ -9807,8 +10576,8 @@
             // 
             // ultraPanel23
             // 
-            appearance518.BackColor = System.Drawing.Color.White;
-            this.ultraPanel23.Appearance = appearance518;
+            appearance585.BackColor = System.Drawing.Color.White;
+            this.ultraPanel23.Appearance = appearance585;
             // 
             // ultraPanel23.ClientArea
             // 
@@ -9826,11 +10595,11 @@
             // 
             // System_uCombo_TimeOut06
             // 
-            appearance519.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance519.FontData.BoldAsString = "True";
-            appearance519.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance519.TextHAlignAsString = "Center";
-            this.System_uCombo_TimeOut06.Appearance = appearance519;
+            appearance586.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance586.FontData.BoldAsString = "True";
+            appearance586.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance586.TextHAlignAsString = "Center";
+            this.System_uCombo_TimeOut06.Appearance = appearance586;
             this.System_uCombo_TimeOut06.AutoSize = false;
             this.System_uCombo_TimeOut06.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_TimeOut06.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -9857,13 +10626,13 @@
             // 
             // ultraLabel121
             // 
-            appearance520.BackColor = System.Drawing.Color.DimGray;
-            appearance520.BackColor2 = System.Drawing.Color.Gray;
-            appearance520.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance520.ForeColor = System.Drawing.Color.White;
-            appearance520.TextHAlignAsString = "Left";
-            appearance520.TextVAlignAsString = "Middle";
-            this.ultraLabel121.Appearance = appearance520;
+            appearance587.BackColor = System.Drawing.Color.DimGray;
+            appearance587.BackColor2 = System.Drawing.Color.Gray;
+            appearance587.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance587.ForeColor = System.Drawing.Color.White;
+            appearance587.TextHAlignAsString = "Left";
+            appearance587.TextVAlignAsString = "Middle";
+            this.ultraLabel121.Appearance = appearance587;
             this.ultraLabel121.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel121.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel121.Location = new System.Drawing.Point(3, 57);
@@ -9875,10 +10644,10 @@
             // 
             // System_uText_TimeOut07
             // 
-            appearance521.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance521.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance521.TextHAlignAsString = "Center";
-            this.System_uText_TimeOut07.Appearance = appearance521;
+            appearance588.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance588.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance588.TextHAlignAsString = "Center";
+            this.System_uText_TimeOut07.Appearance = appearance588;
             this.System_uText_TimeOut07.AutoSize = false;
             this.System_uText_TimeOut07.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_TimeOut07.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -9891,14 +10660,14 @@
             // 
             // ultraLabel116
             // 
-            appearance522.BackColor = System.Drawing.Color.DimGray;
-            appearance522.BackColor2 = System.Drawing.Color.Gray;
-            appearance522.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            appearance522.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance522.ForeColor = System.Drawing.Color.White;
-            appearance522.TextHAlignAsString = "Center";
-            appearance522.TextVAlignAsString = "Middle";
-            this.ultraLabel116.Appearance = appearance522;
+            appearance589.BackColor = System.Drawing.Color.DimGray;
+            appearance589.BackColor2 = System.Drawing.Color.Gray;
+            appearance589.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            appearance589.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance589.ForeColor = System.Drawing.Color.White;
+            appearance589.TextHAlignAsString = "Center";
+            appearance589.TextVAlignAsString = "Middle";
+            this.ultraLabel116.Appearance = appearance589;
             this.ultraLabel116.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel116.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel116.Location = new System.Drawing.Point(3, 3);
@@ -9911,11 +10680,11 @@
             // 
             // System_uCombo_TimeOut03
             // 
-            appearance523.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance523.FontData.BoldAsString = "True";
-            appearance523.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance523.TextHAlignAsString = "Center";
-            this.System_uCombo_TimeOut03.Appearance = appearance523;
+            appearance590.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance590.FontData.BoldAsString = "True";
+            appearance590.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance590.TextHAlignAsString = "Center";
+            this.System_uCombo_TimeOut03.Appearance = appearance590;
             this.System_uCombo_TimeOut03.AutoSize = false;
             this.System_uCombo_TimeOut03.BackColor = System.Drawing.SystemColors.ControlDark;
             this.System_uCombo_TimeOut03.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -9942,13 +10711,13 @@
             // 
             // ultraLabel118
             // 
-            appearance524.BackColor = System.Drawing.Color.DimGray;
-            appearance524.BackColor2 = System.Drawing.Color.Gray;
-            appearance524.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance524.ForeColor = System.Drawing.Color.White;
-            appearance524.TextHAlignAsString = "Left";
-            appearance524.TextVAlignAsString = "Middle";
-            this.ultraLabel118.Appearance = appearance524;
+            appearance591.BackColor = System.Drawing.Color.DimGray;
+            appearance591.BackColor2 = System.Drawing.Color.Gray;
+            appearance591.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance591.ForeColor = System.Drawing.Color.White;
+            appearance591.TextHAlignAsString = "Left";
+            appearance591.TextVAlignAsString = "Middle";
+            this.ultraLabel118.Appearance = appearance591;
             this.ultraLabel118.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ultraLabel118.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ultraLabel118.Location = new System.Drawing.Point(3, 30);
@@ -9960,10 +10729,10 @@
             // 
             // System_uText_TimeOut04
             // 
-            appearance525.BackColor = System.Drawing.SystemColors.ScrollBar;
-            appearance525.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance525.TextHAlignAsString = "Center";
-            this.System_uText_TimeOut04.Appearance = appearance525;
+            appearance592.BackColor = System.Drawing.SystemColors.ScrollBar;
+            appearance592.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance592.TextHAlignAsString = "Center";
+            this.System_uText_TimeOut04.Appearance = appearance592;
             this.System_uText_TimeOut04.AutoSize = false;
             this.System_uText_TimeOut04.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.System_uText_TimeOut04.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10006,8 +10775,8 @@
             // 
             // upnlScanRcpBack12
             // 
-            appearance526.BackColor = System.Drawing.Color.DimGray;
-            this.upnlScanRcpBack12.Appearance = appearance526;
+            appearance593.BackColor = System.Drawing.Color.DimGray;
+            this.upnlScanRcpBack12.Appearance = appearance593;
             // 
             // upnlScanRcpBack12.ClientArea
             // 
@@ -10020,8 +10789,8 @@
             // 
             // upnlScanRecipe12
             // 
-            appearance527.BackColor = System.Drawing.Color.White;
-            this.upnlScanRecipe12.Appearance = appearance527;
+            appearance594.BackColor = System.Drawing.Color.White;
+            this.upnlScanRecipe12.Appearance = appearance594;
             // 
             // upnlScanRecipe12.ClientArea
             // 
@@ -10036,14 +10805,14 @@
             // 
             // ulblScanRecipe12
             // 
-            appearance528.BackColor = System.Drawing.Color.DimGray;
-            appearance528.BackColor2 = System.Drawing.Color.Gray;
-            appearance528.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance528.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance528.ForeColor = System.Drawing.Color.White;
-            appearance528.TextHAlignAsString = "Left";
-            appearance528.TextVAlignAsString = "Middle";
-            this.ulblScanRecipe12.Appearance = appearance528;
+            appearance595.BackColor = System.Drawing.Color.DimGray;
+            appearance595.BackColor2 = System.Drawing.Color.Gray;
+            appearance595.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance595.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance595.ForeColor = System.Drawing.Color.White;
+            appearance595.TextHAlignAsString = "Left";
+            appearance595.TextVAlignAsString = "Middle";
+            this.ulblScanRecipe12.Appearance = appearance595;
             this.ulblScanRecipe12.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScanRecipe12.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScanRecipe12.Location = new System.Drawing.Point(3, 3);
@@ -10055,10 +10824,10 @@
             // 
             // utxtScanRecipe12
             // 
-            appearance529.BackColor = System.Drawing.SystemColors.Control;
-            appearance529.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance529.TextHAlignAsString = "Right";
-            this.utxtScanRecipe12.Appearance = appearance529;
+            appearance596.BackColor = System.Drawing.SystemColors.Control;
+            appearance596.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance596.TextHAlignAsString = "Right";
+            this.utxtScanRecipe12.Appearance = appearance596;
             this.utxtScanRecipe12.AutoSize = false;
             this.utxtScanRecipe12.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScanRecipe12.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10071,16 +10840,16 @@
             // 
             // ubtnScanRecipe12
             // 
-            appearance530.BackColor = System.Drawing.Color.DarkGray;
-            appearance530.BackColor2 = System.Drawing.Color.DimGray;
-            appearance530.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance530.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ubtnScanRecipe12.Appearance = appearance530;
+            appearance597.BackColor = System.Drawing.Color.DarkGray;
+            appearance597.BackColor2 = System.Drawing.Color.DimGray;
+            appearance597.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance597.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ubtnScanRecipe12.Appearance = appearance597;
             this.ubtnScanRecipe12.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.ubtnScanRecipe12.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance531.BorderColor = System.Drawing.Color.White;
-            appearance531.ForeColor = System.Drawing.Color.White;
-            this.ubtnScanRecipe12.HotTrackAppearance = appearance531;
+            appearance598.BorderColor = System.Drawing.Color.White;
+            appearance598.ForeColor = System.Drawing.Color.White;
+            this.ubtnScanRecipe12.HotTrackAppearance = appearance598;
             this.ubtnScanRecipe12.Location = new System.Drawing.Point(351, 3);
             this.ubtnScanRecipe12.Name = "ubtnScanRecipe12";
             this.ubtnScanRecipe12.Size = new System.Drawing.Size(80, 25);
@@ -10090,8 +10859,8 @@
             // 
             // upnlScanRcpBack1
             // 
-            appearance532.BackColor = System.Drawing.Color.Gray;
-            this.upnlScanRcpBack1.Appearance = appearance532;
+            appearance599.BackColor = System.Drawing.Color.Gray;
+            this.upnlScanRcpBack1.Appearance = appearance599;
             // 
             // upnlScanRcpBack1.ClientArea
             // 
@@ -10104,8 +10873,8 @@
             // 
             // upnlScanRecipe1
             // 
-            appearance533.BackColor = System.Drawing.Color.White;
-            this.upnlScanRecipe1.Appearance = appearance533;
+            appearance600.BackColor = System.Drawing.Color.White;
+            this.upnlScanRecipe1.Appearance = appearance600;
             // 
             // upnlScanRecipe1.ClientArea
             // 
@@ -10120,14 +10889,14 @@
             // 
             // ulblScanRecipe1
             // 
-            appearance534.BackColor = System.Drawing.Color.DimGray;
-            appearance534.BackColor2 = System.Drawing.Color.Gray;
-            appearance534.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance534.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance534.ForeColor = System.Drawing.Color.White;
-            appearance534.TextHAlignAsString = "Left";
-            appearance534.TextVAlignAsString = "Middle";
-            this.ulblScanRecipe1.Appearance = appearance534;
+            appearance601.BackColor = System.Drawing.Color.DimGray;
+            appearance601.BackColor2 = System.Drawing.Color.Gray;
+            appearance601.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance601.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance601.ForeColor = System.Drawing.Color.White;
+            appearance601.TextHAlignAsString = "Left";
+            appearance601.TextVAlignAsString = "Middle";
+            this.ulblScanRecipe1.Appearance = appearance601;
             this.ulblScanRecipe1.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScanRecipe1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScanRecipe1.Location = new System.Drawing.Point(3, 3);
@@ -10139,10 +10908,10 @@
             // 
             // utxtScanRecipe1
             // 
-            appearance535.BackColor = System.Drawing.SystemColors.Control;
-            appearance535.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance535.TextHAlignAsString = "Right";
-            this.utxtScanRecipe1.Appearance = appearance535;
+            appearance602.BackColor = System.Drawing.SystemColors.Control;
+            appearance602.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance602.TextHAlignAsString = "Right";
+            this.utxtScanRecipe1.Appearance = appearance602;
             this.utxtScanRecipe1.AutoSize = false;
             this.utxtScanRecipe1.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScanRecipe1.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10155,16 +10924,16 @@
             // 
             // ubtnScanRecipe1
             // 
-            appearance536.BackColor = System.Drawing.Color.DarkGray;
-            appearance536.BackColor2 = System.Drawing.Color.DimGray;
-            appearance536.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance536.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ubtnScanRecipe1.Appearance = appearance536;
+            appearance603.BackColor = System.Drawing.Color.DarkGray;
+            appearance603.BackColor2 = System.Drawing.Color.DimGray;
+            appearance603.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance603.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ubtnScanRecipe1.Appearance = appearance603;
             this.ubtnScanRecipe1.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.ubtnScanRecipe1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance537.BorderColor = System.Drawing.Color.White;
-            appearance537.ForeColor = System.Drawing.Color.White;
-            this.ubtnScanRecipe1.HotTrackAppearance = appearance537;
+            appearance604.BorderColor = System.Drawing.Color.White;
+            appearance604.ForeColor = System.Drawing.Color.White;
+            this.ubtnScanRecipe1.HotTrackAppearance = appearance604;
             this.ubtnScanRecipe1.Location = new System.Drawing.Point(351, 3);
             this.ubtnScanRecipe1.Name = "ubtnScanRecipe1";
             this.ubtnScanRecipe1.Size = new System.Drawing.Size(80, 25);
@@ -10174,8 +10943,8 @@
             // 
             // upnlScan7Back
             // 
-            appearance538.BackColor = System.Drawing.Color.DimGray;
-            this.upnlScan7Back.Appearance = appearance538;
+            appearance605.BackColor = System.Drawing.Color.DimGray;
+            this.upnlScan7Back.Appearance = appearance605;
             // 
             // upnlScan7Back.ClientArea
             // 
@@ -10188,8 +10957,8 @@
             // 
             // upnlScan7
             // 
-            appearance539.BackColor = System.Drawing.Color.White;
-            this.upnlScan7.Appearance = appearance539;
+            appearance606.BackColor = System.Drawing.Color.White;
+            this.upnlScan7.Appearance = appearance606;
             // 
             // upnlScan7.ClientArea
             // 
@@ -10213,10 +10982,10 @@
             // 
             // uchkScan7
             // 
-            appearance540.BackColor = System.Drawing.Color.Gray;
-            appearance540.FontData.BoldAsString = "True";
-            appearance540.ForeColor = System.Drawing.Color.White;
-            this.uchkScan7.Appearance = appearance540;
+            appearance607.BackColor = System.Drawing.Color.Gray;
+            appearance607.FontData.BoldAsString = "True";
+            appearance607.ForeColor = System.Drawing.Color.White;
+            this.uchkScan7.Appearance = appearance607;
             this.uchkScan7.AutoSize = true;
             this.uchkScan7.BackColor = System.Drawing.Color.Gray;
             this.uchkScan7.BackColorInternal = System.Drawing.Color.Gray;
@@ -10228,10 +10997,10 @@
             // 
             // utxtScan7LightValue2
             // 
-            appearance541.BackColor = System.Drawing.SystemColors.Control;
-            appearance541.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance541.TextHAlignAsString = "Right";
-            this.utxtScan7LightValue2.Appearance = appearance541;
+            appearance608.BackColor = System.Drawing.SystemColors.Control;
+            appearance608.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance608.TextHAlignAsString = "Right";
+            this.utxtScan7LightValue2.Appearance = appearance608;
             this.utxtScan7LightValue2.AutoSize = false;
             this.utxtScan7LightValue2.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan7LightValue2.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10244,16 +11013,16 @@
             // 
             // ubtnScan7LightPos
             // 
-            appearance542.BackColor = System.Drawing.Color.DarkGray;
-            appearance542.BackColor2 = System.Drawing.Color.DimGray;
-            appearance542.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance542.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ubtnScan7LightPos.Appearance = appearance542;
+            appearance609.BackColor = System.Drawing.Color.DarkGray;
+            appearance609.BackColor2 = System.Drawing.Color.DimGray;
+            appearance609.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance609.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ubtnScan7LightPos.Appearance = appearance609;
             this.ubtnScan7LightPos.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.ubtnScan7LightPos.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance543.BorderColor = System.Drawing.Color.White;
-            appearance543.ForeColor = System.Drawing.Color.White;
-            this.ubtnScan7LightPos.HotTrackAppearance = appearance543;
+            appearance610.BorderColor = System.Drawing.Color.White;
+            appearance610.ForeColor = System.Drawing.Color.White;
+            this.ubtnScan7LightPos.HotTrackAppearance = appearance610;
             this.ubtnScan7LightPos.Location = new System.Drawing.Point(313, 84);
             this.ubtnScan7LightPos.Name = "ubtnScan7LightPos";
             this.ubtnScan7LightPos.Size = new System.Drawing.Size(81, 25);
@@ -10263,14 +11032,14 @@
             // 
             // ulblScan7LightPos
             // 
-            appearance544.BackColor = System.Drawing.Color.DimGray;
-            appearance544.BackColor2 = System.Drawing.Color.Gray;
-            appearance544.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance544.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance544.ForeColor = System.Drawing.Color.White;
-            appearance544.TextHAlignAsString = "Left";
-            appearance544.TextVAlignAsString = "Middle";
-            this.ulblScan7LightPos.Appearance = appearance544;
+            appearance611.BackColor = System.Drawing.Color.DimGray;
+            appearance611.BackColor2 = System.Drawing.Color.Gray;
+            appearance611.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance611.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance611.ForeColor = System.Drawing.Color.White;
+            appearance611.TextHAlignAsString = "Left";
+            appearance611.TextVAlignAsString = "Middle";
+            this.ulblScan7LightPos.Appearance = appearance611;
             this.ulblScan7LightPos.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScan7LightPos.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScan7LightPos.Location = new System.Drawing.Point(3, 84);
@@ -10282,10 +11051,10 @@
             // 
             // utxtScan7LightPos
             // 
-            appearance545.BackColor = System.Drawing.SystemColors.Control;
-            appearance545.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance545.TextHAlignAsString = "Right";
-            this.utxtScan7LightPos.Appearance = appearance545;
+            appearance612.BackColor = System.Drawing.SystemColors.Control;
+            appearance612.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance612.TextHAlignAsString = "Right";
+            this.utxtScan7LightPos.Appearance = appearance612;
             this.utxtScan7LightPos.AutoSize = false;
             this.utxtScan7LightPos.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan7LightPos.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10298,10 +11067,10 @@
             // 
             // utxtScan7LightValue1
             // 
-            appearance546.BackColor = System.Drawing.SystemColors.Control;
-            appearance546.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance546.TextHAlignAsString = "Right";
-            this.utxtScan7LightValue1.Appearance = appearance546;
+            appearance613.BackColor = System.Drawing.SystemColors.Control;
+            appearance613.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance613.TextHAlignAsString = "Right";
+            this.utxtScan7LightValue1.Appearance = appearance613;
             this.utxtScan7LightValue1.AutoSize = false;
             this.utxtScan7LightValue1.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan7LightValue1.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10314,14 +11083,14 @@
             // 
             // ulblScan7Name
             // 
-            appearance547.BackColor = System.Drawing.Color.DimGray;
-            appearance547.BackColor2 = System.Drawing.Color.Gray;
-            appearance547.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance547.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance547.ForeColor = System.Drawing.Color.White;
-            appearance547.TextHAlignAsString = "Left";
-            appearance547.TextVAlignAsString = "Middle";
-            this.ulblScan7Name.Appearance = appearance547;
+            appearance614.BackColor = System.Drawing.Color.DimGray;
+            appearance614.BackColor2 = System.Drawing.Color.Gray;
+            appearance614.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance614.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance614.ForeColor = System.Drawing.Color.White;
+            appearance614.TextHAlignAsString = "Left";
+            appearance614.TextVAlignAsString = "Middle";
+            this.ulblScan7Name.Appearance = appearance614;
             this.ulblScan7Name.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScan7Name.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScan7Name.Location = new System.Drawing.Point(3, 3);
@@ -10333,14 +11102,14 @@
             // 
             // ulblScan7LightValue
             // 
-            appearance548.BackColor = System.Drawing.Color.DimGray;
-            appearance548.BackColor2 = System.Drawing.Color.Gray;
-            appearance548.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance548.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance548.ForeColor = System.Drawing.Color.White;
-            appearance548.TextHAlignAsString = "Left";
-            appearance548.TextVAlignAsString = "Middle";
-            this.ulblScan7LightValue.Appearance = appearance548;
+            appearance615.BackColor = System.Drawing.Color.DimGray;
+            appearance615.BackColor2 = System.Drawing.Color.Gray;
+            appearance615.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance615.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance615.ForeColor = System.Drawing.Color.White;
+            appearance615.TextHAlignAsString = "Left";
+            appearance615.TextVAlignAsString = "Middle";
+            this.ulblScan7LightValue.Appearance = appearance615;
             this.ulblScan7LightValue.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScan7LightValue.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScan7LightValue.Location = new System.Drawing.Point(3, 57);
@@ -10352,10 +11121,10 @@
             // 
             // utxtScan7Name
             // 
-            appearance549.BackColor = System.Drawing.SystemColors.Control;
-            appearance549.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance549.TextHAlignAsString = "Right";
-            this.utxtScan7Name.Appearance = appearance549;
+            appearance616.BackColor = System.Drawing.SystemColors.Control;
+            appearance616.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance616.TextHAlignAsString = "Right";
+            this.utxtScan7Name.Appearance = appearance616;
             this.utxtScan7Name.AutoSize = false;
             this.utxtScan7Name.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan7Name.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10368,14 +11137,14 @@
             // 
             // ulblScan7CameraPos
             // 
-            appearance550.BackColor = System.Drawing.Color.DimGray;
-            appearance550.BackColor2 = System.Drawing.Color.Gray;
-            appearance550.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance550.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance550.ForeColor = System.Drawing.Color.White;
-            appearance550.TextHAlignAsString = "Left";
-            appearance550.TextVAlignAsString = "Middle";
-            this.ulblScan7CameraPos.Appearance = appearance550;
+            appearance617.BackColor = System.Drawing.Color.DimGray;
+            appearance617.BackColor2 = System.Drawing.Color.Gray;
+            appearance617.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance617.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance617.ForeColor = System.Drawing.Color.White;
+            appearance617.TextHAlignAsString = "Left";
+            appearance617.TextVAlignAsString = "Middle";
+            this.ulblScan7CameraPos.Appearance = appearance617;
             this.ulblScan7CameraPos.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScan7CameraPos.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScan7CameraPos.Location = new System.Drawing.Point(3, 30);
@@ -10387,16 +11156,16 @@
             // 
             // ubtnScan7CameraPos
             // 
-            appearance551.BackColor = System.Drawing.Color.DarkGray;
-            appearance551.BackColor2 = System.Drawing.Color.DimGray;
-            appearance551.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance551.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ubtnScan7CameraPos.Appearance = appearance551;
+            appearance618.BackColor = System.Drawing.Color.DarkGray;
+            appearance618.BackColor2 = System.Drawing.Color.DimGray;
+            appearance618.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance618.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ubtnScan7CameraPos.Appearance = appearance618;
             this.ubtnScan7CameraPos.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.ubtnScan7CameraPos.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance552.BorderColor = System.Drawing.Color.White;
-            appearance552.ForeColor = System.Drawing.Color.White;
-            this.ubtnScan7CameraPos.HotTrackAppearance = appearance552;
+            appearance619.BorderColor = System.Drawing.Color.White;
+            appearance619.ForeColor = System.Drawing.Color.White;
+            this.ubtnScan7CameraPos.HotTrackAppearance = appearance619;
             this.ubtnScan7CameraPos.Location = new System.Drawing.Point(313, 30);
             this.ubtnScan7CameraPos.Name = "ubtnScan7CameraPos";
             this.ubtnScan7CameraPos.Size = new System.Drawing.Size(81, 25);
@@ -10406,10 +11175,10 @@
             // 
             // utxtScan7CameraPos
             // 
-            appearance553.BackColor = System.Drawing.SystemColors.Control;
-            appearance553.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance553.TextHAlignAsString = "Right";
-            this.utxtScan7CameraPos.Appearance = appearance553;
+            appearance620.BackColor = System.Drawing.SystemColors.Control;
+            appearance620.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance620.TextHAlignAsString = "Right";
+            this.utxtScan7CameraPos.Appearance = appearance620;
             this.utxtScan7CameraPos.AutoSize = false;
             this.utxtScan7CameraPos.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan7CameraPos.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10422,8 +11191,8 @@
             // 
             // upnlScan1Back
             // 
-            appearance554.BackColor = System.Drawing.Color.DimGray;
-            this.upnlScan1Back.Appearance = appearance554;
+            appearance621.BackColor = System.Drawing.Color.DimGray;
+            this.upnlScan1Back.Appearance = appearance621;
             // 
             // upnlScan1Back.ClientArea
             // 
@@ -10436,8 +11205,8 @@
             // 
             // upnlScan1
             // 
-            appearance555.BackColor = System.Drawing.Color.White;
-            this.upnlScan1.Appearance = appearance555;
+            appearance622.BackColor = System.Drawing.Color.White;
+            this.upnlScan1.Appearance = appearance622;
             // 
             // upnlScan1.ClientArea
             // 
@@ -10461,10 +11230,10 @@
             // 
             // uchkScan1
             // 
-            appearance556.BackColor = System.Drawing.Color.Gray;
-            appearance556.FontData.BoldAsString = "True";
-            appearance556.ForeColor = System.Drawing.Color.White;
-            this.uchkScan1.Appearance = appearance556;
+            appearance623.BackColor = System.Drawing.Color.Gray;
+            appearance623.FontData.BoldAsString = "True";
+            appearance623.ForeColor = System.Drawing.Color.White;
+            this.uchkScan1.Appearance = appearance623;
             this.uchkScan1.AutoSize = true;
             this.uchkScan1.BackColor = System.Drawing.Color.Gray;
             this.uchkScan1.BackColorInternal = System.Drawing.Color.Gray;
@@ -10476,10 +11245,10 @@
             // 
             // utxtScan1LightValue2
             // 
-            appearance557.BackColor = System.Drawing.SystemColors.Control;
-            appearance557.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance557.TextHAlignAsString = "Right";
-            this.utxtScan1LightValue2.Appearance = appearance557;
+            appearance624.BackColor = System.Drawing.SystemColors.Control;
+            appearance624.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance624.TextHAlignAsString = "Right";
+            this.utxtScan1LightValue2.Appearance = appearance624;
             this.utxtScan1LightValue2.AutoSize = false;
             this.utxtScan1LightValue2.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan1LightValue2.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10492,16 +11261,16 @@
             // 
             // ubtnScan1LightPos
             // 
-            appearance558.BackColor = System.Drawing.Color.DarkGray;
-            appearance558.BackColor2 = System.Drawing.Color.DimGray;
-            appearance558.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance558.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ubtnScan1LightPos.Appearance = appearance558;
+            appearance625.BackColor = System.Drawing.Color.DarkGray;
+            appearance625.BackColor2 = System.Drawing.Color.DimGray;
+            appearance625.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance625.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ubtnScan1LightPos.Appearance = appearance625;
             this.ubtnScan1LightPos.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.ubtnScan1LightPos.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance559.BorderColor = System.Drawing.Color.White;
-            appearance559.ForeColor = System.Drawing.Color.White;
-            this.ubtnScan1LightPos.HotTrackAppearance = appearance559;
+            appearance626.BorderColor = System.Drawing.Color.White;
+            appearance626.ForeColor = System.Drawing.Color.White;
+            this.ubtnScan1LightPos.HotTrackAppearance = appearance626;
             this.ubtnScan1LightPos.Location = new System.Drawing.Point(313, 84);
             this.ubtnScan1LightPos.Name = "ubtnScan1LightPos";
             this.ubtnScan1LightPos.Size = new System.Drawing.Size(81, 25);
@@ -10511,14 +11280,14 @@
             // 
             // ulblScan1LightPos
             // 
-            appearance560.BackColor = System.Drawing.Color.DimGray;
-            appearance560.BackColor2 = System.Drawing.Color.Gray;
-            appearance560.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance560.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance560.ForeColor = System.Drawing.Color.White;
-            appearance560.TextHAlignAsString = "Left";
-            appearance560.TextVAlignAsString = "Middle";
-            this.ulblScan1LightPos.Appearance = appearance560;
+            appearance627.BackColor = System.Drawing.Color.DimGray;
+            appearance627.BackColor2 = System.Drawing.Color.Gray;
+            appearance627.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance627.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance627.ForeColor = System.Drawing.Color.White;
+            appearance627.TextHAlignAsString = "Left";
+            appearance627.TextVAlignAsString = "Middle";
+            this.ulblScan1LightPos.Appearance = appearance627;
             this.ulblScan1LightPos.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScan1LightPos.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScan1LightPos.Location = new System.Drawing.Point(3, 84);
@@ -10530,10 +11299,10 @@
             // 
             // utxtScan1LightPos
             // 
-            appearance561.BackColor = System.Drawing.SystemColors.Control;
-            appearance561.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance561.TextHAlignAsString = "Right";
-            this.utxtScan1LightPos.Appearance = appearance561;
+            appearance628.BackColor = System.Drawing.SystemColors.Control;
+            appearance628.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance628.TextHAlignAsString = "Right";
+            this.utxtScan1LightPos.Appearance = appearance628;
             this.utxtScan1LightPos.AutoSize = false;
             this.utxtScan1LightPos.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan1LightPos.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10546,10 +11315,10 @@
             // 
             // utxtScan1LightValue1
             // 
-            appearance562.BackColor = System.Drawing.SystemColors.Control;
-            appearance562.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance562.TextHAlignAsString = "Right";
-            this.utxtScan1LightValue1.Appearance = appearance562;
+            appearance629.BackColor = System.Drawing.SystemColors.Control;
+            appearance629.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance629.TextHAlignAsString = "Right";
+            this.utxtScan1LightValue1.Appearance = appearance629;
             this.utxtScan1LightValue1.AutoSize = false;
             this.utxtScan1LightValue1.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan1LightValue1.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10562,14 +11331,14 @@
             // 
             // ulblScan1Name
             // 
-            appearance563.BackColor = System.Drawing.Color.DimGray;
-            appearance563.BackColor2 = System.Drawing.Color.Gray;
-            appearance563.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance563.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance563.ForeColor = System.Drawing.Color.White;
-            appearance563.TextHAlignAsString = "Left";
-            appearance563.TextVAlignAsString = "Middle";
-            this.ulblScan1Name.Appearance = appearance563;
+            appearance630.BackColor = System.Drawing.Color.DimGray;
+            appearance630.BackColor2 = System.Drawing.Color.Gray;
+            appearance630.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance630.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance630.ForeColor = System.Drawing.Color.White;
+            appearance630.TextHAlignAsString = "Left";
+            appearance630.TextVAlignAsString = "Middle";
+            this.ulblScan1Name.Appearance = appearance630;
             this.ulblScan1Name.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScan1Name.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScan1Name.Location = new System.Drawing.Point(3, 3);
@@ -10581,14 +11350,14 @@
             // 
             // ulblScan1LightValue
             // 
-            appearance564.BackColor = System.Drawing.Color.DimGray;
-            appearance564.BackColor2 = System.Drawing.Color.Gray;
-            appearance564.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance564.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance564.ForeColor = System.Drawing.Color.White;
-            appearance564.TextHAlignAsString = "Left";
-            appearance564.TextVAlignAsString = "Middle";
-            this.ulblScan1LightValue.Appearance = appearance564;
+            appearance631.BackColor = System.Drawing.Color.DimGray;
+            appearance631.BackColor2 = System.Drawing.Color.Gray;
+            appearance631.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance631.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance631.ForeColor = System.Drawing.Color.White;
+            appearance631.TextHAlignAsString = "Left";
+            appearance631.TextVAlignAsString = "Middle";
+            this.ulblScan1LightValue.Appearance = appearance631;
             this.ulblScan1LightValue.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScan1LightValue.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScan1LightValue.Location = new System.Drawing.Point(3, 57);
@@ -10600,10 +11369,10 @@
             // 
             // utxtScan1Name
             // 
-            appearance565.BackColor = System.Drawing.SystemColors.Control;
-            appearance565.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance565.TextHAlignAsString = "Right";
-            this.utxtScan1Name.Appearance = appearance565;
+            appearance632.BackColor = System.Drawing.SystemColors.Control;
+            appearance632.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance632.TextHAlignAsString = "Right";
+            this.utxtScan1Name.Appearance = appearance632;
             this.utxtScan1Name.AutoSize = false;
             this.utxtScan1Name.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan1Name.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10616,14 +11385,14 @@
             // 
             // ulblScan1CameraPos
             // 
-            appearance566.BackColor = System.Drawing.Color.DimGray;
-            appearance566.BackColor2 = System.Drawing.Color.Gray;
-            appearance566.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance566.BorderColor = System.Drawing.Color.RoyalBlue;
-            appearance566.ForeColor = System.Drawing.Color.White;
-            appearance566.TextHAlignAsString = "Left";
-            appearance566.TextVAlignAsString = "Middle";
-            this.ulblScan1CameraPos.Appearance = appearance566;
+            appearance633.BackColor = System.Drawing.Color.DimGray;
+            appearance633.BackColor2 = System.Drawing.Color.Gray;
+            appearance633.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance633.BorderColor = System.Drawing.Color.RoyalBlue;
+            appearance633.ForeColor = System.Drawing.Color.White;
+            appearance633.TextHAlignAsString = "Left";
+            appearance633.TextVAlignAsString = "Middle";
+            this.ulblScan1CameraPos.Appearance = appearance633;
             this.ulblScan1CameraPos.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Solid;
             this.ulblScan1CameraPos.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulblScan1CameraPos.Location = new System.Drawing.Point(3, 30);
@@ -10635,16 +11404,16 @@
             // 
             // ubtnScan1CameraPos
             // 
-            appearance567.BackColor = System.Drawing.Color.DarkGray;
-            appearance567.BackColor2 = System.Drawing.Color.DimGray;
-            appearance567.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance567.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ubtnScan1CameraPos.Appearance = appearance567;
+            appearance634.BackColor = System.Drawing.Color.DarkGray;
+            appearance634.BackColor2 = System.Drawing.Color.DimGray;
+            appearance634.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance634.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ubtnScan1CameraPos.Appearance = appearance634;
             this.ubtnScan1CameraPos.ButtonStyle = Infragistics.Win.UIElementButtonStyle.ButtonSoftExtended;
             this.ubtnScan1CameraPos.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            appearance568.BorderColor = System.Drawing.Color.White;
-            appearance568.ForeColor = System.Drawing.Color.White;
-            this.ubtnScan1CameraPos.HotTrackAppearance = appearance568;
+            appearance635.BorderColor = System.Drawing.Color.White;
+            appearance635.ForeColor = System.Drawing.Color.White;
+            this.ubtnScan1CameraPos.HotTrackAppearance = appearance635;
             this.ubtnScan1CameraPos.Location = new System.Drawing.Point(313, 30);
             this.ubtnScan1CameraPos.Name = "ubtnScan1CameraPos";
             this.ubtnScan1CameraPos.Size = new System.Drawing.Size(81, 25);
@@ -10654,10 +11423,10 @@
             // 
             // utxtScan1CameraPos
             // 
-            appearance569.BackColor = System.Drawing.SystemColors.Control;
-            appearance569.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance569.TextHAlignAsString = "Right";
-            this.utxtScan1CameraPos.Appearance = appearance569;
+            appearance636.BackColor = System.Drawing.SystemColors.Control;
+            appearance636.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance636.TextHAlignAsString = "Right";
+            this.utxtScan1CameraPos.Appearance = appearance636;
             this.utxtScan1CameraPos.AutoSize = false;
             this.utxtScan1CameraPos.BackColor = System.Drawing.SystemColors.Control;
             this.utxtScan1CameraPos.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.VisualStudio2005;
@@ -10677,9 +11446,9 @@
             // 
             // upnlSysLogBack
             // 
-            appearance570.BackColor = System.Drawing.Color.Silver;
-            appearance570.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
-            this.upnlSysLogBack.Appearance = appearance570;
+            appearance637.BackColor = System.Drawing.Color.Silver;
+            appearance637.BackGradientAlignment = Infragistics.Win.GradientAlignment.Container;
+            this.upnlSysLogBack.Appearance = appearance637;
             // 
             // upnlSysLogBack.ClientArea
             // 
@@ -10694,8 +11463,8 @@
             // 
             // ultraPanel6
             // 
-            appearance571.BackColor = System.Drawing.Color.DimGray;
-            this.ultraPanel6.Appearance = appearance571;
+            appearance638.BackColor = System.Drawing.Color.DimGray;
+            this.ultraPanel6.Appearance = appearance638;
             // 
             // ultraPanel6.ClientArea
             // 
@@ -10707,8 +11476,8 @@
             // 
             // utxtSysLog001
             // 
-            appearance572.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.utxtSysLog001.Appearance = appearance572;
+            appearance639.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.utxtSysLog001.Appearance = appearance639;
             this.utxtSysLog001.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.utxtSysLog001.Location = new System.Drawing.Point(3, 3);
             this.utxtSysLog001.Multiline = true;
@@ -10721,58 +11490,58 @@
             // uDS_Recipe_Gap
             // 
             this.uDS_Recipe_Gap.Band.Columns.AddRange(new object[] {
-            ultraDataColumn83,
-            ultraDataColumn84,
-            ultraDataColumn85,
-            ultraDataColumn86,
-            ultraDataColumn87,
-            ultraDataColumn88,
-            ultraDataColumn89,
-            ultraDataColumn90,
-            ultraDataColumn91,
-            ultraDataColumn92,
-            ultraDataColumn93});
+            ultraDataColumn117,
+            ultraDataColumn118,
+            ultraDataColumn119,
+            ultraDataColumn120,
+            ultraDataColumn121,
+            ultraDataColumn122,
+            ultraDataColumn123,
+            ultraDataColumn124,
+            ultraDataColumn125,
+            ultraDataColumn126,
+            ultraDataColumn127});
             // 
             // uDS_Offset_BiCell
             // 
             this.uDS_Offset_BiCell.Band.Columns.AddRange(new object[] {
-            ultraDataColumn94,
-            ultraDataColumn95,
-            ultraDataColumn96});
+            ultraDataColumn128,
+            ultraDataColumn129,
+            ultraDataColumn130});
             // 
             // uDS_Test_BiCell
             // 
             this.uDS_Test_BiCell.Band.Columns.AddRange(new object[] {
-            ultraDataColumn97,
-            ultraDataColumn98,
-            ultraDataColumn99,
-            ultraDataColumn100,
-            ultraDataColumn101,
-            ultraDataColumn102,
-            ultraDataColumn103,
-            ultraDataColumn104,
-            ultraDataColumn105,
-            ultraDataColumn106});
+            ultraDataColumn131,
+            ultraDataColumn132,
+            ultraDataColumn133,
+            ultraDataColumn134,
+            ultraDataColumn135,
+            ultraDataColumn136,
+            ultraDataColumn137,
+            ultraDataColumn138,
+            ultraDataColumn139,
+            ultraDataColumn140});
             // 
             // uDS_Recipe_BiCell
             // 
             this.uDS_Recipe_BiCell.Band.Columns.AddRange(new object[] {
-            ultraDataColumn107,
-            ultraDataColumn108,
-            ultraDataColumn109,
-            ultraDataColumn110,
-            ultraDataColumn111,
-            ultraDataColumn112,
-            ultraDataColumn113,
-            ultraDataColumn114,
-            ultraDataColumn115,
-            ultraDataColumn116,
-            ultraDataColumn117});
+            ultraDataColumn141,
+            ultraDataColumn142,
+            ultraDataColumn143,
+            ultraDataColumn144,
+            ultraDataColumn145,
+            ultraDataColumn146,
+            ultraDataColumn147,
+            ultraDataColumn148,
+            ultraDataColumn149,
+            ultraDataColumn150,
+            ultraDataColumn151});
             // 
             // upnlToolbar
             // 
-            appearance573.BackColor = System.Drawing.SystemColors.Control;
-            this.upnlToolbar.Appearance = appearance573;
+            appearance640.BackColor = System.Drawing.SystemColors.Control;
+            this.upnlToolbar.Appearance = appearance640;
             // 
             // upnlToolbar.ClientArea
             // 
@@ -10790,9 +11559,9 @@
             // 
             // ultraPanel7
             // 
-            appearance574.BackColor = System.Drawing.Color.DimGray;
-            appearance574.BackColor2 = System.Drawing.Color.DimGray;
-            this.ultraPanel7.Appearance = appearance574;
+            appearance641.BackColor = System.Drawing.Color.DimGray;
+            appearance641.BackColor2 = System.Drawing.Color.DimGray;
+            this.ultraPanel7.Appearance = appearance641;
             // 
             // ultraPanel7.ClientArea
             // 
@@ -10807,21 +11576,21 @@
             this.ubtnToolbarModel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            appearance575.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            appearance575.FontData.Name = "Terminator Real NFI";
-            appearance575.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance575.TextHAlignAsString = "Center";
-            appearance575.TextVAlignAsString = "Bottom";
-            this.ubtnToolbarModel.Appearance = appearance575;
+            appearance642.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance642.FontData.Name = "Terminator Real NFI";
+            appearance642.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance642.TextHAlignAsString = "Center";
+            appearance642.TextVAlignAsString = "Bottom";
+            this.ubtnToolbarModel.Appearance = appearance642;
             this.ubtnToolbarModel.ButtonStyle = Infragistics.Win.UIElementButtonStyle.VisualStudio2005Button;
             this.ubtnToolbarModel.Font = new System.Drawing.Font("MS Reference Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            appearance576.BorderColor = System.Drawing.Color.White;
-            appearance576.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ubtnToolbarModel.HotTrackAppearance = appearance576;
+            appearance643.BorderColor = System.Drawing.Color.White;
+            appearance643.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ubtnToolbarModel.HotTrackAppearance = appearance643;
             this.ubtnToolbarModel.Location = new System.Drawing.Point(2, 2);
             this.ubtnToolbarModel.Name = "ubtnToolbarModel";
-            appearance577.BorderColor = System.Drawing.Color.White;
-            this.ubtnToolbarModel.PressedAppearance = appearance577;
+            appearance644.BorderColor = System.Drawing.Color.White;
+            this.ubtnToolbarModel.PressedAppearance = appearance644;
             this.ubtnToolbarModel.ShowFocusRect = false;
             this.ubtnToolbarModel.ShowOutline = false;
             this.ubtnToolbarModel.Size = new System.Drawing.Size(407, 38);
@@ -10835,24 +11604,24 @@
             this.ubtnToolbarExit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            appearance578.BackColor = System.Drawing.Color.DarkGray;
-            appearance578.BackColor2 = System.Drawing.Color.DimGray;
-            appearance578.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance578.FontData.Name = "Terminator Real NFI";
-            appearance578.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance578.TextHAlignAsString = "Center";
-            appearance578.TextVAlignAsString = "Bottom";
-            this.ubtnToolbarExit.Appearance = appearance578;
+            appearance645.BackColor = System.Drawing.Color.DarkGray;
+            appearance645.BackColor2 = System.Drawing.Color.DimGray;
+            appearance645.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance645.FontData.Name = "Terminator Real NFI";
+            appearance645.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance645.TextHAlignAsString = "Center";
+            appearance645.TextVAlignAsString = "Bottom";
+            this.ubtnToolbarExit.Appearance = appearance645;
             this.ubtnToolbarExit.ButtonStyle = Infragistics.Win.UIElementButtonStyle.VisualStudio2005Button;
             this.ubtnToolbarExit.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            appearance579.BorderColor = System.Drawing.Color.White;
-            appearance579.ForeColor = System.Drawing.Color.White;
-            this.ubtnToolbarExit.HotTrackAppearance = appearance579;
+            appearance646.BorderColor = System.Drawing.Color.White;
+            appearance646.ForeColor = System.Drawing.Color.White;
+            this.ubtnToolbarExit.HotTrackAppearance = appearance646;
             this.ubtnToolbarExit.Location = new System.Drawing.Point(1156, 3);
             this.ubtnToolbarExit.Name = "ubtnToolbarExit";
             this.ubtnToolbarExit.Padding = new System.Drawing.Size(0, 5);
-            appearance580.BorderColor = System.Drawing.Color.White;
-            this.ubtnToolbarExit.PressedAppearance = appearance580;
+            appearance647.BorderColor = System.Drawing.Color.White;
+            this.ubtnToolbarExit.PressedAppearance = appearance647;
             this.ubtnToolbarExit.ShowFocusRect = false;
             this.ubtnToolbarExit.ShowOutline = false;
             this.ubtnToolbarExit.Size = new System.Drawing.Size(107, 42);
@@ -10867,23 +11636,23 @@
             this.ubtnToolbarOpen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            appearance581.BackColor = System.Drawing.Color.DarkGray;
-            appearance581.BackColor2 = System.Drawing.Color.DimGray;
-            appearance581.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance581.FontData.Name = "Terminator Real NFI";
-            appearance581.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance581.TextVAlignAsString = "Bottom";
-            this.ubtnToolbarOpen.Appearance = appearance581;
+            appearance648.BackColor = System.Drawing.Color.DarkGray;
+            appearance648.BackColor2 = System.Drawing.Color.DimGray;
+            appearance648.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance648.FontData.Name = "Terminator Real NFI";
+            appearance648.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance648.TextVAlignAsString = "Bottom";
+            this.ubtnToolbarOpen.Appearance = appearance648;
             this.ubtnToolbarOpen.ButtonStyle = Infragistics.Win.UIElementButtonStyle.VisualStudio2005Button;
             this.ubtnToolbarOpen.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            appearance582.BorderColor = System.Drawing.Color.White;
-            appearance582.ForeColor = System.Drawing.Color.White;
-            this.ubtnToolbarOpen.HotTrackAppearance = appearance582;
+            appearance649.BorderColor = System.Drawing.Color.White;
+            appearance649.ForeColor = System.Drawing.Color.White;
+            this.ubtnToolbarOpen.HotTrackAppearance = appearance649;
             this.ubtnToolbarOpen.Location = new System.Drawing.Point(914, 3);
             this.ubtnToolbarOpen.Name = "ubtnToolbarOpen";
             this.ubtnToolbarOpen.Padding = new System.Drawing.Size(0, 5);
-            appearance583.BorderColor = System.Drawing.Color.White;
-            this.ubtnToolbarOpen.PressedAppearance = appearance583;
+            appearance650.BorderColor = System.Drawing.Color.White;
+            this.ubtnToolbarOpen.PressedAppearance = appearance650;
             this.ubtnToolbarOpen.ShowFocusRect = false;
             this.ubtnToolbarOpen.ShowOutline = false;
             this.ubtnToolbarOpen.Size = new System.Drawing.Size(118, 42);
@@ -10898,23 +11667,23 @@
             this.ubtnToolbarSave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            appearance584.BackColor = System.Drawing.Color.DarkGray;
-            appearance584.BackColor2 = System.Drawing.Color.DimGray;
-            appearance584.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance584.FontData.Name = "Terminator Real NFI";
-            appearance584.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance584.TextVAlignAsString = "Bottom";
-            this.ubtnToolbarSave.Appearance = appearance584;
+            appearance651.BackColor = System.Drawing.Color.DarkGray;
+            appearance651.BackColor2 = System.Drawing.Color.DimGray;
+            appearance651.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance651.FontData.Name = "Terminator Real NFI";
+            appearance651.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance651.TextVAlignAsString = "Bottom";
+            this.ubtnToolbarSave.Appearance = appearance651;
             this.ubtnToolbarSave.ButtonStyle = Infragistics.Win.UIElementButtonStyle.VisualStudio2005Button;
             this.ubtnToolbarSave.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            appearance585.BorderColor = System.Drawing.Color.White;
-            appearance585.ForeColor = System.Drawing.Color.White;
-            this.ubtnToolbarSave.HotTrackAppearance = appearance585;
+            appearance652.BorderColor = System.Drawing.Color.White;
+            appearance652.ForeColor = System.Drawing.Color.White;
+            this.ubtnToolbarSave.HotTrackAppearance = appearance652;
             this.ubtnToolbarSave.Location = new System.Drawing.Point(1035, 3);
             this.ubtnToolbarSave.Name = "ubtnToolbarSave";
             this.ubtnToolbarSave.Padding = new System.Drawing.Size(0, 5);
-            appearance586.BorderColor = System.Drawing.Color.White;
-            this.ubtnToolbarSave.PressedAppearance = appearance586;
+            appearance653.BorderColor = System.Drawing.Color.White;
+            this.ubtnToolbarSave.PressedAppearance = appearance653;
             this.ubtnToolbarSave.ShowFocusRect = false;
             this.ubtnToolbarSave.ShowOutline = false;
             this.ubtnToolbarSave.Size = new System.Drawing.Size(118, 42);
@@ -10929,24 +11698,24 @@
             this.ubtnToolbarApply.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            appearance587.BackColor = System.Drawing.Color.DarkGray;
-            appearance587.BackColor2 = System.Drawing.Color.DimGray;
-            appearance587.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance587.FontData.Name = "Terminator Real NFI";
-            appearance587.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance587.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance587.TextVAlignAsString = "Bottom";
-            this.ubtnToolbarApply.Appearance = appearance587;
+            appearance654.BackColor = System.Drawing.Color.DarkGray;
+            appearance654.BackColor2 = System.Drawing.Color.DimGray;
+            appearance654.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance654.FontData.Name = "Terminator Real NFI";
+            appearance654.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance654.ForeColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance654.TextVAlignAsString = "Bottom";
+            this.ubtnToolbarApply.Appearance = appearance654;
             this.ubtnToolbarApply.ButtonStyle = Infragistics.Win.UIElementButtonStyle.VisualStudio2005Button;
             this.ubtnToolbarApply.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            appearance588.BorderColor = System.Drawing.Color.White;
-            appearance588.ForeColor = System.Drawing.Color.White;
-            this.ubtnToolbarApply.HotTrackAppearance = appearance588;
+            appearance655.BorderColor = System.Drawing.Color.White;
+            appearance655.ForeColor = System.Drawing.Color.White;
+            this.ubtnToolbarApply.HotTrackAppearance = appearance655;
             this.ubtnToolbarApply.Location = new System.Drawing.Point(917, 5);
             this.ubtnToolbarApply.Name = "ubtnToolbarApply";
             this.ubtnToolbarApply.Padding = new System.Drawing.Size(0, 5);
-            appearance589.BorderColor = System.Drawing.Color.White;
-            this.ubtnToolbarApply.PressedAppearance = appearance589;
+            appearance656.BorderColor = System.Drawing.Color.White;
+            this.ubtnToolbarApply.PressedAppearance = appearance656;
             this.ubtnToolbarApply.ShowFocusRect = false;
             this.ubtnToolbarApply.ShowOutline = false;
             this.ubtnToolbarApply.Size = new System.Drawing.Size(20, 21);
@@ -10962,23 +11731,23 @@
             this.ubtnToolbarInspect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            appearance590.BackColor = System.Drawing.Color.DarkGray;
-            appearance590.BackColor2 = System.Drawing.Color.DimGray;
-            appearance590.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance590.FontData.Name = "Terminator Real NFI";
-            appearance590.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance590.TextVAlignAsString = "Bottom";
-            this.ubtnToolbarInspect.Appearance = appearance590;
+            appearance657.BackColor = System.Drawing.Color.DarkGray;
+            appearance657.BackColor2 = System.Drawing.Color.DimGray;
+            appearance657.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance657.FontData.Name = "Terminator Real NFI";
+            appearance657.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance657.TextVAlignAsString = "Bottom";
+            this.ubtnToolbarInspect.Appearance = appearance657;
             this.ubtnToolbarInspect.ButtonStyle = Infragistics.Win.UIElementButtonStyle.VisualStudio2005Button;
             this.ubtnToolbarInspect.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            appearance591.BorderColor = System.Drawing.Color.White;
-            appearance591.ForeColor = System.Drawing.Color.White;
-            this.ubtnToolbarInspect.HotTrackAppearance = appearance591;
+            appearance658.BorderColor = System.Drawing.Color.White;
+            appearance658.ForeColor = System.Drawing.Color.White;
+            this.ubtnToolbarInspect.HotTrackAppearance = appearance658;
             this.ubtnToolbarInspect.Location = new System.Drawing.Point(417, 3);
             this.ubtnToolbarInspect.Name = "ubtnToolbarInspect";
             this.ubtnToolbarInspect.Padding = new System.Drawing.Size(0, 5);
-            appearance592.BorderColor = System.Drawing.Color.White;
-            this.ubtnToolbarInspect.PressedAppearance = appearance592;
+            appearance659.BorderColor = System.Drawing.Color.White;
+            this.ubtnToolbarInspect.PressedAppearance = appearance659;
             this.ubtnToolbarInspect.ShowFocusRect = false;
             this.ubtnToolbarInspect.ShowOutline = false;
             this.ubtnToolbarInspect.Size = new System.Drawing.Size(279, 42);
@@ -10993,24 +11762,24 @@
             this.ubtnToolbarUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            appearance593.BackColor = System.Drawing.Color.DarkGray;
-            appearance593.BackColor2 = System.Drawing.Color.DimGray;
-            appearance593.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance593.FontData.Name = "Terminator Real NFI";
-            appearance593.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance593.TextHAlignAsString = "Center";
-            appearance593.TextVAlignAsString = "Bottom";
-            this.ubtnToolbarUser.Appearance = appearance593;
+            appearance660.BackColor = System.Drawing.Color.DarkGray;
+            appearance660.BackColor2 = System.Drawing.Color.DimGray;
+            appearance660.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance660.FontData.Name = "Terminator Real NFI";
+            appearance660.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance660.TextHAlignAsString = "Center";
+            appearance660.TextVAlignAsString = "Bottom";
+            this.ubtnToolbarUser.Appearance = appearance660;
             this.ubtnToolbarUser.ButtonStyle = Infragistics.Win.UIElementButtonStyle.VisualStudio2005Button;
             this.ubtnToolbarUser.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            appearance594.BorderColor = System.Drawing.Color.White;
-            appearance594.ForeColor = System.Drawing.Color.White;
-            this.ubtnToolbarUser.HotTrackAppearance = appearance594;
+            appearance661.BorderColor = System.Drawing.Color.White;
+            appearance661.ForeColor = System.Drawing.Color.White;
+            this.ubtnToolbarUser.HotTrackAppearance = appearance661;
             this.ubtnToolbarUser.Location = new System.Drawing.Point(699, 3);
             this.ubtnToolbarUser.Name = "ubtnToolbarUser";
             this.ubtnToolbarUser.Padding = new System.Drawing.Size(0, 5);
-            appearance595.BorderColor = System.Drawing.Color.White;
-            this.ubtnToolbarUser.PressedAppearance = appearance595;
+            appearance662.BorderColor = System.Drawing.Color.White;
+            this.ubtnToolbarUser.PressedAppearance = appearance662;
             this.ubtnToolbarUser.ShowFocusRect = false;
             this.ubtnToolbarUser.ShowOutline = false;
             this.ubtnToolbarUser.Size = new System.Drawing.Size(212, 42);
@@ -11161,28 +11930,28 @@
             // 
             this.ufmDlgMain.Form = this;
             this.ufmDlgMain.FormStyleSettings.Caption = "VISION SYSTEM";
-            appearance608.BackColor = System.Drawing.Color.DarkGray;
-            appearance608.BackColor2 = System.Drawing.Color.DimGray;
-            appearance608.FontData.Name = "Terminator Real NFI";
-            appearance608.FontData.SizeInPoints = 14F;
-            appearance608.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance608.TextHAlignAsString = "Left";
-            this.ufmDlgMain.FormStyleSettings.CaptionAreaActiveAppearance = appearance608;
-            appearance609.BackColor = System.Drawing.Color.DarkGray;
-            appearance609.BackColor2 = System.Drawing.Color.DimGray;
-            appearance609.FontData.BoldAsString = "True";
-            appearance609.FontData.Name = "Terminator Real NFI";
-            appearance609.ForeColor = System.Drawing.Color.White;
-            appearance609.TextHAlignAsString = "Left";
-            this.ufmDlgMain.FormStyleSettings.CaptionAreaAppearance = appearance609;
+            appearance675.BackColor = System.Drawing.Color.DarkGray;
+            appearance675.BackColor2 = System.Drawing.Color.DimGray;
+            appearance675.FontData.Name = "Terminator Real NFI";
+            appearance675.FontData.SizeInPoints = 14F;
+            appearance675.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance675.TextHAlignAsString = "Left";
+            this.ufmDlgMain.FormStyleSettings.CaptionAreaActiveAppearance = appearance675;
+            appearance676.BackColor = System.Drawing.Color.DarkGray;
+            appearance676.BackColor2 = System.Drawing.Color.DimGray;
+            appearance676.FontData.BoldAsString = "True";
+            appearance676.FontData.Name = "Terminator Real NFI";
+            appearance676.ForeColor = System.Drawing.Color.White;
+            appearance676.TextHAlignAsString = "Left";
+            this.ufmDlgMain.FormStyleSettings.CaptionAreaAppearance = appearance676;
             this.ufmDlgMain.FormStyleSettings.FormDisplayStyle = Infragistics.Win.UltraWinToolbars.FormDisplayStyle.RoundedFixed;
             this.ufmDlgMain.FormStyleSettings.IsGlassSupported = true;
             this.ufmDlgMain.FormStyleSettings.Style = Infragistics.Win.UltraWinForm.UltraFormStyle.Office2013;
             // 
             // FormDlgMain_Fill_Panel
             // 
-            appearance596.BackColor = System.Drawing.Color.DimGray;
-            this.FormDlgMain_Fill_Panel.Appearance = appearance596;
+            appearance663.BackColor = System.Drawing.Color.DimGray;
+            this.FormDlgMain_Fill_Panel.Appearance = appearance663;
             // 
             // FormDlgMain_Fill_Panel.ClientArea
             // 
@@ -11198,8 +11967,8 @@
             // 
             // ultraPanel1
             // 
-            appearance597.BackColor = System.Drawing.SystemColors.Control;
-            this.ultraPanel1.Appearance = appearance597;
+            appearance664.BackColor = System.Drawing.SystemColors.Control;
+            this.ultraPanel1.Appearance = appearance664;
             // 
             // ultraPanel1.ClientArea
             // 
@@ -11211,10 +11980,10 @@
             // 
             // utabDlgMain
             // 
-            appearance598.FontData.BoldAsString = "True";
-            appearance598.FontData.Name = "굴림";
-            appearance598.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.utabDlgMain.Appearance = appearance598;
+            appearance665.FontData.BoldAsString = "True";
+            appearance665.FontData.Name = "굴림";
+            appearance665.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.utabDlgMain.Appearance = appearance665;
             this.utabDlgMain.Controls.Add(this.ultraTabSharedControlsPage1);
             this.utabDlgMain.Controls.Add(this.ultraTabPageControl1);
             this.utabDlgMain.Controls.Add(this.ultraTabPageControl2);
@@ -11227,20 +11996,20 @@
             this.utabDlgMain.SharedControlsPage = this.ultraTabSharedControlsPage1;
             this.utabDlgMain.Size = new System.Drawing.Size(1260, 828);
             this.utabDlgMain.TabIndex = 11;
-            appearance599.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraTab2.Appearance = appearance599;
+            appearance666.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraTab2.Appearance = appearance666;
             ultraTab2.FixedWidth = 150;
             ultraTab2.Key = "System";
             ultraTab2.TabPage = this.ultraTabPageControl2;
             ultraTab2.Text = "시스템 설정";
-            appearance600.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraTab3.Appearance = appearance600;
+            appearance667.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraTab3.Appearance = appearance667;
             ultraTab3.FixedWidth = 150;
             ultraTab3.Key = "Vision";
             ultraTab3.TabPage = this.ultraTabPageControl3;
             ultraTab3.Text = "비전부 설정";
-            appearance601.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraTab1.Appearance = appearance601;
+            appearance668.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraTab1.Appearance = appearance668;
             ultraTab1.FixedWidth = 150;
             ultraTab1.Key = "Recipe";
             ultraTab1.TabPage = this.ultraTabPageControl1;
@@ -11249,14 +12018,14 @@
             ultraTab4.Key = "Config";
             ultraTab4.TabPage = this.ultraTabPageControl4;
             ultraTab4.Text = "통신부 확인";
-            appearance602.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraTab5.Appearance = appearance602;
+            appearance669.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraTab5.Appearance = appearance669;
             ultraTab5.FixedWidth = 150;
             ultraTab5.Key = "Camera";
             ultraTab5.TabPage = this.ultraTabPageControl5;
             ultraTab5.Text = "기능 테스트";
-            appearance603.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            ultraTab8.Appearance = appearance603;
+            appearance670.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            ultraTab8.Appearance = appearance670;
             ultraTab8.FixedWidth = 150;
             ultraTab8.Key = "LogData";
             ultraTab8.TabPage = this.ultraTabPageControl8;
@@ -11279,10 +12048,10 @@
             // 
             // upnlStatusBarM10
             // 
-            appearance604.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance604.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance604.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            this.upnlStatusBarM10.Appearance = appearance604;
+            appearance671.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance671.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance671.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            this.upnlStatusBarM10.Appearance = appearance671;
             // 
             // upnlStatusBarM10.ClientArea
             // 
@@ -11294,22 +12063,22 @@
             // 
             // uprog
             // 
-            appearance605.BackColor = System.Drawing.SystemColors.ControlLight;
-            appearance605.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance605.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance605.BorderColor = System.Drawing.Color.White;
-            appearance605.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            appearance605.BorderColor3DBase = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            appearance605.FontData.BoldAsString = "True";
-            appearance605.FontData.Name = "Arial";
-            appearance605.ForeColor = System.Drawing.Color.White;
-            this.uprog.Appearance = appearance605;
+            appearance672.BackColor = System.Drawing.SystemColors.ControlLight;
+            appearance672.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance672.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance672.BorderColor = System.Drawing.Color.White;
+            appearance672.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance672.BorderColor3DBase = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            appearance672.FontData.BoldAsString = "True";
+            appearance672.FontData.Name = "Arial";
+            appearance672.ForeColor = System.Drawing.Color.White;
+            this.uprog.Appearance = appearance672;
             this.uprog.BorderStyle = Infragistics.Win.UIElementBorderStyle.None;
-            appearance606.BackColor = System.Drawing.SystemColors.ControlDark;
-            appearance606.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            appearance606.BackGradientStyle = Infragistics.Win.GradientStyle.GlassTop37Bright;
-            appearance606.ForeColor = System.Drawing.Color.White;
-            this.uprog.FillAppearance = appearance606;
+            appearance673.BackColor = System.Drawing.SystemColors.ControlDark;
+            appearance673.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            appearance673.BackGradientStyle = Infragistics.Win.GradientStyle.GlassTop37Bright;
+            appearance673.ForeColor = System.Drawing.Color.White;
+            this.uprog.FillAppearance = appearance673;
             this.uprog.Location = new System.Drawing.Point(3, 3);
             this.uprog.Name = "uprog";
             this.uprog.Size = new System.Drawing.Size(226, 26);
@@ -11321,11 +12090,11 @@
             // 
             // ustbar
             // 
-            appearance607.BackColor = System.Drawing.Color.Gray;
-            appearance607.BackColor2 = System.Drawing.Color.DimGray;
-            appearance607.FontData.BoldAsString = "True";
-            appearance607.ForeColor = System.Drawing.Color.White;
-            this.ustbar.Appearance = appearance607;
+            appearance674.BackColor = System.Drawing.Color.Gray;
+            appearance674.BackColor2 = System.Drawing.Color.DimGray;
+            appearance674.FontData.BoldAsString = "True";
+            appearance674.ForeColor = System.Drawing.Color.White;
+            this.ustbar.Appearance = appearance674;
             this.ustbar.Location = new System.Drawing.Point(0, 891);
             this.ustbar.Name = "ustbar";
             this.ustbar.Padding = new Infragistics.Win.UltraWinStatusBar.UIElementMargins(10, 2, 0, 0);
@@ -11385,21 +12154,21 @@
             // 
             // ultraMessageBoxManager1
             // 
-            appearance610.BackColor = System.Drawing.Color.Transparent;
-            this.ultraMessageBoxManager1.Appearance = appearance610;
+            appearance677.BackColor = System.Drawing.Color.Transparent;
+            this.ultraMessageBoxManager1.Appearance = appearance677;
             this.ultraMessageBoxManager1.ContainingControl = this;
             // 
             // uDS_Recipe01
             // 
             this.uDS_Recipe01.Band.Columns.AddRange(new object[] {
-            ultraDataColumn118,
-            ultraDataColumn119,
-            ultraDataColumn120,
-            ultraDataColumn121,
-            ultraDataColumn122,
-            ultraDataColumn123,
-            ultraDataColumn124,
-            ultraDataColumn125});
+            ultraDataColumn152,
+            ultraDataColumn153,
+            ultraDataColumn154,
+            ultraDataColumn155,
+            ultraDataColumn156,
+            ultraDataColumn157,
+            ultraDataColumn158,
+            ultraDataColumn159});
             // 
             // sPort1
             // 
@@ -11554,6 +12323,33 @@
             this.Check_Commu.Interval = 2000;
             this.Check_Commu.Tick += new System.EventHandler(this.Check_Commu_Tick);
             // 
+            // ultraDataSource1
+            // 
+            this.ultraDataSource1.Band.Columns.AddRange(new object[] {
+            ultraDataColumn160,
+            ultraDataColumn161,
+            ultraDataColumn162,
+            ultraDataColumn163,
+            ultraDataColumn164,
+            ultraDataColumn165,
+            ultraDataColumn166,
+            ultraDataColumn167,
+            ultraDataColumn168,
+            ultraDataColumn169,
+            ultraDataColumn170});
+            this.ultraDataSource1.Band.Key = "DS_Recipe_Grid_Right";
+            // 
+            // uDS_Test_Right
+            // 
+            this.uDS_Test_Right.Band.Columns.AddRange(new object[] {
+            ultraDataColumn171,
+            ultraDataColumn172,
+            ultraDataColumn173,
+            ultraDataColumn174,
+            ultraDataColumn175,
+            ultraDataColumn176,
+            ultraDataColumn177});
+            // 
             // FormDlgMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -11581,12 +12377,18 @@
             this.ultraTabPageControl10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Vision_uGrd_Down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Offset_Down)).EndInit();
+            this.ultraTabPageControl12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Vision_uGrd_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Offset_Right)).EndInit();
             this.ultraTabPageControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_UperData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Recipe_Uper)).EndInit();
             this.ultraTabPageControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_DownData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Recipe_Down)).EndInit();
+            this.ultraTabPageControl11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_RightData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Recipe_Right)).EndInit();
             this.ultraTabPageControl2.ResumeLayout(false);
             this.SystemConfig_Tab_BackPanel.ClientArea.ResumeLayout(false);
             this.SystemConfig_Tab_BackPanel.ResumeLayout(false);
@@ -11594,43 +12396,36 @@
             this.ultraPanel69.ResumeLayout(false);
             this.ultraPanel70.ClientArea.ResumeLayout(false);
             this.ultraPanel70.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Edge09_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Edge08_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Edge07_Right)).EndInit();
             this.ultraPanel36.ClientArea.ResumeLayout(false);
             this.ultraPanel36.ResumeLayout(false);
             this.ultraPanel37.ClientArea.ResumeLayout(false);
             this.ultraPanel37.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Line09_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Line07_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Line08_Right)).EndInit();
             this.ultraPanel66.ClientArea.ResumeLayout(false);
             this.ultraPanel66.ResumeLayout(false);
             this.ultraPanel68.ClientArea.ResumeLayout(false);
             this.ultraPanel68.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_ImagePath_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_ImageFail_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_ImagePass_Right)).EndInit();
             this.ultraPanel59.ClientArea.ResumeLayout(false);
             this.ultraPanel59.ResumeLayout(false);
             this.ultraPanel61.ClientArea.ResumeLayout(false);
             this.ultraPanel61.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_MeasPath_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_MeasFail_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_MeasPass_Right)).EndInit();
             this.ultraPanel2.ClientArea.ResumeLayout(false);
             this.ultraPanel2.ResumeLayout(false);
             this.ultraPanel3.ClientArea.ResumeLayout(false);
             this.ultraPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraCheckEditor1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraComboEditor6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Pix05_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uText_Pix03_Right)).EndInit();
             this.ultraPanel90.ClientArea.ResumeLayout(false);
             this.ultraPanel90.ResumeLayout(false);
             this.ultraPanel91.ClientArea.ResumeLayout(false);
@@ -11699,10 +12494,9 @@
             this.ultraPanel4.ResumeLayout(false);
             this.ultraPanel5.ClientArea.ResumeLayout(false);
             this.ultraPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_ImageDelete02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_EtcItem05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem04)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_AlramCount01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uText_AlramCount02)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_ImageDelete01)).EndInit();
@@ -11728,25 +12522,26 @@
             this.ultraPanel42.ResumeLayout(false);
             this.ultraPanel43.ClientArea.ResumeLayout(false);
             this.ultraPanel43.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_DCF_Path_Right)).EndInit();
             this.ultraPanel40.ClientArea.ResumeLayout(false);
             this.ultraPanel40.ResumeLayout(false);
             this.ultraPanel41.ClientArea.ResumeLayout(false);
             this.ultraPanel41.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.System_uText_SystemItem09)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.System_uText_SystemItem08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uTxt_EtcItem05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_EtcItem04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCheck_SystemItem05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.System_uCombo_SystemItem01)).EndInit();
             this.ultraTabPageControl3.ResumeLayout(false);
             this.VisionGapConfig_Tab_BackPanel.ClientArea.ResumeLayout(false);
             this.VisionGapConfig_Tab_BackPanel.ResumeLayout(false);
+            this.ultraPanel71.ClientArea.ResumeLayout(false);
+            this.ultraPanel71.ResumeLayout(false);
+            this.ultraPanel72.ClientArea.ResumeLayout(false);
+            this.ultraPanel72.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_04_Lami)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_05_Lami)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_06_Lami)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_01_Lami)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_02_Lami)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTxt_Pix3_03_Lami)).EndInit();
             this.ultraPanel52.ClientArea.ResumeLayout(false);
             this.ultraPanel52.ResumeLayout(false);
             this.ultraPanel53.ClientArea.ResumeLayout(false);
@@ -11803,10 +12598,11 @@
             this.ultraPanel31.ResumeLayout(false);
             this.ultraPanel34.ClientArea.ResumeLayout(false);
             this.ultraPanel34.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Test_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Test_Down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Test_Uper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Test_Uper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Test_Down)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uDS_Test_Down)).EndInit();
             this.ultraPanel63.ClientArea.ResumeLayout(false);
             this.ultraPanel63.ResumeLayout(false);
             this.ultraPanel64.ClientArea.ResumeLayout(false);
@@ -11815,6 +12611,8 @@
             this.ultraTabControl2.ResumeLayout(false);
             this.ultraPanel56.ClientArea.ResumeLayout(false);
             this.ultraPanel56.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Inspect_Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Inspect_Right)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Inspect_Down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Inspect_Down)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uGrd_Recipe_Inspect_Uper)).EndInit();
@@ -11918,6 +12716,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.uDS_Recipe01)).EndInit();
             this.tmsDlgMain.ResumeLayout(false);
             this.tmsDlgMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraDataSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uDS_Test_Right)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -12021,18 +12821,9 @@
         private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uTxt_EtcItem05;
         private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_EtcItem04;
         private Infragistics.Win.Misc.UltraLabel System_uLabel_EtcItem04;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_EtcItem02;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_EtcItem01;
-        private Infragistics.Win.Misc.UltraLabel System_uLabel_EtcItem01;
         private Infragistics.Win.Misc.UltraLabel System_uLabel_EtcItem02;
-        private Infragistics.Win.Misc.UltraLabel ultraLabel126;
         private Infragistics.Win.Misc.UltraPanel ultraPanel40;
         private Infragistics.Win.Misc.UltraPanel ultraPanel41;
-        private Infragistics.Win.UltraWinEditors.UltraCheckEditor System_uCheck_SystemItem05;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_SystemItem04;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_SystemItem03;
-        private Infragistics.Win.Misc.UltraLabel System_uLabel_SystemItem03;
-        private Infragistics.Win.Misc.UltraLabel System_uLabel_SystemItem04;
         private Infragistics.Win.Misc.UltraLabel ultraLabel117;
         private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_ImageDelete01;
         private Infragistics.Win.Misc.UltraLabel System_uLabel_ImageDelete;
@@ -12230,9 +13021,6 @@
         private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uTxt_MeasPath_BiCell;
         private Infragistics.Win.Misc.UltraLabel ultraLabel15;
         private Infragistics.Win.Misc.UltraLabel ultraLabel16;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_SystemItem02;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_SystemItem01;
-        private Infragistics.Win.Misc.UltraLabel System_uLabel_SystemItem01;
         private Infragistics.Win.Misc.UltraPanel ultraPanel50;
         private Infragistics.Win.Misc.UltraPanel ultraPanel51;
         private Infragistics.Win.Misc.UltraLabel ultraLabel63;
@@ -12274,9 +13062,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem16;
         private Infragistics.Win.UltraWinEditors.UltraTextEditor uTxt_Manual_GapNo;
         private System.Windows.Forms.ToolStripMenuItem 제품문의ToolStripMenuItem;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_SystemItem05;
-        private Infragistics.Win.Misc.UltraLabel ultraLabel47;
-        private Infragistics.Win.Misc.UltraLabel ultraLabel53;
         private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl1;
         private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage2;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl9;
@@ -12344,66 +13129,90 @@
         private Infragistics.Win.Misc.UltraLabel ultraLabel51;
         private Infragistics.Win.Misc.UltraPanel ultraPanel2;
         private Infragistics.Win.Misc.UltraPanel ultraPanel3;
-        private Infragistics.Win.UltraWinEditors.UltraCheckEditor ultraCheckEditor1;
         private Infragistics.Win.Misc.UltraLabel ultraLabel59;
         private Infragistics.Win.Misc.UltraLabel ultraLabel60;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor ultraComboEditor5;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor ultraComboEditor6;
         private Infragistics.Win.Misc.UltraLabel ultraLabel67;
         private Infragistics.Win.Misc.UltraPanel ultraPanel59;
         private Infragistics.Win.Misc.UltraPanel ultraPanel61;
         private Infragistics.Win.Misc.UltraLabel ultraLabel74;
         private Infragistics.Win.Misc.UltraLabel ultraLabel75;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor ultraComboEditor11;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_EtcItem03;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_MeasFail_Right;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_MeasPass_Right;
         private Infragistics.Win.Misc.UltraLabel ultraLabel77;
         private Infragistics.Win.Misc.UltraLabel ultraLabel3;
         private Infragistics.Win.Misc.UltraPanel ultraPanel69;
         private Infragistics.Win.Misc.UltraPanel ultraPanel70;
         private Infragistics.Win.Misc.UltraLabel ultraLabel71;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor6;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uText_Edge09_Right;
         private Infragistics.Win.Misc.UltraLabel ultraLabel72;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor7;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uText_Edge08_Right;
         private Infragistics.Win.Misc.UltraLabel ultraLabel73;
         private Infragistics.Win.Misc.UltraLabel ultraLabel76;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor8;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uText_Edge07_Right;
         private Infragistics.Win.Misc.UltraPanel ultraPanel36;
         private Infragistics.Win.Misc.UltraPanel ultraPanel37;
         private Infragistics.Win.Misc.UltraLabel ultraLabel70;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor5;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uText_Line09_Right;
         private Infragistics.Win.Misc.UltraLabel ultraLabel57;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor2;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uText_Line07_Right;
         private Infragistics.Win.Misc.UltraLabel ultraLabel58;
         private Infragistics.Win.Misc.UltraLabel ultraLabel69;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor4;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uText_Line08_Right;
         private Infragistics.Win.Misc.UltraPanel ultraPanel66;
         private Infragistics.Win.Misc.UltraPanel ultraPanel68;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor15;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor16;
         private Infragistics.Win.Misc.UltraLabel ultraLabel84;
         private Infragistics.Win.Misc.UltraLabel ultraLabel85;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor ultraComboEditor1;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_ImageFail_Right;
         private Infragistics.Win.Misc.UltraLabel ultraLabel55;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor ultraComboEditor2;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor System_uCombo_ImagePass_Right;
         private Infragistics.Win.Misc.UltraLabel ultraLabel56;
         private Infragistics.Win.Misc.UltraLabel ultraLabel61;
         private Infragistics.Win.Misc.UltraLabel ultraLabel46;
-        private Infragistics.Win.UltraWinEditors.UltraComboEditor ultraComboEditor3;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor17;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor18;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uText_Pix05_Right;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uText_Pix03_Right;
         private Infragistics.Win.Misc.UltraLabel ultraLabel86;
         private Infragistics.Win.Misc.UltraLabel ultraLabel87;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor11;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor9;
         private Infragistics.Win.Misc.UltraLabel ultraLabel78;
-        private Infragistics.Win.Misc.UltraLabel ultraLabel80;
         private Infragistics.Win.Misc.UltraLabel ultraLabel54;
-        private Infragistics.Win.Misc.UltraLabel ultraLabel1;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor19;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor20;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor21;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor10;
         private Infragistics.Win.Misc.UltraLabel ultraLabel79;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl11;
+        private Infragistics.Win.UltraWinDataSource.UltraDataSource ultraDataSource1;
+        private DrawArea RecipeGap_drawArea3;
+        private Infragistics.Win.UltraWinGrid.UltraGrid uGrd_Recipe_RightData;
+        private Infragistics.Win.UltraWinDataSource.UltraDataSource uDS_Recipe_Right;
+        private Infragistics.Win.UltraWinGrid.UltraGrid uGrd_Recipe_Inspect_Right;
+        private Infragistics.Win.UltraWinDataSource.UltraDataSource uDS_Inspect_Right;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl12;
+        private Infragistics.Win.UltraWinGrid.UltraGrid Vision_uGrd_Right;
+        private Infragistics.Win.UltraWinDataSource.UltraDataSource uDS_Offset_Right;
+        private Infragistics.Win.UltraWinGrid.UltraGrid uGrd_Recipe_Test_Right;
+        private Infragistics.Win.UltraWinDataSource.UltraDataSource uDS_Test_Right;
+        private Infragistics.Win.Misc.UltraButton System_uBtn_MeasPath_Right;
+        private Infragistics.Win.Misc.UltraButton uSystem_uBtn_DCF_File_Right;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uTxt_DCF_Path_Right;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uTxt_ImagePath_Right;
+        private Infragistics.Win.Misc.UltraButton System_uBtn_ImagePath_Right;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor System_uTxt_MeasPath_Right;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel1;
+        private Infragistics.Win.Misc.UltraPanel ultraPanel71;
+        private Infragistics.Win.Misc.UltraPanel ultraPanel72;
+        private Infragistics.Win.Misc.UltraButton ultraButton4;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel47;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor uTxt_Pix3_04_Lami;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor uTxt_Pix3_05_Lami;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor uTxt_Pix3_06_Lami;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel53;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel80;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel81;
+        private Infragistics.Win.Misc.UltraButton ultraButton6;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel82;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel83;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor uTxt_Pix3_01_Lami;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel88;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel89;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor uTxt_Pix3_02_Lami;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor uTxt_Pix3_03_Lami;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel91;
         //private AxACTETHERLib.AxActQJ71E71TCP m_MelsecTCP;
         //private AxACTETHERLib.AxActQJ71E71UDP axActQJ71E71UDP3;
 
